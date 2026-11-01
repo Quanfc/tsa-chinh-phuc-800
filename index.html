@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Phòng thi thử TSA</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/katex.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/katex.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/contrib/auto-render.min.js"></script>
+<style>
+:root{--bg:#f8f9fb;--cd:#fff;--tx:#1f2937;--mu:#6b7280;--ln:#e5e7eb;--nv:#1e2a78;--bl:#2196f3;--or:#f59e0b;--rd:#d62b2b;--gr:#16a34a;--ch:#f3f4f6;color-scheme:light}
+@media(prefers-color-scheme:dark){:root{--bg:#0f1218;--cd:#1a1f29;--tx:#e5e7eb;--mu:#9ca3af;--ln:#2b3240;--nv:#4c63d9;--ch:#252b38;color-scheme:dark}}
+*{box-sizing:border-box}html,body{margin:0}[hidden]{display:none!important}
+body{background:var(--bg);color:var(--tx);font:15px/1.6 system-ui,"Segoe UI",Roboto,sans-serif}
+header{background:var(--cd);display:flex;align-items:center;gap:28px;padding:12px 28px;border-bottom:1px solid var(--ln)}
+.logo{font:900 30px/1 Impact,"Arial Black",sans-serif;letter-spacing:1px;color:var(--tx);text-decoration:none}.logo span{color:var(--rd)}
+h1{font-size:19px;margin:0}
+#hm{max-width:900px;margin:0 auto;padding:32px 20px}#hm h2{margin:0 0 4px}
+.rms{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;margin-top:18px}
+.rm{background:var(--cd);border:1px solid var(--ln);border-radius:12px;padding:18px;text-align:left;color:var(--tx);font:inherit;cursor:pointer;display:flex;flex-direction:column;gap:4px}
+.rm:hover{border-color:var(--nv)}.rm b{font-size:16px}.rm span,.rm small{color:var(--mu)}
+.wrap{display:grid;grid-template-columns:1fr 360px;min-height:calc(100vh - 62px)}
+main{padding:22px 24px 0;display:flex;flex-direction:column}
+.card{background:var(--cd);border-radius:14px;padding:26px 30px;position:relative;display:flex;gap:18px;box-shadow:0 1px 3px #0001}
+.qn{flex:none;width:40px;height:40px;border-radius:50%;background:var(--ch);display:grid;place-items:center;font-weight:700}
+.qb{flex:1;min-width:0;font-size:16px;line-height:2}.fig{display:block;max-width:100%;margin:6px 0}
+.bm{position:absolute;right:20px;top:20px;width:38px;height:38px;border:0;border-radius:10px;background:var(--ch);color:var(--mu);font-size:17px;cursor:pointer}
+.bm.on{background:#fef3c7;color:var(--or)}.card.ro .qb{pointer-events:none}
+.op{display:flex;gap:10px;align-items:center;padding:4px 0;cursor:pointer}.op input{width:17px;height:17px;accent-color:var(--nv)}
+table{border-collapse:collapse;margin-top:8px;width:100%}th,td{border-bottom:1px solid var(--ln);padding:8px;text-align:center}th{font-size:14px}td:first-child,th:first-child{text-align:left}
+td input{width:17px;height:17px;accent-color:var(--nv)}
+.blank{width:110px;border:0;border-bottom:1.5px solid var(--mu);background:transparent;color:var(--tx);font:inherit;text-align:center;padding:0 4px}
+.blank:focus{outline:0;border-color:var(--nv)}
+.tray{display:flex;gap:10px;flex-wrap:wrap;padding:8px 10px;border:1px solid var(--ln);border-radius:8px;margin-bottom:10px;min-height:52px}
+.chip{background:var(--ch);padding:2px 12px;border-radius:7px;cursor:grab;line-height:1.7}
+.slot{display:inline-block;min-width:76px;min-height:36px;border:1px dashed var(--mu);border-radius:7px;text-align:center;vertical-align:middle;padding:2px 6px;cursor:pointer}
+.bar{position:sticky;bottom:0;background:var(--bg);display:flex;align-items:center;gap:14px;padding:14px 0;margin-top:auto}
+.bt{border:1px solid var(--ln);background:var(--ch);color:var(--tx);border-radius:9px;height:44px;padding:0 16px;font:inherit;cursor:pointer}
+.bt.p{background:var(--nv);border-color:var(--nv);color:#fff;font-weight:600;padding:0 22px}.bt:disabled{opacity:.45;cursor:default}
+.bar b{font-size:22px;color:var(--nv)}
+aside{background:var(--cd);padding:24px 28px;display:flex;flex-direction:column;gap:14px;border-left:1px solid var(--ln)}
+aside h2{font-size:17px;font-weight:600;margin:0 0 4px}
+.rw{display:flex;justify-content:space-between;color:var(--mu);font-size:14px}.rw b{color:var(--tx);font-weight:500}
+.tm{display:flex;align-items:center;justify-content:space-between;border:1px solid var(--ln);border-radius:10px;padding:8px 10px 8px 16px}
+.tm b{font-size:22px;margin-left:auto;margin-right:14px}
+.sb{background:var(--rd);color:#fff;border:0;border-radius:8px;padding:9px 14px;font-weight:700;cursor:pointer}
+.lg{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--mu)}
+.dt{min-width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:12px;background:var(--ch);color:var(--mu)}
+.dt.a{background:var(--bl);color:#fff}.dt.m{background:transparent;border:1.5px solid var(--or);color:var(--or)}
+.gd{display:grid;grid-template-columns:repeat(10,1fr);gap:8px 6px}
+.gd button{width:100%;aspect-ratio:1;border-radius:50%;border:2px solid transparent;background:var(--ch);color:var(--mu);font-size:12px;cursor:pointer;padding:0}
+.gd .a{background:var(--bl);color:#fff}.gd .m{border-color:var(--or)}.gd .c{background:var(--nv);color:#fff}
+.gd .ok{background:var(--gr);color:#fff}.gd .no{background:var(--rd);color:#fff}.gd .pt{background:var(--or);color:#fff}
+.pg{margin-top:auto}.pg .rw b{font-size:30px}.pg .tr{height:6px;background:var(--ch);border-radius:4px;margin:6px 0}.pg .tr i{display:block;height:100%;background:var(--rd);border-radius:4px;transition:width .3s}
+.cn{color:var(--gr);font-size:14px;font-weight:600}.cn:before{content:"●";margin-right:8px}
+.ak{margin-top:14px;padding:10px 14px;border-left:4px solid var(--gr);background:var(--cd);border-radius:6px;line-height:1.8}
+.ov{position:fixed;inset:0;background:#000a;display:none;place-items:center;z-index:9;padding:16px}
+.bx{background:var(--cd);border-radius:16px;padding:30px;max-width:460px;width:100%}
+.bx h2{margin:0 0 10px}.bx input{width:100%;padding:11px;border:1px solid var(--ln);border-radius:9px;background:var(--bg);color:var(--tx);font:inherit;margin:6px 0 14px}
+.bx .row{display:flex;gap:10px;justify-content:flex-end}.big{font-size:44px;font-weight:800;color:var(--nv);line-height:1.1}.er{color:var(--rd);margin:0 0 10px}
+@media(max-width:900px){.wrap{grid-template-columns:1fr}aside{border-left:0}header{padding:10px 16px}.card{padding:20px 16px;flex-direction:column}.qb{font-size:15px}main{padding:14px 12px 0}}
+</style></head><body>
+<header><a class="logo" href="./">BO<span>X</span>DE</a><h1 id="ti">Phòng thi thử</h1></header>
+<section id="hm"><h2>Chọn phòng thi</h2><div style="color:var(--mu)">Bấm vào một đề để vào phòng. Kết quả cao nhất được lưu trên trình duyệt này.</div><div class="rms" id="rooms">Đang tải…</div></section>
+<div class="wrap" id="ex" hidden><main><div class="card" id="cd"></div><div id="rv"></div>
+<div class="bar"><button class="bt" id="pv" aria-label="Câu trước">‹</button><button class="bt p" id="nx">Câu tiếp ›</button><span style="color:var(--mu);font-size:14px">Thời gian làm câu hiện tại</span><b id="qt">0:00</b></div></main>
+<aside><h2>Thông tin thí sinh</h2><div class="rw">Họ tên <b id="nm"></b></div>
+<div class="tm"><span style="color:var(--mu);font-size:14px">Thời gian còn lại</span><b id="tm"></b><button class="sb" id="sb">Nộp bài</button></div>
+<div class="lg">Chỉ thị màu sắc: <span class="dt" id="l0"></span><span class="dt a" id="l1"></span><span class="dt m" id="l2"></span></div>
+<div class="gd" id="gd"></div>
+<div class="pg"><div class="rw">Bạn đã hoàn thành <b id="dn"></b></div><div class="tr"><i id="pb"></i></div><div class="rw" style="justify-content:flex-end" id="pc"></div><div class="cn" style="margin-top:10px">Đã kết nối máy chủ</div></div></aside></div>
+<div class="ov" id="ov"></div>
+<script>
+const $=s=>document.querySelector(s);
+const mj=el=>{try{window.renderMathInElement&&renderMathInElement(el,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})}catch(e){}};
+addEventListener('load',()=>mj(document.body));
+const LS={get(k){try{return JSON.parse(localStorage.getItem(k))}catch(e){return null}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+let CFG,E,Q,cur,left,total,done,ans,marks,spent,tk,name;
+const num=s=>{s=String(s||'').replace(/\s/g,'').replace(',','.');if(!s)return null;if(s.includes('/')){const[p,r]=s.split('/');return +r?+p/+r:null}return isNaN(+s)?null:+s};
+const mmss=t=>Math.floor(t/60)+':'+String(t%60).padStart(2,'0');
+const sc=i=>{const q=Q[i],a=ans[i];if(q.a==null)return 0;
+if(q.t==='mc')return a===q.a?1:0;
+if(q.t==='mcm')return a.length===q.a.length&&q.a.every(x=>a.includes(x))?1:0;
+if(q.t==='fill')return q.a.filter((x,k)=>{const v=num(a[k]);return v!==null&&Math.abs(v-x)<=(q.e||1e-6)}).length/q.a.length;
+return q.a.filter((x,k)=>a[k]===x).length/q.a.length};
+const answered=i=>{const a=ans[i];return Array.isArray(a)?a.some(x=>x!==null&&x!==''):a!==null};
+const ak=q=>q.a==null?'(đề chưa có đáp án)':q.t==='mc'?q.o[q.a]:q.t==='mcm'?q.a.map(k=>q.o[k]).join(' ; '):q.t==='tf'?q.a.map((x,k)=>`ý ${k+1}: ${x?'Đúng':'Sai'}`).join(' · '):q.t==='fill'?q.a.map(x=>String(x).replace('.',',')).join(' ; '):q.a.map(k=>q.c[k]).join(' ; ');
+const ov=h=>{const o=$('#ov');o.innerHTML=`<div class="bx">${h}</div>`;o.style.display='grid';mj(o)};
+const hide=()=>$('#ov').style.display='none';
+
+async function home(){
+ try{CFG=await (await fetch('exams/index.json')).json()}catch(e){$('#rooms').innerHTML='Không đọc được exams/index.json. Hãy chạy qua web server (GitHub Pages, hoặc <code>python -m http.server</code>), đừng mở file trực tiếp.';return}
+ $('#rooms').innerHTML=CFG.exams.map(e=>{const b=LS.get('tsa:'+e.id);return `<button class="rm" data-id="${e.id}"><b>${e.title}</b><span>${e.minutes||60} phút${e.code?' · 🔒 cần mã phòng':''}</span><small>${b?`Cao nhất ${b.best}/${b.max} · đã thi ${b.n} lần`:'Chưa thi'}</small></button>`}).join('');
+ $('#rooms').querySelectorAll('.rm').forEach(b=>b.onclick=()=>room(b.dataset.id));
+ const h=location.hash.slice(1);if(h&&CFG.exams.some(e=>e.id===h))room(h)}
+async function room(id){E=CFG.exams.find(e=>e.id===id);
+ let d;try{d=await (await fetch('exams/'+(E.file||id+'.json'))).json()}catch(e){return ov(`<h2>Lỗi</h2><p class="er">Không tải được đề ${id}.</p><div class="row"><button class="bt" onclick="hide()">Đóng</button></div>`)}
+ Q=d.questions;E.title=d.title||E.title;E.minutes=d.minutes||E.minutes||60;
+ ov(`<h2>${E.title}</h2><p style="color:var(--mu);margin:0 0 6px">${Q.length} câu · ${E.minutes} phút. Câu Đúng/Sai và câu điền nhiều ô được tính điểm từng ý.</p><div class="er" id="er"></div><label>Họ tên thí sinh<input id="in" value="${LS.get('tsa:name')||''}"></label>${E.code?'<label>Mã phòng<input id="cc" autocomplete="off"></label>':''}<div class="row"><button class="bt" onclick="hide()">Hủy</button><button class="bt p" id="go">Bắt đầu làm bài</button></div>`);
+ $('#go').onclick=()=>{const n=$('#in').value.trim();if(!n)return $('#er').textContent='Nhập họ tên để vào phòng.';
+  if(E.code&&$('#cc').value.trim().toLowerCase()!==String(E.code).toLowerCase())return $('#er').textContent='Mã phòng không đúng.';
+  name=n;LS.set('tsa:name',n);start()}}
+function start(){
+ ans=Q.map(q=>q.t==='mc'?null:q.t==='mcm'?[]:q.t==='tf'?q.s.map(()=>null):Array(q.t==='fill'?q.a.length:q.a.length).fill(q.t==='fill'?'':null));
+ marks=Q.map(()=>0);spent=Q.map(()=>0);done=false;total=left=E.minutes*60;
+ $('#nm').textContent=name;$('#ti').textContent=E.title;$('#sb').style.display='';$('#hm').hidden=true;$('#ex').hidden=false;hide();
+ $('#gd').innerHTML=Q.map((q,i)=>`<button>${i+1}</button>`).join('');[...$('#gd').children].forEach((b,i)=>b.onclick=()=>go(i));
+ $('#tm').textContent=clock();go(0);tk=setInterval(tick,1000);onbeforeunload=e=>{e.preventDefault();e.returnValue=''}}
+const clock=()=>String(Math.floor(left/60)).padStart(2,'0')+':'+String(left%60).padStart(2,'0');
+function render(){const q=Q[cur],a=ans[cur];
+ let h=`<div class="qn">${cur+1}</div><button class="bm ${marks[cur]?'on':''}" id="bm" title="Đánh dấu câu hỏi" style="pointer-events:auto">⚑</button><div class="qb">`,t=q.q;
+ if(q.t==='fill')t=t.replace(/\[\[(\d+)\]\]/g,(m,i)=>`<input class="blank" data-i="${i}" value="${a[i]??''}" autocomplete="off" inputmode="decimal">`);
+ if(q.t==='drag'){t=t.replace(/\[\[(\d+)\]\]/g,(m,i)=>`<span class="slot" data-i="${i}">${a[i]!==null?q.c[a[i]]:''}</span>`);
+  h+=`<div class="tray">${q.c.map((c,k)=>a.includes(k)?'':`<span class="chip" draggable="true" data-k="${k}">${c}</span>`).join('')}</div>`}
+ h+=`<div>${t}</div>`;if(q.fig)h+=`<img class="fig" src="${q.fig}" alt="Hình câu ${cur+1}">`;
+ if(q.t==='mc'||q.t==='mcm'){const ty=q.t==='mc'?'radio':'checkbox';h+=q.o.map((o,k)=>`<label class="op"><input type="${ty}" name="o" value="${k}" ${(q.t==='mc'?a===k:a.includes(k))?'checked':''}><span>${o}</span></label>`).join('')}
+ if(q.t==='tf')h+=`<table><tr><th>Phát biểu</th><th>Đúng</th><th>Sai</th></tr>${q.s.map((s,k)=>`<tr><td>${s}</td><td><input type="radio" name="r${k}" data-k="${k}" value="1" ${a[k]===1?'checked':''}></td><td><input type="radio" name="r${k}" data-k="${k}" value="0" ${a[k]===0?'checked':''}></td></tr>`).join('')}</table>`;
+ const c=$('#cd');c.innerHTML=h+'</div>';c.classList.toggle('ro',done);
+ $('#rv').innerHTML=done?`<div class="ak card" style="display:block"><b>Đáp án đúng:</b> ${ak(q)}<br><b>Điểm câu này:</b> ${+sc(cur).toFixed(2)}/1${q.note?`<br><b>Ghi chú:</b> ${q.note}`:''}</div>`:'';
+ mj(c);mj($('#rv'));
+ $('#bm').onclick=()=>{marks[cur]^=1;render();upd()};
+ c.querySelectorAll('.blank').forEach(e=>e.oninput=()=>{a[e.dataset.i]=e.value;upd()});
+ c.querySelectorAll('.op input').forEach(e=>e.onchange=()=>{const k=+e.value;if(q.t==='mc')ans[cur]=k;else e.checked?a.push(k):a.splice(a.indexOf(k),1);upd()});
+ c.querySelectorAll('td input').forEach(e=>e.onchange=()=>{a[e.dataset.k]=+e.value;upd()});
+ c.querySelectorAll('.chip').forEach(e=>{e.ondragstart=ev=>ev.dataTransfer.setData('text',e.dataset.k);e.onclick=()=>{const i=a.indexOf(null);if(i>=0){a[i]=+e.dataset.k;render();upd()}}});
+ c.querySelectorAll('.slot').forEach(e=>{e.ondragover=ev=>ev.preventDefault();e.ondrop=ev=>{ev.preventDefault();a[e.dataset.i]=+ev.dataTransfer.getData('text');render();upd()};e.onclick=()=>{a[e.dataset.i]=null;render();upd()}});
+ $('#pv').disabled=cur===0;$('#nx').disabled=cur===Q.length-1}
+function upd(){let n=0,m=0;Q.forEach((q,i)=>{const b=$('#gd').children[i],an=answered(i);an&&n++;marks[i]&&m++;
+ b.className=done?(sc(i)===1?'ok':sc(i)>0?'pt':'no'):(an?'a ':'')+(marks[i]?'m ':'')+(i===cur?'c':'');b.style.outline=done&&i===cur?'2px solid var(--nv)':''});
+ $('#l0').textContent=Q.length-n;$('#l1').textContent=n;$('#l2').textContent=m;
+ $('#dn').innerHTML=`${n}<small style="font-size:15px;color:var(--mu)">/${Q.length} câu</small>`;$('#pb').style.width=n/Q.length*100+'%';$('#pc').textContent=Math.round(n/Q.length*100)+'%';$('#qt').textContent=mmss(spent[cur])}
+function go(i){cur=i;render();upd()}
+function tick(){left--;spent[cur]++;$('#tm').textContent=clock();$('#qt').textContent=mmss(spent[cur]);if(left<=0)finish()}
+function finish(){clearInterval(tk);done=true;onbeforeunload=null;
+ const pts=Q.reduce((s,q,i)=>s+sc(i),0),max=Q.length,used=total-left,full=Q.filter((q,i)=>sc(i)===1).length,part=Q.filter((q,i)=>sc(i)>0&&sc(i)<1).length;
+ const old=LS.get('tsa:'+E.id)||{best:0,n:0};LS.set('tsa:'+E.id,{best:Math.max(old.best,+pts.toFixed(2)),max,n:old.n+1});
+ if(CFG.webhook)fetch(CFG.webhook,{method:'POST',mode:'no-cors',body:JSON.stringify({name,exam:E.id,title:E.title,score:+pts.toFixed(2),max,seconds:used,at:new Date().toISOString()})}).catch(()=>{});
+ $('#sb').style.display='none';$('#tm').textContent='Đã nộp';render();upd();
+ ov(`<h2>Kết quả</h2><div class="big">${pts.toFixed(2)}<small style="font-size:20px;color:var(--mu)">/${max}</small></div><p>Quy đổi thang 10: <b>${(pts/max*10).toFixed(2)}</b><br>Thời gian làm bài: <b>${mmss(used)}</b><br>Đúng hoàn toàn: <b>${full}</b> · đúng một phần: <b>${part}</b> · sai/bỏ trống: <b>${max-full-part}</b></p><p style="color:var(--mu);font-size:14px;margin:0 0 14px">Bảng câu bên phải: xanh lá = đúng, cam = đúng một phần, đỏ = sai. Bấm từng câu để xem đáp án.</p><div class="row"><button class="bt" onclick="location.href='./'">Về trang chủ</button><button class="bt p" onclick="hide()">Xem lại bài</button></div>`)}
+$('#sb').onclick=()=>{const n=Q.filter((q,i)=>answered(i)).length;
+ ov(`<h2>Nộp bài?</h2><p>Bạn đã làm <b>${n}/${Q.length}</b> câu${n<Q.length?`, còn <b>${Q.length-n}</b> câu chưa trả lời`:''}. Sau khi nộp sẽ không thể sửa bài.</p><div class="row"><button class="bt" onclick="hide()">Tiếp tục làm</button><button class="bt p" id="ok">Nộp bài</button></div>`);$('#ok').onclick=finish};
+$('#pv').onclick=()=>go(cur-1);$('#nx').onclick=()=>go(cur+1);
+home();
+</script></body></html>

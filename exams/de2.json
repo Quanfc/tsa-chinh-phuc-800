@@ -1,0 +1,398 @@
+{
+  "title": "Thi thử TSA 2025 - Toán Đề 2",
+  "minutes": 60,
+  "questions": [
+    {
+      "t": "mc",
+      "q": "Đường tiệm cận xiên của đồ thị hàm số $y=\\frac{x^{2}-9x-6}{x}$ có phương trình là[cite: 1]",
+      "o": [
+        "$y=2x-18$",
+        "$y=x-9$",
+        "$y=x+9$",
+        "$y=x-9$"
+      ],
+      "a": 1
+    },
+    {
+      "t": "drag",
+      "q": "Cho hình chóp $S.ABC$ có đáy là tam giác vuông tại $B$ có $AB=8$, $BC=6$. Biết $SA$ vuông góc với mặt phẳng đáy và $SA=6$. Gọi $(S)$ là mặt cầu nội tiếp hình chóp $S.ABC$. Kéo số ở các ô vuông thả vào vị trí thích hợp trong các câu sau:\\nBán kính của mặt cầu $(S)$ bằng [[0]]\\nDiện tích mặt cầu $(S)$ bằng [[1]]\\nThể tích khối cầu $(S)$ bằng [[2]][cite: 2]",
+      "c": [
+        "$\\pi\\frac{256\\pi}{27}$",
+        "$\\frac{3}{2}$",
+        "$\\pi\\frac{64\\pi}{9}$",
+        "$\\pi\\frac{256\\pi}{81}$",
+        "$\\frac{4}{3}$",
+        "$\\pi\\frac{64\\pi}{27}$"
+      ],
+      "a": [4, 2, 3]
+    },
+    {
+      "t": "fill",
+      "q": "Ngày 01/8/2023, ông Hà đem $20$ triệu đồng gửi vào một ngân hàng với lãi kép $0,5\\%$ một tháng để có một khoảng tiền tiết kiệm cho con đang học lớp 12 năm sau thi đại học. Từ đó, cứ tròn mỗi tháng, ông đến gửi thêm vào tài khoản đó $1$ triệu đồng để tiết kiệm. Sau đúng $13$ tháng, tài khoản tiết kiệm đó của ông Hà cho con có [[0]] triệu đồng. Biết rằng lãi suất trong suốt thời gian ông Hà gửi là không đổi. Kết quả làm tròn đến chữ số thập phân thứ hai.[cite: 3]",
+      "a": [34.74],
+      "e": 0.006
+    },
+    {
+      "t": "mc",
+      "q": "Câu 4 (id: 239860) [Đề gốc trắng tinh không có chữ, tao để tạm phương án A để web không báo lỗi][cite: 4]",
+      "o": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "a": 0
+    },
+    {
+      "t": "mc",
+      "q": "Cho hình chóp $S.ABC$ có đáy là tam giác vuông tại $A$, $\\widehat{ABC}=60^{\\circ}$, $BC=2a$. Gọi $H$ là hình chiếu vuông góc của $A$ lên $BC$, biết $SH$ vuông góc với mặt phẳng $(ABC)$, và $SA$ tạo với đáy một góc bằng $60^{\\circ}$. Tính khoảng cách từ $B$ đến mặt phẳng $(SAC)$ theo $a$.[cite: 5]",
+      "o": [
+        "$\\frac{a}{\\sqrt{5}}$",
+        "$\\frac{2a}{5}$",
+        "$a\\sqrt{5}$",
+        "$\\frac{2a\\sqrt{5}}{5}$"
+      ],
+      "a": 3
+    },
+    {
+      "t": "mc",
+      "q": "Cho hàm số $y=f(x)$ có đồ thị như hình vẽ. Điểm cực tiểu của đồ thị hàm số đã cho là[cite: 6]",
+      "fig": "img/cau5_322344.png",
+      "o": [
+        "$-1$",
+        "$1$",
+        "$(2;0)$",
+        "$(1;-4)$"
+      ],
+      "a": 3
+    },
+    {
+      "t": "mc",
+      "q": "Trong không gian $Oxyz$, gọi $M^{\\prime}$ là hình chiếu vuông góc của điểm $M(1;3;-2)$ trên trục $Oz$. Khi đó vectơ $\\overrightarrow{MM^{\\prime}}$ có tọa độ là[cite: 7]",
+      "o": [
+        "$(1;3;0)$",
+        "$(0;0;2)$",
+        "$(-1;-3;0)$",
+        "$(0;0;-2)$"
+      ],
+      "a": 2
+    },
+    {
+      "t": "fill",
+      "q": "Một thùng đựng $27$ viên bi lần lượt được đánh số từ $1$ đến $27$. Lấy ngẫu nhiên $4$ viên bi. Biết rằng xác suất để các số ghi trên bi lập thành một cấp số cộng là $\\frac{a}{b}$, trong đó $\\frac{a}{b}$ là phân số tối giản với $a, b$ là các số nguyên dương. Khi đó $a=$ [[0]] và $b=$ [[1]].[cite: 8]",
+      "a": [2, 325]
+    },
+    {
+      "t": "mc",
+      "q": "Gọi $S$ là tập hợp tất cả các số tự nhiên có $4$ chữ số đôi một khác nhau và các chữ số thuộc tập hợp $\\{1, 2, 3, 4, 5, 6, 7, 8, 9\\}$. Chọn ngẫu nhiên một số thuộc $S$, xác suất để số đó không có hai chữ số liên tiếp nào cùng lẻ bằng[cite: 9]",
+      "o": [
+        "$\\frac{17}{42}$",
+        "$\\frac{41}{126}$",
+        "$\\frac{31}{126}$",
+        "$\\frac{5}{21}$"
+      ],
+      "a": 0
+    },
+    {
+      "t": "mc",
+      "q": "Cho các số thực $x, y$ thỏa mãn bất đẳng thức $\\log_{4x^{2}+9y^{2}}(2x+3y)\\ge 1$. Giá trị lớn nhất của biểu thức $P=x+3y$ gần nhất với số nào trong các số sau?[cite: 10]",
+      "o": [
+        "$2$",
+        "$1$",
+        "$\\frac{5}{2}$",
+        "$\\frac{1}{2}$"
+      ],
+      "a": 0
+    },
+    {
+      "t": "fill",
+      "q": "Người ta chế tạo ra một món đồ chơi cho trẻ em theo các công đoạn như sau. Trước tiên, chế tạo ra một hình nón tròn xoay có góc ở đỉnh là $2\\alpha=60^{\\circ}$ bằng thủy tinh trong suốt. Sau đó đặt hai quả cầu nhỏ bằng thủy tinh có bán kính lớn, nhỏ khác nhau sao cho hai mặt cầu tiếp xúc với nhau và đều tiếp xúc với mặt nón, quả cầu lớn tiếp xúc với cả mặt đáy của hình nón (xem hình vẽ). Biết rằng chiều cao của hình nón là $9\\text{ cm}$. Bỏ qua bề dày của các lớp vỏ thủy tinh, tổng thể tích của hai khối cầu bằng [[0]] $\\text{cm}^{3}$. (Kết quả làm tròn đến chữ số thập phân thứ hai).[cite: 11]",
+      "fig": "img/cau10_191651.png",
+      "a": [117.29],
+      "e": 0.006
+    },
+    {
+      "t": "fill",
+      "q": "Diện tích mặt tròn xoay tạo thành khi quay đường cong $f(x)$ quanh trục hoành giới hạn giữa hai mặt phẳng $x=a$, $x=b$ được tính bởi công thức $S=2\\pi\\int_{a}^{b}|f(x)|\\sqrt{1+[f^{\\prime}(x)]^{2}}dx$. Một bình hoa có dạng hình cầu khuyết như hình vẽ. Biết đường kính của bình hoa là $20\\text{ cm}$ và đường kính đáy/miệng của bình hoa là $12\\text{ cm}$. Diện tích tráng men mặt ngoài (kể cả đáy) của bình hoa bằng [[0]] $\\text{cm}^{2}$. (Kết quả làm tròn đến chữ số thập phân thứ hai).[cite: 12]",
+      "fig": "img/cau11_246184.png",
+      "a": [1118.41],
+      "e": 0.006
+    },
+    {
+      "t": "tf",
+      "q": "Gieo ngẫu nhiên một con xúc xắc cân đối đồng chất liên tiếp hai lần. Mỗi phát biểu sau là đúng hay sai?[cite: 13]",
+      "s": [
+        "Xác suất để hai lần gieo đều xuất hiện mặt sáu chấm là $\\frac{1}{36}$",
+        "Xác suất để số chấm trong hai lần gieo là khác nhau bằng $\\frac{1}{2}$"
+      ],
+      "a": [1, 0]
+    },
+    {
+      "t": "mc",
+      "q": "Tìm tập giá trị của hàm số sau: $y=1+\\sqrt{\\cos(2x-1)}$[cite: 14]",
+      "o": [
+        "$T=[1;2]$",
+        "$T=[0;2]$",
+        "$T=[-1;1]$",
+        "$T=[0;1]$"
+      ],
+      "a": 0
+    },
+    {
+      "t": "tf",
+      "q": "Trong không gian $Oxyz$ cho 3 điểm $A(2;1;1)$, $B(-1;3;-1)$, $C(5;-3;4)$. Mỗi phát biểu sau là đúng hay sai?[cite: 15]",
+      "s": [
+        "Tích vô hướng của hai vecto $\\overrightarrow{AB}\\cdot\\overrightarrow{AC}=-23$",
+        "Góc $\\widehat{BAC}$ là góc nhọn.",
+        "Côsin của góc giữa hai vectơ $\\overrightarrow{AB}$ và $\\overrightarrow{AC}$ bằng $\\frac{-23}{\\sqrt{638}}$.",
+        "Lấy điểm $M\\in(Oxy)$ sao cho $MA^{2}+MB^{2}+MC^{2}$ đạt giá trị nhỏ nhất, khi đó tọa độ điểm $M\\left(2;-\\frac{1}{3};0\\right)$"
+      ],
+      "a": [1, 0, 0, 0]
+    },
+    {
+      "t": "mc",
+      "q": "Cho hàm số $y=f(x)$ đồ thị hàm số như hình vẽ. Hàm số đồng biến trên khoảng nào sau đây?[cite: 16]",
+      "fig": "img/cau15_322252.png",
+      "o": [
+        "$(-\\infty;-1)$",
+        "$(-1;+\\infty)$",
+        "$(-3;0)$",
+        "$(-2;-1)$"
+      ],
+      "a": 1
+    },
+    {
+      "t": "mc",
+      "q": "Tập nghiệm của bất phương trình $4^{x^{2}-2}<16$ là[cite: 17]",
+      "o": [
+        "$(2;+\\infty)$",
+        "$(-\\infty;2)$",
+        "$(-2;2)$",
+        "$(0;2)$"
+      ],
+      "a": 2
+    },
+    {
+      "t": "fill",
+      "q": "Cho tứ diện đều $ABCD$ có cạnh bằng $4$. Gọi $M$ là điểm thuộc đoạn $CD$ sao cho $\\overrightarrow{MC}=-2\\overrightarrow{MD}$. Khi đó, $\\overrightarrow{AM}=\\frac{\\overrightarrow{AC}+k\\cdot\\overrightarrow{AD}}{3}$ với $k=$ [[0]]. Tích vô hướng $\\overrightarrow{AB}\\cdot\\overrightarrow{AM}$ bằng [[1]].[cite: 18]",
+      "a": [2, 8]
+    },
+    {
+      "t": "tf",
+      "q": "Cho hai cốc đựng nước: cốc thứ nhất có dạng hình nón cụt và cốc thứ hai có dạng hình chóp cụt đều (minh họa như hình vẽ). Biết cốc thứ nhất nội tiếp trong cốc thứ hai (tức là cốc thứ nhất nằm trong cốc thứ hai và các mặt của cốc thứ nhất tiếp xúc với các mặt của cốc thứ hai) và chiều cao cốc thứ nhất gấp đôi chiều cao cốc thứ hai, bán kính miệng cốc thứ nhất gấp 1,5 lần đáy của nó. (Bỏ qua độ dày của cốc). Mỗi phát biểu sau đây là đúng hay sai?[cite: 19]",
+      "fig": "img/cau18_251339.png",
+      "s": [
+        "Cốc thứ nhất chứa được lượng nước gần gấp đôi cốc thứ hai.",
+        "Khi tráng men xung quanh mặt ngoài của cốc (không kể mặt đáy), chi phí tráng men của cốc thứ hai nhiều hơn cốc thứ nhất."
+      ],
+      "a": [0, 0]
+    },
+    {
+      "t": "mc",
+      "q": "Cho hình chóp $S.ABCD$. Gọi $M, N, P$ lần lượt là trung điểm của $AB, AD$ và $SC$. Thiết diện của hình chóp với mặt phẳng $(MNP)$ có bao nhiêu cạnh?[cite: 20]",
+      "o": [
+        "$3$",
+        "$4$",
+        "$5$",
+        "$6$"
+      ],
+      "a": 2
+    },
+    {
+      "t": "mc",
+      "q": "Tập hợp các giá trị của tham số $m$ để hàm số $y=x^{3}+6x^{2}+3(m+2)x-m-1$ đạt cực trị tại các điểm $x_{1}$ và $x_{2}$ thỏa mãn $x_{1}<-1<x_{2}$ là[cite: 21]",
+      "o": [
+        "$(-\\infty;1)$",
+        "$(1;+\\infty)$",
+        "$(1;2)$",
+        "$(-\\infty;2)$"
+      ],
+      "a": 0
+    },
+    {
+      "t": "fill",
+      "q": "Một hình lập phương có 6 mặt được sơn màu. Chia khối lập phương thành $10\\times 10\\times 10=1000$ khối lập phương nhỏ như nhau. Chọn ngẫu nhiên một khối lập phương nhỏ. Xác suất để chọn được khối lập phương nhỏ có 2 mặt được sơn màu là [[0]]. Xác suất để chọn được khối lập phương nhỏ không có mặt nào được sơn màu là [[1]].[cite: 22]",
+      "a": [0.096, 0.512]
+    },
+    {
+      "t": "tf",
+      "q": "Anh Hải đang đi tìm việc thì nhận được hai lời đề nghị như sau:\\n+ Công ty X đề nghị mức lương $180$ triệu đồng cho năm đầu tiên và tăng $5\\%$ mỗi năm sau đó.\\n+ Công ty Y đề nghị mức lương $170$ triệu đồng cho năm đầu tiên và tăng $6\\%$ mỗi năm sau đó.\\nCác mệnh đề sau là đúng hay sai?[cite: 23]",
+      "s": [
+        "Mức lương qua mỗi năm theo hai lời đề nghị đều là cấp số nhân với công bội là 5% và 6% tương ứng với công ty X và Y.",
+        "Nếu làm việc cho công ty X thì năm thứ 5 làm việc tại đây anh Hải sẽ nhận được tiền lương của cả năm là 219 triệu đồng (làm tròn đến hàng đơn vị).",
+        "Nếu làm việc cho công ty Y trong 3 năm thì tổng số tiền lương anh Hải nhận được là 541 212 000 đồng.",
+        "Nếu muốn gắn bó 10 năm thì anh Hải nên lựa chọn công ty Y để làm việc nhằm có tổng lương cao hơn."
+      ],
+      "a": [1, 1, 1, 0]
+    },
+    {
+      "t": "fill",
+      "q": "Bác Cường là một người chuyên vệ sinh cửa sổ. Số tiền khách hàng phải trả cho bác mỗi lần lau cửa sổ được tính bằng công thức sau: $f(n)=200+40n$ (nghìn đồng) trong đó $n$ là số cửa sổ cần vệ sinh. Nếu khách hàng thuê bác Cường vệ sinh $7$ cửa sổ thì số tiền khách hàng phải trả là [[0]] nghìn đồng.[cite: 24]",
+      "a": [480]
+    },
+    {
+      "t": "fill",
+      "q": "Trong không gian $Oxyz$, cho mặt phẳng $(P): 2x-y+2z+5=0$ và các điểm $A(0;0;4)$, $B(2;0;0)$. Mặt cầu $(S)$ có bán kính nhỏ nhất đi qua ba điểm $A; B; O$ và tiếp xúc với mặt phẳng $(P)$ có tâm là ([[0]]; [[1]]; [[2]]) và bán kính là [[3]].[cite: 25]",
+      "a": [1, 2, 2, 3]
+    },
+    {
+      "t": "fill",
+      "q": "Trong không gian với hệ trục tọa độ $Oxyz$ cho trước (mỗi đơn vị đo ứng với 100 kilomet thực tế), một radar được đặt ở vị trí gốc tọa độ. Biết rằng radar có phạm vi hoạt động là $100\\text{ km}$. Một máy bay chuyển động thẳng đều có vị trí được xác định theo thời gian $t$ (đơn vị giờ) cho bởi phương trình $\\begin{cases}x=1-4t\\\\y=1-2t\\\\z=-2+4t\\end{cases}$. Quãng đường máy bay bay được trong 1 giờ là [[0]] km. Quãng đường máy bay bay trong thời gian bị radar phát hiện là [[1]] km (kết quả làm tròn đến hàng đơn vị).[cite: 26]",
+      "a": [600, 133],
+      "e": 0.5
+    },
+    {
+      "t": "mc",
+      "q": "Có ba chiếc hộp. Hộp A chứa 3 bi đỏ, 5 bi trắng. Hộp B chứa 2 bi đỏ, 2 bi vàng. Hộp C chứa 2 bi đỏ, 3 bi xanh. Lấy ngẫu nhiên một hộp, rồi lấy 1 bi từ hộp đó. Xác suất để lấy được bi đỏ là[cite: 27]",
+      "o": [
+        "$\\frac{1}{8}$",
+        "$\\frac{1}{6}$",
+        "$\\frac{2}{15}$",
+        "$\\frac{17}{40}$"
+      ],
+      "a": 3
+    },
+    {
+      "t": "tf",
+      "q": "Cho hàm số $f(x)=\\frac{x^{2}+2x-1}{x-1}$. Mỗi phát biểu dưới đây là đúng hay sai?[cite: 28]",
+      "s": [
+        "Hàm số đồng biến trên khoảng $(-\\infty;0)$",
+        "Đường thẳng $y=x+3$ là tiệm cận xiên của đồ thị hàm số đã cho.",
+        "Tâm đối xứng của đồ thị hàm số đã cho là $I(1;3)$",
+        "Giá trị lớn nhất của hàm số trên đoạn $[-3;-1]$ là $1$"
+      ],
+      "a": [0, 1, 0, 1]
+    },
+    {
+      "t": "tf",
+      "q": "Cho hàm số $f(x)=\\frac{x}{x-1}+\\frac{x+1}{x}-e^{x}$. Mỗi phát biểu sau là đúng hay sai?[cite: 29]",
+      "s": [
+        "Đồ thị hàm số $y=f(x)$ không có điểm cực trị.",
+        "Đồ thị hàm số $y=f(x)$ nhận trục hoành làm tiệm cận ngang.",
+        "Đồ thị hàm số $y=f(x)$ cắt trục hoành tại đúng hai điểm."
+      ],
+      "a": [1, 0, 0]
+    },
+    {
+      "t": "fill",
+      "q": "Tích các nghiệm của phương trình $6^{x}-2^{x+1}-3^{x+5}+486=0$ bằng [[0]].[cite: 30]",
+      "a": [5]
+    },
+    {
+      "t": "mc",
+      "q": "Trong không gian $Oxyz$, cho hai điểm $A(2;-2;1)$, $B(0;1;2)$. Tọa độ điểm $M$ thuộc mặt phẳng $(Oxy)$ sao cho ba điểm $A, B, M$ thẳng hàng là[cite: 31]",
+      "o": [
+        "$M(4;-5;0)$",
+        "$M(2;-3;0)$",
+        "$M(0;0;1)$",
+        "$M(4;5;0)$"
+      ],
+      "a": 0
+    },
+    {
+      "t": "mc",
+      "q": "Trong không gian $Oxyz$ cho các điểm $A(5;1;5)$; $B(4;3;2)$; $C(-3;-2;1)$. Điểm $I(a;b;c)$ là tâm đường tròn ngoại tiếp tam giác $ABC$. Tính $a+2b+c$?[cite: 32]",
+      "o": [
+        "$1$",
+        "$3$",
+        "$6$",
+        "$-9$"
+      ],
+      "a": 1
+    },
+    {
+      "t": "tf",
+      "q": "Một chiếc hộp chứa 9 quả cầu gồm 4 quả cầu màu xanh, 3 quả cầu màu đỏ và 2 quả cầu màu vàng. Lấy ngẫu nhiên 3 quả cầu từ hộp đó. Mỗi phát biểu sau đây là đúng hay sai?[cite: 33]",
+      "s": [
+        "Số cách lấy ngẫu nhiên 3 quả cầu từ hộp đó là 84.",
+        "Số cách lấy được 3 quả cầu không có quả màu đỏ là 20.",
+        "Xác suất lấy được 3 quả cầu không có quả màu đỏ bằng $\\frac{1}{84}$.",
+        "Xác suất lấy được 3 quả cầu có ít nhất 1 quả màu đỏ bằng $\\frac{83}{84}$."
+      ],
+      "a": [1, 1, 0, 0]
+    },
+    {
+      "t": "mc",
+      "q": "Trong không gian $Oxyz$ cho tam giác $ABC$ với $A(1;-1;0)$, $B(3;3;2)$, $C(5;1;-2)$. Các điểm $S$ nào sau đây là điểm thỏa mãn $S.ABC$ là hình chóp tam giác đều có thể tích bằng $6$?[cite: 34]",
+      "o": [
+        "$S(4;0;-1)$",
+        "$S(2;2;-1)$",
+        "$S(2;2;-1)$",
+        "$S(4;0;1)$"
+      ],
+      "a": 3
+    },
+    {
+      "t": "tf",
+      "q": "Cho hàm số $y=f(x)=\\frac{a_{1}x^{2}+b_{1}x+c_{1}}{a_{2}x+b_{2}}$ có đồ thị như hình sau:\\nMỗi phát biểu dưới đây là đúng hay sai?[cite: 35]",
+      "fig": "img/cau34_324226.png",
+      "s": [
+        "Hàm số có điểm cực trị.",
+        "Đồ thị hàm số cắt trục tung.",
+        "Hàm số nghịch biến trên khoảng $(0;+\\infty)$.",
+        "Tiệm cận xiên của đồ thị là $y=-x-\\frac{15}{4}$."
+      ],
+      "a": [1, 0, 0, 0]
+    },
+    {
+      "t": "mc",
+      "q": "Một cái bồn chứa nước gồm hai nửa hình cầu và một hình trụ (như hình vẽ). Đường sinh của hình trụ bằng hai lần đường kính của hình cầu. Biết thể tích của bồn chứa nước là $\\frac{128\\pi}{3}$ $(m^{3})$. Diện tích xung quanh của cái bồn chứa nước bằng bao nhiêu?[cite: 36]",
+      "fig": "img/cau35_191327.png",
+      "o": [
+        "$50\\pi (m^{2})$",
+        "$64\\pi (m^{2})$",
+        "$40\\pi (m^{2})$",
+        "$48\\pi (m^{2})$"
+      ],
+      "a": 3
+    },
+    {
+      "t": "mc",
+      "q": "Số nghiệm nguyên của bất phương trình $\\log_{0,5}(2x+6)\\ge -5$ là[cite: 37]",
+      "o": [
+        "$16$",
+        "$13$",
+        "$15$",
+        "$8$"
+      ],
+      "a": 0
+    },
+    {
+      "t": "mc",
+      "q": "Cho cấp số nhân $(u_{n})$ với $u_{1}=4$ và công bội $q=\\frac{1}{2}$. Giá trị của $u_{2}$ bằng[cite: 38]",
+      "o": [
+        "$\\frac{1}{4}$",
+        "$1$",
+        "$2$",
+        "$\\frac{1}{2}$"
+      ],
+      "a": 2
+    },
+    {
+      "t": "mc",
+      "q": "Tiệm cận xiên của đồ thị hàm số $y=x-1-\\frac{2}{x+1}$ là đường thẳng có phương trình[cite: 39]",
+      "o": [
+        "$y=x-1$",
+        "$y=-x-1$",
+        "$y=x+1$",
+        "$y=-x+1$"
+      ],
+      "a": 0
+    },
+    {
+      "t": "tf",
+      "q": "Cho mặt phẳng $(P): 2x-2y+z+1=0$ và hai điểm $A(0;2;1)$, $B\\left(\\frac{7}{9};\\frac{2}{9};\\frac{17}{9}\\right)$. Mỗi phát biểu sau là đúng hay sai?[cite: 40]",
+      "s": [
+        "Hai điểm $A$ và $B$ nằm cùng phía nhau đối với mặt phẳng $(P)$",
+        "Điểm $M\\in(P)$ sao cho $|MA-MB|$ đạt giá trị lớn nhất là $(1;2;1)$",
+        "Điểm $N\\in(P)$ sao cho $NA+NB$ đạt giá trị nhỏ nhất là $(-2;-1;1)$"
+      ],
+      "a": [0, 0, 0]
+    },
+    {
+      "t": "fill",
+      "q": "Chọn ngẫu nhiên một số nguyên dương có 8 chữ số. Biết rằng xác suất để số đó gồm đúng 2 chữ số lẻ khác nhau và 3 chữ số chẵn khác nhau, trong đó mỗi chữ số chẵn xuất hiện đúng hai lần là $\\frac{a}{b}$, trong đó $\\frac{a}{b}$ là phân số tối giản với $a, b$ là các số nguyên dương. Khi đó $a=$ [[0]] và $b=$ [[1]].[cite: 41]",
+      "a": [119, 25000]
+    }
+  ]
+}

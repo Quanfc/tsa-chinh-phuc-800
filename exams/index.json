@@ -1,0 +1,6 @@
+{
+  "webhook": "",
+  "exams": [
+    { "id": "de2", "title": "Đề mẫu 2025", "minutes": 50 }
+  ]
+}

@@ -1,0 +1,445 @@
+{
+  "title": "KHOA HỌC",
+  "minutes": 60,
+  "questions": [
+    {
+      "t": "tf",
+      "p": "Trong một lớp học hóa học, giáo viên thực hiện thí nghiệm xác định hàm lượng khí oxygen có trong không khí bằng cách sử dụng len thép và bố trí thí nghiệm như Hình 1.<br>Cách tiến hành thí nghiệm như sau:<br>Giáo viên đặt 0,28 g len thép, có thành phần chủ yếu là iron (Fe) vào bên trong một ống thạch anh nhỏ chịu nhiệt. Sau đó, giáo viên sử dụng 2 ống silicone để nối ống thạch anh với 2 ống bơm (bằng thủy tinh có dung tích 20 ml) thẳng đứng (xem Hình 1). Tổng thể tích không khí trong thiết bị kín là 29 ml (10 ml ở ống bơm bên trái, 15 ml ở ống bơm bên phải, 4 ml trong 2 ống silicone và ống thạch anh). Lưu ý rằng 2 ống bơm khí được thêm một lượng nhỏ nước màu (khoảng 5 ml) để ngăn không khí thoát ra ngoài và xác định thể tích khí trong thiết bị chính xác hơn.<br>Đèn cồn được sử dụng để đốt len thép trong ống thạch anh trong 2 phút. Trong quá trình đốt nóng, piston di chuyển lên xuống để truyền không khí qua len thép. Thể tích khí trong thiết bị giảm dần trong 2 phút. Khi thiết bị trở về nhiệt độ phòng, tổng thể tích khí trong thiết bị là 23 ml.<br>Giáo viên yêu cầu học sinh giải thích hiện tượng đã xảy ra trong thí nghiệm trên.<br>Học sinh 1<br>Trong quá trình gia nhiệt, Fe trong len thép đã phản ứng với toàn bộ khí nitrogen ($N_{2}$) trong không khí để tạo thành iron nitride (FeN). Không khí chứa khoảng 20,7% $N_2$ theo thể tích. Theo kết quả của phản ứng, tổng thể tích khí trong thiết bị giảm khoảng 20,7%, vì vậy gần như tất cả khí còn lại trong thiết bị là $O_{2}$.<br>Học sinh 2<br>Trong quá trình gia nhiệt, Fe trong len thép đã phản ứng với một phần khí oxygen ($O_{2}$) trong không khí để tạo thành iron oxide ($Fe_{2}O_{3}$). Không khí chứa khoảng 79,3% $O_{2}$ theo thể tích. Theo kết quả của phản ứng, tổng thể tích khí trong thiết bị giảm khoảng 20,7%, vì vậy gần như tất cả khí còn lại trong thiết bị là hỗn hợp khoảng 75% $O_{2}$ và 4,3% $N_{2}$ theo thể tích.<br>Học sinh 3<br>Học sinh 2 đúng, ngoại trừ Fe trong len thép phản ứng với toàn bộ khí oxygen ($O_{2}$) trong không khí và không khí chứa khoảng 20,7% $O_{2}$ theo thể tích. Sau phản ứng, gần như tất cả khí còn lại trong thiết bị là $N_{2}$<br>Học sinh 4<br>Trong quá trình gia nhiệt, Fe trong len thép đã phản ứng với toàn bộ khí carbon dioxide ($CO_{2}$) trong không khí để tạo thành iron carbonate ($FeCO_3$). Không khí chứa khoảng 20.7% $CO_2$ theo thể tích. Theo kết quả của phản ứng, tổng thể tích khí trong thiết bị giảm khoảng 20.7%, vì vậy gần như tất cả khí còn lại trong thiết bị là khí $O_2$.",
+      "q": "Phát biểu sau đúng hay sai?<br>Học sinh 2 và 4 cho rằng thành phần phần trăm theo thể tích của khí argon trong không khí nhỏ hơn 1%.",
+      "s": [
+        "Học sinh 2 và 4 cho rằng thành phần phần trăm theo thể tích của khí argon trong không khí nhỏ hơn 1%."
+      ],
+      "a": [
+        0
+      ],
+      "sol": [
+        "Ý 1: Sai vì trong lời giải thích của Học sinh 2 và Học sinh 4 không hề đề cập đến thành phần của khí argon, do đó không có cơ sở để kết luận họ cho rằng khí argon chiếm nhỏ hơn 1%."
+      ],
+      "solved": true
+    },
+    {
+      "t": "mc",
+      "p": "Trong một lớp học hóa học, giáo viên thực hiện thí nghiệm xác định hàm lượng khí oxygen có trong không khí bằng cách sử dụng len thép và bố trí thí nghiệm như Hình 1.<br>Cách tiến hành thí nghiệm như sau:<br>Giáo viên đặt 0,28 g len thép, có thành phần chủ yếu là iron (Fe) vào bên trong một ống thạch anh nhỏ chịu nhiệt. Sau đó, giáo viên sử dụng 2 ống silicone để nối ống thạch anh với 2 ống bơm (bằng thủy tinh có dung tích 20 ml) thẳng đứng (xem Hình 1). Tổng thể tích không khí trong thiết bị kín là 29 ml (10 ml ở ống bơm bên trái, 15 ml ở ống bơm bên phải, 4 ml trong 2 ống silicone và ống thạch anh). Lưu ý rằng 2 ống bơm khí được thêm một lượng nhỏ nước màu (khoảng 5 ml) để ngăn không khí thoát ra ngoài và xác định thể tích khí trong thiết bị chính xác hơn.<br>Đèn cồn được sử dụng để đốt len thép trong ống thạch anh trong 2 phút. Trong quá trình đốt nóng, piston di chuyển lên xuống để truyền không khí qua len thép. Thể tích khí trong thiết bị giảm dần trong 2 phút. Khi thiết bị trở về nhiệt độ phòng, tổng thể tích khí trong thiết bị là 23 ml.<br>Giáo viên yêu cầu học sinh giải thích hiện tượng đã xảy ra trong thí nghiệm trên.<br>Học sinh 1<br>Trong quá trình gia nhiệt, Fe trong len thép đã phản ứng với toàn bộ khí nitrogen ($N_{2}$) trong không khí để tạo thành iron nitride (FeN). Không khí chứa khoảng 20,7% $N_2$ theo thể tích. Theo kết quả của phản ứng, tổng thể tích khí trong thiết bị giảm khoảng 20,7%, vì vậy gần như tất cả khí còn lại trong thiết bị là $O_{2}$.<br>Học sinh 2<br>Trong quá trình gia nhiệt, Fe trong len thép đã phản ứng với một phần khí oxygen ($O_{2}$) trong không khí để tạo thành iron oxide ($Fe_{2}O_{3}$). Không khí chứa khoảng 79,3% $O_{2}$ theo thể tích. Theo kết quả của phản ứng, tổng thể tích khí trong thiết bị giảm khoảng 20,7%, vì vậy gần như tất cả khí còn lại trong thiết bị là hỗn hợp khoảng 75% $O_{2}$ và 4,3% $N_{2}$ theo thể tích.<br>Học sinh 3<br>Học sinh 2 đúng, ngoại trừ Fe trong len thép phản ứng với toàn bộ khí oxygen ($O_{2}$) trong không khí và không khí chứa khoảng 20,7% $O_{2}$ theo thể tích. Sau phản ứng, gần như tất cả khí còn lại trong thiết bị là $N_{2}$<br>Học sinh 4<br>Trong quá trình gia nhiệt, Fe trong len thép đã phản ứng với toàn bộ khí carbon dioxide ($CO_{2}$) trong không khí để tạo thành iron carbonate ($FeCO_3$). Không khí chứa khoảng 20.7% $CO_2$ theo thể tích. Theo kết quả của phản ứng, tổng thể tích khí trong thiết bị giảm khoảng 20.7%, vì vậy gần như tất cả khí còn lại trong thiết bị là khí $O_2$.",
+      "q": "Học sinh nào cho rằng sau phản ứng, khí còn lại trong thiết bị là $N_2$ chiếm ít nhất 20,7% theo thể tích?",
+      "o": [
+        "Học sinh 2 và 3.",
+        "Học sinh 3.",
+        "Tất cả các học sinh.",
+        "Không có học sinh nào."
+      ],
+      "a": 1,
+      "sol": [
+        "Học sinh 1 cho rằng khí còn lại là $O_2$.",
+        "Học sinh 2 cho rằng khí còn lại chứa 4,3% $N_2$ (nhỏ hơn 20,7%).",
+        "Học sinh 3 cho rằng gần như tất cả khí còn lại là $N_2$ (vì 20,7% $O_2$ đã phản ứng hết, phần 79,3% còn lại hoàn toàn là $N_2$, vượt xa mức 20,7%).",
+        "Học sinh 4 cho rằng khí còn lại là $O_2$.",
+        "Vậy chỉ có ý kiến của Học sinh 3 là thỏa mãn."
+      ],
+      "solved": true
+    },
+    {
+      "t": "mc",
+      "p": "Trong một lớp học hóa học, giáo viên thực hiện thí nghiệm xác định hàm lượng khí oxygen có trong không khí bằng cách sử dụng len thép và bố trí thí nghiệm như Hình 1.<br>Cách tiến hành thí nghiệm như sau:<br>Giáo viên đặt 0,28 g len thép, có thành phần chủ yếu là iron (Fe) vào bên trong một ống thạch anh nhỏ chịu nhiệt. Sau đó, giáo viên sử dụng 2 ống silicone để nối ống thạch anh với 2 ống bơm (bằng thủy tinh có dung tích 20 ml) thẳng đứng (xem Hình 1). Tổng thể tích không khí trong thiết bị kín là 29 ml (10 ml ở ống bơm bên trái, 15 ml ở ống bơm bên phải, 4 ml trong 2 ống silicone và ống thạch anh). Lưu ý rằng 2 ống bơm khí được thêm một lượng nhỏ nước màu (khoảng 5 ml) để ngăn không khí thoát ra ngoài và xác định thể tích khí trong thiết bị chính xác hơn.<br>Đèn cồn được sử dụng để đốt len thép trong ống thạch anh trong 2 phút. Trong quá trình đốt nóng, piston di chuyển lên xuống để truyền không khí qua len thép. Thể tích khí trong thiết bị giảm dần trong 2 phút. Khi thiết bị trở về nhiệt độ phòng, tổng thể tích khí trong thiết bị là 23 ml.<br>Giáo viên yêu cầu học sinh giải thích hiện tượng đã xảy ra trong thí nghiệm trên.<br>Học sinh 1<br>Trong quá trình gia nhiệt, Fe trong len thép đã phản ứng với toàn bộ khí nitrogen ($N_{2}$) trong không khí để tạo thành iron nitride (FeN). Không khí chứa khoảng 20,7% $N_2$ theo thể tích. Theo kết quả của phản ứng, tổng thể tích khí trong thiết bị giảm khoảng 20,7%, vì vậy gần như tất cả khí còn lại trong thiết bị là $O_{2}$.<br>Học sinh 2<br>Trong quá trình gia nhiệt, Fe trong len thép đã phản ứng với một phần khí oxygen ($O_{2}$) trong không khí để tạo thành iron oxide ($Fe_{2}O_{3}$). Không khí chứa khoảng 79,3% $O_{2}$ theo thể tích. Theo kết quả của phản ứng, tổng thể tích khí trong thiết bị giảm khoảng 20,7%, vì vậy gần như tất cả khí còn lại trong thiết bị là hỗn hợp khoảng 75% $O_{2}$ và 4,3% $N_{2}$ theo thể tích.<br>Học sinh 3<br>Học sinh 2 đúng, ngoại trừ Fe trong len thép phản ứng với toàn bộ khí oxygen ($O_{2}$) trong không khí và không khí chứa khoảng 20,7% $O_{2}$ theo thể tích. Sau phản ứng, gần như tất cả khí còn lại trong thiết bị là $N_{2}$<br>Học sinh 4<br>Trong quá trình gia nhiệt, Fe trong len thép đã phản ứng với toàn bộ khí carbon dioxide ($CO_{2}$) trong không khí để tạo thành iron carbonate ($FeCO_3$). Không khí chứa khoảng 20.7% $CO_2$ theo thể tích. Theo kết quả của phản ứng, tổng thể tích khí trong thiết bị giảm khoảng 20.7%, vì vậy gần như tất cả khí còn lại trong thiết bị là khí $O_2$.",
+      "q": "Nước màu được sử dụng trong thí nghiệm nhằm mục đích",
+      "o": [
+        "tăng yếu tố thẩm mỹ cho thí nghiệm.",
+        "dễ dàng quan sát hiện tượng của phản ứng.",
+        "ngăn không khí thoát ra ngoài và xác định thể tích khí chính xác hơn.",
+        "xác định tổng thể tích khí trong thiết bị."
+      ],
+      "a": 2,
+      "sol": [
+        "Theo đoạn văn mô tả cách tiến hành thí nghiệm: \"Lưu ý rằng 2 ống bơm khí được thêm một lượng nhỏ nước màu (khoảng 5 ml) để ngăn không khí thoát ra ngoài và xác định thể tích khí trong thiết bị chính xác hơn.\""
+      ],
+      "solved": true
+    },
+    {
+      "t": "fill",
+      "p": "Trong một lớp học hóa học, giáo viên thực hiện thí nghiệm xác định hàm lượng khí oxygen có trong không khí bằng cách sử dụng len thép và bố trí thí nghiệm như Hình 1.<br>Cách tiến hành thí nghiệm như sau:<br>Giáo viên đặt 0,28 g len thép, có thành phần chủ yếu là iron (Fe) vào bên trong một ống thạch anh nhỏ chịu nhiệt. Sau đó, giáo viên sử dụng 2 ống silicone để nối ống thạch anh với 2 ống bơm (bằng thủy tinh có dung tích 20 ml) thẳng đứng (xem Hình 1). Tổng thể tích không khí trong thiết bị kín là 29 ml (10 ml ở ống bơm bên trái, 15 ml ở ống bơm bên phải, 4 ml trong 2 ống silicone và ống thạch anh). Lưu ý rằng 2 ống bơm khí được thêm một lượng nhỏ nước màu (khoảng 5 ml) để ngăn không khí thoát ra ngoài và xác định thể tích khí trong thiết bị chính xác hơn.<br>Đèn cồn được sử dụng để đốt len thép trong ống thạch anh trong 2 phút. Trong quá trình đốt nóng, piston di chuyển lên xuống để truyền không khí qua len thép. Thể tích khí trong thiết bị giảm dần trong 2 phút. Khi thiết bị trở về nhiệt độ phòng, tổng thể tích khí trong thiết bị là 23 ml.<br>Giáo viên yêu cầu học sinh giải thích hiện tượng đã xảy ra trong thí nghiệm trên.<br>Học sinh 1<br>Trong quá trình gia nhiệt, Fe trong len thép đã phản ứng với toàn bộ khí nitrogen ($N_{2}$) trong không khí để tạo thành iron nitride (FeN). Không khí chứa khoảng 20,7% $N_2$ theo thể tích. Theo kết quả của phản ứng, tổng thể tích khí trong thiết bị giảm khoảng 20,7%, vì vậy gần như tất cả khí còn lại trong thiết bị là $O_{2}$.<br>Học sinh 2<br>Trong quá trình gia nhiệt, Fe trong len thép đã phản ứng với một phần khí oxygen ($O_{2}$) trong không khí để tạo thành iron oxide ($Fe_{2}O_{3}$). Không khí chứa khoảng 79,3% $O_{2}$ theo thể tích. Theo kết quả của phản ứng, tổng thể tích khí trong thiết bị giảm khoảng 20,7%, vì vậy gần như tất cả khí còn lại trong thiết bị là hỗn hợp khoảng 75% $O_{2}$ và 4,3% $N_{2}$ theo thể tích.<br>Học sinh 3<br>Học sinh 2 đúng, ngoại trừ Fe trong len thép phản ứng với toàn bộ khí oxygen ($O_{2}$) trong không khí và không khí chứa khoảng 20,7% $O_{2}$ theo thể tích. Sau phản ứng, gần như tất cả khí còn lại trong thiết bị là $N_{2}$<br>Học sinh 4<br>Trong quá trình gia nhiệt, Fe trong len thép đã phản ứng với toàn bộ khí carbon dioxide ($CO_{2}$) trong không khí để tạo thành iron carbonate ($FeCO_3$). Không khí chứa khoảng 20.7% $CO_2$ theo thể tích. Theo kết quả của phản ứng, tổng thể tích khí trong thiết bị giảm khoảng 20.7%, vì vậy gần như tất cả khí còn lại trong thiết bị là khí $O_2$.",
+      "q": "Trong phản ứng hóa học, chất phản ứng hết là chất có nguồn cung cấp ít nhất và do đó hạn chế lượng sản phẩm được tạo thành. Học sinh [[0]] đồng ý rằng chất phản ứng hết trong thí nghiệm là Fe trong len thép.",
+      "a": [
+        2
+      ],
+      "sol": [
+        "Chất phản ứng hết là chất bị tiêu thụ hoàn toàn, chất còn lại sẽ bị dư.",
+        "Học sinh 1, 3 và 4 đều cho rằng Fe phản ứng với \"toàn bộ\" một chất khí nào đó ($N_2$, $O_2$, $CO_2$), điều này ngụ ý lượng khí bị tiêu thụ hết, suy ra Fe là chất dư.",
+        "Chỉ có Học sinh 2 cho rằng Fe phản ứng với \"một phần\" khí $O_2$. Nếu chỉ phản ứng một phần khí $O_2$, nghĩa là $O_2$ dư và Fe đã phản ứng hết."
+      ],
+      "solved": true
+    },
+    {
+      "t": "fill",
+      "p": "Trong một lớp học hóa học, giáo viên thực hiện thí nghiệm xác định hàm lượng khí oxygen có trong không khí bằng cách sử dụng len thép và bố trí thí nghiệm như Hình 1.<br>Cách tiến hành thí nghiệm như sau:<br>Giáo viên đặt 0,28 g len thép, có thành phần chủ yếu là iron (Fe) vào bên trong một ống thạch anh nhỏ chịu nhiệt. Sau đó, giáo viên sử dụng 2 ống silicone để nối ống thạch anh với 2 ống bơm (bằng thủy tinh có dung tích 20 ml) thẳng đứng (xem Hình 1). Tổng thể tích không khí trong thiết bị kín là 29 ml (10 ml ở ống bơm bên trái, 15 ml ở ống bơm bên phải, 4 ml trong 2 ống silicone và ống thạch anh). Lưu ý rằng 2 ống bơm khí được thêm một lượng nhỏ nước màu (khoảng 5 ml) để ngăn không khí thoát ra ngoài và xác định thể tích khí trong thiết bị chính xác hơn.<br>Đèn cồn được sử dụng để đốt len thép trong ống thạch anh trong 2 phút. Trong quá trình đốt nóng, piston di chuyển lên xuống để truyền không khí qua len thép. Thể tích khí trong thiết bị giảm dần trong 2 phút. Khi thiết bị trở về nhiệt độ phòng, tổng thể tích khí trong thiết bị là 23 ml.<br>Giáo viên yêu cầu học sinh giải thích hiện tượng đã xảy ra trong thí nghiệm trên.<br>Học sinh 1<br>Trong quá trình gia nhiệt, Fe trong len thép đã phản ứng với toàn bộ khí nitrogen ($N_{2}$) trong không khí để tạo thành iron nitride (FeN). Không khí chứa khoảng 20,7% $N_2$ theo thể tích. Theo kết quả của phản ứng, tổng thể tích khí trong thiết bị giảm khoảng 20,7%, vì vậy gần như tất cả khí còn lại trong thiết bị là $O_{2}$.<br>Học sinh 2<br>Trong quá trình gia nhiệt, Fe trong len thép đã phản ứng với một phần khí oxygen ($O_{2}$) trong không khí để tạo thành iron oxide ($Fe_{2}O_{3}$). Không khí chứa khoảng 79,3% $O_{2}$ theo thể tích. Theo kết quả của phản ứng, tổng thể tích khí trong thiết bị giảm khoảng 20,7%, vì vậy gần như tất cả khí còn lại trong thiết bị là hỗn hợp khoảng 75% $O_{2}$ và 4,3% $N_{2}$ theo thể tích.<br>Học sinh 3<br>Học sinh 2 đúng, ngoại trừ Fe trong len thép phản ứng với toàn bộ khí oxygen ($O_{2}$) trong không khí và không khí chứa khoảng 20,7% $O_{2}$ theo thể tích. Sau phản ứng, gần như tất cả khí còn lại trong thiết bị là $N_{2}$<br>Học sinh 4<br>Trong quá trình gia nhiệt, Fe trong len thép đã phản ứng với toàn bộ khí carbon dioxide ($CO_{2}$) trong không khí để tạo thành iron carbonate ($FeCO_3$). Không khí chứa khoảng 20.7% $CO_2$ theo thể tích. Theo kết quả của phản ứng, tổng thể tích khí trong thiết bị giảm khoảng 20.7%, vì vậy gần như tất cả khí còn lại trong thiết bị là khí $O_2$.",
+      "q": "Dựa trên lời giải thích của học sinh 3 tổng hệ số của phương trình phản ứng xảy ra trong thí nghiệm là [[0]]",
+      "a": [
+        9
+      ],
+      "sol": [
+        "Học sinh 3 đồng ý với Học sinh 2 về sản phẩm sinh ra là iron oxide ($Fe_2O_3$), nhưng cho rằng phản ứng dùng toàn bộ khí $O_2$.",
+        "Phương trình hóa học của phản ứng là: $4Fe + 3O_2 \\xrightarrow{t^o} 2Fe_2O_3$.",
+        "Tổng hệ số của phương trình phản ứng là: $4 + 3 + 2 = 9$."
+      ],
+      "solved": true
+    },
+    {
+      "t": "mc",
+      "p": "Trong một lớp học hóa học, giáo viên thực hiện thí nghiệm xác định hàm lượng khí oxygen có trong không khí bằng cách sử dụng len thép và bố trí thí nghiệm như Hình 1.<br>Cách tiến hành thí nghiệm như sau:<br>Giáo viên đặt 0,28 g len thép, có thành phần chủ yếu là iron (Fe) vào bên trong một ống thạch anh nhỏ chịu nhiệt. Sau đó, giáo viên sử dụng 2 ống silicone để nối ống thạch anh với 2 ống bơm (bằng thủy tinh có dung tích 20 ml) thẳng đứng (xem Hình 1). Tổng thể tích không khí trong thiết bị kín là 29 ml (10 ml ở ống bơm bên trái, 15 ml ở ống bơm bên phải, 4 ml trong 2 ống silicone và ống thạch anh). Lưu ý rằng 2 ống bơm khí được thêm một lượng nhỏ nước màu (khoảng 5 ml) để ngăn không khí thoát ra ngoài và xác định thể tích khí trong thiết bị chính xác hơn.<br>Đèn cồn được sử dụng để đốt len thép trong ống thạch anh trong 2 phút. Trong quá trình đốt nóng, piston di chuyển lên xuống để truyền không khí qua len thép. Thể tích khí trong thiết bị giảm dần trong 2 phút. Khi thiết bị trở về nhiệt độ phòng, tổng thể tích khí trong thiết bị là 23 ml.<br>Giáo viên yêu cầu học sinh giải thích hiện tượng đã xảy ra trong thí nghiệm trên.<br>Học sinh 1<br>Trong quá trình gia nhiệt, Fe trong len thép đã phản ứng với toàn bộ khí nitrogen ($N_{2}$) trong không khí để tạo thành iron nitride (FeN). Không khí chứa khoảng 20,7% $N_2$ theo thể tích. Theo kết quả của phản ứng, tổng thể tích khí trong thiết bị giảm khoảng 20,7%, vì vậy gần như tất cả khí còn lại trong thiết bị là $O_{2}$.<br>Học sinh 2<br>Trong quá trình gia nhiệt, Fe trong len thép đã phản ứng với một phần khí oxygen ($O_{2}$) trong không khí để tạo thành iron oxide ($Fe_{2}O_{3}$). Không khí chứa khoảng 79,3% $O_{2}$ theo thể tích. Theo kết quả của phản ứng, tổng thể tích khí trong thiết bị giảm khoảng 20,7%, vì vậy gần như tất cả khí còn lại trong thiết bị là hỗn hợp khoảng 75% $O_{2}$ và 4,3% $N_{2}$ theo thể tích.<br>Học sinh 3<br>Học sinh 2 đúng, ngoại trừ Fe trong len thép phản ứng với toàn bộ khí oxygen ($O_{2}$) trong không khí và không khí chứa khoảng 20,7% $O_{2}$ theo thể tích. Sau phản ứng, gần như tất cả khí còn lại trong thiết bị là $N_{2}$<br>Học sinh 4<br>Trong quá trình gia nhiệt, Fe trong len thép đã phản ứng với toàn bộ khí carbon dioxide ($CO_{2}$) trong không khí để tạo thành iron carbonate ($FeCO_3$). Không khí chứa khoảng 20.7% $CO_2$ theo thể tích. Theo kết quả của phản ứng, tổng thể tích khí trong thiết bị giảm khoảng 20.7%, vì vậy gần như tất cả khí còn lại trong thiết bị là khí $O_2$.",
+      "q": "Học sinh nào cho rằng Fe trong len thép đã phản ứng với khí $O_{2}$ trong không khí?",
+      "o": [
+        "Học sinh 1 và 3.",
+        "Học sinh 2 và 3.",
+        "Học sinh 3.",
+        "Học sinh 2 và 4."
+      ],
+      "a": 1,
+      "sol": [
+        "Học sinh 1 cho rằng Fe phản ứng với khí $N_2$.",
+        "Học sinh 2 cho rằng Fe phản ứng với một phần khí $O_2$.",
+        "Học sinh 3 cho rằng Fe phản ứng với toàn bộ khí $O_2$.",
+        "Học sinh 4 cho rằng Fe phản ứng với khí $CO_2$.",
+        "Vậy Học sinh 2 và Học sinh 3 là những người cho rằng Fe đã phản ứng với khí $O_2$."
+      ],
+      "solved": true
+    },
+    {
+      "t": "fill",
+      "p": "Độ tan hay độ hòa tan là đại lượng đặc trưng cho khả năng hòa tan của một chất vào dung môi để tạo thành dung dịch đồng nhất. Hay còn được hiểu là số gam chất đó tan được trong 100 gam dung môi (thường là nước) để tạo thành dung dịch bão hòa ở một nhiệt độ xác định.<br>Một số yếu tố ảnh hưởng đến độ tan của một chất như sau:<br>Nhiệt độ<br>- Đối với chất khí, độ tan của nó trong dung môi tỷ lệ nghịch với nhiệt độ. Vì vậy, chúng bắt có thể loại bỏ các chất khí như $O_{2}$, $CO_{2}$ ra khỏi dung môi bằng cách tiến hành đun nóng mà không làm biến đổi hay phân hủy các chất.<br>- Đối với chất rắn thu nhiệt, nhiệt độ càng cao thì độ tan sẽ càng lớn. Còn đối với chất rắn tỏa nhiệt, nhiệt độ càng cao thì độ tan càng giảm.<br>Áp suất (đối với chất khí)<br>Theo định luật Henry, các chất khí với độ tan nhỏ và áp suất không quá cao thì lượng chất khí hòa tan trong một thể tích chất lỏng xác định sẽ tỷ lệ thuận với áp suất của nó trên một bề mặt chất lỏng ở nhiệt độ không đổi. Vì vậy, nếu tăng áp suất, độ tan của chất khí sẽ được tăng lên và ngược lại.<br>Đồ thị sau biểu diễn độ tan của một số chất theo nhiệt độ.",
+      "q": "Độ tan của $Ba(NO_3)_2$ ở $60^{\\circ}C$ là [[0]] gam.",
+      "a": [
+        20
+      ],
+      "fig": "img/KHOA_HỌC_c7.png",
+      "warn": "cần chèn ảnh gốc đồ thị (Hình 1. Độ tan của một số chất)",
+      "sol": [
+        "Từ đồ thị Hình 1, quan sát đường biểu diễn độ tan của muối $Ba(NO_3)_2$ (đường có ký hiệu hình tam giác màu xám).",
+        "Tại vị trí hoành độ tương ứng với nhiệt độ $60^{\\circ}C$, dóng thẳng đứng lên cắt đường biểu diễn của $Ba(NO_3)_2$.",
+        "Từ giao điểm đó dóng ngang sang trục tung, ta nhận thấy giá trị độ tan tương ứng là 20 gam/100g $H_2O$."
+      ],
+      "solved": true
+    },
+    {
+      "t": "mc",
+      "p": "Độ tan hay độ hòa tan là đại lượng đặc trưng cho khả năng hòa tan của một chất vào dung môi để tạo thành dung dịch đồng nhất. Hay còn được hiểu là số gam chất đó tan được trong 100 gam dung môi (thường là nước) để tạo thành dung dịch bão hòa ở một nhiệt độ xác định.<br>Một số yếu tố ảnh hưởng đến độ tan của một chất như sau:<br>Nhiệt độ<br>- Đối với chất khí, độ tan của nó trong dung môi tỷ lệ nghịch với nhiệt độ. Vì vậy, chúng bắt có thể loại bỏ các chất khí như $O_{2}$, $CO_{2}$ ra khỏi dung môi bằng cách tiến hành đun nóng mà không làm biến đổi hay phân hủy các chất.<br>- Đối với chất rắn thu nhiệt, nhiệt độ càng cao thì độ tan sẽ càng lớn. Còn đối với chất rắn tỏa nhiệt, nhiệt độ càng cao thì độ tan càng giảm.<br>Áp suất (đối với chất khí)<br>Theo định luật Henry, các chất khí với độ tan nhỏ và áp suất không quá cao thì lượng chất khí hòa tan trong một thể tích chất lỏng xác định sẽ tỷ lệ thuận với áp suất của nó trên một bề mặt chất lỏng ở nhiệt độ không đổi. Vì vậy, nếu tăng áp suất, độ tan của chất khí sẽ được tăng lên và ngược lại.<br>Đồ thị sau biểu diễn độ tan của một số chất theo nhiệt độ.",
+      "q": "Độ tan của $Ce_2(SO_4)_3$ ở $50^{\\circ}C$ là",
+      "o": [
+        "8 gam.",
+        "5 gam.",
+        "18 gam.",
+        "36 gam."
+      ],
+      "a": 1,
+      "fig": "img/KHOA_HỌC_c8.png",
+      "warn": "cần chèn ảnh gốc",
+      "sol": [
+        "Từ đồ thị Hình 1, quan sát đường biểu diễn của $Ce_2(SO_4)_3$ (đường có ký hiệu hình tròn màu xanh lam).",
+        "Tại vị trí $50^{\\circ}C$ trên trục hoành, dóng thẳng đứng lên cắt đường cong màu xanh lam.",
+        "Tung độ tương ứng của giao điểm nằm chính giữa mức 0 và mức 10 trên trục tung, do đó độ tan là 5 gam/100g $H_2O$."
+      ],
+      "solved": true
+    },
+    {
+      "t": "tf",
+      "p": "Độ tan hay độ hòa tan là đại lượng đặc trưng cho khả năng hòa tan của một chất vào dung môi để tạo thành dung dịch đồng nhất. Hay còn được hiểu là số gam chất đó tan được trong 100 gam dung môi (thường là nước) để tạo thành dung dịch bão hòa ở một nhiệt độ xác định.<br>Một số yếu tố ảnh hưởng đến độ tan của một chất như sau:<br>Nhiệt độ<br>- Đối với chất khí, độ tan của nó trong dung môi tỷ lệ nghịch với nhiệt độ. Vì vậy, chúng bắt có thể loại bỏ các chất khí như $O_{2}$, $CO_{2}$ ra khỏi dung môi bằng cách tiến hành đun nóng mà không làm biến đổi hay phân hủy các chất.<br>- Đối với chất rắn thu nhiệt, nhiệt độ càng cao thì độ tan sẽ càng lớn. Còn đối với chất rắn tỏa nhiệt, nhiệt độ càng cao thì độ tan càng giảm.<br>Áp suất (đối với chất khí)<br>Theo định luật Henry, các chất khí với độ tan nhỏ và áp suất không quá cao thì lượng chất khí hòa tan trong một thể tích chất lỏng xác định sẽ tỷ lệ thuận với áp suất của nó trên một bề mặt chất lỏng ở nhiệt độ không đổi. Vì vậy, nếu tăng áp suất, độ tan của chất khí sẽ được tăng lên và ngược lại.<br>Đồ thị sau biểu diễn độ tan của một số chất theo nhiệt độ.",
+      "q": "Phát biểu sau đây đúng hay sai?<br>Khi tăng nhiệt độ thì độ tan của chất rắn trong nước tăng.",
+      "s": [
+        "Khi tăng nhiệt độ thì độ tan của chất rắn trong nước tăng."
+      ],
+      "a": [
+        0
+      ],
+      "sol": [
+        "Ý 1: Sai vì theo nguyên lý trong đoạn văn: 'Còn đối với chất rắn tỏa nhiệt, nhiệt độ càng cao thì độ tan càng giảm.' Hình vẽ đồ thị cũng cung cấp ví dụ thực tế là chất rắn $Ce_2(SO_4)_3$ có độ tan giảm mạnh khi nhiệt độ tăng."
+      ],
+      "solved": true
+    },
+    {
+      "t": "fill",
+      "p": "Độ tan hay độ hòa tan là đại lượng đặc trưng cho khả năng hòa tan của một chất vào dung môi để tạo thành dung dịch đồng nhất. Hay còn được hiểu là số gam chất đó tan được trong 100 gam dung môi (thường là nước) để tạo thành dung dịch bão hòa ở một nhiệt độ xác định.<br>Một số yếu tố ảnh hưởng đến độ tan của một chất như sau:<br>Nhiệt độ<br>- Đối với chất khí, độ tan của nó trong dung môi tỷ lệ nghịch với nhiệt độ. Vì vậy, chúng bắt có thể loại bỏ các chất khí như $O_{2}$, $CO_{2}$ ra khỏi dung môi bằng cách tiến hành đun nóng mà không làm biến đổi hay phân hủy các chất.<br>- Đối với chất rắn thu nhiệt, nhiệt độ càng cao thì độ tan sẽ càng lớn. Còn đối với chất rắn tỏa nhiệt, nhiệt độ càng cao thì độ tan càng giảm.<br>Áp suất (đối với chất khí)<br>Theo định luật Henry, các chất khí với độ tan nhỏ và áp suất không quá cao thì lượng chất khí hòa tan trong một thể tích chất lỏng xác định sẽ tỷ lệ thuận với áp suất của nó trên một bề mặt chất lỏng ở nhiệt độ không đổi. Vì vậy, nếu tăng áp suất, độ tan của chất khí sẽ được tăng lên và ngược lại.<br>Đồ thị sau biểu diễn độ tan của một số chất theo nhiệt độ.",
+      "q": "Độ tan của một chất là số gam chất đó tan được trong [[0]] gam dung môi (thường là nước) để tạo thành dung dịch bão hòa ở một nhiệt độ xác định.",
+      "a": [
+        100
+      ],
+      "sol": [
+        "Căn cứ trực tiếp vào câu đầu tiên của phần ngữ liệu: 'Hay còn được hiểu là số gam chất đó tan được trong 100 gam dung môi (thường là nước) để tạo thành dung dịch bão hòa ở một nhiệt độ xác định.'"
+      ],
+      "solved": true
+    },
+    {
+      "t": "mc",
+      "p": "Độ tan hay độ hòa tan là đại lượng đặc trưng cho khả năng hòa tan của một chất vào dung môi để tạo thành dung dịch đồng nhất. Hay còn được hiểu là số gam chất đó tan được trong 100 gam dung môi (thường là nước) để tạo thành dung dịch bão hòa ở một nhiệt độ xác định.<br>Một số yếu tố ảnh hưởng đến độ tan của một chất như sau:<br>Nhiệt độ<br>- Đối với chất khí, độ tan của nó trong dung môi tỷ lệ nghịch với nhiệt độ. Vì vậy, chúng bắt có thể loại bỏ các chất khí như $O_{2}$, $CO_{2}$ ra khỏi dung môi bằng cách tiến hành đun nóng mà không làm biến đổi hay phân hủy các chất.<br>- Đối với chất rắn thu nhiệt, nhiệt độ càng cao thì độ tan sẽ càng lớn. Còn đối với chất rắn tỏa nhiệt, nhiệt độ càng cao thì độ tan càng giảm.<br>Áp suất (đối với chất khí)<br>Theo định luật Henry, các chất khí với độ tan nhỏ và áp suất không quá cao thì lượng chất khí hòa tan trong một thể tích chất lỏng xác định sẽ tỷ lệ thuận với áp suất của nó trên một bề mặt chất lỏng ở nhiệt độ không đổi. Vì vậy, nếu tăng áp suất, độ tan của chất khí sẽ được tăng lên và ngược lại.<br>Đồ thị sau biểu diễn độ tan của một số chất theo nhiệt độ.",
+      "q": "Chất nào có độ tan ít phụ thuộc vào nhiệt độ nhất?",
+      "o": [
+        "$Ce_2(SO_4)_3$.",
+        "$Ba(NO_3)_2$.",
+        "NaCl.",
+        "$Na_2SO_4$."
+      ],
+      "a": 2,
+      "fig": "img/KHOA_HỌC_c11.png",
+      "warn": "cần chèn ảnh gốc",
+      "sol": [
+        "Trên đồ thị, chất có độ tan ít phụ thuộc vào nhiệt độ nhất sẽ có đường biểu diễn gần nằm ngang với trục hoành.",
+        "Quan sát ta thấy đường biểu diễn của NaCl (ký hiệu hình vuông màu hồng) tăng rất nhẹ, gần như tạo thành một đường thẳng nằm ngang xuyên suốt khoảng nhiệt độ từ $0^{\\circ}C$ đến $100^{\\circ}C$.",
+        "Vì vậy, NaCl là chất có độ tan ít phụ thuộc vào nhiệt độ nhất trong số các chất được khảo sát."
+      ],
+      "solved": true
+    },
+    {
+      "t": "tf",
+      "p": "Độ tan hay độ hòa tan là đại lượng đặc trưng cho khả năng hòa tan của một chất vào dung môi để tạo thành dung dịch đồng nhất. Hay còn được hiểu là số gam chất đó tan được trong 100 gam dung môi (thường là nước) để tạo thành dung dịch bão hòa ở một nhiệt độ xác định.<br>Một số yếu tố ảnh hưởng đến độ tan của một chất như sau:<br>Nhiệt độ<br>- Đối với chất khí, độ tan của nó trong dung môi tỷ lệ nghịch với nhiệt độ. Vì vậy, chúng bắt có thể loại bỏ các chất khí như $O_{2}$, $CO_{2}$ ra khỏi dung môi bằng cách tiến hành đun nóng mà không làm biến đổi hay phân hủy các chất.<br>- Đối với chất rắn thu nhiệt, nhiệt độ càng cao thì độ tan sẽ càng lớn. Còn đối với chất rắn tỏa nhiệt, nhiệt độ càng cao thì độ tan càng giảm.<br>Áp suất (đối với chất khí)<br>Theo định luật Henry, các chất khí với độ tan nhỏ và áp suất không quá cao thì lượng chất khí hòa tan trong một thể tích chất lỏng xác định sẽ tỷ lệ thuận với áp suất của nó trên một bề mặt chất lỏng ở nhiệt độ không đổi. Vì vậy, nếu tăng áp suất, độ tan của chất khí sẽ được tăng lên và ngược lại.<br>Đồ thị sau biểu diễn độ tan của một số chất theo nhiệt độ.",
+      "q": "Phát biểu sau đây đúng hay sai?<br>Từ đồ thị cho biết các chất NaCl, $Ba(NO_3)_2$, $Na_2HAsO_4$ có độ tan tăng khi nhiệt độ tăng.",
+      "s": [
+        "Từ đồ thị cho biết các chất NaCl, $Ba(NO_3)_2$, $Na_2HAsO_4$ có độ tan tăng khi nhiệt độ tăng."
+      ],
+      "a": [
+        1
+      ],
+      "fig": "img/KHOA_HỌC_c12.png",
+      "warn": "cần chèn ảnh gốc",
+      "sol": [
+        "Ý 1: Đúng. Quan sát trên đồ thị Hình 1, khi nhiệt độ tăng từ trái sang phải, đường biểu diễn của cả ba chất rắn NaCl, $Ba(NO_3)_2$ và $Na_2HAsO_4$ đều có xu hướng đi lên (cho thấy giá trị tung độ lớn dần), tức là độ tan của chúng đều tăng khi được cung cấp thêm nhiệt."
+      ],
+      "solved": true
+    },
+    {
+      "t": "tf",
+      "p": "Một nhóm học sinh đã thực hiện một số thí nghiệm, bằng cách thu thập bốn mẫu đất (A, B, C, D) từ khu vực xung quanh của một con sông. Các mẫu được cung cấp chất dinh dưỡng có lợi cho sự phát triển của vi khuẩn thuộc chi Actinomyces. Sau đó, họ phân lập các chủng vi sinh vật này trong các mẫu đất trên và cho sinh trưởng trong các điều kiện khác nhau.<br>Thí nghiệm 1<br>Bốn chủng phân lập được nuôi cấy trên đĩa petri chứa môi trường tối thiểu có bổ sung nguồn carbon. Các mẫu được nuôi cấy ở nhiệt độ $30^{\\circ}C$ trong 24 giờ. Kết quả của thí nghiệm 1 được thể hiện trong bảng 1.<br>Bảng 1. Kết quả nuôi cấy thí nghiệm 1<br>Nguồn carbon: Glucose, Galactose, Pyruvate<br>A: +, -, -<br>B: +, -, ++<br>C: -, ++, -<br>D: ++, -, +<br>Kí hiệu: Không tăng trưởng (-); Tăng trưởng vừa (+); Tăng trưởng mạnh (++)<br>Thí nghiệm 2<br>Bốn chủng vi khuẩn phân lập trên được nuôi cấy trên các đĩa petri có chứa môi trường LB (Lysogeny Broth một môi trường giàu dinh dưỡng được sử dụng để nuôi cấy vi khuẩn). Các mẫu được nuôi cấy ở các nhiệt độ khác nhau trong 24 giờ và sau đó đếm số lượng khuẩn lạc trên mỗi đĩa. Kết quả được thể hiện trong bảng 2.<br>Bảng 2. Kết quả nuôi cấy thí nghiệm 2<br>Nhiệt độ: $4^{\\circ}C$, $30^{\\circ}C$, $42^{\\circ}C$<br>A: 140, 0, 65<br>B: 0, 36, 32<br>C: 45, 0, 11<br>D: 93, 0, 13<br>Thí nghiệm 3<br>Khi một quần thể vi khuẩn phát triển trong môi trường chất lỏng, chất lỏng trở nên đục dần, và có thể đo được bằng máy đo quang phổ, sử dụng tia laser để đo mật độ quang học (OD) của chất lỏng. Trước mỗi lần sử dụng, máy quang phổ được hiệu chuẩn bằng một mẫu nước cất, có giá trị OD = 0.<br>Các chủng phân lập được nuôi cấy trong môi trường LB lỏng ở $30^{\\circ}C$ trong khoảng thời gian 24 giờ. Mỗi giờ lấy ra một lượng mẫu nhỏ và đo quang phổ. Các đường cong sinh trưởng của bốn chủng phân lập được thể hiện trong hình 1.",
+      "q": "Phát biểu sau đây đúng hay sai?<br>Theo thí nghiệm 1, phân lập B có số lượng vi khuẩn phát triển lớn nhất khi được cung cấp nguồn carbon là galactose.",
+      "s": [
+        "Theo thí nghiệm 1, phân lập B có số lượng vi khuẩn phát triển lớn nhất khi được cung cấp nguồn carbon là galactose."
+      ],
+      "a": [
+        0
+      ],
+      "sol": [
+        "Ý 1: Sai vì theo Bảng 1, phân lập B có kí hiệu '++' (tăng trưởng mạnh nhất) ở cột nguồn carbon là Pyruvate. Ở cột nguồn carbon Galactose, phân lập B nhận kí hiệu '-' nghĩa là không tăng trưởng."
+      ],
+      "solved": true
+    },
+    {
+      "t": "mc",
+      "p": "Một nhóm học sinh đã thực hiện một số thí nghiệm, bằng cách thu thập bốn mẫu đất (A, B, C, D) từ khu vực xung quanh của một con sông. Các mẫu được cung cấp chất dinh dưỡng có lợi cho sự phát triển của vi khuẩn thuộc chi Actinomyces. Sau đó, họ phân lập các chủng vi sinh vật này trong các mẫu đất trên và cho sinh trưởng trong các điều kiện khác nhau.<br>Thí nghiệm 1<br>Bốn chủng phân lập được nuôi cấy trên đĩa petri chứa môi trường tối thiểu có bổ sung nguồn carbon. Các mẫu được nuôi cấy ở nhiệt độ $30^{\\circ}C$ trong 24 giờ. Kết quả của thí nghiệm 1 được thể hiện trong bảng 1.<br>Bảng 1. Kết quả nuôi cấy thí nghiệm 1<br>Nguồn carbon: Glucose, Galactose, Pyruvate<br>A: +, -, -<br>B: +, -, ++<br>C: -, ++, -<br>D: ++, -, +<br>Kí hiệu: Không tăng trưởng (-); Tăng trưởng vừa (+); Tăng trưởng mạnh (++)<br>Thí nghiệm 2<br>Bốn chủng vi khuẩn phân lập trên được nuôi cấy trên các đĩa petri có chứa môi trường LB (Lysogeny Broth một môi trường giàu dinh dưỡng được sử dụng để nuôi cấy vi khuẩn). Các mẫu được nuôi cấy ở các nhiệt độ khác nhau trong 24 giờ và sau đó đếm số lượng khuẩn lạc trên mỗi đĩa. Kết quả được thể hiện trong bảng 2.<br>Bảng 2. Kết quả nuôi cấy thí nghiệm 2<br>Nhiệt độ: $4^{\\circ}C$, $30^{\\circ}C$, $42^{\\circ}C$<br>A: 140, 0, 65<br>B: 0, 36, 32<br>C: 45, 0, 11<br>D: 93, 0, 13<br>Thí nghiệm 3<br>Khi một quần thể vi khuẩn phát triển trong môi trường chất lỏng, chất lỏng trở nên đục dần, và có thể đo được bằng máy đo quang phổ, sử dụng tia laser để đo mật độ quang học (OD) của chất lỏng. Trước mỗi lần sử dụng, máy quang phổ được hiệu chuẩn bằng một mẫu nước cất, có giá trị OD = 0.<br>Các chủng phân lập được nuôi cấy trong môi trường LB lỏng ở $30^{\\circ}C$ trong khoảng thời gian 24 giờ. Mỗi giờ lấy ra một lượng mẫu nhỏ và đo quang phổ. Các đường cong sinh trưởng của bốn chủng phân lập được thể hiện trong hình 1.",
+      "q": "Dựa vào kết quả thí nghiệm 2, cho biết nếu đặt trong điều kiện nhiệt độ dưới nhiệt độ đóng băng của nước trong vòng 24 giờ thì sự phát triển của khuẩn lạc trong đĩa petri nào sẽ phát triển mạnh mẽ nhất?",
+      "o": [
+        "Đĩa A.",
+        "Đĩa B.",
+        "Cả 3 đĩa.",
+        "Không có đĩa nào."
+      ],
+      "a": 0,
+      "sol": [
+        "Nhiệt độ dưới đóng băng của nước là môi trường rất lạnh (dưới $0^{\\circ}C$).",
+        "Dựa vào Bảng 2, ở mức nhiệt độ thấp nhất được thử nghiệm là $4^{\\circ}C$, chủng A có khả năng phát triển vượt trội với số lượng khuẩn lạc là 140.",
+        "Do đó, có thể kết luận đĩa A chứa chủng vi sinh vật ưa lạnh (psychrophile) và sẽ sinh trưởng mạnh mẽ nhất nếu tiếp tục duy trì ở nhiệt độ cực thấp."
+      ],
+      "solved": true
+    },
+    {
+      "t": "mc",
+      "p": "Một nhóm học sinh đã thực hiện một số thí nghiệm, bằng cách thu thập bốn mẫu đất (A, B, C, D) từ khu vực xung quanh của một con sông. Các mẫu được cung cấp chất dinh dưỡng có lợi cho sự phát triển của vi khuẩn thuộc chi Actinomyces. Sau đó, họ phân lập các chủng vi sinh vật này trong các mẫu đất trên và cho sinh trưởng trong các điều kiện khác nhau.<br>Thí nghiệm 1<br>Bốn chủng phân lập được nuôi cấy trên đĩa petri chứa môi trường tối thiểu có bổ sung nguồn carbon. Các mẫu được nuôi cấy ở nhiệt độ $30^{\\circ}C$ trong 24 giờ. Kết quả của thí nghiệm 1 được thể hiện trong bảng 1.<br>Bảng 1. Kết quả nuôi cấy thí nghiệm 1<br>Nguồn carbon: Glucose, Galactose, Pyruvate<br>A: +, -, -<br>B: +, -, ++<br>C: -, ++, -<br>D: ++, -, +<br>Kí hiệu: Không tăng trưởng (-); Tăng trưởng vừa (+); Tăng trưởng mạnh (++)<br>Thí nghiệm 2<br>Bốn chủng vi khuẩn phân lập trên được nuôi cấy trên các đĩa petri có chứa môi trường LB (Lysogeny Broth một môi trường giàu dinh dưỡng được sử dụng để nuôi cấy vi khuẩn). Các mẫu được nuôi cấy ở các nhiệt độ khác nhau trong 24 giờ và sau đó đếm số lượng khuẩn lạc trên mỗi đĩa. Kết quả được thể hiện trong bảng 2.<br>Bảng 2. Kết quả nuôi cấy thí nghiệm 2<br>Nhiệt độ: $4^{\\circ}C$, $30^{\\circ}C$, $42^{\\circ}C$<br>A: 140, 0, 65<br>B: 0, 36, 32<br>C: 45, 0, 11<br>D: 93, 0, 13<br>Thí nghiệm 3<br>Khi một quần thể vi khuẩn phát triển trong môi trường chất lỏng, chất lỏng trở nên đục dần, và có thể đo được bằng máy đo quang phổ, sử dụng tia laser để đo mật độ quang học (OD) của chất lỏng. Trước mỗi lần sử dụng, máy quang phổ được hiệu chuẩn bằng một mẫu nước cất, có giá trị OD = 0.<br>Các chủng phân lập được nuôi cấy trong môi trường LB lỏng ở $30^{\\circ}C$ trong khoảng thời gian 24 giờ. Mỗi giờ lấy ra một lượng mẫu nhỏ và đo quang phổ. Các đường cong sinh trưởng của bốn chủng phân lập được thể hiện trong hình 1.",
+      "q": "Xu hướng chung về sự phát triển của khuẩn lạc khi nhiệt độ giảm trong thí nghiệm 2 là",
+      "o": [
+        "luôn giảm",
+        "tăng rồi giảm",
+        "luôn tăng",
+        "giảm rồi tăng"
+      ],
+      "a": 3,
+      "sol": [
+        "Khi nhiệt độ giảm dần từ $42^{\\circ}C$ xuống $30^{\\circ}C$ rồi xuống sâu hơn là $4^{\\circ}C$, ta quan sát xu hướng thay đổi theo Bảng 2:",
+        "- Chủng A: từ 65 giảm xuống 0, rồi tăng vọt lên 140.",
+        "- Chủng C: từ 11 giảm xuống 0, rồi tăng lên 45.",
+        "- Chủng D: từ 13 giảm xuống 0, rồi tăng lên 93.",
+        "Đa phần các chủng (A, C, D) đều có xu hướng giảm số lượng khuẩn lạc về 0 ở $30^{\\circ}C$ sau đó phục hồi và phát triển rất mạnh ở nhiệt độ thấp $4^{\\circ}C$. Do đó quy luật chung nhất là giảm rồi tăng."
+      ],
+      "solved": true,
+      "warn": "Sự bất thường giữa dữ liệu bảng 2 (0 khuẩn lạc ở 30 độ) và biểu đồ thí nghiệm 3 có thể do sai sót ở đề gốc, nhưng dựa đúng vào số liệu trong bảng 2 thì xu hướng là giảm rồi tăng."
+    },
+    {
+      "t": "mc",
+      "p": "Một nhóm học sinh đã thực hiện một số thí nghiệm, bằng cách thu thập bốn mẫu đất (A, B, C, D) từ khu vực xung quanh của một con sông. Các mẫu được cung cấp chất dinh dưỡng có lợi cho sự phát triển của vi khuẩn thuộc chi Actinomyces. Sau đó, họ phân lập các chủng vi sinh vật này trong các mẫu đất trên và cho sinh trưởng trong các điều kiện khác nhau.<br>Thí nghiệm 1<br>Bốn chủng phân lập được nuôi cấy trên đĩa petri chứa môi trường tối thiểu có bổ sung nguồn carbon. Các mẫu được nuôi cấy ở nhiệt độ $30^{\\circ}C$ trong 24 giờ. Kết quả của thí nghiệm 1 được thể hiện trong bảng 1.<br>Bảng 1. Kết quả nuôi cấy thí nghiệm 1<br>Nguồn carbon: Glucose, Galactose, Pyruvate<br>A: +, -, -<br>B: +, -, ++<br>C: -, ++, -<br>D: ++, -, +<br>Kí hiệu: Không tăng trưởng (-); Tăng trưởng vừa (+); Tăng trưởng mạnh (++)<br>Thí nghiệm 2<br>Bốn chủng vi khuẩn phân lập trên được nuôi cấy trên các đĩa petri có chứa môi trường LB (Lysogeny Broth một môi trường giàu dinh dưỡng được sử dụng để nuôi cấy vi khuẩn). Các mẫu được nuôi cấy ở các nhiệt độ khác nhau trong 24 giờ và sau đó đếm số lượng khuẩn lạc trên mỗi đĩa. Kết quả được thể hiện trong bảng 2.<br>Bảng 2. Kết quả nuôi cấy thí nghiệm 2<br>Nhiệt độ: $4^{\\circ}C$, $30^{\\circ}C$, $42^{\\circ}C$<br>A: 140, 0, 65<br>B: 0, 36, 32<br>C: 45, 0, 11<br>D: 93, 0, 13<br>Thí nghiệm 3<br>Khi một quần thể vi khuẩn phát triển trong môi trường chất lỏng, chất lỏng trở nên đục dần, và có thể đo được bằng máy đo quang phổ, sử dụng tia laser để đo mật độ quang học (OD) của chất lỏng. Trước mỗi lần sử dụng, máy quang phổ được hiệu chuẩn bằng một mẫu nước cất, có giá trị OD = 0.<br>Các chủng phân lập được nuôi cấy trong môi trường LB lỏng ở $30^{\\circ}C$ trong khoảng thời gian 24 giờ. Mỗi giờ lấy ra một lượng mẫu nhỏ và đo quang phổ. Các đường cong sinh trưởng của bốn chủng phân lập được thể hiện trong hình 1.",
+      "q": "Giả sử trong thí nghiệm 3, mỗi lần hiệu chuẩn thay vì sử dụng nước cất sẽ sử dụng nước có vẩn đục, thì điều gì có thể xảy ra với đường cong sinh trưởng của vi khuẩn?",
+      "o": [
+        "Không có tác động gì.",
+        "Các chủng A và B có giá trị OD thấp hơn, trong khi các chủng C và D có giá trị OD cao hơn.",
+        "Tất cả các chủng phân lập sẽ có giá trị OD cao hơn.",
+        "Tất cả các chủng phân lập sẽ có giá trị OD thấp hơn."
+      ],
+      "a": 3,
+      "sol": [
+        "Việc hiệu chuẩn (đưa về vạch số 0) bằng nước cất nhằm xác lập mức nền chuẩn (blank) cho dung dịch không chứa vi khuẩn.",
+        "Nếu sử dụng nước có vẩn đục (hấp thụ một lượng ánh sáng nhất định) để hiệu chuẩn về 0, thì mốc đo đã vô tình bị nâng cao lên.",
+        "Hệ quả là tất cả các phép đo mật độ quang học (OD) của những mẫu chứa vi khuẩn sau đó đều sẽ bị trừ đi một giá trị nền sai lệch lớn hơn thực tế, làm cho số liệu xuất ra của mọi chủng vi khuẩn đều thấp hơn giá trị thật."
+      ],
+      "solved": true
+    },
+    {
+      "t": "mc",
+      "p": "Một nhóm học sinh đã thực hiện một số thí nghiệm, bằng cách thu thập bốn mẫu đất (A, B, C, D) từ khu vực xung quanh của một con sông. Các mẫu được cung cấp chất dinh dưỡng có lợi cho sự phát triển của vi khuẩn thuộc chi Actinomyces. Sau đó, họ phân lập các chủng vi sinh vật này trong các mẫu đất trên và cho sinh trưởng trong các điều kiện khác nhau.<br>Thí nghiệm 1<br>Bốn chủng phân lập được nuôi cấy trên đĩa petri chứa môi trường tối thiểu có bổ sung nguồn carbon. Các mẫu được nuôi cấy ở nhiệt độ $30^{\\circ}C$ trong 24 giờ. Kết quả của thí nghiệm 1 được thể hiện trong bảng 1.<br>Bảng 1. Kết quả nuôi cấy thí nghiệm 1<br>Nguồn carbon: Glucose, Galactose, Pyruvate<br>A: +, -, -<br>B: +, -, ++<br>C: -, ++, -<br>D: ++, -, +<br>Kí hiệu: Không tăng trưởng (-); Tăng trưởng vừa (+); Tăng trưởng mạnh (++)<br>Thí nghiệm 2<br>Bốn chủng vi khuẩn phân lập trên được nuôi cấy trên các đĩa petri có chứa môi trường LB (Lysogeny Broth một môi trường giàu dinh dưỡng được sử dụng để nuôi cấy vi khuẩn). Các mẫu được nuôi cấy ở các nhiệt độ khác nhau trong 24 giờ và sau đó đếm số lượng khuẩn lạc trên mỗi đĩa. Kết quả được thể hiện trong bảng 2.<br>Bảng 2. Kết quả nuôi cấy thí nghiệm 2<br>Nhiệt độ: $4^{\\circ}C$, $30^{\\circ}C$, $42^{\\circ}C$<br>A: 140, 0, 65<br>B: 0, 36, 32<br>C: 45, 0, 11<br>D: 93, 0, 13<br>Thí nghiệm 3<br>Khi một quần thể vi khuẩn phát triển trong môi trường chất lỏng, chất lỏng trở nên đục dần, và có thể đo được bằng máy đo quang phổ, sử dụng tia laser để đo mật độ quang học (OD) của chất lỏng. Trước mỗi lần sử dụng, máy quang phổ được hiệu chuẩn bằng một mẫu nước cất, có giá trị OD = 0.<br>Các chủng phân lập được nuôi cấy trong môi trường LB lỏng ở $30^{\\circ}C$ trong khoảng thời gian 24 giờ. Mỗi giờ lấy ra một lượng mẫu nhỏ và đo quang phổ. Các đường cong sinh trưởng của bốn chủng phân lập được thể hiện trong hình 1.",
+      "q": "Muốn thu được lượng vi khuẩn lớn nhất, thì cần nuôi cấy trong môi trường",
+      "o": [
+        "$4^{\\circ}C$, pyruvate.",
+        "$30^{\\circ}C$, pyruvate.",
+        "$4^{\\circ}C$, glucose.",
+        "$30^{\\circ}C$, glucose."
+      ],
+      "a": 2,
+      "sol": [
+        "Dựa vào dữ liệu nhiệt độ ở Bảng 2, chủng vi khuẩn đạt số lượng khuẩn lạc cao nhất tuyệt đối là chủng A với 140 khuẩn lạc ở mức nhiệt $4^{\\circ}C$.",
+        "Đối chiếu chủng A với Bảng 1 về nguồn carbon, chủng A có khả năng đồng hóa tốt nhất nguồn carbon là Glucose (dấu +).",
+        "Kết hợp hai điều kiện này, muốn tối ưu để thu được lượng lớn vi khuẩn, ta nên chọn chủng A và cung cấp môi trường $4^{\\circ}C$ cùng nguồn dinh dưỡng Glucose."
+      ],
+      "solved": true
+    },
+    {
+      "t": "tf",
+      "p": "Một nhóm học sinh đã thực hiện một số thí nghiệm, bằng cách thu thập bốn mẫu đất (A, B, C, D) từ khu vực xung quanh của một con sông. Các mẫu được cung cấp chất dinh dưỡng có lợi cho sự phát triển của vi khuẩn thuộc chi Actinomyces. Sau đó, họ phân lập các chủng vi sinh vật này trong các mẫu đất trên và cho sinh trưởng trong các điều kiện khác nhau.<br>Thí nghiệm 1<br>Bốn chủng phân lập được nuôi cấy trên đĩa petri chứa môi trường tối thiểu có bổ sung nguồn carbon. Các mẫu được nuôi cấy ở nhiệt độ $30^{\\circ}C$ trong 24 giờ. Kết quả của thí nghiệm 1 được thể hiện trong bảng 1.<br>Bảng 1. Kết quả nuôi cấy thí nghiệm 1<br>Nguồn carbon: Glucose, Galactose, Pyruvate<br>A: +, -, -<br>B: +, -, ++<br>C: -, ++, -<br>D: ++, -, +<br>Kí hiệu: Không tăng trưởng (-); Tăng trưởng vừa (+); Tăng trưởng mạnh (++)<br>Thí nghiệm 2<br>Bốn chủng vi khuẩn phân lập trên được nuôi cấy trên các đĩa petri có chứa môi trường LB (Lysogeny Broth một môi trường giàu dinh dưỡng được sử dụng để nuôi cấy vi khuẩn). Các mẫu được nuôi cấy ở các nhiệt độ khác nhau trong 24 giờ và sau đó đếm số lượng khuẩn lạc trên mỗi đĩa. Kết quả được thể hiện trong bảng 2.<br>Bảng 2. Kết quả nuôi cấy thí nghiệm 2<br>Nhiệt độ: $4^{\\circ}C$, $30^{\\circ}C$, $42^{\\circ}C$<br>A: 140, 0, 65<br>B: 0, 36, 32<br>C: 45, 0, 11<br>D: 93, 0, 13<br>Thí nghiệm 3<br>Khi một quần thể vi khuẩn phát triển trong môi trường chất lỏng, chất lỏng trở nên đục dần, và có thể đo được bằng máy đo quang phổ, sử dụng tia laser để đo mật độ quang học (OD) của chất lỏng. Trước mỗi lần sử dụng, máy quang phổ được hiệu chuẩn bằng một mẫu nước cất, có giá trị OD = 0.<br>Các chủng phân lập được nuôi cấy trong môi trường LB lỏng ở $30^{\\circ}C$ trong khoảng thời gian 24 giờ. Mỗi giờ lấy ra một lượng mẫu nhỏ và đo quang phổ. Các đường cong sinh trưởng của bốn chủng phân lập được thể hiện trong hình 1.",
+      "q": "Phát biểu sau đây đúng hay sai?<br>Trong thí nghiệm 3. giai đoạn đầu vi khuẩn gần như không có sự gia tăng về số lượng chủ yếu do lượng vi khuẩn còn ít, sự gia tăng không đáng kể nên đồ thị gần như nằm ngang.",
+      "s": [
+        "Trong thí nghiệm 3. giai đoạn đầu vi khuẩn gần như không có sự gia tăng về số lượng chủ yếu do lượng vi khuẩn còn ít, sự gia tăng không đáng kể nên đồ thị gần như nằm ngang."
+      ],
+      "a": [
+        0
+      ],
+      "sol": [
+        "Ý 1: Sai vì giai đoạn đầu của đường cong sinh trưởng (pha tiềm phát - lag phase) quần thể vi khuẩn không tăng số lượng không phải là 'chủ yếu do lượng vi khuẩn còn ít'. Nguyên nhân thực sự là ở pha này, vi khuẩn đang tập trung thích nghi với môi trường nuôi cấy mới, tiến hành tổng hợp các loại enzyme và protein thiết yếu để chuẩn bị cho quá trình phân bào tiếp theo."
+      ],
+      "solved": true
+    },
+    {
+      "t": "mc",
+      "p": "Một nhóm học sinh đã thực hiện một số thí nghiệm, bằng cách thu thập bốn mẫu đất (A, B, C, D) từ khu vực xung quanh của một con sông. Các mẫu được cung cấp chất dinh dưỡng có lợi cho sự phát triển của vi khuẩn thuộc chi Actinomyces. Sau đó, họ phân lập các chủng vi sinh vật này trong các mẫu đất trên và cho sinh trưởng trong các điều kiện khác nhau.<br>Thí nghiệm 1<br>Bốn chủng phân lập được nuôi cấy trên đĩa petri chứa môi trường tối thiểu có bổ sung nguồn carbon. Các mẫu được nuôi cấy ở nhiệt độ $30^{\\circ}C$ trong 24 giờ. Kết quả của thí nghiệm 1 được thể hiện trong bảng 1.<br>Bảng 1. Kết quả nuôi cấy thí nghiệm 1<br>Nguồn carbon: Glucose, Galactose, Pyruvate<br>A: +, -, -<br>B: +, -, ++<br>C: -, ++, -<br>D: ++, -, +<br>Kí hiệu: Không tăng trưởng (-); Tăng trưởng vừa (+); Tăng trưởng mạnh (++)<br>Thí nghiệm 2<br>Bốn chủng vi khuẩn phân lập trên được nuôi cấy trên các đĩa petri có chứa môi trường LB (Lysogeny Broth một môi trường giàu dinh dưỡng được sử dụng để nuôi cấy vi khuẩn). Các mẫu được nuôi cấy ở các nhiệt độ khác nhau trong 24 giờ và sau đó đếm số lượng khuẩn lạc trên mỗi đĩa. Kết quả được thể hiện trong bảng 2.<br>Bảng 2. Kết quả nuôi cấy thí nghiệm 2<br>Nhiệt độ: $4^{\\circ}C$, $30^{\\circ}C$, $42^{\\circ}C$<br>A: 140, 0, 65<br>B: 0, 36, 32<br>C: 45, 0, 11<br>D: 93, 0, 13<br>Thí nghiệm 3<br>Khi một quần thể vi khuẩn phát triển trong môi trường chất lỏng, chất lỏng trở nên đục dần, và có thể đo được bằng máy đo quang phổ, sử dụng tia laser để đo mật độ quang học (OD) của chất lỏng. Trước mỗi lần sử dụng, máy quang phổ được hiệu chuẩn bằng một mẫu nước cất, có giá trị OD = 0.<br>Các chủng phân lập được nuôi cấy trong môi trường LB lỏng ở $30^{\\circ}C$ trong khoảng thời gian 24 giờ. Mỗi giờ lấy ra một lượng mẫu nhỏ và đo quang phổ. Các đường cong sinh trưởng của bốn chủng phân lập được thể hiện trong hình 1.",
+      "q": "Giả sử thí nghiệm 3 được tiếp tục cho đến 34 giờ thay vì dừng lại ở 24 giờ (không xảy ra pha suy vong), thì mật độ quang học cuối cùng của đĩa C sẽ có giá trị gần nhất với",
+      "o": [
+        "40.",
+        "60.",
+        "100.",
+        "160."
+      ],
+      "a": 1,
+      "fig": "img/KHOA_HỌC_c19.png",
+      "warn": "cần chèn ảnh gốc biểu đồ đường cong sinh trưởng",
+      "sol": [
+        "Dựa vào biểu đồ đường cong sinh trưởng (Hình 1), quan sát đồ thị của chủng phân lập C (ký hiệu chữ C).",
+        "Bắt đầu từ thời điểm khoảng 17-18 giờ, đường cong của C đã nằm ngang, chứng tỏ vi khuẩn đã bước vào pha cân bằng (số lượng tế bào sinh ra bằng số lượng tế bào chết đi). Mật độ quang học (OD) lúc này đạt ngưỡng xấp xỉ 60.",
+        "Nếu điều kiện thí nghiệm giả định rằng không có pha suy vong khi kéo dài tới 34 giờ, đồ thị của đĩa C sẽ tiếp tục duy trì thành một đường thẳng ngang. Vì thế giá trị mật độ quang học sẽ được giữ nguyên ổn định ở mức 60."
+      ],
+      "solved": true
+    },
+    {
+      "t": "mc",
+      "p": "Khi phân tích chuyển động ném xiên ta thường quan tâm đến hai đặc trưng: tầm xa R (là khoảng cách xa nhất theo phương ngang so với vị trí ban đầu) và độ cao cực đại h (là khoảng cách xa nhất theo phương đứng so với vị trí ban đầu, tại đó vận tốc của vật theo phương y bằng 0) mà vật đạt được.<br>Hình trên biểu diễn quỹ đạo của một vật ném xiên được ném từ gốc tọa độ với cùng tốc độ ban đầu là 50 m/s nhưng các góc ném khác nhau. Dựa vào đồ thị, hãy trả lời các câu hỏi sau.",
+      "q": "Từ một đỉnh tháp cao 12 m so với mặt đất, người ta ném một hòn đá với vận tốc ban đầu có độ $15~m/s$, theo phương hợp với phương nằm ngang một góc $45^{\\circ}$ Bỏ qua sức cản của không khí và lấy $g=10m/s^{2}$ khi chạm đất, hòn đá có tốc độ gần nhất với giá trị nào dưới đây?",
+      "o": [
+        "$18.6~m/s.$",
+        "$24.2~m/s.$",
+        "$28.8~m/s.$",
+        "$21.6~m/s.$"
+      ],
+      "a": 3,
+      "sol": [
+        "Chọn gốc thế năng tại mặt đất (tại đó độ cao bằng 0).",
+        "Áp dụng định luật bảo toàn cơ năng cho hệ hòn đá. Cơ năng tại vị trí ném bằng cơ năng tại vị trí chạm đất: $W_1 = W_2$",
+        "Tại vị trí ném: $W_1 = W_{đ1} + W_{t1} = \\frac{1}{2}mv_0^2 + mgh$",
+        "Tại vị trí chạm đất: $W_2 = \\frac{1}{2}mv^2 + 0$",
+        "Suy ra: $\\frac{1}{2}mv^2 = \\frac{1}{2}mv_0^2 + mgh \\Rightarrow v^2 = v_0^2 + 2gh$",
+        "Thay các số liệu bài toán cho: $v = \\sqrt{15^2 + 2 \\times 10 \\times 12} = \\sqrt{225 + 240} = \\sqrt{465} \\approx 21,56$ m/s.",
+        "Đối chiếu với các đáp án, giá trị này gần nhất với $21,6$ m/s."
+      ],
+      "solved": true
+    },
+    {
+      "t": "drag",
+      "p": "Khi phân tích chuyển động ném xiên ta thường quan tâm đến hai đặc trưng: tầm xa R (là khoảng cách xa nhất theo phương ngang so với vị trí ban đầu) và độ cao cực đại h (là khoảng cách xa nhất theo phương đứng so với vị trí ban đầu, tại đó vận tốc của vật theo phương y bằng 0) mà vật đạt được.<br>Hình trên biểu diễn quỹ đạo của một vật ném xiên được ném từ gốc tọa độ với cùng tốc độ ban đầu là 50 m/s nhưng các góc ném khác nhau. Dựa vào đồ thị, hãy trả lời các câu hỏi sau.",
+      "q": "Với góc ném [[0]] thì tầm xa của vật là cực đại.<br>Với góc ném [[1]] thì độ cao cực đại vật đạt được là lớn nhất.<br>Với góc ném [[2]] thì độ cao cực đại vật đạt được là nhỏ nhất.",
+      "c": [
+        "$\\theta=75^{\\circ}$",
+        "$\\theta=30^{\\circ}$",
+        "$\\theta=45^{\\circ}$",
+        "$\\theta=15^{\\circ}$"
+      ],
+      "a": [
+        2,
+        0,
+        3
+      ],
+      "fig": "img/KHOA_HỌC_c21.png",
+      "warn": "cần chèn ảnh gốc (đồ thị quỹ đạo ném xiên theo các góc khác nhau)",
+      "sol": [
+        "Quan sát đồ thị các quỹ đạo ném xiên:",
+        "Tầm xa R là giá trị giao điểm xa nhất của các đường cong parabol đối với trục hoành (trục Ox). Dễ thấy đường cong ném với góc $\\theta=45^{\\circ}$ đạt tầm xa lớn nhất là 250 m.",
+        "Độ cao cực đại h là tung độ của đỉnh parabol lớn nhất. Quỹ đạo ném vút lên cao nhất tương ứng với góc ném lớn nhất là $\\theta=75^{\\circ}$.",
+        "Ngược lại, quỹ đạo ném bạt nhất (có đỉnh parabol thấp nhất) tương ứng với góc ném nhỏ nhất là $\\theta=15^{\\circ}$."
+      ],
+      "solved": true
+    },
+    {
+      "t": "mc",
+      "p": "Khi phân tích chuyển động ném xiên ta thường quan tâm đến hai đặc trưng: tầm xa R (là khoảng cách xa nhất theo phương ngang so với vị trí ban đầu) và độ cao cực đại h (là khoảng cách xa nhất theo phương đứng so với vị trí ban đầu, tại đó vận tốc của vật theo phương y bằng 0) mà vật đạt được.<br>Hình trên biểu diễn quỹ đạo của một vật ném xiên được ném từ gốc tọa độ với cùng tốc độ ban đầu là 50 m/s nhưng các góc ném khác nhau. Dựa vào đồ thị, hãy trả lời các câu hỏi sau.",
+      "q": "Giả sử vận động viên sút một quả bóng bầu dục ba lần theo các quỹ đạo a, b và c như hình vẽ. Quỹ đạo nào tương ứng với thời gian chuyển động trong không khí của quả bóng là lâu nhất nếu bỏ qua mọi lực cản?",
+      "o": [
+        "(a).",
+        "(b).",
+        "(c).",
+        "Cả ba trường hợp có thời gian chuyển động như nhau."
+      ],
+      "a": 0,
+      "fig": "img/KHOA_HỌC_c22.png",
+      "warn": "cần chèn ảnh gốc minh họa 3 quỹ đạo (a,b,c)",
+      "sol": [
+        "Từ lý thuyết, thời gian bay của một vật ném xiên được tính bằng công thức: $t = \\frac{2v_{0y}}{g} = \\frac{2v_0 \\sin\\theta}{g}$.",
+        "Độ cao cực đại của vật là: $h = \\frac{v_{0y}^2}{2g} = \\frac{v_0^2 \\sin^2\\theta}{2g}$.",
+        "Biến đổi thời gian theo độ cao, ta có mối liên hệ trực tiếp: $t = \\sqrt{\\frac{8h}{g}}$. Tức là quả bóng nào có độ cao cực đại lớn nhất thì thời gian lơ lửng trong không khí của nó sẽ dài nhất.",
+        "Theo hình minh họa, quỹ đạo (a) vươn lên cao nhất (vượt qua b và c), do đó quả bóng bay theo quỹ đạo (a) sẽ có thời gian lưu lại trên không trung lâu nhất."
+      ],
+      "solved": true
+    },
+    {
+      "t": "tf",
+      "p": "Khi phân tích chuyển động ném xiên ta thường quan tâm đến hai đặc trưng: tầm xa R (là khoảng cách xa nhất theo phương ngang so với vị trí ban đầu) và độ cao cực đại h (là khoảng cách xa nhất theo phương đứng so với vị trí ban đầu, tại đó vận tốc của vật theo phương y bằng 0) mà vật đạt được.<br>Hình trên biểu diễn quỹ đạo của một vật ném xiên được ném từ gốc tọa độ với cùng tốc độ ban đầu là 50 m/s nhưng các góc ném khác nhau. Dựa vào đồ thị, hãy trả lời các câu hỏi sau.",
+      "q": "Phát biểu sau đúng hay sai?<br>Quỹ đạo chuyển động của vật ném xiên là đường parabol là đúng hay sai?",
+      "s": [
+        "Quỹ đạo chuyển động của vật ném xiên là đường parabol."
+      ],
+      "a": [
+        1
+      ],
+      "sol": [
+        "Ý 1: Đúng. Phương trình chuyển động của vật ném xiên có dạng tổng quát là $y = ax^2 + bx + c$ (với điều kiện bỏ qua lực cản không khí). Trong toán học, đây là phương trình đặc trưng của một đường parabol bề lõm quay xuống dưới."
+      ],
+      "solved": true
+    },
+    {
+      "t": "fill",
+      "p": "Khi phân tích chuyển động ném xiên ta thường quan tâm đến hai đặc trưng: tầm xa R (là khoảng cách xa nhất theo phương ngang so với vị trí ban đầu) và độ cao cực đại h (là khoảng cách xa nhất theo phương đứng so với vị trí ban đầu, tại đó vận tốc của vật theo phương y bằng 0) mà vật đạt được.<br>Hình trên biểu diễn quỹ đạo của một vật ném xiên được ném từ gốc tọa độ với cùng tốc độ ban đầu là 50 m/s nhưng các góc ném khác nhau. Dựa vào đồ thị, hãy trả lời các câu hỏi sau.",
+      "q": "Với góc ném $\\theta=75^{\\circ}$; thì tầm xa của vật là $R=[[0]]$ m.",
+      "a": [
+        125
+      ],
+      "fig": "img/KHOA_HỌC_c24.png",
+      "warn": "cần chèn ảnh gốc",
+      "sol": [
+        "Cách 1 (Tính toán): Áp dụng công thức tính tầm xa ném xiên: $R = \\frac{v_0^2 \\sin(2\\theta)}{g}$.",
+        "Thay số với tốc độ ném gốc $v_0 = 50$ m/s, góc $\\theta = 75^{\\circ}$ và $g = 10$ m/s$^2$: $R = \\frac{50^2 \\times \\sin(150^{\\circ})}{10} = \\frac{2500 \\times 0,5}{10} = 125$ m.",
+        "Cách 2 (Đọc đồ thị): Theo đồ thị biểu diễn, giao điểm của đường cong $\\theta = 75^{\\circ}$ với trục hoành nằm chính giữa mốc 100 và 150, tương ứng với giá trị 125 m."
+      ],
+      "solved": true
+    },
+    {
+      "t": "fill",
+      "p": "Khi phân tích chuyển động ném xiên ta thường quan tâm đến hai đặc trưng: tầm xa R (là khoảng cách xa nhất theo phương ngang so với vị trí ban đầu) và độ cao cực đại h (là khoảng cách xa nhất theo phương đứng so với vị trí ban đầu, tại đó vận tốc của vật theo phương y bằng 0) mà vật đạt được.<br>Hình trên biểu diễn quỹ đạo của một vật ném xiên được ném từ gốc tọa độ với cùng tốc độ ban đầu là 50 m/s nhưng các góc ném khác nhau. Dựa vào đồ thị, hãy trả lời các câu hỏi sau.",
+      "q": "Bỏ qua mọi ma sát và lực cản của môi trường thì khi xét theo phương thẳng đứng, tốc độ chuyển động của vật bị ném xiên theo phương hợp với phương thẳng đứng một góc $30^{\\circ}$ là [[0]] m/s.",
+      "a": [
+        43.3
+      ],
+      "e": 0.1,
+      "sol": [
+        "Vật ném xiên theo phương hợp với phương thẳng đứng một góc $30^{\\circ}$, nghĩa là góc ném so với phương nằm ngang là $\\theta = 90^{\\circ} - 30^{\\circ} = 60^{\\circ}$.",
+        "Dữ kiện gốc đã cho tốc độ ném ban đầu là $v_0 = 50$ m/s.",
+        "Tốc độ chuyển động xét theo phương thẳng đứng chính là thành phần vận tốc $v_{0y}$. Ta có: $v_{0y} = v_0 \\sin(60^{\\circ}) = 50 \\times \\frac{\\sqrt{3}}{2} = 25\\sqrt{3} \\approx 43,3$ m/s."
+      ],
+      "solved": true,
+      "warn": "Đề có thể gây nhầm lẫn khi dùng từ 'tốc độ chuyển động ... là' ngụ ý hỏi thành phần vận tốc ban đầu theo trục y."
+    }
+  ]
+}

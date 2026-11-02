@@ -1,6 +1,12 @@
 {
+  "package": "Phòng Luyện Miễn Phí",
   "webhook": "",
   "exams": [
-    { "id": "de2", "title": "Đề mẫu 2025", "minutes": 50 }
+    { "id": "de01", "title": "Đề Số 01", "date": "23/6/2026", "parts": 3 },
+    {
+      "id": "de02",
+      "title": "TSA 2",
+      "minutes": 150
+    }
   ]
 }

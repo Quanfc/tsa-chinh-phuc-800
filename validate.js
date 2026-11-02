@@ -2,9 +2,10 @@
 // Kiểm tra toàn bộ đề trong thư mục exams/.  Cách dùng:
 //   node validate.js            -> kiểm tra ./exams
 //   node validate.js exams/de2.json   -> kiểm tra riêng một file
+//   node validate.js --fix     -> tự cập nhật trường "parts" trong index.json
 // Thoát với mã 1 nếu có lỗi (✗). Cảnh báo (⚠) không làm fail.
 const fs = require('fs'), path = require('path');
-const target = process.argv[2] || 'exams';
+const FIX = process.argv.includes('--fix'), target = process.argv.slice(2).find(x => !x.startsWith('--')) || 'exams';
 const isFile = fs.existsSync(target) && fs.statSync(target).isFile();
 const dir = isFile ? path.dirname(target) : target;
 const root = path.dirname(path.resolve(dir));          // thư mục chứa index.html (để kiểm tra ảnh "fig")
@@ -26,12 +27,52 @@ function latex(f, where, s) {
   if (/\\\\(frac|sqrt|int|sum|vec|overrightarrow)/.test(s)) warn(f, `${where}: có \\\\ kép trước lệnh LaTeX, có thể bị escape thừa`);
 }
 
-function checkQ(f, q, i) {
-  const w = `câu ${i + 1}`, ph = [...String(q.q).matchAll(/\[\[(\d+)\]\]/g)].map(m => +m[1]);
+
+const FORB = /L['’]?H[oô]pital|Lagrange|Taylor|Maclaurin|ma trận|định thức|đạo hàm riêng|tích phân bội|chuỗi (số|hàm|lũy thừa)|Jacobi|phương trình vi phân/i;
+const OKF = new Set('x sin cos tan asin acos atan sqrt abs exp log ln log10 log2 pow pi e floor ceil sign cbrt'.split(' '));
+function checkExtras(f, q, w) {
+  // Lời giải chi tiết
+  if (q.sol === undefined || q.sol === null || q.sol === '' ) warn(f, `${w}: thiếu lời giải "sol"`);
+  else {
+    const txt = [].concat(q.sol).join(' ');
+    if (txt.length < 120) warn(f, `${w}: lời giải quá ngắn (${txt.length} ký tự), cần chi tiết hơn`);
+    latex(f, w + ' (sol)', txt);
+    if (FORB.test(txt)) warn(f, `${w}: lời giải có kiến thức ngoài chương trình THPT (${txt.match(FORB)[0]})`);
+  }
+  if (q.solved) warn(f, `${w}: đáp án do Gemini tự giải, nên kiểm tra lại`);
+  // Đồ thị vẽ từ công thức
+  if (q.graph) {
+    const g = q.graph, rng = r => Array.isArray(r) && r.length === 2 && r.every(Number.isFinite) && r[0] < r[1];
+    if (!rng(g.x) || !rng(g.y)) bad(f, `${w}: graph.x và graph.y phải là [min, max] với min < max`);
+    else {
+      if (!Array.isArray(g.fn) && !Array.isArray(g.lines) && !Array.isArray(g.pts)) bad(f, `${w}: graph cần ít nhất một trong fn / lines / pts`);
+      (g.fn || []).forEach((e, k) => {
+        e = String(e);
+        const toks = e.match(/[a-z_0-9]+/gi) || [];
+        if (!toks.every(t => OKF.has(t) || /^\d/.test(t)) || /[^0-9a-z+\-*\/^().,\s]/i.test(e)) return bad(f, `${w}: graph.fn[${k}] "${e}" có ký tự/hàm không cho phép (chỉ x, số, + - * / ^ ( ) và sin cos tan sqrt abs exp log ln pi)`);
+        let fn; try { fn = new Function('x', 'with(Math){var ln=log;return ' + e.replace(/\^/g, '**') + '}'); } catch (_) { return bad(f, `${w}: graph.fn[${k}] "${e}" sai cú pháp (nhân phải viết dấu *, ví dụ 2*x)`); }
+        let ok = 0; for (let i = 0; i <= 200; i++) { const x = g.x[0] + (g.x[1] - g.x[0]) * i / 200, y = fn(x); if (Number.isFinite(y) && y >= g.y[0] && y <= g.y[1]) ok++; }
+        if (ok < 5) warn(f, `${w}: graph.fn[${k}] gần như không có điểm nào nằm trong khung x=${g.x}, y=${g.y}`);
+      });
+    }
+  }
+  // Hình vẽ SVG do Gemini tự code
+  if (q.svg !== undefined) {
+    const v = String(q.svg);
+    if (!/^\s*<svg[\s>]/i.test(v) || !/<\/svg>\s*$/i.test(v)) bad(f, `${w}: "svg" phải bắt đầu bằng <svg và kết thúc bằng </svg>`);
+    if (/<script|\son\w+\s*=|javascript:|<foreignObject/i.test(v)) bad(f, `${w}: "svg" chứa script/sự kiện không an toàn`);
+    if (!/viewBox/i.test(v)) warn(f, `${w}: "svg" thiếu viewBox nên có thể bị méo/tràn khung`);
+  }
+}
+
+function checkQ(f, q, i, pre = '') {
+  const w = pre + `câu ${i + 1}`, ph = [...String(q.q).matchAll(/\[\[(\d+)\]\]/g)].map(m => +m[1]);
   if (typeof q.q !== 'string' || !q.q.trim()) bad(f, `${w}: thiếu nội dung "q"`);
   if (!['mc', 'mcm', 'tf', 'fill', 'drag'].includes(q.t)) return bad(f, `${w}: "t" phải là mc | mcm | tf | fill | drag (đang là ${JSON.stringify(q.t)})`);
   if (q.warn) warn(f, `${w}: Gemini ghi chú: ${q.warn}`);
+  checkExtras(f, q, w);
   latex(f, w, q.q);
+  if (q.p) latex(f, w + ' (p)', q.p);
   if (q.fig) { if (typeof q.fig !== 'string' || !fs.existsSync(path.join(root, q.fig))) warn(f, `${w}: không thấy ảnh "${q.fig}" (tính từ thư mục chứa index.html)`); }
   if (q.a === null || q.a === undefined) return bad(f, `${w}: chưa có đáp án ("a" là null/thiếu), gửi câu này cho Claude giải`);
   const L = (key, arr) => { if (!Array.isArray(arr) || arr.length < 2) { bad(f, `${w}: "${key}" phải là mảng ≥ 2 phần tử`); return false; } arr.forEach((x, k) => { if (typeof x !== 'string' || !x.trim()) bad(f, `${w}: ${key}[${k}] rỗng`); else latex(f, `${w} ${key}[${k}]`, x); }); return true; };
@@ -70,21 +111,30 @@ function checkQ(f, q, i) {
 
 function checkExam(file) {
   const f = path.basename(file), d = read(file);
-  if (!d) return 0;
+  if (!d) return null;
   if (!d.title) warn(f, 'thiếu "title" (sẽ lấy tên trong index.json)');
-  if (d.minutes !== undefined && !isInt(d.minutes, 1, 600)) bad(f, '"minutes" phải là số nguyên dương');
-  if (!Array.isArray(d.questions) || !d.questions.length) { bad(f, 'thiếu mảng "questions"'); return 0; }
-  d.questions.forEach((q, i) => checkQ(f, q, i));
-  console.log(`  ${f}: ${d.questions.length} câu`);
-  return d.questions.length;
+  // Hỗ trợ cả đề 1 phần ("questions") lẫn đề nhiều phần ("sections")
+  const secs = Array.isArray(d.sections) ? d.sections : (Array.isArray(d.questions) ? [{ title: d.title, minutes: d.minutes, questions: d.questions }] : null);
+  if (!secs || !secs.length) { bad(f, 'thiếu mảng "sections" (hoặc "questions")'); return null; }
+  let n = 0;
+  secs.forEach((s, k) => {
+    const pre = secs.length > 1 ? `[${s.title || 'phần ' + (k + 1)}] ` : '';
+    if (!s.title) bad(f, `phần ${k + 1}: thiếu "title"`);
+    if (s.minutes !== undefined && !isInt(s.minutes, 1, 600)) bad(f, `${pre}"minutes" phải là số nguyên dương`);
+    if (!Array.isArray(s.questions) || !s.questions.length) return bad(f, `${pre}thiếu mảng "questions"`);
+    s.questions.forEach((q, i) => checkQ(f, q, i, pre));
+    n += s.questions.length;
+    console.log(`  ${f}${secs.length > 1 ? ' / ' + s.title : ''}: ${s.questions.length} câu`);
+  });
+  return { parts: secs.length, qs: n };
 }
 
 if (isFile) checkExam(target);
 else {
-  const idx = path.join(dir, 'index.json'), known = new Set();
+  const idx = path.join(dir, 'index.json'), known = new Set(); let fixed = false, cfg = null;
   if (!fs.existsSync(idx)) bad('index.json', `không thấy ${idx}`);
   else {
-    const c = read(idx);
+    const c = cfg = read(idx);
     if (c) {
       if (!Array.isArray(c.exams) || !c.exams.length) bad('index.json', 'thiếu mảng "exams"');
       else {
@@ -97,12 +147,15 @@ else {
           if (e.minutes !== undefined && !isInt(e.minutes, 1, 600)) bad('index.json', `${w}: "minutes" phải là số nguyên dương`);
           const fn = e.file || e.id + '.json'; known.add(fn);
           const p = path.join(dir, fn);
-          if (!fs.existsSync(p)) bad('index.json', `${w}: không thấy file ${fn}`); else checkExam(p);
+          if (!fs.existsSync(p)) bad('index.json', `${w}: không thấy file ${fn}`);
+          else { const r = checkExam(p); if (r && e.parts !== r.parts) { if (FIX) { e.parts = r.parts; fixed = true; console.log(`  ↻ ${e.id}: parts = ${r.parts}`); } else warn('index.json', `${w}: "parts" là ${e.parts} nhưng đề có ${r.parts} phần (chạy --fix để sửa)`); } }
         });
       }
+      if (c.package !== undefined && typeof c.package !== 'string') bad('index.json', '"package" phải là chuỗi');
       if (c.webhook && !/^https:\/\//.test(c.webhook)) warn('index.json', '"webhook" nên là URL https');
     }
   }
+  if (fixed) { fs.writeFileSync(idx, JSON.stringify(cfg, null, 2) + '\n'); console.log('  đã ghi lại index.json'); }
   fs.readdirSync(dir).filter(x => x.endsWith('.json') && x !== 'index.json' && !known.has(x)).forEach(x => warn(x, 'có file nhưng chưa khai báo trong index.json'));
 }
 console.log(errs ? `\n✗ ${errs} lỗi, ${warns} cảnh báo` : `\n✓ OK, 0 lỗi, ${warns} cảnh báo`);

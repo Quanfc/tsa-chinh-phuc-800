@@ -1,0 +1,217 @@
+{
+ "title": "Đề Số 01",
+ "sections": [
+  {
+   "title": "Đề Toán Số 01",
+   "minutes": 60,
+   "questions": [
+    {
+     "t": "mc",
+     "q": "Cho hàm số $y=f(x)$ có đồ thị như hình vẽ. Điểm cực tiểu của đồ thị hàm số là",
+     "graph": {
+      "fn": [
+       "(x+1)^2*(x-2)"
+      ],
+      "x": [
+       -3,
+       3.5
+      ],
+      "y": [
+       -6,
+       2
+      ],
+      "pts": [
+       {
+        "x": 1,
+        "y": -4,
+        "t": "?"
+       }
+      ]
+     },
+     "o": [
+      "$x=-1$",
+      "$x=1$",
+      "$(2;0)$",
+      "$(1;-4)$"
+     ],
+     "a": 3,
+     "sol": [
+      "Quan sát đồ thị: đồ thị đi xuống rồi đi lên quanh $x=1$, nên đây là điểm thấp nhất cục bộ, tức điểm cực tiểu.",
+      "Tọa độ điểm cực tiểu là $(x;y)=(1;-4)$ vì tại $x=1$ thì $y=-4$.",
+      "Chú ý: đáp án $x=-1$ là hoành độ điểm cực đại, còn câu hỏi yêu cầu điểm cực tiểu của đồ thị (có cả hoành độ và tung độ) nên chọn $(1;-4)$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Hình chóp tứ giác đều $S.ABCD$ có bao nhiêu mặt?",
+     "svg": "<svg viewBox='0 0 300 220' xmlns='http://www.w3.org/2000/svg'><g stroke='currentColor' fill='none' stroke-width='1.6'><path d='M150 20L40 170L200 190L270 130Z'/><path d='M150 20L200 190M40 170L270 130' stroke-dasharray='5 4'/><path d='M150 20L40 170M150 20L270 130'/></g><g fill='currentColor' font-size='14'><text x='146' y='14'>S</text><text x='22' y='178'>A</text><text x='204' y='206'>B</text><text x='276' y='134'>C</text><text x='108' y='146'>D</text></g></svg>",
+     "o": [
+      "$4$",
+      "$5$",
+      "$6$",
+      "$8$"
+     ],
+     "a": 1,
+     "sol": [
+      "Hình chóp tứ giác đều $S.ABCD$ có đáy $ABCD$ là hình vuông và bốn mặt bên là các tam giác cân bằng nhau.",
+      "Số mặt = $1$ mặt đáy $+\\ 4$ mặt bên $= 5$.",
+      "Vậy đáp án là $5$. Chú ý đề hỏi số mặt, không phải số cạnh ($8$) hay số đỉnh ($5$)."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Giá trị của $\\int_0^1 2x\\,dx$ bằng",
+     "o": [
+      "$0$",
+      "$1$",
+      "$2$",
+      "$\\frac{1}{2}$"
+     ],
+     "a": 1,
+     "sol": [
+      "Ta tìm nguyên hàm của $2x$: $\\int 2x\\,dx = x^2 + C$.",
+      "Áp dụng công thức Newton–Leibniz: $\\int_0^1 2x\\,dx = \\left[x^2\\right]_0^1 = 1^2 - 0^2 = 1$.",
+      "Vậy đáp án đúng là $1$. Các đáp án còn lại sai do tính nhầm cận hoặc quên bình phương."
+     ]
+    },
+    {
+     "t": "mcm",
+     "q": "Chọn tất cả các số nguyên tố:",
+     "o": [
+      "$2$",
+      "$4$",
+      "$7$",
+      "$9$"
+     ],
+     "a": [
+      0,
+      2
+     ],
+     "sol": [
+      "Số nguyên tố là số tự nhiên lớn hơn $1$ chỉ có đúng hai ước là $1$ và chính nó.",
+      "$2$ chỉ có ước $1,2$ nên là số nguyên tố; $7$ chỉ có ước $1,7$ nên là số nguyên tố.",
+      "$4=2\\cdot 2$ và $9=3\\cdot 3$ có thêm ước khác $1$ và chính nó nên không phải số nguyên tố. Đáp án: $2$ và $7$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Cho $f(x)=x^2$. Mỗi phát biểu sau đúng hay sai?",
+     "s": [
+      "$f'(x)=2x$",
+      "$f(1)=2$"
+     ],
+     "a": [
+      1,
+      0
+     ],
+     "sol": [
+      "Ý 1: với $f(x)=x^2$, áp dụng quy tắc $(x^n)'=n x^{n-1}$ ta có $f'(x)=2x$. Vậy ý 1 đúng.",
+      "Ý 2: thay $x=1$ vào hàm số được $f(1)=1^2=1$, không phải $2$. Giá trị $2$ chính là $f'(1)=2\\cdot 1$, tức là đạo hàm chứ không phải giá trị hàm số. Vậy ý 2 sai."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "$2+3=$ [[0]] và $2\\cdot 3=$ [[1]].",
+     "a": [
+      5,
+      6
+     ],
+     "sol": [
+      "Ô trống thứ nhất là tổng hai số: $2+3=5$.",
+      "Ô trống thứ hai là tích hai số: $2\\cdot 3=6$ (nhân trước, không cộng).",
+      "Kết luận: điền lần lượt $5$ và $6$. Có thể kiểm tra lại bằng cách thử $2+3$ và $2\\cdot 3$ thêm một lần nữa."
+     ]
+    },
+    {
+     "t": "drag",
+     "q": "Kéo số vào ô trống: $\\sin 30^\\circ=$ [[0]].",
+     "c": [
+      "$\\frac{1}{2}$",
+      "$\\frac{\\sqrt{3}}{2}$",
+      "$1$"
+     ],
+     "a": [
+      0
+     ],
+     "note": "Giá trị đặc biệt của sin.",
+     "sol": [
+      "Ta cần giá trị của $\\sin 30^\\circ$. Xét tam giác đều cạnh $2$, kẻ đường cao thì được tam giác vuông có góc $30^\\circ$, cạnh đối bằng $1$, cạnh huyền bằng $2$.",
+      "Do đó $\\sin 30^\\circ=\\dfrac{\\text{đối}}{\\text{huyền}}=\\dfrac{1}{2}$. Chip $\\frac{\\sqrt3}{2}$ là $\\sin 60^\\circ$ nên không dùng."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Đề Đọc Hiểu Số 01",
+   "minutes": 60,
+   "questions": [
+    {
+     "t": "mc",
+     "p": "Nước là dung môi phổ biến nhất trong tự nhiên. Nhờ cấu trúc phân tử phân cực, nước hòa tan được nhiều chất ion và chất phân cực, vì vậy nó đóng vai trò then chốt trong các phản ứng sinh hóa của tế bào.",
+     "q": "Vì sao nước hòa tan được nhiều chất?",
+     "o": [
+      "Do nước có nhiệt dung lớn",
+      "Do phân tử nước phân cực",
+      "Do nước luôn ở thể lỏng",
+      "Do nước có khối lượng nhỏ"
+     ],
+     "a": 1,
+     "sol": [
+      "Đoạn văn nói nhờ cấu trúc phân tử phân cực nên nước hòa tan được nhiều chất ion và chất phân cực.",
+      "Do đó nguyên nhân là phân tử nước phân cực. Các đáp án còn lại (nhiệt dung, thể lỏng, khối lượng nhỏ) không được đoạn văn nêu là lý do hòa tan."
+     ]
+    },
+    {
+     "t": "tf",
+     "p": "Nước là dung môi phổ biến nhất trong tự nhiên. Nhờ cấu trúc phân tử phân cực, nước hòa tan được nhiều chất ion và chất phân cực, vì vậy nó đóng vai trò then chốt trong các phản ứng sinh hóa của tế bào.",
+     "q": "Dựa vào đoạn văn, các phát biểu sau đúng hay sai?",
+     "s": [
+      "Nước là dung môi phổ biến nhất trong tự nhiên.",
+      "Nước chỉ hòa tan được chất không phân cực."
+     ],
+     "a": [
+      1,
+      0
+     ],
+     "sol": [
+      "Ý 1: câu đầu của đoạn văn khẳng định nước là dung môi phổ biến nhất trong tự nhiên, nên đúng.",
+      "Ý 2: đoạn văn nói nước hòa tan được chất ion và chất phân cực, không nói chỉ hòa tan chất không phân cực, nên sai."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Đề Khoa Học Số 1",
+   "minutes": 60,
+   "questions": [
+    {
+     "t": "fill",
+     "q": "Một vật rơi tự do không vận tốc đầu trong $2$ s với $g=10\\ m/s^2$. Quãng đường rơi là [[0]] m.",
+     "a": [
+      20
+     ],
+     "sol": [
+      "Rơi tự do không vận tốc đầu có công thức quãng đường $s=\\dfrac{1}{2}gt^2$.",
+      "Thay $g=10\\ m/s^2$, $t=2\\ s$: $s=\\dfrac12\\cdot 10\\cdot 2^2=\\dfrac12\\cdot 10\\cdot 4=20\\ m$.",
+      "Vậy ô trống là $20$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Công thức hóa học của khí metan là",
+     "o": [
+      "$CO_2$",
+      "$CH_4$",
+      "$C_2H_6$",
+      "$H_2O$"
+     ],
+     "a": 1,
+     "sol": [
+      "Metan là hiđrocacbon đơn giản nhất, phân tử có $1$ nguyên tử cacbon liên kết với $4$ nguyên tử hiđro.",
+      "Công thức hóa học là $CH_4$. $CO_2$ là khí cacbonic, $C_2H_6$ là etan, $H_2O$ là nước."
+     ]
+    }
+   ]
+  }
+ ]
+}

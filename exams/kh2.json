@@ -1,0 +1,277 @@
+{
+  "title": "KHOA HỌC",
+  "minutes": 60,
+  "questions": [
+    {
+      "t": "mc",
+      "p": "Khi phân tích chuyển động ném xiên ta thường quan tâm đến hai đặc trưng: tầm xa R (là khoảng cách xa nhất theo phương ngang so với vị trí ban đầu) và độ cao cực đại h (là khoảng cách xa nhất theo phương đứng so với vị trí ban đầu, tại đó vận tốc của vật theo phương y bằng 0) mà vật đạt được.<br>Hình trên biểu diễn quỹ đạo của một vật ném xiên được ném từ gốc tọa độ với cùng tốc độ ban đầu là 50 m/s nhưng các góc ném khác nhau. Dựa vào đồ thị, hãy trả lời các câu hỏi sau.",
+      "q": "Hãy sắp xếp các góc bắn như trên hình vẽ theo thứ tự thời gian bay từ nhỏ nhất đến lớn nhất.",
+      "o": [
+        "$15^{\\circ}; 30^{\\circ}; 45^{\\circ}; 60^{\\circ}; 75^{\\circ}$.",
+        "$75^{\\circ}; 60^{\\circ}; 45^{\\circ}; 30^{\\circ}; 15^{\\circ}$.",
+        "$15^{\\circ}; 30^{\\circ}; 60^{\\circ}; 45^{\\circ}; 75^{\\circ}$.",
+        "$75^{\\circ}; 60^{\\circ}; 15^{\\circ}; 30^{\\circ}; 45^{\\circ}$."
+      ],
+      "a": 0,
+      "sol": [
+        "Thời gian bay của vật ném xiên được xác định bằng công thức: $t = \\frac{2v_0 \\sin\\theta}{g}$.",
+        "Vì vận tốc ban đầu $v_0$ và gia tốc $g$ là không đổi, nên thời gian bay tỉ lệ thuận với $\\sin\\theta$.",
+        "Trong khoảng từ $0^{\\circ}$ đến $90^{\\circ}$, hàm số $\\sin\\theta$ đồng biến, nghĩa là góc ném $\\theta$ càng lớn thì $\\sin\\theta$ càng lớn, dẫn đến thời gian bay càng lâu.",
+        "Do đó, thứ tự góc bắn ứng với thời gian bay từ nhỏ nhất đến lớn nhất là: $15^{\\circ}; 30^{\\circ}; 45^{\\circ}; 60^{\\circ}; 75^{\\circ}$."
+      ],
+      "solved": true
+    },
+    {
+      "t": "mc",
+      "p": "Một sinh viên đã thực hiện ba nghiên cứu để đo tốc độ trung bình của ô tô điều khiển từ xa với các loại bánh xe khác nhau chuyển động trên một máng thẳng. Các nghiên cứu được tiến hành trong một căn phòng được kiểm soát nhiệt độ, máng thẳng có độ dài 75 feet (kí hiệu ft - đơn vị đo chiều dài). Thời gian di chuyển của ô tô từ đầu máng đến cuối máng được đo bằng đồng hồ bấm giờ. Nhiệt độ trong phòng được giữ không đổi ở $50^{\\circ}F$ và bề mặt máng thẳng được đưa trở lại trạng thái ban đầu sau mỗi lần thử nghiệm. Không có thay đổi nào đối với xe ô tô ngoài việc thay bánh xe, ắc quy của ô tô được sạc đầy trước mỗi lần thử nghiệm.<br>Nghiên cứu 1<br>Ô tô điều khiển được lắp những bánh xe cao su cứng, có rãnh sâu và được đặt lên mặt phẳng tại đầu máng thẳng. Khởi động cho xe chạy và đồng thời ấn nút START trên đồng hồ bấm giây để bắt đầu tính thời gian. Lúc xe đi qua mốc 75 ft thì ấn nút STOP để kết thúc quá trình đo. Kết quả đo được sau mỗi thử nghiệm và giá trị trung bình của các kết quả được ghi lại trong Bảng 1.<br>Bảng 1<br>Thử nghiệm 1: 22.8 s, 3.28 ft/s<br>Thử nghiệm 2: 23.2 s, 3.23 ft/s<br>Thử nghiệm 3: 22.5 s, 3.33 ft/s<br>Trung bình: 22.8 s, 3.28 ft/s<br>Nghiên cứu 2<br>Lặp lại các bước tiến hành thí nghiệm như ở Nghiên cứu 1, với chiếc ô tô được thay các bánh xe cao su mềm, nhẵn và không có rãnh. Các kết quả đo được và giá trị trung bình của các kết quả được thể hiện trong Bảng 2.<br>Bảng 2<br>Thử nghiệm 1: 57 s, 1.31 ft/s<br>Thử nghiệm 2: 56.4 s, 1.33 ft/s<br>Thử nghiệm 3: 56.7 s, 1.32 ft/s<br>Trung bình: 56.7 s, 1.32 ft/s<br>Nghiên cứu 3<br>Tiếp tục lặp lại các bước tiến hành thí nghiệm trong Nghiên cứu 1 với một chiếc ô tô khác có bánh xe bằng cao su cứng và có các đinh tán. Các kết quả đo được và giá trị trung bình của các kết quả được thể hiện trong Bảng 3.<br>Bảng 3<br>Thử nghiệm 1: 11.3 s, 6.64 ft/s<br>Thử nghiệm 2: 11.6 s, 6.47 ft/s<br>Thử nghiệm 3: 12.1 s, 6.20 ft/s<br>Trung bình: 11.7 s, 6.44 ft/s",
+      "q": "Gọi tốc độ trung bình của ô tô có bánh xe bằng cao su cứng, có các đinh tán là $v_1$, tốc độ trung bình của ô tô có bánh xe cao su mềm, nhẵn và không có rãnh là $v_2$ và tốc độ trung bình của ô tô có bánh xe cao su cứng, có rãnh sâu là $v_3$. Hệ thức nào sau đây là đúng?",
+      "o": [
+        "$v_{1} \\approx 2v_{2}$.",
+        "$v_{1} \\approx 2v_{3}$.",
+        "$v_{1} \\approx \\frac{1}{2}v_{2}$.",
+        "$v_{1} \\approx \\frac{1}{2}v_{3}$."
+      ],
+      "a": 1,
+      "sol": [
+        "Từ bảng kết quả của 3 nghiên cứu, ta có:",
+        "Tốc độ trung bình $v_1$ (cao su cứng, đinh tán - Bảng 3) = $6,44$ ft/s.",
+        "Tốc độ trung bình $v_2$ (cao su mềm, nhẵn, không rãnh - Bảng 2) = $1,32$ ft/s.",
+        "Tốc độ trung bình $v_3$ (cao su cứng, có rãnh sâu - Bảng 1) = $3,28$ ft/s.",
+        "So sánh các giá trị, ta thấy $v_1 \\approx 6,44$ ft/s và $2 \\times v_3 = 2 \\times 3,28 = 6,56$ ft/s. Hai giá trị này xấp xỉ nhau.",
+        "Vậy hệ thức đúng là $v_1 \\approx 2v_3$."
+      ],
+      "solved": true
+    },
+    {
+      "t": "drag",
+      "p": "Một sinh viên đã thực hiện ba nghiên cứu để đo tốc độ trung bình của ô tô điều khiển từ xa với các loại bánh xe khác nhau chuyển động trên một máng thẳng. Các nghiên cứu được tiến hành trong một căn phòng được kiểm soát nhiệt độ, máng thẳng có độ dài 75 feet (kí hiệu ft - đơn vị đo chiều dài). Thời gian di chuyển của ô tô từ đầu máng đến cuối máng được đo bằng đồng hồ bấm giờ. Nhiệt độ trong phòng được giữ không đổi ở $50^{\\circ}F$ và bề mặt máng thẳng được đưa trở lại trạng thái ban đầu sau mỗi lần thử nghiệm. Không có thay đổi nào đối với xe ô tô ngoài việc thay bánh xe, ắc quy của ô tô được sạc đầy trước mỗi lần thử nghiệm.<br>Nghiên cứu 1<br>Ô tô điều khiển được lắp những bánh xe cao su cứng, có rãnh sâu và được đặt lên mặt phẳng tại đầu máng thẳng. Khởi động cho xe chạy và đồng thời ấn nút START trên đồng hồ bấm giây để bắt đầu tính thời gian. Lúc xe đi qua mốc 75 ft thì ấn nút STOP để kết thúc quá trình đo. Kết quả đo được sau mỗi thử nghiệm và giá trị trung bình của các kết quả được ghi lại trong Bảng 1.<br>Bảng 1<br>Thử nghiệm 1: 22.8 s, 3.28 ft/s<br>Thử nghiệm 2: 23.2 s, 3.23 ft/s<br>Thử nghiệm 3: 22.5 s, 3.33 ft/s<br>Trung bình: 22.8 s, 3.28 ft/s<br>Nghiên cứu 2<br>Lặp lại các bước tiến hành thí nghiệm như ở Nghiên cứu 1, với chiếc ô tô được thay các bánh xe cao su mềm, nhẵn và không có rãnh. Các kết quả đo được và giá trị trung bình của các kết quả được thể hiện trong Bảng 2.<br>Bảng 2<br>Thử nghiệm 1: 57 s, 1.31 ft/s<br>Thử nghiệm 2: 56.4 s, 1.33 ft/s<br>Thử nghiệm 3: 56.7 s, 1.32 ft/s<br>Trung bình: 56.7 s, 1.32 ft/s<br>Nghiên cứu 3<br>Tiếp tục lặp lại các bước tiến hành thí nghiệm trong Nghiên cứu 1 với một chiếc ô tô khác có bánh xe bằng cao su cứng và có các đinh tán. Các kết quả đo được và giá trị trung bình của các kết quả được thể hiện trong Bảng 3.<br>Bảng 3<br>Thử nghiệm 1: 11.3 s, 6.64 ft/s<br>Thử nghiệm 2: 11.6 s, 6.47 ft/s<br>Thử nghiệm 3: 12.1 s, 6.20 ft/s<br>Trung bình: 11.7 s, 6.44 ft/s",
+      "q": "Trong các thử nghiệm, để [[0]] chuyển động của xe, các học sinh nên sử dụng loại bánh xe có đinh tán hoặc có rãnh sâu nhằm tạo ra [[1]] lớn.",
+      "c": [
+        "giảm tốc độ",
+        "tăng tốc độ",
+        "lực ma sát",
+        "lực hướng tâm"
+      ],
+      "a": [
+        1,
+        2
+      ],
+      "sol": [
+        "Kết quả thí nghiệm cho thấy ô tô gắn bánh xe có rãnh sâu (Nghiên cứu 1) và bánh có đinh tán (Nghiên cứu 3) đạt tốc độ cao hơn hẳn bánh nhẵn (Nghiên cứu 2).",
+        "Do đó, sử dụng các bánh xe này là để \"tăng tốc độ\" chuyển động của xe.",
+        "Nguyên nhân là nhờ cấu trúc rãnh/đinh giúp bánh xe bám chặt vào bề mặt, tạo ra \"lực ma sát\" lớn, từ đó giúp hạn chế trượt và truyền lực đẩy hiệu quả hơn."
+      ],
+      "solved": true
+    },
+    {
+      "t": "fill",
+      "p": "Một sinh viên đã thực hiện ba nghiên cứu để đo tốc độ trung bình của ô tô điều khiển từ xa với các loại bánh xe khác nhau chuyển động trên một máng thẳng. Các nghiên cứu được tiến hành trong một căn phòng được kiểm soát nhiệt độ, máng thẳng có độ dài 75 feet (kí hiệu ft - đơn vị đo chiều dài). Thời gian di chuyển của ô tô từ đầu máng đến cuối máng được đo bằng đồng hồ bấm giờ. Nhiệt độ trong phòng được giữ không đổi ở $50^{\\circ}F$ và bề mặt máng thẳng được đưa trở lại trạng thái ban đầu sau mỗi lần thử nghiệm. Không có thay đổi nào đối với xe ô tô ngoài việc thay bánh xe, ắc quy của ô tô được sạc đầy trước mỗi lần thử nghiệm.<br>Nghiên cứu 1<br>Ô tô điều khiển được lắp những bánh xe cao su cứng, có rãnh sâu và được đặt lên mặt phẳng tại đầu máng thẳng. Khởi động cho xe chạy và đồng thời ấn nút START trên đồng hồ bấm giây để bắt đầu tính thời gian. Lúc xe đi qua mốc 75 ft thì ấn nút STOP để kết thúc quá trình đo. Kết quả đo được sau mỗi thử nghiệm và giá trị trung bình của các kết quả được ghi lại trong Bảng 1.<br>Bảng 1<br>Thử nghiệm 1: 22.8 s, 3.28 ft/s<br>Thử nghiệm 2: 23.2 s, 3.23 ft/s<br>Thử nghiệm 3: 22.5 s, 3.33 ft/s<br>Trung bình: 22.8 s, 3.28 ft/s<br>Nghiên cứu 2<br>Lặp lại các bước tiến hành thí nghiệm như ở Nghiên cứu 1, với chiếc ô tô được thay các bánh xe cao su mềm, nhẵn và không có rãnh. Các kết quả đo được và giá trị trung bình của các kết quả được thể hiện trong Bảng 2.<br>Bảng 2<br>Thử nghiệm 1: 57 s, 1.31 ft/s<br>Thử nghiệm 2: 56.4 s, 1.33 ft/s<br>Thử nghiệm 3: 56.7 s, 1.32 ft/s<br>Trung bình: 56.7 s, 1.32 ft/s<br>Nghiên cứu 3<br>Tiếp tục lặp lại các bước tiến hành thí nghiệm trong Nghiên cứu 1 với một chiếc ô tô khác có bánh xe bằng cao su cứng và có các đinh tán. Các kết quả đo được và giá trị trung bình của các kết quả được thể hiện trong Bảng 3.<br>Bảng 3<br>Thử nghiệm 1: 11.3 s, 6.64 ft/s<br>Thử nghiệm 2: 11.6 s, 6.47 ft/s<br>Thử nghiệm 3: 12.1 s, 6.20 ft/s<br>Trung bình: 11.7 s, 6.44 ft/s",
+      "q": "Nếu thang nhiệt độ Fahrenheit quy ước nhiệt độ của nước đá đang tan là $32^{\\circ}F$, của hơi nước đang sôi là $212^{\\circ}F$. Trong các thử nghiệm, nhiệt độ trong phòng được giữ không đổi ở [[0]] $^{\\circ}C$.",
+      "a": [
+        10
+      ],
+      "sol": [
+        "Theo bài ra, nước đá đang tan là $32^{\\circ}F$ (tương ứng $0^{\\circ}C$) và nước sôi là $212^{\\circ}F$ (tương ứng $100^{\\circ}C$).",
+        "Khoảng chênh lệch $100^{\\circ}C$ tương ứng với $212 - 32 = 180^{\\circ}F$. Do đó công thức chuyển đổi từ độ F sang độ C là: $t(^{\\circ}C) = (t(^{\\circ}F) - 32) \\times \\frac{100}{180} = (t(^{\\circ}F) - 32) \\times \\frac{5}{9}$.",
+        "Nhiệt độ trong phòng thí nghiệm là $50^{\\circ}F$. Đổi sang độ C: $t = (50 - 32) \\times \\frac{5}{9} = 18 \\times \\frac{5}{9} = 10^{\\circ}C$."
+      ],
+      "solved": true
+    },
+    {
+      "t": "fill",
+      "p": "Một sinh viên đã thực hiện ba nghiên cứu để đo tốc độ trung bình của ô tô điều khiển từ xa với các loại bánh xe khác nhau chuyển động trên một máng thẳng. Các nghiên cứu được tiến hành trong một căn phòng được kiểm soát nhiệt độ, máng thẳng có độ dài 75 feet (kí hiệu ft - đơn vị đo chiều dài). Thời gian di chuyển của ô tô từ đầu máng đến cuối máng được đo bằng đồng hồ bấm giờ. Nhiệt độ trong phòng được giữ không đổi ở $50^{\\circ}F$ và bề mặt máng thẳng được đưa trở lại trạng thái ban đầu sau mỗi lần thử nghiệm. Không có thay đổi nào đối với xe ô tô ngoài việc thay bánh xe, ắc quy của ô tô được sạc đầy trước mỗi lần thử nghiệm.<br>Nghiên cứu 1<br>Ô tô điều khiển được lắp những bánh xe cao su cứng, có rãnh sâu và được đặt lên mặt phẳng tại đầu máng thẳng. Khởi động cho xe chạy và đồng thời ấn nút START trên đồng hồ bấm giây để bắt đầu tính thời gian. Lúc xe đi qua mốc 75 ft thì ấn nút STOP để kết thúc quá trình đo. Kết quả đo được sau mỗi thử nghiệm và giá trị trung bình của các kết quả được ghi lại trong Bảng 1.<br>Bảng 1<br>Thử nghiệm 1: 22.8 s, 3.28 ft/s<br>Thử nghiệm 2: 23.2 s, 3.23 ft/s<br>Thử nghiệm 3: 22.5 s, 3.33 ft/s<br>Trung bình: 22.8 s, 3.28 ft/s<br>Nghiên cứu 2<br>Lặp lại các bước tiến hành thí nghiệm như ở Nghiên cứu 1, với chiếc ô tô được thay các bánh xe cao su mềm, nhẵn và không có rãnh. Các kết quả đo được và giá trị trung bình của các kết quả được thể hiện trong Bảng 2.<br>Bảng 2<br>Thử nghiệm 1: 57 s, 1.31 ft/s<br>Thử nghiệm 2: 56.4 s, 1.33 ft/s<br>Thử nghiệm 3: 56.7 s, 1.32 ft/s<br>Trung bình: 56.7 s, 1.32 ft/s<br>Nghiên cứu 3<br>Tiếp tục lặp lại các bước tiến hành thí nghiệm trong Nghiên cứu 1 với một chiếc ô tô khác có bánh xe bằng cao su cứng và có các đinh tán. Các kết quả đo được và giá trị trung bình của các kết quả được thể hiện trong Bảng 3.<br>Bảng 3<br>Thử nghiệm 1: 11.3 s, 6.64 ft/s<br>Thử nghiệm 2: 11.6 s, 6.47 ft/s<br>Thử nghiệm 3: 12.1 s, 6.20 ft/s<br>Trung bình: 11.7 s, 6.44 ft/s",
+      "q": "Tốc độ trung bình của ô tô có bánh xe bằng cao su cứng và có các đinh tán trong các thử nghiệm là [[0]] ft/s.",
+      "a": [
+        6.44
+      ],
+      "sol": [
+        "Từ dữ liệu ở Nghiên cứu 3, ta sử dụng ô tô có bánh xe bằng cao su cứng và có các đinh tán.",
+        "Nhìn vào dòng \"Trung bình\" ở Bảng 3, giá trị ghi nhận ở cột \"Tốc độ (ft/s)\" là $6,44$."
+      ],
+      "solved": true
+    },
+    {
+      "t": "mc",
+      "p": "Một sinh viên đã thực hiện ba nghiên cứu để đo tốc độ trung bình của ô tô điều khiển từ xa với các loại bánh xe khác nhau chuyển động trên một máng thẳng. Các nghiên cứu được tiến hành trong một căn phòng được kiểm soát nhiệt độ, máng thẳng có độ dài 75 feet (kí hiệu ft - đơn vị đo chiều dài). Thời gian di chuyển của ô tô từ đầu máng đến cuối máng được đo bằng đồng hồ bấm giờ. Nhiệt độ trong phòng được giữ không đổi ở $50^{\\circ}F$ và bề mặt máng thẳng được đưa trở lại trạng thái ban đầu sau mỗi lần thử nghiệm. Không có thay đổi nào đối với xe ô tô ngoài việc thay bánh xe, ắc quy của ô tô được sạc đầy trước mỗi lần thử nghiệm.<br>Nghiên cứu 1<br>Ô tô điều khiển được lắp những bánh xe cao su cứng, có rãnh sâu và được đặt lên mặt phẳng tại đầu máng thẳng. Khởi động cho xe chạy và đồng thời ấn nút START trên đồng hồ bấm giây để bắt đầu tính thời gian. Lúc xe đi qua mốc 75 ft thì ấn nút STOP để kết thúc quá trình đo. Kết quả đo được sau mỗi thử nghiệm và giá trị trung bình của các kết quả được ghi lại trong Bảng 1.<br>Bảng 1<br>Thử nghiệm 1: 22.8 s, 3.28 ft/s<br>Thử nghiệm 2: 23.2 s, 3.23 ft/s<br>Thử nghiệm 3: 22.5 s, 3.33 ft/s<br>Trung bình: 22.8 s, 3.28 ft/s<br>Nghiên cứu 2<br>Lặp lại các bước tiến hành thí nghiệm như ở Nghiên cứu 1, với chiếc ô tô được thay các bánh xe cao su mềm, nhẵn và không có rãnh. Các kết quả đo được và giá trị trung bình của các kết quả được thể hiện trong Bảng 2.<br>Bảng 2<br>Thử nghiệm 1: 57 s, 1.31 ft/s<br>Thử nghiệm 2: 56.4 s, 1.33 ft/s<br>Thử nghiệm 3: 56.7 s, 1.32 ft/s<br>Trung bình: 56.7 s, 1.32 ft/s<br>Nghiên cứu 3<br>Tiếp tục lặp lại các bước tiến hành thí nghiệm trong Nghiên cứu 1 với một chiếc ô tô khác có bánh xe bằng cao su cứng và có các đinh tán. Các kết quả đo được và giá trị trung bình của các kết quả được thể hiện trong Bảng 3.<br>Bảng 3<br>Thử nghiệm 1: 11.3 s, 6.64 ft/s<br>Thử nghiệm 2: 11.6 s, 6.47 ft/s<br>Thử nghiệm 3: 12.1 s, 6.20 ft/s<br>Trung bình: 11.7 s, 6.44 ft/s",
+      "q": "Ô tô điều khiển từ xa sử dụng loại bánh xe nào sau đây sẽ có tốc độ trung bình là lớn nhất?",
+      "o": [
+        "Bánh xe cao su cứng có đinh tán.",
+        "Bánh xe cao su cứng, có rãnh sâu.",
+        "Bánh xe cao su mềm, nhẵn và không có rãnh.",
+        "Tốc độ trung bình của xe là như nhau đối với các loại bánh xe khác nhau."
+      ],
+      "a": 0,
+      "sol": [
+        "Dựa vào giá trị trung bình ghi ở cả ba bảng kết quả:",
+        "- Bánh xe cao su cứng, rãnh sâu (Bảng 1) đạt $3,28$ ft/s.",
+        "- Bánh xe cao su mềm, nhẵn, không rãnh (Bảng 2) đạt $1,32$ ft/s.",
+        "- Bánh xe cao su cứng có đinh tán (Bảng 3) đạt $6,44$ ft/s.",
+        "Giá trị $6,44$ là lớn nhất, tương ứng với bánh xe cao su cứng có đinh tán."
+      ],
+      "solved": true
+    },
+    {
+      "t": "mc",
+      "p": "Một sinh viên đã thực hiện ba nghiên cứu để đo tốc độ trung bình của ô tô điều khiển từ xa với các loại bánh xe khác nhau chuyển động trên một máng thẳng. Các nghiên cứu được tiến hành trong một căn phòng được kiểm soát nhiệt độ, máng thẳng có độ dài 75 feet (kí hiệu ft - đơn vị đo chiều dài). Thời gian di chuyển của ô tô từ đầu máng đến cuối máng được đo bằng đồng hồ bấm giờ. Nhiệt độ trong phòng được giữ không đổi ở $50^{\\circ}F$ và bề mặt máng thẳng được đưa trở lại trạng thái ban đầu sau mỗi lần thử nghiệm. Không có thay đổi nào đối với xe ô tô ngoài việc thay bánh xe, ắc quy của ô tô được sạc đầy trước mỗi lần thử nghiệm.<br>Nghiên cứu 1<br>Ô tô điều khiển được lắp những bánh xe cao su cứng, có rãnh sâu và được đặt lên mặt phẳng tại đầu máng thẳng. Khởi động cho xe chạy và đồng thời ấn nút START trên đồng hồ bấm giây để bắt đầu tính thời gian. Lúc xe đi qua mốc 75 ft thì ấn nút STOP để kết thúc quá trình đo. Kết quả đo được sau mỗi thử nghiệm và giá trị trung bình của các kết quả được ghi lại trong Bảng 1.<br>Bảng 1<br>Thử nghiệm 1: 22.8 s, 3.28 ft/s<br>Thử nghiệm 2: 23.2 s, 3.23 ft/s<br>Thử nghiệm 3: 22.5 s, 3.33 ft/s<br>Trung bình: 22.8 s, 3.28 ft/s<br>Nghiên cứu 2<br>Lặp lại các bước tiến hành thí nghiệm như ở Nghiên cứu 1, với chiếc ô tô được thay các bánh xe cao su mềm, nhẵn và không có rãnh. Các kết quả đo được và giá trị trung bình của các kết quả được thể hiện trong Bảng 2.<br>Bảng 2<br>Thử nghiệm 1: 57 s, 1.31 ft/s<br>Thử nghiệm 2: 56.4 s, 1.33 ft/s<br>Thử nghiệm 3: 56.7 s, 1.32 ft/s<br>Trung bình: 56.7 s, 1.32 ft/s<br>Nghiên cứu 3<br>Tiếp tục lặp lại các bước tiến hành thí nghiệm trong Nghiên cứu 1 với một chiếc ô tô khác có bánh xe bằng cao su cứng và có các đinh tán. Các kết quả đo được và giá trị trung bình của các kết quả được thể hiện trong Bảng 3.<br>Bảng 3<br>Thử nghiệm 1: 11.3 s, 6.64 ft/s<br>Thử nghiệm 2: 11.6 s, 6.47 ft/s<br>Thử nghiệm 3: 12.1 s, 6.20 ft/s<br>Trung bình: 11.7 s, 6.44 ft/s",
+      "q": "Đơn vị tính của tốc độ được sử dụng trong các nghiên cứu là",
+      "o": [
+        "m/s.",
+        "km/h.",
+        "feet/s.",
+        "dặm/h."
+      ],
+      "a": 2,
+      "sol": [
+        "Quan sát các Bảng 1, Bảng 2 và Bảng 3 trong bài, cột tốc độ đều ghi rõ đơn vị đo là \"ft/s\", tức là feet trên giây."
+      ],
+      "solved": true
+    },
+    {
+      "t": "tf",
+      "p": "Một sinh viên đã thực hiện ba nghiên cứu để đo tốc độ trung bình của ô tô điều khiển từ xa với các loại bánh xe khác nhau chuyển động trên một máng thẳng. Các nghiên cứu được tiến hành trong một căn phòng được kiểm soát nhiệt độ, máng thẳng có độ dài 75 feet (kí hiệu ft - đơn vị đo chiều dài). Thời gian di chuyển của ô tô từ đầu máng đến cuối máng được đo bằng đồng hồ bấm giờ. Nhiệt độ trong phòng được giữ không đổi ở $50^{\\circ}F$ và bề mặt máng thẳng được đưa trở lại trạng thái ban đầu sau mỗi lần thử nghiệm. Không có thay đổi nào đối với xe ô tô ngoài việc thay bánh xe, ắc quy của ô tô được sạc đầy trước mỗi lần thử nghiệm.<br>Nghiên cứu 1<br>Ô tô điều khiển được lắp những bánh xe cao su cứng, có rãnh sâu và được đặt lên mặt phẳng tại đầu máng thẳng. Khởi động cho xe chạy và đồng thời ấn nút START trên đồng hồ bấm giây để bắt đầu tính thời gian. Lúc xe đi qua mốc 75 ft thì ấn nút STOP để kết thúc quá trình đo. Kết quả đo được sau mỗi thử nghiệm và giá trị trung bình của các kết quả được ghi lại trong Bảng 1.<br>Bảng 1<br>Thử nghiệm 1: 22.8 s, 3.28 ft/s<br>Thử nghiệm 2: 23.2 s, 3.23 ft/s<br>Thử nghiệm 3: 22.5 s, 3.33 ft/s<br>Trung bình: 22.8 s, 3.28 ft/s<br>Nghiên cứu 2<br>Lặp lại các bước tiến hành thí nghiệm như ở Nghiên cứu 1, với chiếc ô tô được thay các bánh xe cao su mềm, nhẵn và không có rãnh. Các kết quả đo được và giá trị trung bình của các kết quả được thể hiện trong Bảng 2.<br>Bảng 2<br>Thử nghiệm 1: 57 s, 1.31 ft/s<br>Thử nghiệm 2: 56.4 s, 1.33 ft/s<br>Thử nghiệm 3: 56.7 s, 1.32 ft/s<br>Trung bình: 56.7 s, 1.32 ft/s<br>Nghiên cứu 3<br>Tiếp tục lặp lại các bước tiến hành thí nghiệm trong Nghiên cứu 1 với một chiếc ô tô khác có bánh xe bằng cao su cứng và có các đinh tán. Các kết quả đo được và giá trị trung bình của các kết quả được thể hiện trong Bảng 3.<br>Bảng 3<br>Thử nghiệm 1: 11.3 s, 6.64 ft/s<br>Thử nghiệm 2: 11.6 s, 6.47 ft/s<br>Thử nghiệm 3: 12.1 s, 6.20 ft/s<br>Trung bình: 11.7 s, 6.44 ft/s",
+      "q": "Phát biểu sau là đúng hay sai?<br>Trong Nghiên cứu 1, tốc độ trung bình của cả ba thử nghiệm lớn hơn tốc độ trung bình đo được trong Thử nghiệm 2, đúng hay sai?",
+      "s": [
+        "Trong Nghiên cứu 1, tốc độ trung bình của cả ba thử nghiệm lớn hơn tốc độ trung bình đo được trong Thử nghiệm 2."
+      ],
+      "a": [
+        1
+      ],
+      "warn": "Đề bài có thể bị nhầm lẫn giữa cụm từ 'Thử nghiệm 2' và 'Nghiên cứu 2'. Tuy nhiên cả hai cách hiểu đều ra kết quả Đúng.",
+      "sol": [
+        "Ý 1: Đúng. Nếu hiểu 'Thử nghiệm 2' thuộc Nghiên cứu 1, ta có tốc độ trung bình chung của Nghiên cứu 1 là $3,28$ ft/s, lớn hơn tốc độ riêng lẻ tại thử nghiệm 2 là $3,23$ ft/s.",
+        "Nếu câu hỏi gõ nhầm và ý muốn hỏi 'Nghiên cứu 2', thì tốc độ trung bình Nghiên cứu 1 ($3,28$ ft/s) vẫn lớn hơn tốc độ trung bình Nghiên cứu 2 ($1,32$ ft/s). Do đó phát biểu luôn đúng."
+      ],
+      "solved": true
+    },
+    {
+      "t": "mc",
+      "p": "Các virus thiếu enzyme chuyển hóa và bộ máy sản xuất protein. Chúng là các dạng sống ký sinh nội bào bắt buộc. Mỗi loại virus chỉ có thể lây nhiễm một số lượng nhất định các loại tế bào chủ, được gọi là phổ vật chủ của virus. Tính đặc trưng của phổ vật chủ là kết quả của quá trình tiến hóa hệ thống nhận diện của mỗi loại virus. Virus nhận ra các tế bào chủ của nó theo nguyên tắc \"chìa và khóa\" giữa các protein bề mặt của virus với các phân tử thụ thể đặc hiệu trên bề mặt ngoài của tế bào chủ.<br>Hình 1. Chu trình nhân lên của virus trong tế bào chủ<br>Quá trình lây nhiễm của virus bắt đầu khi một virus đính kết với tế bào chủ và hệ gene của chúng được truyền vào trong tế bào chủ. Cơ chế truyền hệ gene của virus vào tế bào chủ phụ thuộc vào loại virus và loại tế bào chủ. Khi hệ gene của virus đã ở trong tế bào chủ, các protein mà nó mã hóa có thể trưng dụng tế bào chủ, tái lập trình hoạt động tế bào để tải bản hệ gene của virus, đồng thời sản xuất ra các protein của virus. Tế bào chủ cung cấp các nucleotide cho việc tổng hợp các nucleic acid của virus, cũng như các enzyme, các ribosome, các tRNA, các amino acid, ATP và các thành phần khác cần thiết để tổng hợp protein của virus. Phần lớn các virus DNA dùng các enzyme DNA polymerase của tế bào chủ để tổng hợp hệ gene mới của chúng trên cơ sở dùng mạch khuôn là DNA của virus. Ngược lại, để tái bản vật chất di truyền, các virus RNA thường mã hóa các enzyme polymerase sử dụng RNA làm mạch khuôn.<br>Sau khi các phân tử nucleic acid và các capsomer đã được tạo ra, chúng sẽ đóng gói với nhau một cách tự phát để hình thành nên các virus thế hệ con. Một kiểu chu kì sinh sản của virus đơn giản nhất sẽ kết thúc bằng việc hàng trăm hoặc thậm chí hàng nghìn virus thoát khỏi tế bào chủ lây nhiễm, kéo theo sự phá hủy của tế bào chủ.",
+      "q": "Điều nào sau đây không đúng khi nói về virus?",
+      "o": [
+        "Chỉ trong tế bào chủ, virus mới hoạt động như một thể sống.",
+        "Hệ gene của virus chỉ chứa một trong hai loại nucleic acid: DNA, RNA.",
+        "Kích thước của virus vô cùng nhỏ, chỉ có thể thấy được dưới kính hiển vi điện tử.",
+        "Ở bên ngoài môi trường, virus chỉ sinh trưởng chứ không sinh sản được mặc dù có cả phức hợp gồm nucleic acid và protein."
+      ],
+      "a": 3,
+      "sol": [
+        "Virus là thực thể ký sinh nội bào bắt buộc, không có cấu tạo tế bào và không có bộ máy chuyển hóa độc lập.",
+        "Do đó, khi ở ngoài môi trường (ngoài tế bào chủ), hạt virus không thể thực hiện bất kỳ hoạt động sống nào, kể cả sinh trưởng và sinh sản.",
+        "Vì vậy, phát biểu \"Ở bên ngoài môi trường, virus chỉ sinh trưởng chứ không sinh sản được...\" là sai do virus không hề sinh trưởng."
+      ],
+      "solved": true
+    },
+    {
+      "t": "fill",
+      "p": "Các virus thiếu enzyme chuyển hóa và bộ máy sản xuất protein. Chúng là các dạng sống ký sinh nội bào bắt buộc. Mỗi loại virus chỉ có thể lây nhiễm một số lượng nhất định các loại tế bào chủ, được gọi là phổ vật chủ của virus. Tính đặc trưng của phổ vật chủ là kết quả của quá trình tiến hóa hệ thống nhận diện của mỗi loại virus. Virus nhận ra các tế bào chủ của nó theo nguyên tắc \"chìa và khóa\" giữa các protein bề mặt của virus với các phân tử thụ thể đặc hiệu trên bề mặt ngoài của tế bào chủ.<br>Hình 1. Chu trình nhân lên của virus trong tế bào chủ<br>Quá trình lây nhiễm của virus bắt đầu khi một virus đính kết với tế bào chủ và hệ gene của chúng được truyền vào trong tế bào chủ. Cơ chế truyền hệ gene của virus vào tế bào chủ phụ thuộc vào loại virus và loại tế bào chủ. Khi hệ gene của virus đã ở trong tế bào chủ, các protein mà nó mã hóa có thể trưng dụng tế bào chủ, tái lập trình hoạt động tế bào để tải bản hệ gene của virus, đồng thời sản xuất ra các protein của virus. Tế bào chủ cung cấp các nucleotide cho việc tổng hợp các nucleic acid của virus, cũng như các enzyme, các ribosome, các tRNA, các amino acid, ATP và các thành phần khác cần thiết để tổng hợp protein của virus. Phần lớn các virus DNA dùng các enzyme DNA polymerase của tế bào chủ để tổng hợp hệ gene mới của chúng trên cơ sở dùng mạch khuôn là DNA của virus. Ngược lại, để tái bản vật chất di truyền, các virus RNA thường mã hóa các enzyme polymerase sử dụng RNA làm mạch khuôn.<br>Sau khi các phân tử nucleic acid và các capsomer đã được tạo ra, chúng sẽ đóng gói với nhau một cách tự phát để hình thành nên các virus thế hệ con. Một kiểu chu kì sinh sản của virus đơn giản nhất sẽ kết thúc bằng việc hàng trăm hoặc thậm chí hàng nghìn virus thoát khỏi tế bào chủ lây nhiễm, kéo theo sự phá hủy của tế bào chủ.",
+      "q": "Cho các phương thức sau:<br>(1) Ức chế hoà màng/xâm nhập.<br>(2) Ức chế enzyme sao chép ngược.<br>(3) Ức chế protease.<br>(4) Ức chế sự tích hợp vật chất di truyền của virus.<br>Có [[0]] phương thức phù hợp với việc sản xuất các loại thuốc để ức chế sự nhân lên của virus HIV.",
+      "a": [
+        4
+      ],
+      "sol": [
+        "HIV là một virus RNA dạng retrovirus, chu trình nhân lên của nó đòi hỏi phải phiên mã ngược từ RNA thành DNA, sau đó tích hợp vào hệ gen tế bào chủ, rồi dịch mã thành chuỗi đa protein cần được cắt bởi protease để tạo virus trưởng thành.",
+        "Cả 4 đích tác dụng nêu trên đều đóng vai trò then chốt trong chu kỳ nhân lên của HIV và đều là cơ chế của các loại thuốc kháng virus (ARV) hiện đang được sử dụng trong y học (như nhóm thuốc ức chế hòa màng, ức chế enzyme phiên mã ngược NRTIs/NNRTIs, ức chế protease, ức chế integrase).",
+        "Vì vậy, có tất cả 4 phương thức phù hợp."
+      ],
+      "solved": true
+    },
+    {
+      "t": "tf",
+      "p": "Các virus thiếu enzyme chuyển hóa và bộ máy sản xuất protein. Chúng là các dạng sống ký sinh nội bào bắt buộc. Mỗi loại virus chỉ có thể lây nhiễm một số lượng nhất định các loại tế bào chủ, được gọi là phổ vật chủ của virus. Tính đặc trưng của phổ vật chủ là kết quả của quá trình tiến hóa hệ thống nhận diện của mỗi loại virus. Virus nhận ra các tế bào chủ của nó theo nguyên tắc \"chìa và khóa\" giữa các protein bề mặt của virus với các phân tử thụ thể đặc hiệu trên bề mặt ngoài của tế bào chủ.<br>Hình 1. Chu trình nhân lên của virus trong tế bào chủ<br>Quá trình lây nhiễm của virus bắt đầu khi một virus đính kết với tế bào chủ và hệ gene của chúng được truyền vào trong tế bào chủ. Cơ chế truyền hệ gene của virus vào tế bào chủ phụ thuộc vào loại virus và loại tế bào chủ. Khi hệ gene của virus đã ở trong tế bào chủ, các protein mà nó mã hóa có thể trưng dụng tế bào chủ, tái lập trình hoạt động tế bào để tải bản hệ gene của virus, đồng thời sản xuất ra các protein của virus. Tế bào chủ cung cấp các nucleotide cho việc tổng hợp các nucleic acid của virus, cũng như các enzyme, các ribosome, các tRNA, các amino acid, ATP và các thành phần khác cần thiết để tổng hợp protein của virus. Phần lớn các virus DNA dùng các enzyme DNA polymerase của tế bào chủ để tổng hợp hệ gene mới của chúng trên cơ sở dùng mạch khuôn là DNA của virus. Ngược lại, để tái bản vật chất di truyền, các virus RNA thường mã hóa các enzyme polymerase sử dụng RNA làm mạch khuôn.<br>Sau khi các phân tử nucleic acid và các capsomer đã được tạo ra, chúng sẽ đóng gói với nhau một cách tự phát để hình thành nên các virus thế hệ con. Một kiểu chu kì sinh sản của virus đơn giản nhất sẽ kết thúc bằng việc hàng trăm hoặc thậm chí hàng nghìn virus thoát khỏi tế bào chủ lây nhiễm, kéo theo sự phá hủy của tế bào chủ.",
+      "q": "Phát biểu sau đây đúng hay sai?<br>Thụ thể CD4 là thụ thể của virus HIV. Nếu đưa hồng cầu có thụ thể CD4 vào bệnh nhân HIV thì bệnh nhân sẽ thiếu máu nghiêm trọng vì virus sẽ xâm nhập và phá hủy tế bào.",
+      "s": [
+        "Thụ thể CD4 là thụ thể của virus HIV. Nếu đưa hồng cầu có thụ thể CD4 vào bệnh nhân HIV thì bệnh nhân sẽ thiếu máu nghiêm trọng vì virus sẽ xâm nhập và phá hủy tế bào."
+      ],
+      "a": [
+        0
+      ],
+      "sol": [
+        "Ý 1: Sai vì hồng cầu người trưởng thành không có nhân (không có DNA) cũng như không có ribosome hay bộ máy tổng hợp protein. Do đó, ngay cả khi virus HIV gắn được vào thụ thể CD4 nhân tạo trên hồng cầu và xâm nhập, nó cũng hoàn toàn không thể nhân lên và phá hủy tế bào hồng cầu như cách nó làm với tế bào lympho T. Ngược lại, hồng cầu mang CD4 có thể đóng vai trò như 'mồi nhử' bẫy virus để thanh lọc khỏi máu."
+      ],
+      "solved": true
+    },
+    {
+      "t": "tf",
+      "p": "Các virus thiếu enzyme chuyển hóa và bộ máy sản xuất protein. Chúng là các dạng sống ký sinh nội bào bắt buộc. Mỗi loại virus chỉ có thể lây nhiễm một số lượng nhất định các loại tế bào chủ, được gọi là phổ vật chủ của virus. Tính đặc trưng của phổ vật chủ là kết quả của quá trình tiến hóa hệ thống nhận diện của mỗi loại virus. Virus nhận ra các tế bào chủ của nó theo nguyên tắc \"chìa và khóa\" giữa các protein bề mặt của virus với các phân tử thụ thể đặc hiệu trên bề mặt ngoài của tế bào chủ.<br>Hình 1. Chu trình nhân lên của virus trong tế bào chủ<br>Quá trình lây nhiễm của virus bắt đầu khi một virus đính kết với tế bào chủ và hệ gene của chúng được truyền vào trong tế bào chủ. Cơ chế truyền hệ gene của virus vào tế bào chủ phụ thuộc vào loại virus và loại tế bào chủ. Khi hệ gene của virus đã ở trong tế bào chủ, các protein mà nó mã hóa có thể trưng dụng tế bào chủ, tái lập trình hoạt động tế bào để tải bản hệ gene của virus, đồng thời sản xuất ra các protein của virus. Tế bào chủ cung cấp các nucleotide cho việc tổng hợp các nucleic acid của virus, cũng như các enzyme, các ribosome, các tRNA, các amino acid, ATP và các thành phần khác cần thiết để tổng hợp protein của virus. Phần lớn các virus DNA dùng các enzyme DNA polymerase của tế bào chủ để tổng hợp hệ gene mới của chúng trên cơ sở dùng mạch khuôn là DNA của virus. Ngược lại, để tái bản vật chất di truyền, các virus RNA thường mã hóa các enzyme polymerase sử dụng RNA làm mạch khuôn.<br>Sau khi các phân tử nucleic acid và các capsomer đã được tạo ra, chúng sẽ đóng gói với nhau một cách tự phát để hình thành nên các virus thế hệ con. Một kiểu chu kì sinh sản của virus đơn giản nhất sẽ kết thúc bằng việc hàng trăm hoặc thậm chí hàng nghìn virus thoát khỏi tế bào chủ lây nhiễm, kéo theo sự phá hủy của tế bào chủ.",
+      "q": "Các phát biểu sau đây đúng hay sai?",
+      "s": [
+        "Virus bám được vào tế bào chủ là nhờ các thụ thể thích hợp có sẵn trên bề mặt tế bào chủ.",
+        "Kết quả của quá trình nhân lên là từ một virus ban đầu tạo ra vô số virus mới có độc tính tăng gấp nhiều lần.",
+        "Virus sử dụng nguyên liệu của tế bào chủ trong quá trình nhân lên của mình."
+      ],
+      "a": [
+        1,
+        0,
+        1
+      ],
+      "sol": [
+        "Ý 1: Đúng. Đây là nguyên tắc nhận diện đặc hiệu \"chìa và khóa\" được đề cập rõ trong đoạn đầu của ngữ liệu.",
+        "Ý 2: Sai. Quá trình nhân lên tạo ra nhiều hạt virus thế hệ con giống với virus mẹ, nhưng không tự nhiên làm tăng độc tính \"gấp nhiều lần\".",
+        "Ý 3: Đúng. Ngữ liệu có nêu rõ: \"Tế bào chủ cung cấp các nucleotide cho việc tổng hợp các nucleic acid của virus, cũng như các enzyme, các ribosome... ATP và các thành phần khác\"."
+      ],
+      "solved": true
+    },
+    {
+      "t": "mc",
+      "p": "Các virus thiếu enzyme chuyển hóa và bộ máy sản xuất protein. Chúng là các dạng sống ký sinh nội bào bắt buộc. Mỗi loại virus chỉ có thể lây nhiễm một số lượng nhất định các loại tế bào chủ, được gọi là phổ vật chủ của virus. Tính đặc trưng của phổ vật chủ là kết quả của quá trình tiến hóa hệ thống nhận diện của mỗi loại virus. Virus nhận ra các tế bào chủ của nó theo nguyên tắc \"chìa và khóa\" giữa các protein bề mặt của virus với các phân tử thụ thể đặc hiệu trên bề mặt ngoài của tế bào chủ.<br>Hình 1. Chu trình nhân lên của virus trong tế bào chủ<br>Quá trình lây nhiễm của virus bắt đầu khi một virus đính kết với tế bào chủ và hệ gene của chúng được truyền vào trong tế bào chủ. Cơ chế truyền hệ gene của virus vào tế bào chủ phụ thuộc vào loại virus và loại tế bào chủ. Khi hệ gene của virus đã ở trong tế bào chủ, các protein mà nó mã hóa có thể trưng dụng tế bào chủ, tái lập trình hoạt động tế bào để tải bản hệ gene của virus, đồng thời sản xuất ra các protein của virus. Tế bào chủ cung cấp các nucleotide cho việc tổng hợp các nucleic acid của virus, cũng như các enzyme, các ribosome, các tRNA, các amino acid, ATP và các thành phần khác cần thiết để tổng hợp protein của virus. Phần lớn các virus DNA dùng các enzyme DNA polymerase của tế bào chủ để tổng hợp hệ gene mới của chúng trên cơ sở dùng mạch khuôn là DNA của virus. Ngược lại, để tái bản vật chất di truyền, các virus RNA thường mã hóa các enzyme polymerase sử dụng RNA làm mạch khuôn.<br>Sau khi các phân tử nucleic acid và các capsomer đã được tạo ra, chúng sẽ đóng gói với nhau một cách tự phát để hình thành nên các virus thế hệ con. Một kiểu chu kì sinh sản của virus đơn giản nhất sẽ kết thúc bằng việc hàng trăm hoặc thậm chí hàng nghìn virus thoát khỏi tế bào chủ lây nhiễm, kéo theo sự phá hủy của tế bào chủ.",
+      "q": "Virus nhận ra các tế bào chủ của nó theo nguyên tắc \"chìa và khóa\" nghĩa là",
+      "o": [
+        "protein bề mặt của virus có thể kết hợp được với nhiều thụ thể khác nhau của nhiều loại tế bào khác nhau.",
+        "protein bề mặt của virus liên kết đặc hiệu với từng loại thụ thể trên bề mặt tế bào.",
+        "protein bề mặt của virus mã hóa được mọi loại thụ thể tế bào.",
+        "protein bề mặt của virus liên kết không đặc hiệu với thụ thể trên bề mặt tế bào."
+      ],
+      "a": 1,
+      "sol": [
+        "Theo đoạn trích, \"nguyên tắc chìa và khóa\" thể hiện tính đặc hiệu rất cao: một loại protein gai (chìa khóa) của virus chỉ tương thích và liên kết được với một loại thụ thể nhất định (ổ khóa) trên màng của tế bào chủ thích hợp."
+      ],
+      "solved": true
+    },
+    {
+      "t": "drag",
+      "p": "Các virus thiếu enzyme chuyển hóa và bộ máy sản xuất protein. Chúng là các dạng sống ký sinh nội bào bắt buộc. Mỗi loại virus chỉ có thể lây nhiễm một số lượng nhất định các loại tế bào chủ, được gọi là phổ vật chủ của virus. Tính đặc trưng của phổ vật chủ là kết quả của quá trình tiến hóa hệ thống nhận diện của mỗi loại virus. Virus nhận ra các tế bào chủ của nó theo nguyên tắc \"chìa và khóa\" giữa các protein bề mặt của virus với các phân tử thụ thể đặc hiệu trên bề mặt ngoài của tế bào chủ.<br>Hình 1. Chu trình nhân lên của virus trong tế bào chủ<br>Quá trình lây nhiễm của virus bắt đầu khi một virus đính kết với tế bào chủ và hệ gene của chúng được truyền vào trong tế bào chủ. Cơ chế truyền hệ gene của virus vào tế bào chủ phụ thuộc vào loại virus và loại tế bào chủ. Khi hệ gene của virus đã ở trong tế bào chủ, các protein mà nó mã hóa có thể trưng dụng tế bào chủ, tái lập trình hoạt động tế bào để tải bản hệ gene của virus, đồng thời sản xuất ra các protein của virus. Tế bào chủ cung cấp các nucleotide cho việc tổng hợp các nucleic acid của virus, cũng như các enzyme, các ribosome, các tRNA, các amino acid, ATP và các thành phần khác cần thiết để tổng hợp protein của virus. Phần lớn các virus DNA dùng các enzyme DNA polymerase của tế bào chủ để tổng hợp hệ gene mới của chúng trên cơ sở dùng mạch khuôn là DNA của virus. Ngược lại, để tái bản vật chất di truyền, các virus RNA thường mã hóa các enzyme polymerase sử dụng RNA làm mạch khuôn.<br>Sau khi các phân tử nucleic acid và các capsomer đã được tạo ra, chúng sẽ đóng gói với nhau một cách tự phát để hình thành nên các virus thế hệ con. Một kiểu chu kì sinh sản của virus đơn giản nhất sẽ kết thúc bằng việc hàng trăm hoặc thậm chí hàng nghìn virus thoát khỏi tế bào chủ lây nhiễm, kéo theo sự phá hủy của tế bào chủ.",
+      "q": "Sắp xếp các giai đoạn sau đây cho đúng chu trình nhân lên của virus?<br>[[0]] -> [[1]] -> [[2]] -> [[3]] -> [[4]]",
+      "c": [
+        "Hấp phụ",
+        "Xâm nhập",
+        "Sinh tổng hợp",
+        "Lắp ráp",
+        "Giải phóng"
+      ],
+      "a": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sol": [
+        "Chu trình nhân lên chuẩn của virus trải qua 5 giai đoạn liên tiếp:",
+        "1. Hấp phụ (Bám dính vào thụ thể đặc hiệu).",
+        "2. Xâm nhập (Đưa vật chất di truyền vào trong tế bào).",
+        "3. Sinh tổng hợp (Sao chép hệ gen và tổng hợp protein vỏ).",
+        "4. Lắp ráp (Ghép nucleic acid vào vỏ protein).",
+        "5. Giải phóng (Virus phá vỡ màng tế bào hoặc nảy chồi ra ngoài)."
+      ],
+      "solved": true
+    },
+    {
+      "t": "mc",
+      "p": "Các virus thiếu enzyme chuyển hóa và bộ máy sản xuất protein. Chúng là các dạng sống ký sinh nội bào bắt buộc. Mỗi loại virus chỉ có thể lây nhiễm một số lượng nhất định các loại tế bào chủ, được gọi là phổ vật chủ của virus. Tính đặc trưng của phổ vật chủ là kết quả của quá trình tiến hóa hệ thống nhận diện của mỗi loại virus. Virus nhận ra các tế bào chủ của nó theo nguyên tắc \"chìa và khóa\" giữa các protein bề mặt của virus với các phân tử thụ thể đặc hiệu trên bề mặt ngoài của tế bào chủ.<br>Hình 1. Chu trình nhân lên của virus trong tế bào chủ<br>Quá trình lây nhiễm của virus bắt đầu khi một virus đính kết với tế bào chủ và hệ gene của chúng được truyền vào trong tế bào chủ. Cơ chế truyền hệ gene của virus vào tế bào chủ phụ thuộc vào loại virus và loại tế bào chủ. Khi hệ gene của virus đã ở trong tế bào chủ, các protein mà nó mã hóa có thể trưng dụng tế bào chủ, tái lập trình hoạt động tế bào để tải bản hệ gene của virus, đồng thời sản xuất ra các protein của virus. Tế bào chủ cung cấp các nucleotide cho việc tổng hợp các nucleic acid của virus, cũng như các enzyme, các ribosome, các tRNA, các amino acid, ATP và các thành phần khác cần thiết để tổng hợp protein của virus. Phần lớn các virus DNA dùng các enzyme DNA polymerase của tế bào chủ để tổng hợp hệ gene mới của chúng trên cơ sở dùng mạch khuôn là DNA của virus. Ngược lại, để tái bản vật chất di truyền, các virus RNA thường mã hóa các enzyme polymerase sử dụng RNA làm mạch khuôn.<br>Sau khi các phân tử nucleic acid và các capsomer đã được tạo ra, chúng sẽ đóng gói với nhau một cách tự phát để hình thành nên các virus thế hệ con. Một kiểu chu kì sinh sản của virus đơn giản nhất sẽ kết thúc bằng việc hàng trăm hoặc thậm chí hàng nghìn virus thoát khỏi tế bào chủ lây nhiễm, kéo theo sự phá hủy của tế bào chủ.",
+      "q": "Các virus cần tự mã hóa một số enzyme nhất định vì",
+      "o": [
+        "tế bào chủ thiếu các enzyme có thể sao chép hệ gene virus.",
+        "những enzyme này không tổng hợp được trong tế bào chủ.",
+        "tế bào chủ nhanh chóng phá hủy các virus.",
+        "những enzyme này dịch mã mRNA virus thành các protein."
+      ],
+      "a": 0,
+      "sol": [
+        "Tế bào chủ cung cấp hầu hết nguyên liệu và bộ máy dịch mã (ribosome). Tuy nhiên, tế bào chủ của sinh vật nhân thực chỉ có enzyme để sao chép DNA thành DNA, hoặc phiên mã DNA thành RNA.",
+        "Đối với các virus có hệ gen RNA (đặc biệt là virus RNA mạch âm hoặc retrovirus), tế bào chủ không có sẵn enzyme tương ứng để sao chép RNA từ khuôn RNA (RNA-dependent RNA polymerase) hay sao chép ngược RNA thành DNA (Reverse transcriptase).",
+        "Vì vậy, virus phải tự mang theo hoặc tự mang mã gen chỉ huy tổng hợp các enzyme đặc thù này."
+      ],
+      "solved": true
+    }
+  ]
+}

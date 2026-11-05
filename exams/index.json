@@ -1,6 +1,6 @@
 {
   "package": "Phòng Luyện Miễn Phí",
-  "webhook": "https://script.google.com/macros/s/AKfycbzwpReN0CVlC4Wj3V40VySNc5zoHyKEZ65axm_KSfGxQtuXuyrhTOtqUWrDk9eoAWMkhw/exec",
+  "webhook": "https://script.google.com/macros/s/AKfycbxgC9K-0IGNIYPNKYx0cPrTDYuuwT4Pl-_Bbyaeq2n8PL4SHdVyioe2FigrQzJ3EnPeJg/exec",
   "exams": [
     { "id": "de01", "title": "Đề Số 01", "date": "23/6/2026", "parts": 3 },
     {

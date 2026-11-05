@@ -1,6 +1,6 @@
 {
   "package": "Phòng Luyện Miễn Phí",
-  "webhook": "https://script.google.com/macros/s/AKfycbzwpReN0CVlC4Wj3V40VySNc5zoHyKEZ65axm_KSfGxQtuXuyrhTOtqUWrDk9eoAWMkhw/exec",
+  "webhook": "",
   "exams": [
     { "id": "de01", "title": "Đề Số 01", "date": "23/6/2026", "parts": 3 },
     {
@@ -9,6 +9,8 @@
       "minutes": 150
     },
     { "id": "de03", "title": "TSA 3", "date": "4/11/2026", "parts": 3 },
+    { "id": "buoi1", "title": "Buổi 1", "date": "5/11/2026", "parts": 3 },
+    { "id": "buoi2", "title": "Buổi 2", "date": "7/11/2026", "parts": 3 },
     { "id": "de04", "title": "TSA FULL", "date": "5/11/2026", "parts": 3 }
   ]
 }

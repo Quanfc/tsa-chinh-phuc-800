@@ -1,0 +1,195 @@
+{
+  "title": "Đề Ôn Tập Trọng Tâm Chủ Đề Số Học (Phần 2 & 3)",
+  "minutes": 60,
+  "questions": [
+    {
+      "t": "fill",
+      "q": "Số các chữ số của số $A = 2024^{2025}$ khi viết trong hệ thập phân là [[0]]. (Biết $\\log 2024 \\approx 3,3062$)",
+      "a": [
+        6696
+      ],
+      "sol": [
+        "Số các chữ số của một số tự nhiên $N$ được tính bằng công thức: $[\\log N] + 1$.",
+        "Ta có: $\\log(2024^{2025}) = 2025 \\times \\log(2024) \\approx 2025 \\times 3,30621 = 6695,075$.",
+        "Suy ra $[\\log(2024^{2025})] = 6695$.",
+        "Vậy số các chữ số của $A$ là $6695 + 1 = 6696$ chữ số."
+      ]
+    },
+    {
+      "t": "mc",
+      "q": "Có bao nhiêu số nguyên tố $p$ sao cho $p^2+8$ cũng là một số nguyên tố?",
+      "o": [
+        "$0$",
+        "$1$",
+        "$2$",
+        "$3$"
+      ],
+      "a": 1,
+      "sol": [
+        "Xét $p=2$, ta có $p^2+8 = 2^2+8 = 12$. Vì $12 \\,\\vdots\\, 2$ và $12 > 2$ nên $12$ là hợp số (loại).",
+        "Xét $p=3$, ta có $p^2+8 = 3^2+8 = 17$. Đây là số nguyên tố, thỏa mãn.",
+        "Xét $p > 3$, vì $p$ là số nguyên tố nên $p$ không chia hết cho $3$. Do đó $p = 3k \\pm 1$ ($k \\in \\mathbb{N}^*$).",
+        "Khi đó $p^2 = (3k \\pm 1)^2 = 9k^2 \\pm 6k + 1 \\equiv 1 \\pmod 3$.",
+        "Suy ra $p^2+8 \\equiv 1+8 = 9 \\equiv 0 \\pmod 3$.",
+        "Mà $p^2+8 > 3$ nên $p^2+8$ luôn là hợp số với mọi số nguyên tố $p > 3$.",
+        "Vậy chỉ có duy nhất $1$ số nguyên tố thỏa mãn bài toán là $p=3$."
+      ]
+    },
+    {
+      "t": "drag",
+      "q": "Cho phương trình nghiệm nguyên $xy - 3x - 4y + 5 = 0$. <br>Kéo thả số thích hợp vào ô trống:<br>- Số bộ $(x;y)$ nguyên dương thỏa mãn phương trình là [[0]].<br>- Tích các giá trị của $x$ tìm được là [[1]].",
+      "c": [
+        "$1$",
+        "$2$",
+        "$3$",
+        "$55$",
+        "$50$"
+      ],
+      "a": [
+        1,
+        3
+      ],
+      "sol": [
+        "Biến đổi phương trình: $x(y-3) - 4(y-3) - 12 + 5 = 0 \\Leftrightarrow (x-4)(y-3) = 7$.",
+        "Vì $x, y$ nguyên dương nên $x \\ge 1 \\Rightarrow x-4 \\ge -3$ và $y \\ge 1 \\Rightarrow y-3 \\ge -2$.",
+        "Các ước của $7$ là $\\pm 1, \\pm 7$. Căn cứ điều kiện trên, ta xét các trường hợp sau:",
+        "TH1: $x-4 = 1$ và $y-3 = 7 \\Rightarrow x = 5$ và $y = 10$ (thỏa mãn).",
+        "TH2: $x-4 = 7$ và $y-3 = 1 \\Rightarrow x = 11$ và $y = 4$ (thỏa mãn).",
+        "TH3: $x-4 = -1$ và $y-3 = -7 \\Rightarrow y = -4$ (loại vì $y$ phải nguyên dương).",
+        "TH4: $x-4 = -7$ và $y-3 = -1 \\Rightarrow x = -3$ (loại vì $x$ phải nguyên dương).",
+        "Vậy có $2$ bộ $(x;y)$ nguyên dương thỏa mãn là $(5;10)$ và $(11;4)$.",
+        "Tích các giá trị của $x$ là $5 \\times 11 = 55$."
+      ]
+    },
+    {
+      "t": "tf",
+      "q": "Xét tính đúng sai của các mệnh đề sau về các nguyên lý Dirichlet, cực hạn, bất biến:",
+      "s": [
+        "Trong một hình vuông cạnh bằng $1$, đặt $9$ điểm bất kỳ. Luôn tồn tại $3$ điểm tạo thành tam giác có diện tích không vượt quá $\\frac{1}{8}$.",
+        "Một tờ giấy bị cắt thành $5$ mảnh hoặc $9$ mảnh. Lấy các mảnh nhỏ cắt tiếp như vậy. Ta có thể thu được đúng $2026$ mảnh giấy từ tờ giấy ban đầu.",
+        "Nhốt $10$ con thỏ vào $3$ cái lồng. Chắc chắn có ít nhất một lồng chứa từ $4$ con thỏ trở lên.",
+        "Cho $5$ số nguyên bất kỳ, luôn luôn chọn được $3$ số sao cho tổng của chúng chia hết cho $3$."
+      ],
+      "a": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "sol": [
+        "Ý 1: ĐÚNG. Chia hình vuông lớn thành $4$ hình vuông nhỏ cạnh $\\frac{1}{2}$. Theo nguyên lý Dirichlet, có ít nhất $1$ hình vuông nhỏ chứa $[\\frac{9-1}{4}] + 1 = 3$ điểm. Diện tích tam giác lớn nhất chứa trong hình vuông cạnh $\\frac{1}{2}$ bằng một nửa diện tích hình vuông đó, tức là $\\frac{1}{2} \\times (\\frac{1}{2})^2 = \\frac{1}{8}$.",
+        "Ý 2: SAI. Cắt 1 mảnh thành $5$ mảnh, số mảnh tăng thêm $4$. Cắt $1$ mảnh thành $9$, số mảnh tăng thêm $8$. Cả hai thao tác đều làm số mảnh tăng thêm một bội số của $4$. Bắt đầu từ $1$ mảnh, tổng số mảnh nhận được luôn có dạng $4k+1$. Mà $2026 = 4 \\times 506 + 2$, không có dạng $4k+1$.",
+        "Ý 3: ĐÚNG. Theo nguyên lý Dirichlet, số thỏ ít nhất trong một lồng là $[\\frac{10}{3}] + 1 = 4$ con.",
+        "Ý 4: ĐÚNG. Số nguyên chia cho $3$ dư $0, 1, 2$. Nếu $5$ số có đủ 3 loại số dư, lấy 3 số khác dư cộng lại $\\equiv 0+1+2 = 3 \\equiv 0 \\pmod 3$. Nếu chỉ có tối đa 2 loại số dư, theo Dirichlet sẽ có $1$ số dư lặp lại ít nhất $[\\frac{5}{2}]+1 = 3$ lần, lấy 3 số đó cộng lại chia hết cho $3$."
+      ]
+    },
+    {
+      "t": "mc",
+      "q": "Cho số $T = 21^n + 6^n + 2026^n + 2027^n$. Có bao nhiêu số nguyên dương chẵn $n$ để $T$ là một số chính phương?",
+      "o": [
+        "$0$",
+        "$1$",
+        "$2$",
+        "vô số"
+      ],
+      "a": 0,
+      "sol": [
+        "Xét số dư của $T$ khi chia cho $4$. Vì $n$ là số nguyên dương chẵn, đặt $n=2k$ ($k \\in \\mathbb{N}^*$).",
+        "Ta có: $21 \\equiv 1 \\pmod 4 \\Rightarrow 21^{2k} \\equiv 1^{2k} = 1 \\pmod 4$.",
+        "Số $6 = 2 \\times 3 \\Rightarrow 6^{2k} = 36^k \\equiv 0 \\pmod 4$.",
+        "Số $2026 \\equiv 2 \\pmod 4 \\Rightarrow 2026^{2k} = (2026^2)^k \\equiv 0 \\pmod 4$ (vì $2026^2 \\,\\vdots\\, 4$).",
+        "Số $2027 \\equiv 3 \\equiv -1 \\pmod 4 \\Rightarrow 2027^{2k} \\equiv (-1)^{2k} = 1 \\pmod 4$.",
+        "Cộng vế theo vế ta được: $T \\equiv 1 + 0 + 0 + 1 = 2 \\pmod 4$.",
+        "Một số chính phương khi chia cho $4$ chỉ có thể dư $0$ hoặc $1$. Vì $T \\equiv 2 \\pmod 4$ nên $T$ không bao giờ là số chính phương với mọi số chẵn $n$.",
+        "Vậy không có giá trị nào của $n$ thỏa mãn."
+      ]
+    },
+    {
+      "t": "fill",
+      "q": "Gọi $a$ là tổng các chữ số của số $(2^{10})^{2026}$. Gọi $b$ là tổng các chữ số của $a$, và $c$ là tổng các chữ số của $b$. Giá trị của biểu thức $c+5$ bằng [[0]].",
+      "a": [
+        12
+      ],
+      "sol": [
+        "Đặt $X = (2^{10})^{2026} = 2^{20260}$.",
+        "Số các chữ số của $X$ là $[20260 \\times \\log 2] + 1 \\approx [20260 \\times 0,30103] + 1 = 6098 + 1 = 6099$.",
+        "Vì $X$ có $6099$ chữ số nên tổng các chữ số của nó lớn nhất khi tất cả là chữ số $9$. Suy ra $a \\le 9 \\times 6099 = 54891$.",
+        "Tiếp tục, $b$ là tổng chữ số của $a$. Giá trị lớn nhất của tổng các chữ số của một số không vượt quá $54891$ là khi $a = 49999 \\Rightarrow b \\le 4 + 9 \\times 4 = 40$.",
+        "Tiếp tục, $c$ là tổng chữ số của $b$. Vì $b \\le 40$, giá trị lớn nhất của $c$ đạt được khi $b=39 \\Rightarrow c \\le 3+9=12$.",
+        "Mặt khác, xét số dư của $X$ cho $9$: Ta có $2^6 = 64 \\equiv 1 \\pmod 9$.",
+        "Viết $20260 = 6 \\times 3376 + 4$. Do đó $X = (2^6)^{3376} \\times 2^4 \\equiv 1 \\times 16 \\equiv 7 \\pmod 9$.",
+        "Theo dấu hiệu chia hết cho $9$, một số và tổng các chữ số của nó có cùng số dư khi chia cho $9$. Vậy $X \\equiv a \\equiv b \\equiv c \\equiv 7 \\pmod 9$.",
+        "Ta có $c \\le 12$ và $c \\equiv 7 \\pmod 9$, nên bắt buộc $c = 7$.",
+        "Vậy giá trị cần tìm là $c+5 = 7+5 = 12$."
+      ]
+    },
+    {
+      "t": "fill",
+      "q": "Cho bốn số tự nhiên có tổng bằng $2025$. Biết rằng nếu xóa bỏ đi chữ số hàng đơn vị của số thứ nhất ta được số thứ hai. Xóa bỏ chữ số hàng đơn vị của số thứ hai ta được số thứ ba, và xóa bỏ chữ số hàng đơn vị của số thứ ba ta được số thứ tư. Tổng tất cả các chữ số của bốn số trên là [[0]].",
+      "a": [
+        36
+      ],
+      "sol": [
+        "Gọi số thứ tư là $x$. Từ giả thiết, số thứ ba có dạng $\\overline{x c} = 10x+c$.",
+        "Số thứ hai có dạng $\\overline{x c b} = 100x + 10c + b$.",
+        "Số thứ nhất có dạng $\\overline{x c b a} = 1000x + 100c + 10b + a$ (với $a, b, c$ là các chữ số từ $0$ đến $9$).",
+        "Tổng $4$ số là: $x + (10x+c) + (100x+10c+b) + (1000x+100c+10b+a) = 2025$.",
+        "Thu gọn ta được: $1111x + 111c + 11b + a = 2025$.",
+        "Nếu $x \\ge 2$ thì $1111x \\ge 2222 > 2025$ (vô lý). Do số đầu tiên phải có chữ số, nên $x=1$.",
+        "Khi đó: $111c + 11b + a = 2025 - 1111 = 914$.",
+        "Vì $11b + a \\le 11 \\times 9 + 9 = 108$ nên $111c \\ge 914 - 108 = 806 \\Rightarrow c \\ge 7,2$. Mà $111c \\le 914 \\Rightarrow c \\le 8,2$. Vậy $c = 8$.",
+        "Thay $c=8$ vào: $11b + a = 914 - 888 = 26$.",
+        "Vì $a \\le 9$ nên $11b \\ge 26 - 9 = 17 \\Rightarrow b \\ge 2$. Mà $11b \\le 26 \\Rightarrow b \\le 2$. Vậy $b = 2$.",
+        "Suy ra $a = 26 - 22 = 4$.",
+        "Bốn số đó là $1824, 182, 18, 1$. (Kiểm tra lại tổng: $1824+182+18+1 = 2025$).",
+        "Tổng các chữ số của $4$ số là: $(1+8+2+4) + (1+8+2) + (1+8) + 1 = 15 + 11 + 9 + 1 = 36$."
+      ]
+    },
+    {
+      "t": "mc",
+      "q": "Một số tự nhiên có $4$ chữ số $\\overline{abcd}$ chia hết cho $11$ nếu $a-b+c-d$ chia hết cho $11$. Có bao nhiêu số tự nhiên có $4$ chữ số khác nhau chia hết cho $11$ mà tổng các chữ số của số đó cũng chia hết cho $11$?",
+      "o": [
+        "$24$",
+        "$48$",
+        "$96$",
+        "$72$"
+      ],
+      "a": 1,
+      "sol": [
+        "Đề bài yêu cầu: $\\overline{abcd}$ có 4 chữ số phân biệt, $\\overline{abcd} \\,\\vdots\\, 11$ và $(a+b+c+d) \\,\\vdots\\, 11$.",
+        "Từ dấu hiệu chia hết cho $11$, ta có $(a+c) - (b+d) \\,\\vdots\\, 11$.",
+        "Vì $a, b, c, d$ phân biệt từ $0$ đến $9$ nên $6 \\le a+b+c+d \\le 30$.",
+        "Do $(a+b+c+d) \\,\\vdots\\, 11$ nên tổng này chỉ có thể là $11$ hoặc $22$.",
+        "**TH1:** $a+b+c+d = 11$. Vì $(a+c)-(b+d) \\,\\vdots\\, 11$ và hiệu không thể vượt quá tổng, nên $(a+c)-(b+d) = 0 \\Rightarrow a+c = b+d$. Giải hệ ta được $a+c=5,5$ (vô lý vì $a,c$ nguyên).",
+        "**TH2:** $a+b+c+d = 22$. Tương tự, nếu $(a+c)-(b+d) = \\pm 11$ thì hệ cho ra $a+c = 16,5$ hoặc $b+d = 16,5$ (vô lý). Do đó bắt buộc $(a+c)-(b+d) = 0 \\Rightarrow a+c = 11$ và $b+d = 11$.",
+        "Các cặp 2 chữ số phân biệt có tổng $11$ (từ 0 đến 9) là: $(2,9), (3,8), (4,7), (5,6)$.",
+        "Ta cần chọn $2$ cặp trong $4$ cặp trên để phân bố cho $(a,c)$ và $(b,d)$. Số cách chọn 2 cặp là $C_4^2 = 6$ cách.",
+        "Ví dụ xét một cách chọn gồm cặp $(2,9)$ và $(3,8)$:",
+        "- Nếu $(a,c) \\in \\{2,9\\}$ và $(b,d) \\in \\{3,8\\}$: $a$ và $c$ hoán vị có $2$ cách; $b$ và $d$ hoán vị có $2$ cách $\\Rightarrow 4$ số. (Luôn thỏa mãn $a \\ne 0$ vì không có chữ số 0 trong tập này).",
+        "- Nếu $(a,c) \\in \\{3,8\\}$ và $(b,d) \\in \\{2,9\\}$: hoán vị tương tự được $4$ số.",
+        "Tổng cộng mỗi tập 2 cặp tạo ra $8$ số.",
+        "Vậy có tất cả $6 \\times 8 = 48$ số thỏa mãn bài toán."
+      ]
+    },
+    {
+      "t": "fill",
+      "q": "Ba chữ số tận cùng của số $19^{2024}$ là [[0]].",
+      "a": [
+        "921"
+      ],
+      "sol": [
+        "Sử dụng khai triển nhị thức Newton: $19^{2024} = (20-1)^{2024}$.",
+        "Khai triển: $(20-1)^{2024} = 20^{2024} - C_{2024}^1 \\cdot 20^{2023} + \\dots + C_{2024}^2 \\cdot 20^2 \\cdot (-1)^{2022} + C_{2024}^1 \\cdot 20 \\cdot (-1)^{2023} + (-1)^{2024}$.",
+        "Nhận thấy tất cả các số hạng chứa $20^k$ với $k \\ge 3$ đều chia hết cho $8000$, do đó hiển nhiên chia hết cho $1000$.",
+        "Vậy phần dư của $19^{2024}$ khi chia cho $1000$ (tức 3 chữ số tận cùng) hoàn toàn do $3$ số hạng cuối quyết định:",
+        "$M = C_{2024}^2 \\cdot 20^2 - C_{2024}^1 \\cdot 20 + 1$.",
+        "Ta có: $C_{2024}^2 = \\frac{2024 \\times 2023}{2} = 1012 \\times 2023 \\equiv 12 \\times 23 = 276 \\pmod{1000}$.",
+        "Suy ra $C_{2024}^2 \\times 400 \\equiv 276 \\times 400 = 110400 \\equiv 400 \\pmod{1000}$.",
+        "Và $C_{2024}^1 \\times 20 = 2024 \\times 20 = 40480 \\equiv 480 \\pmod{1000}$.",
+        "Thay vào $M$, ta được: $M \\equiv 400 - 480 + 1 = -79 \\pmod{1000}$.",
+        "Đưa về số dư dương: $-79 \\equiv 1000 - 79 = 921 \\pmod{1000}$.",
+        "Vậy ba chữ số tận cùng của $19^{2024}$ là $921$."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "title": "Đề Ôn Tập Trọng Tâm Chủ Đề Số Học",
+  "minutes": 45,
+  "questions": [
+    {
+      "t": "mc",
+      "q": "Có bao nhiêu số tự nhiên $n$ để $n^4+n^2+1$ là một số nguyên tố?",
+      "o": [
+        "$0$",
+        "$1$",
+        "$2$",
+        "$3$"
+      ],
+      "a": 1,
+      "sol": [
+        "Ta biến đổi biểu thức: $n^4+n^2+1 = (n^4+2n^2+1) - n^2 = (n^2+1)^2 - n^2$.",
+        "Áp dụng hằng đẳng thức hiệu hai bình phương: $n^4+n^2+1 = (n^2-n+1)(n^2+n+1)$.",
+        "Để biểu thức là số nguyên tố, một trong hai thừa số phải bằng $1$ và thừa số còn lại phải là số nguyên tố.",
+        "Vì $n \\ge 0$ nên $n^2-n+1 \\le n^2+n+1$. Do đó thừa số nhỏ hơn là $n^2-n+1 = 1$.",
+        "Giải phương trình: $n^2-n = 0 \\Rightarrow n(n-1) = 0 \\Rightarrow n = 0$ hoặc $n = 1$.",
+        "Với $n = 0$, ta có $0^4+0^2+1 = 1$ (không phải số nguyên tố).",
+        "Với $n = 1$, ta có $1^4+1^2+1 = 3$ (là số nguyên tố).",
+        "Vậy chỉ có $1$ giá trị của $n$ thỏa mãn bài toán."
+      ]
+    },
+    {
+      "t": "fill",
+      "q": "Có bao nhiêu số tự nhiên $n$ sao cho cả $n+100$ và $n+49$ đều là các số chính phương? Đáp án: [[0]] số.",
+      "a": [
+        2
+      ],
+      "sol": [
+        "Giả sử $n+100 = a^2$ và $n+49 = b^2$ với $a, b \\in \\mathbb{N}$ và $a > b$.",
+        "Trừ vế theo vế ta được: $a^2 - b^2 = 51 \\Rightarrow (a-b)(a+b) = 51$.",
+        "Vì $a, b \\in \\mathbb{N}, a > b$ nên $a+b > a-b > 0$. Phân tích $51 = 1 \\times 51 = 3 \\times 17$.",
+        "Trường hợp 1: $a-b = 1$ và $a+b = 51$. Cộng vế ta được $2a = 52 \\Rightarrow a = 26$. Thay vào tìm $n$: $n = 26^2 - 100 = 676 - 100 = 576$ (thỏa mãn $n \\in \\mathbb{N}$).",
+        "Trường hợp 2: $a-b = 3$ và $a+b = 17$. Cộng vế ta được $2a = 20 \\Rightarrow a = 10$. Thay vào tìm $n$: $n = 10^2 - 100 = 0$ (thỏa mãn $n \\in \\mathbb{N}$).",
+        "Vậy có $2$ giá trị của $n$ thỏa mãn là $n=0$ và $n=576$."
+      ]
+    },
+    {
+      "t": "fill",
+      "q": "Bạn Hùng nghĩ ra một số tự nhiên có 3 chữ số nhỏ nhất. Biết rằng nếu cộng thêm $5$ vào số đó thì được một số chia hết cho $6$, nếu cộng thêm $6$ thì chia hết cho $7$, cộng thêm $7$ thì chia hết cho $8$. Số bạn Hùng nghĩ là [[0]].",
+      "a": [
+        169
+      ],
+      "sol": [
+        "Gọi số cần tìm là $x$ ($100 \\le x \\le 999$).",
+        "Theo đề bài, $x+5 \\,\\vdots\\, 6 \\Rightarrow (x+5-6) \\,\\vdots\\, 6 \\Rightarrow (x-1) \\,\\vdots\\, 6$.",
+        "Tương tự, $x+6 \\,\\vdots\\, 7 \\Rightarrow (x-1) \\,\\vdots\\, 7$ và $x+7 \\,\\vdots\\, 8 \\Rightarrow (x-1) \\,\\vdots\\, 8$.",
+        "Suy ra $(x-1)$ là bội chung của $6, 7, 8$.",
+        "Ta có $BCNN(6, 7, 8) = 168$. Do đó $x-1 = 168k$ ($k \\in \\mathbb{N}^*$).",
+        "Hay $x = 168k + 1$. Để $x$ là số có ba chữ số nhỏ nhất, ta chọn $k=1$.",
+        "Khi đó $x = 168(1) + 1 = 169$."
+      ]
+    },
+    {
+      "t": "mc",
+      "q": "Tìm chữ số tận cùng của số $A = 2^{2027} + 9^{2026}$.",
+      "o": [
+        "$7$",
+        "$8$",
+        "$9$",
+        "$0$"
+      ],
+      "a": 2,
+      "sol": [
+        "Xét chữ số tận cùng của $2^{2027}$: Ta có $2^{2027} = 2^3 \\cdot 2^{2024} = 8 \\cdot (2^4)^{506} = 8 \\cdot 16^{506}$.",
+        "Vì số có tận cùng là $6$ nâng lên lũy thừa bậc bất kỳ khác $0$ vẫn tận cùng là $6$, nên $16^{506}$ có tận cùng là $6$.",
+        "Suy ra $2^{2027}$ có tận cùng giống với tận cùng của $8 \\times 6 = 48$, tức là chữ số $8$.",
+        "Xét chữ số tận cùng của $9^{2026}$: Ta có $9^{2026} = (9^2)^{1013} = 81^{1013}$.",
+        "Số có tận cùng là $1$ nâng lên lũy thừa bậc bất kỳ luôn tận cùng là $1$.",
+        "Vậy chữ số tận cùng của $A$ là chữ số tận cùng của tổng $8 + 1 = 9$."
+      ]
+    },
+    {
+      "t": "tf",
+      "q": "Xét tính đúng sai của các mệnh đề sau về số nguyên tố:",
+      "s": [
+        "Có đúng một số nguyên tố $p$ để $7p+1$ là một số chính phương.",
+        "Tồn tại duy nhất một số nguyên tố $p$ sao cho $p, p+10, p+14$ đều là các số nguyên tố.",
+        "Mọi số nguyên tố lớn hơn $2$ đều có thể viết dưới dạng tổng của hai số chính phương.",
+        "Hai số tự nhiên liên tiếp luôn nguyên tố cùng nhau."
+      ],
+      "a": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "sol": [
+        "Ý 1: ĐÚNG. Đặt $7p+1 = k^2 \\Rightarrow 7p = (k-1)(k+1)$. Vì $7$ và $p$ nguyên tố, ta có các trường hợp: (i) $k-1=1 \\Rightarrow k=2 \\Rightarrow 7p=3$ (loại). (ii) $k-1=7 \\Rightarrow k=8 \\Rightarrow 7p=7 \\times 9 \\Rightarrow p=9$ (không nguyên tố). (iii) $k+1=7 \\Rightarrow k=6 \\Rightarrow 7p = 5 \\times 7 \\Rightarrow p=5$. Vậy chỉ có $p=5$.",
+        "Ý 2: ĐÚNG. Xét phép chia $p$ cho $3$. Nếu $p=3 \\Rightarrow p+10=13, p+14=17$ đều nguyên tố. Nếu $p > 3$, $p=3k+1 \\Rightarrow p+14 = 3k+15 \\,\\vdots\\, 3$ (hợp số). Nếu $p=3k+2 \\Rightarrow p+10 = 3k+12 \\,\\vdots\\, 3$ (hợp số). Vậy $p=3$ là duy nhất.",
+        "Ý 3: SAI. Ví dụ $p=3, p=7$ không thể viết thành tổng $2$ số chính phương.",
+        "Ý 4: ĐÚNG. Gọi $d = UCLN(n, n+1) \\Rightarrow d$ ước của $(n+1)-n = 1 \\Rightarrow d=1$."
+      ]
+    },
+    {
+      "t": "drag",
+      "q": "Cho $x, y, z$ là các số nguyên dương sao cho $A = \\frac{x+y\\sqrt{3}}{y+z\\sqrt{3}}$ là một số hữu tỉ.<br>Kéo thả các kết quả phù hợp vào ô trống:<br>- Nếu $xz=16$, giá trị của $y$ bằng [[0]].<br>- Nếu $x^2+y^2+z^2$ là một số nguyên tố, số bộ $(x;y;z)$ thỏa mãn là [[1]].",
+      "c": [
+        "$4$",
+        "$1$",
+        "$0$",
+        "$16$",
+        "$2$"
+      ],
+      "a": [
+        0,
+        1
+      ],
+      "sol": [
+        "Biến đổi $A = \\frac{x+y\\sqrt{3}}{y+z\\sqrt{3}} = \\frac{(x+y\\sqrt{3})(y-z\\sqrt{3})}{y^2-3z^2} = \\frac{xy-3yz + (y^2-xz)\\sqrt{3}}{y^2-3z^2}$.",
+        "Vì $x, y, z \\in \\mathbb{Z}^+$ nên để $A \\in \\mathbb{Q}$, hệ số của phần vô tỉ phải bằng $0$. Tức là $y^2-xz = 0 \\Rightarrow y^2 = xz$.",
+        "Nếu $xz = 16 \\Rightarrow y^2 = 16$. Do $y$ nguyên dương nên $y = 4$.",
+        "Xét $P = x^2+y^2+z^2 = x^2+xz+z^2 = (x+z)^2 - xz = (x+z)^2 - y^2 = (x+z-y)(x+z+y)$.",
+        "Để $P$ nguyên tố thì thừa số nhỏ hơn là $x+z-y = 1 \\Rightarrow x+z = y+1$.",
+        "Bình phương $2$ vế: $(x+z)^2 = (y+1)^2 \\Rightarrow x^2+z^2+2xz = y^2+2y+1 \\Rightarrow x^2+z^2+2y^2 = y^2+2y+1 \\Rightarrow x^2+y^2+z^2 = 2y+1$.",
+        "Lại có số nguyên tố $P = 2y+1 = (x+z+y) \\times 1 \\Rightarrow x+z+y = 2y+1 \\Rightarrow x+z = y+1$ (đúng).",
+        "Với $y^2=xz$, thử $y=1 \\Rightarrow xz=1 \\Rightarrow x=z=1$. Khi đó $P = 1+1+1 = 3$ (nguyên tố).",
+        "Với $y \\ge 2$, do $(x,z)$ là cặp ước của $y^2$, kiểm tra nhanh thấy tổng $x+z > y+1$, không thỏa mãn. Ví dụ $y=2 \\Rightarrow xz=4 \\Rightarrow (x,z) \\in \\{(1,4), (2,2), (4,1)\\}$. Tổng $x+z$ tối thiểu là $4 \\neq 2+1=3$.",
+        "Vậy chỉ có đúng $1$ bộ là $(1;1;1)$."
+      ]
+    },
+    {
+      "t": "tf",
+      "q": "Có hai chiếc đồng hồ. Trong một ngày, chiếc thứ nhất chạy nhanh $3$ phút, chiếc thứ hai chạy chậm $2$ phút. Cả hai đồng hồ được lấy lại giờ chính xác vào cùng một thời điểm. Xét tính đúng sai của các mệnh đề sau:",
+      "s": [
+        "Độ lệch thời gian giữa hai đồng hồ sau 1 ngày là 5 phút.",
+        "Sau đúng 72 ngày, hai đồng hồ lại chỉ cùng một thời gian (không quan tâm sáng/chiều).",
+        "Sau đúng 144 ngày, hai đồng hồ lại chỉ cùng một thời gian (không quan tâm sáng/chiều).",
+        "Sau đúng 288 ngày, hai đồng hồ mới lại hiển thị chính xác thời gian thực."
+      ],
+      "a": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "sol": [
+        "Ý 1: ĐÚNG. Chiếc nhanh $3$ phút, chiếc chậm $2$ phút nên mỗi ngày lệch nhau $3 - (-2) = 5$ phút.",
+        "Ý 2: SAI. Để hai đồng hồ chỉ cùng một giờ, khoảng lệch giữa chúng phải là bội số của $12$ giờ = $720$ phút. Thời gian cần là $720 \\div 5 = 144$ ngày.",
+        "Ý 3: ĐÚNG. Như đã tính ở trên, cần $144$ ngày để lệch nhau $720$ phút.",
+        "Ý 4: SAI. Để đồng hồ 1 hiển thị giờ thực tế, nó phải nhanh $720$ phút $\\Rightarrow$ cần $720 \\div 3 = 240$ ngày. Đồng hồ 2 hiển thị giờ thực tế $\\Rightarrow$ cần $720 \\div 2 = 360$ ngày. Để cả hai hiển thị giờ thực thì thời gian phải là $BCNN(240, 360) = 720$ ngày, không phải $288$ ngày."
+      ]
+    },
+    {
+      "t": "mc",
+      "q": "Có bao nhiêu số có hai chữ số $\\overline{ab}$ sao cho $\\frac{\\overline{ab}}{a+b}$ là một số nguyên tố?",
+      "o": [
+        "$4$",
+        "$5$",
+        "$6$",
+        "$7$"
+      ],
+      "a": 3,
+      "sol": [
+        "Gọi số nguyên tố đó là $p$. Ta có $\\frac{10a+b}{a+b} = p \\Rightarrow 10a+b = p(a+b) \\Rightarrow (10-p)a = (p-1)b$.",
+        "Vì $a > 0$ và $b \\ge 0$ nên vế phải không âm $\\Rightarrow 10-p > 0 \\Rightarrow p < 10$.",
+        "Các số nguyên tố nhỏ hơn $10$ là $2, 3, 5, 7$.",
+        "Nếu $p=2 \\Rightarrow 8a = b$. Do $a, b$ là chữ số $\\Rightarrow a=1, b=8$. Ta được số $18$.",
+        "Nếu $p=3 \\Rightarrow 7a = 2b \\Rightarrow a=2, b=7$. Ta được số $27$.",
+        "Nếu $p=5 \\Rightarrow 5a = 4b \\Rightarrow a=4, b=5$. Ta được số $45$.",
+        "Nếu $p=7 \\Rightarrow 3a = 6b \\Rightarrow a = 2b$. Các cặp chữ số thỏa mãn là $(2,1); (4,2); (6,3); (8,4)$. Ta được các số $21, 42, 63, 84$.",
+        "Tổng cộng có $1+1+1+4 = 7$ số thỏa mãn bài toán."
+      ]
+    }
+  ]
+}

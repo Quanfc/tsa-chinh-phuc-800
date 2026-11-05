@@ -267,7 +267,11 @@ function finish(){clearInterval(tk);onbeforeunload=null;closeMenu();const s=D.se
  const pts=+Q.reduce((x,q,i)=>x+sc(i),0).toFixed(2),max=Q.length,used=total-left,full=Q.filter((q,i)=>sc(i)===1).length,part=Q.filter((q,i)=>sc(i)>0&&sc(i)<1).length;
  done=true;AT.secs[SI]={ans,marks,spent,score:pts,max,used};if(AT.mode==='real')LS.set('tsa:att:'+E.id,AT);
  const H=LS.get('tsa:h:'+E.id)||[];H.push({at:new Date().toISOString(),mode:AT.mode,sec:s.title,score:pts,max,used});LS.set('tsa:h:'+E.id,H.slice(-100));
- if(CFG.webhook)fetch(CFG.webhook,{method:'POST',mode:'no-cors',body:JSON.stringify({name:AT.name,sbd:AT.sbd,exam:E.id,title:E.title,section:s.title,mode:AT.mode,score:pts,max,seconds:used,at:new Date().toISOString()})}).catch(()=>{});
+ // Dòng 1: Đóng gói lịch sử làm bài (Câu 1: ✓ 0 | Câu 2: ✗ [Trống] ...)
+    const details = Q.map((q, i) => `C${i+1}: ${sc(i) === 1 ? '✓' : sc(i) > 0 ? '◐' : '✗'} ` + (ans[i] !== null && ans[i] !== '' && (!Array.isArray(ans[i]) || ans[i].length) ? JSON.stringify(ans[i]) : '[Trống]')).join(' | ');
+    
+    // Dòng 2: Bắn thêm trường details đi
+    if(CFG.webhook)fetch(CFG.webhook,{method:'POST',mode:'no-cors',body:JSON.stringify({name:AT.name,sbd:AT.sbd,exam:E.id,title:E.title,section:s.title,mode:AT.mode,score:pts,max,seconds:used,at:new Date().toISOString(), details: details})}).catch(()=>{});
  $('#sb').textContent='Thoát';$('#mn').textContent='‹ Mở Menu / Thoát';$('#tm').textContent=$('#tm2').textContent='Đã nộp';$('#ex').classList.add('dn');
  sp?showGroup(gi):redraw(cur);upd();
  ov(`<h2>Kết quả – ${s.title}</h2><div class="big">${pts.toFixed(2)}<small style="font-size:20px;color:var(--mu)">/${max}</small></div><p>Quy đổi thang 10: <b>${(pts/max*10).toFixed(2)}</b><br>Thời gian làm bài: <b>${mmss(used)}</b><br>Đúng hoàn toàn: <b>${full}</b> · đúng một phần: <b>${part}</b> · sai/bỏ trống: <b>${max-full-part}</b></p><p style="color:var(--mu);font-size:14px;margin:0">Bảng câu trong Menu: xanh lá = đúng, cam = đúng một phần, đỏ = sai. Bấm từng câu để xem đáp án.</p><div class="row"><button class="bt p" onclick="hide()">Xem lại bài</button><button class="bt or" onclick="leave()">Về danh sách bài thi</button></div>`)}

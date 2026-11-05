@@ -40,6 +40,10 @@ function checkExtras(f, q, w) {
     if (FORB.test(txt)) warn(f, `${w}: lời giải có kiến thức ngoài chương trình THPT (${txt.match(FORB)[0]})`);
   }
   if (q.solved) warn(f, `${w}: đáp án do Gemini tự giải, nên kiểm tra lại`);
+  checkMedia(f, q, w);
+}
+
+function checkMedia(f, q, w) {
   // Đồ thị vẽ từ công thức
   if (q.graph) {
     const g = q.graph, rng = r => Array.isArray(r) && r.length === 2 && r.every(Number.isFinite) && r[0] < r[1];
@@ -98,9 +102,10 @@ function checkQ(f, q, i, pre = '') {
     if (new Set(ph).size !== ph.length || ph.some(x => x >= ph.length)) bad(f, `${w}: các ô trống phải đánh số liên tiếp từ 0, không trùng (đang là ${ph.map(x => `[[${x}]]`).join('')})`);
     if (n !== ph.length) bad(f, `${w}: có ${ph.length} ô trống nhưng "a" có ${n} giá trị`);
     if (q.t === 'fill') {
-      if (!Array.isArray(q.a) || !q.a.every(x => typeof x === 'number' && isFinite(x))) bad(f, `${w}: "a" của câu điền phải là mảng số (không dùng chuỗi)`);
+      if (!Array.isArray(q.a) || !q.a.every(x => (typeof x === 'number' && isFinite(x)) || (typeof x === 'string' && x.trim()) || (Array.isArray(x) && x.length && x.every(y => typeof y === 'string' && y.trim())))) bad(f, `${w}: "a" của câu điền phải là mảng, mỗi phần tử là số (điền số), chuỗi hoặc mảng chuỗi (điền từ, liệt kê các cách viết chấp nhận được)`);
+      else if (q.a.some(x => typeof x === 'string' && /^\s*-?\d+([.,]\d+)?\s*$/.test(x))) warn(f, `${w}: có đáp án là số nhưng đang để dạng chuỗi, nên để số (không có nháy)`);
       if (q.e !== undefined && !(typeof q.e === 'number' && q.e >= 0)) bad(f, `${w}: "e" (sai số) phải là số ≥ 0`);
-      if (/làm tròn/i.test(q.q) && q.e === undefined) warn(f, `${w}: đề có "làm tròn" nhưng thiếu "e" (ví dụ 0.006 cho 2 chữ số thập phân)`);
+      if (/làm tròn/i.test(q.q) && q.e === undefined && q.a.some(x => typeof x === 'number')) warn(f, `${w}: đề có "làm tròn" nhưng thiếu "e" (ví dụ 0.006 cho 2 chữ số thập phân)`);
     } else {
       if (!L('c', q.c)) return;
       if (!q.a.every(x => isInt(x, 0, q.c.length - 1))) bad(f, `${w}: "a" phải là chỉ số 0..${q.c.length - 1} của "c"`);
@@ -121,10 +126,24 @@ function checkExam(file) {
     const pre = secs.length > 1 ? `[${s.title || 'phần ' + (k + 1)}] ` : '';
     if (!s.title) bad(f, `phần ${k + 1}: thiếu "title"`);
     if (s.minutes !== undefined && !isInt(s.minutes, 1, 600)) bad(f, `${pre}"minutes" phải là số nguyên dương`);
-    if (!Array.isArray(s.questions) || !s.questions.length) return bad(f, `${pre}thiếu mảng "questions"`);
-    s.questions.forEach((q, i) => checkQ(f, q, i, pre));
-    n += s.questions.length;
-    console.log(`  ${f}${secs.length > 1 ? ' / ' + s.title : ''}: ${s.questions.length} câu`);
+    let list = s.questions;
+    if (Array.isArray(s.groups)) {
+      if (s.questions) warn(f, `${pre}có cả "groups" lẫn "questions", engine dùng "groups"`);
+      list = [];
+      s.groups.forEach((g, gk) => {
+        const gp = `${pre}đoạn ${gk + 1}: `;
+        if (typeof g.p !== 'string' || !g.p.trim()) bad(f, `${gp}thiếu văn bản "p"`); else latex(f, gp + 'p', g.p);
+        if (/<script|\son\w+\s*=|javascript:/i.test(String(g.p || ''))) bad(f, `${gp}"p" chứa script/sự kiện không an toàn`);
+        checkMedia(f, g, gp);
+        if (!Array.isArray(g.questions) || !g.questions.length) return bad(f, `${gp}thiếu mảng "questions"`);
+        if (g.questions.length > 12) warn(f, `${gp}có ${g.questions.length} câu, hơi nhiều cho một đoạn (đề thật: 5 câu Khoa học, 10 câu Đọc hiểu)`);
+        g.questions.forEach(q => { if (q.p) warn(f, `${gp}câu có "p" riêng, bị bỏ qua vì đã có "p" của đoạn`); list.push(q); });
+      });
+    }
+    if (!Array.isArray(list) || !list.length) return bad(f, `${pre}thiếu mảng "questions" (hoặc "groups")`);
+    list.forEach((q, i) => checkQ(f, q, i, pre));
+    n += list.length;
+    console.log(`  ${f}${secs.length > 1 ? ' / ' + s.title : ''}: ${list.length} câu${Array.isArray(s.groups) ? ', ' + s.groups.length + ' đoạn' : ''}`);
   });
   return { parts: secs.length, qs: n };
 }

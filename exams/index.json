@@ -7,6 +7,8 @@
       "id": "de02",
       "title": "TSA 2",
       "minutes": 150
-    }
+    },
+    { "id": "de03", "title": "TSA 3", "date": "4/11/2026", "parts": 3 },
+    { "id": "de04", "title": "TSA FULL", "date": "5/11/2026", "parts": 3 }
   ]
 }

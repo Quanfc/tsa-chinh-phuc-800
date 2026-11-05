@@ -14,7 +14,9 @@ for (const arg of ins) {
   const ds = arg.split('+').map(load);
   if (ds[0].sections) { sections.push(...ds[0].sections); continue; }
   const first = ds[0];
-  sections.push({ title: first.title || path.basename(arg.split('+')[0], '.json'), minutes: first.minutes || 60, questions: ds.flatMap(qs) });
+  const sec = { title: first.title || path.basename(arg.split('+')[0], '.json'), minutes: first.minutes || 60 };
+  if (ds.some(x => x.groups)) sec.groups = ds.flatMap(x => x.groups || []); else sec.questions = ds.flatMap(qs);
+  sections.push(sec);
 }
 fs.writeFileSync(out, JSON.stringify({ title, sections }, null, 1));
-console.log(`✓ Đã ghi ${out}: ${sections.length} phần, ${sections.reduce((n, s) => n + (s.questions || []).length, 0)} câu. Chạy tiếp: node validate.js --fix`);
+console.log(`✓ Đã ghi ${out}: ${sections.length} phần, ${sections.reduce((n, s) => n + (s.groups ? s.groups.reduce((m, g) => m + g.questions.length, 0) : (s.questions || []).length), 0)} câu. Chạy tiếp: node validate.js --fix`);

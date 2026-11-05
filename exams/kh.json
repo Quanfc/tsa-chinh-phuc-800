@@ -1,0 +1,628 @@
+{
+  "title": "KHOA HỌC",
+  "minutes": 60,
+  "groups": [
+    {
+      "title": "NGUỒN GỐC CÁC PHÂN TỬ HỮU CƠ",
+      "p": "<p>[1] Các phân tử hữu cơ ngày nay (carbohydrate, lipid, protein, nucleic acid) được tổng hợp và sản xuất bởi các sinh vật sống. Các nhà khoa học hiện nay tin rằng các phân tử hữu cơ đơn giản ban đầu được hình thành từ các phân tử vô cơ có mặt trên Trái Đất nguyên thủy. Đây được coi là tiền đề quan trọng cho sự phát triển sự sống trên hành tinh của chúng ta. Dưới đây là hai giả thuyết hàng đầu về nguồn gốc của các phân tử hữu cơ.</p><p>[2] Giả thuyết Súp nguyên thủy<br>Giả thuyết này cho rằng các phân tử hữu cơ trong bầu khí quyển của Trái Đất nguyên thủy được hình thành nhờ năng lượng từ các tia sét. Thí nghiệm của hai nhà khoa học Miller - Urey, đã tái hiện lại bầu khí quyển nguyên thủy trong các bình thủy tinh, nhằm mục đích kiểm chứng sự hình thành nên các phân tử hữu cơ. Các thành phần chính trong bầu khí quyển nguyên thủy được cho là gồm có methane ($CH_4$), ammonia ($NH_3$), hydrogen ($H_2$) và nước ($H_2O$). Những khí này được đưa vào một hệ thống kín và được phóng điện liên tục. Sau một tuần, các mẫu lấy ra từ thiết bị được xác định thu được một số loại chất hữu cơ đơn giản, trong đó có amino acid. Hình dưới đây mô tả thí nghiệm của Miller - Urey.</p><p>[3] Giả thuyết Lỗ thông thủy nhiệt<br>Giả thuyết này cho rằng các phân tử hữu cơ ban đầu được hình thành từ trong các đại dương sâu thẳm bằng cách sử dụng năng lượng từ bên trong Trái Đất - từ các lỗ thông hơi - do ánh sáng mặt trời không thể đạt tới độ sâu của các cấu trúc này. Bằng chứng cho giả thuyết này được thể hiện ở sự phát triển mạnh mẽ của các hệ sinh thái được tìm thấy tồn tại xung quanh các lỗ thông thủy nhiệt ở đại dương sâu thẳm.</p><p>[4] Các phân tử hữu cơ chỉ bền ở những khoảng nhiệt độ nhất định. Các lỗ thông hơi thủy nhiệt giải phóng các khí nóng ($300^{\\circ}C$) có nguồn gốc từ bên trong Trái Đất vào vùng nước lạnh ($4^{\\circ}C$) của đại dương sâu thẳm. Sự giải phóng khí này gây ra sự chênh lệch nhiệt độ xung quanh các lỗ thông hơi dưới biển sâu. Các nhà khoa học tin rằng trong gradient nhiệt độ này tồn tại các điều kiện tối ưu để hỗ trợ sự hình thành các hợp chất hữu cơ.</p>",
+      "fig": "img/KHOA_HOC_g1.png",
+      "questions": [
+        {
+          "t": "mc",
+          "q": "Đâu là điểm khác biệt lớn nhất được đề cập trong hai giả thuyết trên?",
+          "o": [
+            "Nguồn năng lượng cung cấp cho sự hình thành các hợp chất hữu cơ.",
+            "Các dạng hợp chất hữu cơ đầu tiên hình thành.",
+            "Nguồn gốc và sự hình thành các dạng sống đầu tiên.",
+            "Phương thức trao đổi chất và sinh sản của các hạt coacervate."
+          ],
+          "a": 0,
+          "sol": [
+            "Giả thuyết Súp nguyên thủy cho rằng năng lượng tạo ra chất hữu cơ đến từ các tia sét trong khí quyển. Trong khi đó, giả thuyết Lỗ thông thủy nhiệt cho rằng năng lượng xuất phát từ bên trong Trái Đất (gradient nhiệt độ). Điểm khác biệt lớn nhất được nhấn mạnh là nguồn năng lượng cung cấp."
+          ],
+          "solved": true
+        },
+        {
+          "t": "mc",
+          "q": "Theo đoạn thông tin, các gradient nhiệt độ tồn tại dưới lòng đại dương là do đâu?",
+          "o": [
+            "Do ánh sáng mặt trời không chiếu tới sâu thẳm đại dương nên gây ra sự chênh lệch nhiệt với bề mặt đại dương.",
+            "Do năng lượng tỏa ra từ các phản ứng tạo phân tử hữu cơ.",
+            "Do hoạt động của các sinh vật trong hệ sinh thái quanh lỗ thủy nhiệt.",
+            "Do sự giải phóng các khí nóng từ lỗ thông hơi vào các vùng nước lạnh của đại dương."
+          ],
+          "a": 3,
+          "sol": [
+            "Đoạn [4] nêu rõ: \"Các lỗ thông hơi thủy nhiệt giải phóng các khí nóng ($300^{\\circ}C$) có nguồn gốc từ bên trong Trái Đất vào vùng nước lạnh ($4^{\\circ}C$) của đại dương sâu thẳm. Sự giải phóng khí này gây ra sự chênh lệch nhiệt độ...\""
+          ],
+          "solved": true
+        },
+        {
+          "t": "mc",
+          "q": "Theo Giả thuyết Lỗ thông thủy nhiệt, các phân tử hữu cơ ban đầu được hình thành ở",
+          "o": [
+            "bên trong Trái Đất.",
+            "dưới lòng đại dương sâu thẳm.",
+            "trong khí quyển Trái Đất.",
+            "trong lòng núi lửa."
+          ],
+          "a": 1,
+          "sol": [
+            "Đoạn [3] ghi rõ: \"Giả thuyết này cho rằng các phân tử hữu cơ ban đầu được hình thành từ trong các đại dương sâu thẳm...\""
+          ],
+          "solved": true
+        },
+        {
+          "t": "drag",
+          "q": "Thí nghiệm của Miller và Urey đã thu được một số [[0]], trong đó có [[1]] là thành phần cấu tạo nên [[2]].",
+          "c": [
+            "enzyme",
+            "amino acid",
+            "hợp chất hữu cơ đơn giản",
+            "protein"
+          ],
+          "a": [
+            2,
+            1,
+            3
+          ],
+          "sol": [
+            "Theo đoạn [2], thí nghiệm thu được \"một số loại chất hữu cơ đơn giản, trong đó có amino acid\". Amino acid chính là đơn phân cấu tạo nên protein."
+          ],
+          "solved": true
+        },
+        {
+          "t": "fill",
+          "q": "Điền từ/cụm từ thích hợp vào chỗ trống.\nTiến hóa [[0]] là giai đoạn tiến hóa hình thành nên các hợp chất hữu cơ từ các chất vô cơ.",
+          "a": [
+            ["hóa học", "hoá học"]
+          ],
+          "sol": [
+            "Giai đoạn hình thành các hợp chất hữu cơ từ chất vô cơ trong điều kiện Trái Đất nguyên thủy được gọi là tiến hóa hóa học."
+          ],
+          "solved": true
+        },
+        {
+          "t": "tf",
+          "q": "Phát biểu sau đây đúng hay sai?",
+          "s": [
+            "Trong điều kiện Trái Đất nguyên thủy như bài đề cập, các sinh vật đầu tiên trên Trái Đất có khả năng cao là các sinh vật hiếu khí."
+          ],
+          "a": [
+            0
+          ],
+          "sol": [
+            "Bầu khí quyển nguyên thủy chủ yếu gồm $CH_4, NH_3, H_2, H_2O$ và không có oxygen tự do ($O_2$). Do đó, các sinh vật đầu tiên xuất hiện phải là các sinh vật kị khí, không phải hiếu khí."
+          ],
+          "solved": true
+        },
+        {
+          "t": "mc",
+          "q": "Đâu là điểm chung của cả hai giả thuyết trên?",
+          "o": [
+            "Đều cho rằng các phân tử hữu cơ chứa các nguyên tử khác với các phân tử vô cơ.",
+            "Đều cho rằng các phân tử hữu cơ chỉ tồn tại được trong khí quyển và lòng đại dương sâu thẳm.",
+            "Đều cho rằng các phân tử hữu cơ đơn giản chưa tổng hợp được trong các phòng thí nghiệm.",
+            "Đều cho rằng các phân tử hữu cơ đơn giản được tổng hợp từ các phân tử vô cơ."
+          ],
+          "a": 3,
+          "sol": [
+            "Đoạn [1] nêu điểm xuất phát chung: \"Các nhà khoa học hiện nay tin rằng các phân tử hữu cơ đơn giản ban đầu được hình thành từ các phân tử vô cơ có mặt trên Trái Đất nguyên thủy. Dưới đây là hai giả thuyết...\""
+          ],
+          "solved": true
+        }
+      ]
+    },
+    {
+      "title": "THÍ NGHIỆM VỚI VI KHUẨN PNEUMOCOCCI",
+      "p": "<p>[1] Một chủng vi khuẩn Pneumoccoci tồn tại được trong môi trường chứa penicillin nếu các tế bào của chúng có gen mã hóa beta lactamase có vai trò giúp vi khuẩn kháng penicillin. Ngoài ra, các tế bào cần có nguồn cung cấp carbon cần thiết cho sự sinh trưởng phát triển. Tất cả các tế bào của chủng vi khuẩn này đều bị nhiễm Phage I và Phage II và cả hai đều chèn DNA của chúng vào nhiễm sắc thể của vi khuẩn. Để xác định vai trò của Phage, người ta đã tiến hành gây nhiễm chủng dại với hai Phage này.</p><p>[2] Cho 10 µl Phage I và 10 µl của Phage II vào hai ống nghiệm riêng biệt. Mỗi ống nghiệm đều chứa 5ml nước thịt có các tế bào chủng vi khuẩn Pneumoccoci kiểu dại đang sinh trưởng mạnh. Một ống nghiệm khác chứa 5 ml nước luộc thịt và chỉ có các tế bào chủng vi khuẩn Pneumoccoci mà không có phage được sử dụng làm ống đối chứng.</p><p>[3] Thí nghiệm 1: Sau 20 phút nuôi cấy ở nhiệt độ phòng, người ta lấy từ mỗi ống nghiệm 1 µl dung dịch nuôi cấy và bổ sung thêm 1990 ml nước cất để pha loãng. Dung dịch tế bào sau khi pha loãng được cấy trải trên các đĩa thạch có chứa lần lượt glucose, saccharose và lactose. Các đĩa này được nuôi cấy ở trong tủ ấm có nhiệt độ $37^{\\circ}C$ trong 24 giờ. Kết quả thu được ở bảng 1.</p><p>Bảng 1. Kết quả thí nghiệm 1<br><table><tr><th>Đĩa</th><th>Tế bào bị gây nhiễm bởi phage I</th><th>Tế bào bị gây nhiễm bởi phage II</th><th>Tế bào chủng vi khuẩn dạng dại</th></tr><tr><td>Glucose</td><td>+</td><td>+</td><td>+</td></tr><tr><td>Saccharose</td><td>+</td><td>+</td><td>+</td></tr><tr><td>Lactose</td><td>-</td><td>+</td><td>-</td></tr></table><br>Ghi chú: (+) Có sự phát triển của vi khuẩn; (-) Không có sự phát triển của vi khuẩn.</p><p>[4] Thí nghiệm 2: Từ mỗi ống nghiệm trong thí nghiệm, lấy 1 µl dung dịch nuôi cấy rồi pha loãng bằng 1990 ml nước cất. Các dung dịch tế bào sau khi pha loãng được cấy trên 3 đĩa thạch: đĩa thứ nhất chứa tetracyclin, đĩa thứ hai chứa penicillin và đĩa thạch còn lại không chứa kháng sinh nào. Các đĩa sau đó được nuôi cấy ở trong tủ ấm có nhiệt độ $37^{\\circ}C$ trong 24 giờ. Kết quả thu được ở bảng 2.</p><p>Bảng 2. Kết quả thí nghiệm 2<br><table><tr><th>Đĩa</th><th>Tế bào bị gây nhiễm bởi phage I</th><th>Tế bào bị gây nhiễm bởi phage II</th><th>Tế bào chủng vi khuẩn dạng dại</th></tr><tr><td>Tetracyclin</td><td>-</td><td>+</td><td>-</td></tr><tr><td>Penicillin</td><td>+</td><td>-</td><td>-</td></tr><tr><td>Không chứa kháng sinh</td><td>+</td><td>+</td><td>+</td></tr></table><br>Ghi chú: (+) Có sự phát triển của vi khuẩn; (-) Không có sự phát triển của vi khuẩn.</p>",
+      "questions": [
+        {
+          "t": "mc",
+          "q": "Vai trò của nước thịt trong thí nghiệm trên là",
+          "o": [
+            "cung cấp oxygen cho vi khuẩn sinh trưởng.",
+            "cung cấp carbon cho vi khuẩn sinh trưởng.",
+            "cung cấp nitrogen hữu cơ cho vi khuẩn sinh trưởng.",
+            "cung cấp enzyme cho vi khuẩn sinh trưởng."
+          ],
+          "a": 1,
+          "sol": [
+            "Theo đoạn [1], \"các tế bào cần có nguồn cung cấp carbon cần thiết cho sự sinh trưởng phát triển\". Nước thịt được thêm vào môi trường nuôi cấy nhằm mục đích cung cấp nguồn dinh dưỡng (carbon) này cho vi khuẩn."
+          ],
+          "solved": true
+        },
+        {
+          "t": "mc",
+          "q": "Kết luận nào dưới đây có thể rút ra từ kết quả thí nghiệm ở bảng 2?",
+          "o": [
+            "Phage I chèn DNA vào nhiễm sắc thể của vi khuẩn làm cho vách tế bào vi khuẩn không chịu tác động bởi tetracycline.",
+            "Phage II làm giảm penicillium trên đĩa thạch do đó cho phép tế bào vi khuẩn sinh trưởng.",
+            "Phage I mang gen mã hóa cho beta lactamase.",
+            "Phage I ức chế sự phát triển của vi khuẩn."
+          ],
+          "a": 2,
+          "sol": [
+            "Ở bảng 2, tế bào nhiễm Phage I sinh trưởng được trên đĩa chứa penicillin, trong khi chủng dại thì không. Điều này cho thấy Phage I đã truyền gen kháng penicillin (gen mã hóa beta lactamase) cho vi khuẩn."
+          ],
+          "solved": true
+        },
+        {
+          "t": "tf",
+          "q": "Phát biểu sau đây đúng hay sai?",
+          "s": [
+            "Tế bào vi khuẩn dạng dại trong tự nhiên không có khả năng kháng lại cả tetracyclin và penicillin."
+          ],
+          "a": [
+            1
+          ],
+          "sol": [
+            "Dựa vào Bảng 2, cột \"Tế bào chủng vi khuẩn dạng dại\" đều cho kết quả âm tính (-) trên cả hai đĩa chứa Tetracyclin và Penicillin. Suy ra chúng không có khả năng kháng hai loại kháng sinh này."
+          ],
+          "solved": true
+        },
+        {
+          "t": "mc",
+          "q": "Phân tử nào sau đây có vai trò giúp vi khuẩn kháng penicillin?",
+          "o": [
+            "Enzyme beta lactamase.",
+            "Gen thalassemia.",
+            "Alpha-1 antitrypsin.",
+            "Gen CFTR."
+          ],
+          "a": 0,
+          "sol": [
+            "Đoạn [1] nêu rõ: \"gen mã hóa beta lactamase có vai trò giúp vi khuẩn kháng penicillin\". Phân tử đảm nhiệm vai trò này chính là enzyme beta lactamase."
+          ],
+          "solved": true
+        },
+        {
+          "t": "mc",
+          "q": "Tế bào chủng vi khuẩn dạng dại ban đầu có khả năng",
+          "o": [
+            "kháng penicillin và chuyển hóa được glucose cũng như saccharose.",
+            "kháng tetracyclin và chuyển hóa được glucose cũng như saccharose.",
+            "chuyển hóa được glucose và saccharose nhưng không kháng kháng sinh.",
+            "chuyển hóa được lactose, kháng tetracyclin nhưng không kháng penicillin."
+          ],
+          "a": 2,
+          "sol": [
+            "Quan sát cột \"Tế bào chủng dại\" ở 2 bảng: Bảng 1 cho thấy nó phát triển được trên glucose (+) và saccharose (+) nhưng không trên lactose (-). Bảng 2 cho thấy nó không phát triển trên cả tetracyclin (-) và penicillin (-). Vậy nó chuyển hóa được glucose, saccharose nhưng không kháng kháng sinh."
+          ],
+          "solved": true
+        },
+        {
+          "t": "fill",
+          "q": "Điền từ/cụm từ thích hợp vào chỗ trống sau đây:\nSự [[0]] của quần thể vi sinh vật là sự tăng số lượng tế bào trong quần thể.",
+          "a": [
+            ["sinh trưởng", "phát triển"]
+          ],
+          "sol": [
+            "Trong vi sinh vật học, sự sinh trưởng của quần thể vi sinh vật được định nghĩa là sự gia tăng số lượng tế bào trong quần thể."
+          ],
+          "solved": true
+        },
+        {
+          "t": "fill",
+          "q": "Saccharose và lactose đều thuộc nhóm [[0]]",
+          "a": [
+            ["đường đôi", "disaccharide", "cacbohidrat", "carbohydrate", "đường"]
+          ],
+          "sol": [
+            "Saccharose và lactose là hai loại đường đôi (disaccharide), được cấu tạo từ hai phân tử đường đơn, thuộc nhóm lớn carbohydrate."
+          ],
+          "solved": true
+        }
+      ]
+    },
+    {
+      "title": "CHẤT CHỈ THỊ MÀU",
+      "p": "<p>[1] Trong hóa học phân tích, chất chỉ thị màu là những acid hữu cơ yếu hoặc base hữu cơ yếu có khả năng biến đổi màu sắc ở những giá trị pH nhất định. Những giá trị pH này tạo thành những khoảng chuyển màu riêng biệt của chất chỉ thị. Khi cho chất chỉ thị màu vào nước thì cân bằng sau được thiết lập:<br>$HA + H_2O \\rightleftharpoons H_3O^+ + A^-$<br>Nếu nồng độ của $HA$ và $A^-$ hơn kém nhau không quá 10 lần thì mắt ta thấy sự tồn tại của cả 2 dạng màu. Nếu nồng độ của chúng hơn nhau từ 10 lần trở lên, mắt ta nhìn thấy màu của dạng có nồng độ lớn hơn, nghĩa là:<br>Khi $\\frac{[HA]}{[A^-]} \\ge 10$, màu của chất chỉ thị là màu của $HA$.<br>Khi $\\frac{[A^-]}{[HA]} \\ge 10$, màu của chất chỉ thị là màu của $A^-$.</p><p>[2] Hình dưới đây là một số chất chỉ thị màu được sử dụng phổ biến và khoảng biến đổi màu của chúng.</p>",
+      "fig": "img/KHOA_HOC_g3.png",
+      "questions": [
+        {
+          "t": "tf",
+          "q": "Các phát biểu sau đúng hay sai?",
+          "s": [
+            "Chất chỉ thị màu là chất có màu biến đổi phụ thuộc vào giá trị pH của dung dịch.",
+            "So với thymolphthalein, methyl da cam chuyển màu ở độ pH cao hơn.",
+            "Chất chỉ thị có sự thay đổi màu sắc từ vàng sang tím là alizarin vàng R.",
+            "Cho biết kem đánh răng có độ pH khoảng 9. Chất chỉ thị phù hợp trong việc xác định độ pH của kem đánh răng là bromthymol xanh."
+          ],
+          "a": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "sol": [
+            "Ý 1: Định nghĩa về chất chỉ thị màu cho biết màu của chúng biến đổi theo các khoảng pH nhất định. Đúng.",
+            "Ý 2: Theo đồ thị Hình 1, methyl da cam chuyển màu ở khoảng pH từ 3.1 - 4.4, trong khi thymolphthalein chuyển màu ở pH 9.3 - 10.5. Do đó methyl da cam có khoảng chuyển màu thấp hơn. Sai.",
+            "Ý 3: Dựa vào Hình 1, Alizarin vàng R có dải biến đổi màu từ vàng (pH khoảng 10) sang tím (pH khoảng 12). Đúng.",
+            "Ý 4: Bromthymol xanh có khoảng đổi màu từ 6.0 (vàng) đến 7.6 (xanh lam). Ở pH = 9 nó đã hoàn toàn chuyển sang xanh lam, không thể phân biệt chính xác. Cần dùng phenolphthalein. Sai."
+          ],
+          "solved": true
+        },
+        {
+          "t": "mc",
+          "q": "Chất chỉ thị có sự thay đổi màu sắc từ không màu sang màu xanh lam là",
+          "o": [
+            "bromcresol xanh lục.",
+            "chlorphenol đỏ.",
+            "methyl tím.",
+            "thymolphthalein."
+          ],
+          "a": 3,
+          "sol": [
+            "Quan sát trên Hình 1, Thymolphthalein có dải chuyển màu từ Không màu sang Xanh lam."
+          ],
+          "solved": true
+        },
+        {
+          "t": "mc",
+          "q": "Cho biết dung dịch cà phê đen có $pH=5$. Chất chỉ thị phù hợp trong việc xác định độ pH của cà phê đen là",
+          "o": [
+            "methyl tím",
+            "bromcresol xanh lục",
+            "bromthymol xanh",
+            "phenol đỏ"
+          ],
+          "a": 1,
+          "sol": [
+            "Chất chỉ thị phù hợp cần có khoảng chuyển màu bao quanh giá trị pH = 5. Dựa vào Hình 1, Bromcresol xanh lục chuyển màu từ vàng sang xanh lam trong khoảng pH từ ~3.8 đến 5.4. Các chất còn lại có khoảng chuyển màu lệch xa khỏi 5."
+          ],
+          "solved": true
+        },
+        {
+          "t": "fill",
+          "q": "Điền từ/cụm từ thích hợp vào chỗ trống.\nChất chỉ thị có sự thay đổi màu sắc từ không màu sang đỏ là [[0]]",
+          "a": [
+            ["phenolphthalein"]
+          ],
+          "sol": [
+            "Dựa vào đồ thị Hình 1, chất chỉ thị chuyển từ \"Không màu\" sang \"Đỏ\" (trong khoảng pH 8.3 - 10.0) là phenolphthalein."
+          ],
+          "solved": true
+        },
+        {
+          "t": "mc",
+          "q": "Chất chỉ thị nào sau đây có sự thay đổi màu sắc trong khoảng pH từ 8 đến 10,5?",
+          "o": [
+            "Bromcresol xanh lục và bromthymol xanh.",
+            "Phenolphthalein và thymolphthalein.",
+            "Phenolphtalein và methyl da cam.",
+            "Bromcresol xanh lục và methyl tím."
+          ],
+          "a": 1,
+          "sol": [
+            "Quan sát Hình 1, trong vùng pH từ 8 đến 10.5 có hai chất chỉ thị chuyển màu là Phenolphthalein (khoảng 8.3 - 10) và Thymolphthalein (khoảng 9.3 - 10.5)."
+          ],
+          "solved": true
+        },
+        {
+          "t": "tf",
+          "q": "Phát biểu sau đúng hay sai?",
+          "s": [
+            "Chất chỉ thị methyl tím có sự thay đổi màu sắc trong khoảng pH từ 4 đến 6."
+          ],
+          "a": [
+            0
+          ],
+          "sol": [
+            "Nhìn vào Hình 1, Methyl tím có dải đổi màu từ Vàng sang Tím ở khoảng pH rất thấp (0 đến 2). Do đó phát biểu này là sai."
+          ],
+          "solved": true
+        }
+      ]
+    },
+    {
+      "title": "XÁC ĐỊNH THÀNH PHẦN KHÔNG KHÍ",
+      "p": "<p>[1] Một nhóm học sinh thực hiện thí nghiệm xác định thành phần phần trăm các khí có trong không khí bằng cách sử dụng phản ứng oxi hóa phoi bào iron trong không khí và đã bố trí thí nghiệm như Hình 1.</p><p>[2] Nhóm học sinh tiến hành thí nghiệm 5 lần. Mỗi lần các bạn đo chiều cao cột nước dâng lên (tính từ mặt thoáng của nước trong chậu thủy tinh) và thu được kết quả như Bảng 1.</p><p>Bảng 1. Chiều cao cột nước trong 5 lần thí nghiệm<br><table><tr><th>Lần thí nghiệm</th><th>Chiều cao cột nước (cm)</th></tr><tr><td>1</td><td>4,1</td></tr><tr><td>2</td><td>4,2</td></tr><tr><td>3</td><td>3,8</td></tr><tr><td>4</td><td>3,9</td></tr><tr><td>5</td><td>4,0</td></tr></table></p>",
+      "fig": "img/KHOA_HOC_g4.png",
+      "questions": [
+        {
+          "t": "mc",
+          "q": "Có thể thay thế phoi bào iron bằng vật liệu nào sau đây mà kết quả thí nghiệm không bị thay đổi?",
+          "o": [
+            "Mẩu sáp nến.",
+            "Chìa khóa bằng inox.",
+            "Mẩu phosphorus đỏ.",
+            "Len thép."
+          ],
+          "a": 3,
+          "sol": [
+            "Trong thí nghiệm trên, phoi sắt (iron) phản ứng chậm với oxygen ẩm sinh ra gỉ rắn, làm giảm thể tích khí tương ứng với lượng O2 mất đi mà không sinh ra chất khí khác. Len thép (chứa sắt) có tính chất tương tự và rất xốp, thích hợp thay thế hoàn toàn phoi bào iron."
+          ],
+          "solved": true
+        },
+        {
+          "t": "tf",
+          "q": "Phát biểu sau đúng hay sai?",
+          "s": [
+            "Sau 1 tuần phản ứng giữa phoi bào iron và oxygen xảy ra vừa đủ, khí còn lại trong ống đong không có khả năng duy trì sự sống và sự cháy."
+          ],
+          "a": [
+            1
+          ],
+          "sol": [
+            "Sau khi phản ứng xảy ra hoàn toàn, lượng oxygen trong ống đã bị tiêu thụ hết. Khí còn lại chủ yếu là nitrogen ($N_2$) cùng với một lượng nhỏ khí hiếm, không có khả năng duy trì sự sống và sự cháy. Phát biểu là đúng."
+          ],
+          "solved": true
+        },
+        {
+          "t": "tf",
+          "q": "Phát biểu sau đúng hay sai?",
+          "s": [
+            "Khi tiến hành thí nghiệm tương tự nhóm học sinh, ta chỉ cần thực hiện thí nghiệm 1 lần để thu thập số liệu."
+          ],
+          "a": [
+            0
+          ],
+          "sol": [
+            "Trong thực hành khoa học, để đảm bảo độ chính xác và giảm trừ sai số ngẫu nhiên, ta cần lặp lại thí nghiệm nhiều lần (nhóm học sinh đã làm 5 lần) và lấy trung bình. Làm 1 lần là không đủ độ tin cậy."
+          ],
+          "solved": true
+        },
+        {
+          "t": "fill",
+          "q": "Điểm khác biệt ở Hình 1 (a) và Hình 1 (b) là:<br>- Hình 1 (a): mực nước trong và ngoài ống đong [[0]]<br>- Hình 1 (b): phoi bào iron [[1]], mực nước trong ống đong dâng [[2]] so với mực nước bên ngoài.",
+          "a": [
+            ["bằng nhau"],
+            ["bị đổi màu"],
+            ["cao hơn"]
+          ],
+          "sol": [
+            "Lúc đầu (Hình a), áp suất khí trong và ngoài ống đong cân bằng nên mực nước bằng nhau. Sau 1 thời gian (Hình b), phoi sắt bị oxi hóa tạo gỉ sét nên bị đổi màu; lượng O2 mất đi làm áp suất trong ống giảm, khiến áp suất khí quyển đẩy mực nước trong ống đong dâng cao hơn."
+          ],
+          "solved": true
+        },
+        {
+          "t": "mc",
+          "q": "Các dữ liệu nhóm học sinh cần thu thập để xác định thành phần phần trăm các khí có trong không khí là",
+          "o": [
+            "chiều cao cột nước chiếm chỗ của oxygen (tính từ mặt thoáng của nước trong chậu thủy tinh).",
+            "thể tích nước có trong chậu thủy tinh và chiều cao cột nước chiếm chỗ của oxygen (tính từ mặt thoáng của nước trong chậu thủy tinh).",
+            "chiều cao cột nước chiếm chỗ của oxygen (tính từ mặt thoáng của nước trong chậu thủy tinh) và chiều dài phần còn lại chứa khí của ống.",
+            "thể tích nước có trong chậu thủy tinh."
+          ],
+          "a": 2,
+          "sol": [
+            "Để tính phần trăm thể tích oxygen, ta cần biết thể tích O2 tiêu thụ (tỉ lệ với chiều cao cột nước dâng lên) và tổng thể tích khối khí ban đầu (tỉ lệ với tổng chiều cao phần rỗng ban đầu, tức là chiều cao cột nước dâng lên + chiều dài phần còn lại chứa khí)."
+          ],
+          "solved": true
+        },
+        {
+          "t": "mc",
+          "q": "Từ kết quả của thí nghiệm trên, giả sử nhóm học sinh sử dụng ống đong dung tích 250 ml để bố trí thí nghiệm thì thể tích các khí còn lại trong ống sau khi thí nghiệm thành công là (biết chiều dài phần còn lại chứa khí của ống là 16 cm)",
+          "o": [
+            "150 ml.",
+            "200 ml.",
+            "120 ml.",
+            "130 ml."
+          ],
+          "a": 1,
+          "sol": [
+            "Theo bảng số liệu, chiều cao trung bình cột nước dâng lên là: $(4,1+4,2+3,8+3,9+4,0) / 5 = 4,0\\text{ cm}$.",
+            "Chiều dài cột khí ban đầu là $4,0 + 16 = 20\\text{ cm}$.",
+            "Phần trăm thể tích khí còn lại là $\\frac{16}{20} = 80\\%$.",
+            "Thể tích khí còn lại trong ống đong là $250 \\times 80\\% = 200\\text{ ml}$."
+          ],
+          "solved": true
+        }
+      ]
+    },
+    {
+      "title": "SỰ TRUYỀN NHIỆT",
+      "p": "<p>[1] Nếu trong một hệ có sự không đồng nhất nhiệt độ giữa hai điểm thì sẽ xuất hiện một quá trình truyền động năng phân tử từ nơi có nhiệt độ cao đến nơi có nhiệt độ thấp đưa hệ đến trạng thái cân bằng nhiệt. Nhiệt lượng có thể chuyển được giữa hệ và môi trường xung quanh nó nhờ ba cơ chế chuyển nhiệt: dẫn nhiệt, đối lưu và bức xạ nhiệt.</p><p>[2] Bức xạ nhiệt là bức xạ điện từ truyền đi với tốc độ ánh sáng (truyền qua cả chân không và các môi trường không hấp thụ ánh sáng). Các vật có nhiệt độ khác không độ tuyệt đối đều bức xạ nhiệt. Nhiệt độ càng cao mật độ bức xạ phát ra càng lớn.</p><p>[3] Sự dẫn nhiệt là sự truyền nhiệt năng từ phần này sang phần khác của một vật hay từ vật này sang vật khác. Trong quá trình truyền nhiệt này, các hạt ở nơi nhiệt độ cao nhờ chuyển động hỗn loạn đi đến nơi nhiệt độ thấp, trao đổi năng lượng với các hạt ở đó. Trong chất khí, các phân tử khí là các phần tử mang năng lượng, thực hiện quá trình truyền năng lượng bằng hình thức va chạm. Một tấm có diện tích bề mặt A, độ dày L, nhiệt độ ở các mặt của nó được giữ ở nhiệt độ $T_1$ và $T_2$. Đại lượng được xác định bằng lượng nhiệt truyền qua tấm trong một đơn vị thời gian là tốc độ truyền nhiệt: $H = \\frac{Q}{t} = kA\\frac{T_1 - T_2}{L}$ trong đó k được gọi là độ dẫn nhiệt và phụ thuộc vào vật liệu làm tấm. Bên cạnh đó, trong thực tế kĩ thuật người ta cũng đưa ra khái niệm nhiệt trở: $R = \\frac{L}{k}$.</p><p>[4] Bảng 1. Giá trị độ dẫn nhiệt và giá trị R của một số vật liệu xây dựng<br><table><tr><th>Vật liệu xây dựng</th><th>Độ dẫn nhiệt k (W/m.K)</th><th>Nhiệt trở R ($ft^2.F/Btu$)</th></tr><tr><td>Sợi khoáng</td><td>0.043</td><td>3.3</td></tr><tr><td>Thủy tinh sợi</td><td>0.048</td><td>3.0</td></tr><tr><td>Gỗ thông trắng</td><td>0.11</td><td>1.3</td></tr><tr><td>Thủy tinh làm cửa sổ</td><td>1.0</td><td>0.14</td></tr></table></p><p>[5] Đối lưu là một quá trình truyền nhiệt do dòng chất lỏng hoặc khí di chuyển từ vùng nóng sang vùng lạnh vì chênh lệch áp suất. Khi chất lỏng hoặc chất khí nguội đi, nó trở nên đậm đặc hơn. Một ví dụ về quá trình đối lưu trong một tách cà phê nóng (Hình 1): chất lỏng bên trên được không khí làm mát nên trở nên đậm đặc hơn và chìm xuống đáy cốc; chất lỏng nóng hơn nên ít đậm đặc hơn sẽ di chuyển về phía miệng cốc.</p><p>[6] Nhiệt độ của chất lỏng nóng của hệ cách nhiệt cao hơn nhiệt độ của chất lỏng ở đầu lạnh của hệ. Sự chênh lệch nhiệt độ ($\\Delta T$) giữa chất lỏng nóng ở dưới cùng và chất lỏng lạnh ở trên cùng thay đổi tùy thuộc vào nhiệt độ ban đầu của hệ. Bảng 2 cho thấy độ chênh lệch nhiệt độ ($\\Delta T$) của 500 ml nước trong bình chứa cách nhiệt có chiều cao 6 cm và diện tích mặt cắt ngang là $4\\text{ cm}^2$ khi bình chứa được làm nóng đến các nhiệt độ khác nhau.</p><p>[7] Bảng 2<br><table><tr><th>Nhiệt độ nóng ($^{\\circ}C$)</th><th>$\\Delta T$ ($^{\\circ}C$)</th></tr><tr><td>80</td><td>1</td></tr><tr><td>100</td><td>4</td></tr><tr><td>120</td><td>10</td></tr><tr><td>140</td><td>19</td></tr></table></p>",
+      "fig": "img/KHOA_HOC_g5.png",
+      "questions": [
+        {
+          "t": "mc",
+          "q": "Dựa trên thông tin trong Bảng 2 (ghi nhầm là Bảng 1 trong đề), giả sử một bình cách nhiệt chứa 500 ml nước có chiều cao 6 cm và diện tích mặt cắt ngang là $4\\text{ cm}^2$ được đun nóng đến $120^{\\circ}C$. Hàng nào sau đây thể hiện nhiệt độ của chất lỏng ở trên cùng (tiếp xúc với không khí) và nhiệt độ của chất lỏng dưới cùng của bình chứa là đúng?",
+          "o": [
+            "Hàng 1: Đáy $120^{\\circ}C$, Trên cùng $140^{\\circ}C$",
+            "Hàng 4: Đáy $120^{\\circ}C$, Trên cùng $110^{\\circ}C$",
+            "Hàng 3: Đáy $115^{\\circ}C$, Trên cùng $115^{\\circ}C$",
+            "Hàng 2: Đáy $140^{\\circ}C$, Trên cùng $110^{\\circ}C$"
+          ],
+          "a": 1,
+          "sol": [
+            "Dựa vào Bảng 2, khi bình được đun tới $120^{\\circ}C$ (nhiệt độ chất lỏng nóng ở dưới cùng), độ chênh lệch nhiệt độ $\\Delta T = 10^{\\circ}C$.",
+            "Vì chất lỏng nguội ở phía trên cùng, nhiệt độ ở phần trên sẽ thấp hơn đáy $10^{\\circ}C$. Suy ra nhiệt độ trên cùng là $120 - 10 = 110^{\\circ}C$.",
+            "Do đó Hàng 4 là đúng."
+          ],
+          "solved": true
+        },
+        {
+          "t": "mc",
+          "q": "Một tấm phức hợp như hình vẽ có diện tích là $26\\text{ ft}^2$ được làm từ sợi khoáng dày 2 in và gỗ thông trắng dày 0,75 in. Hiệu nhiệt độ giữa hai mặt của tấm là $65\\text{ F}$. Tốc độ truyền nhiệt qua tấm gần nhất với giá trị nào sau đây?",
+          "o": [
+            "367,4 Btu/h.",
+            "614,5 Btu/h.",
+            "223 Btu/h.",
+            "112 Btu/h."
+          ],
+          "a": 2,
+          "sol": [
+            "Công thức tính tốc độ truyền nhiệt tổng hợp qua nhiều lớp: $H = \\frac{A \\cdot \\Delta T}{R_{total}}$.",
+            "Nhiệt trở toàn phần: $R_{total} = R_1 + R_2$. Chú ý Bảng 1 cho giá trị R tương ứng với 1 inch bề dày.",
+            "Nhiệt trở của 2 inch sợi khoáng: $R_{SK} = 2 \\times 3,3 = 6,6$.",
+            "Nhiệt trở của 0,75 inch gỗ thông trắng: $R_{G} = 0,75 \\times 1,3 = 0,975$.",
+            "$R_{total} = 6,6 + 0,975 = 7,575\\text{ ft}^2\\cdot F/Btu$.",
+            "$H = \\frac{26 \\times 65}{7,575} = \\frac{1690}{7,575} \\approx 223,1\\text{ Btu/h}$."
+          ],
+          "solved": true
+        },
+        {
+          "t": "mc",
+          "q": "Trong các bình cách nhiệt dưới đây, nếu tất cả được nung nóng đến cùng một nhiệt độ thì hình nào sẽ có $\\Delta T$ lớn nhất?",
+          "o": [
+            "Hình (I).",
+            "Hình (II).",
+            "Hình (III).",
+            "Hình (IV)."
+          ],
+          "a": 0,
+          "sol": [
+            "Độ chênh lệch nhiệt độ $\\Delta T$ của chất lỏng phụ thuộc rất mạnh vào chiều cao cột chất lỏng (sự phân tầng nhiệt do đối lưu tự nhiên). Bình chứa càng hẹp và cao (diện tích mặt ngang nhỏ, chiều cao lớn) thì độ chênh lệch nhiệt độ giữa đỉnh và đáy càng lớn.",
+            "Dựa trên nhận định Hình 3 và Hình 2 của bài thực nghiệm tương tự, Hình (I) có thiết kế cao và hẹp nhất, do đó có $\\Delta T$ lớn nhất."
+          ],
+          "solved": true
+        },
+        {
+          "t": "mc",
+          "q": "Đối lưu là sự truyền nhiệt xảy ra trong chất nào dưới đây?",
+          "o": [
+            "Chỉ ở chất lỏng.",
+            "Chỉ ở chất khí.",
+            "Chỉ ở chất lỏng và chất khí.",
+            "Ở các chất lỏng, chất khí và chất rắn."
+          ],
+          "a": 2,
+          "sol": [
+            "Đối lưu là quá trình truyền nhiệt gắn liền với sự di chuyển thành dòng của các khối chất lưu, nên nó chỉ xảy ra trong chất lỏng và chất khí."
+          ],
+          "solved": true
+        },
+        {
+          "t": "fill",
+          "q": "Điền từ/cụm từ thích hợp vào chỗ trống.\nNgăn đá của tủ lạnh thường đặt ở phía trên ngăn đựng thức ăn nhằm tận dụng sự truyền nhiệt bằng hình thức [[0]]",
+          "a": [
+            ["đối lưu"]
+          ],
+          "sol": [
+            "Khí lạnh đặc và nặng hơn sẽ chìm xuống dưới để làm mát thức ăn, trong khi khí nóng nhẹ hơn sẽ bay lên trên để được làm lạnh tiếp. Đây là sự truyền nhiệt bằng hình thức đối lưu tự nhiên."
+          ],
+          "solved": true
+        },
+        {
+          "t": "fill",
+          "q": "Năng lượng từ Mặt Trời được truyền đến Trái Đất nhờ cơ chế truyền qua khoảng không gian vũ trụ bằng hình thức [[0]]. Khi con người đứng dưới ánh sáng chói chang của Mặt Trời, Mặt Trời sưởi ấm cho con người vì da và quần áo hấp thụ ánh sáng. Các nhà nghiên cứu đã chứng tỏ rằng áo khoác màu [[1]] hấp thụ nhiều ánh sáng Mặt Trời hơn áo khoác màu [[2]] tới mức nhiệt độ này có thể cao hơn đến $6^{\\circ}C$.",
+          "a": [
+            ["bức xạ nhiệt"],
+            ["đen"],
+            ["trắng"]
+          ],
+          "sol": [
+            "Năng lượng mặt trời truyền qua chân không bằng cơ chế bức xạ nhiệt.",
+            "Vật màu tối (đen) hấp thụ bức xạ nhiệt mạnh hơn vật màu sáng (trắng)."
+          ],
+          "solved": true
+        },
+        {
+          "t": "fill",
+          "q": "Tốc độ truyền nhiệt là đại lượng được xác định bằng lượng nhiệt truyền qua tấm trong một đơn vị thời gian. Trong hệ SI, đơn vị của tốc độ truyền nhiệt là [[0]]",
+          "a": [
+            ["W", "Watt", "J/s"]
+          ],
+          "sol": [
+            "Tốc độ truyền nhiệt có biểu thức $H = Q/t$. Trong hệ SI, nhiệt lượng $Q$ đo bằng Joule (J), thời gian $t$ đo bằng giây (s). Đơn vị là J/s, hay còn gọi là Watt (W)."
+          ],
+          "solved": true
+        }
+      ]
+    },
+    {
+      "title": "KHÍ ĐỘNG HỌC MÁY BAY GIẤY",
+      "p": "<p>[1] Bốn lực khí động học cơ bản tác động lên máy bay khi máy bay chuyển động trong không khí là:<br>- Lực cản của không khí và lực đẩy của động cơ máy bay. Hai lực này đều có phương song song với phương chuyển động của máy bay.<br>- Trọng lực (lực hút của Trái Đất) là lực có phương thẳng đứng, chiều hướng về phía Trái Đất (chiều từ trên xuống dưới).<br>- Lực nâng là lực hướng lên tác dụng vuông góc với phương chuyển động của máy bay.</p><p>[2] Một nhóm học sinh đã thực hiện ba thí nghiệm để xác định ảnh hưởng của những tác động vật lí đến khả năng bay của máy bay giấy. Nhóm học sinh đã sử dụng giấy in để tạo ra một bộ máy bay phi tiêu bằng giấy giống hệt nhau. Sau đó, họ sửa đổi thiết kế của máy bay giấy để nghiên cứu ảnh hưởng của những thay đổi này tới khoảng cách bay của máy bay.</p><p>[3] Thí nghiệm 1<br>Nhóm học sinh sử dụng ba chiếc máy bay giấy giống hệt nhau. Cánh phẳng của chiếc máy bay đầu tiên được giữ nguyên. Cánh của chiếc máy bay thứ hai được sửa đổi để cong lên theo hình chữ U. Cánh của chiếc máy bay thứ ba được sửa đổi để cong xuống dưới hình chữ U ngược. Kết quả đo khoảng cách (m) của thí nghiệm này được thể hiện ở Bảng 1.1.<br><table><tr><th>Thử nghiệm</th><th>Cánh phẳng</th><th>Cánh cong lên</th><th>Cánh cong xuống</th></tr><tr><td>Thử nghiệm 1</td><td>9.5</td><td>10.2</td><td>9.1</td></tr><tr><td>Thử nghiệm 2</td><td>10.4</td><td>10.3</td><td>9.9</td></tr><tr><td>Thử nghiệm 3</td><td>10.8</td><td>10.6</td><td>10.8</td></tr></table></p><p>[4] Thí nghiệm 2<br>Nhóm học sinh sử dụng ba chiếc máy bay giấy giống hệt nhau. Họ giữ nguyên thiết kế ban đầu của chiếc máy bay đầu tiên. Đầu cánh của chiếc máy bay thứ hai được sửa hơi cong lên phía trên. Đầu cánh của chiếc máy bay thứ ba được sửa hơi cong xuống phía dưới. Kết quả của thí nghiệm 2 được thể hiện ở Bảng 1.2.<br><table><tr><th>Thử nghiệm</th><th>Đầu cánh phẳng</th><th>Đầu cánh cong lên</th><th>Đầu cánh cong xuống</th></tr><tr><td>Thử nghiệm 1</td><td>10.6</td><td>12.4</td><td>3.2</td></tr><tr><td>Thử nghiệm 2</td><td>11.1</td><td>12.9</td><td>3.5</td></tr><tr><td>Thử nghiệm 3</td><td>10.9</td><td>12.8</td><td>3.3</td></tr></table></p><p>[5] Thí nghiệm 3<br>Nhóm học sinh đã sử dụng bốn chiếc máy bay giấy giống hệt nhau. Chiếc máy bay đầu tiên vẫn được giữ nguyên thiết kế ban đầu (Không có kẹp giấy). Chiếc máy bay thứ hai được đặt hai chiếc kẹp giấy ở hai bên mũi. Chiếc máy bay thứ ba được đặt hai chiếc kẹp giấy ở hai cánh giữa của máy bay. Chiếc máy bay thứ tư được đặt hai chiếc kẹp giấy ở hai bên đuôi của máy bay. Kết quả của thí nghiệm được thể hiện ở Bảng 1.3.<br><table><tr><th>Thử nghiệm</th><th>Không kẹp giấy</th><th>Kẹp mũi</th><th>Kẹp cánh giữa</th><th>Kẹp đuôi</th></tr><tr><td>Thử nghiệm 1</td><td>10.8</td><td>9.1</td><td>10.6</td><td>6.3</td></tr><tr><td>Thử nghiệm 2</td><td>10.7</td><td>9.4</td><td>10.5</td><td>6.2</td></tr><tr><td>Thử nghiệm 3</td><td>10.8</td><td>9.3</td><td>10.7</td><td>6.0</td></tr></table></p>",
+      "questions": [
+        {
+          "t": "fill",
+          "q": "Khi một vật, ví dụ như quả bóng rổ chuyển động trong không khí và chuyển động này được coi là đủ nhanh thì độ lớn lực cản D của chất lưu liên hệ với tốc độ tương đối bằng hệ số cản xác định bằng thực nghiệm theo công thức: $D = \\frac{1}{2} C \\rho A v^2$ trong đó $\\rho$ là khối lượng riêng của không khí và A là tiết diện hiệu dụng của vật (là diện tích tiết diện ngang vuông góc với vận tốc v).\nBiết rằng quả bóng rổ hình cầu bán kính 12 cm đang rơi trong không khí với tốc độ không đổi $v=20\\text{ m/s}$. Khối lượng riêng của không khí là $\\rho=1,2\\text{ kg/m}^3$ và hệ số cản của quả bóng là 1,2. Độ lớn lực cản của không khí tác dụng lên quả bóng là [[0]] N. (Làm tròn đến chữ số thập phân thứ hai)",
+          "a": [
+            13.03
+          ],
+          "e": 0.02,
+          "sol": [
+            "Bán kính bóng $R = 12\\text{ cm} = 0,12\\text{ m}$.",
+            "Tiết diện ngang (hình tròn): $A = \\pi R^2 = \\pi (0,12)^2 = 0,0144\\pi \\text{ m}^2$.",
+            "Tính lực cản: $D = \\frac{1}{2} \\cdot 1,2 \\cdot 1,2 \\cdot (0,0144\\pi) \\cdot 20^2$.",
+            "$D = 0,72 \\cdot 0,0144\\pi \\cdot 400 = 0,72 \\cdot 5,76\\pi = 4,1472\\pi \\approx 13,0288$ N.",
+            "Làm tròn đến chữ số thập phân thứ 2 ta được $13,03$ N."
+          ],
+          "solved": true
+        },
+        {
+          "t": "mc",
+          "q": "Điều kiện nào sau đây là điều kiện đại diện (điều kiện để so sánh) cho các giá trị trong Thí nghiệm 2?",
+          "o": [
+            "Đầu cánh cong xuống.",
+            "Đầu cánh cong lên.",
+            "Đầu cánh phẳng.",
+            "Không có đầu cánh."
+          ],
+          "a": 2,
+          "sol": [
+            "Trong Thí nghiệm 2, \"chiếc máy bay đầu tiên vẫn được giữ nguyên thiết kế ban đầu\" để đối chứng với hai chiếc máy bay bị thay đổi đầu cánh. Thiết kế ban đầu không can thiệp tức là đầu cánh phẳng."
+          ],
+          "solved": true
+        },
+        {
+          "t": "fill",
+          "q": "Trọng tâm của một vật là vị trí trung bình theo phân bố khối lượng của vật đó. Trong thí nghiệm [[0]] học sinh đã làm thay đổi trọng tâm của máy bay giấy.",
+          "a": [
+            3
+          ],
+          "sol": [
+            "Ở Thí nghiệm 3, học sinh đã gắn kẹp giấy ở các vị trí khác nhau (mũi, giữa, đuôi). Hành động bổ sung vật nặng ở các vị trí khác nhau sẽ làm thay đổi sự phân bố khối lượng, từ đó thay đổi vị trí trọng tâm của máy bay."
+          ],
+          "solved": true
+        },
+        {
+          "t": "mc",
+          "q": "Dựa trên dữ liệu thu được từ ba thí nghiệm, sự kết hợp các đặc điểm nào được cho là sẽ tạo quãng đường bay theo phương ngang của máy bay dài nhất?",
+          "o": [
+            "Máy bay có cánh cong xuống, đầu cánh phẳng, có kẹp giấy ở mũi.",
+            "Máy bay có cánh phẳng, đầu cánh cong lên và không có kẹp giấy.",
+            "Máy bay có cánh cong lên, đầu cánh cong xuống, có kẹp giấy ở đuôi.",
+            "Máy bay có cánh phẳng, đầu cánh phẳng và không có kẹp giấy."
+          ],
+          "a": 1,
+          "sol": [
+            "Theo Bảng 1.1, thiết kế Cánh phẳng hoặc Cánh cong lên có thành tích khá tốt và tương đương. Theo Bảng 1.2, việc làm Đầu cánh cong lên cải thiện rất đáng kể thành tích bay (bay xa nhất lên tới $\\sim 12.9$m). Theo Bảng 1.3, máy bay Không kẹp giấy cho khoảng cách lớn nhất.",
+            "Sự kết hợp (Cánh phẳng, Đầu cánh cong lên, Không kẹp giấy) hội tụ các đặc tính ưu việt nhất từ các thí nghiệm, cho quãng đường dài nhất."
+          ],
+          "solved": true
+        },
+        {
+          "t": "mc",
+          "q": "Để giữ cho một chiếc máy bay giấy không bị rơi xuống đất thì lực đẩy và lực nâng tác dụng lên máy bay cần thỏa mãn điều kiện nào sau đây?",
+          "o": [
+            "Hợp lực của chúng có độ lớn không nhỏ hơn độ lớn hợp lực của lực cản và trọng lực.",
+            "Phải cân bằng nhau.",
+            "Không thể bằng nhau.",
+            "Hợp lực của chúng có độ lớn nhỏ hơn độ lớn hợp lực của lực cản và trọng lực."
+          ],
+          "a": 0,
+          "sol": [
+            "Muốn máy bay không bị rơi và tiếp tục tiến về phía trước, hệ lực giữ máy bay (lực nâng chống lại trọng lực, lực đẩy chống lại lực cản) phải đủ lớn để thắng hoặc ít nhất cân bằng với hệ lực kéo xuống và cản trở. Do đó độ lớn hợp lực của Nâng + Đẩy không được nhỏ hơn tổng Cản + Trọng lượng xét trên hai phương chuyển động."
+          ],
+          "solved": true
+        },
+        {
+          "t": "fill",
+          "q": "Điền cụm từ thích hợp vào chỗ trống\nCặp lực khí động học [[0]] và [[1]] là cặp lực cùng phương ngược chiều.",
+          "a": [
+            ["lực cản", "cản"],
+            ["lực đẩy", "đẩy"]
+          ],
+          "sol": [
+            "Theo đoạn [1], \"Lực cản của không khí và lực đẩy của động cơ... đều có phương song song với phương chuyển động\", vì ngược chiều tác dụng nên chúng tạo thành một cặp lực cùng phương ngược chiều."
+          ],
+          "solved": true
+        },
+        {
+          "t": "fill",
+          "q": "Điền từ/cụm từ thích hợp vào chỗ trống.\nTrong Thí nghiệm 2, việc uốn nhẹ đầu cánh xuống dưới có tác dụng làm tăng tác dụng của lực [[0]]",
+          "a": [
+            ["cản", "cản không khí", "cản của không khí", "lực cản"]
+          ],
+          "sol": [
+            "Khi uốn nhẹ đầu cánh xuống dưới, quãng đường bay giảm đột ngột (còn khoảng hơn 3m so với hơn 10m). Việc này tạo ra một vách đón gió ở mũi/cánh cản trở không khí đi qua một cách mượt mà, từ đó làm tăng mạnh lực cản khí động học."
+          ],
+          "solved": true
+        }
+      ]
+    }
+  ]
+}

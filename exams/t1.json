@@ -1,239 +1,63 @@
 {
-  "title": "Đề Toán",
-  "minutes": 90,
+  "title": "TOÁN",
+  "minutes": 60,
   "questions": [
     {
       "t": "mc",
-      "p": "Cho hàm số $y=f(x)$ xác định trên khoảng $(-2;1)$ và có $\\lim_{x\\to(-2)^+}f(x)=2, \\lim_{x\\to1^+}f(x)=-\\infty$. Khẳng định nào sau đây là đúng?",
-      "q": "Khẳng định nào sau đây là đúng?",
+      "q": "Cho hình chóp $S.ABCD$ có đáy $ABCD$ là hình vuông tâm $O$, $SA$ vuông góc với mặt phẳng đáy. Mặt phẳng vuông góc với $(SAC)$ là",
       "o": [
-        "Đồ thị hàm số $y=f(x)$ có một tiệm cận ngang là đường thẳng $y=2$",
-        "Đồ thị hàm số $y=f(x)$ có một tiệm cận đứng là đường thẳng $x=1$ và một tiệm cận ngang là đường thẳng $y=2$",
-        "Đồ thị hàm số $y=f(x)$ không có tiệm cận.",
-        "Đồ thị hàm số $y=f(x)$ có đúng một tiệm cận đứng là đường thẳng $x=1$"
-      ],
-      "a": 3,
-      "sol": [
-        "Tập xác định của hàm số là $(-2;1)$. Hàm số không xác định tại miền tiến tới $\\pm \\infty$ nên đồ thị hàm số không có tiệm cận ngang.",
-        "Giới hạn $\\lim_{x\\rightarrow(-2)^+}f(x)=2$ (hữu hạn) nên đường thẳng $x=-2$ không phải là tiệm cận đứng.",
-        "Mặc dù đề bài ghi $\\lim_{x\\rightarrow1^+}f(x)=-\\infty$ nhưng do tập xác định là $(-2;1)$ nên đây là lỗi đánh máy, đúng ra là $\\lim_{x\\rightarrow1^-}f(x)=-\\infty$. Giới hạn này bằng vô cực nên đường thẳng $x=1$ là tiệm cận đứng duy nhất của đồ thị hàm số."
-      ],
-      "solved": true
-    },
-    {
-      "t": "mc",
-      "p": "Cho hàm số $y=\\log_{3}(x^{2}-2x+3)$. Hàm số đồng biến trên khoảng nào sau đây?",
-      "q": "Hàm số đồng biến trên khoảng nào sau đây?",
-      "o": [
-        "$(-\\infty;1)$",
-        "$(-1;+\\infty)$",
-        "$(-\\infty;-1)$",
-        "$(1;+\\infty)$"
-      ],
-      "a": 3,
-      "sol": [
-        "Tập xác định của hàm số là $D=\\mathbb{R}$.",
-        "Ta có $y' = \\frac{(x^2-2x+3)'}{(x^2-2x+3)\\ln3} = \\frac{2x-2}{(x^2-2x+3)\\ln3}$.",
-        "Hàm số đồng biến khi và chỉ khi $y' > 0 \\Leftrightarrow 2x-2 > 0 \\Leftrightarrow x > 1$.",
-        "Vậy hàm số đồng biến trên khoảng $(1;+\\infty)$."
-      ],
-      "solved": true
-    },
-    {
-      "t": "tf",
-      "p": "Cho hình chóp S. ABC có đáy là tam giác đều cạnh bằng $\\sqrt{3}$. Gọi I là trung điểm của cạnh AB, hình chiếu vuông góc của S lên mặt phẳng (ABC) là trung điểm H của CI. Biết góc giữa SA và mặt phẳng (ABC) bằng $45^{\\circ}$. Giả sử G là trọng tâm tam giác SBC.",
-      "q": "Xét tính đúng sai của các mệnh đề sau:",
-      "s": [
-        "$SH=\\frac{\\sqrt{21}}{4}.$",
-        "Thể tích khối chóp S. ABC bằng $\\frac{3\\sqrt{7}}{16}.$",
-        "Góc giữa SA và mặt phẳng (ABC) là góc $\\widehat{SAC}$",
-        "Khoảng cách giữa hai đường thẳng SA và CG bằng $\\frac{\\sqrt{231}}{22}.$"
-      ],
-      "a": [
-        1,
-        1,
-        0,
-        1
-      ],
-      "sol": [
-        "Ý 1: Đúng. Tam giác $ABC$ đều cạnh $\\sqrt{3}$, đường cao $CI = \\frac{\\sqrt{3}\\cdot\\sqrt{3}}{2}=\\frac{3}{2}$. Do $H$ là trung điểm $CI$ nên $HI = \\frac{3}{4}$. Áp dụng định lý Pythagore trong tam giác vuông $AHI$, ta có $AH = \\sqrt{AI^2 + HI^2} = \\sqrt{(\\frac{\\sqrt{3}}{2})^2 + (\\frac{3}{4})^2} = \\frac{\\sqrt{21}}{4}$. Vì $SH \\perp (ABC)$ nên góc giữa $SA$ và $(ABC)$ là góc $\\widehat{SAH} = 45^\\circ$. Tam giác $SAH$ vuông cân tại $H$, suy ra $SH = AH = \\frac{\\sqrt{21}}{4}$.",
-        "Ý 2: Đúng. Diện tích tam giác $ABC$ là $S = \\frac{(\\sqrt{3})^2\\sqrt{3}}{4} = \\frac{3\\sqrt{3}}{4}$. Thể tích khối chóp là $V = \\frac{1}{3} S \\cdot SH = \\frac{1}{3} \\cdot \\frac{3\\sqrt{3}}{4} \\cdot \\frac{\\sqrt{21}}{4} = \\frac{3\\sqrt{7}}{16}$.",
-        "Ý 3: Sai. Hình chiếu vuông góc của $S$ lên mặt phẳng $(ABC)$ là $H$. Hình chiếu của $SA$ lên $(ABC)$ là $AH$. Vậy góc giữa đường thẳng $SA$ và mặt phẳng $(ABC)$ phải là góc $\\widehat{SAH}$.",
-        "Ý 4: Đúng. Chọn hệ trục tọa độ với $I(0;0;0)$, $B(\\frac{\\sqrt{3}}{2};0;0)$, $A(-\\frac{\\sqrt{3}}{2};0;0)$, $C(0;\\frac{3}{2};0)$, $S(0;\\frac{3}{4};\\frac{\\sqrt{21}}{4})$. $G$ là trọng tâm $\\Delta SBC$ nên $G(\\frac{\\sqrt{3}}{6};\\frac{3}{4};\\frac{\\sqrt{21}}{12})$. Lấy véctơ chỉ phương lần lượt cùng hướng là $\\vec{u_1} = (2\\sqrt{3}; 3; \\sqrt{21})$ và $\\vec{u_2} = (2\\sqrt{3}; -9; \\sqrt{21})$. Véctơ chỉ phương của đường thẳng vuông góc chung là $\\vec{n} = [\\vec{u_1}, \\vec{u_2}] = (12\\sqrt{21}; 0; -24\\sqrt{3})$. Khoảng cách giữa $SA$ và $CG$ là $d = \\frac{|\\vec{n} \\cdot \\vec{AC}|}{|\\vec{n}|} = \\frac{18\\sqrt{7}}{\\sqrt{4752}} = \\frac{\\sqrt{231}}{22}$."
-      ],
-      "solved": true
-    },
-    {
-      "t": "mc",
-      "p": "Cho tứ diện ABCD có G là trọng tâm tam giác ABC.",
-      "q": "Véc tơ bằng $\\vec{DA}+\\vec{DB}+\\vec{DC}$",
-      "o": [
-        "$2\\vec{DG}$.",
-        "$3\\vec{DG}$.",
-        "$3\\vec{AG}$.",
-        "$\\vec{0}$."
-      ],
-      "a": 1,
-      "sol": [
-        "Vì $G$ là trọng tâm của tam giác $ABC$ nên với mọi điểm $D$ ta luôn có đẳng thức vectơ: $\\vec{DA}+\\vec{DB}+\\vec{DC} = 3\\vec{DG}$.",
-        "Vậy đáp án là $3\\vec{DG}$."
-      ],
-      "solved": true
-    },
-    {
-      "t": "mc",
-      "p": "Hàm số $y=\\frac{x+2}{1-x}$",
-      "q": "Phương trình đường tiệm cận ngang của đồ thị hàm số $y=\\frac{x+2}{1-x}$ là",
-      "o": [
-        "$x=1.$",
-        "$y=-1.$",
-        "$y=1$",
-        "$x=-1$"
-      ],
-      "a": 1,
-      "sol": [
-        "Ta tính giới hạn của hàm số khi $x$ tiến tới vô cực: $\\lim_{x \\to \\pm\\infty} \\frac{x+2}{1-x} = \\lim_{x \\to \\pm\\infty} \\frac{1 + \\frac{2}{x}}{\\frac{1}{x} - 1} = -1$.",
-        "Vậy đường tiệm cận ngang của đồ thị hàm số là $y=-1$."
-      ],
-      "solved": true
-    },
-    {
-      "t": "mc",
-      "p": "Một người thợ được yêu cầu trang trí trên một bức tường hình vuông kích thước 5m x 5m bằng cách vẽ một hình vuông mới với các đỉnh là trung điểm các cạnh của hình vuông ban đầu, tô kín màu lên hai tam giác đối diện bằng cách sử dụng hai màu loại 1 (xanh) và loại 2 (hồng). Quá trình vẽ và tô theo quy luật đó được lặp lại 6 lần.",
-      "q": "Số tiền mua sơn để người thợ đó hoàn thành công việc trang trí theo yêu cầu trên gần nhất với con số nào trong bốn đáp án dưới đây, biết tiền sơn màu loại 1 để sơn kín $1m^{2}$ là 100000 đồng và tiền sơn màu loại 1 đắt gấp 1,5 so với tiền sơn màu loại 2.",
-      "o": [
-        "1540000 đồng.",
-        "1570000 đồng.",
-        "1480000 đồng.",
-        "1030000 đồng."
-      ],
-      "a": 3,
-      "sol": [
-        "Ký hiệu $S_0$ là diện tích hình vuông ban đầu, $S_0 = 25 \\, \\text{m}^2$.",
-        "Ở mỗi bước, việc vẽ hình vuông mới từ trung điểm các cạnh tạo ra 4 tam giác ở 4 góc. Tổng diện tích 4 tam giác này bằng một nửa diện tích hình vuông ở bước đó.",
-        "Người thợ sơn hai tam giác đối diện, tức là sơn một nửa diện tích của 4 tam giác góc, tương đương $\\frac{1}{4}$ diện tích hình vuông.",
-        "Do sử dụng hai màu xanh và hồng (tương ứng loại 1 và loại 2) cho hai tam giác đối diện nên diện tích mỗi màu được sơn trong bước thứ $n$ là $s_n = \\frac{1}{8} S_{n-1}$.",
-        "Diện tích hình vuông giảm đi một nửa sau mỗi bước, tức là $S_n = \\frac{1}{2} S_{n-1}$.",
-        "Vì vậy, diện tích mỗi màu được sơn tạo thành một cấp số nhân với $u_1 = \\frac{1}{8} S_0 = \\frac{25}{8}$ và công bội $q = \\frac{1}{2}$.",
-        "Tổng diện tích mỗi màu sơn sau 6 lần lặp là: $S_{màu} = \\frac{25}{8} \\cdot \\frac{1 - (1/2)^6}{1 - 1/2} = \\frac{25}{4} \\cdot \\frac{63}{64} = \\frac{1575}{256} \\, \\text{m}^2$.",
-        "Đơn giá sơn màu loại 1 là 100.000 đồng/m$^2$. Sơn màu loại 1 đắt gấp 1,5 lần loại 2 nên đơn giá loại 2 là $\\frac{100.000}{1,5} = \\frac{200.000}{3}$ đồng/m$^2$.",
-        "Tổng số tiền sơn cần mua là: $T = \\frac{1575}{256} \\cdot 100.000 + \\frac{1575}{256} \\cdot \\frac{200.000}{3} = \\frac{1575}{256} \\cdot \\frac{500.000}{3} = 1.025.390,625$ đồng.",
-        "Số tiền này gần nhất với con số 1030000 đồng."
-      ],
-      "solved": true
-    },
-    {
-      "t": "mc",
-      "p": "Phương trình cơ bản của hàm mũ",
-      "q": "Nghiệm của phương trình $4^{x}=12$ là",
-      "o": [
-        "$x=3$",
-        "$x=\\log_{12}4$.",
-        "$x=1+\\log_{4}3$",
-        "$x=\\log_{4}3$"
+        "$(SAB)$",
+        "$(SAD)$",
+        "$(SBD)$",
+        "$(SBC)$"
       ],
       "a": 2,
       "sol": [
-        "Ta có: $4^x = 12 \\Leftrightarrow x = \\log_4 12$.",
-        "Sử dụng tính chất logarit, ta phân tích: $\\log_4 12 = \\log_4 (4 \\cdot 3) = \\log_4 4 + \\log_4 3 = 1 + \\log_4 3$.",
-        "Vậy nghiệm của phương trình là $x = 1 + \\log_4 3$."
-      ],
-      "solved": true
-    },
-    {
-      "t": "fill",
-      "p": "Chuyển động chậm dần đều",
-      "q": "Một tàu lửa đang chạy với vận tốc 200m/s thì người lái tàu đạp phanh; từ thời điểm đó, tàu chuyển động chậm dần đều với phương trình vận tốc $v(t)=200-20t \\ (m/s)$. Trong đó t khoảng thời gian tính bằng giây, kể từ lúc bắt đầu đạp phanh. Từ lúc đạp phanh đến khi dừng hẳn, tàu còn di chuyển được quãng đường dài [[0]] mét.",
-      "a": [
-        1000
-      ],
-      "sol": [
-        "Khi tàu dừng hẳn thì vận tốc $v(t) = 0 \\Leftrightarrow 200 - 20t = 0 \\Leftrightarrow t = 10$ (giây).",
-        "Quãng đường tàu di chuyển được từ lúc đạp phanh đến khi dừng hẳn là tích phân của vận tốc theo thời gian: $S = \\int_{0}^{10} (200 - 20t) dt$.",
-        "Tính tích phân: $S = (200t - 10t^2) \\Big|_0^{10} = 200\\cdot10 - 10\\cdot10^2 = 2000 - 1000 = 1000$ (mét)."
-      ],
-      "solved": true
+        "Ta có $BD \\perp AC$ (do $ABCD$ là hình vuông tâm $O$).",
+        "Lại có $BD \\perp SA$ (do $SA \\perp (ABCD)$).",
+        "Suy ra $BD \\perp (SAC)$.",
+        "Vì $BD \\subset (SBD)$ nên $(SBD) \\perp (SAC)$."
+      ]
     },
     {
       "t": "mc",
-      "p": "Quan sát đồ thị hàm số đa thức bậc 3",
-      "q": "Cho hàm số $y=ax^{3}+bx^{2}+cx+d \\ (a\\ne0)$ có đồ thị như hình bên. Khẳng định nào sau đây là đúng?",
+      "q": "Một hộ nông dân dự định trồng đậu và cà trên diện tích $10$ ha. Nếu trồng đậu thì cần $20$ công và thu được $3,5$ triệu đồng trên diện tích mỗi ha, nếu trồng cà thì mất $30$ công và thu được $5$ triệu đồng trên diện tích mỗi ha. Với tổng số công không quá $240$, số tiền (đơn vị: triệu đồng) mà hộ nông dân đó thu được nhiều nhất là",
       "o": [
-        "$a<0$, $b<0$, $c<0$, $d<0$",
-        "$a<0$, $b>0$, $c>0$, $d<0$",
-        "$a>0$, $b>0$, $c<0$, $d>0$",
-        "$a<0$, $b<0$, $c>0$, $d<0$"
-      ],
-      "a": 3,
-      "graph": {
-        "fn": "-x^3-2*x^2+x-0.5",
-        "x": [
-          -2.5,
-          1.5
-        ],
-        "y": [
-          -4,
-          2
-        ],
-        "xstep": 1,
-        "ystep": 1
-      },
-      "sol": [
-        "Dựa vào đồ thị, ta thấy nhánh ngoài cùng bên phải hướng xuống dưới, suy ra hệ số $a < 0$.",
-        "Đồ thị hàm số cắt trục tung tại điểm có tung độ nằm dưới trục hoành, nên $d < 0$.",
-        "Hàm số có hai điểm cực trị $x_1, x_2$ nằm về hai phía của trục tung nên $x_1 \\cdot x_2 < 0$. Vì $x_1, x_2$ là nghiệm của phương trình $y' = 3ax^2 + 2bx + c = 0$ nên $x_1 \\cdot x_2 = \\frac{c}{3a} < 0$. Do $a < 0$ nên ta suy ra $c > 0$.",
-        "Lại thấy điểm cực tiểu (âm) có giá trị tuyệt đối lớn hơn hoành độ điểm cực đại (dương) (tức là khoảng cách từ điểm cực tiểu đến trục $Oy$ xa hơn), do đó $x_1 + x_2 < 0$. Ta có $x_1 + x_2 = -\\frac{2b}{3a} < 0$, kết hợp với $a < 0$ dẫn đến $b < 0$.",
-        "Vậy ta có $a<0, b<0, c>0, d<0$."
-      ],
-      "solved": true
-    },
-    {
-      "t": "mc",
-      "p": "Tính chất của dãy số",
-      "q": "Cho dãy số $(u_{n})$ thỏa mãn: $\\log_{2}u_{1}\\cdot\\log_{2}u_{5}-2\\log_{2}u_{1}+2\\log_{2}u_{5}=20$ và $u_{n}=2u_{n-1};u_{1}> 1$ với mọi $n\\ge2$. Tính tổng tất cả các giá trị của n thỏa mãn $2023^{29}<u_{n}<2023^{30}$",
-      "o": [
-        "3542.",
-        "3553.",
-        "3870.",
-        "4199."
+        "$42$",
+        "$41$",
+        "$40$",
+        "$35$"
       ],
       "a": 1,
       "sol": [
-        "Từ hệ thức $u_n = 2u_{n-1}$, ta thấy dãy số $(u_n)$ là cấp số nhân với công bội $q=2$. Suy ra $u_5 = u_1 \\cdot q^4 = 16u_1$.",
-        "Đặt $x = \\log_2 u_1$. Do $u_1 > 1$ nên $x > 0$. Ta có $\\log_2 u_5 = \\log_2 (16u_1) = 4 + \\log_2 u_1 = 4 + x$.",
-        "Thay vào phương trình đầu, ta được: $x(4+x) - 2x + 2(4+x) = 20 \\Leftrightarrow x^2 + 4x - 12 = 0$.",
-        "Giải phương trình ta được $x = 2$ hoặc $x = -6$. Lấy $x = 2$ (do $x>0$), suy ra $\\log_2 u_1 = 2 \\Rightarrow u_1 = 4$.",
-        "Công thức số hạng tổng quát của dãy: $u_n = u_1 \\cdot 2^{n-1} = 4 \\cdot 2^{n-1} = 2^{n+1}$.",
-        "Yêu cầu bài toán trở thành: $2023^{29} < 2^{n+1} < 2023^{30} \\Leftrightarrow 29 \\log_2 2023 < n+1 < 30 \\log_2 2023$.",
-        "Với $\\log_2 2023 \\approx 10,982$, bất phương trình trở thành $318,48 < n+1 < 329,47 \\Leftrightarrow 317,48 < n < 328,47$.",
-        "Các giá trị nguyên của $n$ thỏa mãn là $n \\in \\{318; 319; \\dots; 328\\}$.",
-        "Tổng các giá trị của $n$ là: $318 + 319 + \\dots + 328 = \\frac{11 \\cdot (318 + 328)}{2} = 3553$."
-      ],
-      "solved": true
+        "Gọi $x, y$ (ha) lần lượt là diện tích trồng đậu và cà ($x \\ge 0, y \\ge 0$).",
+        "Theo giả thiết ta có hệ bất phương trình: $\\begin{cases} x + y \\le 10 \\\\ 20x + 30y \\le 240 \\end{cases} \\Leftrightarrow \\begin{cases} x + y \\le 10 \\\\ 2x + 3y \\le 24 \\end{cases}$",
+        "Số tiền thu được là $T = 3,5x + 5y$ (triệu đồng).",
+        "Miền nghiệm của hệ bất phương trình là tứ giác với các đỉnh $(0;0)$, $(10;0)$, $(6;4)$, $(0;8)$.",
+        "Thay tọa độ các đỉnh vào hàm $T$, ta có $T(0;0)=0$, $T(10;0)=35$, $T(6;4)=41$, $T(0;8)=40$.",
+        "Vậy số tiền thu được nhiều nhất là $41$ triệu đồng."
+      ]
     },
     {
       "t": "fill",
-      "p": "Bài toán thực tế chia nhóm",
-      "q": "Tất cả học sinh lớp 10 của trường THPT X tham gia một hoạt động trải nghiệm là một chuyến đi tham quan bảo tàng dân tộc học. Tổng số người tham gia hoạt động là 147 người. Mỗi xe bus chứa tối đa 44 người. Cần ít nhất [[0]] xe bus để chở tất cả người tham gia đến bảo tàng.",
+      "q": "Tích các nghiệm của phương trình $5^{x^{2}-x+2}=4^{100x}$ bằng [[0]]",
       "a": [
-        4
+        2
       ],
       "sol": [
-        "Ta thực hiện phép chia tổng số người cho sức chứa tối đa của một xe: $147 : 44 = 3$ (dư 15).",
-        "Vì còn dư 15 người chưa có chỗ nên cần thêm 1 xe bus nữa.",
-        "Vậy số xe bus ít nhất cần dùng là $3 + 1 = 4$ (xe)."
-      ],
-      "solved": true
+        "Lấy lôgarit cơ số $5$ hai vế của phương trình ta được: $x^{2}-x+2=100x \\log_{5} 4$.",
+        "Biến đổi tương đương: $x^{2}-(1+100\\log_{5} 4)x+2=0$.",
+        "Đây là phương trình bậc hai có $\\Delta > 0$. Áp dụng định lí Viète, tích các nghiệm của phương trình là $2$."
+      ]
     },
     {
       "t": "tf",
-      "p": "Ba sợi dây không giãn với khối lượng không đáng kể được buộc chung một đầu và được kéo căng về ba hướng khác nhau. Biết rằng các lực kéo làm cho ba sợi dây ở trạng thái đứng yên.",
-      "q": "Các mệnh đề sau là đúng hay sai?",
+      "q": "Trong không gian với hệ tọa độ $Oxyz$, cho tứ diện $ABCD$ với $A(1;0;3)$, $B(5;0;1)$, $C(6;2;3)$ và $D(-1;5;-1)$.",
       "s": [
-        "Ba sợi dây nằm trên cùng một mặt phẳng.",
-        "Nếu hai trong ba lực có độ lớn bằng nhau và có phương vuông góc với nhau thì lực còn lại có độ lớn cũng bằng độ lớn của hai lực kia.",
-        "Nếu hai trong ba lực có độ lớn bằng nhau và bằng 20 N, hai lực này hợp với nhau góc $60^{\\circ}$ thì lực còn lại có độ lớn bằng $20\\sqrt{3}$ N.",
-        "Nếu lực thứ nhất có độ lớn bằng một nửa độ lớn của lực thứ hai và hai lực này hợp với nhau góc $30^{\\circ}$ thì lực thứ ba có độ lớn gấp hơn 3 lần độ lớn của lực thứ nhất."
+        "Tọa độ trung điểm của $AB$ là $I(3;0;2)$.",
+        "$\\vec{AB}=(4;0;-2),\\vec{BC}=(1;2;3)$.",
+        "Tam giác $ABC$ vuông tại $B$.",
+        "Thể tích khối tứ diện $ABCD$ bằng $30$ (đvtt)."
       ],
       "a": [
         1,
@@ -242,274 +66,144 @@
         0
       ],
       "sol": [
-        "Ý 1: Đúng. Do hệ cân bằng nên tổng hợp lực $\\vec{F_1} + \\vec{F_2} + \\vec{F_3} = \\vec{0} \\Leftrightarrow \\vec{F_3} = -(\\vec{F_1} + \\vec{F_2})$. Biểu diễn này chứng tỏ ba vectơ lực đồng phẳng, suy ra ba sợi dây cùng nằm trên một mặt phẳng.",
-        "Ý 2: Sai. Gọi hai lực vuông góc có độ lớn là $F$. Hợp lực của chúng có độ lớn là $\\sqrt{F^2 + F^2} = F\\sqrt{2}$. Để hệ đứng yên thì lực thứ ba phải cân bằng với hợp lực này, tức là lực thứ ba có độ lớn $F\\sqrt{2}$ (khác $F$).",
-        "Ý 3: Đúng. Gọi hai lực đó là $\\vec{F_1}$ và $\\vec{F_2}$. Hợp lực của chúng có độ lớn là $F_{12} = \\sqrt{F_1^2 + F_2^2 + 2F_1 F_2 \\cos 60^\\circ} = \\sqrt{20^2 + 20^2 + 2 \\cdot 20 \\cdot 20 \\cdot \\frac{1}{2}} = 20\\sqrt{3}$ (N). Lực còn lại cân bằng với hợp lực này nên cũng có độ lớn $20\\sqrt{3}$ N.",
-        "Ý 4: Sai. Gọi $F_1 = F$ thì $F_2 = 2F$. Hợp lực của chúng có độ lớn $F_{12} = \\sqrt{F^2 + (2F)^2 + 2 \\cdot F \\cdot 2F \\cdot \\cos 30^\\circ} = \\sqrt{5F^2 + 2\\sqrt{3}F^2} = F\\sqrt{5+2\\sqrt{3}}$. Lực thứ ba $F_3 = F\\sqrt{5+2\\sqrt{3}}$. Vì $5+2\\sqrt{3} \\approx 8,46 < 9$ nên $\\sqrt{5+2\\sqrt{3}} < 3$, do đó lực thứ ba nhỏ hơn 3 lần lực thứ nhất."
-      ],
-      "solved": true
-    },
-    {
-      "t": "fill",
-      "p": "Bài toán tổ hợp cơ bản",
-      "q": "Điền một số tự nhiên thích hợp vào chỗ trống.<br>Tủ quần áo của bạn An có 8 chiếc áo khác nhau và 6 chiếc quần khác nhau. Số cách bạn An chọn một bộ quần áo từ tủ quần áo để mặc là [[0]]",
-      "a": [
-        48
-      ],
-      "sol": [
-        "Để chọn một bộ quần áo, bạn An cần thực hiện liên tiếp 2 hành động:",
-        "Hành động 1: Chọn một chiếc áo từ 8 chiếc áo, có 8 cách chọn.",
-        "Hành động 2: Chọn một chiếc quần từ 6 chiếc quần, có 6 cách chọn.",
-        "Theo quy tắc nhân, số cách bạn An chọn một bộ quần áo là $8 \\times 6 = 48$ (cách)."
-      ],
-      "solved": true
+        "Ý 1: Trung điểm của $AB$ có tọa độ $I(\\frac{1+5}{2};\\frac{0+0}{2};\\frac{3+1}{2})=(3;0;2)$. Ý 1 đúng.",
+        "Ý 2: Ta có $\\vec{AB}=(4;0;-2)$ và $\\vec{BC}=(1;2;2)$. Ý 2 sai.",
+        "Ý 3: $\\vec{BA}=(-4;0;2)$. Xét $\\vec{BA}\\cdot\\vec{BC}=-4\\cdot 1+0\\cdot 2+2\\cdot 2=0 \\Rightarrow \\vec{BA} \\perp \\vec{BC}$. Do đó tam giác $ABC$ vuông tại $B$. Ý 3 đúng.",
+        "Ý 4: Ta có $[\\vec{BA},\\vec{BC}]=(-4;10;-8)$ và $\\vec{BD}=(-6;5;-2)$. Thể tích khối tứ diện $ABCD$ là $V = \\frac{1}{6}|[\\vec{BA},\\vec{BC}]\\cdot\\vec{BD}| = \\frac{1}{6}|24+50+16| = 15$. Ý 4 sai."
+      ]
     },
     {
       "t": "mc",
-      "p": "Định nghĩa hình học không gian",
-      "q": "Hình lăng trụ đều là",
+      "q": "Cho hàm số $y=f(x)$ xác định trên $\\mathbb{R}$ và có bảng biến thiên như sau<br>![bbt](img/TOAN_c5.png)<br>Điểm cực đại của hàm số $y=f(x)$ là",
       "o": [
-        "lăng trụ có đáy là tam giác đều và các cạnh bên bằng nhau.",
-        "lăng trụ đứng có đáy là đa giác đều.",
-        "lăng trụ có tất cả các cạnh bằng nhau.",
-        "lăng trụ có đáy là tam giác đều và cạnh bên vuông góc với đáy."
+        "$x=-7$",
+        "$x=-6$",
+        "$x=-3$",
+        "$x=-4$"
       ],
-      "a": 1,
+      "a": 3,
       "sol": [
-        "Theo định nghĩa trong sách giáo khoa, hình lăng trụ đều là hình lăng trụ đứng có đáy là một đa giác đều.",
-        "Vậy đáp án chính xác là 'lăng trụ đứng có đáy là đa giác đều'."
+        "Dựa vào bảng biến thiên, hàm số đạt cực đại tại $x = -4$ và giá trị cực đại bằng $-3$."
       ],
-      "solved": true
+      "fig": "img/TOAN_c5.png",
+      "warn": "cần chèn ảnh bảng biến thiên"
     },
     {
       "t": "mc",
-      "p": "Giải bất phương trình mũ",
-      "q": "Tập nghiệm của bất phương trình $3^{x^{2}-23}<9$ là",
+      "q": "Tập xác định $D$ của hàm số $y=\\log_{2}(x^{2}-2x-3)$ là",
       "o": [
-        "$(-5;5)$",
-        "$(-\\infty;5)$",
-        "$(5;+\\infty)$",
-        "$(0;5)$"
+        "$D=(-\\infty;-1)\\cup(3;+\\infty)$",
+        "$D=(-\\infty;-1]\\cup[3;+\\infty)$",
+        "$D=[-1;3]$",
+        "$D=(-1;3)$"
       ],
       "a": 0,
       "sol": [
-        "Ta có bất phương trình: $3^{x^2-23} < 9 \\Leftrightarrow 3^{x^2-23} < 3^2$.",
-        "Do cơ số $3 > 1$ nên bất phương trình tương đương với: $x^2 - 23 < 2 \\Leftrightarrow x^2 < 25$.",
-        "Giải ra ta được $-5 < x < 5$.",
-        "Vậy tập nghiệm của bất phương trình là $(-5;5)$."
-      ],
-      "solved": true
+        "Hàm số xác định khi và chỉ khi $x^{2}-2x-3>0 \\Leftrightarrow \\left[\\begin{array}{l} x < -1 \\\\ x > 3 \\end{array}\\right.$.",
+        "Vậy tập xác định của hàm số là $D=(-\\infty;-1)\\cup(3;+\\infty)$."
+      ]
     },
     {
       "t": "mc",
-      "p": "Tập xác định của hàm số lũy thừa",
-      "q": "Tập xác định của hàm số $y=(x^{3}-27)^{\\frac{e}{2}}$ là",
+      "q": "Cho hàm số $y=f(x)$ có bảng biến thiên như sau:<br>![bbt](img/TOAN_c7.png)<br>Tổng số tiệm cận đứng và tiệm cận ngang của đồ thị hàm số đã cho là",
       "o": [
-        "$D=\\mathbb{R}$",
-        "$D=(3;+\\infty)$",
-        "$D=\\mathbb{R}\\setminus\\{3\\}$",
-        "$D=[3;+\\infty)$"
-      ],
-      "a": 1,
-      "sol": [
-        "Hàm số đã cho là hàm số lũy thừa với số mũ $\\frac{e}{2}$ là một số không nguyên.",
-        "Điều kiện xác định của hàm số là cơ số phải mang giá trị dương: $x^3 - 27 > 0$.",
-        "Giải bất phương trình ta được $x^3 > 27 \\Leftrightarrow x > 3$.",
-        "Vậy tập xác định của hàm số là $D = (3; +\\infty)$."
-      ],
-      "solved": true
-    },
-    {
-      "t": "drag",
-      "p": "Cho tập hợp A gồm các số tự nhiên không lớn hơn 100. Chọn ngẫu nhiên 3 số từ tập hợp A.",
-      "q": "Kéo số ở các ô vuông thả vào vị trí thích hợp trong câu sau:<br>Có [[0]] cách chọn sao cho tổng ba số đó chia hết cho 3.<br>Có [[1]] cách chọn sao cho 3 số đó lập thành cấp số cộng.",
-      "c": [
-        "16896",
-        "2450",
-        "37026",
-        "53922",
-        "122500"
-      ],
-      "a": [
-        3,
-        1
-      ],
-      "sol": [
-        "Giả thiết ngầm hiểu các số tự nhiên đang xét bắt đầu từ 1. Tập hợp $A = \\{1; 2; 3; \\dots; 100\\}$.",
-        "Phân hoạch tập $A$ thành 3 tập con dựa theo số dư khi chia cho 3: tập $A_0$ chứa 33 số chia hết cho 3, tập $A_1$ chứa 34 số chia 3 dư 1, và tập $A_2$ chứa 33 số chia 3 dư 2.",
-        "Để tổng 3 số chọn ra chia hết cho 3, ta có 4 trường hợp:",
-        "- Cả 3 số thuộc $A_0$: có $C_{33}^3 = 5456$ cách.",
-        "- Cả 3 số thuộc $A_1$: có $C_{34}^3 = 5984$ cách.",
-        "- Cả 3 số thuộc $A_2$: có $C_{33}^3 = 5456$ cách.",
-        "- Mỗi số thuộc một tập con: có $33 \\times 34 \\times 33 = 37026$ cách.",
-        "Vậy tổng số cách chọn là $5456 + 5984 + 5456 + 37026 = 53922$ (cách). Điền 53922 vào ô đầu tiên.",
-        "Để 3 số chọn ra lập thành một cấp số cộng, gọi 3 số đó là $a, b, c$ ($a < b < c$). Theo tính chất cấp số cộng, ta có $a + c = 2b$.",
-        "Điều này có nghĩa tổng $a+c$ phải là một số chẵn, tức là $a$ và $c$ phải cùng tính chẵn lẻ.",
-        "Tập $A$ có 50 số chẵn và 50 số lẻ. Số cách chọn 2 số cùng tính chẵn lẻ là $C_{50}^2 + C_{50}^2 = 1225 + 1225 = 2450$ cách.",
-        "Với mỗi cặp $(a, c)$ như vậy, ta luôn tìm được duy nhất một số $b = \\frac{a+c}{2}$ thỏa mãn yêu cầu. Do đó có đúng 2450 cách chọn 3 số lập thành cấp số cộng. Điền 2450 vào ô thứ hai."
-      ],
-      "solved": true
-    },
-    {
-      "t": "mc",
-      "p": "Bài toán ứng dụng hệ tọa độ",
-      "q": "Để dự thi cuộc thi ROBOCON, một nhóm sinh viên của một trường đại học chế tạo robot bắn bóng theo quỹ đạo thẳng. Theo bản thiết kế, trong không gian Oxyz, trong 2 giây đầu tiên quả bóng được bắn ra có vectơ vận tốc không đổi $\\vec{v}=(2;2;1)$ (đơn vị: $m/s$). Khi vào cuộc thi, robot của nhóm được đặt cố định ở vị trí $M(1;2;1)$. Trong các mục tiêu sau, mục tiêu nào quả bóng có thể bắn trúng trong vòng 2 giây đầu tiên từ khi được bắn?",
-      "o": [
-        "$A(4;3;6)$.",
-        "$B(2;3;1,5)$.",
-        "$C(4;4;1)$.",
-        "$D(1;3;1)$."
-      ],
-      "a": 1,
-      "sol": [
-        "Vị trí của quả bóng tại thời điểm $t$ giây kể từ lúc bắn được cho bởi phương trình chuyển động: $\\begin{cases} x = 1 + 2t \\\\ y = 2 + 2t \\\\ z = 1 + t \\end{cases}$",
-        "Để quả bóng trúng mục tiêu trong 2 giây đầu, hệ phương trình tạo bởi tọa độ mục tiêu và phương trình chuyển động phải có nghiệm $t$ thỏa mãn $0 < t \\le 2$.",
-        "Kiểm tra điểm $B(2; 3; 1,5)$: thay tọa độ vào hệ ta có $\\begin{cases} 1 + 2t = 2 \\\\ 2 + 2t = 3 \\\\ 1 + t = 1,5 \\end{cases} \\Rightarrow t = 0,5$.",
-        "Giá trị $t=0,5$ nằm trong khoảng thời gian 2 giây đầu tiên, do đó quả bóng sẽ trúng mục tiêu B.",
-        "Các điểm A, C, D đều cho hệ vô nghiệm (các giá trị $t$ ở mỗi phương trình không bằng nhau), do đó không nằm trên quỹ đạo bay."
-      ],
-      "solved": true
-    },
-    {
-      "t": "fill",
-      "p": "Cho tứ diện đều $ABCD$ có cạnh bằng 4. Gọi $M$ là điểm thuộc đoạn $CD$ sao cho $\\vec{MC}=-2\\vec{MD}$.",
-      "q": "Điền các số nguyên dương thích hợp vào các chỗ trống.<br>Khi đó, $\\vec{AM}=\\frac{\\vec{AC}+k\\cdot\\vec{AD}}{3}$ với $k=$ [[0]]. Tích vô hướng $\\vec{AB}\\cdot\\vec{AM}$ bằng [[1]]",
-      "a": [
-        2,
-        8
-      ],
-      "sol": [
-        "Từ đẳng thức $\\vec{MC} = -2\\vec{MD}$, ta chèn điểm $A$ vào cả hai vế: $\\vec{AC} - \\vec{AM} = -2(\\vec{AD} - \\vec{AM})$.",
-        "Khai triển và rút gọn, ta được $3\\vec{AM} = \\vec{AC} + 2\\vec{AD} \\Rightarrow \\vec{AM} = \\frac{\\vec{AC} + 2\\vec{AD}}{3}$. Suy ra $k=2$.",
-        "Tiếp theo, ta tính tích vô hướng: $\\vec{AB}\\cdot\\vec{AM} = \\vec{AB}\\cdot\\left(\\frac{\\vec{AC} + 2\\vec{AD}}{3}\\right) = \\frac{1}{3}(\\vec{AB}\\cdot\\vec{AC} + 2\\vec{AB}\\cdot\\vec{AD})$.",
-        "Do $ABCD$ là tứ diện đều cạnh 4 nên các tam giác mặt đều là tam giác đều, các góc tại đỉnh bằng $60^{\\circ}$.",
-        "Ta có $\\vec{AB}\\cdot\\vec{AC} = AB \\cdot AC \\cdot \\cos 60^{\\circ} = 4 \\cdot 4 \\cdot \\frac{1}{2} = 8$. Tương tự $\\vec{AB}\\cdot\\vec{AD} = 8$.",
-        "Thay vào biểu thức: $\\vec{AB}\\cdot\\vec{AM} = \\frac{1}{3}(8 + 2 \\cdot 8) = \\frac{24}{3} = 8$."
-      ],
-      "solved": true
-    },
-    {
-      "t": "tf",
-      "p": "Trong không gian $Oxyz$ cho hình lập phương $ABCD.A'B'C'D'$. Có $A(0; 0; 0),D(0;3; 0),A' (0;0; 3)$. Gọi $M, N$ lần lượt là hai điểm nằm trên hai cạnh $BD, AD'$ sao cho $AN=DM$, $P$ là trung điểm $B'C'$. $K$ là điểm thuộc mặt phẳng $(0xz)$.",
-      "q": "Các phát biểu sau đây là đúng hay sai?",
-      "s": [
-        "Trọng tâm của tam giác $PCD$ có toạ độ là $(2;\\frac{5}{2};1)$",
-        "Giá trị nhỏ nhất của biểu thức $|\\vec{KP}+\\vec{KC}+\\vec{KD}|$ là $\\frac{5}{2}$",
-        "Góc giữa hai đường thẳng $AP$ và $BC$ bằng $60^{0}$",
-        "Độ dài đoạn thẳng $MN$ ngắn nhất bằng $\\sqrt{2}$"
-      ],
-      "a": [
-        1,
-        0,
-        0,
-        0
-      ],
-      "sol": [
-        "Ý 1: Đúng. Dựa vào tọa độ các điểm đề bài, độ dài cạnh lập phương là 3. Tọa độ các đỉnh còn lại là $B(3;0;0), C(3;3;0), B'(3;0;3), C'(3;3;3), D'(0;3;3)$. Vì $P$ là trung điểm $B'C'$ nên $P(3;\\frac{3}{2};3)$. Trọng tâm $G$ của tam giác $PCD$ có tọa độ $x_G = \\frac{3+3+0}{3}=2$, $y_G = \\frac{1,5+3+3}{3}=\\frac{5}{2}$, $z_G = \\frac{3+0+0}{3}=1$. Vậy tọa độ trọng tâm là $(2;\\frac{5}{2};1)$.",
-        "Ý 2: Sai. Ta có $|\\vec{KP}+\\vec{KC}+\\vec{KD}| = |3\\vec{KG}| = 3KG$. Để biểu thức đạt min thì $KG$ phải ngắn nhất, hay $K$ là hình chiếu của $G$ lên mặt phẳng $(Oxz)$ (mặt phẳng $y=0$). Hình chiếu đó là $K(2;0;1)$, suy ra khoảng cách $KG = |y_G| = \\frac{5}{2}$. Vậy giá trị nhỏ nhất của biểu thức là $3 \\times \\frac{5}{2} = \\frac{15}{2}$.",
-        "Ý 3: Sai. Ta có $\\vec{AP} = (3;\\frac{3}{2};3)$ và $\\vec{BC} = (0;3;0)$. $\\cos(\\vec{AP}, \\vec{BC}) = \\frac{3 \\cdot 0 + 1,5 \\cdot 3 + 3 \\cdot 0}{\\sqrt{3^2+1,5^2+3^2}\\sqrt{3^2}} = \\frac{4,5}{4,5 \\cdot 3} = \\frac{1}{3}$. Suy ra góc này không bằng $60^\\circ$.",
-        "Ý 4: Sai. Đặt $AN = DM = x$ ($0 \\le x \\le 3\\sqrt{2}$). Véctơ đơn vị cùng hướng với $\\vec{AD'}$ là $(0; \\frac{1}{\\sqrt{2}}; \\frac{1}{\\sqrt{2}})$, suy ra tọa độ $N(0; \\frac{x}{\\sqrt{2}}; \\frac{x}{\\sqrt{2}})$. Véctơ đơn vị cùng hướng với $\\vec{DB}$ là $(\\frac{1}{\\sqrt{2}}; -\\frac{1}{\\sqrt{2}}; 0)$, suy ra tọa độ $M(\\frac{x}{\\sqrt{2}}; 3 - \\frac{x}{\\sqrt{2}}; 0)$. Bình phương khoảng cách: $MN^2 = (\\frac{x}{\\sqrt{2}})^2 + (3 - x\\sqrt{2})^2 + (\\frac{x}{\\sqrt{2}})^2 = 3x^2 - 6\\sqrt{2}x + 9$. Biểu thức đạt GTNN khi $x = \\sqrt{2}$, thay vào ta có $MN^2 = 3$, vậy đoạn ngắn nhất là $\\sqrt{3}$, không phải $\\sqrt{2}$."
-      ],
-      "solved": true
-    },
-    {
-      "t": "mc",
-      "p": "Tính toán tọa độ véctơ",
-      "q": "Trong không gian với hệ trục tọa độ Oxyz, cho $\\vec{a}=(2;-3;3)$, $\\vec{b}=(0;2;-1)$, $\\vec{c}=(3;-1;5)$. Tọa độ của véctơ $\\vec{u}=2\\vec{a}+3\\vec{b}-2\\vec{c}$ là:",
-      "o": [
-        "$(-2;-2;7)$.",
-        "$(10;-2;13)$",
-        "$(-2;2;-7)$.",
-        "$(-2;2;7)$."
-      ],
-      "a": 2,
-      "sol": [
-        "Ta thực hiện tính toán từng thành phần tọa độ của vectơ $\\vec{u}$:",
-        "Hoành độ: $2 \\cdot 2 + 3 \\cdot 0 - 2 \\cdot 3 = -2$.",
-        "Tung độ: $2 \\cdot (-3) + 3 \\cdot 2 - 2 \\cdot (-1) = -6 + 6 + 2 = 2$.",
-        "Cao độ: $2 \\cdot 3 + 3 \\cdot (-1) - 2 \\cdot 5 = 6 - 3 - 10 = -7$.",
-        "Vậy tọa độ của véctơ là $\\vec{u} = (-2; 2; -7)$."
-      ],
-      "solved": true
-    },
-    {
-      "t": "fill",
-      "p": "Ứng dụng tích phân tính diện tích",
-      "q": "Điền một số nguyên dương thích hợp vào chỗ trống.<br>Đồ thị của hàm số $y=f(x)$ được cho như hình vẽ. Điểm $A(3;4)$ thuộc đồ thị hàm số đã cho. Biết $\\int_{0}^{3}f(x)dx=5$, diện tích của vùng được tô đậm bằng [[0]]",
-      "a": [
-        7
-      ],
-      "fig": "img/TOÁN_c22.png",
-      "warn": "cần chèn ảnh gốc",
-      "sol": [
-        "Từ hình vẽ, ta nhận thấy diện tích hình chữ nhật giới hạn bởi trục hoành $y=0$, đường thẳng $y=4$, trục tung $x=0$ và đường thẳng $x=3$ là $S_{HCN} = 3 \\times 4 = 12$.",
-        "Diện tích phần nằm dưới đồ thị $y=f(x)$ và trên trục hoành trong khoảng $x \\in [0; 3]$ chính là tích phân $\\int_{0}^{3} f(x) dx = 5$.",
-        "Diện tích vùng tô đậm $S$ bằng diện tích hình chữ nhật trừ đi diện tích phần dưới đồ thị, nên ta có $S = 12 - 5 = 7$."
-      ],
-      "solved": true
-    },
-    {
-      "t": "fill",
-      "p": "Phương trình lượng giác có chứa tham số",
-      "q": "Tổng các giá trị nguyên của tham số $m$ để phương trình $\\sin^{6}x+\\cos^{6}x+3\\sin x\\cos x-2m+1=0$ có nghiệm thực bằng [[0]]",
-      "a": [
-        1
-      ],
-      "sol": [
-        "Ta áp dụng hằng đẳng thức: $\\sin^6 x + \\cos^6 x = (\\sin^2 x + \\cos^2 x)^3 - 3\\sin^2 x \\cos^2 x (\\sin^2 x + \\cos^2 x) = 1 - 3\\sin^2 x \\cos^2 x$.",
-        "Thay vào phương trình ta được: $1 - 3\\sin^2 x \\cos^2 x + 3\\sin x \\cos x - 2m + 1 = 0 \\Leftrightarrow 2m = -3\\sin^2 x \\cos^2 x + 3\\sin x \\cos x + 2$.",
-        "Đặt $t = \\sin x \\cos x = \\frac{1}{2}\\sin 2x$. Do $\\sin 2x \\in [-1; 1]$ nên $t \\in [-\\frac{1}{2}; \\frac{1}{2}]$.",
-        "Xét hàm số $g(t) = -3t^2 + 3t + 2$ trên đoạn $[-\\frac{1}{2}; \\frac{1}{2}]$.",
-        "Đạo hàm $g'(t) = -6t + 3 = 0 \\Leftrightarrow t = \\frac{1}{2}$.",
-        "Ta có $g(-\\frac{1}{2}) = -\\frac{1}{4}$ và $g(\\frac{1}{2}) = \\frac{11}{4}$. Tập giá trị của $g(t)$ là $[-\\frac{1}{4}; \\frac{11}{4}]$.",
-        "Để phương trình có nghiệm, ta phải có $-\\frac{1}{4} \\le 2m \\le \\frac{11}{4} \\Leftrightarrow -\\frac{1}{8} \\le m \\le \\frac{11}{8}$.",
-        "Vì $m$ nguyên nên $m \\in \\{0; 1\\}$. Tổng các giá trị nguyên của $m$ là $0 + 1 = 1$."
-      ],
-      "solved": true
-    },
-    {
-      "t": "tf",
-      "p": "Cho hàm số $y=\\frac{x^{2}-3x+6}{x-1}$.",
-      "q": "Mỗi phát biểu dưới đây là đúng hay sai?",
-      "s": [
-        "Điểm cực tiểu của đồ thị hàm số là $(a;b)$ với $a^{2}+b=12$",
-        "Tiệm cận xiên của đồ thị hàm số là $y=x-2$",
-        "Gọi $I$ là giao điểm hai đường tiệm cận của đồ thị hàm số. Tiếp tuyến của đồ thị hàm số tại điểm có hoành độ $x=2$ cắt hai đường tiệm cận tại A, B. Diện tích tam giác IAB bằng 12.",
-        "Có tất cả 9 giá trị nguyên của tham số m để phương trình $\\frac{x^{2}-3x+6}{x-1}=m$ có hai nghiệm phân biệt X1, X2 thỏa mãn $x_{1}<2<x_{2}<15$."
-      ],
-      "a": [
-        1,
-        1,
-        0,
-        1
-      ],
-      "sol": [
-        "Ý 1: Đúng. Phân tích hàm số: $y = x - 2 + \\frac{4}{x-1}$. Đạo hàm $y' = 1 - \\frac{4}{(x-1)^2}$. $y' = 0 \\Leftrightarrow x = 3$ hoặc $x = -1$. Qua bảng biến thiên, hàm số đạt cực tiểu tại $x = 3$, $y(3) = 3$. Điểm cực tiểu là $(3; 3)$. Vậy $a=3, b=3 \\Rightarrow a^2+b = 3^2+3=12$.",
-        "Ý 2: Đúng. Vì $y = x - 2 + \\frac{4}{x-1}$ và $\\lim_{x \\to \\infty} \\frac{4}{x-1} = 0$, nên đường thẳng $y = x - 2$ là tiệm cận xiên của đồ thị.",
-        "Ý 3: Sai. Tiệm cận đứng $x = 1$, tiệm cận xiên $y = x - 2$, giao điểm là $I(1; -1)$. Điểm $M$ trên đồ thị có hoành độ $x=2 \\Rightarrow y=4$. Hệ số góc tiếp tuyến là $y'(2) = 1 - \\frac{4}{1^2} = -3$. Phương trình tiếp tuyến tại $M$ là $y = -3(x-2) + 4 = -3x + 10$. Giao điểm với tiệm cận đứng là $A(1; 7)$. Giao điểm với tiệm cận xiên thỏa mãn $-3x + 10 = x - 2 \\Leftrightarrow x = 3 \\Rightarrow B(3; 1)$. Diện tích tam giác $IAB$ với độ dài đáy $IA = |7 - (-1)| = 8$, đường cao hạ từ $B$ là $h = |x_B - x_A| = |3 - 1| = 2$ bằng $S = \\frac{1}{2} \\times 8 \\times 2 = 8$. Không phải 12.",
-        "Ý 4: Đúng. Xét nhánh $x > 1$, hàm số nghịch biến trên $(1; 3)$ và đồng biến trên $(3; +\\infty)$. Giá trị tại $x=2$ là $y(2)=4$, cực tiểu tại $x=3$ là $y(3)=3$, tại $x=15$ là $y(15)=\\frac{93}{7} \\approx 13,28$. Đường thẳng $y=m$ cắt đồ thị tạo 2 nghiệm phân biệt thuộc miền $x > 1$ thì cần $m > 3$. Khi đó nghiệm nhỏ $x_1 \\in (1; 3)$ và nghiệm lớn $x_2 \\in (3; +\\infty)$. Để $x_1 < 2 \\Leftrightarrow m > y(2) = 4$. Để $x_2 < 15 \\Leftrightarrow m < y(15) = \\frac{93}{7}$. Kết hợp lại ta được $4 < m < 13,28$. Các số nguyên thỏa mãn là 5, 6, 7, 8, 9, 10, 11, 12, 13 (tất cả 9 giá trị)."
-      ],
-      "solved": true
-    },
-    {
-      "t": "mc",
-      "p": "Giải phương trình logarit",
-      "q": "Số nghiệm của phương trình $\\log_{2}(x^{2}-6)=\\log_{2}(x-2)+1$ là",
-      "o": [
-        "2.",
-        "0",
-        "3.",
-        "1."
+        "$4$",
+        "$2$",
+        "$1$",
+        "$3$"
       ],
       "a": 3,
       "sol": [
-        "Điều kiện xác định của phương trình là: $\\begin{cases} x^2 - 6 > 0 \\\\ x - 2 > 0 \\end{cases} \\Leftrightarrow x > \\sqrt{6}$.",
-        "Phương trình được biến đổi thành: $\\log_2 (x^2 - 6) = \\log_2 (x - 2) + \\log_2 2 \\Leftrightarrow \\log_2 (x^2 - 6) = \\log_2 (2x - 4)$.",
-        "Từ đó ta có: $x^2 - 6 = 2x - 4 \\Leftrightarrow x^2 - 2x - 2 = 0$.",
-        "Phương trình bậc hai có hai nghiệm là $x = 1 - \\sqrt{3}$ (loại vì nhỏ hơn $\\sqrt{6}$) và $x = 1 + \\sqrt{3}$ (nhận vì $1+\\sqrt{3} > \\sqrt{6}$).",
-        "Vậy phương trình đã cho có đúng 1 nghiệm duy nhất."
+        "Dựa vào bảng biến thiên ta có:",
+        "$\\lim_{x\\to -\\infty}f(x)=1 \\Rightarrow y=1$ là tiệm cận ngang.",
+        "$\\lim_{x\\to +\\infty}f(x)=3 \\Rightarrow y=3$ là tiệm cận ngang.",
+        "$\\lim_{x\\to 0^{+}}f(x)=-\\infty \\Rightarrow x=0$ là tiệm cận đứng.",
+        "Vậy đồ thị hàm số có tổng cộng $3$ đường tiệm cận."
       ],
-      "solved": true
+      "fig": "img/TOAN_c7.png",
+      "warn": "cần chèn ảnh bảng biến thiên"
+    },
+    {
+      "t": "mc",
+      "q": "Tập giá trị của hàm số $y=\\frac{2}{\\sqrt{1-|\\sin x|}}$ là",
+      "o": [
+        "$(1;+\\infty)$",
+        "$[2;+\\infty)$",
+        "$[2;3]$",
+        "$[1;2]$"
+      ],
+      "a": 1,
+      "sol": [
+        "Điều kiện xác định: $1-|\\sin x|>0 \\Leftrightarrow |\\sin x|<1 \\Leftrightarrow \\sin x \\neq \\pm 1$.",
+        "Ta có $0 \\le |\\sin x| < 1 \\Rightarrow 0 < 1-|\\sin x| \\le 1 \\Rightarrow 0 < \\sqrt{1-|\\sin x|} \\le 1$.",
+        "Suy ra $y = \\frac{2}{\\sqrt{1-|\\sin x|}} \\ge 2$.",
+        "Vậy tập giá trị của hàm số là $[2;+\\infty)$."
+      ]
+    },
+    {
+      "t": "fill",
+      "q": "Một vòi nước chảy vào một bình không chứa nước hình nón có chiều sâu $45\\text{ cm}$ và đường kính $27\\text{ cm}$ với tốc độ $11\\text{ cm}^{3}\\text{/phút}$. Tốc độ dâng lên của mực nước là [[0]] cm/phút khi nước đạt độ sâu $30\\text{ cm}$ (Kết quả làm tròn đến chữ số thập phân thứ 3)",
+      "a": [
+        0.043
+      ],
+      "e": 0.006,
+      "sol": [
+        "Bình hình nón có chiều cao $H=45$ cm, bán kính đáy $R=\\frac{27}{2}=13,5$ cm.",
+        "Tại thời điểm $t$, gọi $h$ và $r$ lần lượt là chiều cao và bán kính mặt nước. Bằng tam giác đồng dạng, ta có $\\frac{r}{h}=\\frac{R}{H}=\\frac{13,5}{45}=0,3 \\Rightarrow r=0,3h$.",
+        "Thể tích nước trong bình là $V=\\frac{1}{3}\\pi r^{2}h=\\frac{1}{3}\\pi (0,3h)^{2}h = 0,03\\pi h^{3}$.",
+        "Lấy đạo hàm hai vế theo $t$, ta được tốc độ chảy: $\\frac{dV}{dt} = 0,09\\pi h^{2}\\frac{dh}{dt}$.",
+        "Thay $\\frac{dV}{dt}=11$ và $h=30$ vào, ta có $11 = 0,09\\pi (30)^{2} \\frac{dh}{dt} = 81\\pi \\frac{dh}{dt}$.",
+        "Suy ra $\\frac{dh}{dt} = \\frac{11}{81\\pi} \\approx 0,043$ (cm/phút)."
+      ]
+    },
+    {
+      "t": "fill",
+      "q": "Chọn ngẫu nhiên hai số nguyên dương phân biệt không vượt quá $20$. Xác suất để tích hai số đó chia hết cho $5$ là $\\frac{a}{b}$, trong đó $\\frac{a}{b}$ là phân số tối giản với $a,b$ là các số nguyên dương. Khi đó $a+b=$ [[0]]",
+      "a": [
+        26
+      ],
+      "sol": [
+        "Không gian mẫu là chọn $2$ số trong $20$ số: $n(\\Omega) = C_{20}^{2} = 190$.",
+        "Trong $20$ số nguyên dương đầu tiên, có $4$ số chia hết cho $5$ là $\\{5; 10; 15; 20\\}$ và $16$ số không chia hết cho $5$.",
+        "Để tích hai số chia hết cho $5$ thì ít nhất một trong hai số phải chia hết cho $5$.",
+        "Số cách chọn hai số sao cho không có số nào chia hết cho $5$ là $C_{16}^{2} = 120$.",
+        "Xác suất để tích hai số chia hết cho $5$ là $P = 1 - \\frac{120}{190} = \\frac{7}{19}$.",
+        "Do đó $a=7, b=19 \\Rightarrow a+b=26$."
+      ]
+    },
+    {
+      "t": "mc",
+      "q": "Cho tập $S=\\{1;2;...;19;20\\}$. Lấy ngẫu nhiên ba số. Xác suất để ba số lấy được lập thành cấp số cộng là",
+      "o": [
+        "$\\frac{5}{38}$",
+        "$\\frac{7}{38}$",
+        "$\\frac{3}{38}$",
+        "$\\frac{1}{114}$"
+      ],
+      "a": 2,
+      "sol": [
+        "Số cách chọn $3$ số từ tập $S$ là $n(\\Omega) = C_{20}^{3} = 1140$.",
+        "Giả sử $3$ số lấy ra là $x, y, z$ ($x < y < z$). Để $x, y, z$ lập thành cấp số cộng thì $x+z = 2y$.",
+        "Vì $2y$ luôn là số chẵn nên $x$ và $z$ phải cùng tính chẵn lẻ.",
+        "Trong $S$ có $10$ số chẵn và $10$ số lẻ. Cứ chọn ngẫu nhiên $2$ số cùng tính chẵn lẻ ta sẽ xác định được duy nhất $1$ số $y$ thỏa mãn $x+z=2y$.",
+        "Số cách chọn $2$ số cùng chẵn là $C_{10}^{2} = 45$. Số cách chọn $2$ số cùng lẻ là $C_{10}^{2} = 45$.",
+        "Vậy số cách chọn để $3$ số lập thành cấp số cộng là $45 + 45 = 90$.",
+        "Xác suất cần tìm là $P = \\frac{90}{1140} = \\frac{3}{38}$."
+      ]
+    },
+    {
+      "t": "fill",
+      "q": "Khi phân tích số nguyên dương $n!$ thành tích các thừa số nguyên tố, thì số mũ của thừa số nguyên tố $p$ được xác định bởi công thức: $k(p)=\\left[\\frac{n}{p}\\right]+\\left[\\frac{n}{p^{2}}\\right]+\\left[\\frac{n}{p^{3}}\\right]+\\left[\\frac{n}{p^{4}}\\right]+...$ ở đó $[x]$ là số nguyên lớn nhất nhỏ hơn hoặc bằng $x$ (chẳng hạn, $[-3,2]=-4; [0,7]=0; [3,2]=3$).<br>Số mũ của thừa số $2$ khi phân tích $2024!$ thành tích các thừa số nguyên tố là [[0]].<br>Số các chữ số $0$ ở tận cùng bên phải của $2024!$ là [[1]].",
+      "a": [
+        2017,
+        503
+      ],
+      "sol": [
+        "Áp dụng công thức, số mũ của thừa số $2$ là: $\\left[\\frac{2024}{2}\\right]+\\left[\\frac{2024}{4}\\right]+...+\\left[\\frac{2024}{1024}\\right] = 1012+506+253+126+63+31+15+7+3+1=2017$.",
+        "Số chữ số $0$ tận cùng của $2024!$ chính là số mũ của thừa số $5$ (do số mũ của $5$ luôn nhỏ hơn số mũ của $2$).",
+        "Số mũ của thừa số $5$ là: $\\left[\\frac{2024}{5}\\right]+\\left[\\frac{2024}{25}\\right]+\\left[\\frac{2024}{125}\\right]+\\left[\\frac{2024}{625}\\right] = 404+80+16+3=503$.",
+        "Vậy $2024!$ có $503$ chữ số $0$ tận cùng."
+      ]
     }
   ]
 }

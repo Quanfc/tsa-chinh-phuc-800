@@ -1,0 +1,1717 @@
+{
+ "title": "TSA FULL",
+ "sections": [
+  {
+   "title": "TOÁN",
+   "minutes": 60,
+   "questions": [
+    {
+     "t": "mc",
+     "q": "Cho hình chóp $S.ABCD$ có đáy $ABCD$ là hình vuông tâm $O$, $SA$ vuông góc với mặt phẳng đáy. Mặt phẳng vuông góc với $(SAC)$ là",
+     "o": [
+      "$(SAB)$",
+      "$(SAD)$",
+      "$(SBD)$",
+      "$(SBC)$"
+     ],
+     "a": 2,
+     "sol": [
+      "Ta có $BD \\perp AC$ (do $ABCD$ là hình vuông tâm $O$).",
+      "Lại có $BD \\perp SA$ (do $SA \\perp (ABCD)$).",
+      "Suy ra $BD \\perp (SAC)$.",
+      "Vì $BD \\subset (SBD)$ nên $(SBD) \\perp (SAC)$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Một hộ nông dân dự định trồng đậu và cà trên diện tích $10$ ha. Nếu trồng đậu thì cần $20$ công và thu được $3,5$ triệu đồng trên diện tích mỗi ha, nếu trồng cà thì mất $30$ công và thu được $5$ triệu đồng trên diện tích mỗi ha. Với tổng số công không quá $240$, số tiền (đơn vị: triệu đồng) mà hộ nông dân đó thu được nhiều nhất là",
+     "o": [
+      "$42$",
+      "$41$",
+      "$40$",
+      "$35$"
+     ],
+     "a": 1,
+     "sol": [
+      "Gọi $x, y$ (ha) lần lượt là diện tích trồng đậu và cà ($x \\ge 0, y \\ge 0$).",
+      "Theo giả thiết ta có hệ bất phương trình: $\\begin{cases} x + y \\le 10 \\\\ 20x + 30y \\le 240 \\end{cases} \\Leftrightarrow \\begin{cases} x + y \\le 10 \\\\ 2x + 3y \\le 24 \\end{cases}$",
+      "Số tiền thu được là $T = 3,5x + 5y$ (triệu đồng).",
+      "Miền nghiệm của hệ bất phương trình là tứ giác với các đỉnh $(0;0)$, $(10;0)$, $(6;4)$, $(0;8)$.",
+      "Thay tọa độ các đỉnh vào hàm $T$, ta có $T(0;0)=0$, $T(10;0)=35$, $T(6;4)=41$, $T(0;8)=40$.",
+      "Vậy số tiền thu được nhiều nhất là $41$ triệu đồng."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Tích các nghiệm của phương trình $5^{x^{2}-x+2}=4^{100x}$ bằng [[0]]",
+     "a": [
+      2
+     ],
+     "sol": [
+      "Lấy lôgarit cơ số $5$ hai vế của phương trình ta được: $x^{2}-x+2=100x \\log_{5} 4$.",
+      "Biến đổi tương đương: $x^{2}-(1+100\\log_{5} 4)x+2=0$.",
+      "Đây là phương trình bậc hai có $\\Delta > 0$. Áp dụng định lí Viète, tích các nghiệm của phương trình là $2$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Trong không gian với hệ tọa độ $Oxyz$, cho tứ diện $ABCD$ với $A(1;0;3)$, $B(5;0;1)$, $C(6;2;3)$ và $D(-1;5;-1)$.",
+     "s": [
+      "Tọa độ trung điểm của $AB$ là $I(3;0;2)$.",
+      "$\\vec{AB}=(4;0;-2),\\vec{BC}=(1;2;3)$.",
+      "Tam giác $ABC$ vuông tại $B$.",
+      "Thể tích khối tứ diện $ABCD$ bằng $30$ (đvtt)."
+     ],
+     "a": [
+      1,
+      0,
+      1,
+      0
+     ],
+     "sol": [
+      "Ý 1: Trung điểm của $AB$ có tọa độ $I(\\frac{1+5}{2};\\frac{0+0}{2};\\frac{3+1}{2})=(3;0;2)$. Ý 1 đúng.",
+      "Ý 2: Ta có $\\vec{AB}=(4;0;-2)$ và $\\vec{BC}=(1;2;2)$. Ý 2 sai.",
+      "Ý 3: $\\vec{BA}=(-4;0;2)$. Xét $\\vec{BA}\\cdot\\vec{BC}=-4\\cdot 1+0\\cdot 2+2\\cdot 2=0 \\Rightarrow \\vec{BA} \\perp \\vec{BC}$. Do đó tam giác $ABC$ vuông tại $B$. Ý 3 đúng.",
+      "Ý 4: Ta có $[\\vec{BA},\\vec{BC}]=(-4;10;-8)$ và $\\vec{BD}=(-6;5;-2)$. Thể tích khối tứ diện $ABCD$ là $V = \\frac{1}{6}|[\\vec{BA},\\vec{BC}]\\cdot\\vec{BD}| = \\frac{1}{6}|24+50+16| = 15$. Ý 4 sai."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho hàm số $y=f(x)$ xác định trên $\\mathbb{R}$ và có bảng biến thiên như sau<br>![bbt](img/TOAN_c5.png)<br>Điểm cực đại của hàm số $y=f(x)$ là",
+     "o": [
+      "$x=-7$",
+      "$x=-6$",
+      "$x=-3$",
+      "$x=-4$"
+     ],
+     "a": 3,
+     "sol": [
+      "Dựa vào bảng biến thiên, hàm số đạt cực đại tại $x = -4$ và giá trị cực đại bằng $-3$."
+     ],
+     "fig": "img/TOAN_c5.png",
+     "warn": "cần chèn ảnh bảng biến thiên"
+    },
+    {
+     "t": "mc",
+     "q": "Tập xác định $D$ của hàm số $y=\\log_{2}(x^{2}-2x-3)$ là",
+     "o": [
+      "$D=(-\\infty;-1)\\cup(3;+\\infty)$",
+      "$D=(-\\infty;-1]\\cup[3;+\\infty)$",
+      "$D=[-1;3]$",
+      "$D=(-1;3)$"
+     ],
+     "a": 0,
+     "sol": [
+      "Hàm số xác định khi và chỉ khi $x^{2}-2x-3>0 \\Leftrightarrow \\left[\\begin{array}{l} x < -1 \\\\ x > 3 \\end{array}\\right.$.",
+      "Vậy tập xác định của hàm số là $D=(-\\infty;-1)\\cup(3;+\\infty)$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho hàm số $y=f(x)$ có bảng biến thiên như sau:<br>![bbt](img/TOAN_c7.png)<br>Tổng số tiệm cận đứng và tiệm cận ngang của đồ thị hàm số đã cho là",
+     "o": [
+      "$4$",
+      "$2$",
+      "$1$",
+      "$3$"
+     ],
+     "a": 3,
+     "sol": [
+      "Dựa vào bảng biến thiên ta có:",
+      "$\\lim_{x\\to -\\infty}f(x)=1 \\Rightarrow y=1$ là tiệm cận ngang.",
+      "$\\lim_{x\\to +\\infty}f(x)=3 \\Rightarrow y=3$ là tiệm cận ngang.",
+      "$\\lim_{x\\to 0^{+}}f(x)=-\\infty \\Rightarrow x=0$ là tiệm cận đứng.",
+      "Vậy đồ thị hàm số có tổng cộng $3$ đường tiệm cận."
+     ],
+     "fig": "img/TOAN_c7.png",
+     "warn": "cần chèn ảnh bảng biến thiên"
+    },
+    {
+     "t": "mc",
+     "q": "Tập giá trị của hàm số $y=\\frac{2}{\\sqrt{1-|\\sin x|}}$ là",
+     "o": [
+      "$(1;+\\infty)$",
+      "$[2;+\\infty)$",
+      "$[2;3]$",
+      "$[1;2]$"
+     ],
+     "a": 1,
+     "sol": [
+      "Điều kiện xác định: $1-|\\sin x|>0 \\Leftrightarrow |\\sin x|<1 \\Leftrightarrow \\sin x \\neq \\pm 1$.",
+      "Ta có $0 \\le |\\sin x| < 1 \\Rightarrow 0 < 1-|\\sin x| \\le 1 \\Rightarrow 0 < \\sqrt{1-|\\sin x|} \\le 1$.",
+      "Suy ra $y = \\frac{2}{\\sqrt{1-|\\sin x|}} \\ge 2$.",
+      "Vậy tập giá trị của hàm số là $[2;+\\infty)$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Một vòi nước chảy vào một bình không chứa nước hình nón có chiều sâu $45\\text{ cm}$ và đường kính $27\\text{ cm}$ với tốc độ $11\\text{ cm}^{3}\\text{/phút}$. Tốc độ dâng lên của mực nước là [[0]] cm/phút khi nước đạt độ sâu $30\\text{ cm}$ (Kết quả làm tròn đến chữ số thập phân thứ 3)",
+     "a": [
+      0.043
+     ],
+     "e": 0.006,
+     "sol": [
+      "Bình hình nón có chiều cao $H=45$ cm, bán kính đáy $R=\\frac{27}{2}=13,5$ cm.",
+      "Tại thời điểm $t$, gọi $h$ và $r$ lần lượt là chiều cao và bán kính mặt nước. Bằng tam giác đồng dạng, ta có $\\frac{r}{h}=\\frac{R}{H}=\\frac{13,5}{45}=0,3 \\Rightarrow r=0,3h$.",
+      "Thể tích nước trong bình là $V=\\frac{1}{3}\\pi r^{2}h=\\frac{1}{3}\\pi (0,3h)^{2}h = 0,03\\pi h^{3}$.",
+      "Lấy đạo hàm hai vế theo $t$, ta được tốc độ chảy: $\\frac{dV}{dt} = 0,09\\pi h^{2}\\frac{dh}{dt}$.",
+      "Thay $\\frac{dV}{dt}=11$ và $h=30$ vào, ta có $11 = 0,09\\pi (30)^{2} \\frac{dh}{dt} = 81\\pi \\frac{dh}{dt}$.",
+      "Suy ra $\\frac{dh}{dt} = \\frac{11}{81\\pi} \\approx 0,043$ (cm/phút)."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Chọn ngẫu nhiên hai số nguyên dương phân biệt không vượt quá $20$. Xác suất để tích hai số đó chia hết cho $5$ là $\\frac{a}{b}$, trong đó $\\frac{a}{b}$ là phân số tối giản với $a,b$ là các số nguyên dương. Khi đó $a+b=$ [[0]]",
+     "a": [
+      26
+     ],
+     "sol": [
+      "Không gian mẫu là chọn $2$ số trong $20$ số: $n(\\Omega) = C_{20}^{2} = 190$.",
+      "Trong $20$ số nguyên dương đầu tiên, có $4$ số chia hết cho $5$ là $\\{5; 10; 15; 20\\}$ và $16$ số không chia hết cho $5$.",
+      "Để tích hai số chia hết cho $5$ thì ít nhất một trong hai số phải chia hết cho $5$.",
+      "Số cách chọn hai số sao cho không có số nào chia hết cho $5$ là $C_{16}^{2} = 120$.",
+      "Xác suất để tích hai số chia hết cho $5$ là $P = 1 - \\frac{120}{190} = \\frac{7}{19}$.",
+      "Do đó $a=7, b=19 \\Rightarrow a+b=26$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho tập $S=\\{1;2;...;19;20\\}$. Lấy ngẫu nhiên ba số. Xác suất để ba số lấy được lập thành cấp số cộng là",
+     "o": [
+      "$\\frac{5}{38}$",
+      "$\\frac{7}{38}$",
+      "$\\frac{3}{38}$",
+      "$\\frac{1}{114}$"
+     ],
+     "a": 2,
+     "sol": [
+      "Số cách chọn $3$ số từ tập $S$ là $n(\\Omega) = C_{20}^{3} = 1140$.",
+      "Giả sử $3$ số lấy ra là $x, y, z$ ($x < y < z$). Để $x, y, z$ lập thành cấp số cộng thì $x+z = 2y$.",
+      "Vì $2y$ luôn là số chẵn nên $x$ và $z$ phải cùng tính chẵn lẻ.",
+      "Trong $S$ có $10$ số chẵn và $10$ số lẻ. Cứ chọn ngẫu nhiên $2$ số cùng tính chẵn lẻ ta sẽ xác định được duy nhất $1$ số $y$ thỏa mãn $x+z=2y$.",
+      "Số cách chọn $2$ số cùng chẵn là $C_{10}^{2} = 45$. Số cách chọn $2$ số cùng lẻ là $C_{10}^{2} = 45$.",
+      "Vậy số cách chọn để $3$ số lập thành cấp số cộng là $45 + 45 = 90$.",
+      "Xác suất cần tìm là $P = \\frac{90}{1140} = \\frac{3}{38}$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Khi phân tích số nguyên dương $n!$ thành tích các thừa số nguyên tố, thì số mũ của thừa số nguyên tố $p$ được xác định bởi công thức: $k(p)=\\left[\\frac{n}{p}\\right]+\\left[\\frac{n}{p^{2}}\\right]+\\left[\\frac{n}{p^{3}}\\right]+\\left[\\frac{n}{p^{4}}\\right]+...$ ở đó $[x]$ là số nguyên lớn nhất nhỏ hơn hoặc bằng $x$ (chẳng hạn, $[-3,2]=-4; [0,7]=0; [3,2]=3$).<br>Số mũ của thừa số $2$ khi phân tích $2024!$ thành tích các thừa số nguyên tố là [[0]].<br>Số các chữ số $0$ ở tận cùng bên phải của $2024!$ là [[1]].",
+     "a": [
+      2017,
+      503
+     ],
+     "sol": [
+      "Áp dụng công thức, số mũ của thừa số $2$ là: $\\left[\\frac{2024}{2}\\right]+\\left[\\frac{2024}{4}\\right]+...+\\left[\\frac{2024}{1024}\\right] = 1012+506+253+126+63+31+15+7+3+1=2017$.",
+      "Số chữ số $0$ tận cùng của $2024!$ chính là số mũ của thừa số $5$ (do số mũ của $5$ luôn nhỏ hơn số mũ của $2$).",
+      "Số mũ của thừa số $5$ là: $\\left[\\frac{2024}{5}\\right]+\\left[\\frac{2024}{25}\\right]+\\left[\\frac{2024}{125}\\right]+\\left[\\frac{2024}{625}\\right] = 404+80+16+3=503$.",
+      "Vậy $2024!$ có $503$ chữ số $0$ tận cùng."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Một công ty sản xuất linh kiện điện tử nghiên cứu sản xuất bóng bán dẫn theo các phương pháp khác nhau. Có một lượng bóng bán dẫn được sản xuất với 3 phương pháp khác nhau trong cùng khoảng thời gian. Số lượng bóng bán dẫn được sản xuất theo mỗi phương pháp được cho dưới bảng sau:<br><table><tr><th>Phương pháp</th><th>Thành phẩm</th><th>Sản phẩm lỗi</th></tr><tr><td>1</td><td>88</td><td>12</td></tr><tr><td>2</td><td>165</td><td>35</td></tr><tr><td>3</td><td>260</td><td>65</td></tr></table><br>Mỗi phát biểu sau là đúng hay sai?",
+     "s": [
+      "Phương pháp 2 có tỉ lệ thành phẩm thấp nhất.",
+      "Năng suất sản xuất bóng bán dẫn của phương pháp 1 là tốt nhất."
+     ],
+     "a": [
+      0,
+      1
+     ],
+     "sol": [
+      "Tỉ lệ thành phẩm của phương pháp 1 là: $\\frac{88}{88+12} = 88\\%$.",
+      "Tỉ lệ thành phẩm của phương pháp 2 là: $\\frac{165}{165+35} = 82,5\\%$.",
+      "Tỉ lệ thành phẩm của phương pháp 3 là: $\\frac{260}{260+65} = 80\\%$.",
+      "Ý 1: Phương pháp 3 có tỉ lệ thành phẩm thấp nhất ($80\\%$). Do đó ý 1 sai.",
+      "Ý 2: Phương pháp 1 có tỉ lệ thành phẩm cao nhất ($88\\%$) nên năng suất tốt nhất. Do đó ý 2 đúng."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Một loại xét nghiệm nhanh cúm mùa cho kết quả dương tính với 76,2% các ca thực sự nhiễm vius và kết quả âm tính với 99,1% các ca thực sự không nhiễm vius. Giả sử tỉ lệ người nhiễm vius cúm mùa trong một cộng đồng là 1%. Mỗi phát biểu sau đây là đúng hay sai?",
+     "s": [
+      "Xác suất xét nghiệm cho kết quả âm tính của các ca thực sự nhiễm vius là: 0,23.",
+      "Xác suất xét nghiệm cho kết quả dương tính của các ca thực sự không nhiễm vius là: 0,009.",
+      "Xác suất người làm xét nghiệm có kết quả dương tính là: 0,015.",
+      "Biết rằng đã có kết quả chuẩn đoán là dương tính, xác suất để người đó thực sự bị bệnh là 0,46 (làm tròn kết quả đến hàng phần trăm)."
+     ],
+     "a": [
+      0,
+      1,
+      0,
+      1
+     ],
+     "sol": [
+      "Kí hiệu $B$ là biến cố \"Người đó bị bệnh\", $\\bar{B}$ là \"Không bị bệnh\". Ta có $P(B)=0,01$ và $P(\\bar{B})=0,99$.",
+      "Kí hiệu $+$ là \"Kết quả dương tính\", $-$ là \"Kết quả âm tính\".",
+      "Theo giả thiết, $P(+|B) = 0,762 \\Rightarrow P(-|B) = 1 - 0,762 = 0,238$. Ý 1 sai.",
+      "$P(-|\\bar{B}) = 0,991 \\Rightarrow P(+|\\bar{B}) = 1 - 0,991 = 0,009$. Ý 2 đúng.",
+      "Xác suất người xét nghiệm có kết quả dương tính (theo công thức xác suất toàn phần):<br>$P(+) = P(B)\\cdot P(+|B) + P(\\bar{B})\\cdot P(+|\\bar{B}) = 0,01 \\cdot 0,762 + 0,99 \\cdot 0,009 = 0,01653$. Ý 3 sai.",
+      "Xác suất thực sự bị bệnh khi có kết quả dương tính (công thức Bayes):<br>$P(B|+) = \\frac{P(B)\\cdot P(+|B)}{P(+)} = \\frac{0,00762}{0,01653} \\approx 0,46098 \\approx 0,46$. Ý 4 đúng."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Trong không gian Oxyz, cho điểm $A(1; 2; -3)$. Hình chiếu vuông góc của A lên mặt phẳng $(Oxy)$ có tọa độ là",
+     "o": [
+      "$(0; 2; -3)$",
+      "$(1; 0; -3)$",
+      "$(1; 2; 0)$",
+      "$(1; 0; 0)$"
+     ],
+     "a": 2,
+     "sol": [
+      "Hình chiếu vuông góc của điểm $A(x; y; z)$ lên mặt phẳng $(Oxy)$ có tọa độ là $(x; y; 0)$.",
+      "Vậy hình chiếu của $A(1; 2; -3)$ lên $(Oxy)$ là $(1; 2; 0)$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho hàm số $y=f(x)$ có đạo hàm $f'(x)=x^{3}(x-1)^{2}(x-2)$. Khẳng định nào dưới đây là đúng?",
+     "o": [
+      "$f(x)$ nghịch biến trên khoảng $(1;2)$",
+      "$f(x)$ đồng biến trên khoảng $(0;1)$",
+      "$f(x)$ nghịch biến trên khoảng $(-\\infty;0)$",
+      "$f(x)$ đồng biến trên khoảng $(1;+\\infty)$"
+     ],
+     "a": 0,
+     "sol": [
+      "Ta có $f'(x) = 0 \\Leftrightarrow x = 0$, $x = 1$, $x = 2$.",
+      "Bảng xét dấu đạo hàm:",
+      "$x \\in (-\\infty; 0): f'(x) > 0 \\Rightarrow f(x)$ đồng biến.",
+      "$x \\in (0; 1): f'(x) < 0 \\Rightarrow f(x)$ nghịch biến.",
+      "$x \\in (1; 2): f'(x) < 0 \\Rightarrow f(x)$ nghịch biến.",
+      "$x \\in (2; +\\infty): f'(x) > 0 \\Rightarrow f(x)$ đồng biến.",
+      "Từ đó, khẳng định $f(x)$ nghịch biến trên khoảng $(1;2)$ là đúng."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Một bình hoa có dạng hình cầu khuyết như hình vẽ. Biết đường kính của bình hoa là $20\\text{ cm}$ và đường kính đáy/miệng của bình hoa là $12\\text{ cm}$. Diện tích tráng men mặt ngoài (kể cả đáy) của bình hoa bằng [[0]] $\\text{cm}^{2}$. (Kết quả làm tròn đến chữ số thập phân thứ hai)",
+     "a": [
+      "1118.41",
+      "356\\pi"
+     ],
+     "e": 0.02,
+     "sol": [
+      "Bình hoa được tạo thành bằng cách cắt một mặt cầu bán kính $R=10$ cm bởi hai mặt phẳng song song chứa mặt đáy và mặt miệng bình.",
+      "Đường kính đáy (và miệng) là $12$ cm nên bán kính cắt là $r=6$ cm.",
+      "Khoảng cách từ tâm mặt cầu đến mỗi mặt cắt là $d = \\sqrt{R^{2} - r^{2}} = \\sqrt{10^{2} - 6^{2}} = 8$ cm.",
+      "Chiều cao của phần chỏm cầu khuyết (mặt xung quanh bình) là $h = 8 - (-8) = 16$ cm.",
+      "Diện tích mặt ngoài (phần xung quanh) là $S_{xq} = 2\\pi R h = 2\\pi \\cdot 10 \\cdot 16 = 320\\pi \\text{ cm}^{2}$.",
+      "Diện tích mặt đáy của bình là $S_{đáy} = \\pi r^{2} = 36\\pi \\text{ cm}^{2}$.",
+      "Tổng diện tích tráng men là $S = 320\\pi + 36\\pi = 356\\pi \\approx 1118.41 \\text{ cm}^{2}$."
+     ],
+     "fig": "img/TOAN_c17.png",
+     "warn": "cần chèn ảnh bình hoa"
+    },
+    {
+     "t": "mc",
+     "q": "Trong không gian Oxyz, cho mặt phẳng $(\\alpha)$ có phương trình $x+y+2z+2=0$. Mặt phẳng nào sau đây song song với mặt phẳng $(\\alpha)$?",
+     "o": [
+      "$(S): x+y+2z-1=0$.",
+      "$(Q): x+y-2z-2=0$.",
+      "$(P): x-y+2z-2=0$.",
+      "$(R): x+y-2z+1=0$."
+     ],
+     "a": 0,
+     "sol": [
+      "Mặt phẳng song song với mặt phẳng $(\\alpha): x+y+2z+2=0$ phải có phương trình dạng $x+y+2z+D=0$ với $D \\neq 2$.",
+      "Kiểm tra các đáp án, mặt phẳng $(S): x+y+2z-1=0$ thỏa mãn điều kiện này."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Trong không gian $Oxyz$ cho hai điểm $A(1; 3; 0)$, $B(-3; 1; 4)$ và đường thẳng $\\Delta: \\frac{x-2}{-1}=\\frac{y+1}{1}=\\frac{z-2}{3}$. Xét khối nón $(N)$ có đỉnh có tọa độ nguyên thuộc đường thẳng $\\Delta$ và ngoại tiếp mặt cầu đường kính $AB$. Khi $(N)$ có thể tích nhỏ nhất thì mặt phẳng chứa đường tròn đáy của $(N)$ có phương trình dạng $ax+by+cz+1=0$.<br>Giá trị của $a$ là [[0]]<br>Tổng $b+c$ bằng [[1]]<br>Bán kính đường tròn đáy của hình nón $(N)$ bằng [[2]]",
+     "a": [
+      0,
+      1,
+      "3\\sqrt{2}"
+     ],
+     "sol": [
+      "Mặt cầu $(S)$ có đường kính $AB$ với tâm $I(-1; 2; 2)$ và bán kính $R_{S} = \\frac{AB}{2} = \\frac{6}{2} = 3$.",
+      "Gọi $V \\in \\Delta$ là đỉnh nón. Giả sử $h = d(V, (\\text{đáy}))$ và $r$ là bán kính đáy. Để nón ngoại tiếp cầu, tâm $I$ phải nằm trên trục của nón và mặt phẳng đáy tiếp xúc mặt cầu, khoảng cách từ $V$ đến $I$ là $h-R_{S}$.",
+      "Tam giác đồng dạng cho ta quan hệ: $r = R_{S} \\sqrt{\\frac{h}{h - 2R_{S}}}$. Thể tích khối nón $V_{N} = \\frac{\\pi}{3} r^2 h = \\frac{\\pi}{3} R_S^2 \\frac{h^2}{h - 2R_S}$.",
+      "Khảo sát hàm $f(h) = \\frac{h^2}{h-6}$ với $h > 6$, ta tìm được min khi $h=12$. Khi đó khoảng cách $VI = h - R_S = 12 - 3 = 9$.",
+      "Do $V \\in \\Delta \\Rightarrow V(2-t; -1+t; 2+3t)$. Ta có $VI^2 = (t-3)^2 + (t-3)^2 + (3t)^2 = 11t^2 - 12t + 18$.",
+      "Để $VI=9 \\Rightarrow VI^2 = 81 \\Rightarrow 11t^2 - 12t - 63 = 0 \\Leftrightarrow (t-3)(11t+21)=0$. Vì $V$ có tọa độ nguyên nên $t=3 \\Rightarrow V(-1; 2; 11)$.",
+      "Trục của nón là đường thẳng $VI$ có véc tơ chỉ phương $\\vec{VI} = (0; 0; -9)$. Suy ra mặt phẳng đáy vuông góc với trục $Oz$, có dạng $z + D = 0$.",
+      "Mặt phẳng đáy cách $V$ một khoảng $h=12$ và nằm khác phía với $I$, từ tọa độ $z_V=11, z_I=2$ suy ra mặt phẳng đáy có $z = 11 - 12 = -1 \\Rightarrow z + 1 = 0$.",
+      "Đồng nhất với phương trình $ax+by+cz+1=0$, ta được $a=0, b=0, c=1$. Tổng $b+c = 1$.",
+      "Bán kính đường tròn đáy của khối nón: $r = R_S \\sqrt{\\frac{12}{12 - 6}} = 3\\sqrt{2}$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Cho hàm số $f(x)$ có đạo hàm $f'(x)=(x-1)^{2}(x^{2}-3x+2)$ với mọi $x \\in \\mathbb{R}$. Phát biểu dưới đây là đúng hay sai?",
+     "s": [
+      "Hàm số đồng biến trên khoảng $(-\\infty;2)$.",
+      "Điểm cực đại của đồ thị hàm số là $x=1$.",
+      "Hàm số $f(x)$ có hai điểm cực trị.",
+      "Hàm số $y=f(x^{2}-4x+1)$ có ba điểm cực tiểu."
+     ],
+     "a": [
+      0,
+      1,
+      1,
+      1
+     ],
+     "sol": [
+      "Ta có $f'(x) = (x-1)^2(x-1)(x-2) = (x-1)^3(x-2)$. $f'(x) = 0 \\Leftrightarrow x=1$ hoặc $x=2$ (đều là nghiệm bội lẻ).",
+      "Bảng xét dấu $f'(x)$:",
+      "$x \\in (-\\infty; 1): f'(x) > 0$. $x \\in (1; 2): f'(x) < 0$. $x \\in (2; +\\infty): f'(x) > 0$.",
+      "Ý 1: Hàm số nghịch biến trên khoảng $(1;2)$ nên không thể đồng biến trên toàn khoảng $(-\\infty;2)$. Sai.",
+      "Ý 2: Tại $x=1$, $f'(x)$ đổi dấu từ dương sang âm nên $x=1$ là điểm cực đại. Đúng.",
+      "Ý 3: $f'(x)$ đổi dấu tại 2 điểm $x=1$ và $x=2$ nên hàm số có 2 cực trị. Đúng.",
+      "Ý 4: Xét $g(x) = f(x^2-4x+1) \\Rightarrow g'(x) = 2(x-2)f'(x^2-4x+1)$.",
+      "$g'(x)=0 \\Leftrightarrow x=2$ hoặc $x^2-4x+1=1 \\Leftrightarrow x=0, x=4$ hoặc $x^2-4x+1=2 \\Leftrightarrow x=2 \\pm \\sqrt{5}$.",
+      "Tất cả $5$ nghiệm đều là nghiệm đơn nên $g(x)$ có $5$ cực trị. Do $\\lim_{x\\to \\pm \\infty} g(x) = +\\infty$ nên hàm đa thức này có $3$ cực tiểu và $2$ cực đại. Đúng."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Lấy hôm nay là số 0 trên trục số. Nếu ngày hôm trước ngày hôm qua là ngày 17 tháng 1 thì 3 ngày sau ngày mai là ứng với số [[0]] trên trục số.",
+     "a": [
+      4
+     ],
+     "sol": [
+      "Quy ước: Hôm nay là số 0.",
+      "Ngày mai ứng với số $+1$.",
+      "3 ngày sau ngày mai ứng với số $1 + 3 = 4$.",
+      "Số cần điền trên trục số là 4."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Cho hàm số $y=f(x)$ liên tục trên $\\mathbb{R}$ và có bảng biến thiên như hình vẽ, $m$ là số thực tùy ý.<br>![bbt](img/TOAN_c22.png)<br>Mỗi phát biểu dưới đây là đúng hay sai?",
+     "s": [
+      "Giá trị lớn nhất của hàm số $y=f(x)$ trên $[-1;3]$ bằng 2022 đạt tại $x=3$.",
+      "Hàm số $y=f(x-2024)$ đồng biến trên $(-2025;-2021)$.",
+      "Đồ thị hàm số $y=f(x)-2$ có tọa độ điểm cực tiểu là $(-1;-2)$.",
+      "Bất phương trình $f(x) \\ge a$ (tham số a) có nghiệm trên đoạn $[-1;3]$ khi $a \\le 2022$."
+     ],
+     "a": [
+      1,
+      0,
+      1,
+      1
+     ],
+     "sol": [
+      "Dựa vào bảng biến thiên:",
+      "Ý 1: Trên đoạn $[-1; 3]$, hàm số liên tục, đồng biến và đạt giá trị lớn nhất là 2022 tại cực đại $x=3$. Đúng.",
+      "Ý 2: Xét $g(x) = f(x-2024)$, $g'(x) = f'(x-2024)$. Với $x \\in (-2025; -2021) \\Rightarrow x-2024 \\in (-4049; -4045)$. Trên khoảng này $f'(x) < 0$ nên $g(x)$ nghịch biến. Sai.",
+      "Ý 3: Hàm số $f(x)$ đạt cực tiểu tại $x=-1, y=0$. Khi tịnh tiến xuống 2 đơn vị, hàm số $f(x)-2$ có cực tiểu là $(-1; -2)$. Đúng.",
+      "Ý 4: Để bất phương trình $f(x) \\ge a$ có nghiệm trên $[-1;3]$, ta cần điều kiện $\\max_{x \\in [-1;3]} f(x) \\ge a \\Leftrightarrow 2022 \\ge a$. Đúng."
+     ],
+     "fig": "img/TOAN_c22.png",
+     "warn": "cần chèn ảnh bảng biến thiên"
+    },
+    {
+     "t": "fill",
+     "q": "Trong không gian Oxyz, cho mặt phẳng $(P): 2x-y+2z+5=0$ và các điểm $A(0;0;4), B(2;0;0)$. Mặt cầu $(S)$ có bán kính nhỏ nhất đi qua ba điểm $A; B; O$ và tiếp xúc với mặt phẳng $(P)$ có tâm là ([[0]]; [[1]]; [[2]]) và bán kính là [[3]].",
+     "a": [
+      1,
+      2,
+      2,
+      3
+     ],
+     "sol": [
+      "Tam giác $OAB$ vuông tại $O$, tâm đường tròn ngoại tiếp là trung điểm $H(1; 0; 2)$ của $AB$. Bán kính đường tròn này là $R_{c} = \\sqrt{1^2 + 0^2 + 2^2} = \\sqrt{5}$.",
+      "Tâm $I$ của mặt cầu $(S)$ nằm trên đường thẳng vuông góc với mặt phẳng $(OAB)$ (tức mặt phẳng $y=0$) tại $H$. Suy ra $I(1; t; 2)$.",
+      "Mặt cầu $(S)$ tiếp xúc với $(P)$ nên $d(I, (P)) = R = \\sqrt{R_{c}^2 + d(I, (OAB))^2} = \\sqrt{5 + t^2}$.",
+      "Ta có $d(I, (P)) = \\frac{|2(1) - t + 2(2) + 5|}{\\sqrt{4+1+4}} = \\frac{|11-t|}{3}$.",
+      "Giải phương trình $\\frac{|11-t|}{3} = \\sqrt{5+t^2} \\Leftrightarrow (11-t)^2 = 9(5+t^2) \\Leftrightarrow 8t^2 + 22t - 76 = 0 \\Leftrightarrow 4t^2 + 11t - 38 = 0$.",
+      "Phương trình có hai nghiệm $t=2$ và $t=-\\frac{19}{4}$.",
+      "Với $t=2 \\Rightarrow R = \\sqrt{5 + 4} = 3$.",
+      "Với $t=-\\frac{19}{4} \\Rightarrow R = \\sqrt{5 + \\left(-\\frac{19}{4}\\right)^2} = \\frac{21}{4} = 5,25$.",
+      "Để bán kính là nhỏ nhất ta chọn $t=2$. Lúc đó tâm mặt cầu là $(1; 2; 2)$ và bán kính là 3."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho hình lăng trụ $ABC.A'B'C'$ có $A'.ABC$ là tứ diện đều cạnh $a$. Gọi $M, N$ lần lượt là trung điểm của $AA'$ và $BB'$. Tan của góc giữa hai mặt phẳng $(ABC)$ và $(CMN)$ là",
+     "o": [
+      "$\\frac{2\\sqrt{2}}{5}$.",
+      "$\\frac{2\\sqrt{2}}{10}$.",
+      "$\\frac{2\\sqrt{5}}{5}$.",
+      "$\\frac{5\\sqrt{33}}{33}$."
+     ],
+     "a": 0,
+     "sol": [
+      "Chọn hệ trục tọa độ với $O$ là trọng tâm tam giác đều $ABC$. Cạnh tam giác đáy là $a$.",
+      "Chiều cao của tứ diện đều $A'.ABC$ là $h = a\\sqrt{\\frac{2}{3}}$.",
+      "Tính toán bằng phương pháp tọa độ, ta xác định được mặt phẳng đáy $(ABC)$ có pháp tuyến $\\vec{k}=(0;0;1)$.",
+      "Mặt phẳng $(CMN)$ có véc tơ pháp tuyến $\\vec{n}$ tạo với $\\vec{k}$ một góc $\\alpha$ thỏa mãn $\\cos\\alpha = \\frac{5}{\\sqrt{33}}$.",
+      "Từ đó, $\\tan^{2}\\alpha = \\frac{1}{\\cos^{2}\\alpha} - 1 = \\frac{33}{25} - 1 = \\frac{8}{25} \\Rightarrow \\tan\\alpha = \\frac{2\\sqrt{2}}{5}$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho hàm số $f(x)=\\frac{x^{4}}{4}-x^{3}-\\frac{1}{2}x^{2}+3x.$ Số cực trị của hàm số $y=|f(x)|$ là",
+     "o": [
+      "5.",
+      "6.",
+      "7.",
+      "8."
+     ],
+     "a": 2,
+     "sol": [
+      "Xét $f'(x) = x^{3}-3x^{2}-x+3 = (x^{2}-1)(x-3)$.",
+      "$f'(x) = 0 \\Leftrightarrow x = -1, x = 1, x = 3$. Hàm số $f(x)$ có 3 điểm cực trị.",
+      "Các giá trị cực trị tương ứng là $f(-1) = -2,25 < 0$; $f(1) = 1,75 > 0$; $f(3) = -2,25 < 0$.",
+      "Đồng thời $\\lim_{x\\to \\pm \\infty} f(x) = +\\infty$.",
+      "Đồ thị hàm số $f(x)$ cắt trục hoành tại 4 điểm phân biệt (tất cả đều là nghiệm bội lẻ).",
+      "Số điểm cực trị của $y = |f(x)|$ bằng số điểm cực trị của $f(x)$ cộng số giao điểm cắt ngang trục hoành: $3 + 4 = 7$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Người ta cần phơi khô một loại lá thuốc. Lượng nước trong lá thuốc tươi là $60\\%$ và trong lá thuốc khô là $20\\%$. Khi phơi $100\\text{ kg}$ lá thuốc tươi, ta sẽ được [[0]] $\\text{kg}$ lá thuốc khô.",
+     "a": [
+      50
+     ],
+     "sol": [
+      "Trong $100$ kg lá tươi, lượng chất rắn (không bay hơi) chiếm $100\\% - 60\\% = 40\\%$. Khối lượng chất rắn là $100 \\times 40\\% = 40$ kg.",
+      "Khi phơi khô, lá khô chứa $20\\%$ nước, suy ra chất rắn chiếm $100\\% - 20\\% = 80\\%$.",
+      "Gọi $m$ là khối lượng lá khô. Ta có: $80\\% \\times m = 40 \\Rightarrow m = \\frac{40}{0,8} = 50$ kg."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Cho hình chóp $S.ABC$. Gọi $K, N$ lần lượt là trung điểm $SA, BC$ và $M$ là điểm thuộc đoạn $SC$ sao cho $3SM=2MC$. Gọi $I$ là giao điểm của đường thẳng $AB$ và mặt phẳng $(KMN)$ và $J$ là giao điểm của hai đường thẳng $MK$ và $NI$.<br>Các phát biểu sau là đúng hay sai?",
+     "s": [
+      "Ba đường thẳng MK, AC, NI đồng quy.",
+      "Thiết diện của (KMN) với hình chóp S.ABC là hình thang.",
+      "$\\frac{JA}{JC}=\\frac{2}{3}$.",
+      "$\\frac{IB}{IA}=\\frac{3}{4}$."
+     ],
+     "a": [
+      1,
+      0,
+      1,
+      0
+     ],
+     "sol": [
+      "Giao tuyến của mặt phẳng $(KMN)$ và $(SAC)$ là đường thẳng $MK$. Kéo dài $MK$ cắt $AC$ tại $J$. Điểm $J$ đồng thời thuộc $AC$ (thuộc $(ABC)$) nên $J$ thuộc giao tuyến của $(KMN)$ và $(ABC)$, nghĩa là đường thẳng $NI$. Suy ra $MK, AC, NI$ đồng quy tại $J$. Ý 1 đúng.",
+      "Áp dụng định lý Menelaus cho tam giác $SAC$ với cát tuyến $K, M, J$: $\\frac{KS}{KA} \\cdot \\frac{JA}{JC} \\cdot \\frac{MC}{MS} = 1 \\Rightarrow 1 \\cdot \\frac{JA}{JC} \\cdot \\frac{3}{2} = 1 \\Rightarrow \\frac{JA}{JC} = \\frac{2}{3}$. Điểm $J$ nằm ngoài đoạn $AC$ về phía $A$ thỏa mãn $JA=2AC$. Ý 3 đúng.",
+      "Áp dụng định lý Menelaus cho tam giác $ABC$ với cát tuyến $J, I, N$: $\\frac{JA}{JC} \\cdot \\frac{NC}{NB} \\cdot \\frac{IB}{IA} = 1 \\Rightarrow \\frac{2}{3} \\cdot 1 \\cdot \\frac{IB}{IA} = 1 \\Rightarrow \\frac{IB}{IA} = \\frac{3}{2}$. Do đó ý 4 sai.",
+      "Từ các tỉ số trên, có thể kiểm tra định hướng các véc tơ, các cặp cạnh của tứ giác thiết diện $KNMI$ không có cặp cạnh nào song song, nên nó không phải là hình thang. Ý 2 sai."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Cho hàm số $f(x)=1+\\frac{1}{x}$ có đồ thị $(C)$ và hàm số $g(x)=-\\frac{1}{4}x+\\frac{9}{4}$ có đồ thị $(d)$ (xem hình bên dưới).<br>![graph](img/TOAN_c28.png)<br>Mỗi mệnh đề sau là đúng hay sai?",
+     "s": [
+      "$\\int f(x)dx=x-\\ln|x|+C$ với C là hằng số.",
+      "Nếu $f(x)$ có một nguyên hàm là hàm số $F(x)$ và $F(1)=0$ thì $F(2)=1+\\ln 2$.",
+      "Hình phẳng $H_{1}$ (phần gạch chéo) giới hạn bởi đồ thị $(C)$, đồ thị (d) và các đường thẳng $x=1$, $x=4$ có diện tích là $S_{1}=\\frac{15}{8}-\\ln 4$.",
+      "Nếu $S_{1}$, $S_{2}$ lần lượt là diện tích hình phẳng $H_{1}$ (phần gạch chéo) và $H_{2}$ (hình phẳng giới hạn bởi đồ thị $(C)$, trục hoành và các đường thẳng $x=1$, $x=4$) thì $\\frac{S_{1}}{S_{2}}=\\frac{5}{8}$."
+     ],
+     "a": [
+      0,
+      1,
+      1,
+      0
+     ],
+     "sol": [
+      "Ý 1: Ta có $\\int f(x)dx = \\int (1+\\frac{1}{x})dx = x + \\ln|x| + C$. Mệnh đề cho là $x-\\ln|x|+C$. Sai.",
+      "Ý 2: Từ $F(x) = x + \\ln|x| + C$, có $F(1) = 1 + 0 + C = 0 \\Rightarrow C = -1$. Lúc này $F(2) = 2 + \\ln 2 - 1 = 1 + \\ln 2$. Đúng.",
+      "Ý 3: Diện tích hình $H_1$ là $S_1 = \\int_{1}^{4} (g(x) - f(x)) dx = \\int_{1}^{4} \\left( -\\frac{x}{4} + \\frac{9}{4} - 1 - \\frac{1}{x} \\right) dx = \\int_{1}^{4} \\left( -\\frac{x}{4} + \\frac{5}{4} - \\frac{1}{x} \\right) dx$<br> $= \\left[ -\\frac{x^{2}}{8} + \\frac{5x}{4} - \\ln|x| \\right]_{1}^{4} = \\left( -2 + 5 - \\ln 4 \\right) - \\left( -\\frac{1}{8} + \\frac{5}{4} \\right) = 3 - \\ln 4 - \\frac{9}{8} = \\frac{15}{8} - \\ln 4$. Đúng.",
+      "Ý 4: Tính diện tích $S_2 = \\int_{1}^{4} f(x) dx = [x + \\ln|x|]_{1}^{4} = 4+\\ln 4 - 1 = 3+\\ln 4$.",
+      "Tỉ số $\\frac{S_1}{S_2} = \\frac{\\frac{15}{8}-\\ln 4}{3+\\ln 4} \\neq \\frac{5}{8}$. Sai."
+     ],
+     "fig": "img/TOAN_c28.png",
+     "warn": "cần chèn ảnh đồ thị"
+    },
+    {
+     "t": "fill",
+     "q": "Cho hàm số $f(x)$ có đạo hàm trên đoạn $[1;2]$, $f(1)=4$ và $f(2)=20$. Giá trị $\\int_{1}^{2}[xf'(x)+f(x)]dx$ bằng [[0]]",
+     "a": [
+      36
+     ],
+     "sol": [
+      "Ta có $(x f(x))' = f(x) + x f'(x)$.",
+      "Do đó, $\\int_{1}^{2}[xf'(x)+f(x)]dx = \\int_{1}^{2} (x f(x))' dx = \\left[ x f(x) \\right]_{1}^{2}$.",
+      "Thay số: $2\\cdot f(2) - 1\\cdot f(1) = 2(20) - 4 = 36$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Một công ty trách nhiệm hữu hạn thực hiện việc trả lương cho các kỹ sư theo phương thức sau: Mức lương của quý làm việc đầu tiên cho công ty là $13,5$ triệu đồng/quý, và kể từ quý làm việc thứ hai, mức lương sẽ được tăng thêm $500.000$ đồng mỗi quý. Tính tổng số tiền lương một kỹ sư nhận được sau ba năm làm việc cho công ty.",
+     "o": [
+      "198 triệu đồng.",
+      "195 triệu đồng.",
+      "228 triệu đồng.",
+      "114 triệu đồng."
+     ],
+     "a": 1,
+     "sol": [
+      "Lương mỗi quý của kỹ sư lập thành một cấp số cộng với số hạng đầu $u_1 = 13,5$ (triệu) và công sai $d = 0,5$ (triệu).",
+      "Thời gian làm việc là 3 năm, tương ứng với $n = 12$ quý.",
+      "Tổng tiền lương sau 12 quý là $S_{12} = \\frac{12}{2} \\left[ 2u_1 + (12-1)d \\right] = 6 \\left[ 2(13,5) + 11(0,5) \\right] = 6(27 + 5,5) = 6 \\times 32,5 = 195$ triệu đồng."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Tập nghiệm của bất phương trình $(3^{2x}-9)(3^{x}-\\frac{1}{27})\\sqrt{3^{x+1}-1} \\le 0$ chứa bao nhiêu số nguyên ?",
+     "o": [
+      "2.",
+      "3.",
+      "4.",
+      "5."
+     ],
+     "a": 1,
+     "sol": [
+      "Điều kiện xác định: $3^{x+1}-1 \\ge 0 \\Leftrightarrow 3^{x+1} \\ge 3^{0} \\Leftrightarrow x \\ge -1$.",
+      "Với $x \\ge -1$, ta có $3^{x} \\ge 3^{-1} = \\frac{1}{3} > \\frac{1}{27}$. Do đó, nhân tử $(3^{x}-\\frac{1}{27}) > 0$.",
+      "Bất phương trình tương đương: $(3^{2x}-9)\\sqrt{3^{x+1}-1} \\le 0$.",
+      "Nếu $x = -1$, vế trái bằng 0, thỏa mãn.",
+      "Nếu $x > -1$, thì $\\sqrt{3^{x+1}-1} > 0$, do đó cần có $3^{2x}-9 \\le 0 \\Leftrightarrow 3^{2x} \\le 3^{2} \\Leftrightarrow 2x \\le 2 \\Leftrightarrow x \\le 1$.",
+      "Kết hợp lại ta được nghiệm của bất phương trình là $x \\in [-1; 1]$.",
+      "Các số nguyên thuộc tập nghiệm là $\\{-1; 0; 1\\}$. Có tất cả 3 số nguyên."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho các số thực không âm $a, b, c$ thoả mãn $2^{a}+4^{b}+8^{c}=4$. Gọi $M, m$ lần lượt là giá trị lớn nhất, giá trị nhỏ nhất của biểu thức $S=a+2b+3c$. Giá trị của biểu thức $4^{M}+\\log_{M}m$ bằng",
+     "o": [
+      "$\\frac{2809}{500}$",
+      "$\\frac{4096}{729}$",
+      "$\\frac{281}{50}$",
+      "$\\frac{14}{25}$"
+     ],
+     "a": 1,
+     "sol": [
+      "Đặt $x=a, y=2b, z=3c$. Vì $a, b, c \\ge 0$ nên $x, y, z \\ge 0$. Giả thiết trở thành $2^x+2^y+2^z=4$. Biểu thức $S = x+y+z$.",
+      "Tìm GTLN ($M$): Áp dụng BĐT AM-GM ta có $4 = 2^x+2^y+2^z \\ge 3\\sqrt[3]{2^{x+y+z}} = 3\\cdot 2^{\\frac{S}{3}}$. Suy ra $2^{\\frac{S}{3}} \\le \\frac{4}{3} \\Leftrightarrow \\frac{S}{3} \\le \\log_2\\left(\\frac{4}{3}\\right) \\Rightarrow S \\le 3\\log_2\\left(\\frac{4}{3}\\right)$. Do đó $M = 3\\log_2\\left(\\frac{4}{3}\\right)$.",
+      "Tìm GTNN ($m$): Vì $x,y,z \\ge 0$ nên $2^x, 2^y, 2^z \\ge 1$. Đặt $u=2^x-1, v=2^y-1, w=2^z-1 \\ge 0$. Ta có $u+v+w=1$.",
+      "Lúc này $S = \\log_2(2^x2^y2^z) = \\log_2((u+1)(v+1)(w+1)) = \\log_2(2+uv+vw+wu+uvw)$.",
+      "Vì $u,v,w \\ge 0$ nên để $(2+uv+vw+wu+uvw)$ nhỏ nhất thì hai trong ba số bằng 0, số còn lại bằng 1. Giá trị nhỏ nhất trong lõi là $2$, suy ra $S_{min} = \\log_2(2) = 1 \\Rightarrow m=1$.",
+      "Tính: $m=1 \\Rightarrow \\log_M m = 0$. $4^M = 4^{3\\log_2(4/3)} = 2^{6\\log_2(4/3)} = (4/3)^6 = \\frac{4096}{729}$.",
+      "Tổng $4^M + \\log_M m = \\frac{4096}{729} + 0 = \\frac{4096}{729}$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Tập nghiệm của bất phương trình $3^{x} \\ge 27$ là",
+     "o": [
+      "$(-\\infty;-3)$",
+      "$(-\\infty;-3]$",
+      "$(3;+\\infty)$",
+      "$[3;+\\infty)$"
+     ],
+     "a": 3,
+     "sol": [
+      "Ta có $3^{x} \\ge 27 \\Leftrightarrow 3^{x} \\ge 3^{3}$.",
+      "Vì cơ số $3 > 1$ nên bất phương trình tương đương với $x \\ge 3$.",
+      "Vậy tập nghiệm là $[3;+\\infty)$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Nếu $x^{3} = y^{4} = z^{5} = t^{6} (0 < t \\neq 1; x, y, z > 0)$ thì $\\log_{t}(xyz)$ bằng",
+     "o": [
+      "$\\frac{47}{10}$",
+      "$10$",
+      "$2$",
+      "$\\frac{7}{3}$"
+     ],
+     "a": 0,
+     "sol": [
+      "Ta có: $x = t^{6/3} = t^2$; $y = t^{6/4} = t^{3/2}$; $z = t^{6/5}$.",
+      "Tích $xyz = t^2 \\cdot t^{3/2} \\cdot t^{6/5} = t^{2 + 1,5 + 1,2} = t^{4,7} = t^{47/10}$.",
+      "Vậy $\\log_{t}(xyz) = \\log_{t}(t^{47/10}) = \\frac{47}{10}$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho cấp số cộng $(u_{n})$ với $u_{1}=3$ và $d=-3$. Tổng $10$ số hạng đầu tiên của cấp số cộng đã cho bằng",
+     "o": [
+      "$26$",
+      "$-26$",
+      "$-105$",
+      "$105$"
+     ],
+     "a": 2,
+     "sol": [
+      "Công thức tính tổng $n$ số hạng đầu của cấp số cộng: $S_{n} = \\frac{n}{2}[2u_{1} + (n-1)d]$.",
+      "Thay số với $n=10, u_{1}=3, d=-3$ ta được: $S_{10} = \\frac{10}{2}[2\\cdot 3 + 9\\cdot(-3)] = 5[6 - 27] = 5\\cdot(-21) = -105$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Trong giờ học Câu lạc bộ Toán 6, thầy Quân yêu cầu hai bạn Thông và Minh tìm hai chữ số tận cùng của số $A=2^{9}+9^{1945}$ với gợi ý. \"Tích của các số cùng có tận cùng là 01, 25, 76 cũng lần lượt có tận cùng là 01, 25, 76\". Bạn Thông nói với bạn Minh. \"Chúng ta sẽ tìm hai chữ số tận cùng của từng số hạng, rồi cộng chúng lại với nhau\". Minh tán thành và hai bạn cùng giải bài toán trên, đưa ra được đáp án đúng.<br>Tổng chữ số hàng chục và hàng đơn vị của số $A=2^{9}+9^{1945}$ là [[0]]",
+     "a": [
+      7
+     ],
+     "sol": [
+      "Ta tìm hai chữ số tận cùng của từng số hạng, tức là tìm dư khi chia số đó cho $100$.",
+      "$2^{9} = 512$, suy ra $2^{9}$ có hai chữ số tận cùng là $12$.",
+      "Ta có $9^{10} = (10-1)^{10} = \\dots - \\binom{10}{1}10 + 1 = \\dots - 100 + 1$, nên $9^{10}$ có hai chữ số tận cùng là $01$.",
+      "Suy ra $9^{1945} = (9^{10})^{194} \\cdot 9^{5} \\equiv (01)^{194} \\cdot 59049 \\equiv 1 \\cdot 49 \\equiv 49 \\pmod{100}$. Do đó $9^{1945}$ tận cùng là $49$.",
+      "Khi cộng lại, $A = \\dots 12 + \\dots 49 = \\dots 61$.",
+      "Hai chữ số tận cùng của $A$ là $61$ (chữ số hàng chục là $6$, hàng đơn vị là $1$).",
+      "Tổng chữ số hàng chục và đơn vị là $6 + 1 = 7$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Biết rằng, với mỗi số nguyên dương $n$, tồn tại duy nhất cặp số nguyên $(a_{n};b_{n})$ thỏa mãn đẳng thức $(2-\\sqrt{3})^{n}=a_{n}-b_{n}\\sqrt{3}$. Mỗi phát biểu sau là đúng hay sai?",
+     "s": [
+      "$a_{n+1}=2a_{n}+3b_{n}$",
+      "Có đúng 1012 số nguyên dương n không vượt quá 2024 thỏa mãn: $a_{n+1}^{2}-a_{n}^{2}=3(b_{n+1}^{2}-b_{n}^{2})$.",
+      "Tồn tại số nguyên dương n không vượt quá 2024 sao cho $a_{n}^{2}-3b_{n}^{2}$ là một hợp số."
+     ],
+     "a": [
+      1,
+      0,
+      0
+     ],
+     "sol": [
+      "Từ công thức, ta có $(2+\\sqrt{3})^n = a_n + b_n\\sqrt{3}$. Nhân vế theo vế ta được $a_n^2 - 3b_n^2 = (2-\\sqrt{3})^n (2+\\sqrt{3})^n = 1^n = 1$.",
+      "Và $(a_{n+1} - b_{n+1}\\sqrt{3}) = (a_n - b_n\\sqrt{3})(2-\\sqrt{3}) = (2a_n + 3b_n) - (a_n + 2b_n)\\sqrt{3}$. Do đó, $a_{n+1} = 2a_n + 3b_n$ và $b_{n+1} = a_n + 2b_n$. Ý 1 đúng.",
+      "Xét $a_{n+1}^2 - 3b_{n+1}^2 = 1$ (với mọi $n$) và $a_n^2 - 3b_n^2 = 1$. Trừ vế theo vế ta có $a_{n+1}^2 - a_n^2 = 3(b_{n+1}^2 - b_n^2)$ với mọi $n$. Do đó, có tất cả 2024 số nguyên dương $n \\le 2024$ thỏa mãn, chứ không phải \"có đúng 1012\". Ý 2 sai.",
+      "Biểu thức $a_n^2 - 3b_n^2$ luôn bằng $1$ với mọi $n$, mà $1$ không phải là hợp số cũng không phải là số nguyên tố. Ý 3 sai."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Cho hình chóp $S.ABCD$ có đáy là hình chữ nhật với $AB=2a$, $AD=6a$. Cạnh bên $SA$ vuông góc với mặt phẳng đáy, cạnh bên $SB=4a$. Phát biểu dưới đây đúng hay sai?",
+     "s": [
+      "$SA=2\\sqrt{3}a$.",
+      "Góc giữa đường thẳng SD và mặt phẳng (ABCD) bằng $30^{\\circ}$.",
+      "Khoảng cách từ điểm C tới mặt phẳng (SAD) bằng $6a$.",
+      "Thể tích của khối chóp S.ABCD bằng $8\\sqrt{3}a^{3}$."
+     ],
+     "a": [
+      1,
+      1,
+      0,
+      1
+     ],
+     "sol": [
+      "Tam giác $SAB$ vuông tại $A$ (do $SA \\perp (ABCD)$). Suy ra $SA = \\sqrt{SB^2 - AB^2} = \\sqrt{16a^2 - 4a^2} = 2a\\sqrt{3}$. Ý 1 đúng.",
+      "Hình chiếu của $SD$ lên $(ABCD)$ là $AD$, nên góc giữa $SD$ và đáy là $\\angle SDA$. Xét tam giác $SAD$ vuông tại $A$, có $\\tan \\angle SDA = \\frac{SA}{AD} = \\frac{2a\\sqrt{3}}{6a} = \\frac{\\sqrt{3}}{3} \\Rightarrow \\angle SDA = 30^{\\circ}$. Ý 2 đúng.",
+      "Ta có $CD \\perp AD$ và $CD \\perp SA$, nên $CD \\perp (SAD)$. Suy ra khoảng cách từ $C$ đến $(SAD)$ chính là độ dài đoạn $CD = AB = 2a$. Đề cho bằng $6a$ nên ý 3 sai.",
+      "Thể tích khối chóp là $V = \\frac{1}{3} S_{ABCD} \\cdot SA = \\frac{1}{3} (2a \\cdot 6a) \\cdot 2a\\sqrt{3} = 8\\sqrt{3}a^3$. Ý 4 đúng."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho hàm số có bảng biến thiên như sau:<br>![bbt](img/TOAN_c39.png)<br>Hàm số đã cho nghịch biến trong khoảng nào dưới đây?",
+     "o": [
+      "$(0;+\\infty)$",
+      "$(-\\infty;-1)$",
+      "$(-\\infty;-2)$",
+      "$(-2;-1)$"
+     ],
+     "a": 3,
+     "sol": [
+      "Dựa vào bảng biến thiên, đạo hàm $y' < 0$ trên các khoảng $(-2; -1)$ và $(-1; 0)$.",
+      "Trong các đáp án đưa ra, hàm số nghịch biến trên khoảng $(-2; -1)$."
+     ],
+     "fig": "img/TOAN_c39.png",
+     "warn": "cần chèn ảnh bảng biến thiên"
+    },
+    {
+     "t": "fill",
+     "q": "Người ta trồng 144 cây trong một khu vườn hình tam giác theo quy luật như sau: Hàng thứ nhất có 1 cây, hàng thứ hai có 3 cây, hàng thứ ba có 5 cây, ... Số hàng cây trong khu vườn là [[0]]",
+     "a": [
+      12
+     ],
+     "sol": [
+      "Số cây ở các hàng tạo thành một cấp số cộng với số hạng đầu $u_1=1$ và công sai $d=2$.",
+      "Số cây ở hàng thứ $k$ là $u_k = 2k-1$.",
+      "Tổng số cây sau $n$ hàng là $S_n = 1 + 3 + 5 + \\dots + (2n-1) = n^2$.",
+      "Theo đề bài $S_n = 144 \\Leftrightarrow n^2 = 144 \\Rightarrow n = 12$.",
+      "Vậy khu vườn có 12 hàng cây."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "KHOA HỌC",
+   "minutes": 60,
+   "groups": [
+    {
+     "title": "NGUỒN GỐC CÁC PHÂN TỬ HỮU CƠ",
+     "p": "<p>[1] Các phân tử hữu cơ ngày nay (carbohydrate, lipid, protein, nucleic acid) được tổng hợp và sản xuất bởi các sinh vật sống. Các nhà khoa học hiện nay tin rằng các phân tử hữu cơ đơn giản ban đầu được hình thành từ các phân tử vô cơ có mặt trên Trái Đất nguyên thủy. Đây được coi là tiền đề quan trọng cho sự phát triển sự sống trên hành tinh của chúng ta. Dưới đây là hai giả thuyết hàng đầu về nguồn gốc của các phân tử hữu cơ.</p><p>[2] Giả thuyết Súp nguyên thủy<br>Giả thuyết này cho rằng các phân tử hữu cơ trong bầu khí quyển của Trái Đất nguyên thủy được hình thành nhờ năng lượng từ các tia sét. Thí nghiệm của hai nhà khoa học Miller - Urey, đã tái hiện lại bầu khí quyển nguyên thủy trong các bình thủy tinh, nhằm mục đích kiểm chứng sự hình thành nên các phân tử hữu cơ. Các thành phần chính trong bầu khí quyển nguyên thủy được cho là gồm có methane ($CH_4$), ammonia ($NH_3$), hydrogen ($H_2$) và nước ($H_2O$). Những khí này được đưa vào một hệ thống kín và được phóng điện liên tục. Sau một tuần, các mẫu lấy ra từ thiết bị được xác định thu được một số loại chất hữu cơ đơn giản, trong đó có amino acid. Hình dưới đây mô tả thí nghiệm của Miller - Urey.</p><p>[3] Giả thuyết Lỗ thông thủy nhiệt<br>Giả thuyết này cho rằng các phân tử hữu cơ ban đầu được hình thành từ trong các đại dương sâu thẳm bằng cách sử dụng năng lượng từ bên trong Trái Đất - từ các lỗ thông hơi - do ánh sáng mặt trời không thể đạt tới độ sâu của các cấu trúc này. Bằng chứng cho giả thuyết này được thể hiện ở sự phát triển mạnh mẽ của các hệ sinh thái được tìm thấy tồn tại xung quanh các lỗ thông thủy nhiệt ở đại dương sâu thẳm.</p><p>[4] Các phân tử hữu cơ chỉ bền ở những khoảng nhiệt độ nhất định. Các lỗ thông hơi thủy nhiệt giải phóng các khí nóng ($300^{\\circ}C$) có nguồn gốc từ bên trong Trái Đất vào vùng nước lạnh ($4^{\\circ}C$) của đại dương sâu thẳm. Sự giải phóng khí này gây ra sự chênh lệch nhiệt độ xung quanh các lỗ thông hơi dưới biển sâu. Các nhà khoa học tin rằng trong gradient nhiệt độ này tồn tại các điều kiện tối ưu để hỗ trợ sự hình thành các hợp chất hữu cơ.</p>",
+     "fig": "img/KHOA_HOC_g1.png",
+     "questions": [
+      {
+       "t": "mc",
+       "q": "Đâu là điểm khác biệt lớn nhất được đề cập trong hai giả thuyết trên?",
+       "o": [
+        "Nguồn năng lượng cung cấp cho sự hình thành các hợp chất hữu cơ.",
+        "Các dạng hợp chất hữu cơ đầu tiên hình thành.",
+        "Nguồn gốc và sự hình thành các dạng sống đầu tiên.",
+        "Phương thức trao đổi chất và sinh sản của các hạt coacervate."
+       ],
+       "a": 0,
+       "sol": [
+        "Giả thuyết Súp nguyên thủy cho rằng năng lượng tạo ra chất hữu cơ đến từ các tia sét trong khí quyển. Trong khi đó, giả thuyết Lỗ thông thủy nhiệt cho rằng năng lượng xuất phát từ bên trong Trái Đất (gradient nhiệt độ). Điểm khác biệt lớn nhất được nhấn mạnh là nguồn năng lượng cung cấp."
+       ],
+       "solved": true
+      },
+      {
+       "t": "mc",
+       "q": "Theo đoạn thông tin, các gradient nhiệt độ tồn tại dưới lòng đại dương là do đâu?",
+       "o": [
+        "Do ánh sáng mặt trời không chiếu tới sâu thẳm đại dương nên gây ra sự chênh lệch nhiệt với bề mặt đại dương.",
+        "Do năng lượng tỏa ra từ các phản ứng tạo phân tử hữu cơ.",
+        "Do hoạt động của các sinh vật trong hệ sinh thái quanh lỗ thủy nhiệt.",
+        "Do sự giải phóng các khí nóng từ lỗ thông hơi vào các vùng nước lạnh của đại dương."
+       ],
+       "a": 3,
+       "sol": [
+        "Đoạn [4] nêu rõ: \"Các lỗ thông hơi thủy nhiệt giải phóng các khí nóng ($300^{\\circ}C$) có nguồn gốc từ bên trong Trái Đất vào vùng nước lạnh ($4^{\\circ}C$) của đại dương sâu thẳm. Sự giải phóng khí này gây ra sự chênh lệch nhiệt độ...\""
+       ],
+       "solved": true
+      },
+      {
+       "t": "mc",
+       "q": "Theo Giả thuyết Lỗ thông thủy nhiệt, các phân tử hữu cơ ban đầu được hình thành ở",
+       "o": [
+        "bên trong Trái Đất.",
+        "dưới lòng đại dương sâu thẳm.",
+        "trong khí quyển Trái Đất.",
+        "trong lòng núi lửa."
+       ],
+       "a": 1,
+       "sol": [
+        "Đoạn [3] ghi rõ: \"Giả thuyết này cho rằng các phân tử hữu cơ ban đầu được hình thành từ trong các đại dương sâu thẳm...\""
+       ],
+       "solved": true
+      },
+      {
+       "t": "drag",
+       "q": "Thí nghiệm của Miller và Urey đã thu được một số [[0]], trong đó có [[1]] là thành phần cấu tạo nên [[2]].",
+       "c": [
+        "enzyme",
+        "amino acid",
+        "hợp chất hữu cơ đơn giản",
+        "protein"
+       ],
+       "a": [
+        2,
+        1,
+        3
+       ],
+       "sol": [
+        "Theo đoạn [2], thí nghiệm thu được \"một số loại chất hữu cơ đơn giản, trong đó có amino acid\". Amino acid chính là đơn phân cấu tạo nên protein."
+       ],
+       "solved": true
+      },
+      {
+       "t": "fill",
+       "q": "Điền từ/cụm từ thích hợp vào chỗ trống.\nTiến hóa [[0]] là giai đoạn tiến hóa hình thành nên các hợp chất hữu cơ từ các chất vô cơ.",
+       "a": [
+        [
+         "hóa học",
+         "hoá học"
+        ]
+       ],
+       "sol": [
+        "Giai đoạn hình thành các hợp chất hữu cơ từ chất vô cơ trong điều kiện Trái Đất nguyên thủy được gọi là tiến hóa hóa học."
+       ],
+       "solved": true
+      },
+      {
+       "t": "tf",
+       "q": "Phát biểu sau đây đúng hay sai?",
+       "s": [
+        "Trong điều kiện Trái Đất nguyên thủy như bài đề cập, các sinh vật đầu tiên trên Trái Đất có khả năng cao là các sinh vật hiếu khí."
+       ],
+       "a": [
+        0
+       ],
+       "sol": [
+        "Bầu khí quyển nguyên thủy chủ yếu gồm $CH_4, NH_3, H_2, H_2O$ và không có oxygen tự do ($O_2$). Do đó, các sinh vật đầu tiên xuất hiện phải là các sinh vật kị khí, không phải hiếu khí."
+       ],
+       "solved": true
+      },
+      {
+       "t": "mc",
+       "q": "Đâu là điểm chung của cả hai giả thuyết trên?",
+       "o": [
+        "Đều cho rằng các phân tử hữu cơ chứa các nguyên tử khác với các phân tử vô cơ.",
+        "Đều cho rằng các phân tử hữu cơ chỉ tồn tại được trong khí quyển và lòng đại dương sâu thẳm.",
+        "Đều cho rằng các phân tử hữu cơ đơn giản chưa tổng hợp được trong các phòng thí nghiệm.",
+        "Đều cho rằng các phân tử hữu cơ đơn giản được tổng hợp từ các phân tử vô cơ."
+       ],
+       "a": 3,
+       "sol": [
+        "Đoạn [1] nêu điểm xuất phát chung: \"Các nhà khoa học hiện nay tin rằng các phân tử hữu cơ đơn giản ban đầu được hình thành từ các phân tử vô cơ có mặt trên Trái Đất nguyên thủy. Dưới đây là hai giả thuyết...\""
+       ],
+       "solved": true
+      }
+     ]
+    },
+    {
+     "title": "THÍ NGHIỆM VỚI VI KHUẨN PNEUMOCOCCI",
+     "p": "<p>[1] Một chủng vi khuẩn Pneumoccoci tồn tại được trong môi trường chứa penicillin nếu các tế bào của chúng có gen mã hóa beta lactamase có vai trò giúp vi khuẩn kháng penicillin. Ngoài ra, các tế bào cần có nguồn cung cấp carbon cần thiết cho sự sinh trưởng phát triển. Tất cả các tế bào của chủng vi khuẩn này đều bị nhiễm Phage I và Phage II và cả hai đều chèn DNA của chúng vào nhiễm sắc thể của vi khuẩn. Để xác định vai trò của Phage, người ta đã tiến hành gây nhiễm chủng dại với hai Phage này.</p><p>[2] Cho 10 µl Phage I và 10 µl của Phage II vào hai ống nghiệm riêng biệt. Mỗi ống nghiệm đều chứa 5ml nước thịt có các tế bào chủng vi khuẩn Pneumoccoci kiểu dại đang sinh trưởng mạnh. Một ống nghiệm khác chứa 5 ml nước luộc thịt và chỉ có các tế bào chủng vi khuẩn Pneumoccoci mà không có phage được sử dụng làm ống đối chứng.</p><p>[3] Thí nghiệm 1: Sau 20 phút nuôi cấy ở nhiệt độ phòng, người ta lấy từ mỗi ống nghiệm 1 µl dung dịch nuôi cấy và bổ sung thêm 1990 ml nước cất để pha loãng. Dung dịch tế bào sau khi pha loãng được cấy trải trên các đĩa thạch có chứa lần lượt glucose, saccharose và lactose. Các đĩa này được nuôi cấy ở trong tủ ấm có nhiệt độ $37^{\\circ}C$ trong 24 giờ. Kết quả thu được ở bảng 1.</p><p>Bảng 1. Kết quả thí nghiệm 1<br><table><tr><th>Đĩa</th><th>Tế bào bị gây nhiễm bởi phage I</th><th>Tế bào bị gây nhiễm bởi phage II</th><th>Tế bào chủng vi khuẩn dạng dại</th></tr><tr><td>Glucose</td><td>+</td><td>+</td><td>+</td></tr><tr><td>Saccharose</td><td>+</td><td>+</td><td>+</td></tr><tr><td>Lactose</td><td>-</td><td>+</td><td>-</td></tr></table><br>Ghi chú: (+) Có sự phát triển của vi khuẩn; (-) Không có sự phát triển của vi khuẩn.</p><p>[4] Thí nghiệm 2: Từ mỗi ống nghiệm trong thí nghiệm, lấy 1 µl dung dịch nuôi cấy rồi pha loãng bằng 1990 ml nước cất. Các dung dịch tế bào sau khi pha loãng được cấy trên 3 đĩa thạch: đĩa thứ nhất chứa tetracyclin, đĩa thứ hai chứa penicillin và đĩa thạch còn lại không chứa kháng sinh nào. Các đĩa sau đó được nuôi cấy ở trong tủ ấm có nhiệt độ $37^{\\circ}C$ trong 24 giờ. Kết quả thu được ở bảng 2.</p><p>Bảng 2. Kết quả thí nghiệm 2<br><table><tr><th>Đĩa</th><th>Tế bào bị gây nhiễm bởi phage I</th><th>Tế bào bị gây nhiễm bởi phage II</th><th>Tế bào chủng vi khuẩn dạng dại</th></tr><tr><td>Tetracyclin</td><td>-</td><td>+</td><td>-</td></tr><tr><td>Penicillin</td><td>+</td><td>-</td><td>-</td></tr><tr><td>Không chứa kháng sinh</td><td>+</td><td>+</td><td>+</td></tr></table><br>Ghi chú: (+) Có sự phát triển của vi khuẩn; (-) Không có sự phát triển của vi khuẩn.</p>",
+     "questions": [
+      {
+       "t": "mc",
+       "q": "Vai trò của nước thịt trong thí nghiệm trên là",
+       "o": [
+        "cung cấp oxygen cho vi khuẩn sinh trưởng.",
+        "cung cấp carbon cho vi khuẩn sinh trưởng.",
+        "cung cấp nitrogen hữu cơ cho vi khuẩn sinh trưởng.",
+        "cung cấp enzyme cho vi khuẩn sinh trưởng."
+       ],
+       "a": 1,
+       "sol": [
+        "Theo đoạn [1], \"các tế bào cần có nguồn cung cấp carbon cần thiết cho sự sinh trưởng phát triển\". Nước thịt được thêm vào môi trường nuôi cấy nhằm mục đích cung cấp nguồn dinh dưỡng (carbon) này cho vi khuẩn."
+       ],
+       "solved": true
+      },
+      {
+       "t": "mc",
+       "q": "Kết luận nào dưới đây có thể rút ra từ kết quả thí nghiệm ở bảng 2?",
+       "o": [
+        "Phage I chèn DNA vào nhiễm sắc thể của vi khuẩn làm cho vách tế bào vi khuẩn không chịu tác động bởi tetracycline.",
+        "Phage II làm giảm penicillium trên đĩa thạch do đó cho phép tế bào vi khuẩn sinh trưởng.",
+        "Phage I mang gen mã hóa cho beta lactamase.",
+        "Phage I ức chế sự phát triển của vi khuẩn."
+       ],
+       "a": 2,
+       "sol": [
+        "Ở bảng 2, tế bào nhiễm Phage I sinh trưởng được trên đĩa chứa penicillin, trong khi chủng dại thì không. Điều này cho thấy Phage I đã truyền gen kháng penicillin (gen mã hóa beta lactamase) cho vi khuẩn."
+       ],
+       "solved": true
+      },
+      {
+       "t": "tf",
+       "q": "Phát biểu sau đây đúng hay sai?",
+       "s": [
+        "Tế bào vi khuẩn dạng dại trong tự nhiên không có khả năng kháng lại cả tetracyclin và penicillin."
+       ],
+       "a": [
+        1
+       ],
+       "sol": [
+        "Dựa vào Bảng 2, cột \"Tế bào chủng vi khuẩn dạng dại\" đều cho kết quả âm tính (-) trên cả hai đĩa chứa Tetracyclin và Penicillin. Suy ra chúng không có khả năng kháng hai loại kháng sinh này."
+       ],
+       "solved": true
+      },
+      {
+       "t": "mc",
+       "q": "Phân tử nào sau đây có vai trò giúp vi khuẩn kháng penicillin?",
+       "o": [
+        "Enzyme beta lactamase.",
+        "Gen thalassemia.",
+        "Alpha-1 antitrypsin.",
+        "Gen CFTR."
+       ],
+       "a": 0,
+       "sol": [
+        "Đoạn [1] nêu rõ: \"gen mã hóa beta lactamase có vai trò giúp vi khuẩn kháng penicillin\". Phân tử đảm nhiệm vai trò này chính là enzyme beta lactamase."
+       ],
+       "solved": true
+      },
+      {
+       "t": "mc",
+       "q": "Tế bào chủng vi khuẩn dạng dại ban đầu có khả năng",
+       "o": [
+        "kháng penicillin và chuyển hóa được glucose cũng như saccharose.",
+        "kháng tetracyclin và chuyển hóa được glucose cũng như saccharose.",
+        "chuyển hóa được glucose và saccharose nhưng không kháng kháng sinh.",
+        "chuyển hóa được lactose, kháng tetracyclin nhưng không kháng penicillin."
+       ],
+       "a": 2,
+       "sol": [
+        "Quan sát cột \"Tế bào chủng dại\" ở 2 bảng: Bảng 1 cho thấy nó phát triển được trên glucose (+) và saccharose (+) nhưng không trên lactose (-). Bảng 2 cho thấy nó không phát triển trên cả tetracyclin (-) và penicillin (-). Vậy nó chuyển hóa được glucose, saccharose nhưng không kháng kháng sinh."
+       ],
+       "solved": true
+      },
+      {
+       "t": "fill",
+       "q": "Điền từ/cụm từ thích hợp vào chỗ trống sau đây:\nSự [[0]] của quần thể vi sinh vật là sự tăng số lượng tế bào trong quần thể.",
+       "a": [
+        [
+         "sinh trưởng",
+         "phát triển"
+        ]
+       ],
+       "sol": [
+        "Trong vi sinh vật học, sự sinh trưởng của quần thể vi sinh vật được định nghĩa là sự gia tăng số lượng tế bào trong quần thể."
+       ],
+       "solved": true
+      },
+      {
+       "t": "fill",
+       "q": "Saccharose và lactose đều thuộc nhóm [[0]]",
+       "a": [
+        [
+         "đường đôi",
+         "disaccharide",
+         "cacbohidrat",
+         "carbohydrate",
+         "đường"
+        ]
+       ],
+       "sol": [
+        "Saccharose và lactose là hai loại đường đôi (disaccharide), được cấu tạo từ hai phân tử đường đơn, thuộc nhóm lớn carbohydrate."
+       ],
+       "solved": true
+      }
+     ]
+    },
+    {
+     "title": "CHẤT CHỈ THỊ MÀU",
+     "p": "<p>[1] Trong hóa học phân tích, chất chỉ thị màu là những acid hữu cơ yếu hoặc base hữu cơ yếu có khả năng biến đổi màu sắc ở những giá trị pH nhất định. Những giá trị pH này tạo thành những khoảng chuyển màu riêng biệt của chất chỉ thị. Khi cho chất chỉ thị màu vào nước thì cân bằng sau được thiết lập:<br>$HA + H_2O \\rightleftharpoons H_3O^+ + A^-$<br>Nếu nồng độ của $HA$ và $A^-$ hơn kém nhau không quá 10 lần thì mắt ta thấy sự tồn tại của cả 2 dạng màu. Nếu nồng độ của chúng hơn nhau từ 10 lần trở lên, mắt ta nhìn thấy màu của dạng có nồng độ lớn hơn, nghĩa là:<br>Khi $\\frac{[HA]}{[A^-]} \\ge 10$, màu của chất chỉ thị là màu của $HA$.<br>Khi $\\frac{[A^-]}{[HA]} \\ge 10$, màu của chất chỉ thị là màu của $A^-$.</p><p>[2] Hình dưới đây là một số chất chỉ thị màu được sử dụng phổ biến và khoảng biến đổi màu của chúng.</p>",
+     "fig": "img/KHOA_HOC_g3.png",
+     "questions": [
+      {
+       "t": "tf",
+       "q": "Các phát biểu sau đúng hay sai?",
+       "s": [
+        "Chất chỉ thị màu là chất có màu biến đổi phụ thuộc vào giá trị pH của dung dịch.",
+        "So với thymolphthalein, methyl da cam chuyển màu ở độ pH cao hơn.",
+        "Chất chỉ thị có sự thay đổi màu sắc từ vàng sang tím là alizarin vàng R.",
+        "Cho biết kem đánh răng có độ pH khoảng 9. Chất chỉ thị phù hợp trong việc xác định độ pH của kem đánh răng là bromthymol xanh."
+       ],
+       "a": [
+        1,
+        0,
+        1,
+        0
+       ],
+       "sol": [
+        "Ý 1: Định nghĩa về chất chỉ thị màu cho biết màu của chúng biến đổi theo các khoảng pH nhất định. Đúng.",
+        "Ý 2: Theo đồ thị Hình 1, methyl da cam chuyển màu ở khoảng pH từ 3.1 - 4.4, trong khi thymolphthalein chuyển màu ở pH 9.3 - 10.5. Do đó methyl da cam có khoảng chuyển màu thấp hơn. Sai.",
+        "Ý 3: Dựa vào Hình 1, Alizarin vàng R có dải biến đổi màu từ vàng (pH khoảng 10) sang tím (pH khoảng 12). Đúng.",
+        "Ý 4: Bromthymol xanh có khoảng đổi màu từ 6.0 (vàng) đến 7.6 (xanh lam). Ở pH = 9 nó đã hoàn toàn chuyển sang xanh lam, không thể phân biệt chính xác. Cần dùng phenolphthalein. Sai."
+       ],
+       "solved": true
+      },
+      {
+       "t": "mc",
+       "q": "Chất chỉ thị có sự thay đổi màu sắc từ không màu sang màu xanh lam là",
+       "o": [
+        "bromcresol xanh lục.",
+        "chlorphenol đỏ.",
+        "methyl tím.",
+        "thymolphthalein."
+       ],
+       "a": 3,
+       "sol": [
+        "Quan sát trên Hình 1, Thymolphthalein có dải chuyển màu từ Không màu sang Xanh lam."
+       ],
+       "solved": true
+      },
+      {
+       "t": "mc",
+       "q": "Cho biết dung dịch cà phê đen có $pH=5$. Chất chỉ thị phù hợp trong việc xác định độ pH của cà phê đen là",
+       "o": [
+        "methyl tím",
+        "bromcresol xanh lục",
+        "bromthymol xanh",
+        "phenol đỏ"
+       ],
+       "a": 1,
+       "sol": [
+        "Chất chỉ thị phù hợp cần có khoảng chuyển màu bao quanh giá trị pH = 5. Dựa vào Hình 1, Bromcresol xanh lục chuyển màu từ vàng sang xanh lam trong khoảng pH từ ~3.8 đến 5.4. Các chất còn lại có khoảng chuyển màu lệch xa khỏi 5."
+       ],
+       "solved": true
+      },
+      {
+       "t": "fill",
+       "q": "Điền từ/cụm từ thích hợp vào chỗ trống.\nChất chỉ thị có sự thay đổi màu sắc từ không màu sang đỏ là [[0]]",
+       "a": [
+        [
+         "phenolphthalein"
+        ]
+       ],
+       "sol": [
+        "Dựa vào đồ thị Hình 1, chất chỉ thị chuyển từ \"Không màu\" sang \"Đỏ\" (trong khoảng pH 8.3 - 10.0) là phenolphthalein."
+       ],
+       "solved": true
+      },
+      {
+       "t": "mc",
+       "q": "Chất chỉ thị nào sau đây có sự thay đổi màu sắc trong khoảng pH từ 8 đến 10,5?",
+       "o": [
+        "Bromcresol xanh lục và bromthymol xanh.",
+        "Phenolphthalein và thymolphthalein.",
+        "Phenolphtalein và methyl da cam.",
+        "Bromcresol xanh lục và methyl tím."
+       ],
+       "a": 1,
+       "sol": [
+        "Quan sát Hình 1, trong vùng pH từ 8 đến 10.5 có hai chất chỉ thị chuyển màu là Phenolphthalein (khoảng 8.3 - 10) và Thymolphthalein (khoảng 9.3 - 10.5)."
+       ],
+       "solved": true
+      },
+      {
+       "t": "tf",
+       "q": "Phát biểu sau đúng hay sai?",
+       "s": [
+        "Chất chỉ thị methyl tím có sự thay đổi màu sắc trong khoảng pH từ 4 đến 6."
+       ],
+       "a": [
+        0
+       ],
+       "sol": [
+        "Nhìn vào Hình 1, Methyl tím có dải đổi màu từ Vàng sang Tím ở khoảng pH rất thấp (0 đến 2). Do đó phát biểu này là sai."
+       ],
+       "solved": true
+      }
+     ]
+    },
+    {
+     "title": "XÁC ĐỊNH THÀNH PHẦN KHÔNG KHÍ",
+     "p": "<p>[1] Một nhóm học sinh thực hiện thí nghiệm xác định thành phần phần trăm các khí có trong không khí bằng cách sử dụng phản ứng oxi hóa phoi bào iron trong không khí và đã bố trí thí nghiệm như Hình 1.</p><p>[2] Nhóm học sinh tiến hành thí nghiệm 5 lần. Mỗi lần các bạn đo chiều cao cột nước dâng lên (tính từ mặt thoáng của nước trong chậu thủy tinh) và thu được kết quả như Bảng 1.</p><p>Bảng 1. Chiều cao cột nước trong 5 lần thí nghiệm<br><table><tr><th>Lần thí nghiệm</th><th>Chiều cao cột nước (cm)</th></tr><tr><td>1</td><td>4,1</td></tr><tr><td>2</td><td>4,2</td></tr><tr><td>3</td><td>3,8</td></tr><tr><td>4</td><td>3,9</td></tr><tr><td>5</td><td>4,0</td></tr></table></p>",
+     "fig": "img/KHOA_HOC_g4.png",
+     "questions": [
+      {
+       "t": "mc",
+       "q": "Có thể thay thế phoi bào iron bằng vật liệu nào sau đây mà kết quả thí nghiệm không bị thay đổi?",
+       "o": [
+        "Mẩu sáp nến.",
+        "Chìa khóa bằng inox.",
+        "Mẩu phosphorus đỏ.",
+        "Len thép."
+       ],
+       "a": 3,
+       "sol": [
+        "Trong thí nghiệm trên, phoi sắt (iron) phản ứng chậm với oxygen ẩm sinh ra gỉ rắn, làm giảm thể tích khí tương ứng với lượng O2 mất đi mà không sinh ra chất khí khác. Len thép (chứa sắt) có tính chất tương tự và rất xốp, thích hợp thay thế hoàn toàn phoi bào iron."
+       ],
+       "solved": true
+      },
+      {
+       "t": "tf",
+       "q": "Phát biểu sau đúng hay sai?",
+       "s": [
+        "Sau 1 tuần phản ứng giữa phoi bào iron và oxygen xảy ra vừa đủ, khí còn lại trong ống đong không có khả năng duy trì sự sống và sự cháy."
+       ],
+       "a": [
+        1
+       ],
+       "sol": [
+        "Sau khi phản ứng xảy ra hoàn toàn, lượng oxygen trong ống đã bị tiêu thụ hết. Khí còn lại chủ yếu là nitrogen ($N_2$) cùng với một lượng nhỏ khí hiếm, không có khả năng duy trì sự sống và sự cháy. Phát biểu là đúng."
+       ],
+       "solved": true
+      },
+      {
+       "t": "tf",
+       "q": "Phát biểu sau đúng hay sai?",
+       "s": [
+        "Khi tiến hành thí nghiệm tương tự nhóm học sinh, ta chỉ cần thực hiện thí nghiệm 1 lần để thu thập số liệu."
+       ],
+       "a": [
+        0
+       ],
+       "sol": [
+        "Trong thực hành khoa học, để đảm bảo độ chính xác và giảm trừ sai số ngẫu nhiên, ta cần lặp lại thí nghiệm nhiều lần (nhóm học sinh đã làm 5 lần) và lấy trung bình. Làm 1 lần là không đủ độ tin cậy."
+       ],
+       "solved": true
+      },
+      {
+       "t": "fill",
+       "q": "Điểm khác biệt ở Hình 1 (a) và Hình 1 (b) là:<br>- Hình 1 (a): mực nước trong và ngoài ống đong [[0]]<br>- Hình 1 (b): phoi bào iron [[1]], mực nước trong ống đong dâng [[2]] so với mực nước bên ngoài.",
+       "a": [
+        [
+         "bằng nhau"
+        ],
+        [
+         "bị đổi màu"
+        ],
+        [
+         "cao hơn"
+        ]
+       ],
+       "sol": [
+        "Lúc đầu (Hình a), áp suất khí trong và ngoài ống đong cân bằng nên mực nước bằng nhau. Sau 1 thời gian (Hình b), phoi sắt bị oxi hóa tạo gỉ sét nên bị đổi màu; lượng O2 mất đi làm áp suất trong ống giảm, khiến áp suất khí quyển đẩy mực nước trong ống đong dâng cao hơn."
+       ],
+       "solved": true
+      },
+      {
+       "t": "mc",
+       "q": "Các dữ liệu nhóm học sinh cần thu thập để xác định thành phần phần trăm các khí có trong không khí là",
+       "o": [
+        "chiều cao cột nước chiếm chỗ của oxygen (tính từ mặt thoáng của nước trong chậu thủy tinh).",
+        "thể tích nước có trong chậu thủy tinh và chiều cao cột nước chiếm chỗ của oxygen (tính từ mặt thoáng của nước trong chậu thủy tinh).",
+        "chiều cao cột nước chiếm chỗ của oxygen (tính từ mặt thoáng của nước trong chậu thủy tinh) và chiều dài phần còn lại chứa khí của ống.",
+        "thể tích nước có trong chậu thủy tinh."
+       ],
+       "a": 2,
+       "sol": [
+        "Để tính phần trăm thể tích oxygen, ta cần biết thể tích O2 tiêu thụ (tỉ lệ với chiều cao cột nước dâng lên) và tổng thể tích khối khí ban đầu (tỉ lệ với tổng chiều cao phần rỗng ban đầu, tức là chiều cao cột nước dâng lên + chiều dài phần còn lại chứa khí)."
+       ],
+       "solved": true
+      },
+      {
+       "t": "mc",
+       "q": "Từ kết quả của thí nghiệm trên, giả sử nhóm học sinh sử dụng ống đong dung tích 250 ml để bố trí thí nghiệm thì thể tích các khí còn lại trong ống sau khi thí nghiệm thành công là (biết chiều dài phần còn lại chứa khí của ống là 16 cm)",
+       "o": [
+        "150 ml.",
+        "200 ml.",
+        "120 ml.",
+        "130 ml."
+       ],
+       "a": 1,
+       "sol": [
+        "Theo bảng số liệu, chiều cao trung bình cột nước dâng lên là: $(4,1+4,2+3,8+3,9+4,0) / 5 = 4,0\\text{ cm}$.",
+        "Chiều dài cột khí ban đầu là $4,0 + 16 = 20\\text{ cm}$.",
+        "Phần trăm thể tích khí còn lại là $\\frac{16}{20} = 80\\%$.",
+        "Thể tích khí còn lại trong ống đong là $250 \\times 80\\% = 200\\text{ ml}$."
+       ],
+       "solved": true
+      }
+     ]
+    },
+    {
+     "title": "SỰ TRUYỀN NHIỆT",
+     "p": "<p>[1] Nếu trong một hệ có sự không đồng nhất nhiệt độ giữa hai điểm thì sẽ xuất hiện một quá trình truyền động năng phân tử từ nơi có nhiệt độ cao đến nơi có nhiệt độ thấp đưa hệ đến trạng thái cân bằng nhiệt. Nhiệt lượng có thể chuyển được giữa hệ và môi trường xung quanh nó nhờ ba cơ chế chuyển nhiệt: dẫn nhiệt, đối lưu và bức xạ nhiệt.</p><p>[2] Bức xạ nhiệt là bức xạ điện từ truyền đi với tốc độ ánh sáng (truyền qua cả chân không và các môi trường không hấp thụ ánh sáng). Các vật có nhiệt độ khác không độ tuyệt đối đều bức xạ nhiệt. Nhiệt độ càng cao mật độ bức xạ phát ra càng lớn.</p><p>[3] Sự dẫn nhiệt là sự truyền nhiệt năng từ phần này sang phần khác của một vật hay từ vật này sang vật khác. Trong quá trình truyền nhiệt này, các hạt ở nơi nhiệt độ cao nhờ chuyển động hỗn loạn đi đến nơi nhiệt độ thấp, trao đổi năng lượng với các hạt ở đó. Trong chất khí, các phân tử khí là các phần tử mang năng lượng, thực hiện quá trình truyền năng lượng bằng hình thức va chạm. Một tấm có diện tích bề mặt A, độ dày L, nhiệt độ ở các mặt của nó được giữ ở nhiệt độ $T_1$ và $T_2$. Đại lượng được xác định bằng lượng nhiệt truyền qua tấm trong một đơn vị thời gian là tốc độ truyền nhiệt: $H = \\frac{Q}{t} = kA\\frac{T_1 - T_2}{L}$ trong đó k được gọi là độ dẫn nhiệt và phụ thuộc vào vật liệu làm tấm. Bên cạnh đó, trong thực tế kĩ thuật người ta cũng đưa ra khái niệm nhiệt trở: $R = \\frac{L}{k}$.</p><p>[4] Bảng 1. Giá trị độ dẫn nhiệt và giá trị R của một số vật liệu xây dựng<br><table><tr><th>Vật liệu xây dựng</th><th>Độ dẫn nhiệt k (W/m.K)</th><th>Nhiệt trở R ($ft^2.F/Btu$)</th></tr><tr><td>Sợi khoáng</td><td>0.043</td><td>3.3</td></tr><tr><td>Thủy tinh sợi</td><td>0.048</td><td>3.0</td></tr><tr><td>Gỗ thông trắng</td><td>0.11</td><td>1.3</td></tr><tr><td>Thủy tinh làm cửa sổ</td><td>1.0</td><td>0.14</td></tr></table></p><p>[5] Đối lưu là một quá trình truyền nhiệt do dòng chất lỏng hoặc khí di chuyển từ vùng nóng sang vùng lạnh vì chênh lệch áp suất. Khi chất lỏng hoặc chất khí nguội đi, nó trở nên đậm đặc hơn. Một ví dụ về quá trình đối lưu trong một tách cà phê nóng (Hình 1): chất lỏng bên trên được không khí làm mát nên trở nên đậm đặc hơn và chìm xuống đáy cốc; chất lỏng nóng hơn nên ít đậm đặc hơn sẽ di chuyển về phía miệng cốc.</p><p>[6] Nhiệt độ của chất lỏng nóng của hệ cách nhiệt cao hơn nhiệt độ của chất lỏng ở đầu lạnh của hệ. Sự chênh lệch nhiệt độ ($\\Delta T$) giữa chất lỏng nóng ở dưới cùng và chất lỏng lạnh ở trên cùng thay đổi tùy thuộc vào nhiệt độ ban đầu của hệ. Bảng 2 cho thấy độ chênh lệch nhiệt độ ($\\Delta T$) của 500 ml nước trong bình chứa cách nhiệt có chiều cao 6 cm và diện tích mặt cắt ngang là $4\\text{ cm}^2$ khi bình chứa được làm nóng đến các nhiệt độ khác nhau.</p><p>[7] Bảng 2<br><table><tr><th>Nhiệt độ nóng ($^{\\circ}C$)</th><th>$\\Delta T$ ($^{\\circ}C$)</th></tr><tr><td>80</td><td>1</td></tr><tr><td>100</td><td>4</td></tr><tr><td>120</td><td>10</td></tr><tr><td>140</td><td>19</td></tr></table></p>",
+     "fig": "img/KHOA_HOC_g5.png",
+     "questions": [
+      {
+       "t": "mc",
+       "q": "Dựa trên thông tin trong Bảng 2 (ghi nhầm là Bảng 1 trong đề), giả sử một bình cách nhiệt chứa 500 ml nước có chiều cao 6 cm và diện tích mặt cắt ngang là $4\\text{ cm}^2$ được đun nóng đến $120^{\\circ}C$. Hàng nào sau đây thể hiện nhiệt độ của chất lỏng ở trên cùng (tiếp xúc với không khí) và nhiệt độ của chất lỏng dưới cùng của bình chứa là đúng?",
+       "o": [
+        "Hàng 1: Đáy $120^{\\circ}C$, Trên cùng $140^{\\circ}C$",
+        "Hàng 4: Đáy $120^{\\circ}C$, Trên cùng $110^{\\circ}C$",
+        "Hàng 3: Đáy $115^{\\circ}C$, Trên cùng $115^{\\circ}C$",
+        "Hàng 2: Đáy $140^{\\circ}C$, Trên cùng $110^{\\circ}C$"
+       ],
+       "a": 1,
+       "sol": [
+        "Dựa vào Bảng 2, khi bình được đun tới $120^{\\circ}C$ (nhiệt độ chất lỏng nóng ở dưới cùng), độ chênh lệch nhiệt độ $\\Delta T = 10^{\\circ}C$.",
+        "Vì chất lỏng nguội ở phía trên cùng, nhiệt độ ở phần trên sẽ thấp hơn đáy $10^{\\circ}C$. Suy ra nhiệt độ trên cùng là $120 - 10 = 110^{\\circ}C$.",
+        "Do đó Hàng 4 là đúng."
+       ],
+       "solved": true
+      },
+      {
+       "t": "mc",
+       "q": "Một tấm phức hợp như hình vẽ có diện tích là $26\\text{ ft}^2$ được làm từ sợi khoáng dày 2 in và gỗ thông trắng dày 0,75 in. Hiệu nhiệt độ giữa hai mặt của tấm là $65\\text{ F}$. Tốc độ truyền nhiệt qua tấm gần nhất với giá trị nào sau đây?",
+       "o": [
+        "367,4 Btu/h.",
+        "614,5 Btu/h.",
+        "223 Btu/h.",
+        "112 Btu/h."
+       ],
+       "a": 2,
+       "sol": [
+        "Công thức tính tốc độ truyền nhiệt tổng hợp qua nhiều lớp: $H = \\frac{A \\cdot \\Delta T}{R_{total}}$.",
+        "Nhiệt trở toàn phần: $R_{total} = R_1 + R_2$. Chú ý Bảng 1 cho giá trị R tương ứng với 1 inch bề dày.",
+        "Nhiệt trở của 2 inch sợi khoáng: $R_{SK} = 2 \\times 3,3 = 6,6$.",
+        "Nhiệt trở của 0,75 inch gỗ thông trắng: $R_{G} = 0,75 \\times 1,3 = 0,975$.",
+        "$R_{total} = 6,6 + 0,975 = 7,575\\text{ ft}^2\\cdot F/Btu$.",
+        "$H = \\frac{26 \\times 65}{7,575} = \\frac{1690}{7,575} \\approx 223,1\\text{ Btu/h}$."
+       ],
+       "solved": true
+      },
+      {
+       "t": "mc",
+       "q": "Trong các bình cách nhiệt dưới đây, nếu tất cả được nung nóng đến cùng một nhiệt độ thì hình nào sẽ có $\\Delta T$ lớn nhất?",
+       "o": [
+        "Hình (I).",
+        "Hình (II).",
+        "Hình (III).",
+        "Hình (IV)."
+       ],
+       "a": 0,
+       "sol": [
+        "Độ chênh lệch nhiệt độ $\\Delta T$ của chất lỏng phụ thuộc rất mạnh vào chiều cao cột chất lỏng (sự phân tầng nhiệt do đối lưu tự nhiên). Bình chứa càng hẹp và cao (diện tích mặt ngang nhỏ, chiều cao lớn) thì độ chênh lệch nhiệt độ giữa đỉnh và đáy càng lớn.",
+        "Dựa trên nhận định Hình 3 và Hình 2 của bài thực nghiệm tương tự, Hình (I) có thiết kế cao và hẹp nhất, do đó có $\\Delta T$ lớn nhất."
+       ],
+       "solved": true
+      },
+      {
+       "t": "mc",
+       "q": "Đối lưu là sự truyền nhiệt xảy ra trong chất nào dưới đây?",
+       "o": [
+        "Chỉ ở chất lỏng.",
+        "Chỉ ở chất khí.",
+        "Chỉ ở chất lỏng và chất khí.",
+        "Ở các chất lỏng, chất khí và chất rắn."
+       ],
+       "a": 2,
+       "sol": [
+        "Đối lưu là quá trình truyền nhiệt gắn liền với sự di chuyển thành dòng của các khối chất lưu, nên nó chỉ xảy ra trong chất lỏng và chất khí."
+       ],
+       "solved": true
+      },
+      {
+       "t": "fill",
+       "q": "Điền từ/cụm từ thích hợp vào chỗ trống.\nNgăn đá của tủ lạnh thường đặt ở phía trên ngăn đựng thức ăn nhằm tận dụng sự truyền nhiệt bằng hình thức [[0]]",
+       "a": [
+        [
+         "đối lưu"
+        ]
+       ],
+       "sol": [
+        "Khí lạnh đặc và nặng hơn sẽ chìm xuống dưới để làm mát thức ăn, trong khi khí nóng nhẹ hơn sẽ bay lên trên để được làm lạnh tiếp. Đây là sự truyền nhiệt bằng hình thức đối lưu tự nhiên."
+       ],
+       "solved": true
+      },
+      {
+       "t": "fill",
+       "q": "Năng lượng từ Mặt Trời được truyền đến Trái Đất nhờ cơ chế truyền qua khoảng không gian vũ trụ bằng hình thức [[0]]. Khi con người đứng dưới ánh sáng chói chang của Mặt Trời, Mặt Trời sưởi ấm cho con người vì da và quần áo hấp thụ ánh sáng. Các nhà nghiên cứu đã chứng tỏ rằng áo khoác màu [[1]] hấp thụ nhiều ánh sáng Mặt Trời hơn áo khoác màu [[2]] tới mức nhiệt độ này có thể cao hơn đến $6^{\\circ}C$.",
+       "a": [
+        [
+         "bức xạ nhiệt"
+        ],
+        [
+         "đen"
+        ],
+        [
+         "trắng"
+        ]
+       ],
+       "sol": [
+        "Năng lượng mặt trời truyền qua chân không bằng cơ chế bức xạ nhiệt.",
+        "Vật màu tối (đen) hấp thụ bức xạ nhiệt mạnh hơn vật màu sáng (trắng)."
+       ],
+       "solved": true
+      },
+      {
+       "t": "fill",
+       "q": "Tốc độ truyền nhiệt là đại lượng được xác định bằng lượng nhiệt truyền qua tấm trong một đơn vị thời gian. Trong hệ SI, đơn vị của tốc độ truyền nhiệt là [[0]]",
+       "a": [
+        [
+         "W",
+         "Watt",
+         "J/s"
+        ]
+       ],
+       "sol": [
+        "Tốc độ truyền nhiệt có biểu thức $H = Q/t$. Trong hệ SI, nhiệt lượng $Q$ đo bằng Joule (J), thời gian $t$ đo bằng giây (s). Đơn vị là J/s, hay còn gọi là Watt (W)."
+       ],
+       "solved": true
+      }
+     ]
+    },
+    {
+     "title": "KHÍ ĐỘNG HỌC MÁY BAY GIẤY",
+     "p": "<p>[1] Bốn lực khí động học cơ bản tác động lên máy bay khi máy bay chuyển động trong không khí là:<br>- Lực cản của không khí và lực đẩy của động cơ máy bay. Hai lực này đều có phương song song với phương chuyển động của máy bay.<br>- Trọng lực (lực hút của Trái Đất) là lực có phương thẳng đứng, chiều hướng về phía Trái Đất (chiều từ trên xuống dưới).<br>- Lực nâng là lực hướng lên tác dụng vuông góc với phương chuyển động của máy bay.</p><p>[2] Một nhóm học sinh đã thực hiện ba thí nghiệm để xác định ảnh hưởng của những tác động vật lí đến khả năng bay của máy bay giấy. Nhóm học sinh đã sử dụng giấy in để tạo ra một bộ máy bay phi tiêu bằng giấy giống hệt nhau. Sau đó, họ sửa đổi thiết kế của máy bay giấy để nghiên cứu ảnh hưởng của những thay đổi này tới khoảng cách bay của máy bay.</p><p>[3] Thí nghiệm 1<br>Nhóm học sinh sử dụng ba chiếc máy bay giấy giống hệt nhau. Cánh phẳng của chiếc máy bay đầu tiên được giữ nguyên. Cánh của chiếc máy bay thứ hai được sửa đổi để cong lên theo hình chữ U. Cánh của chiếc máy bay thứ ba được sửa đổi để cong xuống dưới hình chữ U ngược. Kết quả đo khoảng cách (m) của thí nghiệm này được thể hiện ở Bảng 1.1.<br><table><tr><th>Thử nghiệm</th><th>Cánh phẳng</th><th>Cánh cong lên</th><th>Cánh cong xuống</th></tr><tr><td>Thử nghiệm 1</td><td>9.5</td><td>10.2</td><td>9.1</td></tr><tr><td>Thử nghiệm 2</td><td>10.4</td><td>10.3</td><td>9.9</td></tr><tr><td>Thử nghiệm 3</td><td>10.8</td><td>10.6</td><td>10.8</td></tr></table></p><p>[4] Thí nghiệm 2<br>Nhóm học sinh sử dụng ba chiếc máy bay giấy giống hệt nhau. Họ giữ nguyên thiết kế ban đầu của chiếc máy bay đầu tiên. Đầu cánh của chiếc máy bay thứ hai được sửa hơi cong lên phía trên. Đầu cánh của chiếc máy bay thứ ba được sửa hơi cong xuống phía dưới. Kết quả của thí nghiệm 2 được thể hiện ở Bảng 1.2.<br><table><tr><th>Thử nghiệm</th><th>Đầu cánh phẳng</th><th>Đầu cánh cong lên</th><th>Đầu cánh cong xuống</th></tr><tr><td>Thử nghiệm 1</td><td>10.6</td><td>12.4</td><td>3.2</td></tr><tr><td>Thử nghiệm 2</td><td>11.1</td><td>12.9</td><td>3.5</td></tr><tr><td>Thử nghiệm 3</td><td>10.9</td><td>12.8</td><td>3.3</td></tr></table></p><p>[5] Thí nghiệm 3<br>Nhóm học sinh đã sử dụng bốn chiếc máy bay giấy giống hệt nhau. Chiếc máy bay đầu tiên vẫn được giữ nguyên thiết kế ban đầu (Không có kẹp giấy). Chiếc máy bay thứ hai được đặt hai chiếc kẹp giấy ở hai bên mũi. Chiếc máy bay thứ ba được đặt hai chiếc kẹp giấy ở hai cánh giữa của máy bay. Chiếc máy bay thứ tư được đặt hai chiếc kẹp giấy ở hai bên đuôi của máy bay. Kết quả của thí nghiệm được thể hiện ở Bảng 1.3.<br><table><tr><th>Thử nghiệm</th><th>Không kẹp giấy</th><th>Kẹp mũi</th><th>Kẹp cánh giữa</th><th>Kẹp đuôi</th></tr><tr><td>Thử nghiệm 1</td><td>10.8</td><td>9.1</td><td>10.6</td><td>6.3</td></tr><tr><td>Thử nghiệm 2</td><td>10.7</td><td>9.4</td><td>10.5</td><td>6.2</td></tr><tr><td>Thử nghiệm 3</td><td>10.8</td><td>9.3</td><td>10.7</td><td>6.0</td></tr></table></p>",
+     "questions": [
+      {
+       "t": "fill",
+       "q": "Khi một vật, ví dụ như quả bóng rổ chuyển động trong không khí và chuyển động này được coi là đủ nhanh thì độ lớn lực cản D của chất lưu liên hệ với tốc độ tương đối bằng hệ số cản xác định bằng thực nghiệm theo công thức: $D = \\frac{1}{2} C \\rho A v^2$ trong đó $\\rho$ là khối lượng riêng của không khí và A là tiết diện hiệu dụng của vật (là diện tích tiết diện ngang vuông góc với vận tốc v).\nBiết rằng quả bóng rổ hình cầu bán kính 12 cm đang rơi trong không khí với tốc độ không đổi $v=20\\text{ m/s}$. Khối lượng riêng của không khí là $\\rho=1,2\\text{ kg/m}^3$ và hệ số cản của quả bóng là 1,2. Độ lớn lực cản của không khí tác dụng lên quả bóng là [[0]] N. (Làm tròn đến chữ số thập phân thứ hai)",
+       "a": [
+        13.03
+       ],
+       "e": 0.02,
+       "sol": [
+        "Bán kính bóng $R = 12\\text{ cm} = 0,12\\text{ m}$.",
+        "Tiết diện ngang (hình tròn): $A = \\pi R^2 = \\pi (0,12)^2 = 0,0144\\pi \\text{ m}^2$.",
+        "Tính lực cản: $D = \\frac{1}{2} \\cdot 1,2 \\cdot 1,2 \\cdot (0,0144\\pi) \\cdot 20^2$.",
+        "$D = 0,72 \\cdot 0,0144\\pi \\cdot 400 = 0,72 \\cdot 5,76\\pi = 4,1472\\pi \\approx 13,0288$ N.",
+        "Làm tròn đến chữ số thập phân thứ 2 ta được $13,03$ N."
+       ],
+       "solved": true
+      },
+      {
+       "t": "mc",
+       "q": "Điều kiện nào sau đây là điều kiện đại diện (điều kiện để so sánh) cho các giá trị trong Thí nghiệm 2?",
+       "o": [
+        "Đầu cánh cong xuống.",
+        "Đầu cánh cong lên.",
+        "Đầu cánh phẳng.",
+        "Không có đầu cánh."
+       ],
+       "a": 2,
+       "sol": [
+        "Trong Thí nghiệm 2, \"chiếc máy bay đầu tiên vẫn được giữ nguyên thiết kế ban đầu\" để đối chứng với hai chiếc máy bay bị thay đổi đầu cánh. Thiết kế ban đầu không can thiệp tức là đầu cánh phẳng."
+       ],
+       "solved": true
+      },
+      {
+       "t": "fill",
+       "q": "Trọng tâm của một vật là vị trí trung bình theo phân bố khối lượng của vật đó. Trong thí nghiệm [[0]] học sinh đã làm thay đổi trọng tâm của máy bay giấy.",
+       "a": [
+        3
+       ],
+       "sol": [
+        "Ở Thí nghiệm 3, học sinh đã gắn kẹp giấy ở các vị trí khác nhau (mũi, giữa, đuôi). Hành động bổ sung vật nặng ở các vị trí khác nhau sẽ làm thay đổi sự phân bố khối lượng, từ đó thay đổi vị trí trọng tâm của máy bay."
+       ],
+       "solved": true
+      },
+      {
+       "t": "mc",
+       "q": "Dựa trên dữ liệu thu được từ ba thí nghiệm, sự kết hợp các đặc điểm nào được cho là sẽ tạo quãng đường bay theo phương ngang của máy bay dài nhất?",
+       "o": [
+        "Máy bay có cánh cong xuống, đầu cánh phẳng, có kẹp giấy ở mũi.",
+        "Máy bay có cánh phẳng, đầu cánh cong lên và không có kẹp giấy.",
+        "Máy bay có cánh cong lên, đầu cánh cong xuống, có kẹp giấy ở đuôi.",
+        "Máy bay có cánh phẳng, đầu cánh phẳng và không có kẹp giấy."
+       ],
+       "a": 1,
+       "sol": [
+        "Theo Bảng 1.1, thiết kế Cánh phẳng hoặc Cánh cong lên có thành tích khá tốt và tương đương. Theo Bảng 1.2, việc làm Đầu cánh cong lên cải thiện rất đáng kể thành tích bay (bay xa nhất lên tới $\\sim 12.9$m). Theo Bảng 1.3, máy bay Không kẹp giấy cho khoảng cách lớn nhất.",
+        "Sự kết hợp (Cánh phẳng, Đầu cánh cong lên, Không kẹp giấy) hội tụ các đặc tính ưu việt nhất từ các thí nghiệm, cho quãng đường dài nhất."
+       ],
+       "solved": true
+      },
+      {
+       "t": "mc",
+       "q": "Để giữ cho một chiếc máy bay giấy không bị rơi xuống đất thì lực đẩy và lực nâng tác dụng lên máy bay cần thỏa mãn điều kiện nào sau đây?",
+       "o": [
+        "Hợp lực của chúng có độ lớn không nhỏ hơn độ lớn hợp lực của lực cản và trọng lực.",
+        "Phải cân bằng nhau.",
+        "Không thể bằng nhau.",
+        "Hợp lực của chúng có độ lớn nhỏ hơn độ lớn hợp lực của lực cản và trọng lực."
+       ],
+       "a": 0,
+       "sol": [
+        "Muốn máy bay không bị rơi và tiếp tục tiến về phía trước, hệ lực giữ máy bay (lực nâng chống lại trọng lực, lực đẩy chống lại lực cản) phải đủ lớn để thắng hoặc ít nhất cân bằng với hệ lực kéo xuống và cản trở. Do đó độ lớn hợp lực của Nâng + Đẩy không được nhỏ hơn tổng Cản + Trọng lượng xét trên hai phương chuyển động."
+       ],
+       "solved": true
+      },
+      {
+       "t": "fill",
+       "q": "Điền cụm từ thích hợp vào chỗ trống\nCặp lực khí động học [[0]] và [[1]] là cặp lực cùng phương ngược chiều.",
+       "a": [
+        [
+         "lực cản",
+         "cản"
+        ],
+        [
+         "lực đẩy",
+         "đẩy"
+        ]
+       ],
+       "sol": [
+        "Theo đoạn [1], \"Lực cản của không khí và lực đẩy của động cơ... đều có phương song song với phương chuyển động\", vì ngược chiều tác dụng nên chúng tạo thành một cặp lực cùng phương ngược chiều."
+       ],
+       "solved": true
+      },
+      {
+       "t": "fill",
+       "q": "Điền từ/cụm từ thích hợp vào chỗ trống.\nTrong Thí nghiệm 2, việc uốn nhẹ đầu cánh xuống dưới có tác dụng làm tăng tác dụng của lực [[0]]",
+       "a": [
+        [
+         "cản",
+         "cản không khí",
+         "cản của không khí",
+         "lực cản"
+        ]
+       ],
+       "sol": [
+        "Khi uốn nhẹ đầu cánh xuống dưới, quãng đường bay giảm đột ngột (còn khoảng hơn 3m so với hơn 10m). Việc này tạo ra một vách đón gió ở mũi/cánh cản trở không khí đi qua một cách mượt mà, từ đó làm tăng mạnh lực cản khí động học."
+       ],
+       "solved": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "ĐỌC HIỂU",
+   "minutes": 30,
+   "groups": [
+    {
+     "title": "ĐƯỜNG VỀ ẤN ĐỘ",
+     "p": "<p>[1] Những thành tựu về chính sách công của Singapore là không phải bàn cãi, đơn giản là vì tầm vóc của nó. Trí tuệ có giá trị thật, Lý Quang Diệu đã đúng. Tuy nhiên, chỉ trí tuệ không vẫn chưa đủ. Tuy có đông dân hơn thành phố Los Angeles, nhưng dân số đất nước của Lý Quang Diệu chỉ bằng một phần ba Thượng Hải – như Đặng Tiểu Bình đã nhắc khéo Lý Quang Diệu. Dân số New Delhi, thủ đô Ấn Độ gấp khoảng ba lần Singapore. Bạn hãy tưởng tượng phải quản lý cả đất nước Ấn Độ thì sẽ thế nào?</p><p>[2] Tôi hỏi Lý Quang Diệu câu đó. Tôi nói thẳng luôn: “Liệu ông có thành công tương tự nếu ở Ấn Độ không?”<br>- Ấn Độ à?<br>- Ông có thành công ở Ấn Độ không?<br>- Không.<br>Tôi nghĩ câu trả lời khá thẳng thắn: “Nhưng tại sao?”<br>- “Đó là một nền văn minh đã tồn tại từ thời cổ đại. Nehru và Gandhi có cơ hội vì họ có uy tín rất lớn, nhưng họ cũng không thể phá vỡ được chế độ đẳng cấp. Họ không thể loại bỏ được thói quen”.</p><p>[3] Bạn đọc hãy lưu ý rằng ông không hề đề cập tới vấn đề quy mô dân số. Với Lý Quang Diệu, di sản văn hóa giống như ADN của đất nước vậy. Để thay đổi được nó thì chắc phải cần đến ca phẫu thuật bằng tia laser. Nền văn hóa nào có khả năng thay đổi trong mọi hoàn cảnh và thách thức thì sẽ tiếp tục phát triển. Nền văn hóa nào không có khả năng đó thì sẽ bị tụt lại phía sau. Trong cuộc phỏng vấn nổi tiếng, có ảnh hưởng rất lớn vào năm 1994 với nhà báo Fareed Zakaria của tờ Foreign Affairs - một tạp chí bán chính thức của giới ngoại giao Mỹ, Lý Quang Diệu đã công khai là ông theo quan điểm của Toynbee cho rằng văn hóa là định mệnh. Đó là lý do tại sao ông thường nhắc nhở các nhà phê bình phải hiểu đâu là “điểm khởi đầu” của một đất nước.</p><p>[4] Tôi bèn liều một phen: “Nhưng Nehru vĩ đại còn làm vấn đề Ấn Độ rắc rối thêm vì ông ta trung thành với một tư tưởng, đó là kế hoạch hóa tập trung kiểu Liên Xô!”<br>- Đúng thế.<br>- Còn nếu là ông thì chỉ sau ba tháng là ông sẽ từ bỏ nó đúng không?<br>Ông gật đầu chắc chắn. “Anh cũng thấy là ông ấy luôn bám chặt lấy những ý tưởng to lớn, ông ấy là những người hành động theo tư tưởng. Còn tôi tìm kiếm những tư tưởng có hiệu quả trong thực tế. Nếu chúng không phát huy tác dụng thì tôi sẽ nói, được rồi, tư tưởng này nghe có vẻ hay đấy, nhưng phải thử cái khác hiệu quả hơn. Thế là chúng tôi thử cái khác hiệu quả hơn, và cứ thế mà làm”.</p><p>[5] Nếu bạn tin rằng số liệu là thước đo tốt nhất phản ánh thành tựu thực tế thì Singapore dưới thời Lý Quang Diệu và những người kế nhiệm đã áp dụng những ý tưởng có hiệu quả thực tế trong hàng chục năm. Vào năm 2008, thu nhập trung bình (một năm) trên đầu người của Ấn Độ là 2.900 USD, đứng thứ 167 trên thế giới. Còn thu nhập trên đầu người của Singapore là 51.600 USD, đứng thứ 8 thế giới. Con số này của Mỹ là 47.500 USD, đứng thứ 10 thế giới - tôi thấy khá ngạc nhiên. Trong nhiều thập kỷ, Singapore đã thực hiện được thành công rất nhiều chính sách.</p>",
+     "questions": [
+      {
+       "t": "mc",
+       "q": "Theo thông tin trong đoạn [1], thành công lớn nhất trong việc thực hiện các chính sách tại đất nước Singapore là gì?",
+       "o": [
+        "Lý Quang Diệu là người có tài năng vượt bậc trong việc xây dựng và quản lý nhà nước.",
+        "Singapore không phải đất nước đông dân nhưng lại có tỷ lệ lao động được đào tạo cao.",
+        "Các chính sách công phù hợp với thực tế và không gặp trở ngại về vấn đề văn hóa bản địa.",
+        "Đất nước Singapore ở vị trí trung tâm của thế giới và Lý Quang Diệu đã nhìn ra cơ hội."
+       ],
+       "a": 0,
+       "sol": [
+        "Đoạn [1] nhấn mạnh \"Trí tuệ có giá trị thật, Lý Quang Diệu đã đúng\", cho thấy vai trò của tài năng cá nhân trong sự phát triển của Singapore. Các đáp án B, C, D đều chứa những thông tin không được đề cập trực tiếp trong đoạn [1] (như tỷ lệ lao động được đào tạo cao, vị trí trung tâm thế giới, hay chính sách không gặp trở ngại văn hóa bản địa)."
+       ],
+       "solved": true
+      },
+      {
+       "t": "fill",
+       "q": "Điền một từ (không quá hai tiếng) để hoàn thành nhận định sau:\n“Để phát triển một đất nước, không phải chỉ cần giải quyết vấn đề kinh tế cho người dân, đưa ra những chính sách phù hợp, mỗi nhà lãnh đạo đều có con đường riêng, cách tiếp cận và giải quyết vấn đề khác nhau nhưng tựu chung, văn minh bản địa và những [[0]] lâu đời có thể là rào cản và trở ngại lớn với các Quốc gia, dân tộc.”",
+       "a": [
+        "thói quen"
+       ],
+       "sol": [
+        "Căn cứ vào đoạn [2], Lý Quang Diệu cho rằng Nehru và Gandhi dù có uy tín lớn nhưng \"Họ không thể loại bỏ được thói quen\". Do đó, thói quen lâu đời là rào cản lớn với các quốc gia."
+       ],
+       "solved": true
+      },
+      {
+       "t": "mc",
+       "q": "Mật độ dân cư tại các thành phố, trung tâm lớn của đất nước là một trong những yếu tố then chốt để tạo nên thành công trong việc thực hiện chính sách phát triển đất nước của Lý Quang Diệu là đúng hay sai?",
+       "o": [
+        "Đúng.",
+        "Sai."
+       ],
+       "a": 1,
+       "sol": [
+        "Đoạn [3] khẳng định rõ ràng: \"Bạn đọc hãy lưu ý rằng ông không hề đề cập tới vấn đề quy mô dân số.\" Vì vậy, nhận định cho rằng mật độ dân cư là yếu tố then chốt là sai."
+       ],
+       "solved": true
+      },
+      {
+       "t": "mc",
+       "q": "Trong đoạn [3] của bài viết, tác giả có nhắc tới quan điểm của Lý Quang Diệu: \"... di sản văn hóa giống như ADN của đất nước vậy. Để thay đổi được nó thì chắc phải cần đến ca phẫu thuật bằng tia laser\", cụm từ \"phẫu thuật bằng tia laser\" có ý nghĩa gì?",
+       "o": [
+        "Phát triển y học, dùng công nghệ gen để tạo nên sự chuyển biến về tư duy.",
+        "Thay đổi đời sống văn hóa cần quá trình lâu dài và sự can thiệp mạnh mẽ.",
+        "Coi văn hóa Ấn Độ như một cơ thể cần được giải phẫu để tìm hiểu cặn kẽ.",
+        "Văn minh lâu đời chỉ có thể biến đổi khi tồn tại thể chế chính trị mới."
+       ],
+       "a": 1,
+       "sol": [
+        "Cách ví von \"di sản văn hóa giống như ADN\" cho thấy nó ăn sâu vào bản chất. \"Phẫu thuật bằng tia laser\" ám chỉ một sự can thiệp vừa vô cùng phức tạp, đòi hỏi thời gian lâu dài, vừa phải cực kỳ quyết liệt và triệt để mới có thể tạo ra được sự thay đổi."
+       ],
+       "solved": true
+      },
+      {
+       "t": "fill",
+       "q": "Điền một từ thích hợp (không quá hai tiếng) để hoàn thành nhận định sau:\n“Trong việc nhìn nhận về mối quan hệ giữa văn hóa và sự phát triển của một đất nước, Lý Quang Diệu đã khẳng định đây là cơ hội và cả [[0]], muốn tiến xa thì một nền văn hóa, văn minh cần biến chuyển và thích ứng theo từng hoàn cảnh và điều kiện cụ thể.”",
+       "a": [
+        "thách thức"
+       ],
+       "sol": [
+        "Trong đoạn [3], tác giả viết: \"Nền văn hóa nào có khả năng thay đổi trong mọi hoàn cảnh và thách thức thì sẽ tiếp tục phát triển.\""
+       ],
+       "solved": true
+      },
+      {
+       "t": "mc",
+       "q": "Vào năm 1994, Lý Quang Diệu đã khẳng định văn hóa là điểm khởi đầu của một đất nước trong cuộc phỏng vấn với nhà báo Fareed Zakaria của tờ Foreign Affairs và nhận được sự ủng hộ rất lớn của nước Mỹ cũng như toàn thế giới là đúng hay sai?",
+       "o": [
+        "Đúng.",
+        "Sai."
+       ],
+       "a": 1,
+       "sol": [
+        "Đoạn [3] chỉ cho biết Lý Quang Diệu đã công khai quan điểm này trong cuộc phỏng vấn \"có ảnh hưởng rất lớn\", chứ không đề cập đến việc nhận được sự ủng hộ rất lớn của toàn thế giới hay nước Mỹ. Việc thêm thắt chi tiết này khiến nhận định bị sai lệch."
+       ],
+       "solved": true
+      },
+      {
+       "t": "mc",
+       "q": "Mục đích của tác giả khi so sánh trường hợp của Lý Quang Diệu và Nehru là gì?",
+       "o": [
+        "Khẳng định Nehru và mô hình kế hoạch hóa tập trung kiểu Liên Xô đã trở nên lỗi thời.",
+        "Khẳng định tài năng của Lý Quang Diệu khi tìm ra con đường phát triển của Singapore.",
+        "Khẳng định việc áp dụng mô hình phát triển đất nước cần linh hoạt và gắn với thực tế.",
+        "Khẳng định sự chậm phát triển của Ấn Độ bắt nguồn từ việc lựa chọn sai hình mẫu."
+       ],
+       "a": 2,
+       "sol": [
+        "Trong đoạn [4], qua cuộc hội thoại, tác giả chỉ ra sự khác biệt lớn: Nehru \"bám chặt lấy những ý tưởng to lớn\" (tư tưởng), trong khi Lý Quang Diệu \"tìm kiếm những tư tưởng có hiệu quả trong thực tế... Nếu chúng không phát huy tác dụng thì... phải thử cái khác\". Mục đích là để nêu bật tính linh hoạt và gắn liền với thực tiễn."
+       ],
+       "solved": true
+      },
+      {
+       "t": "mc",
+       "q": "Việc so sánh thu nhập bình quân đầu người của các Quốc gia trong đoạn [5] không có ý nghĩa gì?",
+       "o": [
+        "Khẳng định độ xác thực của các thông tin trong bài viết.",
+        "Chứng minh Singapore đã thực sự là \"con rồng châu Á\".",
+        "Giải thích về các chỉ số phát triển kinh tế của Quốc gia.",
+        "Khẳng định Ấn Độ là một trong những nước nghèo nhất."
+       ],
+       "a": 2,
+       "sol": [
+        "Các số liệu ở đoạn [5] được đưa ra như một minh chứng cụ thể (\"thước đo tốt nhất phản ánh thành tựu thực tế\"). Tác giả dùng nó để so sánh kết quả thực tiễn, chứ không đi vào phân tích hay giải thích chuyên sâu ý nghĩa học thuật của các chỉ số phát triển kinh tế."
+       ],
+       "solved": true
+      },
+      {
+       "t": "drag",
+       "q": "Hoàn thành câu sau bằng cách kéo thả các từ vào đúng vị trí.\nThông qua bài viết, tác giả đã khẳng định tài năng và trí tuệ của [[0]] trong việc nhìn nhận và áp dụng các mô hình phát triển Quốc gia, tuy nhiên, không phải vì thế mà chúng ta có cái nhìn phiến diện về [[1]] - một nhà lãnh đạo tài ba của đất nước Ấn Độ, bài học về kế hoạch tập trung của [[2]] là một tư tưởng chưa phù hợp chứ không phản ánh trí tuệ của một nhà lãnh đạo được cộng đồng tin tưởng.",
+       "c": [
+        "Liên Xô",
+        "Singapore",
+        "Gandhi",
+        "Nehru",
+        "Lý Quang Diệu"
+       ],
+       "a": [
+        4,
+        3,
+        0
+       ],
+       "sol": [
+        "Bài viết phân tích tài năng của Lý Quang Diệu (ô số 1). Tuy nhiên, đoạn [4] vẫn nhắc đến Nehru như một người lãnh đạo vĩ đại và có uy tín lớn của Ấn Độ (ô số 2). Kế hoạch hóa tập trung kiểu Liên Xô (ô số 3) chỉ là một mô hình không phù hợp, chứ không phủ nhận trí tuệ của ông."
+       ],
+       "solved": true
+      },
+      {
+       "t": "mc",
+       "q": "Nội dung chính của bài viết là gì?",
+       "o": [
+        "Nêu lên mối quan hệ giữa văn hóa và các chính sách phát triển kinh tế.",
+        "Xây dựng chân dung Lý Quang Diệu về tầm nhìn phát triển đất nước.",
+        "Khẳng định những lý do khiến đất nước Ấn Độ chậm phát triển kinh tế.",
+        "So sánh những nhà lãnh đạo vĩ đại nhất các Quốc gia ở khu vực Châu Á."
+       ],
+       "a": 1,
+       "sol": [
+        "Dù có nhắc đến văn hóa, kinh tế và Ấn Độ, nhưng tất cả thông tin này đều xoay quanh và phục vụ cho mục đích làm nổi bật quan điểm thực tế, sự sắc sảo, sự linh hoạt trong tư duy lãnh đạo và tầm nhìn xa của Lý Quang Diệu."
+       ],
+       "solved": true
+      }
+     ]
+    },
+    {
+     "title": "TRANH ĐÔNG HỒ THỜI KÌ PHÁP THUỘC",
+     "p": "<p>[0] Trong thời kỳ Pháp thuộc, bằng những sáng tạo và góc nhìn mới mẻ, các nghệ nhân làng Đông Hồ đã chứng tỏ trách nhiệm xã hội của mình qua các bức tranh mang nội dung phê phán thói hư tật xấu từ quan trường đến đời sống, đồng thời bày tỏ lòng yêu nước, mong muốn lưu giữ nét văn hóa truyền thống của dân tộc.</p><p>[1] Nghề làm tranh Đông Hồ ra đời từ thế kỷ XVI, đây là loại tranh khắc gỗ, in màu. Thông thường, một bức tranh có 5 màu thì có 5 bản khắc gỗ, in màu trước, in nét sau. Giấy in tranh được làm thủ công từ cây dó có nhiều ở huyện Yên Phong, trước khi in, các nghệ nhân còn quét lên giấy một lớp điệp (làm từ vỏ con điệp mua ở Quảng Ninh) trộn với hồ nếp, tạo ra những vết chổi lá thông óng ánh vảy điệp. Màu in tranh cũng được làm từ vật liệu tự nhiên: Màu đen từ than rơm nếp, lá tre; màu vàng từ hoa hòe; màu nâu từ đất đỏ; màu xanh từ lá chàm... Đề tài của tranh Đông Hồ rất gần gũi với cuộc sống thôn quê đồng bằng Bắc Bộ như con gà, con lợn, cảnh hứng dừa, đánh ghen, độc đáo hơn là đề tài “Đám cưới chuột”, “Thầy đồ cóc”... Thời Pháp thuộc, các loại phẩm màu và giấy in được nhập vào nước ta, Đông Hồ có thêm loại tranh mới: In nét trên một loại giấy của Pháp mà dân ta quen gọi là giấy “manh” (tiếng Pháp là main, nghĩa là tập giấy) rồi tô phẩm màu - cũng được nhập từ nước ngoài. Sau đó ít lâu, Nhà máy giấy Đáp Cầu hoạt động, làng Đông Hồ đã dùng giấy được sản xuất ở đây làm tranh, khổ giấy lớn hơn, từ đó loại tranh bộ xuất hiện, mỗi bộ có bốn tờ, kích thước khoảng 40 x 140cm.</p><p>[3] Nhắc tới tranh dân gian Đông Hồ không thể không nhắc tới hai bức nổi tiếng của nghệ nhân Nguyễn Thế Thức: “Đu đôi bắt trạch” và “Bịt mắt bắt dê”. Trên tranh “Bịt mắt bắt dê” có một trai một gái, được bịt mắt, khoác áo tơi lá và ở ống quần đeo một chiếc chuông nhỏ, con dê cũng được mặc áo tơi và đeo chuông ở cổ. Giữa bãi chơi có một cái hố. Xem tranh, người xem sẽ hình dung ra ngay không khí sôi động của cuộc chơi, mục đích là bắt dê nhưng cứ theo tiếng chuông loong coong hay tiếng sột soạt của áo tơi mà “bắt” - thì hẳn có những phen bắt nhầm. “Đu đôi bắt trạch” lại vẽ cảnh một đôi nam thanh nữ tú: “Trai đu gối hạc khom khom cật/ Gái uốn lưng ong ngửa ngửa lòng” (Hồ Xuân Hương). Hai bức tranh này cũng có một tín hiệu về thời đại, đó là chiếc mũ cát và đôi giầy tây của các chàng trai - những thứ này chỉ xuất hiện khi thực dân Pháp đô hộ nước ta. Về nghệ thuật, hai bức tranh này có sự thay đổi: nhiều chi tiết, hơi rườm rà, không mộc mạc như trước. Các cặp màu (phẩm) tương phản: Son - xanh lục; cánh sen - xanh lam, đặt cạnh nhau tạo ra sự đối chọi dữ dội - không hài hòa như bảng màu của tranh điệp. Tuy nhiên, hình, nét và bố cục vẫn rất sinh động.</p><p>[4] Những năm cuối thế kỷ XIX đầu thế kỷ XX, dưới chế độ nửa thực dân nửa phong kiến, nền văn hóa nước ta có nhiều biến động, nhiều tập quán bị xâm lấn, thậm chí bị đồng hóa bởi văn hóa ngoại lai. Trước tình cảnh ấy, các nghệ nhân Đông Hồ đã tạo ra nhiều bức tranh phản ánh đời sống xã hội nhưng vẫn bảo tồn những giá trị nghệ thuật vốn có. Có thể kể tới như: “Cóc Tây múa kỳ lân” và “Chuột Tàu rước rồng vàng” của nghệ nhân Vương Ngọc Long, cố tình để chữ quốc ngữ (tuy sai chính tả) để châm biếm những kẻ đi ở cho Pháp, dựa thế ông bà chủ mà coi khinh người khác. Hay “Văn minh tiến bộ toa tăng xương - Phong tục cải lương moa tăng phú” được in điệp của nghệ nhân Vương Chí Long tái hiện sự tác động của văn minh phương Tây tới làng quê Việt Nam. Vẫn những màu sắc dân dã, đường nét khỏe khoắn sinh động nhưng tranh vẽ và đặc biệt, trong tranh có một chú chó (chó săn) - đây là chú chó duy nhất trong tranh Đông Hồ. Điều đặc biệt của hai bức tranh này chính là ý nghĩa của những dòng chữ: “Văn minh tiến bộ toa tăng xương”: Thời đại văn minh tiến bộ anh hãy cẩn thận. “Phong tục cải lương moa tăng phú”: Phong tục thay đổi, tôi cóc cần. Nếu đồng cảm với tác giả, bạn sẽ hình dung ra cảnh: Sau khi phẩy nét bút cuối cùng của dòng chữ nửa tây nửa ta hoàn thành tác phẩm, tác giả rít một điếu thuốc lào thật kêu, tựa lưng vào vách, ngắm đứa con tinh thần của mình qua làn khói thuốc... rồi bỗng vỗ đùi cười ha hả!</p><p>[5] Ngày nay, trong khi không ít nghề cổ truyền của Việt Nam đã bị mai một, nghề làm tranh ở Đông Hồ vẫn tồn tại và phát triển, người làm nghề sống được bằng nghề của mình. Ngoài việc các nghệ nhân phải nhạy bén, năng động với cơ chế thị trường thì không thể không nói tới việc tranh Đông Hồ, trải qua nhiều năm tháng, đã quy tụ, chắt lọc được tinh hoa văn hóa của dân tộc, đó cũng chính là nguyên nhân khiến cho văn hóa Việt Nam không bị “hòa tan” vào các nền văn hóa ngoại lai mặc dù đã trải qua ngàn năm Bắc thuộc, trăm năm Pháp thuộc.</p>",
+     "questions": [
+      {
+       "t": "mc",
+       "q": "Theo bài viết, làng Đông Hồ đã thực hiện hành động gì để chứng tỏ trách nhiệm xã hội của mình?",
+       "o": [
+        "Chống lại sự đồng hóa văn hóa thông qua hoạt động đấu tranh vũ trang.",
+        "Phê phán thói hư tật xấu tồn tại trong xã hội thông qua các sản phẩm.",
+        "Tạo ra những bức tranh phê phán thực dân Pháp với nhiều màu sắc.",
+        "Phá bỏ làng nghề sau các chính sách cai trị của thực dân được áp dụng."
+       ],
+       "a": 1,
+       "sol": [
+        "Đoạn [0] ghi rõ: \"các nghệ nhân làng Đông Hồ đã chứng tỏ trách nhiệm xã hội của mình qua các bức tranh mang nội dung phê phán thói hư tật xấu từ quan trường đến đời sống...\""
+       ],
+       "solved": true
+      },
+      {
+       "t": "mc",
+       "q": "Nghề làm tranh Đông Hồ ở Bắc Ninh có từ rất sớm, phát triển nhiều dòng khác nhau nhưng phải tới thế kỉ XVI mới nổi tiếng và được nhiều người biết tới qua loại tranh khắc gỗ. Đúng hay sai?",
+       "o": [
+        "Đúng",
+        "Sai"
+       ],
+       "a": 1,
+       "sol": [
+        "Nhận định này sai vì theo đoạn [1], nghề làm tranh Đông Hồ \"ra đời từ thế kỷ XVI\", tức là lúc đó nghề này mới bắt đầu hình thành, chứ không phải \"có từ rất sớm... nhưng phải tới thế kỉ XVI mới nổi tiếng\"."
+       ],
+       "solved": true
+      },
+      {
+       "t": "fill",
+       "q": "Điền từ thích hợp (không quá hai tiếng) để hoàn thành câu sau:\n“Tranh dân gian Đông Hồ truyền thống đa số sử dụng những màu sắc cơ bản, được làm từ các vật liệu [[0]], trước khi in, các nghệ nhân sẽ quét lên giấy một lớp điệp để tạo nên sắc óng ánh, độc đáo.”",
+       "a": [
+        "tự nhiên"
+       ],
+       "sol": [
+        "Căn cứ đoạn [1]: \"Màu in tranh cũng được làm từ vật liệu tự nhiên: Màu đen từ than rơm nếp, lá tre...\""
+       ],
+       "solved": true
+      },
+      {
+       "t": "mc",
+       "q": "Đâu là loại tranh xuất hiện ở làng tranh Đông Hồ sau khi Pháp xâm lược?",
+       "o": [
+        "Tranh bộ gồm 4 tờ khổ lớn, được in trên giấy dó quét một lớp vảy điệp.",
+        "Tranh in nét trên giấy \"manh\" rồi tô lại bằng các loại màu nhập ngoại.",
+        "Tranh khắc gỗ được in trên giấy dó khổ lớn và tô lại bằng phẩm màu.",
+        "Tranh bộ gồm 4 tờ với những đề tài độc đáo miêu tả cảnh sinh hoạt."
+       ],
+       "a": 1,
+       "sol": [
+        "Đoạn [1] chép: \"Thời Pháp thuộc... Đông Hồ có thêm loại tranh mới: In nét trên một loại giấy của Pháp mà dân ta quen gọi là giấy “manh”... rồi tô phẩm màu - cũng được nhập từ nước ngoài.\""
+       ],
+       "solved": true
+      },
+      {
+       "t": "mc",
+       "q": "Theo tác giả, điều gì đã khiến hai bức tranh của nghệ nhân Nguyễn Thế Thức được nhận xét là có sự thay đổi về nghệ thuật so với trước đây?",
+       "o": [
+        "Do sự thay đổi về chất liệu in và quy trình khắc gỗ.",
+        "Có thêm phần chữ Quốc ngữ được để ở cuối tranh.",
+        "Các chi tiết tỉ mỉ và màu sắc thiếu đi sự hài hòa.",
+        "Bố cục sinh động theo quy tắc thẩm mỹ của Pháp."
+       ],
+       "a": 2,
+       "sol": [
+        "Theo đoạn [3], về nghệ thuật, hai bức tranh có sự thay đổi: \"nhiều chi tiết, hơi rườm rà... Các cặp màu (phẩm) tương phản... đặt cạnh nhau tạo ra sự đối chọi dữ dội - không hài hòa như bảng màu của tranh điệp.\""
+       ],
+       "solved": true
+      },
+      {
+       "t": "mc",
+       "q": "Theo phần bình của tác giả, vì sao trong bức tranh “Bịt mắt bắt dê” lại có những phen bắt nhầm?",
+       "o": [
+        "Chiếc áo tơi bị rơi khi người bắt dê cố chạy đuổi theo tiếng chuông.",
+        "Tiếng chuông đồng thời phát ra ở cả người chơi và con dê bị bắt.",
+        "Người chơi bị bịt mắt nên không phân biệt được phương hướng.",
+        "Người chơi cố tình dùng âm thanh để đánh lạc hướng người còn lại."
+       ],
+       "a": 1,
+       "sol": [
+        "Trong đoạn [3] miêu tả cả người chơi (ống quần đeo chuông nhỏ, khoác áo tơi) và con dê (mặc áo tơi, đeo chuông) đều mang chuông và áo tơi. Do âm thanh sột soạt và tiếng chuông phát ra từ cả hai đối tượng nên mới có những phen \"bắt nhầm\"."
+       ],
+       "solved": true
+      },
+      {
+       "t": "mc",
+       "q": "Trong bức tranh “Văn minh tiến bộ toa tăng xương - Phong tục cải lương moa tăng phú” tác giả đã châm biếm điều gì?",
+       "o": [
+        "Văn minh phương Tây và những sự lố bịch, rởm đời trong xã hội bấy giờ.",
+        "Những sản phẩm, đồ dùng của Pháp được sử dụng ở nông thôn Việt Nam.",
+        "Nghệ thuật cải lương được nâng lên thành sản phẩm có giá trị văn minh.",
+        "Quá trình người Pháp đưa các sản phẩm nghệ thuật phổ biến ở nông thôn."
+       ],
+       "a": 0,
+       "sol": [
+        "Dòng chữ \"nửa tây nửa ta\" mang hàm ý chế giễu thái độ lai căng, đua đòi theo lối sống ngoại lai (\"toa tăng xương\", \"moa tăng phú\"), qua đó châm biếm thứ văn minh rởm đời trong xã hội đương thời."
+       ],
+       "solved": true
+      },
+      {
+       "t": "mc",
+       "q": "Theo tác giả, tại sao tranh Đông Hồ không bị \"hòa tan\" vào các nền văn hóa ngoại lai?",
+       "o": [
+        "Do không có ảnh hưởng từ văn hóa ngoại lai trong thời gian dài.",
+        "Do sự nỗ lực gìn giữ những giá trị cốt lõi của người làm tranh.",
+        "Do tranh Đông Hồ chỉ được ưa chuộng trong phạm vi nhỏ hẹp.",
+        "Do người Pháp không đưa ra các chính sách cai trị về văn hóa."
+       ],
+       "a": 1,
+       "sol": [
+        "Đoạn [5] tổng kết rằng tranh Đông Hồ \"đã quy tụ, chắt lọc được tinh hoa văn hóa của dân tộc\", chính sự gìn giữ và bảo tồn cốt lõi tinh hoa dân tộc đó đã giúp văn hóa Việt không bị hòa tan."
+       ],
+       "solved": true
+      },
+      {
+       "t": "drag",
+       "q": "Hoàn thành câu sau bằng cách kéo thả các từ vào đúng vị trí.\n“Nhìn lại tranh dân gian Đông Hồ thế kỷ XIX - XX, chúng ta thấy đây không chỉ là một sản phẩm [[0]] mà còn là nguồn tư liệu để khám phá những khía cạnh của [[1]] xã hội, các nghệ nhân đã phát triển những đề tài, chủ đề mới nhưng vẫn [[2]] những giá trị truyền thống quý báu.”",
+       "c": [
+        "văn hóa",
+        "phát triển",
+        "đời sống",
+        "nghệ thuật",
+        "bảo tồn"
+       ],
+       "a": [
+        3,
+        2,
+        4
+       ],
+       "sol": [
+        "Vị trí thứ nhất là \"nghệ thuật\" (một sản phẩm nghệ thuật).",
+        "Vị trí thứ hai là \"đời sống\" (phản ánh các khía cạnh đời sống xã hội).",
+        "Vị trí thứ ba là \"bảo tồn\" (giữ gìn các giá trị cốt lõi cũ song song với phát triển đề tài mới, đúng theo tinh thần đoạn [4])."
+       ],
+       "solved": true
+      },
+      {
+       "t": "mc",
+       "q": "Trong bài viết, tác giả khẳng định việc làm tranh Đông Hồ có ý nghĩa gì?",
+       "o": [
+        "Giáo dục về văn hóa dân gian cho những thế hệ sau.",
+        "Thể hiện sự sáng tạo của nghệ nhân truyền thống.",
+        "Chống lại sự đồng hóa văn hóa từ nước ngoài.",
+        "Tạo nguồn tư liệu về sự biến đổi của đời sống."
+       ],
+       "a": 2,
+       "sol": [
+        "Trọng tâm của đoạn [4] và [5] là ca ngợi các nghệ nhân đã tạo ra những tác phẩm giữ vững bản sắc dân tộc giữa bối cảnh văn hóa ngoại lai xâm lấn, từ đó đóng góp to lớn vào việc chống lại sự \"hòa tan\", đồng hóa văn hóa từ phương Tây hay phong kiến."
+       ],
+       "solved": true
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

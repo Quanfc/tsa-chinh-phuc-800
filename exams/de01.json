@@ -144,38 +144,74 @@
   {
    "title": "Đề Đọc Hiểu Số 01",
    "minutes": 60,
-   "questions": [
+   "groups": [
     {
-     "t": "mc",
-     "p": "Nước là dung môi phổ biến nhất trong tự nhiên. Nhờ cấu trúc phân tử phân cực, nước hòa tan được nhiều chất ion và chất phân cực, vì vậy nó đóng vai trò then chốt trong các phản ứng sinh hóa của tế bào.",
-     "q": "Vì sao nước hòa tan được nhiều chất?",
-     "o": [
-      "Do nước có nhiệt dung lớn",
-      "Do phân tử nước phân cực",
-      "Do nước luôn ở thể lỏng",
-      "Do nước có khối lượng nhỏ"
-     ],
-     "a": 1,
-     "sol": [
-      "Đoạn văn nói nhờ cấu trúc phân tử phân cực nên nước hòa tan được nhiều chất ion và chất phân cực.",
-      "Do đó nguyên nhân là phân tử nước phân cực. Các đáp án còn lại (nhiệt dung, thể lỏng, khối lượng nhỏ) không được đoạn văn nêu là lý do hòa tan."
-     ]
-    },
-    {
-     "t": "tf",
-     "p": "Nước là dung môi phổ biến nhất trong tự nhiên. Nhờ cấu trúc phân tử phân cực, nước hòa tan được nhiều chất ion và chất phân cực, vì vậy nó đóng vai trò then chốt trong các phản ứng sinh hóa của tế bào.",
-     "q": "Dựa vào đoạn văn, các phát biểu sau đúng hay sai?",
-     "s": [
-      "Nước là dung môi phổ biến nhất trong tự nhiên.",
-      "Nước chỉ hòa tan được chất không phân cực."
-     ],
-     "a": [
-      1,
-      0
-     ],
-     "sol": [
-      "Ý 1: câu đầu của đoạn văn khẳng định nước là dung môi phổ biến nhất trong tự nhiên, nên đúng.",
-      "Ý 2: đoạn văn nói nước hòa tan được chất ion và chất phân cực, không nói chỉ hòa tan chất không phân cực, nên sai."
+     "title": "Vai trò của nước",
+     "p": "<p>Nước là dung môi phổ biến nhất trong tự nhiên. Nhờ cấu trúc phân tử phân cực, nước hòa tan được nhiều chất ion và chất phân cực, vì vậy nó đóng vai trò then chốt trong các phản ứng sinh hóa của tế bào.</p><p>Ngoài ra, nước có nhiệt dung riêng lớn nên giúp cơ thể ổn định nhiệt độ khi môi trường thay đổi.</p>",
+     "questions": [
+      {
+       "t": "mc",
+       "q": "Vì sao nước hòa tan được nhiều chất?",
+       "o": [
+        "Do nước có nhiệt dung lớn",
+        "Do phân tử nước phân cực",
+        "Do nước luôn ở thể lỏng",
+        "Do nước có khối lượng nhỏ"
+       ],
+       "a": 1,
+       "sol": [
+        "Đoạn văn nói nhờ cấu trúc phân tử phân cực nên nước hòa tan được nhiều chất ion và chất phân cực.",
+        "Do đó nguyên nhân là phân tử nước phân cực. Các đáp án còn lại (nhiệt dung, thể lỏng, khối lượng nhỏ) không được đoạn văn nêu là lý do hòa tan."
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Dựa vào đoạn văn, các phát biểu sau đúng hay sai?",
+       "s": [
+        "Nước là dung môi phổ biến nhất trong tự nhiên.",
+        "Nước chỉ hòa tan được chất không phân cực."
+       ],
+       "a": [
+        1,
+        0
+       ],
+       "sol": [
+        "Ý 1: câu đầu của đoạn văn khẳng định nước là dung môi phổ biến nhất trong tự nhiên, nên đúng.",
+        "Ý 2: đoạn văn nói nước hòa tan được chất ion và chất phân cực, không nói chỉ hòa tan chất không phân cực, nên sai."
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Nước là dung môi phổ biến nhất trong tự nhiên, nhờ phân tử nước [[0]] nên hòa tan được nhiều chất.",
+       "a": [
+        [
+         "phân cực",
+         "có cực"
+        ]
+       ],
+       "sol": [
+        "Đoạn văn viết: nhờ cấu trúc phân tử phân cực, nước hòa tan được nhiều chất ion và chất phân cực.",
+        "Vậy chỗ trống điền từ \"phân cực\" (chấp nhận thêm cách viết \"có cực\"). Từ này gồm hai tiếng nên thỏa yêu cầu không quá hai tiếng."
+       ]
+      },
+      {
+       "t": "drag",
+       "q": "Nước có nhiệt dung riêng [[0]] nên giúp cơ thể [[1]] nhiệt độ.",
+       "c": [
+        "lớn",
+        "nhỏ",
+        "ổn định",
+        "tăng"
+       ],
+       "a": [
+        0,
+        2
+       ],
+       "sol": [
+        "Đoạn văn nói nước có nhiệt dung riêng lớn, nên ô thứ nhất điền \"lớn\".",
+        "Nhờ vậy cơ thể ổn định nhiệt độ khi môi trường thay đổi, nên ô thứ hai điền \"ổn định\". Chip \"nhỏ\" và \"tăng\" trái với nội dung đoạn văn."
+       ]
+      }
      ]
     }
    ]
@@ -183,32 +219,79 @@
   {
    "title": "Đề Khoa Học Số 1",
    "minutes": 60,
-   "questions": [
+   "groups": [
     {
-     "t": "fill",
-     "q": "Một vật rơi tự do không vận tốc đầu trong $2$ s với $g=10\\ m/s^2$. Quãng đường rơi là [[0]] m.",
-     "a": [
-      20
-     ],
-     "sol": [
-      "Rơi tự do không vận tốc đầu có công thức quãng đường $s=\\dfrac{1}{2}gt^2$.",
-      "Thay $g=10\\ m/s^2$, $t=2\\ s$: $s=\\dfrac12\\cdot 10\\cdot 2^2=\\dfrac12\\cdot 10\\cdot 4=20\\ m$.",
-      "Vậy ô trống là $20$."
+     "title": "Tốc độ phản ứng hóa học",
+     "p": "<p>Tốc độ phản ứng hóa học phụ thuộc nồng độ, nhiệt độ, áp suất và chất xúc tác. Chất xúc tác làm thay đổi tốc độ phản ứng nhưng vẫn giữ nguyên khối lượng sau phản ứng.</p><table><tr><th>Đại lượng</th><th>Kí hiệu</th><th>Giá trị</th></tr><tr><td>Hằng số khí</td><td>$R$</td><td>$8{,}314$</td></tr></table>",
+     "questions": [
+      {
+       "t": "mc",
+       "q": "Công thức hóa học của khí metan là",
+       "o": [
+        "$CO_2$",
+        "$CH_4$",
+        "$C_2H_6$",
+        "$H_2O$"
+       ],
+       "a": 1,
+       "sol": [
+        "Metan là hiđrocacbon đơn giản nhất, phân tử có $1$ nguyên tử cacbon liên kết với $4$ nguyên tử hiđro.",
+        "Công thức hóa học là $CH_4$. $CO_2$ là khí cacbonic, $C_2H_6$ là etan, $H_2O$ là nước."
+       ]
+      },
+      {
+       "t": "mcm",
+       "q": "Chọn các nhận định đúng:",
+       "o": [
+        "Nhiệt độ càng cao thì tốc độ phản ứng thường càng lớn",
+        "Chất xúc tác bị tiêu hao hết sau phản ứng",
+        "Nồng độ chất phản ứng ảnh hưởng đến tốc độ",
+        "Áp suất không bao giờ ảnh hưởng đến tốc độ"
+       ],
+       "a": [
+        0,
+        2
+       ],
+       "sol": [
+        "Nhiệt độ tăng làm các phân tử chuyển động nhanh hơn, va chạm hiệu quả nhiều hơn nên tốc độ thường tăng: nhận định 1 đúng.",
+        "Đoạn văn nêu chất xúc tác giữ nguyên khối lượng sau phản ứng nên nhận định 2 sai.",
+        "Nồng độ là một yếu tố được nêu trong đoạn nên nhận định 3 đúng; áp suất có ảnh hưởng (đặc biệt với chất khí) nên nhận định 4 sai."
+       ]
+      }
      ]
     },
     {
-     "t": "mc",
-     "q": "Công thức hóa học của khí metan là",
-     "o": [
-      "$CO_2$",
-      "$CH_4$",
-      "$C_2H_6$",
-      "$H_2O$"
-     ],
-     "a": 1,
-     "sol": [
-      "Metan là hiđrocacbon đơn giản nhất, phân tử có $1$ nguyên tử cacbon liên kết với $4$ nguyên tử hiđro.",
-      "Công thức hóa học là $CH_4$. $CO_2$ là khí cacbonic, $C_2H_6$ là etan, $H_2O$ là nước."
+     "title": "Hấp dẫn và gia tốc rơi tự do",
+     "p": "<p>Theo định luật vạn vật hấp dẫn, gia tốc rơi tự do tại điểm cách tâm thiên thể khối lượng $M$ một khoảng $d$ là $g=G\\dfrac{M}{d^2}$. Càng xa tâm thiên thể thì $g$ càng nhỏ.</p>",
+     "questions": [
+      {
+       "t": "fill",
+       "q": "Một vật rơi tự do không vận tốc đầu trong $2$ s với $g=10\\ m/s^2$. Quãng đường rơi là [[0]] m.",
+       "a": [
+        20
+       ],
+       "sol": [
+        "Rơi tự do không vận tốc đầu có công thức quãng đường $s=\\dfrac{1}{2}gt^2$.",
+        "Thay $g=10\\ m/s^2$, $t=2\\ s$: $s=\\dfrac12\\cdot 10\\cdot 2^2=\\dfrac12\\cdot 10\\cdot 4=20\\ m$.",
+        "Vậy ô trống là $20$."
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Dựa vào đoạn văn, các phát biểu sau đúng hay sai?",
+       "s": [
+        "Càng xa tâm thiên thể thì $g$ càng nhỏ.",
+        "$g$ tỉ lệ thuận với $d$."
+       ],
+       "a": [
+        1,
+        0
+       ],
+       "sol": [
+        "Ý 1: từ $g=G\\dfrac{M}{d^2}$, khi $d$ tăng thì $d^2$ tăng nên $g$ giảm. Vậy ý 1 đúng.",
+        "Ý 2: $g$ tỉ lệ nghịch với $d^2$ chứ không tỉ lệ thuận với $d$. Vậy ý 2 sai."
+       ]
+      }
      ]
     }
    ]

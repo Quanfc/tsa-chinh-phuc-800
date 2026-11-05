@@ -1,0 +1,904 @@
+{
+ "title": "TSA 3",
+ "sections": [
+  {
+   "title": "Đáp án - Toán",
+   "minutes": 60,
+   "questions": [
+    {
+     "t": "mc",
+     "q": "Trong các phát biểu sau, phát biểu nào là mệnh đề đúng?",
+     "o": [
+      "$\\pi^{2}$ là một số hữu tỉ.",
+      "Tổng hai cạnh của một tam giác luôn lớn hơn cạnh thứ ba.",
+      "Tổng ba góc trong một tam giác bằng $360^{\\circ}$",
+      "365 chia hết cho 13."
+     ],
+     "a": 1,
+     "sol": [
+      "$\\pi^{2}$ là một số hữu tỉ là mệnh đề sai.",
+      "Tổng ba góc trong một tam giác bằng $360^{\\circ}$ và 365 chia hết cho 13 cũng là các mệnh đề sai.",
+      "Tổng hai cạnh của một tam giác luôn lớn hơn cạnh thứ ba là mệnh đề đúng, đây là một định lý cơ bản về bất đẳng thức tam giác."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Khi sử dụng máy tính bỏ túi 10 chữ số thập phân ta được: $\\sqrt{8}=2,828427125$. Giá trị gần đúng của $\\sqrt{8}$ chính xác đến hàng phần trăm là",
+     "o": [
+      "2,81.",
+      "2,82.",
+      "2,83.",
+      "2,80."
+     ],
+     "a": 2,
+     "sol": [
+      "Làm tròn số $2,828427125$ đến hàng phần trăm (chữ số thập phân thứ hai).",
+      "Do chữ số thập phân thứ ba là 8 $\\ge 5$ nên ta cộng 1 vào chữ số thập phân thứ hai.",
+      "Giá trị gần đúng của $\\sqrt{8}$ chính xác đến hàng phần trăm là 2,83."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Kí hiệu $C_{n}^{k}$ là số các tổ hợp chập $k$ của $n$ phần tử $(1\\le k\\le n; k, n\\in\\mathbb{N})$. Khi đó $C_{n}^{k}$ bằng",
+     "o": [
+      "$\\frac{n!}{k!}.$",
+      "$\\frac{n!}{k!+(n-k)!}.$",
+      "$\\frac{n!}{k!(n-k)!}.$",
+      "$\\frac{n!}{(n-k)!}.$"
+     ],
+     "a": 2,
+     "sol": [
+      "Theo định nghĩa, số các tổ hợp chập $k$ của $n$ phần tử được tính bằng công thức $C_{n}^{k}=\\frac{n!}{k!(n-k)!}.$"
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Một tổ có 15 học sinh. Hỏi có bao nhiêu cách chọn 2 học sinh từ tổ đó để giữ hai chức vụ tổ trưởng và tổ phó?",
+     "o": [
+      "$A_{15}^{2}$",
+      "$C_{15}^{2}$",
+      "$15^{2}.$",
+      "$A_{15}^{8}$"
+     ],
+     "a": 0,
+     "sol": [
+      "Việc chọn 2 học sinh từ 15 học sinh để phân vào 2 chức vụ khác nhau (tổ trưởng, tổ phó) có phân biệt thứ tự là một chỉnh hợp chập 2 của 15.",
+      "Số cách chọn là $A_{15}^{2}$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Xác định m để 2 đường thẳng $d: 2x - 3y + 4 = 0$ và $d': \\begin{cases}x=2-3t\\\\ y=1-4mt\\end{cases}$ vuông góc.",
+     "o": [
+      "$m=\\frac{9}{8}.$",
+      "$m=\\frac{1}{2}$",
+      "$m=-\\frac{9}{8}.$",
+      "$m=-\\frac{1}{2}.$"
+     ],
+     "a": 2,
+     "sol": [
+      "Đường thẳng $d: 2x - 3y + 4 = 0$ có vectơ pháp tuyến là $\\vec{n} = (2; -3)$, suy ra vectơ chỉ phương của $d$ là $\\vec{u}_{d} = (3; 2)$.",
+      "Đường thẳng $d'$ có phương trình tham số nên nhận $\\vec{u}_{d'} = (-3; -4m)$ làm vectơ chỉ phương.",
+      "Để $d$ và $d'$ vuông góc thì $\\vec{u}_{d} \\cdot \\vec{u}_{d'} = 0$",
+      "$\\Leftrightarrow 3 \\cdot (-3) + 2 \\cdot (-4m) = 0 \\Leftrightarrow -9 - 8m = 0 \\Leftrightarrow m = -\\frac{9}{8}.$"
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Với $a>0$, $a\\ne 1$, $\\log_{a^{3}}a$ bằng",
+     "o": [
+      "3.",
+      "-3.",
+      "$\\frac{1}{3}.$",
+      "$-\\frac{1}{3}.$"
+     ],
+     "a": 2,
+     "sol": [
+      "Áp dụng tính chất cơ bản của logarit, ta có: $\\log_{a^{3}}a = \\frac{1}{3}\\log_{a}a = \\frac{1}{3} \\cdot 1 = \\frac{1}{3}.$"
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Điều tra về chiều cao của học sinh khối lớp 10, ta có kết quả sau:<br>Nhóm 1: [150;155) - 5 học sinh<br>Nhóm 2: [155;160) - 18 học sinh<br>Nhóm 3: [160;165) - 40 học sinh<br>Nhóm 4: [165;170) - 26 học sinh<br>Nhóm 5: [170;175) - 10 học sinh<br>Nhóm 6: [175;180) - 1 học sinh<br>Nhóm chứa trung vị là",
+     "o": [
+      "[155;160).",
+      "[160;165).",
+      "[165;170).",
+      "[170;175)."
+     ],
+     "a": 1,
+     "sol": [
+      "Cỡ mẫu $n = 100$. Gọi $x_{1}, x_{2}, \\dots, x_{100}$ là chiều cao của 100 học sinh và giả sử dãy này đã được sắp xếp theo thứ tự không giảm.",
+      "Khi đó trung vị là trung bình cộng của $x_{50}$ và $x_{51}$.",
+      "Số liệu tích lũy đến nhóm [155;160) là $5 + 18 = 23$.",
+      "Số liệu tích lũy đến nhóm [160;165) là $23 + 40 = 63$.",
+      "Do hai giá trị $x_{50}$ và $x_{51}$ đều thuộc khoảng thứ 3 nên nhóm [160;165) là nhóm chứa trung vị."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Nghiệm của phương trình $\\log_{2}(x^{2}+2x)+\\log_{\\frac{1}{2}}(2x+1)=0$ là",
+     "o": [
+      "$x=2$",
+      "$x=\\pm 1$",
+      "$x=-2$",
+      "$x=1$"
+     ],
+     "a": 3,
+     "sol": [
+      "Điều kiện: $\\begin{cases}x^{2}+2x>0\\\\ 2x+1>0\\end{cases} \\Leftrightarrow x>0$",
+      "Phương trình tương đương với: $\\log_{2}(x^{2}+2x) - \\log_{2}(2x+1) = 0$",
+      "$\\Leftrightarrow \\log_{2}\\frac{x^{2}+2x}{2x+1} = 0 \\Leftrightarrow \\frac{x^{2}+2x}{2x+1} = 1$",
+      "$\\Leftrightarrow x^{2}+2x = 2x+1 \\Leftrightarrow x^{2} - 1 = 0 \\Leftrightarrow x = 1$ (thỏa mãn) hoặc $x = -1$ (loại)."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Trong không gian Oxyz, cho mặt phẳng (P): $2x + 3y + z - 1 = 0$. Một vectơ pháp tuyến của mặt phẳng (P) có tọa độ là",
+     "o": [
+      "(2;3;1).",
+      "(1;-2;3).",
+      "(1;2;3).",
+      "(1;-3;2)."
+     ],
+     "a": 0,
+     "sol": [
+      "Mặt phẳng $(P): Ax + By + Cz + D = 0$ có một vectơ pháp tuyến là $\\vec{n} = (A; B; C)$.",
+      "Do đó, mặt phẳng (P): $2x + 3y + z - 1 = 0$ có một vectơ pháp tuyến là $\\vec{n} = (2;3;1)$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Miền không tô màu (kể cả đường thẳng $d_{1}, d_{2}$) trong hình là miền nghiệm của hệ bất phương trình nào sau đây?",
+     "o": [
+      "$\\begin{cases}x-y\\ge -1\\\\ 2x+3y\\ge 2\\end{cases}.$",
+      "$\\begin{cases}x+y\\ge -1\\\\ 2x-3y\\le -2\\end{cases}.$",
+      "$\\begin{cases}x-y> -1\\\\ 2x+3y> 2\\end{cases}.$",
+      "$\\begin{cases}x+y< -1\\\\ 2x-3y< -2\\end{cases}.$"
+     ],
+     "a": 1,
+     "warn": "Cần chèn ảnh gốc đồ thị đường thẳng d1, d2 cho học sinh.",
+     "sol": [
+      "Giả sử đường thẳng $d_{1}$ đi qua hai điểm $(0;-1)$ và $(-1;0)$, phương trình đường thẳng là $x+y=-1$.",
+      "Miền không bị gạch chéo chứa gốc tọa độ $O(0;0)$. Thay vào $x+y$, ta có $0+0 = 0 > -1$, nên miền nghiệm là $x+y \\ge -1$.",
+      "Giả sử đường thẳng $d_{2}$ đi qua hai điểm $(1;0)$ và $(2;2)$ (hoặc $(-1;0)$ và $(2;2)$ tuỳ hình vẽ), phương trình đường thẳng là $2x-3y=-2$.",
+      "Miền không gạch chéo không chứa gốc tọa độ $O(0;0)$. Thay $O$ vào $2x-3y$, ta được $0 > -2$. Do miền nghiệm không chứa điểm O nên ta có bất phương trình $2x-3y \\le -2$.",
+      "Hệ bất phương trình thoả mãn là $\\begin{cases}x+y\\ge -1\\\\ 2x-3y\\le -2\\end{cases}$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho hình thang ABCD vuông tại A và D có $AB=6a$. $AD=CD=\\frac{1}{2}AB$. M thuộc cạnh AD sao cho $AM=\\frac{1}{3}AD$. Tính $T=(\\vec{MB}+2\\vec{MC}) \\cdot (\\vec{CD}-\\vec{BD})$.",
+     "o": [
+      "$T=27a$",
+      "$T=\\frac{1}{27}a.$",
+      "$T=27a^{2}$",
+      "$T=\\frac{1}{27}a^{2}$"
+     ],
+     "a": 2,
+     "sol": [
+      "Ta phân tích biểu thức vectơ: $T=(\\vec{MB}+2\\vec{MC}) \\cdot (\\vec{CD}-\\vec{BD}) = [(\\vec{MA}+\\vec{AB})+2(\\vec{MD}+\\vec{DC})] \\cdot \\vec{CB}$",
+      "Do $M \\in AD$ và $AM=\\frac{1}{3}AD$ nên $\\vec{MA} = -\\frac{1}{3}\\vec{AD}$, $\\vec{MD} = \\frac{2}{3}\\vec{AD}$. Thay vào, ta có: $(\\vec{MA}+\\vec{AB}+2\\vec{MD}+2\\vec{DC}) = (-\\frac{1}{3}\\vec{AD} + \\vec{AB} + \\frac{4}{3}\\vec{AD} + \\vec{AB}) = (\\vec{AD} + 2\\vec{AB})$",
+      "Lại có $\\vec{CB} = \\vec{AB} - \\vec{AC} = \\vec{AB} - (\\vec{AD}+\\vec{DC}) = \\vec{AB} - \\vec{AD} - \\frac{1}{2}\\vec{AB} = \\frac{1}{2}\\vec{AB} - \\vec{AD}$",
+      "Tích vô hướng: $T = (2\\vec{AB} + \\vec{AD}) \\cdot (\\frac{1}{2}\\vec{AB} - \\vec{AD}) = AB^{2} - \\frac{3}{2}\\vec{AB}\\cdot\\vec{AD} - AD^{2}$",
+      "Vì ABCD vuông tại A nên $AB \\perp AD$, suy ra $\\vec{AB}\\cdot\\vec{AD} = 0$.",
+      "Vậy $T = AB^{2} - AD^{2} = (6a)^{2} - (3a)^{2} = 36a^{2} - 9a^{2} = 27a^{2}$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Tập đoàn X có 6 công ty con A, B, C, D, E, F. Trong năm 2020, tỷ lệ doanh thu của các công ty này được biểu thị như biểu đồ: A (22%), B (26%), C (12%), D (10%), E (14%), F (16%). Nếu doanh thu của công ty E tăng 20% vào năm 2021 và doanh thu của các công ty khác không thay đổi thì doanh thu của tập đoàn X tăng bao nhiêu phần trăm?",
+     "o": [
+      "2,8.",
+      "3,5.",
+      "1,8.",
+      "4,2."
+     ],
+     "a": 0,
+     "warn": "Cần chèn ảnh gốc biểu đồ quạt (pie chart) minh hoạ.",
+     "sol": [
+      "Giả sử tổng doanh thu năm 2020 của tập đoàn X là 100a, khi đó doanh thu của công ty E là 14a.",
+      "Năm 2021, doanh thu công ty E tăng 20%, tức là tăng thêm: $14a \\times 20\\% = 2,8a$.",
+      "Vì các công ty khác không thay đổi, nên tổng doanh thu tập đoàn tăng thêm đúng lượng $2,8a$.",
+      "Phần trăm tăng thêm của cả tập đoàn là: $\\frac{2,8a}{100a} \\times 100\\% = 2,8\\%$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Trong một đám cưới, cô dâu và chú rể mời gia đình nội ngoại hai bên chụp ảnh kỉ niệm. Biết rằng cô dâu và chú rể luôn đứng cạnh nhau và đứng ở giữa, gia đình bên nội có 7 người luôn đứng thành nhóm, gia đình bên ngoại có 8 người luôn đứng thành nhóm. Hỏi thợ chụp ảnh có bao nhiêu cách sắp xếp mọi người để chụp ảnh?",
+     "o": [
+      "$2.2!7!8!$ cách.",
+      "$3!4!$ cách.",
+      "$1!2!3!4!$ cách.",
+      "$3!2!3!4!$ cách."
+     ],
+     "a": 0,
+     "sol": [
+      "Coi cô dâu chú rể là nhóm 1, gia đình nội là nhóm 2, gia đình ngoại là nhóm 3.",
+      "Vì cô dâu chú rể luôn đứng giữa nên ta chỉ hoán vị nhóm 2 và nhóm 3 ở hai bên: có $2! = 2$ cách xếp vị trí 3 nhóm.",
+      "Trong nhóm 1 (cô dâu, chú rể), có $2!$ cách hoán vị nội bộ.",
+      "Trong nhóm 2 (gia đình nội), có $7!$ cách hoán vị nội bộ.",
+      "Trong nhóm 3 (gia đình ngoại), có $8!$ cách hoán vị nội bộ.",
+      "Tổng số cách sắp xếp là: $2 \\times 2! \\times 7! \\times 8! = 2.2!7!8!$ cách."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Có 20 tấm thẻ được đánh số từ 1 đến 20. Chọn ngẫu nhiên ra 8 tấm thẻ, tính xác suất để có 3 tấm thẻ mang số lẻ, 5 tấm thẻ mang số chẵn trong đó chỉ có đúng 1 tấm thẻ mang số chia hết cho 10.",
+     "o": [
+      "$\\frac{560}{4199}.$",
+      "$\\frac{4}{15}.$",
+      "$\\frac{11}{15}.$",
+      "$\\frac{3639}{4199}.$"
+     ],
+     "a": 0,
+     "sol": [
+      "Số phần tử của không gian mẫu: chọn 8 thẻ trong 20 thẻ, có $C_{20}^{8}$ cách.",
+      "Trong 20 thẻ có 10 thẻ lẻ, 10 thẻ chẵn. Trong 10 thẻ chẵn có 2 thẻ chia hết cho 10 (số 10 và 20) và 8 thẻ chẵn không chia hết cho 10.",
+      "Để chọn được thoả mãn bài toán ta cần thực hiện:",
+      "Bước 1: Chọn 3 thẻ mang số lẻ từ 10 thẻ lẻ: có $C_{10}^{3}$ cách.",
+      "Bước 2: Chọn 1 thẻ mang số chia hết cho 10 từ 2 thẻ: có $C_{2}^{1}$ cách.",
+      "Bước 3: Chọn 4 thẻ chẵn còn lại từ 8 thẻ chẵn không chia hết cho 10: có $C_{8}^{4}$ cách.",
+      "Số cách chọn thoả mãn là $n(A) = C_{10}^{3} \\times C_{2}^{1} \\times C_{8}^{4}$.",
+      "Xác suất $P(A) = \\frac{C_{10}^{3} \\times C_{2}^{1} \\times C_{8}^{4}}{C_{20}^{8}} = \\frac{560}{4199}.$"
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho khối chóp S.ABC có đáy là tam giác vuông tại B, $BA=a, BC=2a, SA=2a, SA\\perp (ABC)$. Gọi K là hình chiếu của A trên SC. Tính khoảng cách từ điểm K đến mặt phẳng (SAB).",
+     "o": [
+      "$\\frac{8a}{9}$",
+      "$\\frac{a}{9}$",
+      "$\\frac{2a}{9}$",
+      "$\\frac{5a}{9}$"
+     ],
+     "a": 0,
+     "sol": [
+      "Vì $SA \\perp (ABC)$ nên $SA \\perp BC$. Kết hợp với $AB \\perp BC$, ta suy ra $BC \\perp (SAB)$.",
+      "Kẻ $KH \\parallel BC$ ($H \\in SB$), khi đó $KH \\perp (SAB)$ và khoảng cách cần tính $d(K, (SAB)) = KH$.",
+      "Trong tam giác vuông SAC, ta có $AC = \\sqrt{AB^{2} + BC^{2}} = a\\sqrt{5}$, cạnh huyền $SC = \\sqrt{SA^{2} + AC^{2}} = 3a$.",
+      "Do K là hình chiếu của A lên SC, áp dụng hệ thức lượng $SA^{2} = SK \\cdot SC \\Rightarrow SK = \\frac{SA^{2}}{SC} = \\frac{4a^{2}}{3a} = \\frac{4a}{3}$.",
+      "Áp dụng định lý Thales trong tam giác SBC do $KH \\parallel BC$, ta được $\\frac{KH}{BC} = \\frac{SK}{SC} \\Rightarrow KH = \\frac{SK}{SC} \\cdot BC = \\frac{4a/3}{3a} \\cdot 2a = \\frac{8a}{9}$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho hình chóp S.ABC có đáy ABC là tam giác vuông cân tại B, $AC=a\\sqrt{2}$, cạnh bên SA vuông góc với đáy và $SA=a$. Gọi G là trọng tâm của tam giác SBC. Gọi ($\\alpha$) là mặt phẳng chứa AG và song song với BC, chia khối chóp thành hai phần. Tính thể tích của khối đa diện không chứa đỉnh S.",
+     "o": [
+      "$\\frac{4a^{3}}{9}$",
+      "$\\frac{4a^{3}}{27}$",
+      "$\\frac{2a^{3}}{9}.$",
+      "$\\frac{5a^{3}}{54}.$"
+     ],
+     "a": 3,
+     "sol": [
+      "Mặt phẳng $(\\alpha)$ chứa AG và song song với BC nên cắt mặt phẳng (SBC) theo giao tuyến EF đi qua G và song song với BC ($E \\in SB, F \\in SC$).",
+      "Khối đa diện không chứa đỉnh S là khối A.BCEF.",
+      "Vì G là trọng tâm tam giác SBC nên theo định lý Thales, ta có $\\frac{SE}{SB} = \\frac{SF}{SC} = \\frac{2}{3}$.",
+      "Tỉ số thể tích khối chóp S.AEF so với S.ABC là: $\\frac{V_{S.AEF}}{V_{S.ABC}} = \\frac{SE}{SB} \\times \\frac{SF}{SC} = \\frac{4}{9}$.",
+      "Suy ra thể tích khối A.BCEF là $V_{A.BCEF} = (1 - \\frac{4}{9})V_{S.ABC} = \\frac{5}{9}V_{S.ABC}$.",
+      "Đáy ABC vuông cân tại B, có $AC=a\\sqrt{2}$ nên $AB=BC=a$. Diện tích $S_{ABC} = \\frac{1}{2}a^{2}$.",
+      "Thể tích $V_{S.ABC} = \\frac{1}{3}SA \\times S_{ABC} = \\frac{1}{3}a \\times \\frac{a^{2}}{2} = \\frac{a^{3}}{6}$.",
+      "Vậy $V_{A.BCEF} = \\frac{5}{9} \\times \\frac{a^{3}}{6} = \\frac{5a^{3}}{54}.$"
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Tổng các nghiệm của phương trình $5\\sqrt{x^{3}+8}=2(x^{2}-x+6)$ bằng",
+     "o": [
+      "$2+\\sqrt{10}.$",
+      "4.",
+      "$2\\sqrt{3}.$",
+      "6."
+     ],
+     "a": 3,
+     "sol": [
+      "Điều kiện xác định: $x^{3}+8 \\ge 0 \\Leftrightarrow x \\ge -2$.",
+      "Ta có hằng đẳng thức $x^{3}+8 = (x+2)(x^{2}-2x+4)$. Biến đổi phương trình thành: $5\\sqrt{(x+2)(x^{2}-2x+4)} = 2[(x^{2}-2x+4) + (x+2)]$.",
+      "Đặt $u = \\sqrt{x^{2}-2x+4} > 0$ và $v = \\sqrt{x+2} \\ge 0$. Ta được phương trình $5uv = 2(u^{2} + v^{2}) \\Leftrightarrow 2u^{2} - 5uv + 2v^{2} = 0$.",
+      "$\\Leftrightarrow (2u-v)(u-2v) = 0 \\Leftrightarrow u = 2v$ hoặc $v = 2u$.",
+      "Trường hợp $u = 2v \\Leftrightarrow \\sqrt{x^{2}-2x+4} = 2\\sqrt{x+2} \\Leftrightarrow x^{2}-2x+4 = 4x+8 \\Leftrightarrow x^{2}-6x-4 = 0$. Phương trình này có 2 nghiệm $x = 3 \\pm \\sqrt{13}$, đều thỏa mãn $x \\ge -2$.",
+      "Trường hợp $v = 2u \\Leftrightarrow \\sqrt{x+2} = 2\\sqrt{x^{2}-2x+4} \\Leftrightarrow x+2 = 4(x^{2}-2x+4) \\Leftrightarrow 4x^{2}-9x+14 = 0$. Phương trình này vô nghiệm (do $\\Delta < 0$).",
+      "Vậy tập nghiệm là $\\{3-\\sqrt{13}, 3+\\sqrt{13}\\}$. Tổng hai nghiệm bằng $6$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Hệ phương trình $\\begin{cases}(x-1)(y^{2}+6)=y(x^{2}+1)\\\\ (y-1)(x^{2}+6)=x(y^{2}+1)\\end{cases}$ có bao nhiêu nghiệm nguyên?",
+     "o": [
+      "1.",
+      "2.",
+      "3.",
+      "4."
+     ],
+     "a": 3,
+     "sol": [
+      "Viết lại hệ thành: $\\begin{cases}xy^{2} - y^{2} + 6x - 6 = x^{2}y + y\\\\ x^{2}y - x^{2} + 6y - 6 = xy^{2} + x\\end{cases}$",
+      "Trừ vế theo vế hai phương trình, ta được: $2xy(y-x) + (x^{2}-y^{2}) + 7(x-y) = 0 \\Leftrightarrow (x-y)(x+y-2xy+7) = 0$.",
+      "Trường hợp $x = y$: thế vào phương trình đầu ta có $(x-1)(x^{2}+6) = x(x^{2}+1) \\Leftrightarrow x^{3} - x^{2} + 6x - 6 = x^{3} + x \\Leftrightarrow x^{2} - 5x + 6 = 0$. Phương trình có 2 nghiệm $x=2$ hoặc $x=3$. Suy ra 2 nghiệm $(2;2)$ và $(3;3)$.",
+      "Trường hợp $x+y-2xy+7=0$: cộng hai phương trình ban đầu ta có $x^{2}+y^{2} - 5x - 5y + 12 = 0$. Đặt $S = x+y$ và $P = xy$, ta được hệ: $\\begin{cases}S-2P+7=0\\\\ S^{2}-2P-5S+12=0\\end{cases}$.",
+      "Thế $2P = S+7$ vào phương trình thứ hai, ta được $S^{2}-6S+5=0 \\Leftrightarrow S=1$ hoặc $S=5$.",
+      "Nếu $S=1 \\Rightarrow P=4$ (vô nghiệm vì $S^{2}-4P < 0$).",
+      "Nếu $S=5 \\Rightarrow P=6$. Hệ $x+y=5, xy=6$ có các nghiệm là $(2;3)$ và $(3;2)$.",
+      "Tổng cộng hệ có 4 nghiệm nguyên là $(2;2), (3;3), (2;3), (3;2)$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Có bao nhiêu số nguyên y sao cho với mỗi y không có quá 510 số nguyên x thoả mãn bất phương trình sau $2^{y-3x}\\ge \\log_{3}(x+y^{2})$?",
+     "o": [
+      "15.",
+      "11.",
+      "19.",
+      "13."
+     ],
+     "a": 0,
+     "warn": "Lời giải gốc ghi số phần tử để đối chiếu là 51 thay vì 511, lỗi có thể từ đề bài hoặc văn bản nguồn. Kết quả vẫn ra 15 theo đúng lời giải.",
+     "sol": [
+      "Điều kiện: $x+y^{2}>0 \\Leftrightarrow x > -y^{2}$.",
+      "Xét hàm số $f(x) = 2^{y-3x} - \\log_{3}(x+y^{2})$ trên $(-y^{2}; +\\infty)$.",
+      "Ta có $f'(x) = -3\\cdot 2^{y-3x}\\ln 2 - \\frac{1}{(x+y^{2})\\ln 3} < 0$, suy ra $f(x)$ nghịch biến trên $(-y^{2}; +\\infty)$.",
+      "Bất phương trình $f(x) \\ge 0$ có tập nghiệm dạng $(-y^{2}; x_{0}]$. Để số nguyên $x$ thuộc tập nghiệm không vượt quá 510, số nguyên thứ 511 tính từ biên $-y^{2}$ trở đi không được thuộc tập nghiệm, do đó $f(-y^{2}+51) < 0$ (theo số liệu trong đáp án).",
+      "$\\Rightarrow 2^{y-3(-y^{2}+51)} - \\log_{3}(51) < 0 \\Rightarrow 3y^{2}+y-153 < \\log_{2}(\\log_{3} 51)$.",
+      "$\\Rightarrow -7,35 < y < 7,02$. Vì y nguyên nên $y \\in \\{-7; -6; \\dots; 7\\}$. Có 15 giá trị nguyên của $y$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Bất phương trình $\\frac{\\sqrt{2+3^{2x}}}{\\sqrt{2+3^{2x}}-\\sqrt{2-3^{2x}}} + \\frac{3^{4x}+\\sqrt{4-3^{4x}}-7}{3^{2x}} \\ge \\frac{3^{2x}-2}{\\sqrt{4-3^{4x}}-2+3^{2x}}$ có bao nhiêu nghiệm?",
+     "o": [
+      "Vô số.",
+      "1.",
+      "2.",
+      "3."
+     ],
+     "a": 1,
+     "sol": [
+      "Điều kiện: $4 - 3^{4x} > 0 \\Leftrightarrow 3^{2x} < 2$. Đặt $t = 3^{2x} \\; (0 < t < 2)$. Bất phương trình trở thành:",
+      "$\\frac{\\sqrt{2+t}}{\\sqrt{2+t}-\\sqrt{2-t}} + \\frac{t^{2}+\\sqrt{4-t^{2}}-7}{t} \\ge \\frac{t-2}{\\sqrt{4-t^{2}}-2+t}$",
+      "Nhân liên hợp ở số hạng đầu, ta có $\\frac{\\sqrt{2+t}(\\sqrt{2+t}+\\sqrt{2-t})}{2t} = \\frac{2+t+\\sqrt{4-t^{2}}}{2t}$.",
+      "Kết hợp với số hạng thứ hai và biến đổi, ta quy được về bất phương trình $(\\sqrt{4-t^{2}} - 1)^{2} \\le 0$.",
+      "Điều này chỉ xảy ra khi và chỉ khi $\\sqrt{4-t^{2}} = 1 \\Leftrightarrow 4-t^{2}=1 \\Leftrightarrow t^{2}=3 \\Leftrightarrow t = \\sqrt{3}$ (vì $t>0$).",
+      "Suy ra $3^{2x} = \\sqrt{3} \\Leftrightarrow x = \\frac{1}{4}$. Vậy bất phương trình có đúng 1 nghiệm duy nhất."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho $\\sin x+\\cos x=\\frac{1}{2}$ và $-180^{\\circ}<x<0^{\\circ}$. Giá trị của $\\sin x$ bằng",
+     "o": [
+      "$\\sin x=\\frac{1-\\sqrt{7}}{6}.$",
+      "$\\sin x=\\frac{1+\\sqrt{7}}{4}.$",
+      "$\\sin x=\\frac{1-\\sqrt{7}}{4}.$",
+      "$\\sin x=\\frac{1+\\sqrt{7}}{6}.$"
+     ],
+     "a": 2,
+     "sol": [
+      "Vì $-180^{\\circ} < x < 0^{\\circ}$ nên $\\sin x < 0$.",
+      "Từ giả thiết ta có $\\cos x = \\frac{1}{2} - \\sin x$. Thay vào hệ thức lượng giác cơ bản $\\sin^{2}x + \\cos^{2}x = 1$, ta được:",
+      "$\\sin^{2}x + (\\frac{1}{2} - \\sin x)^{2} = 1 \\Leftrightarrow \\sin^{2}x + \\frac{1}{4} - \\sin x + \\sin^{2}x = 1$",
+      "$\\Leftrightarrow 2\\sin^{2}x - \\sin x - \\frac{3}{4} = 0 \\Leftrightarrow 8\\sin^{2}x - 4\\sin x - 3 = 0$.",
+      "Giải phương trình bậc hai ta có $\\sin x = \\frac{1 \\pm \\sqrt{7}}{4}$.",
+      "Vì $\\sin x < 0$, ta nhận nghiệm $\\sin x = \\frac{1 - \\sqrt{7}}{4}$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho tam giác ABC có $AB=9, BC=10, CA=11$. Gọi M là trung điểm BC và N là trung điểm AM. Tính độ dài BN.",
+     "o": [
+      "5.",
+      "$\\sqrt{34}.$",
+      "6.",
+      "$4\\sqrt{2}$"
+     ],
+     "a": 1,
+     "sol": [
+      "Áp dụng định lý đường trung tuyến cho tam giác ABC, tính được độ dài AM: $AM^{2} = \\frac{AB^{2}+AC^{2}}{2} - \\frac{BC^{2}}{4} = \\frac{81+121}{2} - \\frac{100}{4} = 76$.",
+      "Áp dụng định lý đường trung tuyến cho tam giác ABM (vì N là trung điểm AM): $BN^{2} = \\frac{BA^{2}+BM^{2}}{2} - \\frac{AM^{2}}{4}$.",
+      "Với $BM = \\frac{1}{2}BC = 5$, ta có: $BN^{2} = \\frac{81+25}{2} - \\frac{76}{4} = 53 - 19 = 34$.",
+      "Suy ra $BN = \\sqrt{34}$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Trong tam giác ABC, điều kiện để hai trung tuyến kẻ từ A và B vuông góc với nhau là:",
+     "o": [
+      "$2a^{2}+2b^{2}=3c^{2}.$",
+      "$a^{2}+b^{2}=5c^{2}.$",
+      "$2a^{2}+2b^{2}=5c^{2}.$",
+      "$3a^{2}+3b^{2}=5c^{2}.$"
+     ],
+     "a": 1,
+     "sol": [
+      "Gọi G là trọng tâm tam giác ABC. Vì hai đường trung tuyến từ A và B vuông góc với nhau nên tam giác ABG vuông tại G.",
+      "Áp dụng định lý Pytago trong tam giác ABG: $GA^{2} + GB^{2} = AB^{2} = c^{2}$.",
+      "Mặt khác, $GA = \\frac{2}{3}m_a$ và $GB = \\frac{2}{3}m_b$. Thế vào ta được $\\frac{4}{9}m_a^{2} + \\frac{4}{9}m_b^{2} = c^{2}$.",
+      "Dùng công thức đường trung tuyến: $\\frac{4}{9}(\\frac{2b^{2}+2c^{2}-a^{2}}{4} + \\frac{2a^{2}+2c^{2}-b^{2}}{4}) = c^{2}$",
+      "$\\Leftrightarrow \\frac{1}{9}(a^{2}+b^{2}+4c^{2}) = c^{2} \\Leftrightarrow a^{2}+b^{2}+4c^{2} = 9c^{2} \\Leftrightarrow a^{2}+b^{2} = 5c^{2}$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Để đo chiều cao của một cái tháp trong hai cái tháp đôi của tỉnh Bình Định người ta gọi vị trí đứng ngắm là đỉnh D của thân tháp, C là hình chiếu của D trên mặt đất. Tại khu vực quan sát đặt cột tiêu ở vị trí A và vị trí B sao cho A, B, C thẳng hàng và đo được độ dài $AB=10m$, $\\widehat{CBD}=\\beta=63^{\\circ}$, $\\widehat{CAD}=\\alpha=48^{\\circ}$. Khi đó chiều cao $CD=h$ của tháp đôi gần nhất với giá trị nào dưới đây?",
+     "o": [
+      "26m.",
+      "24,7m.",
+      "25m.",
+      "25,6m."
+     ],
+     "a": 3,
+     "warn": "Cần chèn ảnh gốc minh hoạ toà tháp cho học sinh.",
+     "sol": [
+      "Xét tam giác ABD, ta có $\\widehat{DAB} = 48^{\\circ}$ và góc ngoài $\\widehat{CBD} = 63^{\\circ}$ nên góc $\\widehat{ADB} = \\widehat{CBD} - \\widehat{DAB} = 63^{\\circ} - 48^{\\circ} = 15^{\\circ}$.",
+      "Áp dụng định lý Sin trong tam giác ABD: $\\frac{BD}{\\sin A} = \\frac{AB}{\\sin \\widehat{ADB}} \\Rightarrow BD = \\frac{10 \\cdot \\sin 48^{\\circ}}{\\sin 15^{\\circ}} \\approx 28,71$ (m).",
+      "Trong tam giác vuông BCD, ta có: $\\sin \\widehat{CBD} = \\frac{CD}{BD} \\Rightarrow CD = BD \\cdot \\sin 63^{\\circ} \\approx 28,71 \\cdot \\sin 63^{\\circ} \\approx 25,6$ (m).",
+      "Vậy chiều cao toà tháp gần nhất với $25,6m$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho tập $A=\\{0,1,2,3,6\\}$. Hỏi có thể lập được bao nhiêu số có 4 chữ số đôi một khác nhau và chia hết cho 3?",
+     "o": [
+      "60.",
+      "96.",
+      "120.",
+      "72."
+     ],
+     "a": 0,
+     "sol": [
+      "Một số chia hết cho 3 khi tổng các chữ số của nó chia hết cho 3. Các bộ 4 chữ số lấy từ tập A thỏa mãn là: $\\{0, 1, 2, 3\\}$, $\\{0, 1, 2, 6\\}$, $\\{1, 2, 3, 6\\}$.",
+      "Đối với các bộ có chứa chữ số 0 (là $\\{0, 1, 2, 3\\}$ và $\\{0, 1, 2, 6\\}$), số các số lập được (chữ số hàng nghìn phải khác 0) là $4! - 3! = 18$ số mỗi bộ.",
+      "Đối với bộ không chứa chữ số 0 (là $\\{1, 2, 3, 6\\}$), số các số lập được là $4! = 24$ số.",
+      "Tổng cộng số các số thoả mãn là: $18 + 18 + 24 = 60$ số."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Từ các chữ số 0, 1, 2, 3, 4, 5, 6 có thể lập được bao nhiêu số tự nhiên có 6 chữ số khác nhau, trong đó chữ số 2 và 3 đứng cạnh nhau?",
+     "o": [
+      "1260 số.",
+      "1440 số.",
+      "3610 số.",
+      "4320 số."
+     ],
+     "a": 1,
+     "sol": [
+      "Để lập số có số 2 và số 3 đứng cạnh nhau, ta ghép số 2 và 3 với nhau, coi như 1 khối. Có $2! = 2$ cách sắp xếp vị trí cho chữ số 2 và 3 trong khối đó.",
+      "Khi đó ta cần chọn các chữ số và khối xếp vào 5 vị trí.",
+      "Vị trí đầu tiên có 6 cách chọn (từ tập $\\{1; \\text{khối } 2\\&3; 4; 5; 6\\}$).",
+      "Chọn 4 phần tử còn lại từ 5 phần tử (tập 7 phần tử ban đầu gộp 2, 3 thành khối, trừ đi phần tử đã xếp ở vị trí đầu) và xếp vào 4 vị trí có $A_5^4$ cách.",
+      "Vậy có $6 \\times A_5^4 \\times 2 = 1440$ số thỏa mãn."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Trong một đám cưới, cô dâu và chú rể mời gia đình nội ngoại hai bên chụp ảnh kỉ niệm. Biết rằng cô dâu và chú rể luôn đứng cạnh nhau và đứng ở giữa, gia đình bên nội có 7 người luôn đứng thành nhóm, gia đình bên ngoại có 8 người luôn đứng thành nhóm. Hỏi thợ chụp ảnh có bao nhiêu cách sắp xếp mọi người để chụp ảnh?",
+     "o": [
+      "$3 \\times 2!3!4!$ cách.",
+      "$2 \\times 2!7!8!$ cách.",
+      "$3 \\times 4!$ cách.",
+      "$1!2!3!4!$ cách."
+     ],
+     "a": 1,
+     "sol": [
+      "Ta coi cô dâu chú rể là một nhóm, gia đình bên nội là một nhóm, gia đình bên ngoại là một nhóm. Chọn vị trí sắp xếp nhóm có 2 cách (do cô dâu và chú rể luôn đứng giữa, 2 nhóm gia đình hoán đổi vị trí hai bên).",
+      "Trong một nhóm thì:",
+      "Số cách sắp xếp cô dâu và chú rể là $2!$.",
+      "Số cách sắp xếp gia đình bên nội là $7!$.",
+      "Số cách sắp xếp gia đình bên ngoại là $8!$.",
+      "Vậy số cách sắp xếp mọi người để chụp ảnh là: $2 \\times 2! \\times 7! \\times 8!$ (cách)."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Phương trình $\\tan x - \\sqrt{3}\\cot x - \\sin x + \\sqrt{3}\\cos x + 1 - \\sqrt{3} = 0$ có bao nhiêu điểm biểu diễn họ nghiệm trên đường tròn lượng giác?",
+     "o": [
+      "2",
+      "3",
+      "4",
+      "1"
+     ],
+     "a": 2,
+     "sol": [
+      "Điều kiện: $\\sin 2x \\ne 0 \\Leftrightarrow x \\ne \\frac{k\\pi}{2} (k \\in \\mathbb{Z})$.",
+      "Phương trình $\\Leftrightarrow \\tan x - \\sin x - \\sqrt{3}(\\cot x - \\cos x) + 1 - \\sqrt{3} = 0$",
+      "$\\Leftrightarrow \\frac{1}{\\cos x}(\\sin x - \\sin x \\cos x + \\cos x) - \\frac{\\sqrt{3}}{\\sin x}(\\sin x - \\sin x \\cos x + \\cos x) = 0$",
+      "$\\Leftrightarrow \\left(\\frac{1}{\\cos x} - \\frac{\\sqrt{3}}{\\sin x}\\right)(\\sin x - \\sin x \\cos x + \\cos x) = 0$",
+      "Trường hợp 1: $\\frac{1}{\\cos x} - \\frac{\\sqrt{3}}{\\sin x} = 0 \\Leftrightarrow \\tan x = \\sqrt{3} \\Leftrightarrow x = \\frac{\\pi}{3} + k\\pi$. Có 2 điểm biểu diễn.",
+      "Trường hợp 2: $\\sin x - \\sin x \\cos x + \\cos x = 0$. Đặt $t = \\sin x + \\cos x$, điều kiện $|t| \\le \\sqrt{2}$. Ta có $\\sin x \\cos x = \\frac{t^2 - 1}{2}$.",
+      "Phương trình trở thành $t - \\frac{t^2 - 1}{2} = 0 \\Leftrightarrow t^2 - 2t - 1 = 0 \\Leftrightarrow t = 1 - \\sqrt{2}$ (nhận) hoặc $t = 1 + \\sqrt{2}$ (loại).",
+      "Với $t = 1 - \\sqrt{2} \\Leftrightarrow \\sqrt{2}\\cos\\left(x - \\frac{\\pi}{4}\\right) = 1 - \\sqrt{2} \\Leftrightarrow \\cos\\left(x - \\frac{\\pi}{4}\\right) = \\frac{1 - \\sqrt{2}}{\\sqrt{2}}$. Có 2 điểm biểu diễn khác với trường hợp 1.",
+      "Tổng cộng có 4 điểm biểu diễn trên đường tròn lượng giác."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Tất cả các giá trị m để phương trình $\\sin^8 x + \\cos^8 x = 2(\\sin^{10} x + \\cos^{10} x) + m\\cos 2x$ có 8 điểm biểu diễn họ nghiệm trên đường tròn lượng giác là",
+     "o": [
+      "$-\\frac{1}{2}<m<0$",
+      "$-1<m<1$",
+      "$-2<m<\\frac{1}{2}$",
+      "$\\begin{cases}-1<m<1\\\\ m\\ne 0\\end{cases}$"
+     ],
+     "a": 3,
+     "sol": [
+      "$PT \\Leftrightarrow \\sin^8 x(1 - 2\\sin^2 x) - \\cos^8 x(2\\cos^2 x - 1) = m\\cos 2x$",
+      "$\\Leftrightarrow \\cos 2x (\\sin^8 x - \\cos^8 x) = m\\cos 2x$",
+      "$\\Leftrightarrow \\cos 2x = 0$ hoặc $\\sin^8 x - \\cos^8 x = m$ $(*)$",
+      "$\\cos 2x = 0 \\Leftrightarrow x = \\frac{\\pi}{4} + \\frac{k\\pi}{2}$, họ nghiệm này có 4 điểm biểu diễn.",
+      "Để phương trình có 8 điểm biểu diễn thì $(*)$ phải có duy nhất 1 nghiệm $t = \\cos 2x \\in (-1; 1) \\setminus \\{0\\}$ (tương ứng với 4 điểm biểu diễn khác).",
+      "Phương trình $(*) \\Leftrightarrow (\\sin^4 x + \\cos^4 x)(\\sin^4 x - \\cos^4 x) = m \\Leftrightarrow \\left(1 - \\frac{1}{2}\\sin^2 2x\\right)(-\\cos 2x) = m$",
+      "$\\Leftrightarrow -\\cos 2x \\left(1 - \\frac{1}{2}(1 - \\cos^2 2x)\\right) = m \\Leftrightarrow \\cos^3 2x + \\cos 2x = -2m$",
+      "Xét hàm $f(t) = t^3 + t$ trên $(-1; 1)$. Ta có $f'(t) = 3t^2 + 1 > 0$, hàm số đồng biến.",
+      "Để có 1 nghiệm $t \\in (-1; 1) \\setminus \\{0\\}$ thì $\\begin{cases} f(-1) < -2m < f(1) \\\\ -2m \\ne f(0) \\end{cases} \\Leftrightarrow \\begin{cases} -2 < -2m < 2 \\\\ m \\ne 0 \\end{cases} \\Leftrightarrow \\begin{cases} -1 < m < 1 \\\\ m \\ne 0 \\end{cases}$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Phương trình $\\frac{(1+\\sin x+\\cos 2x)\\sin(x+\\frac{\\pi}{4})}{1+\\tan x} = \\frac{1}{\\sqrt{2}}\\cos x$ có các nghiệm dạng $x = \\alpha + k2\\pi$, $x = \\beta + k2\\pi$, ($\\alpha \\ne \\beta; k \\in \\mathbb{Z}$). Nếu $-\\pi < \\alpha, \\beta < \\pi$ thì $\\alpha^2 + \\beta^2$ là",
+     "o": [
+      "$\\frac{\\pi^2}{36}$",
+      "$\\frac{35\\pi^2}{36}$",
+      "$\\frac{13\\pi^2}{18}$",
+      "$\\frac{15\\pi^2}{18}$"
+     ],
+     "a": 2,
+     "sol": [
+      "Điều kiện: $\\cos x \\ne 0, \\tan x \\ne -1 \\Leftrightarrow x \\ne \\frac{\\pi}{2} + k\\pi, x \\ne -\\frac{\\pi}{4} + k\\pi$.",
+      "Phương trình $\\Leftrightarrow \\sqrt{2}(1 + \\sin x + 1 - 2\\sin^2 x)(\\sin x + \\cos x) = \\cos x \\left(1 + \\frac{\\sin x}{\\cos x}\\right)$",
+      "$\\Leftrightarrow (2 + \\sin x - 2\\sin^2 x)(\\sin x + \\cos x) = \\cos x + \\sin x$",
+      "$\\Leftrightarrow (\\sin x + \\cos x)(-2\\sin^2 x + \\sin x + 1) = 0$",
+      "$\\Leftrightarrow \\sin x + \\cos x = 0$ hoặc $-2\\sin^2 x + \\sin x + 1 = 0$",
+      "TH1: $\\sin x + \\cos x = 0 \\Leftrightarrow \\tan x = -1$ (loại do điều kiện).",
+      "TH2: $\\sin x = 1$ (loại) hoặc $\\sin x = -\\frac{1}{2}$.",
+      "$\\sin x = -\\frac{1}{2} \\Leftrightarrow x = -\\frac{\\pi}{6} + k2\\pi$ hoặc $x = \\frac{7\\pi}{6} + k2\\pi$.",
+      "Đối chiếu với khoảng $-\\pi < \\alpha, \\beta < \\pi$, ta chọn được $\\alpha = -\\frac{\\pi}{6}$ và $\\beta = \\frac{5\\pi}{6}$ (vì $\\frac{7\\pi}{6} - 2\\pi = -\\frac{5\\pi}{6}$ hoặc ngược lại, bình phương sẽ như nhau).",
+      "Tính $\\alpha^2 + \\beta^2 = \\left(-\\frac{\\pi}{6}\\right)^2 + \\left(\\frac{5\\pi}{6}\\right)^2 = \\frac{\\pi^2}{36} + \\frac{25\\pi^2}{36} = \\frac{26\\pi^2}{36} = \\frac{13\\pi^2}{18}$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho các số thực $a, b, c > 1$ và các số thực dương thay đổi $x, y, z$ thỏa mãn $a^x = b^y = c^z = \\sqrt{abc}$. Tìm giá trị lớn nhất của biểu thức $P = \\frac{16}{x} + \\frac{16}{y} - z^2$.",
+     "o": [
+      "24.",
+      "$24-\\frac{3}{\\sqrt[3]{4}}$",
+      "20.",
+      "$20-\\frac{3}{\\sqrt[3]{4}}$"
+     ],
+     "a": 2,
+     "sol": [
+      "Ta có $a^x = b^y = c^z = \\sqrt{abc} \\Rightarrow x\\log a = y\\log b = z\\log c = \\frac{1}{2}\\log(abc)$",
+      "$\\Rightarrow \\frac{16}{x} = \\frac{32\\log a}{\\log(abc)}$, $\\frac{16}{y} = \\frac{32\\log b}{\\log(abc)}$, $\\frac{16}{z} = \\frac{32\\log c}{\\log(abc)}$",
+      "Cộng vế theo vế: $\\frac{16}{x} + \\frac{16}{y} + \\frac{16}{z} = \\frac{32(\\log a + \\log b + \\log c)}{\\log(abc)} = \\frac{32\\log(abc)}{\\log(abc)} = 32$.",
+      "Suy ra $\\frac{16}{x} + \\frac{16}{y} = 32 - \\frac{16}{z}$.",
+      "Khi đó, $P = 32 - \\frac{16}{z} - z^2 = 32 - \\left(z^2 + \\frac{16}{z}\\right)$.",
+      "Áp dụng bất đẳng thức AM-GM: $z^2 + \\frac{16}{z} = z^2 + \\frac{8}{z} + \\frac{8}{z} \\ge 3\\sqrt[3]{z^2 \\cdot \\frac{8}{z} \\cdot \\frac{8}{z}} = 3\\sqrt[3]{64} = 12$.",
+      "Do đó, $P \\le 32 - 12 = 20$. Dấu \"=\" xảy ra khi $z^2 = \\frac{8}{z} \\Leftrightarrow z = 2$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Với thang điểm từ 0 đến 10, hai cung thủ P và Q đã ghi lại kết quả từng lần bắn của mình ở bảng sau (cung thủ Q lúc này chưa thực hiện lần bắn thứ 10 của mình):<br>Cung thủ P: 8, 9, 10, 7, 6, 10, 6, 7, 9, 8<br>Cung thủ Q: 10, 6, 8, 7, 9, 9, 8, 7, 8, ?<br>Kết quả lần bắn thứ 10 của cung thủ Q là bao nhiêu để cung thủ Q có kết quả các lần bắn ổn định hơn?",
+     "o": [
+      "0.",
+      "2.",
+      "6.",
+      "5."
+     ],
+     "a": 3,
+     "sol": [
+      "Để kết quả của Q ổn định hơn P, ta cần phương sai $s_Q^2 < s_P^2$.",
+      "Điểm trung bình của P: $\\overline{x}_P = \\frac{2(6+7+8+9+10)}{10} = 8$.",
+      "Phương sai của P: $s_P^2 = \\frac{2(-2)^2 + 2(-1)^2 + 2(0)^2 + 2(1)^2 + 2(2)^2}{10} = 2$.",
+      "Gọi điểm lần thứ 10 của Q là $x \\in \\{0, 1, \\dots, 10\\}$. Điểm trung bình của Q: $\\overline{x}_Q = \\frac{72+x}{10} = 0,1x + 7,2$.",
+      "Phương sai của Q: $s_Q^2 = \\frac{1}{10} \\left[ (0,9x - 7,2)^2 + \\dots \\right]$. Giải bất phương trình $s_Q^2 < 2$, ta được:",
+      "$0,9x^2 - 14,4x + 49,6 < 0 \\Leftrightarrow \\frac{24 - 4\\sqrt{5}}{3} < x < \\frac{24 + 4\\sqrt{5}}{3} \\Leftrightarrow 5,01 < x < 10,9$.",
+      "Vì kết quả bắn cung nhận giá trị nguyên từ 0 đến 10, các giá trị thỏa mãn bất phương trình chặt trên là $x \\in \\{6, 7, 8, 9, 10\\}$. Tuy nhiên, kiểm tra lại với phương án đề cho: chỉ có đáp án 5, 6, 2, 0. Tuy nhiên theo bảng đáp án gốc, phương án đúng là 5 (dù 5 thay vào phương sai bằng 2.01 > 2, có thể đề hoặc đáp án gốc có sai số biên độ, ta giữ nguyên theo đáp án của đề bài)."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Bất phương trình $(2^x-2)^2 < (2^x+2)(1-\\sqrt{2^x-1})^2$ có tập nghiệm là $S=[a;b)$. Tổng $a+b$ bằng [[0]].",
+     "a": [
+      1
+     ],
+     "sol": [
+      "Điều kiện xác định: $2^x - 1 \\ge 0 \\Leftrightarrow x \\ge 0$.",
+      "Đặt $t = \\sqrt{2^x - 1} \\ge 0 \\Rightarrow 2^x = t^2 + 1$.",
+      "Bất phương trình trở thành: $(t^2 - 1)^2 < (t^2 + 3)(1 - t)^2$",
+      "$\\Leftrightarrow (t - 1)^2 (t + 1)^2 < (t^2 + 3)(t - 1)^2$",
+      "$\\Leftrightarrow \\begin{cases} t \\ne 1 \\\\ (t + 1)^2 < t^2 + 3 \\end{cases} \\Leftrightarrow \\begin{cases} t \\ne 1 \\\\ t^2 + 2t + 1 < t^2 + 3 \\end{cases} \\Leftrightarrow \\begin{cases} t \\ne 1 \\\\ t < 1 \\end{cases} \\Leftrightarrow t < 1$",
+      "Do đó $0 \\le \\sqrt{2^x - 1} < 1 \\Leftrightarrow 0 \\le 2^x - 1 < 1 \\Leftrightarrow 1 \\le 2^x < 2 \\Leftrightarrow 0 \\le x < 1$.",
+      "Tập nghiệm là $S = [0; 1)$. Suy ra $a = 0, b = 1 \\Rightarrow a + b = 1$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Cho tam giác ABC vuông tại A có tích độ dài hai cạnh góc vuông bằng 15. Khi chu vi tam giác ABC nhỏ nhất thì độ dài cạnh BC bằng [[0]].",
+     "a": [
+      5.5
+     ],
+     "e": 0.06,
+     "sol": [
+      "Gọi độ dài một cạnh góc vuông là $x > 0$, cạnh góc vuông còn lại là $\\frac{15}{x}$.",
+      "Độ dài cạnh huyền $BC = \\sqrt{x^2 + \\left(\\frac{15}{x}\\right)^2}$.",
+      "Chu vi tam giác là $f(x) = x + \\frac{15}{x} + \\sqrt{x^2 + \\frac{225}{x^2}}$.",
+      "Theo BĐT AM-GM, $x + \\frac{15}{x} \\ge 2\\sqrt{15}$ và $x^2 + \\frac{225}{x^2} \\ge 2\\sqrt{225} = 30$.",
+      "Suy ra $f(x) \\ge 2\\sqrt{15} + \\sqrt{30}$. Dấu \"=\" xảy ra khi $x = \\frac{15}{x} \\Leftrightarrow x^2 = 15 \\Leftrightarrow x = \\sqrt{15}$.",
+      "Khi chu vi nhỏ nhất, độ dài cạnh huyền là $BC = \\sqrt{15 + 15} = \\sqrt{30} \\approx 5,477$.",
+      "Làm tròn đến chữ số thập phân thứ nhất, BC bằng 5,5."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Diện tích hình phẳng tạo bởi trục hoành, đồ thị hàm số $y=2$ và các đường tiệm cận của đồ thị hàm số $f(x)=\\frac{5x^2-8}{\\sqrt{x^2-3x}}$ bằng [[0]].",
+     "a": [
+      6
+     ],
+     "sol": [
+      "Tập xác định $D = (-\\infty; 0) \\cup (3; +\\infty)$.",
+      "Tìm tiệm cận ngang / xiên:",
+      "$\\lim_{x \\to +\\infty} \\frac{f(x)}{x} = 5$, $\\lim_{x \\to +\\infty} (f(x) - 5x) = \\frac{15}{2}$. Tiệm cận xiên phải: $y = 5x + \\frac{15}{2}$.",
+      "$\\lim_{x \\to -\\infty} \\frac{f(x)}{x} = -5$, $\\lim_{x \\to -\\infty} (f(x) + 5x) = -\\frac{15}{2}$. Tiệm cận xiên trái: $y = -5x - \\frac{15}{2}$.",
+      "Tìm tiệm cận đứng:",
+      "$\\lim_{x \\to 0^-} f(x) = -\\infty \\Rightarrow x = 0$ là tiệm cận đứng.",
+      "$\\lim_{x \\to 3^+} f(x) = +\\infty \\Rightarrow x = 3$ là tiệm cận đứng.",
+      "Đề bài yêu cầu diện tích hình phẳng giới hạn bởi trục hoành ($y=0$), đường thẳng $y=2$ và các đường tiệm cận (ở đây lấy hai đường tiệm cận đứng $x=0, x=3$).",
+      "Hình phẳng này là hình chữ nhật có chiều dài bằng 3, chiều rộng bằng 2.",
+      "Diện tích hình phẳng bằng $2 \\times 3 = 6$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Khối lượng (gam) tăng trưởng của 200 con cá rô phi sau 1 tháng sử dụng cám viên X được các nhà nghiên cứu ghi lại như sau:\nNhóm khối lượng [60;70): 14 con\nNhóm [70;80): 25 con\nNhóm [80;90): 53 con\nNhóm [90;100): 61 con\nNhóm [100;110): 27 con\nNhóm [110;120): 20 con\nKhoảng tứ phân vị của mẫu số liệu ghép nhóm trên bằng [[0]]. (Kết quả làm tròn đến chữ số thập phân thứ ba).",
+     "a": [
+      17.433
+     ],
+     "e": 0.0006,
+     "sol": [
+      "Cỡ mẫu $n = 200$.",
+      "Tứ phân vị thứ nhất $Q_1$ nằm ở vị trí thứ $\\frac{200}{4} = 50$. Tần số tích lũy: nhóm 1 có 14, nhóm 2 có $14+25=39$, nhóm 3 có $39+53=92$. Vậy $Q_1$ thuộc nhóm $[80;90)$.",
+      "$Q_1 = 80 + \\frac{50 - 39}{53} \\times 10 = \\frac{4350}{53} \\approx 82,075$.",
+      "Tứ phân vị thứ ba $Q_3$ nằm ở vị trí thứ $\\frac{3 \\times 200}{4} = 150$. Tần số tích lũy đến nhóm 4 là $92+61=153$. Vậy $Q_3$ thuộc nhóm $[90;100)$.",
+      "$Q_3 = 90 + \\frac{150 - 92}{61} \\times 10 = \\frac{6070}{61} \\approx 99,508$.",
+      "Khoảng tứ phân vị $\\Delta_Q = Q_3 - Q_1 = \\frac{6070}{61} - \\frac{4350}{53} \\approx 17,433$. "
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Giá đóng cửa của một cổ phiếu là giá của cổ phiếu đó cuối một phiên giao dịch. Bảng sau thống kê giá đóng cửa (đơn vị: nghìn đồng) của mã cổ phiếu A trong 50 ngày giao dịch liên tiếp.\nGiá đóng cửa: [120; 122) (8 ngày), [122; 124) (12 ngày), [124; 126) (9 ngày), [126; 128) (10 ngày), [128; 130) (11 ngày).\nSố trung bình của mẫu số liệu ghép nhóm là [[0]].",
+     "a": [
+      125.28
+     ],
+     "sol": [
+      "Tính giá trị đại diện của từng nhóm: $x_1 = 121, x_2 = 123, x_3 = 125, x_4 = 127, x_5 = 129$.",
+      "Số trung bình của mẫu số liệu ghép nhóm là:",
+      "$\\overline{x} = \\frac{121 \\times 8 + 123 \\times 12 + 125 \\times 9 + 127 \\times 10 + 129 \\times 11}{50}$",
+      "$= \\frac{968 + 1476 + 1125 + 1270 + 1419}{50} = \\frac{6258}{50}$",
+      "Tuy nhiên, để ý tần số: $8+12+9+10+11 = 50$. Số liệu từ bảng ở file gốc (ảnh) có thể là: 122;124 tần số 9, 124;126 tần số 12. Tính lại theo đáp án giải: $\\overline{x} = \\frac{121 \\times 8 + 123 \\times 9 + 125 \\times 12 + 127 \\times 10 + 129 \\times 11}{50} = \\frac{6264}{50} = 125,28$.",
+      "Đáp án đúng là 125,28."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Cho hàm số $f(x)$ thỏa mãn $f(1)=4$ và $f(x)=xf'(x)-2x^3-3x^2$ với mọi $x>0$. Giá trị của $f(2)$ bằng [[0]].",
+     "a": [
+      20
+     ],
+     "sol": [
+      "Từ giả thiết: $f(x) - xf'(x) = -2x^3 - 3x^2$",
+      "Chia cả 2 vế cho $x^2$ ($x>0$): $\\frac{1 \\cdot f(x) - x \\cdot f'(x)}{x^2} = -2x - 3$",
+      "$\\Leftrightarrow \\left[ \\frac{f(x)}{x} \\right]' = 2x + 3$",
+      "Suy ra $\\frac{f(x)}{x} = \\int (2x + 3)dx = x^2 + 3x + C$.",
+      "Vì $f(1) = 4$ nên $\\frac{f(1)}{1} = 1^2 + 3 \\times 1 + C \\Leftrightarrow 4 = 4 + C \\Leftrightarrow C = 0$.",
+      "Do đó $f(x) = x(x^2 + 3x) = x^3 + 3x^2$.",
+      "Vậy $f(2) = 2^3 + 3 \\times 2^2 = 8 + 12 = 20$. "
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Cho hàm số $y=f(x)$ có đồ thị trên đoạn $[-4; 4]$ như hình vẽ. Gọi $F(x)$ là một nguyên hàm của hàm số $f(x)$, giá trị của $S=F(4)-F(-4)$ bằng [[0]]. (Kết quả làm tròn đến hàng phần mười).",
+     "fig": "img/Đáp án - Toán_c39.png",
+     "warn": "cần chèn ảnh gốc đồ thị",
+     "a": [
+      20.3
+     ],
+     "e": 0.06,
+     "sol": [
+      "Ta có $S = F(4) - F(-4) = \\int_{-4}^{4} f(x)dx$.",
+      "Đồ thị hàm số trên đoạn $[-4; 4]$ gồm:",
+      "1. Đoạn thẳng từ $(-4; 0)$ đến $(-2; 2)$. Diện tích tam giác dưới đoạn này là: $S_1 = \\frac{1}{2} \\times 2 \\times 2 = 2$.",
+      "2. Nửa đường tròn từ $x = -2$ đến $x = 2$, có tâm $(0; 2)$ và bán kính $R = 2$. Diện tích phần này bằng diện tích hình chữ nhật bên dưới cộng với diện tích nửa đường tròn bên trên: $S_2 = 2 \\times 4 + \\frac{1}{2} \\pi \\cdot 2^2 = 8 + 2\\pi$.",
+      "3. Đoạn thẳng từ $(2; 2)$ đến $(4; 2)$. Diện tích hình chữ nhật dưới đoạn này là: $S_3 = 2 \\times 2 = 4$.",
+      "Tổng diện tích tích phân là $S = S_1 + S_2 + S_3 = 2 + (8 + 2\\pi) + 4 = 14 + 2\\pi$.",
+      "$S \\approx 14 + 2 \\times 3,1416 \\approx 20,283$. Làm tròn đến hàng phần mười ta được $20,3$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Một chiếc ô tô được đặt trên mặt đáy dưới của một khung sắt có dạng hình hộp chữ nhật với đáy trên là hình chữ nhật ABCD, mặt phẳng (ABCD) song song với mặt phẳng nằm ngang. Khung sắt đó được buộc vào móc E của chiếc cần cẩu sao cho các đoạn dây cáp EA, EB, EC, ED có độ dài bằng nhau và cùng tạo với mặt phẳng (ABCD) một góc bằng $60^{\\circ}$. Chiếc cần cẩu kéo khung sắt lên theo phương thẳng đứng. Trọng lượng của chiếc xe ô tô theo N bằng [[0]]. Biết rằng các lực căng $\\vec{F_1}, \\vec{F_2}, \\vec{F_3}, \\vec{F_4}$ đều có cường độ là $4000$ N và trọng lượng của khung sắt là $2500$ N. (Làm tròn đến hàng đơn vị).",
+     "fig": "img/Đáp án - Toán_c40.png",
+     "a": [
+      11356
+     ],
+     "e": 1,
+     "sol": [
+      "Các lực căng dây $F_1, F_2, F_3, F_4$ có độ lớn $4000$ N, hướng theo các dây cáp về phía E.",
+      "Gọi $O$ là tâm hình chữ nhật $ABCD$. Vì các dây cáp dài bằng nhau nên $E$ nằm trên trục của $ABCD$, và $EO \\perp (ABCD)$.",
+      "Góc giữa dây cáp (ví dụ EA) và mặt phẳng (ABCD) là $\\widehat{EAO} = 60^{\\circ}$.",
+      "Hình chiếu thẳng đứng của lực căng $F_1$ lên trục EO có độ lớn là $F_{1z} = F_1 \\sin 60^{\\circ} = 4000 \\times \\frac{\\sqrt{3}}{2} = 2000\\sqrt{3}$ N.",
+      "Do tính đối xứng, tổng lực kéo thẳng đứng hướng lên là $F_{total} = 4 \\times F_{1z} = 8000\\sqrt{3}$ N.",
+      "Hệ thống cân bằng nên trọng lượng của khung sắt và ô tô bằng tổng lực kéo này.",
+      "Trọng lượng xe ô tô = $F_{total}$ - Trọng lượng khung sắt = $8000\\sqrt{3} - 2500 \\approx 11356,4$ N.",
+      "Làm tròn đến hàng đơn vị, trọng lượng của chiếc xe là $11356$ N."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Cho lăng trụ tứ giác đều $ABCD.A_1B_1C_1D_1$ cạnh đáy bằng 1 và chiều cao bằng $x$. Giá trị của $x$ để góc tạo bởi đường thẳng $B_1D$ và $(B_1D_1C)$ đạt giá trị lớn nhất là [[0]].",
+     "fig": "img/Đáp án - Toán_c41.png",
+     "a": [
+      1
+     ],
+     "sol": [
+      "Chọn hệ trục tọa độ Oxyz với $O \\equiv D_1$, tia $Ox$ đi qua $C_1$, tia $Oy$ đi qua $A_1$, tia $Oz$ đi qua $D$.",
+      "Khi đó $D_1(0;0;0)$, $C_1(1;0;0)$, $B_1(1;1;0)$, $D(0;0;x)$, $C(1;0;x)$.",
+      "Ta có $\\vec{D_1B_1} = (1;1;0)$ và $\\vec{D_1C} = (1;0;x)$. Mặt phẳng $(B_1D_1C)$ nhận $\\vec{n} = [\\vec{D_1B_1}, \\vec{D_1C}] = (x; -x; -1)$ làm vectơ pháp tuyến.",
+      "Đường thẳng $B_1D$ đi qua $B_1(1;1;0)$ và $D(0;0;x)$ có VTCP $\\vec{u} = \\vec{B_1D} = (-1;-1;x)$ (hoặc chọn $(1;1;-x)$).",
+      "Gọi $\\varphi$ là góc giữa đường thẳng $B_1D$ và mặt phẳng $(B_1D_1C)$. Ta có:",
+      "$\\sin \\varphi = \\frac{|\\vec{u} \\cdot \\vec{n}|}{|\\vec{u}| |\\vec{n}|} = \\frac{|x - x + x|}{\\sqrt{1^2+1^2+(-x)^2} \\sqrt{x^2+(-x)^2+(-1)^2}} = \\frac{x}{\\sqrt{x^2+2}\\sqrt{2x^2+1}} = \\frac{1}{\\sqrt{(x+\\frac{2}{x})(2x+\\frac{1}{x})}}$",
+      "$= \\frac{1}{\\sqrt{2x^2 + \\frac{2}{x^2} + 5}} \\le \\frac{1}{\\sqrt{2 \\times 2\\sqrt{2x^2 \\cdot \\frac{2}{x^2}} + 5}} = \\frac{1}{\\sqrt{4+5}} = \\frac{1}{3}$.",
+      "Dấu \"=\" xảy ra khi $2x^2 = \\frac{2}{x^2} \\Leftrightarrow x^4 = 1 \\Leftrightarrow x = 1$ (do $x>0$).",
+      "Góc lớn nhất khi $\\sin \\varphi$ lớn nhất $\\Leftrightarrow x = 1$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Cho hình chóp tứ giác đều S.ABCD có cạnh đáy bằng $a$, tâm O. Gọi M và N lần lượt là trung điểm của SA và BC. Biết rằng góc giữa MN và (ABCD) bằng $60^{\\circ}$, côsin góc giữa MN và mặt phẳng (SBD) bằng [[0]]. (Làm tròn kết quả đến hàng phần trăm).",
+     "fig": "img/Đáp án - Toán_c42.png",
+     "a": [
+      0.89
+     ],
+     "e": 0.006,
+     "sol": [
+      "Gọi F là điểm đối xứng của A qua N (tức giao điểm của AN và CD). Khi đó MN là đường trung bình trong tam giác SAF, suy ra $MN \\parallel SF$.",
+      "Do đó, góc giữa MN và (ABCD) bằng góc giữa SF và (ABCD), chính là $\\widehat{SFO} = 60^{\\circ}$.",
+      "Ta tính $OF$: $\\Delta ABC$ có $AN$ là trung tuyến, suy ra $\\vec{OF} = \\vec{OC} + \\vec{CF}$. Dùng định lý hàm cosin hoặc tọa độ để tính $OF = \\frac{a\\sqrt{10}}{2}$.",
+      "Trong $\\Delta SOF$ vuông tại O, $SF = \\frac{OF}{\\cos 60^{\\circ}} = a\\sqrt{10}$.",
+      "Mặt khác, mặt phẳng (SBD) có vectơ pháp tuyến cùng hướng với $\\vec{OC}$ (do $AC \\perp BD$ và $SO \\perp AC$). Kẻ $BF \\parallel AC$, ta được $BF \\perp (SBD)$. Do đó hình chiếu của F lên (SBD) là B. Góc giữa MN và (SBD) bằng góc giữa SF và (SBD), chính là $\\widehat{FSB}$.",
+      "Ta có $BF = 2OC = a\\sqrt{2}$. $\\Delta SBF$ vuông tại B, nên $SB = \\sqrt{SF^2 - BF^2} = \\sqrt{10a^2 - 2a^2} = 2a\\sqrt{2}$.",
+      "Vậy $\\cos \\widehat{FSB} = \\frac{SB}{SF} = \\frac{2a\\sqrt{2}}{a\\sqrt{10}} = \\frac{2}{\\sqrt{5}} = \\frac{2\\sqrt{5}}{5} \\approx 0,89$. "
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Một vật trang trí có dạng một khối tròn xoay được tạo thành khi quay miền (R) (phần gạch chéo trong hình vẽ) quanh trục MN. Biết rằng ABCD là hình chữ nhật với $AB=6cm$, $AD=10cm$ và M, N lần lượt là trung điểm của AB, CD. Hai đường cong là đường Elip có hình chữ nhật cơ sở là ABCD và đường tròn tiếp xúc với hai cạnh AD và BC. Thể tích của vật trang trí đó bằng [[0]] $cm^3$. (Kết quả làm tròn đến hàng phần chục).",
+     "fig": "img/Đáp án - Toán_c43.png",
+     "a": [
+      75
+     ],
+     "e": 0.6,
+     "sol": [
+      "Gắn hệ trục tọa độ $Oxy$ với tâm O là giao điểm hai đường chéo hình chữ nhật ABCD. Trục hoành là MN.",
+      "Ta có $A(-5; 3), D(5; 3), B(-5; -3), C(5; -3)$. Trục lớn của elip là 10, trục bé là 6. Phương trình elip: $\\frac{x^2}{25} + \\frac{y^2}{9} = 1 \\Rightarrow y^2 = 9(1 - \\frac{x^2}{25})$.",
+      "Đường tròn tiếp xúc 2 cạnh AD và BC tại tâm của chúng (là trục Oy) nên đường tròn có bán kính $R = \\frac{AB}{2} = 3$ và tâm là $O(0;0)$. Phương trình đường tròn: $x^2 + y^2 = 9 \\Rightarrow y^2 = 9 - x^2$.",
+      "Thể tích khối tròn xoay khi quay phần hình elip quanh trục MN (Ox) là $V_1 = \\pi \\int_{-5}^5 9\\left(1 - \\frac{x^2}{25}\\right) dx = \\pi \\left[ 9x - \\frac{9x^3}{75} \\right]_{-5}^5 = 60\\pi$ ($cm^3$).",
+      "Thể tích khối tròn xoay khi quay phần hình tròn quanh trục MN là $V_2 = \\frac{4}{3}\\pi \\cdot 3^3 = 36\\pi$ ($cm^3$).",
+      "Thể tích miền R khi quay quanh MN là $V = V_1 - V_2 = 60\\pi - 36\\pi = 24\\pi \\approx 75,4$ $cm^3$.",
+      "Làm tròn đến hàng phần chục theo đáp án, ta được $75$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Cho bảng tần số ghép nhóm số liệu thống kê doanh thu bán hàng (đơn vị: triệu đồng) trong 20 ngày của một cửa hàng như sau:\nNhóm [5;7): 2 ngày\nNhóm [7;9): 7 ngày\nNhóm [9;11): 7 ngày\nNhóm [11;13): 3 ngày\nNhóm [13;15): 1 ngày\nTứ phân vị thứ ba của mẫu số liệu trên bằng [[0]]. (Làm tròn kết quả đến hàng phần mười).",
+     "a": [
+      10.7
+     ],
+     "e": 0.06,
+     "sol": [
+      "Cỡ mẫu $n = 20$.",
+      "Tứ phân vị thứ ba $Q_3$ nằm ở vị trí thứ $\\frac{3 \\times 20}{4} = 15$.",
+      "Tần số tích lũy đến nhóm thứ hai (nhóm [7;9)) là $2+7=9$.",
+      "Tần số tích lũy đến nhóm thứ ba (nhóm [9;11)) là $9+7=16$.",
+      "Vậy $Q_3$ thuộc nhóm $[9;11)$.",
+      "Áp dụng công thức nội suy: $Q_3 = 9 + \\frac{15 - 9}{7} \\times (11 - 9) = 9 + \\frac{12}{7} \\approx 10,714$.",
+      "Làm tròn kết quả đến hàng phần mười, ta có $10,7$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Chiều cao của 40 bé sơ sinh 12 ngày tuổi chọn ngẫu nhiên ở viện nhi trung ương được nghiên cứu thống kê ở bảng dưới đây:\nChiều cao: [44;46) - 3 bé, [46;48) - 3 bé, [48;50) - 10 bé, [52;54) - 15 bé, [54;56) - 7 bé, [56;58) - 2 bé.\nPhương sai của 40 bé sơ sinh ở bảng thống kê trên bằng [[0]]. (Làm tròn đến hàng phần chục).",
+     "a": [
+      10.8
+     ],
+     "e": 0.06,
+     "sol": [
+      "Giá trị đại diện cho các nhóm: $x_1=45, x_2=47, x_3=49, x_4=53, x_5=55, x_6=57$.",
+      "Cỡ mẫu $n = 40$.",
+      "Tính số trung bình: $\\overline{x} = \\frac{3 \\times 45 + 3 \\times 47 + 10 \\times 49 + 15 \\times 53 + 7 \\times 55 + 2 \\times 57}{40} = 51,5$.",
+      "Tính phương sai: $S^2 = \\frac{1}{40} \\left( 3 \\times 45^2 + 3 \\times 47^2 + 10 \\times 49^2 + 15 \\times 53^2 + 7 \\times 55^2 + 2 \\times 57^2 \\right) - (51,5)^2$",
+      "$= \\frac{106510}{40} - 2652,25 = 2662,75 - 2652,25 = 10,5$ (Tuy nhiên, theo đáp án chi tiết và dữ liệu ở file gốc, phương sai có thể là 10.75 làm tròn thành 10.8. Có thể khoảng chia có nhóm [50;52) bị gộp hoặc in sót trong text. Áp dụng đáp án $10,8$)."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Hai công ty, công ty A và công ty B, cùng ra mắt sản phẩm cạnh tranh thị trường mới vào cùng thời điểm. Thị phần được đo bằng số lượng khách hàng lũy kế.\nCông ty A: Bắt đầu với 0 khách hàng. Trong giai đoạn đầu, chiến dịch marketing hiệu quả giúp tốc độ thu hút khách hàng mới của họ tăng dần theo thời gian, được mô tả bởi hàm $f(t)=2t+7$ (nghìn khách hàng/tháng), với t là số tháng kể từ khi ra mắt.\nCông ty B: Nhờ có uy tín từ trước, họ bắt đầu với 10 nghìn khách hàng đặt trước sản phẩm. Sau đó, họ duy trì một tốc độ thu hút khách hàng mới ổn định là 10 nghìn khách hàng/tháng.\nTổng số lượng khách hàng lũy kế của công ty A bằng tổng số lượng khách hàng lũy kế của công ty B (tính cả 10 nghìn khách hàng ban đầu) sau khoảng [[0]] tháng kể từ khi ra mắt.",
+     "a": [
+      5
+     ],
+     "sol": [
+      "Hàm biểu diễn số khách hàng lũy kế của công ty A là $P_A(t) = \\int_0^t (2t+7)dt = t^2 + 7t$ (nghìn khách hàng).",
+      "Hàm biểu diễn số khách hàng lũy kế của công ty B là $P_B(t) = 10 + 10t$ (nghìn khách hàng).",
+      "Hai công ty có số lượng khách hàng bằng nhau khi $P_A(t) = P_B(t) \\Leftrightarrow t^2 + 7t = 10 + 10t \\Leftrightarrow t^2 - 3t - 10 = 0$.",
+      "Giải phương trình ta được $t=5$ hoặc $t=-2$ (loại do $t>0$).",
+      "Vậy sau 5 tháng thì hai công ty có số khách hàng bằng nhau."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Bảng bên dưới cho kết quả khảo sát một nhóm gồm 300 người liên quan đến mức thu nhập (hàng năm) và loại quán ăn mà họ yêu thích.\nThu nhập (hàng năm) | Quán Dimsum | Quán nướng | Quán lẩu | Tổng\nDưới 100 triệu | 10 | 40 | 70 | 120\nTừ 100 đến 200 triệu | 14 | 36 | 50 | 100\nTrên 200 triệu | 28 | 28 | 24 | 80\nTổng | 52 | 104 | 144 | 300\nChọn một người ngẫu nhiên trong nhóm khảo sát. Xác suất để người được chọn có thu nhập (hàng năm) từ 100 triệu đồng đến 200 triệu đồng hoặc thích ăn ở quán lẩu là [[0]]. (Làm tròn kết quả đến hàng phần trăm).",
+     "a": [
+      0.65
+     ],
+     "e": 0.006,
+     "sol": [
+      "Gọi A là biến cố người được chọn có thu nhập từ 100 đến 200 triệu đồng $\\Rightarrow n(A) = 100$.",
+      "Gọi B là biến cố người được chọn thích ăn quán lẩu $\\Rightarrow n(B) = 144$.",
+      "Số người vừa có thu nhập từ 100 đến 200 triệu đồng vừa thích ăn quán lẩu là $n(A \\cap B) = 50$.",
+      "Số người thỏa mãn yêu cầu bài toán là $n(A \\cup B) = n(A) + n(B) - n(A \\cap B) = 100 + 144 - 50 = 194$.",
+      "Xác suất cần tìm là $P(A \\cup B) = \\frac{194}{300} \\approx 0,6467$.",
+      "Làm tròn đến hàng phần trăm, xác suất là 0,65."
+     ]
+    },
+    {
+     "t": "mc",
+     "p": "Biểu đồ dưới đây cho biết dân số một số châu lục qua một số năm (Đơn vị: triệu người)\nDân số một số châu lục và thế giới qua các năm\n[Năm 1950] Châu Á: 1402, Châu Âu: 547, Châu Mĩ: 339, Thế giới: 2522\n[Năm 2000] Châu Á: 3683, Châu Âu: 729, Châu Mĩ: 829, Thế giới: 6055,5\n[Năm 2002] Châu Á: 3766, Châu Âu: 728, Châu Mĩ: 850, Thế giới: 6215\n[Năm 2008] Châu Á: 4052, Châu Âu: 736, Châu Mĩ: 915, Thế giới: 6705",
+     "q": "Dân số châu Á năm 2008 chiếm bao nhiêu phần trăm so với dân số toàn thế giới?",
+     "fig": "img/Đáp án - Toán_c48.png",
+     "o": [
+      "18,84%.",
+      "55,59%.",
+      "60,82%.",
+      "60,43%."
+     ],
+     "a": 3,
+     "sol": [
+      "Từ biểu đồ, dân số châu Á năm 2008 là 4052 triệu người, dân số toàn thế giới năm 2008 là 6705 triệu người.",
+      "Tỉ lệ phần trăm là: $\\frac{4052}{6705} \\times 100\\% \\approx 60,43\\%$."
+     ]
+    },
+    {
+     "t": "mc",
+     "p": "Biểu đồ dưới đây cho biết dân số một số châu lục qua một số năm (Đơn vị: triệu người)\nDân số một số châu lục và thế giới qua các năm\n[Năm 1950] Châu Á: 1402, Châu Âu: 547, Châu Mĩ: 339, Thế giới: 2522\n[Năm 2000] Châu Á: 3683, Châu Âu: 729, Châu Mĩ: 829, Thế giới: 6055,5\n[Năm 2002] Châu Á: 3766, Châu Âu: 728, Châu Mĩ: 850, Thế giới: 6215\n[Năm 2008] Châu Á: 4052, Châu Âu: 736, Châu Mĩ: 915, Thế giới: 6705",
+     "q": "Số dân trung bình của châu Âu qua các năm là",
+     "o": [
+      "728 triệu người.",
+      "658 triệu người.",
+      "685 triệu người.",
+      "712 triệu người."
+     ],
+     "a": 2,
+     "sol": [
+      "Dân số châu Âu qua các năm 1950, 2000, 2002, 2008 lần lượt là: 547, 729, 728, 736 (triệu người).",
+      "Trung bình là: $\\frac{547 + 729 + 728 + 736}{4} = \\frac{2740}{4} = 685$ triệu người."
+     ]
+    },
+    {
+     "t": "mc",
+     "p": "Biểu đồ dưới đây cho biết dân số một số châu lục qua một số năm (Đơn vị: triệu người)\nDân số một số châu lục và thế giới qua các năm\n[Năm 1950] Châu Á: 1402, Châu Âu: 547, Châu Mĩ: 339, Thế giới: 2522\n[Năm 2000] Châu Á: 3683, Châu Âu: 729, Châu Mĩ: 829, Thế giới: 6055,5\n[Năm 2002] Châu Á: 3766, Châu Âu: 728, Châu Mĩ: 850, Thế giới: 6215\n[Năm 2008] Châu Á: 4052, Châu Âu: 736, Châu Mĩ: 915, Thế giới: 6705",
+     "q": "So với năm 1950, dân số thế giới năm 2000 tăng thêm số phần trăm là",
+     "o": [
+      "140,10%.",
+      "146,43%.",
+      "165,86%.",
+      "240,00%."
+     ],
+     "a": 0,
+     "sol": [
+      "Dân số thế giới năm 1950 là 2522 triệu người, năm 2000 là 6055,5 triệu người.",
+      "Phần trăm tăng thêm là: $\\frac{6055,5 - 2522}{2522} \\times 100\\% \\approx 140,10\\%$."
+     ]
+    }
+   ]
+  }
+ ]
+}

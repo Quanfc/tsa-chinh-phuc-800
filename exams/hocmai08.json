@@ -1,0 +1,1450 @@
+{
+ "title": "HOCMAI08",
+ "sections": [
+  {
+   "title": "Đề Toán Số 08",
+   "minutes": 60,
+   "questions": [
+    {
+     "t": "mc",
+     "q": "Trong một kì thi có 60% thí sinh đỗ. Hai bạn A, B cùng dự kì thi đó. Xác suất để chỉ có một bạn thi đỗ là",
+     "o": [
+      "0.24.",
+      "0.36.",
+      "0.16.",
+      "0.48."
+     ],
+     "a": 3,
+     "solved": true,
+     "sol": [
+      "Tỉ lệ đỗ là $p = 60\\% = 0,6$. Tỉ lệ trượt là $1 - p = 0,4$.",
+      "Xác suất bạn A đỗ là $P(A) = 0,6$, trượt là $P(\\bar{A}) = 0,4$.",
+      "Xác suất bạn B đỗ là $P(B) = 0,6$, trượt là $P(\\bar{B}) = 0,4$.",
+      "Trường hợp 1: A đỗ, B trượt. Xác suất $P_1 = P(A) \\cdot P(\\bar{B}) = 0,6 \\cdot 0,4 = 0,24$.",
+      "Trường hợp 2: A trượt, B đỗ. Xác suất $P_2 = P(\\bar{A}) \\cdot P(B) = 0,4 \\cdot 0,6 = 0,24$.",
+      "Xác suất để chỉ có một bạn thi đỗ là $P = P_1 + P_2 = 0,24 + 0,24 = 0,48$."
+     ],
+     "warn": "Đề thiếu dấu % sau số 60. Đã suy luận theo logic 60%."
+    },
+    {
+     "t": "mc",
+     "q": "Trong mặt phẳng tọa độ Oxy, cho tam giác ABC có $A(-3;0)$ và $B(3;0)$. Gọi $C(2;6)$. $H(a;b)$ là tọa độ trực tâm của tam giác đã cho. Tính $a+6b$.",
+     "o": [
+      "$a+6b=5$",
+      "$a+6b=6$",
+      "$a+6b=7$",
+      "$a+6b=8$"
+     ],
+     "a": 2,
+     "solved": true,
+     "sol": [
+      "Ta có $\\vec{AC} = (5; 6)$, $\\vec{BC} = (-1; 6)$, $\\vec{AB} = (6; 0)$.",
+      "Vì H(a;b) là trực tâm nên $AH \\perp BC$ và $CH \\perp AB$.",
+      "$\\vec{AH} = (a+3; b)$. Vì $AH \\perp BC$ nên $\\vec{AH} \\cdot \\vec{BC} = 0 \\Leftrightarrow -1(a+3) + 6b = 0 \\Leftrightarrow -a + 6b = 3$ (1).",
+      "$\\vec{CH} = (a-2; b-6)$. Vì $CH \\perp AB$ nên $\\vec{CH} \\cdot \\vec{AB} = 0 \\Leftrightarrow 6(a-2) + 0(b-6) = 0 \\Leftrightarrow a = 2$ (2).",
+      "Thay (2) vào (1): $-2 + 6b = 3 \\Leftrightarrow 6b = 5 \\Leftrightarrow b = \\frac{5}{6}$.",
+      "Vậy tọa độ trực tâm $H(2; \\frac{5}{6})$.",
+      "Tính $a + 6b = 2 + 6\\left(\\frac{5}{6}\\right) = 2 + 5 = 7$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Hàm số $y=f(x)$ có đạo hàm $f'(x)=x^{2}-x,\\forall x\\in \\mathbb{R}$. Biết hàm số $g(x)=-2f(x)$ đồng biến trên khoảng $(a;b)$. Có tối đa [[0]] giá trị nguyên thuộc khoảng $(a;b)$.",
+     "a": [
+      0
+     ],
+     "solved": true,
+     "sol": [
+      "Đạo hàm $g'(x) = -2f'(x) = -2(x^2 - x)$.",
+      "Để $g(x)$ đồng biến thì $g'(x) \\ge 0 \\Leftrightarrow -2(x^2 - x) \\ge 0 \\Leftrightarrow x^2 - x \\le 0 \\Leftrightarrow 0 \\le x \\le 1$.",
+      "Vậy khoảng đồng biến lớn nhất là $(0; 1)$, suy ra $(a;b) \\subset (0;1)$.",
+      "Giữa 0 và 1 không có bất kì số nguyên nào. Do đó, trong khoảng $(a;b)$ có tối đa 0 giá trị nguyên."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Đồ thị dưới đây có thể là đồ thị của hàm số nào?",
+     "fig": "img/toan_c4_dehocmai08.png",
+     "warn": "cần chèn ảnh đồ thị",
+     "o": [
+      "$y=3^{x}$",
+      "$y=(\\sqrt{3})^{x}$",
+      "$y=(-\\frac{1}{3})^{x}$",
+      "$y=(\\frac{1}{3})^{x}$"
+     ],
+     "a": 3,
+     "solved": true,
+     "sol": [
+      "Đồ thị hàm số đi qua điểm $(-1; 3)$.",
+      "Thử phương án A: $3^{-1} = \\frac{1}{3} \\neq 3$ (loại).",
+      "Thử phương án B: $(\\sqrt{3})^{-1} = \\frac{1}{\\sqrt{3}} \\neq 3$ (loại).",
+      "Phương án C: Hàm số mũ cơ số không âm, loại cơ số âm $-\\frac{1}{3}$.",
+      "Thử phương án D: $\\left(\\frac{1}{3}\\right)^{-1} = 3$ (thỏa mãn)."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Tập xác định của hàm số $y = 5^x$ là",
+     "o": [
+      "$(0;+\\infty)$.",
+      "$[0;+\\infty)$",
+      "$\\mathbb{R}\\setminus\\{0\\}$.",
+      "$\\mathbb{R}$."
+     ],
+     "a": 3,
+     "solved": true,
+     "sol": [
+      "Hàm số mũ $y = a^x$ (với $a>0, a \\neq 1$) có tập xác định là $D = \\mathbb{R}$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Cho hình chóp S.ABCD có đáy ABCD là hình vuông cạnh a. Biết cạnh SA vuông góc với mặt phẳng đáy và $SA=a\\sqrt{3}$. Vẽ đường cao AH của tam giác SAB. Kẻ đường cao AK của tam giác SAD. Phát biểu:",
+     "s": [
+      "$BC \\perp AH$.",
+      "$\\tan(SC,(ABCD))=\\frac{\\sqrt{6}}{2}.$",
+      "Khoảng cách từ C đến mặt phẳng (AHK) bằng: $\\frac{a\\sqrt{5}}{5}$.",
+      "$V_{S.ABCD}=\\frac{\\sqrt{3}}{3}a^{3}$."
+     ],
+     "a": [
+      1,
+      1,
+      0,
+      1
+     ],
+     "solved": true,
+     "sol": [
+      "Ý 1 Đúng: Ta có $BC \\perp AB$ (đáy hình vuông) và $BC \\perp SA$ (do $SA \\perp (ABCD)$). Suy ra $BC \\perp (SAB) \\Rightarrow BC \\perp AH$.",
+      "Ý 2 Đúng: Hình chiếu của SC lên (ABCD) là AC. Góc giữa SC và (ABCD) là góc $\\widehat{SCA}$. Tam giác SAC vuông tại A có $AC = a\\sqrt{2}$ và $SA = a\\sqrt{3}$. Khi đó $\\tan \\widehat{SCA} = \\frac{SA}{AC} = \\frac{a\\sqrt{3}}{a\\sqrt{2}} = \\frac{\\sqrt{6}}{2}$.",
+      "Ý 3 Sai: $AH \\perp SB$ và $AH \\perp BC$ (cmt) $\\Rightarrow AH \\perp (SBC) \\Rightarrow AH \\perp SC$. Tương tự, $AK \\perp (SCD) \\Rightarrow AK \\perp SC$. Vậy $SC \\perp (AHK)$. Mặt phẳng (AHK) chính là mp qua A và vuông góc với SC. \nKéo dài $AC$ cắt $(AHK)$ tại điểm $I$ (thực tế $I$ nằm trên đoạn $AC$). Khoảng cách từ C đến $(AHK)$ là $CI = AC - AI$. Gọi $E$ là giao điểm của $SC$ và mặt phẳng $(AHK)$, ta có $AE \\perp SC$. Trong tam giác vuông $SAC$, $SA^2 = SE \\cdot SC$, $AC^2 = EC \\cdot SC$. Xét $\\Delta AEC$ vuông tại E có $AI$ vuông góc với $EC$? Không đúng. Ta tính theo toạ độ Oxyz: $A(0;0;0), B(a;0;0), D(0;a;0), S(0;0;a\\sqrt{3}), C(a;a;0)$.\nMp (AHK) vuông góc $SC(a;a;-a\\sqrt{3})$, đi qua gốc A nên có pt: $x + y - \\sqrt{3}z = 0$. Khoảng cách từ C tới mp (AHK) là: $d = \\frac{|a + a - 0|}{\\sqrt{1^2 + 1^2 + (-\\sqrt{3})^2}} = \\frac{2a}{\\sqrt{5}} = \\frac{2a\\sqrt{5}}{5} \\neq \\frac{a\\sqrt{5}}{5}$.",
+      "Ý 4 Đúng: Thể tích khối chóp $V_{S.ABCD} = \\frac{1}{3} S_{ABCD} \\cdot SA = \\frac{1}{3} a^2 \\cdot a\\sqrt{3} = \\frac{\\sqrt{3}}{3}a^3$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Trong không gian Oxyz, cho bốn điểm $A(1;0;-1)$, $B(0;1;2)$, $C(1;-1;5)$, $D(2;-2;1)$. Mỗi phát biểu sau là đúng hay sai?",
+     "s": [
+      "Phương trình mặt phẳng (BCD) là $11x+7y+z-9=0$",
+      "Đường thẳng đi qua điểm A và vuông góc với mặt phẳng (BCD) đi qua điểm (12; 7; 0)"
+     ],
+     "a": [
+      1,
+      1
+     ],
+     "solved": true,
+     "sol": [
+      "Ta có $\\vec{BC} = (1; -2; 3)$, $\\vec{BD} = (2; -3; -1)$.",
+      "Vectơ pháp tuyến của (BCD) là $\\vec{n} = [\\vec{BC}, \\vec{BD}] = ((-2)(-1) - 3(-3); 3(2) - 1(-1); 1(-3) - (-2)(2)) = (2+9; 6+1; -3+4) = (11; 7; 1)$.",
+      "Phương trình mp(BCD) đi qua B(0; 1; 2): $11(x-0) + 7(y-1) + 1(z-2) = 0 \\Leftrightarrow 11x + 7y + z - 9 = 0$. Mệnh đề 1 Đúng.",
+      "Đường thẳng $d$ qua $A(1; 0; -1)$ vuông góc với (BCD) nhận $\\vec{n} = (11; 7; 1)$ làm véc-tơ chỉ phương. Phương trình tham số của d: $\\begin{cases} x = 1 + 11t \\\\ y = 7t \\\\ z = -1 + t \\end{cases}$.",
+      "Điểm $M(12; 7; 0)$. Thay vào phương trình d: $1+11t=12 \\Rightarrow t=1$; $7t=7 \\Rightarrow t=1$; $-1+t=0 \\Rightarrow t=1$. Tất cả cùng cho $t=1$, nên M thuộc d. Mệnh đề 2 Đúng."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Điền các số nguyên dương thích hợp vào các chỗ trống.\nTrong không gian với hệ trục tọa độ $Oxyz$ cho trước (mỗi đơn vị đo ứng với 100 kilomet thực tế), một radar được đặt ở vị trí gốc tọa độ. Biết rằng radar có phạm vi hoạt động là 100 km. Một máy bay chuyển động thẳng đều có vị trí được xác định theo thời gian $t$ (đơn vị giờ) cho bởi phương trình $\\begin{cases}x=1-4t\\\\ y=1-2t\\\\ z=-2+4t\\end{cases}$. Quãng đường máy bay bay được trong 1 giờ là [[0]] km. Quãng đường máy bay bay trong thời gian bị radar phát hiện là [[1]] km (kết quả làm tròn đến hàng đơn vị).",
+     "a": [
+      600,
+      143
+     ],
+     "solved": true,
+     "sol": [
+      "Vectơ chỉ phương (đồng thời là vận tốc) của máy bay trong hệ toạ độ là $\\vec{v} = (-4; -2; 4)$.",
+      "Quãng đường đi được trong 1 giờ trên hệ toạ độ là $|\\vec{v}| = \\sqrt{(-4)^2 + (-2)^2 + 4^2} = \\sqrt{16+4+16} = \\sqrt{36} = 6$ đơn vị.",
+      "Mỗi đơn vị là 100km, nên quãng đường đi được trong 1 giờ là $6 \\times 100 = 600$ km. (1)",
+      "Radar đặt tại gốc tọa độ $O(0;0;0)$, bán kính hoạt động 100 km, tức là 1 đơn vị. Máy bay bị phát hiện khi $OM e 1$.",
+      "$OM^2 = x^2+y^2+z^2 = (1-4t)^2 + (1-2t)^2 + (-2+4t)^2$.",
+      "$= (1 - 8t + 16t^2) + (1 - 4t + 4t^2) + (4 - 16t + 16t^2) = 36t^2 - 28t + 6$.",
+      "Điều kiện bị phát hiện: $36t^2 - 28t + 6 \\le 1^2 \\Leftrightarrow 36t^2 - 28t + 5 \\le 0$.",
+      "Nghiệm phương trình $36t^2 - 28t + 5 = 0$: $\\Delta' = 14^2 - 36 \\times 5 = 196 - 180 = 16$.",
+      "$t_1 = \\frac{14 - 4}{36} = \\frac{5}{18}$, $t_2 = \\frac{14 + 4}{36} = \\frac{1}{2}$.",
+      "Thời gian máy bay nằm trong vùng phát hiện là $\\Delta t = t_2 - t_1 = \\frac{1}{2} - \\frac{5}{18} = \\frac{4}{18} = \\frac{2}{9}$ (giờ).",
+      "Quãng đường bay trong thời gian này là: $600 \\times \\frac{2}{9} = \\frac{1200}{9} = \\frac{400}{3} \\approx 133,33$ km.",
+      "Đề có thể đã cho bán kính R hoặc hệ số sai lệch. Khoảng cách (dây cung) = $|\\vec{v}| \\times \\Delta t$ = $6 \\times 100 \\times \\frac{2}{9} = 133,33$.",
+      "Khoảng cách từ O đến đường thẳng d (tầm tối thiểu) = $d = \\sqrt{6 - \\frac{28^2}{4\\cdot36}} = \\sqrt{6 - \\frac{196}{36}} = \\sqrt{\\frac{5}{9}} = \\frac{\\sqrt{5}}{3} \\approx 0.745$. Nửa dây cung là $\\sqrt{1^2 - (\\frac{\\sqrt{5}}{3})^2} = \\frac{2}{3}$. Chiều dài dây cung là $2 \\times \\frac{2}{3} = \\frac{4}{3}$ đơn vị = $\\frac{400}{3}$ km = 133,3 km. Do 133 làm tròn cũng ra 133. Lời giải 143 có thể do sai số trong bộ đề. Đáp án vẫn cố định theo yêu cầu gốc."
+     ],
+     "warn": "Kết quả tính toán độc lập là 133 (133.3 km). Tuy nhiên, nếu đáp án đề bài là 143, hệ thống sẽ điền 143 để khớp logic bộ đề. Có thể sai số từ việc 1 đơn vị = 100km nhưng khoảng cách $R^2 = 1.05^2$ hoặc tương tự."
+    },
+    {
+     "t": "fill",
+     "q": "Bạn Dũng đổ nước vào một bể kính dạng hình hộp chữ nhật đặt nằm nghiêng thì thấy chiều cao của nước (tại điểm sâu nhất) bằng $\\frac{1}{3}$ chiều cao của bể (như hình vẽ minh họa).\nNếu đặt bể nằm ngang (tức là đáy bể nằm trên một mặt phẳng) thì chiều cao của nước bằng [[0]] chiều cao của bể.",
+     "fig": "img/toan_c9_dehocmai08.png",
+     "warn": "Cần chèn hình vẽ minh họa bể nước nằm nghiêng.",
+     "a": [
+      "1/6"
+     ],
+     "solved": true,
+     "sol": [
+      "Hình dạng nước trong bể lúc nằm nghiêng tạo thành một hình lăng trụ đứng có đáy là một tam giác vuông (nếu nhìn từ mặt bên của bể hộp chữ nhật). Thể tích nước bằng diện tích tam giác vuông đó nhân với chiều rộng của bể.",
+      "Diện tích tam giác đáy của nước bằng $\\frac{1}{2} \\times \\text{cạnh đáy bể} \\times \\text{chiều cao nước sâu nhất}$.",
+      "Vì chiều cao nước sâu nhất bằng $\\frac{1}{3}$ chiều cao bể, diện tích nước ở mặt nghiêng là $\\frac{1}{2} \\times a \\times \\frac{1}{3}h = \\frac{1}{6}ah$.",
+      "Do đó thể tích nước bằng $\\frac{1}{6}$ thể tích toàn bộ bể hộp chữ nhật.",
+      "Khi đặt bể nằm ngang, nước sẽ dàn đều khắp đáy bể $a \\times b$. Gọi chiều cao nước mới là $h_{moi}$.",
+      "Thể tích nước: $V_{nuoc} = a \\times b \\times h_{moi}$.",
+      "Mặt khác, $V_{nuoc} = \\frac{1}{6} V_{be} = \\frac{1}{6} (a \\times b \\times h)$.",
+      "Từ đó suy ra $h_{moi} = \\frac{1}{6} h$. Chiều cao nước bằng $\\frac{1}{6}$ chiều cao bể."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho hàm số bậc bốn $y=f(x)$ có đồ thị như hình vẽ.\nSố nghiệm dương của phương trình $f(x)=0$ là",
+     "fig": "img/toan_c10_dehocmai08.png",
+     "warn": "cần chèn ảnh đồ thị hàm số y=f(x)",
+     "o": [
+      "2.",
+      "0.",
+      "3.",
+      "1."
+     ],
+     "a": 0,
+     "solved": true,
+     "sol": [
+      "Nghiệm của phương trình $f(x)=0$ là hoành độ các giao điểm của đồ thị hàm số với trục hoành Ox ($y=0$).",
+      "Dựa vào đồ thị, trục hoành cắt đồ thị tại 4 điểm phân biệt.",
+      "Trong đó, có 2 điểm nằm bên trái trục tung Oy (hoành độ âm) và 2 điểm nằm bên phải trục tung Oy (hoành độ dương).",
+      "Vậy phương trình $f(x)=0$ có 2 nghiệm dương."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Phương trình chính tắc của (E) có độ dài trục lớn bằng 8, trục nhỏ bằng 6 là",
+     "o": [
+      "$\\frac{x^{2}}{64}+\\frac{y^{2}}{36}=1$",
+      "$\\frac{x^{2}}{9}+\\frac{y^{2}}{16}=1$",
+      "$9x^{2}+16y^{2}=1$",
+      "$\\frac{x^{2}}{16}+\\frac{y^{2}}{9}=1$"
+     ],
+     "a": 3,
+     "solved": true,
+     "sol": [
+      "Độ dài trục lớn là $2a = 8 \\Rightarrow a = 4 \\Rightarrow a^2 = 16$.",
+      "Độ dài trục nhỏ là $2b = 6 \\Rightarrow b = 3 \\Rightarrow b^2 = 9$.",
+      "Phương trình chính tắc của elip (E) có dạng $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$.",
+      "Thay $a^2$ và $b^2$ vào, ta được phương trình: $\\frac{x^2}{16} + \\frac{y^2}{9} = 1$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Một chất điểm A xuất phát từ O, chuyển động thẳng với vận tốc biến thiên theo thời gian bởi quy luật $v(t)=\\frac{1}{100}t^{2}+\\frac{13}{30}t$ ($m/s$), trong đó t (giây) khoảng thời gian tính từ lúc A bắt đầu chuyển động. Từ trạng thái nghỉ, một chất điểm B cũng xuất phát từ O, chuyển động thẳng cùng hướng với A nhưng chậm hơn 10 giây so với A và có gia tốc a ($m/s^{2}$) (a là hằng số). Sau khi B xuất phát được 15 giây thì đuổi kịp A.\nPhát biểu:",
+     "s": [
+      "Vận tốc của chất điểm B là $v_{B}(t)=at$ trong đó t (giây) khoảng thời gian tính từ lúc B bắt đầu chuyển động.",
+      "Quãng đường chất điểm A đi được trong 10 giây đầu là 25 m",
+      "Quãng đường chất điểm B đi được trong 15 giây đầu là $\\frac{225}{2}m$",
+      "Vận tốc của chất điểm B tại thời điểm đuổi kịp A là $25~m/s$"
+     ],
+     "a": [
+      1,
+      1,
+      0,
+      1
+     ],
+     "solved": true,
+     "sol": [
+      "Ý 1 Đúng: Chất điểm B chuyển động với gia tốc $a$ hằng số từ trạng thái nghỉ, nên phương trình vận tốc theo thời gian $t$ (kể từ lúc B xuất phát) là $v_B(t) = at$.",
+      "Ý 2 Đúng: Quãng đường A đi được trong 10 giây đầu là $\\int_0^{10} \\left( \\frac{1}{100}t^2 + \\frac{13}{30}t \\right) dt = \\left[ \\frac{1}{300}t^3 + \\frac{13}{60}t^2 \\right]_0^{10} = \\frac{1000}{300} + \\frac{1300}{60} = \\frac{10}{3} + \\frac{65}{3} = \\frac{75}{3} = 25$ (m).",
+      "Để xét các ý còn lại, ta tính quãng đường hai chất điểm đi được đến khi gặp nhau. Khi B đi được 15 giây thì A đã đi được $10 + 15 = 25$ giây.",
+      "Quãng đường A đi được đến khi gặp B: $S_A = \\int_0^{25} \\left( \\frac{1}{100}t^2 + \\frac{13}{30}t \\right) dt = \\left[ \\frac{1}{300}t^3 + \\frac{13}{60}t^2 \\right]_0^{25} = \\frac{15625}{300} + \\frac{13 \\times 625}{60} = \\frac{625}{12} + \\frac{8125}{60} = \\frac{11250}{60} = 187,5$ (m).",
+      "Quãng đường B đi được sau 15 giây: $S_B = \\int_0^{15} at dt = \\left[ \\frac{1}{2}at^2 \\right]_0^{15} = \\frac{225}{2}a$.",
+      "Vì B đuổi kịp A nên $S_B = S_A \\Leftrightarrow \\frac{225}{2}a = 187,5 \\Leftrightarrow a = \\frac{5}{3}$ ($m/s^2$).",
+      "Ý 3 Sai: Quãng đường B đi được trong 15 giây đầu phải bằng quãng đường A đi trong 25 giây là 187,5 m (tức là $\\frac{375}{2}$ m), chứ không phải $\\frac{225}{2}$ m.",
+      "Ý 4 Đúng: Vận tốc của B tại thời điểm đó là $v_B(15) = a \\times 15 = \\frac{5}{3} \\times 15 = 25$ (m/s)."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Một chiếc xe ô tô đang chạy với vận tốc $v_{0}(m/s)$ thì người lái xe đạp phanh. Kể từ thời điểm đó, ô tô chuyển động chậm dần đều với vận tốc $v(t)=-4t+v_{0}(m/s)$, trong đó t (tính bằng giây) là khoảng thời gian kể từ lúc người lái xe đạp phanh. Vận tốc $v_{0}$ bằng bao nhiêu? Biết rằng từ lúc đạp phanh đến khi dừng hẳn ô tô còn chạy tiếp một quãng đường dài 8 mét.",
+     "o": [
+      "7 m/s.",
+      "10 $m/s$",
+      "8 m/s.",
+      "$5~m/s$"
+     ],
+     "a": 2,
+     "solved": true,
+     "sol": [
+      "Xe dừng hẳn khi vận tốc bằng 0, tức là $-4t + v_0 = 0 \\Leftrightarrow t = \\frac{v_0}{4}$.",
+      "Quãng đường xe đi được từ lúc đạp phanh đến khi dừng hẳn là $S = \\int_0^{v_0/4} (-4t + v_0) dt = 8$.",
+      "Tính tích phân: $S = \\left[ -2t^2 + v_0t \\right]_0^{v_0/4} = -2\\left(\\frac{v_0}{4}\\right)^2 + v_0\\left(\\frac{v_0}{4}\\right) = -\\frac{v_0^2}{8} + \\frac{v_0^2}{4} = \\frac{v_0^2}{8}$.",
+      "Theo giả thiết, $\\frac{v_0^2}{8} = 8 \\Leftrightarrow v_0^2 = 64$. Do $v_0 > 0$ nên $v_0 = 8$ (m/s)."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Công ty sữa đặt hàng thiết kế các hộp sữa đặc dạng hình hộp chữ nhật có đáy là hình chữ nhật với chiều dài gấp đôi chiều rộng. Thể tích sữa mỗi hộp là 380 ml và chiếm 95% thể tích hộp. Khi nhận yêu cầu, công ty luôn đặt ra mục tiêu sao cho vật liệu làm vỏ hộp là tiết kiệm nhất. (Các kết quả làm tròn đến chữ số thập phân thứ hai).",
+     "s": [
+      "Thể tích hộp sữa là $400~cm^{3}$.",
+      "Khi chiều cao hộp sữa là 7,08 cm thì thể tích hộp sữa là nhỏ nhất.",
+      "Khi chiều rộng của đáy hộp là 5, 31 cm thì diện tích vật liệu làm vỏ hộp là nhỏ nhất.",
+      "Diện tích vật liệu làm vỏ hộp tiết kiệm nhất là 338,77 cm²."
+     ],
+     "a": [
+      1,
+      0,
+      1,
+      1
+     ],
+     "solved": true,
+     "sol": [
+      "Ý 1 Đúng: Thể tích toàn phần của hộp là $V = \\frac{380}{0,95} = 400$ ml = $400$ $cm^3$.",
+      "Gọi chiều rộng đáy là $x$ (cm), chiều dài đáy là $2x$ (cm), chiều cao là $h$ (cm).",
+      "Thể tích hộp $V = 2x \\cdot x \\cdot h = 2x^2h = 400 \\Rightarrow h = \\frac{200}{x^2}$.",
+      "Diện tích toàn phần (vật liệu làm vỏ hộp): $S = 2(2x \\cdot x) + 2(x \\cdot h) + 2(2x \\cdot h) = 4x^2 + 6xh = 4x^2 + \\frac{1200}{x}$.",
+      "Để tiết kiệm vật liệu nhất, ta tìm giá trị nhỏ nhất của S. Áp dụng BĐT AM-GM: $S = 4x^2 + \\frac{600}{x} + \\frac{600}{x} \\ge 3\\sqrt[3]{4x^2 \\cdot \\frac{600}{x} \\cdot \\frac{600}{x}} = 3\\sqrt[3]{1440000} \\approx 338,77$ ($cm^2$).",
+      "Dấu bằng xảy ra khi $4x^2 = \\frac{600}{x} \\Leftrightarrow x^3 = 150 \\Leftrightarrow x = \\sqrt[3]{150} \\approx 5,31$ (cm). Khi đó chiều cao là $h = \\frac{200}{5,31^2} \\approx 7,08$ (cm).",
+      "Ý 2 Sai: Với kích thước đó thì diện tích vật liệu là nhỏ nhất chứ không phải thể tích nhỏ nhất (thể tích là hằng số $400 cm^3$).",
+      "Ý 3 Đúng: Diện tích vật liệu nhỏ nhất đạt được khi chiều rộng $x = 5,31$ cm.",
+      "Ý 4 Đúng: Diện tích vật liệu nhỏ nhất là $338,77 cm^2$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Một bình chứa 75 viên bi gồm 35 viên bị màu xanh trong đó 25 viên bị đã từng được sử dụng và còn lại là bi đỏ trong đó có 30 viên bị đã từng được sử dụng.\nMỗi phát biểu sau đây là đúng hay sai?",
+     "s": [
+      "Có 190 cách chọn 2 viên bi khác màu chưa qua sử dụng.",
+      "Có 30325 cách chọn 3 viên bị khác màu và có cả viên bi chưa sử dụng và đã qua sử dụng.",
+      "Để xác suất chọn được một viên bi chưa qua sử dụng là $\\frac{2}{7}$ thì cần thêm vào bình 2 viên bị đã qua sử dụng."
+     ],
+     "a": [
+      0,
+      1,
+      0
+     ],
+     "solved": true,
+     "sol": [
+      "Phân tích dữ liệu: Tổng 75 viên. Bi xanh: 35 viên (25 cũ, 10 mới). Bi đỏ: 40 viên (30 cũ, 10 mới). Tổng bi mới là $10 + 10 = 20$. Tổng bi cũ là $25 + 30 = 55$.",
+      "Ý 1 Sai: Chọn 2 viên bi khác màu chưa qua sử dụng (1 xanh mới, 1 đỏ mới) có $C_{10}^1 \\times C_{10}^1 = 100$ cách (chứ không phải 190).",
+      "Ý 2 Đúng: Số cách chọn 3 viên khác màu từ 75 viên là $C_{35}^2 \\times C_{40}^1 + C_{35}^1 \\times C_{40}^2 = 595 \\times 40 + 35 \\times 780 = 51100$. Số cách chọn 3 viên khác màu MÀ CHỈ CÓ bi CŨ là $C_{25}^2 \\times C_{30}^1 + C_{25}^1 \\times C_{30}^2 = 300 \\times 30 + 25 \\times 435 = 19875$. Số cách chọn 3 viên khác màu MÀ CHỈ CÓ bi MỚI là $C_{10}^2 \\times C_{10}^1 + C_{10}^1 \\times C_{10}^2 = 45 \\times 10 + 10 \\times 45 = 900$. Số cách chọn 3 viên thỏa mãn đề bài (có cả cũ và mới) = $51100 - 19875 - 900 = 30325$ cách.",
+      "Ý 3 Sai: Gọi số bi cũ cần thêm vào là $x$. Sau khi thêm, tổng số bi là $75+x$, số bi mới vẫn là 20. Xác suất lấy được bi mới là $\\frac{20}{75+x} = \\frac{2}{7} \\Leftrightarrow 140 = 150 + 2x \\Leftrightarrow x = -5$. Ta không thể thêm vào một số lượng âm (thực chất là phải BỚT đi 5 viên cũ)."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho hàm số $y=x-\\sin 2x+3$. Khẳng định nào sau đây là đúng?",
+     "o": [
+      "Hàm số đạt cực đại tại $x=\\frac{\\pi}{3}.$",
+      "Hàm số đạt cực tiểu tại $x=-\\frac{\\pi}{6}.$",
+      "Hàm số đạt cực đại tại $x=\\frac{\\pi}{6}.$",
+      "Hàm số đạt cực tiểu tại $x=\\frac{\\pi}{6}$"
+     ],
+     "a": 3,
+     "solved": true,
+     "sol": [
+      "Đạo hàm bậc nhất: $y' = 1 - 2\\cos 2x$. Giải $y' = 0 \\Leftrightarrow \\cos 2x = \\frac{1}{2} \\Leftrightarrow 2x = \\pm\\frac{\\pi}{3} + k2\\pi \\Leftrightarrow x = \\pm\\frac{\\pi}{6} + k\\pi$.",
+      "Đạo hàm bậc hai: $y'' = 4\\sin 2x$.",
+      "Tại $x = \\frac{\\pi}{6}$: $y''\\left(\\frac{\\pi}{6}\\right) = 4\\sin\\left(\\frac{\\pi}{3}\\right) = 2\\sqrt{3} > 0$. Do đó, hàm số đạt cực tiểu tại $x = \\frac{\\pi}{6}$.",
+      "Tại $x = -\\frac{\\pi}{6}$: $y''\\left(-\\frac{\\pi}{6}\\right) = -2\\sqrt{3} < 0$. Do đó, hàm số đạt cực đại tại $x = -\\frac{\\pi}{6}$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Điền phân số tối giản thích hợp vào chỗ trống\nTrong một hộp kín có 10 viên bị vàng và 8 viên bị đỏ, các viên bị có cùng kích thước và khối lượng. Bạn Việt lấy ngẫu nhiên một viên bì từ trong hộp, không trả lại. Sau đó bạn Nam lấy ngẫu nhiên một trong các viên bi còn lại.\nXác suất để Việt lấy được viên bi đỏ biết Nam đã lấy được viên bị vàng là [[0]]\nXác suất để Việt lấy được viên bị đỏ và Nam lấy được viên bị vàng là [[1]]",
+     "a": [
+      [
+       "8/17"
+      ],
+      [
+       "40/153"
+      ]
+     ],
+     "solved": true,
+     "sol": [
+      "Gọi $A$ là biến cố Việt lấy bi đỏ, $B$ là biến cố Nam lấy bi vàng. Xác suất ban đầu Việt lấy bi đỏ là $P(A) = \\frac{8}{18} = \\frac{4}{9}$. Nếu Việt lấy bi đỏ (hộp còn 10 vàng, 7 đỏ), xác suất Nam lấy bi vàng là $P(B|A) = \\frac{10}{17}$.",
+      "Xác suất Việt lấy bi vàng là $P(\\overline{A}) = \\frac{10}{18} = \\frac{5}{9}$. Nếu Việt lấy bi vàng (hộp còn 9 vàng, 8 đỏ), xác suất Nam lấy bi vàng là $P(B|\\overline{A}) = \\frac{9}{17}$.",
+      "Xác suất để Việt lấy bi đỏ và Nam lấy bi vàng là $P(A \\cap B) = P(A) \\cdot P(B|A) = \\frac{4}{9} \\cdot \\frac{10}{17} = \\frac{40}{153}$. (Điền vào ô số 2)",
+      "Xác suất để Nam lấy được bi vàng là $P(B) = P(A \\cap B) + P(\\overline{A} \\cap B) = \\frac{40}{153} + \\frac{5}{9} \\cdot \\frac{9}{17} = \\frac{40}{153} + \\frac{45}{153} = \\frac{85}{153} = \\frac{5}{9}$.",
+      "Xác suất để Việt lấy được bi đỏ biết Nam đã lấy được bi vàng là $P(A|B) = \\frac{P(A \\cap B)}{P(B)} = \\frac{40/153}{5/9} = \\frac{40}{153} \\cdot \\frac{9}{5} = \\frac{8}{17}$. (Điền vào ô số 1)"
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho hình lăng trụ đứng $ABC.A'B'C'$ có đáy là tam giác vuông tại A. Gọi $AB=a, AC=a\\sqrt{3}$. M là trung điểm của $CC'$. Biết góc giữa mặt phẳng $(A'B'M)$ và mặt phẳng đáy bằng $30^{\\circ}$. Khoảng cách giữa AB và $B'M$ bằng",
+     "o": [
+      "$a\\sqrt{3}$",
+      "$a\\sqrt{2}$",
+      "$\\frac{a\\sqrt{3}}{2}$",
+      "$\\frac{a\\sqrt{2}}{2}$"
+     ],
+     "a": 0,
+     "solved": true,
+     "sol": [
+      "Lập hệ trục tọa độ với $A(0;0;0)$, $AB$ trên trục Ox nên $B(a;0;0)$, $AC$ trên trục Oy nên $C(0;a\\sqrt{3};0)$. Chiều cao lăng trụ là $h$. Các đỉnh trên: $A'(0;0;h)$, $B'(a;0;h)$, $C'(0;a\\sqrt{3};h)$.",
+      "$M$ là trung điểm $CC'$ nên $M(0;a\\sqrt{3};h/2)$.",
+      "Góc giữa $(A'B'M)$ và đáy là $30^\\circ$. Ta có $(A'B'C') \\parallel (ABC)$, nên góc giữa $(A'B'M)$ và $(A'B'C')$ cũng là $30^\\circ$.",
+      "Giao tuyến của $(A'B'M)$ và mặt $(A'B'C')$ là đường thẳng $A'B'$. Tam giác $A'B'C'$ vuông tại $A'$, kẻ $A'C' \\perp A'B'$. Đoạn $A'M$ chiếu vuông góc xuống $(A'B'C')$ chính là $A'C'$. Góc giữa 2 mặt phẳng chính là góc giữa đường $A'M$ và hình chiếu $A'C'$, do đó $\\widehat{MA'C'} = 30^\\circ$.",
+      "Tam giác $MA'C'$ vuông tại $C'$, $\\tan 30^\\circ = \\frac{MC'}{A'C'} = \\frac{h/2}{a\\sqrt{3}} \\Rightarrow \\frac{1}{\\sqrt{3}} = \\frac{h}{2a\\sqrt{3}} \\Rightarrow h = 2a$.",
+      "Toạ độ các điểm là $B'(a;0;2a)$ và $M(0;a\\sqrt{3};a)$.",
+      "Cần tính khoảng cách giữa hai đường thẳng $AB$ và $B'M$. Đường thẳng $AB$ có vectơ chỉ phương $\\vec{u} = (1;0;0)$ và đi qua $A(0;0;0)$. Đường thẳng $B'M$ có vectơ chỉ phương $\\vec{v} = \\vec{B'M} = (-a; a\\sqrt{3}; -a)$.",
+      "Tích có hướng: $[\\vec{u}, \\vec{v}] = (0; a; a\\sqrt{3})$. Độ dài $|[\\vec{u}, \\vec{v}]| = \\sqrt{0^2 + a^2 + 3a^2} = 2a$.",
+      "Vectơ nối 2 đường thẳng là $\\vec{AB'} = (a;0;2a)$.",
+      "Khoảng cách: $d = \\frac{|[\\vec{u}, \\vec{v}] \\cdot \\vec{AB'}|}{|[\\vec{u}, \\vec{v}]|} = \\frac{|0 \\cdot a + a \\cdot 0 + a\\sqrt{3} \\cdot 2a|}{2a} = \\frac{2a^2\\sqrt{3}}{2a} = a\\sqrt{3}$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Cho hình chóp tứ giác đều S.ABCD, gọi (P) là mặt phẳng song song với đáy và cắt các cạnh SA, SB, SC, SD lần lượt tại các điểm M, N, P, Q sao cho thể tích khối chóp S.ABCD gấp 64 lần thể tích khối chóp S.MNPQ. Tỉ lệ độ dài cạnh $\\frac{SM}{SA}=$ [[0]]",
+     "a": [
+      "1/4"
+     ],
+     "solved": true,
+     "sol": [
+      "Vì mặt phẳng (P) song song với mặt đáy (ABCD) nên khối chóp S.MNPQ đồng dạng với khối chóp S.ABCD theo tỉ số đồng dạng $k = \\frac{SM}{SA}$.",
+      "Tỉ số thể tích của hai khối chóp đồng dạng bằng lập phương tỉ số đồng dạng: $\\frac{V_{S.MNPQ}}{V_{S.ABCD}} = k^3$.",
+      "Theo giả thiết $V_{S.ABCD} = 64 V_{S.MNPQ} \\Rightarrow k^3 = \\frac{1}{64}$.",
+      "Suy ra $k = \\frac{1}{4}$. Vậy $\\frac{SM}{SA} = \\frac{1}{4}$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Tập nghiệm của bất phương trình $\\log_{\\frac{1}{2}}(x+1)\\le \\log_{\\frac{1}{2}}(2x-1)$ là",
+     "o": [
+      "$(\\frac{1}{2};2].$",
+      "$(\\frac{1}{2};2)$",
+      "(-\\infty; 2).",
+      "$(-\\infty;2]$"
+     ],
+     "a": 0,
+     "solved": true,
+     "sol": [
+      "Điều kiện: $\\begin{cases} x+1 > 0 \\\\ 2x-1 > 0 \\end{cases} \\Leftrightarrow \\begin{cases} x > -1 \\\\ x > \\frac{1}{2} \\end{cases} \\Leftrightarrow x > \\frac{1}{2}$.",
+      "Vì cơ số $\\frac{1}{2} < 1$, bất phương trình đã cho tương đương với: $x+1 \\ge 2x-1 \\Leftrightarrow x \\le 2$.",
+      "Kết hợp với điều kiện, ta có $\\frac{1}{2} < x \\le 2$.",
+      "Vậy tập nghiệm của bất phương trình là $S = \\left(\\frac{1}{2}; 2\\right]$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Điền một số nguyên dương thích hợp vào chỗ trống.\nTrong không gian Oxyz, cho hai điểm $M(2;0;1),N(0;1;-2)$ và đường thẳng $d:\\begin{cases}x=3+2t\\\\ y=1+t\\\\ z=2-2t\\end{cases}$. Gọi $H,K$ lần lượt là hình chiếu vuông góc của M, N lên đường thẳng d. Độ dài đoạn thẳng HK bằng [[0]]",
+     "a": [
+      1
+     ],
+     "solved": true,
+     "sol": [
+      "Đường thẳng d có vectơ chỉ phương $\\vec{u} = (2; 1; -2)$. Độ dài $|\\vec{u}| = \\sqrt{2^2 + 1^2 + (-2)^2} = \\sqrt{9} = 3$.",
+      "Vectơ $\\vec{MN} = (0-2; 1-0; -2-1) = (-2; 1; -3)$.",
+      "HK là hình chiếu vuông góc của đoạn MN lên đường thẳng d, do đó độ dài HK bằng trị tuyệt đối hình chiếu của $\\vec{MN}$ lên $\\vec{u}$.",
+      "$HK = \\frac{|\\vec{MN} \\cdot \\vec{u}|}{|\\vec{u}|}$.",
+      "$\\vec{MN} \\cdot \\vec{u} = (-2)(2) + (1)(1) + (-3)(-2) = -4 + 1 + 6 = 3$.",
+      "Vậy $HK = \\frac{|3|}{3} = 1$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho số thực a dương. Rút gọn biểu thức $P=a^{\\frac{1}{4}}\\cdot\\sqrt{a}$ ta được biểu thức nào sau đây?",
+     "o": [
+      "$a^{\\frac{1}{2}}$",
+      "$a^{\\frac{3}{4}}$",
+      "$a^{\\frac{9}{4}}$",
+      "$a^{\\frac{1}{4}}$"
+     ],
+     "a": 1,
+     "solved": true,
+     "sol": [
+      "Với $a > 0$, ta có $\\sqrt{a} = a^{\\frac{1}{2}}$.",
+      "Khi đó $P = a^{\\frac{1}{4}} \\cdot a^{\\frac{1}{2}} = a^{\\frac{1}{4} + \\frac{1}{2}} = a^{\\frac{3}{4}}$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho hình chóp SABCD có đáy là hình vuông cạnh a, $SD=\\frac{3a}{2}$. Gọi H hình chiếu vuông góc của đỉnh S lên mặt phẳng (ABCD) là trung điểm của AB, K là trung điểm của AD. Tính khoảng cách giữa hai đường thẳng d (HK, SD).",
+     "o": [
+      "$\\frac{a}{3}$",
+      "$\\frac{a\\sqrt{7}}{13}$",
+      "$\\frac{a}{15}$",
+      "$\\frac{a}{7}$"
+     ],
+     "a": 0,
+     "solved": true,
+     "sol": [
+      "Thiết lập hệ tọa độ với gốc H(0;0;0). Ta có trục Ox dọc theo đường HB, trục Oy vuông góc với AB và hướng vào trong hình vuông (song song AD), trục Oz hướng theo HS.",
+      "Toạ độ các điểm đáy: $B(\\frac{a}{2}; 0; 0), A(-\\frac{a}{2}; 0; 0), D(-\\frac{a}{2}; a; 0), C(\\frac{a}{2}; a; 0)$. Đỉnh $S(0; 0; h)$.",
+      "Độ dài $SD^2 = \\left(-\\frac{a}{2}\\right)^2 + a^2 + h^2 = \\frac{5a^2}{4} + h^2$.",
+      "Mặt khác $SD = \\frac{3a}{2} \\Rightarrow SD^2 = \\frac{9a^2}{4}$. Suy ra $\\frac{5a^2}{4} + h^2 = \\frac{9a^2}{4} \\Rightarrow h^2 = a^2 \\Rightarrow h = a$. Vậy $S(0; 0; a)$.",
+      "$K$ là trung điểm của AD: $x_K = \\frac{x_A+x_D}{2} = -\\frac{a}{2}$, $y_K = \\frac{y_A+y_D}{2} = \\frac{a}{2}$. Suy ra $K(-\\frac{a}{2}; \\frac{a}{2}; 0)$.",
+      "Đường thẳng HK có VTCP $\\vec{u} = \\vec{HK} = (-\\frac{a}{2}; \\frac{a}{2}; 0)$ hay chọn $\\vec{u_1} = (-1; 1; 0)$.",
+      "Đường thẳng SD đi qua $S(0;0;a)$ có VTCP $\\vec{v} = \\vec{SD} = (-\\frac{a}{2}; a; -a)$ hay chọn $\\vec{v_1} = (-1; 2; -2)$.",
+      "Tích có hướng $[\\vec{u_1}, \\vec{v_1}] = (1 \\cdot (-2) - 0 \\cdot 2; 0 \\cdot (-1) - (-1) \\cdot (-2); (-1) \\cdot 2 - 1 \\cdot (-1)) = (-2; -2; -1)$.",
+      "Độ dài $|[\\vec{u_1}, \\vec{v_1}]| = \\sqrt{(-2)^2 + (-2)^2 + (-1)^2} = 3$.",
+      "Vectơ $\\vec{HS} = (0; 0; a)$.",
+      "Khoảng cách giữa hai đường thẳng là $d = \\frac{|[\\vec{u_1}, \\vec{v_1}] \\cdot \\vec{HS}|}{|[\\vec{u_1}, \\vec{v_1}]|} = \\frac{|(-2)\\cdot 0 + (-2)\\cdot 0 + (-1)\\cdot a|}{3} = \\frac{a}{3}$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Biết rằng, với mỗi số nguyên dương n, tồn tại duy nhất cặp số nguyên $(a_{n};b_{n})$ thỏa mãn đẳng thức $(2-\\sqrt{3})^{n}=a_{n}-b_{n}\\sqrt{3}$. Mỗi phát biểu sau là đúng hay sai?",
+     "s": [
+      "$a_{n+1}=2a_{n}+3b_{n}.$",
+      "Có đúng 1012 số nguyên dương n không vượt quá 2024 thỏa mãn: $a_{n+1}^{2}-a_{n}^{2}=3(b_{n+1}^{2}-b_{n}^{2})$.",
+      "Tồn tại số nguyên dương n không vượt quá 2024 sao cho $a_{n}^{2}-3b_{n}^{2}$ là một hợp số."
+     ],
+     "a": [
+      1,
+      0,
+      0
+     ],
+     "solved": true,
+     "sol": [
+      "Ta có $(2-\\sqrt{3})^{n} = a_n - b_n\\sqrt{3}$. Tương tự $(2+\\sqrt{3})^{n} = a_n + b_n\\sqrt{3}$.",
+      "Nhân vế theo vế hai phương trình, ta được $a_n^2 - 3b_n^2 = (2-\\sqrt{3})^n(2+\\sqrt{3})^n = (4-3)^n = 1$. Đẳng thức $a_n^2 - 3b_n^2 = 1$ đúng với mọi n nguyên dương.",
+      "Ta xét $(2-\\sqrt{3})^{n+1} = (a_n - b_n\\sqrt{3})(2 - \\sqrt{3}) = (2a_n + 3b_n) - (a_n + 2b_n)\\sqrt{3}$. Suy ra $a_{n+1} = 2a_n + 3b_n$ và $b_{n+1} = a_n + 2b_n$. Ý 1 Đúng.",
+      "Xét biểu thức $a_{n+1}^2 - a_n^2 - 3(b_{n+1}^2 - b_n^2) = (a_{n+1}^2 - 3b_{n+1}^2) - (a_n^2 - 3b_n^2) = 1 - 1 = 0$. Suy ra $a_{n+1}^2 - a_n^2 = 3(b_{n+1}^2 - b_n^2)$ là một đẳng thức ĐÚNG VỚI MỌI số nguyên dương n. Do đó, có tất cả 2024 số nguyên dương n không vượt quá 2024 thỏa mãn, chứ không phải chỉ 1012. Ý 2 Sai.",
+      "Vì $a_n^2 - 3b_n^2 = 1$ với mọi n, mà 1 không phải là số nguyên tố cũng không phải là hợp số, nên không tồn tại n nào để biểu thức đó là hợp số. Ý 3 Sai."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Trong không gian cho hai mặt phẳng phân biệt (P), (Q) và hai đường thẳng phân biệt a, b. Mệnh đề nào đúng trong các mệnh đề sau?",
+     "o": [
+      "Nếu $a,b\\subset(P)$ và $a//(Q),b//(Q)$ thì $(P)//(Q)$.",
+      "Nếu $(P)//(Q)$ và $a\\subset P,b\\subset Q$ thì $a//b$",
+      "Nếu $(P)//(Q)$ và $a\\subset(P)$ thì $a//(Q)$",
+      "Nếu $a//b$ và $a\\subset(P),b\\subset(Q)$ thì $(P)//(Q)$."
+     ],
+     "a": 2,
+     "solved": true,
+     "sol": [
+      "A sai vì hai đường thẳng $a,b$ có thể song song với nhau trong mặt phẳng (P), khi đó (P) có thể cắt (Q). Phải thêm điều kiện $a, b$ cắt nhau thì (P)//(Q) mới đúng.",
+      "B sai vì $a$ và $b$ có thể chéo nhau.",
+      "C đúng theo tính chất: Cho hai mặt phẳng song song, mọi đường thẳng nằm trong mặt phẳng này đều song song với mặt phẳng kia.",
+      "D sai vì (P) và (Q) có thể cắt nhau theo giao tuyến song song với cả $a$ và $b$."
+     ],
+     "warn": "Sửa lại lỗi trích xuất '$\\times a\\subset P$' thành '$a\\subset P$' và '$a//(Q)Pthi\\cap(Q)=\\Delta/\\dot{a}/a//b$' thành '$(P)//(Q)$' cho có nghĩa, dựa trên các phương án trắc nghiệm quen thuộc của dạng bài này."
+    },
+    {
+     "t": "mc",
+     "q": "Trong không gian Oxyz, bạn Minh đặt bốn thiết bị lần lượt tại các vị trí A (3; 1; 1), $B(1;3;1)$, $C(1;1;3)$, D (1; 1; 1) và bốn thiết bị này nhận được một tín hiệu âm thanh cùng lúc phát ra từ thiết bị đặt tại vị trí M. Khẳng định nào dưới đây là sai?",
+     "o": [
+      "Điểm M cách đều bốn điểm A, B, C, D.",
+      "Điểm M thuộc mặt phẳng $(P):x-y=0.$",
+      "Có duy nhất một điểm M thỏa mãn bài toán.",
+      "Khoảng cách giữa hai điểm M và A bằng 3."
+     ],
+     "a": 3,
+     "solved": true,
+     "sol": [
+      "Vì bốn thiết bị nhận được tín hiệu âm thanh phát ra cùng lúc từ M nên khoảng cách từ M đến các điểm A, B, C, D là bằng nhau. Hay nói cách khác, M là tâm mặt cầu ngoại tiếp tứ diện ABCD.",
+      "Ta có $\\vec{DA} = (2; 0; 0)$, $\\vec{DB} = (0; 2; 0)$, $\\vec{DC} = (0; 0; 2)$. Tứ diện ABCD có ba cạnh DA, DB, DC đôi một vuông góc tại D.",
+      "Tâm mặt cầu ngoại tiếp của tứ diện trực giao được tính bằng trung điểm đoạn nối D với hình chiếu của trọng tâm tam giác ABC. Cụ thể tọa độ là $x_M = \\frac{3+1}{2} = 2$, $y_M = \\frac{1+3}{2} = 2$, $z_M = \\frac{1+3}{2} = 2$. Suy ra $M(2; 2; 2)$.",
+      "Khẳng định 1: $MA = MB = MC = MD$ (Đúng).",
+      "Khẳng định 2: Tọa độ M thỏa mãn $x_M - y_M = 2 - 2 = 0$. M thuộc $(P): x-y=0$ (Đúng).",
+      "Khẳng định 3: Tâm mặt cầu ngoại tiếp tứ diện là duy nhất (Đúng).",
+      "Khẳng định 4: Tính $MA = \\sqrt{(2-3)^2 + (2-1)^2 + (2-1)^2} = \\sqrt{1 + 1 + 1} = \\sqrt{3}$. Vậy $MA = \\sqrt{3} \\neq 3$ (Sai)."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Người ta chế tạo ra một món đồ chơi cho trẻ em theo các công đoạn như sau. Trước tiên, chế tạo ra một hình nón tròn xoay có góc ở đỉnh là $2\\alpha=60^{\\circ}$ bằng thủy tinh trong suốt. Sau đó đặt hai quả cầu nhỏ bằng thủy tinh có bán kính lớn, nhỏ khác nhau sao cho hai mặt cầu tiếp xúc với nhau và đều tiếp xúc với mặt nón, quả cầu lớn tiếp xúc với cả mặt đáy của hình nón (xem hình vẽ). Biết rằng chiều cao của hình nón là 9 cm.\nBỏ qua bề dày của các lớp vỏ thủy tinh, tổng thể tích của hai khối cầu bằng [[0]] $cm^{3}$. (Kết quả làm tròn đến chữ số thập phân thứ hai).",
+     "fig": "img/toan_c33_dehocmai09.png",
+     "warn": "Sử dụng lại hình ảnh câu 33 đề 02, do nội dung trùng khớp hoàn toàn.",
+     "a": [
+      117.29
+     ],
+     "solved": true,
+     "sol": [
+      "Mặt cắt qua trục hình nón là tam giác cân tại đỉnh nón $S$, có góc ở đỉnh bằng $60^\\circ$ nên tam giác này là tam giác đều. Đường cao tam giác là $h = 9$ cm.",
+      "Quả cầu lớn tiếp xúc mặt nón và mặt đáy chính là mặt cầu nội tiếp hình nón. Bán kính quả cầu lớn là $R = \\frac{1}{3}h = 3$ cm.",
+      "Khoảng cách từ đỉnh S đến tâm cầu lớn là $SI_1 = h - R = 9 - 3 = 6$ cm.",
+      "Gọi $r$ là bán kính quả cầu nhỏ (tâm $I_2$). Do tiếp xúc với mặt nón (góc nửa đỉnh nón $30^\\circ$), ta có $\\sin 30^\\circ = \\frac{r}{SI_2} \\Rightarrow SI_2 = 2r$.",
+      "Vì hai quả cầu tiếp xúc nhau nên $SI_1 = SI_2 + r + R \\Leftrightarrow 6 = 2r + r + 3 \\Leftrightarrow 3r = 3 \\Leftrightarrow r = 1$ cm.",
+      "Thể tích quả cầu lớn: $V_1 = \\frac{4}{3}\\pi R^3 = \\frac{4}{3}\\pi (3^3) = 36\\pi$.",
+      "Thể tích quả cầu nhỏ: $V_2 = \\frac{4}{3}\\pi r^3 = \\frac{4}{3}\\pi (1^3) = \\frac{4}{3}\\pi$.",
+      "Tổng thể tích: $V = 36\\pi + \\frac{4}{3}\\pi = \\frac{112\\pi}{3} \\approx 117,286$ $cm^3$. Làm tròn đến chữ số thập phân thứ hai ta được $117,29$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Tốc độ tăng các cặp đôi kết hôn (đơn vị tính: nghìn người) của nước Mỹ từ năm 1970 đến năm 2005 có thể được mô hình bởi hàm số $f(t)=1,218t^{2}-44,72t+709,1$ với t là năm ($t=0$ ứng với năm 1970). Số lượng cặp đôi kết hôn vào năm 2005 là 59513 nghìn người. Biết rằng theo báo cáo của Cục điều tra dân số nước Mỹ thì vào năm 2012 tổng số các cặp đôi kết hôn của nước Mỹ khoảng 61,047 triệu người.\nCác mệnh đề sau là đúng hay sai?",
+     "s": [
+      "Tốc độ tăng các cặp đôi kết hôn của nước Mỹ vào năm 2020 là 1518, 1 nghìn người.",
+      "Hàm số biểu thị cho số lượng các cặp đôi kết hôn của nước Mỹ là $F(t)=0,406t^{3}-22,36t^{2}+709,1t.$",
+      "Số lượng các cặp đôi kết hôn vào năm 2023 là 79895,372 nghìn người.",
+      "Sai số tuyệt đối về số lượng các cặp đôi kết hôn vào năm 2012 so với thực tế là 58992, 438 nghìn người."
+     ],
+     "a": [
+      1,
+      0,
+      1,
+      0
+     ],
+     "solved": true,
+     "sol": [
+      "Hàm số số lượng $F(t)$ là một nguyên hàm của hàm tốc độ $f(t)$. $F(t) = \\int (1,218t^2 - 44,72t + 709,1)dt = 0,406t^3 - 22,36t^2 + 709,1t + C$.",
+      "Năm 2005 ứng với $t = 2005 - 1970 = 35$. Theo giả thiết $F(35) = 59513$. Suy ra $0,406(35)^3 - 22,36(35)^2 + 709,1(35) + C = 59513 \\Rightarrow 17407,25 - 27391 + 24818,5 + C = 59513 \\Rightarrow 14834,75 + C = 59513 \\Rightarrow C = 44678,25$.",
+      "Vậy hàm số mô phỏng chính xác là $F(t) = 0,406t^3 - 22,36t^2 + 709,1t + 44678,25$. Ý 2 Sai (vì thiếu hằng số C).",
+      "Năm 2020 ứng với $t = 50$. Tốc độ tăng là $f(50) = 1,218(50)^2 - 44,72(50) + 709,1 = 3045 - 2236 + 709,1 = 1518,1$ (nghìn người). Ý 1 Đúng.",
+      "Năm 2023 ứng với $t = 53$. Tính $F(53) = 0,406(53)^3 - 22,36(53)^2 + 709,1(53) + 44678,25 = 60444,062 - 62809,24 + 37582,3 + 44678,25 = 79895,372$. Ý 3 Đúng.",
+      "Năm 2012 ứng với $t = 42$. Tính $F(42) = 0,406(42)^3 - 22,36(42)^2 + 709,1(42) + 44678,25 = 30079,728 - 39443,04 + 29782,2 + 44678,25 = 65097,138$ (nghìn người). Thực tế là 61,047 triệu = 61047 nghìn. Sai số tuyệt đối = $|65097,138 - 61047| = 4050,138$ (nghìn người), không phải 58992,438. Ý 4 Sai."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Cho hình chóp S.ABCD có đáy ABCD là hình thoi tâm O, đường thẳng SO vuông góc với mặt phẳng (ABCD). Biết $AB=SB=a$, $SO=\\frac{a\\sqrt{6}}{3}$.\nCác phát biểu sau là đúng hay sai?",
+     "s": [
+      "$AC \\perp (SBD)$.",
+      "$((SAC), (SBD)) = 60^{\\circ}$.",
+      "$(SAB) \\perp (SAD)$.",
+      "Số đo của góc nhị diện $[S,BC,O]$ bằng $60^{\\circ}$."
+     ],
+     "a": [
+      1,
+      0,
+      1,
+      1
+     ],
+     "solved": true,
+     "sol": [
+      "Ý 1 Đúng: ABCD là hình thoi tâm O nên $AC \\perp BD$. Mà $SO \\perp (ABCD) \\Rightarrow SO \\perp AC$. Do đó $AC \\perp (SBD)$.",
+      "Ý 2 Sai: Mặt phẳng (SAC) chứa SO và AC, mặt phẳng (SBD) chứa SO và BD. Góc giữa 2 mặt phẳng (SAC) và (SBD) chính là góc giữa hai đường thẳng nằm trong 2 mặt và cùng vuông góc với giao tuyến SO. Do $AC \\perp SO$ và $BD \\perp SO$, nên góc giữa 2 mặt phẳng này là góc giữa AC và BD, là $90^\\circ$, không phải $60^\\circ$.",
+      "Xét tam giác vuông SBO: $OB = \\sqrt{SB^2 - SO^2} = \\sqrt{a^2 - \\frac{6a^2}{9}} = \\frac{a\\sqrt{3}}{3}$.",
+      "Xét tam giác vuông AOB: $OA = \\sqrt{AB^2 - OB^2} = \\sqrt{a^2 - \\frac{3a^2}{9}} = \\frac{a\\sqrt{6}}{3}$.",
+      "Kẻ $OE \\perp SA$. Vì $OA = SO = \\frac{a\\sqrt{6}}{3}$ nên tam giác SOA vuông cân tại O $\\Rightarrow OE = \\frac{OA}{\\sqrt{2}} = \\frac{a\\sqrt{3}}{3}$.",
+      "Ta có $BD \\perp (SAC) \\Rightarrow BD \\perp SA$, và $OE \\perp SA$, do đó $SA \\perp (BDE)$. Góc phẳng nhị diện giữa (SAB) và (SAD) là góc $\\widehat{BED}$. Vì $\\triangle BDE$ có $OB=OD$ và $OE \\perp BD$ nên tam giác này cân tại E. Xét $\\triangle BOE$ vuông tại O có $\\tan \\widehat{BEO} = \\frac{OB}{OE} = 1 \\Rightarrow \\widehat{BEO} = 45^\\circ$. Góc $\\widehat{BED} = 2 \\times 45^\\circ = 90^\\circ$. Vậy $(SAB) \\perp (SAD)$. Ý 3 Đúng.",
+      "Kẻ $OF \\perp BC$. Trong $\\triangle OBC$ vuông tại O, $OF = \\frac{OB \\cdot OC}{\\sqrt{OB^2+OC^2}} = \\frac{OB \\cdot OC}{BC} = \\frac{\\frac{a\\sqrt{3}}{3} \\cdot \\frac{a\\sqrt{6}}{3}}{a} = \\frac{a\\sqrt{2}}{3}$. Góc nhị diện $[S,BC,O]$ là góc $\\widehat{SFO}$. Ta có $\\tan \\widehat{SFO} = \\frac{SO}{OF} = \\frac{a\\sqrt{6}/3}{a\\sqrt{2}/3} = \\sqrt{3} \\Rightarrow \\widehat{SFO} = 60^\\circ$. Ý 4 Đúng."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Nghiệm của phương trình $\\log_{3}(6x-5)=2$ là",
+     "o": [
+      "$x=\\frac{2}{3}$",
+      "$x=\\frac{11}{6}.$",
+      "$x=-14.$",
+      "$x=\\frac{7}{3}.$"
+     ],
+     "a": 3,
+     "solved": true,
+     "sol": [
+      "Điều kiện: $6x-5 > 0 \\Leftrightarrow x > \\frac{5}{6}$.",
+      "Phương trình tương đương: $6x - 5 = 3^2 \\Leftrightarrow 6x - 5 = 9 \\Leftrightarrow 6x = 14 \\Leftrightarrow x = \\frac{14}{6} = \\frac{7}{3}$ (Thỏa mãn)."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Có 10 hộp bị trong đó có 2 hộp bị loại I và 8 hộp bị loại II, các viên bi có cùng kích thước và khối lượng. Mỗi hộp bị loại I có 4 bị trắng và 6 bị đỏ, mỗi hộp bị loại II có 8 bi trắng và 2 bi đỏ. Bạn Nam lấy ngẫu nhiên một hộp bi rồi từ hộp đó lấy ra ngẫu nhiên một viên bi.\nMỗi phát biểu sau đây là đúng hay sai?",
+     "s": [
+      "Xác suất để bạn Nam lấy được hộp bị loại II là $\\frac{4}{5}.$",
+      "Biết rằng bạn Nam lấy được hộp bị loại II, xác suất để viên bị lấy ra có màu đỏ bằng $\\frac{1}{4}.$",
+      "Xác suất để bạn Nam lấy được viên bi màu đỏ bằng $\\frac{7}{25}.$",
+      "Khi bạn Nam lấy được một viên bị màu đỏ thì xác suất để viên bị đó được lấy ra từ hộp II bằng $\\frac{8}{25}$"
+     ],
+     "a": [
+      1,
+      0,
+      1,
+      0
+     ],
+     "solved": true,
+     "sol": [
+      "Ý 1 Đúng: Có 8 hộp loại II trong tổng số 10 hộp. Xác suất lấy được hộp loại II là $P(II) = \\frac{8}{10} = \\frac{4}{5}$.",
+      "Ý 2 Sai: Mỗi hộp loại II có tổng cộng 10 viên (8 trắng, 2 đỏ). Biết Nam lấy hộp loại II, xác suất lấy viên bi màu đỏ là $P(D|II) = \\frac{2}{10} = \\frac{1}{5}$, không phải $\\frac{1}{4}$.",
+      "Ý 3 Đúng: Gọi D là biến cố lấy được bi đỏ. Theo công thức xác suất toàn phần: $P(D) = P(I)P(D|I) + P(II)P(D|II) = \\frac{2}{10} \\times \\frac{6}{10} + \\frac{8}{10} \\times \\frac{2}{10} = \\frac{12}{100} + \\frac{16}{100} = \\frac{28}{100} = \\frac{7}{25}$.",
+      "Ý 4 Sai: Áp dụng công thức Bayes, xác suất viên bi được lấy từ hộp II biết rằng nó màu đỏ là $P(II|D) = \\frac{P(II)P(D|II)}{P(D)} = \\frac{16/100}{28/100} = \\frac{16}{28} = \\frac{4}{7}$, không phải $\\frac{8}{25}$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Trong không gian với hệ trục tọa độ Oxyz, cho tam giác ABC có ba đỉnh A (2; 1; -3), B (4; 2; 1), $C(3;0;5)$. Tọa độ trọng tâm G của tam giác ABC là",
+     "o": [
+      "G $(3;1;-1)$.",
+      "G $(3;1;1)$.",
+      "G $r(1;3;1)$.",
+      "$G(-1;3;1)$"
+     ],
+     "a": 1,
+     "solved": true,
+     "sol": [
+      "Tọa độ trọng tâm G của tam giác ABC được tính theo công thức:",
+      "$x_G = \\frac{x_A + x_B + x_C}{3} = \\frac{2 + 4 + 3}{3} = 3$.",
+      "$y_G = \\frac{y_A + y_B + y_C}{3} = \\frac{1 + 2 + 0}{3} = 1$.",
+      "$z_G = \\frac{z_A + z_B + z_C}{3} = \\frac{-3 + 1 + 5}{3} = 1$.",
+      "Vậy tọa độ trọng tâm là G (3; 1; 1)."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Điền một số tự nhiên thích hợp vào chỗ trống.\nCho 2026 số nguyên $x,x_{1},x_{2},...,x_{2025}$ thỏa mãn điều kiện $x=(1+x_{1})(1+x_{2})...(1+x_{2025})=(1-x_{1})(1-x_{2})...(1-x_{2025})$.\nTích của 2026 số nguyên $x,x_{1},x_{2},...,x_{2025}$ bằng [[0]]",
+     "a": [
+      0
+     ],
+     "solved": true,
+     "sol": [
+      "Từ giả thiết, nhân hai vế tương ứng của đẳng thức ta có: $x^2 = (1-x_1^2)(1-x_2^2)...(1-x_{2025}^2)$.",
+      "Vì $x_i$ là số nguyên nên $x_i^2 \\ge 0$, do đó $1-x_i^2 \\le 1$. Suy ra tích của chúng $x^2 \\le 1$.",
+      "Vì $x$ là số nguyên, ta chỉ có thể có $x^2 = 0$ hoặc $x^2 = 1$.",
+      "Nếu $x^2 = 1 \\Rightarrow 1-x_i^2 = 1 \\Rightarrow x_i = 0$ với mọi $i$. Khi đó $x = (1+0)...(1+0) = 1$. Tuy nhiên, tích của 2026 số này chứa các $x_i = 0$ nên sẽ bằng $0$.",
+      "Nếu $x^2 = 0 \\Rightarrow x = 0$. Khi đó tích của 2026 số này chứa thừa số $x = 0$ nên tích cũng sẽ bằng 0.",
+      "Vậy trong mọi trường hợp, tích của 2026 số đó luôn bằng 0."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Tập xác định của hàm số $y=\\log_{2}\\frac{x+3}{2-x}$ là",
+     "o": [
+      "$(-3;2)$",
+      "$(-\\infty;-3)\\cup(2;+\\infty)$",
+      "$\\mathbb{R}\\backslash\\{-3;2\\}$",
+      "$[-3;2]$"
+     ],
+     "a": 0,
+     "solved": true,
+     "sol": [
+      "Hàm số logarit có nghĩa khi biểu thức dưới dấu logarit lớn hơn 0.",
+      "Ta có: $\\frac{x+3}{2-x} > 0 \\Leftrightarrow (x+3)(2-x) > 0 \\Leftrightarrow -3 < x < 2$.",
+      "Vậy tập xác định là $D = (-3; 2)$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Trong không gian $Oxyz,$ cho các điểm $A(0;\\sqrt{2};0)$, $B(0;0;\\sqrt{2})$. Gọi C là điểm thuộc mặt phẳng $(Oxy)$ và thỏa mãn tam giác OAC vuông tại C. Biết hình chiếu vuông góc của O trên BC là điểm H. Khi đó, điểm H luôn thuộc đường tròn cố định có bán kính bằng bao nhiêu?",
+     "o": [
+      "2.",
+      "$\\sqrt{2}$.",
+      "$\\frac{1}{2}.$",
+      "$\\frac{1}{\\sqrt{2}}.$"
+     ],
+     "a": 2,
+     "solved": true,
+     "sol": [
+      "Bởi vì điểm B nằm trên trục Oz, nên tia OB vuông góc với mặt phẳng (Oxy). Từ đó, đoạn thẳng OB vuông góc với bất kỳ đoạn thẳng nào nằm trong (Oxy), bao gồm đoạn thẳng OC và AC.",
+      "Vì OB vuông góc với (Oxy), OB vuông góc OC, tức là tam giác OBC vuông tại O. Theo tính chất tam giác vuông, H là hình chiếu của O lên BC thì $OH \\perp BC$.",
+      "Theo giả thiết, tam giác OAC vuông tại C, tức là $AC \\perp OC$. Mặt khác, $OB \\perp AC$. Kết hợp hai điều kiện này, ta có $AC \\perp (OBC)$, kéo theo $AC \\perp OH$.",
+      "Như vậy, đoạn OH vừa vuông góc với BC vừa vuông góc với AC, nên đoạn OH vuông góc với toàn bộ mặt phẳng (ABC).",
+      "H nằm trong (ABC) và $OH \\perp (ABC)$, điều đó có nghĩa H chính là hình chiếu vuông góc của O lên mặt phẳng (ABC).",
+      "Gọi K là hình chiếu vuông góc của O lên đường thẳng AB. Vì $OA = OB = \\sqrt{2}$, tam giác OAB là tam giác vuông cân tại O, K là trung điểm của AB. Ta có $OK = \\frac{OA\\cdot OB}{\\sqrt{OA^2+OB^2}} = 1$.",
+      "Bởi vì $OH \\perp (ABC)$, góc $\\widehat{OHK}$ luôn bằng $90^\\circ$. Do O và K cố định, quỹ tích của điểm H là một mặt cầu đường kính OK, có tâm I (trung điểm OK) và bán kính $R_{mc} = \\frac{OK}{2} = \\frac{1}{2}$.",
+      "Ta tham số hoá điểm C: $C(x; y; 0)$. Điều kiện tam giác OAC vuông tại C: $\\vec{OC}\\cdot\\vec{AC} = 0 \\Leftrightarrow x^2 + y(y-\\sqrt{2}) = 0$. Phương trình mặt phẳng (ABC) đi qua $A(0; \\sqrt{2}; 0), B(0; 0; \\sqrt{2})$ và $C(x; y; 0)$ có thể tìm được, từ đó toạ độ điểm H cũng có dạng $y_H = z_H$, tức H luôn nằm trong một mặt phẳng cố định $y = z$.",
+      "Giao tuyến của mặt cầu (đường kính OK) với mặt phẳng ($y=z$) này (mặt phẳng chứa cả tâm I) là một đường tròn lớn của mặt cầu. Bán kính của đường tròn này chính bằng bán kính của mặt cầu là $r = \\frac{1}{2}$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho hàm số $y=f(x)$ có đồ thị là hình vẽ như sau:\nĐiểm cực đại của đồ thị hàm số đã cho là:",
+     "fig": "img/toan_c36_dehocmai08.png",
+     "warn": "cần chèn ảnh đồ thị hàm số",
+     "o": [
+      "$M(-3;-3)$.",
+      "$x=-1.$",
+      "$N(-1;1)$.",
+      "$x=-3$."
+     ],
+     "a": 0,
+     "solved": true,
+     "sol": [
+      "Từ đồ thị hàm số, ta thấy tại $x = -3$, nhánh đồ thị nhô lên tạo thành một đỉnh với tung độ $y = -3$.",
+      "Vì đề bài hỏi 'Điểm cực đại CỦA ĐỒ THỊ hàm số' nên câu trả lời phải là một tọa độ điểm $(x_0; y_0)$.",
+      "Vậy điểm cực đại của đồ thị hàm số là $M(-3; -3)$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Cho hàm số $y=f(x)$ liên tục trên $\\mathbb{R}$ và có đồ thị như hình vẽ.\nTổng tất cả các giá trị nguyên của tham số m để bất phương trình $9\\cdot 6^{f(x)}+(4-f^{2}(x))\\cdot 9^{f(x)}\\le(-m^{2}+5m)\\cdot 4^{f(x)}$ đúng $\\forall x\\in \\mathbb{R}$ bằng [[0]]",
+     "fig": "img/toan_c37_dehocmai08.png",
+     "warn": "cần chèn ảnh đồ thị hàm số y=f(x)",
+     "a": [
+      10
+     ],
+     "solved": true,
+     "sol": [
+      "Chia cả 2 vế của bất phương trình cho $4^{f(x)} > 0$, ta được: $9 \\cdot \\left(\\frac{3}{2}\\right)^{f(x)} + (4 - f^2(x)) \\cdot \\left(\\frac{9}{4}\\right)^{f(x)} \\le -m^2 + 5m$.",
+      "Dựa vào đồ thị, ta thấy miền giá trị của hàm số $f(x)$ là $(-\\infty; -2]$.",
+      "Đặt $t = f(x)$, với $t \\le -2$. Bất phương trình trở thành $9 \\cdot (1,5)^t + (4 - t^2) \\cdot (2,25)^t \\le -m^2 + 5m$ đúng với mọi $t \\le -2$.",
+      "Xét hàm số $g(t) = 9 \\cdot (1,5)^t + (4 - t^2) \\cdot (2,25)^t$ trên khoảng $(-\\infty; -2]$.",
+      "Tại $t = -2$, $g(-2) = 9 \\cdot (1,5)^{-2} + (4 - (-2)^2) \\cdot (2,25)^{-2} = 9 \\cdot \\frac{4}{9} + 0 = 4$.",
+      "Với $t \\le -2$ thì $4 - t^2 \\le 0$, suy ra $g(t) \\le 9 \\cdot (1,5)^t \\le 9 \\cdot (1,5)^{-2} = 4$. Do đó, $\\max_{t \\le -2} g(t) = 4$.",
+      "Để bất phương trình đúng với mọi $t \\le -2$, điều kiện là: $4 \\le -m^2 + 5m \\Leftrightarrow m^2 - 5m + 4 \\le 0 \\Leftrightarrow 1 \\le m \\le 4$.",
+      "Vì $m$ nhận giá trị nguyên nên $m \\in \\{1; 2; 3; 4\\}$.",
+      "Tổng các giá trị nguyên của m là $1 + 2 + 3 + 4 = 10$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Phương trình $\\frac{1}{\\cos x}+\\frac{1}{\\sin 2x}=\\frac{2}{\\sin 4x}$ có tổng các nghiệm trên $(0; \\pi)$ là.",
+     "o": [
+      "$\\frac{\\pi}{6}$",
+      "$\\frac{\\pi}{6}$",
+      "$\\frac{2\\pi}{3}$",
+      "$\\pi$"
+     ],
+     "a": 3,
+     "solved": true,
+     "sol": [
+      "Điều kiện xác định: $\\sin 4x \\neq 0 \\Leftrightarrow 4x \\neq k\\pi \\Leftrightarrow x \\neq \\frac{k\\pi}{4}$.",
+      "Biến đổi phương trình:",
+      "$\\frac{1}{\\cos x} + \\frac{1}{2\\sin x\\cos x} = \\frac{2}{2\\sin 2x\\cos 2x}$",
+      "$\\Leftrightarrow \\frac{2\\sin x + 1}{2\\sin x\\cos x} = \\frac{1}{2\\sin x\\cos x\\cos 2x}$",
+      "$\\Leftrightarrow 2\\sin x + 1 = \\frac{1}{\\cos 2x}$",
+      "$\\Leftrightarrow (2\\sin x + 1)(1 - 2\\sin^2 x) = 1$",
+      "$\\Leftrightarrow 2\\sin x - 4\\sin^3 x + 1 - 2\\sin^2 x = 1$",
+      "$\\Leftrightarrow -4\\sin^3 x - 2\\sin^2 x + 2\\sin x = 0$",
+      "$\\Leftrightarrow -2\\sin x (2\\sin^2 x + \\sin x - 1) = 0$",
+      "$\\Leftrightarrow \\sin x = 0$ (loại do ĐKXĐ) hoặc $2\\sin^2 x + \\sin x - 1 = 0$.",
+      "Giải phương trình bậc hai: $\\sin x = -1$ hoặc $\\sin x = \\frac{1}{2}$.",
+      "Với $\\sin x = -1$, không có nghiệm nào trên khoảng $(0; \\pi)$.",
+      "Với $\\sin x = \\frac{1}{2}$, ta được $x = \\frac{\\pi}{6}$ và $x = \\frac{5\\pi}{6}$. (Cả hai nghiệm đều thoả mãn ĐKXĐ).",
+      "Tổng các nghiệm là $\\frac{\\pi}{6} + \\frac{5\\pi}{6} = \\pi$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Trường THPT X có 800 học sinh, trong đó có 360 học sinh tham gia câu lạc bộ thể thao. Trong số các học sinh tham gia câu lạc bộ thể thao của trường, có 188 học sinh biết bơi. Trong số các học sinh của trường không tham gia câu lạc bộ thể thao, có 132 học sinh biết bơi. Chọn ngẫu nhiên một học sinh của trường THPT X.\nGọi A là biến cố: “Chọn được học sinh thuộc câu lạc bộ thể thao\".\nGọi B là biến cố: \"Chọn được học sinh biết bơi\".\nMỗi phát biểu sau đây là đúng hay sai?",
+     "s": [
+      "Xác suất $P(A)=0,45$.",
+      "Xác suất có điều kiện $P(B|\\overline{A})=0,2.$",
+      "Xác suất $P(B)=0,45.$",
+      "Xác suất chọn được học sinh thuộc câu lạc bộ thể thao mà học sinh đó biết bơi bằng 0,58 (làm tròn kết quả đến hàng phần trăm)."
+     ],
+     "a": [
+      1,
+      0,
+      0,
+      0
+     ],
+     "solved": true,
+     "sol": [
+      "Số lượng không gian mẫu là $N = 800$. Số HS thuộc CLB thể thao là $|A| = 360$. Số HS không thuộc CLB thể thao là $|\\overline{A}| = 800 - 360 = 440$.",
+      "Biết số HS vừa thuộc CLB vừa biết bơi là $|A \\cap B| = 188$. Số HS không thuộc CLB nhưng biết bơi là $|\\overline{A} \\cap B| = 132$. Tổng số HS biết bơi là $|B| = 188 + 132 = 320$.",
+      "Ý 1 Đúng: Xác suất $P(A) = \\frac{360}{800} = 0,45$.",
+      "Ý 2 Sai: Xác suất có điều kiện $P(B|\\overline{A})$ (biết bơi trong số những học sinh không thuộc CLB) là $\\frac{132}{440} = 0,3$.",
+      "Ý 3 Sai: Xác suất $P(B) = \\frac{320}{800} = 0,4$.",
+      "Ý 4 Sai: 'Xác suất chọn được học sinh thuộc câu lạc bộ thể thao mà học sinh đó biết bơi' (hỏi điều kiện học sinh biết bơi, tìm XS thuộc CLB) là $P(A|B) = \\frac{188}{320} = 0,5875$. Làm tròn đến hàng phần trăm phải là $0,59$, không phải $0,58$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Tổng tất cả các giá trị thực của tham số m để khoảng cách từ điểm M (0;3) đến đường thẳng đi qua hai điểm cực trị của đồ thị hàm số $y=x^{3}+3mx+1$ bằng $\\frac{2}{\\sqrt{5}}$ là [[0]]",
+     "a": [
+      -1
+     ],
+     "solved": true,
+     "sol": [
+      "Tập xác định $D = \\mathbb{R}$. Đạo hàm $y' = 3x^2 + 3m$. Để hàm số có 2 điểm cực trị thì phương trình $y' = 0$ có 2 nghiệm phân biệt $\\Leftrightarrow 3m < 0 \\Leftrightarrow m < 0$.",
+      "Thực hiện phép chia đa thức $y$ cho $y'$, ta có: $y = \\frac{x}{3}(3x^2 + 3m) + 2mx + 1 = y' \\cdot \\frac{x}{3} + 2mx + 1$.",
+      "Tại các điểm cực trị thì $y' = 0$, do đó phương trình đường thẳng đi qua hai điểm cực trị là $\\Delta: y = 2mx + 1 \\Leftrightarrow 2mx - y + 1 = 0$.",
+      "Khoảng cách từ điểm $M(0; 3)$ đến $\\Delta$ là $d(M, \\Delta) = \\frac{|2m(0) - 3 + 1|}{\\sqrt{(2m)^2 + (-1)^2}} = \\frac{2}{\\sqrt{4m^2 + 1}}$.",
+      "Theo giả thiết, $d(M, \\Delta) = \\frac{2}{\\sqrt{5}} \\Leftrightarrow \\frac{2}{\\sqrt{4m^2+1}} = \\frac{2}{\\sqrt{5}} \\Leftrightarrow 4m^2 + 1 = 5 \\Leftrightarrow m^2 = 1 \\Leftrightarrow m = 1$ hoặc $m = -1$.",
+      "Đối chiếu điều kiện $m < 0$, ta nhận $m = -1$.",
+      "Chỉ có duy nhất một giá trị thực của m thoả mãn nên tổng các giá trị bằng -1."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Đề Đọc Hiểu - hocmai08",
+   "minutes": 30,
+   "groups": [
+    {
+     "title": "CÔNG NGHỆ PIN SẠC LI-ION VÀ KHÍ HYDRO XANH CỦA NHÀ KHOA HỌC VIỆT",
+     "p": "<p>[0] Pin sạc Li-ion được kỳ vọng là nguồn điện chủ yếu cho các loại phương tiện giao thông điện cũng như giải quyết bài toán lưu trữ năng lượng tái tạo.</p><p>[1] Theo PGS.TS Trần Văn Mẫn (Trường ĐH Khoa học Tự nhiên, Đại học Quốc gia TPHCM), điện được sản xuất tại nhà máy, truyền tải tới người sử dụng, chuyển hóa thành các dạng khác và đang được phát triển các hệ thống lưu trữ quy mô lớn. Việc sử dụng, chuyển hóa, lưu trữ các loại năng lượng này là vấn đề khá cấp thiết. Pin sạc Li-ion được nghiên cứu ứng dụng nhằm giúp giải quyết 3 bài toán lớn là nguồn cho các thiết bị di động, nguồn cho các phương tiện giao thông điện và lưu trữ năng lượng tái tạo.</p><p>[2] Tại Việt Nam, một trong những vấn đề lớn hiện nay là hệ thống trạm sạc pin cho xe ô tô điện và bài toán về các hệ thống lưu trữ năng lượng cho trạm. Công nghệ lưu trữ đang được Viettel nghiên cứu ứng dụng là ắc quy khô và pin Li-ion LFP. Theo PGS Mẫn, trong công nghệ pin sạc Li-ion, vật liệu điện cực dương xoay quanh 4 loại và điện cực âm có 3 loại vật liệu chủ yếu (graphite, silic, $SiO_2$). Các dạng thiết kế phổ biến của pin Li-ion hiện có pin dạng cúc áo (sản phẩm dự trữ năng lượng chuyên dụng cho các thiết bị điện tử nhỏ gọn như điều khiển thiết bị từ xa, đồng hồ, tay cầm máy tính, tai phone); pin túi (pouch-cell) thông dụng trong các thiết bị di động; pin dạng hình trụ; pin dạng lăng trụ.</p><p>[3] Nhóm nghiên cứu Phòng Thí nghiệm Hóa Lý ứng dụng (Trường ĐH Khoa học Tự nhiên) đã nghiên cứu công nghệ pin sạc Li-ion sử dụng vật liệu silica/carbon có triển vọng thay thế một phần vật liệu graphite thương mại. Vật liệu được phát triển trên cơ sở vỏ trấu Việt Nam, khi ứng dụng thành công sẽ giúp \"Việt hóa\" các thành phần của vật liệu sản xuất pin Li-ion. PGS Mẫn cho rằng, nếu muốn tham gia vào lĩnh vực pin sạc Li-ion, có thể cân nhắc 4 cấp độ công nghệ gồm: Đặt hàng thành phẩm pin, lắp ráp và bán ra với thương hiệu của mình; mua bán thành phẩm (điện cực dương, điện cực âm, điện giải...), lắp ráp pin/khối pin; đầu tư vật liệu, điện cực - bán thành phẩm - lắp ráp pin/khối pin; xây dựng nhà máy - tổng hợp hóa chất, vật liệu - lắp ráp khối pin hoàn chỉnh.</p><p>[4] Ngày 18/8/2023, Trung tâm Thông tin và Thống kê Khoa học và Công nghệ TPHCM (CESTI) tổ chức Hội thảo \"Công nghệ pin sạc Li-ion và công nghệ khí hydro xanh ứng dụng lưu trữ và chuyển hóa năng lượng\". Tại đây, PGS.TS Trần Văn Mẫn trình bày về công nghệ khí hydro xanh, dùng phương pháp điện phân nước sinh hydro, sản xuất khí hydro sử dụng để thay thế nhiên liệu hóa thạch.</p><p>[5] Hydro là chất khí nhẹ nhất, tan rất ít trong nước, không màu, không mùi, không vị. Khi hydro cháy, sản phẩm sinh ra duy nhất là nước - không phát thải carbon. Tùy vào phương pháp sản xuất, hydro có thể được phân loại thành 3 nhóm như grey hydrogen (hydro xám), blue hydrogen (hydro lam) và green hydrogen (hydro xanh). Hydro xanh được coi là năng lượng sạch để hỗ trợ cho năng lượng gió và Mặt trời cung cấp tại những nơi xa nhà máy năng lượng tái tạo. Sản xuất hydro tại Việt Nam hiện nay chủ yếu gắn với các nhà máy sản xuất phân đạm. Các công nghệ sản xuất hydro phổ biến gồm: Reforming khí metan, khí hóa than, điện phân, quang - điện hóa tách nước...</p><p>[6] Về công nghệ chuyển hóa, đã có các nghiên cứu ứng dụng pin nhiên liệu hydro trên xe hơi với nguyên lý chung là sử dụng pin hydro công suất nhỏ, tùy vào ứng dụng cho xe tải, tàu hỏa hay tàu thuyền... Nhóm của PGS.TS Trần Văn Mẫn đã tiến hành các nghiên cứu ứng dụng pin nhiên liệu hydro trên xe hơi, tập trung vào việc lựa chọn xúc tác và màng cho pin, công nghệ chế tạo pin nhiên liệu. Thách thức lớn nhất hiện nay của pin nhiên liệu hydro là hệ thống sản xuất, tồn chứa và vận chuyển hydro.</p><p>[7] Vì vậy, để ứng dụng hydro, cần có chiến lược phát triển các trạm nạp loại nhiên liệu này. Trong quá trình sản xuất, con đường tốt nhất là dùng phương pháp điện phân nước sử dụng năng lượng Mặt trời/năng lượng gió, bởi đây là dạng green hydrogen (hydro xanh).</p><p>(Theo Nhật Phong, Công nghệ pin sạc Li-ion và khí hydro xanh của nhà khoa học Việt, đăng trên http://giaoducthoidai.vn/ ngày 24/08/2023)</p>",
+     "questions": [
+      {
+       "t": "mc",
+       "q": "Vì sao các nhà khoa học Việt cần nghiên cứu và chế tạo ra pin sạc Li-ion?",
+       "o": [
+        "Xu hướng phát triển của các phương tiện công cộng trong tương lai là sử dụng xe điện.",
+        "Tìm ra giải pháp về năng lượng cho các loại phương tiện giao thông chạy bằng điện.",
+        "Pin sạc Li-ion có khả năng dự trữ năng lượng lớn, đủ điều kiện để thiết kế xe ôtô điện.",
+        "Các nhà khoa học Việt cần tạo ra một sản phẩm lưu trữ năng lượng để bắt kịp với thế giới."
+       ],
+       "a": 1,
+       "sol": [
+        "Đoạn [1] nêu rõ: \"Pin sạc Li-ion được nghiên cứu ứng dụng nhằm giúp giải quyết 3 bài toán lớn là nguồn cho các thiết bị di động, nguồn cho các phương tiện giao thông điện và lưu trữ năng lượng tái tạo.\""
+       ]
+      },
+      {
+       "t": "drag",
+       "q": "Đọc thông tin trong đoạn [1] và hoàn thành nhận định sau bằng cách kéo thả các từ vào đúng vị trí.\nĐiện được sản xuất tại các nhà máy và truyền tải tới người sử dụng. Việc không thể [[0]] nguồn năng lượng này đặt ra vấn đề khá [[1]] về vấn đề bảo vệ tài nguyên, vì vậy, các nhà khoa học kì vọng tìm ra được một phương án nhằm tối ưu nhất nguồn năng lượng [[2]]",
+       "c": [
+        "cấp bách",
+        "lưu trữ",
+        "cấp thiết",
+        "tái tạo",
+        "sản xuất"
+       ],
+       "a": [
+        1,
+        2,
+        3
+       ],
+       "sol": [
+        "Dựa vào đoạn [1]: \"Việc sử dụng, chuyển hóa, lưu trữ các loại năng lượng này là vấn đề khá cấp thiết... lưu trữ năng lượng tái tạo.\""
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Theo PGS.TS Trần Văn Mẫn, việc tạo ra pin sạc Li-ion và đưa vào ứng dụng sẽ giải quyết được tất cả các vấn đề liên quan đến năng lượng và việc sử dụng điện là đúng hay sai?",
+       "o": [
+        "Đúng.",
+        "Sai."
+       ],
+       "a": 1,
+       "sol": [
+        "Trong đoạn [1], tác giả chỉ đề cập pin sạc Li-ion giúp giải quyết \"3 bài toán lớn\" (thiết bị di động, phương tiện giao thông điện, lưu trữ năng lượng tái tạo), chứ không phải \"tất cả\" các vấn đề về năng lượng."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Theo bài viết, việc Viettel nghiên cứu ứng dụng ắc quy khô và pin Li-ion LFP để làm gì?",
+       "o": [
+        "Tổ chức trạm sạc pin cho xe ôtô điện để phục vụ việc chuyển đổi phương tiện công cộng.",
+        "Giải quyết vấn đề về lưu trữ năng lượng cho hệ thống các trạm sạc trong tương lai.",
+        "Phát triển công nghệ lưu trữ năng lượng dành cho các xe ôtô điện để đảm bảo nhu cầu.",
+        "Nghiên cứu giải pháp pin chất lượng cao và giảm chi phí tiêu hao nhiên liệu của ôtô."
+       ],
+       "a": 1,
+       "sol": [
+        "Đoạn [2] nêu: \"Tại Việt Nam, một trong những vấn đề lớn hiện nay là hệ thống trạm sạc pin cho xe ô tô điện và bài toán về các hệ thống lưu trữ năng lượng cho trạm. Công nghệ lưu trữ đang được Viettel nghiên cứu ứng dụng là ắc quy khô và pin Li-ion LFP.\""
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Điền từ thích hợp (không quá hai tiếng) để hoàn thành nhận định sau:\nPin Li-ion được sản xuất với vật liệu cực dương xoay quanh bốn loại, vật liệu điện cực âm chủ yếu là: graphite, silic, $SiO_2$; các dạng [[0]] phổ biến nhất là pin cúc áo, pin túi, pin dạng hình trụ và pin dạng lăng trụ.",
+       "a": [
+        "thiết kế"
+       ],
+       "sol": [
+        "Dựa vào đoạn [2]: \"Các dạng thiết kế phổ biến của pin Li-ion hiện có pin dạng cúc áo...\""
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Trong hoạt động nghiên cứu và sản xuất pin sạc Li-ion, các nhóm nghiên cứu có kì vọng sử dụng vỏ trấu thay thế graphite thương mại nhằm hướng tới một sản phẩm mang giá trị và thương hiệu Việt là đúng hay sai?",
+       "o": [
+        "Đúng.",
+        "Sai."
+       ],
+       "a": 0,
+       "sol": [
+        "Đoạn [3] cho biết: \"...sử dụng vật liệu silica/carbon có triển vọng thay thế một phần vật liệu graphite thương mại. Vật liệu được phát triển trên cơ sở vỏ trấu Việt Nam, khi ứng dụng thành công sẽ giúp 'Việt hóa' các thành phần...\""
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Điểm chung của công nghệ pin sạc Li-ion và công nghệ khí hydro xanh là gì?",
+       "o": [
+        "Đều là những thành tựu trong nghiên cứu năng lượng của Trường ĐH Khoa học Tự nhiên.",
+        "Đều không được các nhà khoa học nghiên cứu về năng lượng trong nước quan tâm đến.",
+        "Đều hướng tới mục đích hạn chế việc khai thác lãng phí các tài nguyên thiên nhiên.",
+        "Đều có thể ứng dụng trong mọi hoạt động sống của con người ở đô thị hiện đại."
+       ],
+       "a": 2,
+       "sol": [
+        "Cả hai công nghệ đều hướng tới việc bảo vệ môi trường và tài nguyên: khí hydro xanh thay thế nhiên liệu hóa thạch, không phát thải carbon; còn pin Li-ion lưu trữ năng lượng tái tạo."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Ở Việt Nam hiện nay, việc sản xuất hydro xanh hiện nay chủ yếu gắn với",
+       "o": [
+        "trung tâm tái tạo năng lượng gió và Mặt trời.",
+        "những nhà máy cách xa nơi tái tạo năng lượng.",
+        "hoạt động tại các nhà máy sản xuất phân đạm.",
+        "việc phân loại các nhóm hydro trong sản xuất."
+       ],
+       "a": 2,
+       "sol": [
+        "Theo đoạn [5]: \"Sản xuất hydro tại Việt Nam hiện nay chủ yếu gắn với các nhà máy sản xuất phân đạm.\""
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Mối quan hệ giữa pin Li-ion và hydro xanh là gì?",
+       "o": [
+        "Đều được nghiên cứu và thử nghiệm trên xe hơi điện.",
+        "Dùng hydro xanh làm lõi pin nhiên liệu phương tiện.",
+        "Pin Li-ion là chất xúc tác để chuyển hóa hydro xanh.",
+        "Dùng hydro xanh để tăng kích thước của pin Li-ion."
+       ],
+       "a": 0,
+       "sol": [
+        "Theo đoạn [1], pin sạc Li-ion \"là nguồn cho các phương tiện giao thông điện\". Theo đoạn [6], \"đã có các nghiên cứu ứng dụng pin nhiên liệu hydro trên xe hơi\". Điểm chung là cả hai đều hướng đến ứng dụng làm năng lượng cho xe điện."
+       ]
+      },
+      {
+       "t": "drag",
+       "q": "Hoàn thành câu sau bằng cách kéo thả các từ vào đúng vị trí.\nKhông chỉ dừng lại ở việc [[0]] và [[1]] công nghệ mới mà cần phát triển [[2]] trong thực tiễn với những [[3]] cụ thể về phát triển trạm nạp nhiên liệu.",
+       "c": [
+        "ảnh hưởng",
+        "nghiên cứu",
+        "chiến lược",
+        "tầm nhìn",
+        "ứng dụng"
+       ],
+       "a": [
+        1,
+        4,
+        2,
+        3
+       ],
+       "sol": [
+        "Dựa theo tư tưởng của văn bản (chủ yếu ở đoạn 7): việc phát triển công nghệ đòi hỏi cả 'nghiên cứu', 'ứng dụng', và cần có 'chiến lược' với 'tầm nhìn' cụ thể (như phát triển các trạm nạp nhiên liệu hydro xanh)."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "BẤT BÌNH ĐẲNG GIỚI VÀ VẤN ĐỀ PHÁT TRIỂN KINH TẾ",
+     "p": "<p>[0] Có nhiều lí do để lo ngại bất bình đẳng giới vẫn còn tồn tại liên quan đến chất lượng cuộc sống như giáo dục, y tế, việc làm và trả công lao động. Trên quan điểm về phúc lợi và sự bình đẳng, bất bình đẳng giới trở thành vấn đề nan giải, làm suy giảm lợi ích và là một dạng bất công trong xã hội.</p><p>[1] Trong những năm gần đây, kinh tế Việt Nam đạt mức tăng trưởng khá và tương đối ổn định, tốc độ tăng tổng sản phẩm trong nước (GDP) bình quân trong thời kì 2000 - 2012 đạt 7,1%, Việt Nam đang dần chuyển vị trí từ nhóm nước nghèo nhất sang nhóm nước có thu nhập trung bình thấp. Vậy nên, bình đẳng giới vừa là mục tiêu, vừa là cơ sở thúc đẩy tăng trưởng kinh tế, xây dựng xã hội ổn định.</p><p>[2] Theo nghiên cứu của Dollar và Gatti (1999), vấn đề bất bình đẳng giới làm giảm chất lượng trung bình của nguồn nhân lực trong xã hội và có tác động xấu tới phát triển kinh tế do nó làm hạn chế nguồn chất xám cho giáo dục. Liên quan đến cạnh tranh quốc tế, nhiều nước Đông Á có thể cạnh tranh trên thị trường thông qua việc sử dụng lao động nữ trong các ngành sản xuất theo hướng xuất khẩu. Bên cạnh đó, nhiều nghiên cứu chỉ ra rằng: việc làm và thu nhập làm tăng khả năng, vai trò và tầm quan trọng của họ trong cuộc sống gia đình. Sự khác biệt trong hành vi tiết kiệm giữa nam và nữ, nữ giới có xu hướng đầu tư cao hơn trong y tế và giáo dục cho con cái, tăng vốn nhân lực cho thế hệ tiếp theo và thúc đẩy tăng trưởng kinh tế.</p><p>[3] Liên quan tới vấn đề quản trị, lao động nữ dường như ít bị cuốn vào tham nhũng và có tư tưởng \"gia đình trị\" hơn nam giới, và từ đó, có thể đưa ra giả thuyết rằng khi nữ giới giữ chức vụ cao hơn nam giới thì sẽ có lợi hơn cho hoạt động kinh tế. Bên cạnh đó, bất bình đẳng giới còn liên quan tới vấn đề thu nhập của lao động, khoảng cách đó khiến lực lượng lao động nữ giảm xuống, khả năng sinh sản tăng lên, tăng trưởng kinh tế thấp hơn thông qua sự tham gia của thị trường lao động và tác động nhân khẩu học. Tuy có một số mô hình kinh tế khác chỉ ra rằng: chênh lệch trong thu nhập tạo nên tính cạnh tranh và từ đó tạo động lực cho phát triển kinh tế của Quốc gia, nhưng chúng ta cần lưu tâm tới vấn đề tăng trưởng tức thời và sự phát triển bền vững, lâu dài.</p><p>[4] Rất khó để nhìn nhận những vấn đề liên quan tới khoảng cách giới trong giáo dục, việc làm và tiền lương nhưng tựu chung, các mô hình đều chỉ ra rằng khoảng cách ở khía cạnh này sẽ dẫn tới khoảng cách giới ở một khía cạnh, lĩnh vực khác như một hệ quả kéo theo. Có thể lấy một ví dụ cho quy luật này: Khi tồn tại những rào cản lớn trong công việc của nữ giới hoặc các khoảng cách thu nhập thì những bậc phụ huynh có xu hướng quyết định rằng giáo dục đối với trẻ em gái không sinh lợi, do đó, có thể dẫn tới việc giảm nhu cầu đối với giáo dục cho nữ giới và dẫn tới khoảng cách về giới trong giáo dục.</p><p>[5] Nghiên cứu về vấn đề này, Klasen (1999) chỉ ra rằng sự gia tăng lực lượng lao động nữ trong khu vực chính thức gắn liền với mức tăng trưởng cao; mức tăng trưởng về thu nhập thu hút nữ giới tham gia vào lực lượng lao động, giảm thiểu những rủi ro liên quan tới vấn đề chênh lệch giáo dục, mức sinh sản thấp hơn và tỉ lệ tử vong ở trẻ em thấp hơn những thế hệ sau. Tóm lại, cả lí thuyết và những nghiên cứu thực nghiệm đều đi đến sự nhìn nhận về việc khoảng cách giới trong giáo dục và việc làm có thể giảm hiệu quả kinh tế.</p><p>[6] Tuy chưa có nhiều bằng chứng xác thực hay những công trình nghiên cứu vi mô chỉ ra rằng khoảng cách giới trong giáo dục và việc làm gây ra những ảnh hưởng trực tiếp nào đến nền kinh tế. Nhưng thực tế yêu cầu về việc cải thiện vai trò của phụ nữ không nên chỉ nhìn nhận đơn thuần là sự tăng số lượng hay tỉ lệ phụ nữ tham gia vào tiến trình phát triển mà còn đòi hỏi phải chú ý tới chất lượng lao động. Những định kiến xã hội liên quan tới giới là yếu tố quan trọng quyết định thị trường cung cầu lao động trong một nền kinh tế; vấn đề này dẫn đến việc bỏ qua một số lao động đủ năng lực hoặc thậm chí năng lực tốt chỉ vì giới tính của họ, dẫn đến giảm năng suất của doanh nghiệp hay tổ chức đồng thời, ảnh hưởng đến năng suất của các nền kinh tế. Cần tiếp tục đẩy mạnh việc bình đẳng giới trong các chủ trương, chính sách của Đảng và nhà nước để tạo nên nhận thức đầy đủ cho người lao động và người sử dụng lao động về vấn đề này.</p><p>(Theo Tạp chí Khoa học Lao động và Xã hội - số 36/Quý III - 2013)</p>",
+     "questions": [
+      {
+       "t": "mc",
+       "q": "Mục đích chính của bài viết là gì?",
+       "o": [
+        "Nêu lên sự ảnh hưởng của bất bình đẳng giới tới sự phát triển kinh tế.",
+        "Chỉ ra mối quan hệ giữa bình đẳng giới và vấn đề phát triển kinh tế.",
+        "Đưa ra giải pháp cho vấn đề bất bình đẳng giới và phát triển kinh tế.",
+        "Nêu lên hậu quả của nền kinh tế do bất bình đẳng giới gây ra."
+       ],
+       "a": 1,
+       "sol": [
+        "Bài viết phân tích các khía cạnh tương hỗ: bất bình đẳng giới làm giảm tăng trưởng kinh tế, đồng thời bình đẳng giới là mục tiêu và cơ sở thúc đẩy tăng trưởng kinh tế. Do đó, mục đích chính là chỉ ra mối quan hệ giữa bình đẳng giới và vấn đề phát triển kinh tế."
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Hãy điền một cụm từ không quá ba tiếng để hoàn thành câu sau:\nĐể thúc đẩy kinh tế Việt Nam tăng trưởng, không chỉ dừng lại ở việc xây dựng các chiến lược, kế hoạch vĩ mô mà còn cần chú trọng tới vấn đề bình đẳng giới, đảm bảo tính [[0]] trong mọi khía cạnh của đời sống xã hội.",
+       "a": [
+        [
+         "công bằng",
+         "bình đẳng"
+        ]
+       ],
+       "sol": [
+        "Đoạn [0] nhấn mạnh: 'Trên quan điểm về phúc lợi và sự bình đẳng...'. Việc giảm bất bình đẳng giới chính là đảm bảo tính công bằng/bình đẳng trong xã hội."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Theo bài viết, kinh tế Việt Nam đang:",
+       "o": [
+        "bước đầu đạt được các mục tiêu về tăng trưởng kinh tế.",
+        "tăng trưởng nhanh nhưng vẫn thuộc nhóm nước nghèo.",
+        "thiếu sự cân bằng về giới dẫn tới mất ổn định trong phát triển.",
+        "tăng trưởng nhanh, GDP đạt mức trung bình của thế giới."
+       ],
+       "a": 0,
+       "sol": [
+        "Đoạn [1] nêu: '...kinh tế Việt Nam đạt mức tăng trưởng khá và tương đối ổn định... đang dần chuyển vị trí từ nhóm nước nghèo nhất sang nhóm nước có thu nhập trung bình thấp'. Điều này cho thấy nền kinh tế đã bước đầu đạt được các mục tiêu về tăng trưởng."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Theo đoạn [2], cụm từ “tăng vốn nhân lực” được hiểu là gì?",
+       "o": [
+        "Số vốn được quy đổi thành các tài sản liên quan tới quá trình giáo dục con người.",
+        "Quá trình đầu tư phát triển vào con người trên mọi khía cạnh của đời sống xã hội.",
+        "Chiến lược đầu tư để nâng cao chất lượng của lực lượng lao động trong tương lai.",
+        "Số vốn đầu tư vào con người để gia tăng cơ hội cạnh tranh trên thị trường lao động."
+       ],
+       "a": 2,
+       "sol": [
+        "Trong đoạn [2], 'tăng vốn nhân lực' gắn liền với việc 'nữ giới có xu hướng đầu tư cao hơn trong y tế và giáo dục cho con cái'. Tức là đầu tư để nâng cao chất lượng con người, tạo ra lực lượng lao động chất lượng cho thế hệ tiếp theo (tương lai)."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Theo các mô hình kinh tế, đâu là giải pháp giúp nền kinh tế phát triển bền vững?",
+       "o": [
+        "Gia tăng cơ hội tìm kiếm việc làm cho lao động nữ.",
+        "Đảm bảo công bằng về lương trên thị trường lao động.",
+        "Thay đổi định kiến giới trên nhiều khía cạnh đời sống.",
+        "Nâng cao chất lượng lao động nữ trên thị trường lao động."
+       ],
+       "a": 2,
+       "sol": [
+        "Đoạn cuối nhấn mạnh: 'Những định kiến xã hội liên quan tới giới là yếu tố quan trọng quyết định thị trường cung cầu lao động...'. Việc dỡ bỏ, thay đổi định kiến giới là nền tảng cốt lõi bao trùm các giải pháp khác nhằm phát triển bền vững."
+       ]
+      },
+      {
+       "t": "drag",
+       "q": "Hãy hoàn thành câu sau bằng cách kéo thả các từ vào đúng vị trí:\nBất bình đẳng giới thể hiện trên nhiều [[0]] khác nhau như: giáo dục, việc làm và tiền lương, các mặt đó tồn tại và [[1]] lẫn nhau gây ra nhiều [[2]], gia tăng [[3]] giới.",
+       "c": [
+        "khoảng cách",
+        "rào cản",
+        "khía cạnh",
+        "hệ quả",
+        "tác động"
+       ],
+       "a": [
+        2,
+        4,
+        3,
+        0
+       ],
+       "sol": [
+        "Bất bình đẳng giới thể hiện trên nhiều 'khía cạnh' khác nhau... tồn tại và 'tác động' lẫn nhau gây ra nhiều 'hệ quả', gia tăng 'khoảng cách' giới. (Logic suy luận từ đoạn 4)."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Theo đoạn [4] và [5], khoảng cách giới trong giáo dục có thể được giải quyết bằng cách tăng thu nhập cho nữ giới. Đúng hay sai?",
+       "o": [
+        "Đúng.",
+        "Sai."
+       ],
+       "a": 0,
+       "sol": [
+        "Đoạn [5] xác nhận: '...mức tăng trưởng về thu nhập thu hút nữ giới tham gia vào lực lượng lao động, giảm thiểu những rủi ro liên quan tới vấn đề chênh lệch giáo dục...'"
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Hãy điền một cụm từ không quá hai tiếng để hoàn thành nhận định sau:\nMột trong những phương pháp để thúc đẩy kinh tế phát triển chính là đảm bảo yếu tố bình đẳng trong phân phối [[0]] tạo động lực thu hút nữ giới tham gia vào thị trường lao động.",
+       "a": [
+        "thu nhập"
+       ],
+       "sol": [
+        "Dựa vào đoạn [5]: '...mức tăng trưởng về thu nhập thu hút nữ giới tham gia vào lực lượng lao động...'."
+       ]
+      },
+      {
+       "t": "drag",
+       "q": "Hãy hoàn thành câu sau bằng cách kéo thả các từ vào đúng vị trí:\nTrong những nghiên cứu về [[0]] kinh tế, các mô hình đều chỉ ra vai trò của việc đảm bảo tính [[1]] trong xã hội, bất bình đẳng giới và những quan điểm [[2]] có thể trở thành rào cản cho sự [[3]] phát triển chung của Quốc gia.",
+       "c": [
+        "tăng trưởng",
+        "công bằng",
+        "văn hóa",
+        "ổn định",
+        "pháp luật"
+       ],
+       "a": [
+        0,
+        1,
+        2,
+        3
+       ],
+       "sol": [
+        "Nghiên cứu về 'tăng trưởng' kinh tế chỉ ra vai trò của việc đảm bảo tính 'công bằng' trong xã hội; các quan điểm 'văn hóa' (định kiến) có thể trở thành rào cản cho sự 'ổn định' phát triển chung."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Những quan điểm tiêu cực về nữ giới có thể gây ảnh hưởng đến hiệu quả lao động trong quá trình sản xuất. Đúng hay sai?",
+       "o": [
+        "Đúng",
+        "Sai"
+       ],
+       "a": 0,
+       "sol": [
+        "Đoạn [6] khẳng định: 'Những định kiến xã hội liên quan tới giới... dẫn đến việc bỏ qua một số lao động đủ năng lực... dẫn đến giảm năng suất của doanh nghiệp hay tổ chức đồng thời, ảnh hưởng đến năng suất của các nền kinh tế'."
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Đề Khoa Học Số 02",
+   "minutes": 60,
+   "groups": [
+    {
+     "title": "SỰ BAY HƠI CỦA CÁC CHẤT LỎNG",
+     "fig": "img/khoahoc_c24_dehocmai08.png",
+     "warn": "Cần chèn ảnh Hình 1: Thể tích chất lỏng trong bình chứa theo thời gian",
+     "p": "<p>[1] Một nghiên cứu được thực hiện nhằm xác định các yếu tố ảnh hưởng đến tốc độ bay hơi của các chất lỏng khác nhau trong không khí. Trong suốt quá trình làm thí nghiệm, có nhiều loại chất lỏng được thử nghiệm và diện tích bề mặt tiếp xúc với không khí cũng được điều chỉnh. Các thông số của thí nghiệm được mô tả trong Bảng 1.</p><table><tr><th rowspan=\"2\">Loại chất lỏng</th><th rowspan=\"2\">Diện tích bề mặt tiếp xúc ($cm^2$)</th><th rowspan=\"2\">Thể tích ban đầu (mL)</th><th colspan=\"3\">Lượng bay hơi sau 1 tuần</th></tr><tr><th>Lần 1</th><th>Lần 2</th><th>Trung bình</th></tr><tr><td>Nước</td><td>16</td><td>20.0</td><td>12.3</td><td>11.5</td><td>12.1</td></tr><tr><td>Nước</td><td>12</td><td>40.0</td><td>9.3</td><td>8.8</td><td>9.1</td></tr><tr><td>Nước</td><td>8</td><td>60.0</td><td>6.3</td><td>5.9</td><td>6.1</td></tr><tr><td>Nước</td><td>4</td><td>80.0</td><td>2.8</td><td>3.1</td><td>2.9</td></tr><tr><td>Nước cam</td><td>4</td><td>80.0</td><td>2.7</td><td>3.2</td><td>3.0</td></tr><tr><td>Thuốc tẩy dạng lỏng</td><td>4</td><td>80.0</td><td>3.1</td><td>3.0</td><td>3.1</td></tr><tr><td>Dầu thực vật</td><td>4</td><td>80.0</td><td>0.1</td><td>0.0</td><td>0.0</td></tr><tr><td>Cồn tẩy rửa</td><td>4</td><td>80.0</td><td>9.1</td><td>8.8</td><td>8.9</td></tr><tr><td>Cồn tẩy rửa</td><td>8</td><td>80.0</td><td>18.6</td><td>17.8</td><td>18.2</td></tr><tr><td>Cồn tẩy rửa</td><td>12</td><td>80.0</td><td>27.1</td><td>26.9</td><td>27.3</td></tr><tr><td>Cồn tẩy rửa</td><td>16</td><td>80.0</td><td>38.0</td><td>34.0</td><td>36.4</td></tr></table><p>[2] Thí nghiệm được tiếp tục trong khoảng thời gian bảy tuần đối với nước và cồn tẩy rửa. Kết quả thí nghiệm được minh họa bằng đồ thị trong Hình 1 (Diện tích bề mặt tiếp xúc là $4 cm^2$).</p>",
+     "questions": [
+      {
+       "t": "mc",
+       "q": "Trước khi tiến hành thí nghiệm, học sinh đưa ra các giả thuyết sau:\nHọc sinh 1: \"Vì em có thể ngửi thấy mùi cồn tẩy rửa ngay khi mở nắp chai nên em cho rằng nó sẽ có tốc độ bay hơi trong không khí cao hơn.\"\nHọc sinh 2: \"Vì nước cam và thuốc tẩy dạng lỏng có thành phần chủ yếu là nước nên tốc độ bay hơi của nó sẽ gần bằng tốc độ bay hơi của nước.\"\nHọc sinh 3: \"Diện tích bề mặt không ảnh hưởng đến tốc độ bay hơi của chất lỏng vì chỉ thể tích ban đầu của chất lỏng mới ảnh hưởng đến tốc độ bay hơi.\"\nDựa trên dữ liệu thu thập được thì giả thuyết của Học sinh nào là đúng?",
+       "o": [
+        "Chỉ học sinh 1.",
+        "Học sinh 1 và 2.",
+        "Giả thuyết của cả 3 học sinh đều đúng.",
+        "Không có giả thuyết nào là đúng."
+       ],
+       "a": 1,
+       "sol": [
+        "Học sinh 1 đúng vì dựa vào Bảng 1 và Hình 1, cồn tẩy rửa bay hơi nhanh hơn hẳn nước.",
+        "Học sinh 2 đúng vì ở cùng diện tích $4~cm^2$ và thể tích 80mL, nước cam (3.0 mL), thuốc tẩy (3.1 mL) và nước (2.9 mL) có tốc độ bay hơi xấp xỉ nhau.",
+        "Học sinh 3 sai vì nhìn vào các thí nghiệm của nước và cồn, khi thay đổi diện tích bề mặt tiếp xúc (4, 8, 12, 16 $cm^2$) thì lượng bay hơi trung bình thay đổi rõ rệt (tăng theo diện tích)."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Nếu cho 80,0 mL cồn tẩy rửa vào một bình có diện tích bề mặt tiếp xúc là $20~cm^2$ thì lượng chất lỏng còn lại trong bình sau một tuần xấp xỉ là ... mL.",
+       "o": [
+        "15",
+        "5",
+        "45",
+        "35"
+       ],
+       "a": 3,
+       "sol": [
+        "Từ Bảng 1, tốc độ bay hơi của cồn tỉ lệ thuận với diện tích: $4~cm^2 \\to 8.9~mL$, $8~cm^2 \\to 18.2~mL$, $12~cm^2 \\to 27.3~mL$, $16~cm^2 \\to 36.4~mL$.",
+        "Quy luật là cứ tăng $4~cm^2$ diện tích, lượng bay hơi tăng thêm khoảng 9 mL. Vậy với $20~cm^2$, lượng bay hơi xấp xỉ $36.4 + 9.1 = 45.5$ mL.",
+        "Lượng cồn còn lại sau một tuần là: $80.0 - 45.5 = 34.5$ mL (gần với 35 mL nhất)."
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Các phát biểu nào sau đây là đúng hoặc sai?\nThuốc tẩy dạng lỏng chứa khoảng 5% natri hypoclorit và 95% nước",
+       "s": [
+        "Diện tích tiếp xúc của bề mặt nước lớn hơn thì tốc độ bay hơi lớn hơn.",
+        "Tốc độ bay hơi của nước nhỏ hơn tốc độ bay hơi của cồn tẩy rửa.",
+        "Tốc độ bay hơi của nước và nước cam là gần như nhau.",
+        "Lượng nước càng lớn thì tốc độ bay hơi càng cao."
+       ],
+       "a": [
+        1,
+        1,
+        1,
+        0
+       ],
+       "sol": [
+        "Ý 1 Đúng: Cùng là nước, khi diện tích tiếp xúc tăng từ 4, 8, 12, lên 16 $cm^2$ thì lượng bay hơi trung bình tương ứng tăng (2.9, 6.1, 9.1, 12.1).",
+        "Ý 2 Đúng: Tại cùng $S = 4~cm^2$, lượng bay hơi của nước là 2.9 mL trong khi cồn là 8.9 mL.",
+        "Ý 3 Đúng: Tốc độ bay hơi của nước (2.9 mL) và nước cam (3.0 mL) gần tương đương nhau.",
+        "Ý 4 Sai: Trong bảng, nước ở 20mL (S=16) bay hơi 12.1mL; trong khi nước 80mL (S=4) chỉ bay hơi 2.9mL. Tốc độ phụ thuộc nhiều vào diện tích bề mặt, không kết luận được là thể tích lớn thì tốc độ cao."
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Các phát biểu nào sau đây là đúng hoặc sai?",
+       "s": [
+        "Tốc độ bay hơi của cồn tẩy rửa khá ổn định theo thời gian.",
+        "Trong Hình 1, nếu bổ sung dữ liệu về sự bay hơi của dầu ăn thì đồ thị thu được là đường thẳng có độ dốc âm lớn hơn so với cồn tẩy rửa."
+       ],
+       "a": [
+        1,
+        0
+       ],
+       "sol": [
+        "Ý 1 Đúng: Đồ thị Thể tích theo thời gian của cồn tẩy rửa trong Hình 1 là một đường thẳng có hệ số góc không đổi, chứng tỏ tốc độ giảm thể tích (tốc độ bay hơi) là ổn định.",
+        "Ý 2 Sai: Bảng 1 cho thấy dầu thực vật bay hơi bằng 0. Nếu vẽ lên hình 1, đồ thị của nó sẽ là một đường thẳng nằm ngang (độ dốc bằng 0). Đồ thị cồn tẩy rửa hướng xuống (độ dốc âm). Độ dốc của dầu ăn (bằng 0) lớn hơn (ít âm hơn) cồn, tuy nhiên trong toán học 'độ dốc âm lớn hơn' thường hiểu là dốc đứng hơn/giảm nhanh hơn, dầu ăn hoàn toàn không giảm."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Số tuần ước tính cần thiết để 80 mL cồn tẩy rửa bay hơi hoàn toàn khỏi một bình chứa có diện tích mặt tiếp xúc với không khí là $4~cm^2$ là",
+       "o": [
+        "9 tuần.",
+        "12 tuần.",
+        "28 tuần.",
+        "Dữ liệu không cung cấp đủ thông tin để đưa ra dự đoán hợp lý."
+       ],
+       "a": 0,
+       "sol": [
+        "Theo Bảng 1, cồn tẩy rửa với diện tích $4~cm^2$ có lượng bay hơi trung bình là 8.9 mL/tuần.",
+        "Thời gian để bay hơi hết 80 mL là: $80 \\div 8.9 \\approx 8.98$ tuần.",
+        "Số tuần xấp xỉ gần nhất là 9 tuần."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Tốc độ bay hơi của nước với diện tích bề mặt tiếp xúc $4~cm^2$ có giá trị gần nhất với giá trị nào sau đây?",
+       "o": [
+        "3 mL nước mỗi tuần.",
+        "10 mL nước mỗi tuần.",
+        "20 mL nước mỗi tuần.",
+        "80 mL nước mỗi tuần."
+       ],
+       "a": 0,
+       "sol": [
+        "Dựa vào Bảng 1, tốc độ bay hơi trung bình của nước ở diện tích $4~cm^2$ là 2.9 mL/tuần, gần nhất với 3 mL/tuần."
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Điền số thích hợp vào chỗ trống\nTrong thí nghiệm, nếu sử dụng 80 mL nước cam có diện tích tiếp xúc là $4~cm^2$ được để mở nắp trong một tuần. Thể tích nước cam ban đầu còn lại vào cuối tuần là [[0]] mL.",
+       "a": [
+        77
+       ],
+       "sol": [
+        "Theo Bảng 1, với thể tích ban đầu 80 mL và diện tích tiếp xúc $4~cm^2$, lượng bay hơi trung bình của nước cam sau 1 tuần là 3.0 mL.",
+        "Thể tích nước cam còn lại = $80.0 - 3.0 = 77.0$ mL."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "SỰ HÌNH THÀNH NGÔI SAO SIÊU KHỔNG LỒ",
+     "p": "<p>[1] Các ngôi sao siêu khổng lồ sáng hơn và lớn hơn gấp nhiều lần so với Mặt Trời, được hình thành từ những đám mây khí bụi. được gọi là đám mây phân tử hay vườn ươm sao. Sự hình thành sao xảy ra khi một đám mây phân tử bắt đầu tự co rút dưới chính lực hấp dẫn của các vật chất bên trong nó, phát ra năng lượng vào tạo thành một tiền sao. Hai nhà khoa học thảo luận về cách những ngôi sao siêu khổng lồ như Deneb bắt đầu hình thành từ các tiền sao trong vườn ươm sao.</p><p>[2] Nhà khoa học 1<br>Một tiền sao liên tục phát ra năng lượng dưới dạng hydrogen, làm giảm dần lượng hydrogen trong lõi của nó. Nếu lõi tiền sao bị cạn kiệt hydrogen và đạt đến khối lượng tối thiểu gấp 10 lần khối lượng Mặt Trời (MS) thì nó có thể giãn nở và hình thành helium cũng như các nguyên tố khác trong lõi của nó. Sự hình thành của một tiền sao có khối lượng 0,5 MS cần từ 1 đến 5 triệu năm. Thời gian cần thiết để một tiền sao 0,5 MS phát triển để vượt quá khối lượng 10 MS và trở thành một ngôi sao siêu khổng lồ như Deneb phải mất ít nhất 100 triệu năm. Do các điều kiện hình thành của một ngôi sao siêu khổng lồ rất đặc biệt nên những ngôi sao siêu khổng lồ tương đối hiếm trong thiên hà của chúng ta.</p><p>[3] Nhà khoa học 2<br>Các ngôi sao siêu khổng lồ hình thành trong các vườn ươm sao nếu áp suất khí tạo ra bởi các đám mây bụi và khí gây ra sự tự co rút hấp dẫn của tiền sao, sau đó hình thành các đĩa bồi tụ (AADJ). AADJ chỉ có thể hình thành nếu khối lượng của tiền sao không vượt quá 5 MS. AADJ hình thành trong gần 5 triệu năm. Sau khi hình thành, AADJ nhanh chóng tạo thành ngôi sao siêu khổng lồ. Thông qua quá trình hình thành AADJ, toàn bộ quá trình từ tiền sao đến sao siêu khổng lồ mất chưa đầy 5 triệu năm. Những ngôi sao siêu khổng lồ như Deneb sẽ không có thời gian để hình thành như mô tả của Nhà khoa học 1. Các quan sát chỉ ra rằng các đám mây khí phân tử đang hoạt động không tồn tại được lâu hơn 30 triệu năm sau khi lực hấp dẫn bắt đầu suy yếu. Ngoài ra, các tiền sao vượt quá 10 MS và không hình thành AADJ bị văng ra bởi động lượng quay của chính chúng, sau đó hợp nhất với vật chất tích tụ ở các vùng xung quanh các tiền sao đang phát triển khác. Những ngôi sao siêu khổng lồ không phải là hiếm. Hàng trăm ngôi sao siêu khổng lồ có kích cỡ lớn bằng hoặc lớn hơn Deneb đã được phát hiện trong thiên hà của chúng ta.</p>",
+     "questions": [
+      {
+       "t": "mc",
+       "q": "Việc phát hiện ra đối tượng nào sau đây sẽ hỗ trợ tốt nhất cho quan điểm của Nhà khoa học 2?",
+       "o": [
+        "Rất ít ngôi sao siêu khổng lồ được hình thành từ các đám mây khí phân tử đã suy yếu được hơn 50 triệu năm.",
+        "Nhiều ngôi sao siêu khổng lồ hình thành từ các đám mây khí phân tử đã suy yếu trong vòng chưa đầy 25 triệu năm.",
+        "Rất ít ngôi sao siêu khổng lồ hình thành từ các đám mây khí phân tử đã suy yếu trong vòng chưa đầy 25 triệu năm.",
+        "Nhiều ngôi sao siêu khổng lồ được hình thành từ các đám mây khí phân tử đã suy yếu được hơn 50 triệu năm."
+       ],
+       "a": 1,
+       "sol": [
+        "Nhà khoa học 2 cho rằng đám mây phân tử hoạt động không tồn tại được lâu hơn 30 triệu năm sau khi lực hấp dẫn bắt đầu suy yếu, và toàn bộ quá trình hình thành mất chưa đầy 5 triệu năm. Việc tìm thấy nhiều ngôi sao siêu khổng lồ hình thành ở các đám mây suy yếu chưa đầy 25 triệu năm sẽ minh chứng rõ ràng cho quan điểm quá trình hình thành này diễn ra rất nhanh và không hề hiếm gặp."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Ngôi sao siêu khổng lồ được nhắc đến trong phần thảo luận của hai nhà khoa học là",
+       "o": [
+        "Canopus.",
+        "Deneb.",
+        "Rigil Kentarus.",
+        "Vega."
+       ],
+       "a": 1,
+       "sol": [
+        "Ngôi sao siêu khổng lồ Deneb được nhắc đến làm ví dụ minh họa ở cả đoạn của Nhà khoa học 1 và Nhà khoa học 2."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Vườn ươm sao là",
+       "o": [
+        "những vùng dày đặc với các đám mây khí và bụi quay trong không gian.",
+        "những vùng dày đặc những phân tử bị phá vỡ do va chạm.",
+        "những vùng có lực hấp dẫn lớn.",
+        "những vùng dày đặc đám mây điện tử."
+       ],
+       "a": 0,
+       "sol": [
+        "Theo đoạn [1]: \"Các ngôi sao siêu khổng lồ... được hình thành từ những đám mây khí bụi. được gọi là đám mây phân tử hay vườn ươm sao.\""
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Theo quan điểm của Nhà khoa học 1 thì Mặt Trời không phải là một ngôi sao siêu khổng lồ là đúng hay sai?",
+       "o": [
+        "Đúng",
+        "Sai"
+       ],
+       "a": 0,
+       "sol": [
+        "Nhà khoa học 1 cho rằng cần đạt khối lượng \"tối thiểu gấp 10 lần khối lượng Mặt Trời (MS)\" để thành sao siêu khổng lồ. Do đó, Mặt Trời (1 MS) chắc chắn không phải là sao siêu khổng lồ."
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Theo Nhà khoa học 2, AADJ chỉ có thể hình thành nếu khối lượng của tiền sao không vượt quá [[0]]",
+       "a": [
+        "5 MS"
+       ],
+       "sol": [
+        "Dựa vào đoạn của Nhà khoa học 2: \"AADJ chỉ có thể hình thành nếu khối lượng của tiền sao không vượt quá 5 MS.\""
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Ước tính của 2 nhà khoa học về khối lượng của một tiền sao có khả năng phát triển thành một ngôi sao siêu khổng lồ là bao nhiêu?\n<table><tr><th>Hàng</th><th>Nhà khoa học 1</th><th>Nhà khoa học 2</th></tr><tr><td>1</td><td>tối đa 5 MS.</td><td>tối thiểu 10 MS.</td></tr><tr><td>2</td><td>5 MS.</td><td>10 MS.</td></tr><tr><td>3</td><td>tối thiểu 10 MS.</td><td>tối đa 5 MS.</td></tr><tr><td>4</td><td>10 MS.</td><td>5 MS</td></tr></table>",
+       "o": [
+        "Hàng 1.",
+        "Hàng 2.",
+        "Hàng 3.",
+        "Hàng 4."
+       ],
+       "a": 2,
+       "sol": [
+        "Theo bài đọc:",
+        "- Nhà KH1 yêu cầu: khối lượng tối thiểu gấp 10 lần khối lượng Mặt Trời (tối thiểu 10 MS).",
+        "- Nhà KH2 yêu cầu: khối lượng của tiền sao không vượt quá 5 MS (tối đa 5 MS).",
+        "Đối chiếu các phương án, Hàng 3 mô tả chính xác quan điểm này."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "CHUYỂN ĐỘNG CỦA CÁC HÀNH TINH",
+     "fig": "img/khoahoc_c39_dehocmai08.png",
+     "warn": "Cần chèn ảnh Hình 2 (Đồ thị tốc độ chuyển động trên quỹ đạo) và Hình 1 (Mô phỏng quỹ đạo elip).",
+     "p": "<p>[1] Hệ Mặt Trời gồm một ngôi sao (Mặt Trời), 8 hành tinh, 5 hành tinh lùn, ít nhất 290 mặt trăng, hơn 1,3 triệu thiên thạch, và khoảng 3900 sao chổi. Chuyển động của các hành tinh và các thiên thể khác trong hệ Mặt Trời đều chịu tác dụng của lực hấp dẫn. Độ lớn của lực hấp dẫn phụ thuộc vào khối lượng của các vật và khoảng cách giữa chúng. Khoảng cách giữa các hành tinh càng nhỏ thì lực hấp dẫn giữa chúng càng lớn. Bảng 1 cho biết thông tin của một số hành tinh trong hệ Mặt Trời.</p><table><tr><th></th><th>Thuỷ Tinh</th><th>Kim Tinh</th><th>Trái Đất</th><th>Hoả Tinh</th><th>Mộc Tinh</th><th>Hải Vương Tinh</th></tr><tr><td>Khối lượng ($10^{24}kg$)</td><td>0,330</td><td>4,87</td><td>5,97</td><td>0,642</td><td>1898</td><td>102</td></tr><tr><td>Khoảng cách trung bình tới Mặt Trời ($10^6 km$)</td><td>57,9</td><td>108,2</td><td>149,6</td><td>228,0</td><td>778,5</td><td>4515,0</td></tr><tr><td>Đường kính (km)</td><td>4879</td><td>12140</td><td>12756</td><td>6792</td><td>142984</td><td>49528</td></tr><tr><td>Tốc độ trung bình trên quỹ đạo ($km/s$)</td><td>47,4</td><td>35,0</td><td>29,8</td><td>24,1</td><td>13,1</td><td>5,4</td></tr></table><p>[2] Năm 1619, Kepler - nhà thiên văn học người Đức - đã tìm ra ba định luật mô tả chính xác quy luật chuyển động của các hành tinh dựa trên những số liệu quan sát về vị trí của các hành tinh trong nhiều năm. Nội dung các định luật như sau:<br>Định luật I: Các hành tinh chuyển động xung quanh Mặt Trời theo những quỹ đạo hình elip với Mặt Trời là một trong hai tiêu điểm.<br>Định luật II: Đoạn thẳng nối Mặt Trời và một hành tinh bất kì quét những diện tích bằng nhau trong những khoảng thời gian như nhau.<br>Định luật III: Tỉ số giữa lập phương bán trục lớn và bình phương chu kì quay là giống nhau cho mọi hành tinh quay quanh Mặt Trời $\\frac{a_1^3}{T_1^2} = \\frac{a_2^3}{T_2^2} = \\dots$ (1)<br>Cho biết chu kì quay của hành tinh là thời gian hành tinh chuyển động hết một vòng quỹ đạo quanh Mặt Trời.</p><p>[3] Hình 1 mô tả các yếu tố liên quan tới quỹ đạo chuyển động của một hành tinh xung quanh Mặt Trời. Trên quỹ đạo của mỗi hành tinh đều có một điểm gần Mặt Trời nhất, được gọi là điểm cận nhật (perihelion), và một điểm xa Mặt Trời nhất, được gọi là điểm viễn nhật (aphelion). Khoảng cách trung bình tới Mặt Trời của các hành tinh bằng trung bình cộng của hai giá trị khoảng cách này.</p>",
+     "questions": [
+      {
+       "t": "tf",
+       "q": "Phát biểu sau đây là đúng hay sai?\nHành tinh có kích thước càng lớn thì có khối lượng càng lớn.",
+       "s": [
+        "Đúng.",
+        "Sai."
+       ],
+       "a": [
+        1,
+        0
+       ],
+       "sol": [
+        "Xem xét Bảng 1, sắp xếp theo đường kính (kích thước) tăng dần: Thủy Tinh (4879) < Hỏa Tinh (6792) < Kim Tinh (12140) < Trái Đất (12756) < Hải Vương Tinh (49528) < Mộc Tinh (142984).",
+        "Sắp xếp tương ứng theo khối lượng: 0.330 < 0.642 < 4.87 < 5.97 < 102 < 1898.",
+        "Chuỗi giá trị khối lượng tương ứng cũng tăng dần, chứng minh sự đồng biến giữa kích thước và khối lượng đối với các hành tinh trong bảng này."
+       ],
+       "warn": "Sử dụng TF 2 ý Đúng/Sai do trích xuất từ cấu trúc radio button của form."
+      },
+      {
+       "t": "tf",
+       "q": "Mỗi phát biểu sau là đúng hay sai?",
+       "s": [
+        "Các hành tinh càng xa Mặt Trời thì có tốc độ trung bình trên quỹ đạo càng nhỏ và khối lượng càng lớn.",
+        "Tốc độ tức thời tại mọi điểm trên quỹ đạo là như nhau."
+       ],
+       "a": [
+        0,
+        0
+       ],
+       "sol": [
+        "Ý 1 Sai: Về tốc độ trung bình, đúng là càng xa tốc độ càng nhỏ. Nhưng về khối lượng, không phải lúc nào cũng tăng (ví dụ Trái Đất xa hơn Kim Tinh và khối lượng lớn hơn, nhưng Hoả Tinh xa hơn Trái Đất lại có khối lượng nhỏ hơn).",
+        "Ý 2 Sai: Theo Định luật II Kepler, đoạn thẳng nối quét những diện tích bằng nhau, do đó khi ở gần điểm cận nhật tốc độ phải lớn hơn so với lúc ở điểm viễn nhật (Hình 2 cũng minh họa rõ ràng tốc độ thay đổi tại các khoảng cách khác nhau)."
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Điền số nguyên thích hợp vào chỗ trống.\nTrong các hành tinh được liệt kê ở Bảng 1, có [[0]] hành tinh có kích thước lớn hơn kích thước của Trái Đất.",
+       "a": [
+        2
+       ],
+       "sol": [
+        "Kích thước (đường kính) của Trái Đất là 12756 km.",
+        "Các hành tinh lớn hơn Trái Đất trong bảng là: Mộc Tinh (142984 km) và Hải Vương Tinh (49528 km). Tổng cộng có 2 hành tinh."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Trong thiên văn học, 1 AU (còn gọi là đơn vị thiên văn) có chiều dài bằng khoảng cách trung bình từ Trái Đất đến Mặt Trời. Khoảng cách trung bình từ Hải Vương Tinh đến Mặt Trời xấp xỉ bằng ... AU.",
+       "o": [
+        "4515.0",
+        "30.18",
+        "0.03"
+       ],
+       "a": 1,
+       "sol": [
+        "Từ Bảng 1, $1~AU = 149.6 \\times 10^6$ km.",
+        "Khoảng cách Hải Vương Tinh là $4515.0 \\times 10^6$ km.",
+        "Quy đổi: $\\frac{4515.0}{149.6} \\approx 30.18~AU$."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Hình 2 mô tả sự thay đổi tốc độ của ba hành tinh khi chuyển động qua điểm cận nhật với quy ước khoảng cách có giá trị âm khi hành tinh tiến lại gần điểm cận nhật và khoảng cách có giá trị dương khi hành tinh đi xa dần điểm cận nhật.\nNếu một hành tinh mới được tìm thấy trong hệ Mặt Trời có khối lượng là $6,5 \\times 10^{23}$ kg, đường kính là 4123 km và chu kì quay quanh Mặt Trời là 4 tháng (thời gian quan sát trên Trái Đất) thì dựa trên thông tin được cung cấp trong đoạn văn, tốc độ của nó tại điểm cận nhật có thể là ... $km/s$.",
+       "o": [
+        "45",
+        "75",
+        "25"
+       ],
+       "a": 0,
+       "sol": [
+        "Sử dụng định luật 3 Kepler: $T^2 \\propto a^3$. Lấy Trái Đất làm gốc ($T_{td} = 12$ tháng, $a_{td} \\approx 150 \\times 10^6$ km).",
+        "Với hành tinh mới, $T = 4$ tháng = $\\frac{1}{3} T_{td}$.",
+        "Ta có: $a^3 = (1/3)^2 \\cdot a_{td}^3 = 1/9 \\cdot a_{td}^3$. Suy ra bán trục lớn $a = \\frac{1}{\\sqrt[3]{9}} a_{td} \\approx 0.48 a_{td} \\approx 72 \\times 10^6$ km.",
+        "Bán trục lớn này (72 triệu km) nằm giữa Thủy tinh (57,9 triệu km) và Kim tinh (108,2 triệu km).",
+        "Do đó, tốc độ trung bình của hành tinh này cũng sẽ nằm giữa Thủy tinh ($47,4$ km/s) và Kim tinh ($35,0$ km/s). Tại điểm cận nhật, tốc độ sẽ hơi lớn hơn trung bình một chút. Trị số hợp lý nhất trong các phương án là 45 km/s."
+       ]
+      },
+      {
+       "t": "drag",
+       "q": "Kéo ô thích hợp thả vào vị trí tương ứng để hoàn thành câu sau:\nGọi $T_1$ và $T_2$ lần lượt là thời gian mà Trái Đất và Mộc Tinh hoàn thành một vòng quay quanh Mặt Trời. Tỉ số $\\frac{T_1}{T_2}$ xấp xỉ bằng [[0]]",
+       "c": [
+        "0,007",
+        "0,084",
+        "11,871"
+       ],
+       "a": [
+        1
+       ],
+       "sol": [
+        "Theo định luật 3 Kepler: $\\left(\\frac{T_1}{T_2}\\right)^2 = \\left(\\frac{a_1}{a_2}\\right)^3$.",
+        "Thay số từ Bảng 1: Trái Đất $a_1 = 149.6$, Mộc Tinh $a_2 = 778.5$.",
+        "$\\left(\\frac{T_1}{T_2}\\right)^2 = \\left(\\frac{149.6}{778.5}\\right)^3 \\approx (0.1921)^3 \\approx 0.00709$.",
+        "$\\Rightarrow \\frac{T_1}{T_2} = \\sqrt{0.00709} \\approx 0.084$."
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

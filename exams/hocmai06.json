@@ -1,0 +1,1755 @@
+{
+ "title": "HOCMAI06",
+ "sections": [
+  {
+   "title": "Đề Toán Số 02",
+   "minutes": 60,
+   "questions": [
+    {
+     "t": "mc",
+     "q": "Cho hàm số $f(x)$ có bảng biến thiên như sau:\\nHàm số đã cho đồng biến trên khoảng nào dưới đây?",
+     "fig": "img/Toan_c1_hocmai06.png",
+     "warn": "cần chèn ảnh bảng biến thiên",
+     "o": [
+      "$(-1;0)$",
+      "$(-1;1)$",
+      "$(0;1)$",
+      "$(1;+\\infty)$"
+     ],
+     "a": 2,
+     "solved": true,
+     "sol": [
+      "Từ bảng biến thiên, ta thấy đạo hàm $f'(x) > 0$ trên các khoảng $(-\\infty; -1)$ và $(0; 1)$.",
+      "Do đó, hàm số đồng biến trên các khoảng $(-\\infty; -1)$ và $(0; 1)$.",
+      "Đối chiếu với các phương án, chọn $(0; 1)$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Cho parabol $(P)$ có phương trình $y=mx^2-2(m-3)x+m-2$ với $m$ là tham số khác 0. Mỗi phát biểu sau đây là đúng hay sai?",
+     "s": [
+      "$(P)$ luôn cắt trục Ox tại hai điểm phân biệt.",
+      "Với $m=1$, phương trình tiếp tuyến của $(P)$ song song với trục Ox là $y=-5$",
+      "Khi $m$ thay đổi, parabol luôn tiếp xúc với đường thẳng cố định đi qua điểm có tọa độ $(1;8)$."
+     ],
+     "a": [
+      0,
+      1,
+      0
+     ],
+     "solved": true,
+     "sol": [
+      "Ý 1: Xét phương trình hoành độ giao điểm: $mx^2-2(m-3)x+m-2=0$. Tính $\\Delta' = (m-3)^2 - m(m-2) = m^2 - 6m + 9 - m^2 + 2m = 9 - 4m$. Để phương trình luôn có 2 nghiệm phân biệt thì $9 - 4m > 0 \\Leftrightarrow m < \\frac{9}{4}$. Do $m$ tùy ý khác 0 nên không phải lúc nào cũng cắt tại hai điểm phân biệt. Phát biểu Sai.",
+      "Ý 2: Với $m=1$, $(P): y = x^2 + 4x - 1$. Đỉnh của parabol là $x = -\\frac{4}{2} = -2$, suy ra $y = (-2)^2 + 4(-2) - 1 = -5$. Tiếp tuyến tại đỉnh luôn song song với trục Ox, phương trình là $y = -5$. Phát biểu Đúng.",
+      "Ý 3: Giả sử đường thẳng $y = kx + c$ luôn tiếp xúc với $(P)$ với mọi $m$. Phương trình $mx^2 - (2m - 6 + k)x + m - 2 - c = 0$ phải có nghiệm kép với mọi $m$. Tức là $\\Delta = (2m - 6 + k)^2 - 4m(m - 2 - c) = 0 \\Leftrightarrow 4m^2 + 4m(k-6) + (k-6)^2 - 4m^2 + 4m(c+2) = 0 \\Leftrightarrow 4m(k + c - 4) + (k-6)^2 = 0$. Điều này đúng với mọi $m$ khi $k=6$ và $c=-2$. Vậy $(P)$ luôn tiếp xúc với đường thẳng cố định $y = 6x - 2$. Điểm $(1;8)$ không thuộc đường thẳng này (vì $6(1) - 2 = 4 \\neq 8$). Phát biểu Sai."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Trong không gian với hệ trục toạ độ Oxyz, cho ba véc tơ $\\vec{a}(1; 2; 3)$, $\\vec{b}(2; 2; -1)$, $\\vec{c}(4; 0; -4)$. Toạ độ của véc tơ $\\vec{d} = \\vec{a} - \\vec{b} + 2\\vec{c}$ là",
+     "o": [
+      "$\\vec{d}(7;0;-4)$.",
+      "$\\vec{d}(-7;0;-4)$.",
+      "$\\vec{d}(7;0;4)$.",
+      "$\\vec{d}(-7;0;4)$."
+     ],
+     "a": 0,
+     "solved": true,
+     "sol": [
+      "Tính toạ độ của véc tơ $\\vec{d} = \\vec{a} - \\vec{b} + 2\\vec{c}$.",
+      "Hoành độ: $1 - 2 + 2(4) = 7$.",
+      "Tung độ: $2 - 2 + 2(0) = 0$.",
+      "Cao độ: $3 - (-1) + 2(-4) = 3 + 1 - 8 = -4$.",
+      "Vậy $\\vec{d} = (7; 0; -4)$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Một máy bay đang bay ở độ cao $h=9~km$ trên một đường bay sẽ đưa nó đi thẳng qua một trạm kiểm soát không lưu, như hình vẽ. Tại thời điểm máy bay cách trạm khoảng cách $d=15~km$, khoảng cách giữa máy bay và trạm radar đang giảm với tốc độ $652~km/h$. Tốc độ của máy bay lúc này là [[0]] $km/h$.",
+     "fig": "img/Toan_c4_hocmai06.png",
+     "warn": "Cần chèn ảnh minh hoạ radar và máy bay",
+     "a": [
+      815
+     ],
+     "solved": true,
+     "sol": [
+      "Gọi $s$ là khoảng cách theo phương ngang từ máy bay đến trạm, $h$ là độ cao, $d$ là khoảng cách đường chéo. Theo định lý Pytago: $s^2 + h^2 = d^2$.",
+      "Tại thời điểm $d=15, h=9$, ta có $s = \\sqrt{15^2 - 9^2} = 12$ km.",
+      "Lấy đạo hàm hai vế phương trình theo thời gian $t$, ta được: $2s \\cdot s' + 0 = 2d \\cdot d'$ (do độ cao $h$ không đổi).",
+      "Khoảng cách $d$ đang giảm với tốc độ $652~km/h$, tức là $d' = -652~km/h$.",
+      "Thay số: $12 \\cdot s' = 15 \\cdot (-652) \\Rightarrow s' = \\frac{-9780}{12} = -815~km/h$.",
+      "Vậy tốc độ của máy bay (độ lớn của $s'$) là $815~km/h$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Biết $\\lim_{x\\rightarrow -1} \\frac{x^2+(2a-1)x+b}{x^3+1} = 2$. Giá trị của $a=$ [[0]] và $b=$ [[1]] với $a, b$ là các phân số tối giản (nếu có).",
+     "a": [
+      "9/2",
+      7
+     ],
+     "solved": true,
+     "sol": [
+      "Do giới hạn có dạng hữu hạn khi $x \\rightarrow -1$ và mẫu số tiến tới 0, nên $x = -1$ phải là nghiệm của tử số.",
+      "Ta có: $(-1)^2 + (2a-1)(-1) + b = 0 \\Leftrightarrow 1 - 2a + 1 + b = 0 \\Leftrightarrow b = 2a - 2$.",
+      "Khi đó tử số trở thành: $x^2 + (2a-1)x + 2a - 2 = x^2 - x + 2ax + 2a - 2 = x(x-1) + 2a(x+1) + (x-1+x+1) - 2$. Biến đổi đơn giản: $(x+1)(x + 2a - 2)$.",
+      "Giới hạn được viết lại: $\\lim_{x\\rightarrow -1} \\frac{(x+1)(x+2a-2)}{(x+1)(x^2-x+1)} = \\lim_{x\\rightarrow -1} \\frac{x+2a-2}{x^2-x+1}$.",
+      "Thế $x = -1$ vào, ta có giới hạn bằng $\\frac{-1 + 2a - 2}{(-1)^2 - (-1) + 1} = \\frac{2a-3}{3}$.",
+      "Theo giả thiết: $\\frac{2a-3}{3} = 2 \\Leftrightarrow 2a - 3 = 6 \\Leftrightarrow 2a = 9 \\Leftrightarrow a = \\frac{9}{2}$.",
+      "Suy ra $b = 2\\left(\\frac{9}{2}\\right) - 2 = 7$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Một chiếc hộp chứa 9 quả cầu gồm 4 quả màu xanh, 3 quả màu đỏ và 2 quả màu vàng. Lấy ngẫu nhiên 3 quả cầu từ hộp đó.\\nXác suất để trong 3 quả cầu lấy được không có quả màu đỏ là [[0]]\\nXác suất để trong 3 quả cầu lấy được có ít nhất 1 quả màu đỏ là [[1]]",
+     "a": [
+      "5/21",
+      "16/21"
+     ],
+     "solved": true,
+     "sol": [
+      "Số phần tử không gian mẫu: Lấy ngẫu nhiên 3 quả từ 9 quả cầu, số cách là $n(\\Omega) = C_9^3 = 84$.",
+      "Để 3 quả lấy được không có màu đỏ, ta lấy 3 quả từ 6 quả còn lại (4 xanh và 2 vàng). Số cách là $C_6^3 = 20$.",
+      "Xác suất không có quả đỏ: $P_1 = \\frac{20}{84} = \\frac{5}{21}$.",
+      "Biến cố \"có ít nhất 1 quả đỏ\" là biến cố đối của \"không có quả đỏ\". Xác suất là $P_2 = 1 - \\frac{5}{21} = \\frac{16}{21}$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Một du khách vào trường đua ngựa đặt cược, lần đầu đặt 20000 đồng, kể từ lần sau tiền đặt gấp đôi lần tiền đặt cược trước. Người đó thua 9 lần liên tiếp và thắng ở lần thứ 10. Hỏi du khách đó thắng hay thua bao nhiêu? Biết mỗi lần thắng, số tiền người đặt nhận được gấp đôi số tiền đặt ban đầu (không kể số tiền đã đặt).",
+     "o": [
+      "Hòa vốn.",
+      "Thua 20000 đồng.",
+      "Thắng 10 260 000 đồng.",
+      "Thắng 200 000 đồng."
+     ],
+     "a": 2,
+     "solved": true,
+     "sol": [
+      "Tiền cược của du khách lập thành một cấp số nhân với số hạng đầu $u_1 = 20\\,000$ và công bội $q = 2$.",
+      "Tổng số tiền du khách đã thua trong 9 lần đầu là $S_9 = \\frac{u_1(1-q^9)}{1-q} = 20\\,000 \\times (2^9 - 1) = 10\\,220\\,000$ đồng.",
+      "Lần thứ 10, người đó đặt cược số tiền là $u_{10} = u_1 \\times q^9 = 20\\,000 \\times 512 = 10\\,240\\,000$ đồng.",
+      "Vì lần 10 người đó thắng, nên số tiền lãi nhận được (gấp đôi số tiền đặt lần đó) là $2 \\times 10\\,240\\,000 = 20\\,480\\,000$ đồng.",
+      "Tổng lợi nhuận của du khách: Tiền thắng ở lần 10 - Tổng tiền thua 9 lần trước = $20\\,480\\,000 - 10\\,220\\,000 = 10\\,260\\,000$ đồng.",
+      "Vậy du khách đó thắng $10\\,260\\,000$ đồng."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Trong không gian Oxyz, cho ba vecto $\\vec{a}=(2;-1;0)$, $\\vec{b}=(-1;-3;2)$, $\\vec{c}=(-2;-4;-3)$. Toạ độ của véc tơ $2\\vec{a}-3\\vec{b}+\\vec{c}$ là",
+     "o": [
+      "$(3; 7; 9)$.",
+      "$(-3; -7; -9)$.",
+      "$(5; 3; -9)$.",
+      "$(-5; -3; 9)$."
+     ],
+     "a": 2,
+     "solved": true,
+     "sol": [
+      "Ta có $2\\vec{a} = (4; -2; 0)$.",
+      "$-3\\vec{b} = (3; 9; -6)$.",
+      "Cộng các toạ độ: $(4 + 3 - 2; -2 + 9 - 4; 0 - 6 - 3) = (5; 3; -9)$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Một nhà máy có hai phân xưởng A và B lần lượt làm ra 60% và 40% sản phẩm của nhà máy. Tỉ lệ phế phẩm của hai phân xưởng A và B lần lượt là 1% và 2%. Chọn ngẫu nhiên một sản phẩm của nhà máy. Mỗi phát biểu sau đây là đúng hay sai?",
+     "s": [
+      "Biết sản phẩm chọn ra thuộc phân xưởng A, xác suất để nó không là phế phẩm là 0,98.",
+      "Xác suất để sản phẩm chọn ra là phế phẩm và thuộc phân xưởng A là 0,006.",
+      "Xác suất để sản phẩm chọn ra là phế phẩm là 0,014.",
+      "Biết sản phẩm chọn ra là phế phẩm, xác suất để nó thuộc phân xưởng A là $\\frac{4}{7}$"
+     ],
+     "a": [
+      0,
+      1,
+      1,
+      0
+     ],
+     "solved": true,
+     "sol": [
+      "Ý 1: Tỉ lệ phế phẩm của A là 1%, nên xác suất không là phế phẩm của phân xưởng A là $1 - 0.01 = 0.99$. Lựa chọn 0.98 là Sai.",
+      "Ý 2: $P(A \\cap \\text{Phế}) = P(A) \\times P(\\text{Phế} | A) = 0.6 \\times 0.01 = 0.006$. Phát biểu Đúng.",
+      "Ý 3: Xác suất để sản phẩm là phế phẩm áp dụng công thức xác suất toàn phần: $P(\\text{Phế}) = 0.6 \\times 0.01 + 0.4 \\times 0.02 = 0.006 + 0.008 = 0.014$. Phát biểu Đúng.",
+      "Ý 4: Xác suất thuộc A khi biết là phế phẩm theo công thức Bayes: $P(A | \\text{Phế}) = \\frac{P(A \\cap \\text{Phế})}{P(\\text{Phế})} = \\frac{0.006}{0.014} = \\frac{3}{7}$. Lựa chọn $\\frac{4}{7}$ là Sai."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho hình chóp tứ giác S.ABCD có đáy là hình thang (AB//CD). Gọi M, N, P theo thứ tự lần lượt là trung điểm của các cạnh SB, BC và AD. Giao tuyến của hai mặt phẳng (MNP) và (SAB) là",
+     "o": [
+      "đường thẳng đi qua S và song song với AB",
+      "đường thẳng đi qua M và song song với AB",
+      "đường thẳng đi qua N và song song với SB",
+      "đường thẳng đi qua P và song song với SA"
+     ],
+     "a": 1,
+     "solved": true,
+     "sol": [
+      "Trong hình thang ABCD (AB//CD), N và P lần lượt là trung điểm của BC và AD. Suy ra NP là đường trung bình của hình thang, do đó NP // AB // CD.",
+      "Xét hai mặt phẳng (MNP) và (SAB):",
+      "- Chúng có chung điểm M (vì M thuộc SB, SB nằm trong (SAB)).",
+      "- Mặt phẳng (MNP) chứa NP, mặt phẳng (SAB) chứa AB, mà NP // AB.",
+      "Theo hệ quả định lí giao tuyến của 3 mặt phẳng, giao tuyến của (MNP) và (SAB) là đường thẳng đi qua điểm chung M và song song với AB, NP."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Cho hàm số $f(x)$ có đạo hàm trên đoạn $[1;2], f(1)=4$ và $f(2)=20$. Giá trị $\\int_1^2 [xf'(x)+f(x)]dx$ bằng [[0]]",
+     "a": [
+      36
+     ],
+     "solved": true,
+     "sol": [
+      "Ta nhận thấy biểu thức dưới dấu tích phân là đạo hàm của một tích: $xf'(x) + f(x) = (xf(x))'$.",
+      "Do đó: $\\int_1^2 [xf'(x)+f(x)]dx = \\int_1^2 (xf(x))'dx = xf(x)\\Big|_1^2$.",
+      "Thay cận vào, ta được: $2f(2) - 1f(1) = 2(20) - 4 = 36$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho khối chóp S.ABCD có đáy là hình bình hành, $\\widehat{BAD} = 120^\\circ, AB=3, AD=4$. Cạnh bên $SA=2\\sqrt{3}$ vuông góc với đáy. Gọi M, N, P lần lượt là trung điểm các cạnh SA, AD và BC. Gọi $\\alpha$ là góc giữa hai mặt phẳng (SAC) và (MNP). Khẳng định nào sau đây là đúng?",
+     "o": [
+      "$\\sin\\alpha \\in \\left(\\frac{\\sqrt{3}}{2}; 1\\right)$",
+      "$\\sin\\alpha \\in \\left(0; \\frac{1}{2}\\right)$.",
+      "$\\sin\\alpha \\in \\left(\\frac{1}{2}; \\frac{\\sqrt{2}}{2}\\right)$",
+      "$\\sin\\alpha \\in \\left(\\frac{\\sqrt{2}}{2}; \\frac{\\sqrt{3}}{2}\\right)$."
+     ],
+     "a": 0,
+     "solved": true,
+     "sol": [
+      "Gắn hệ toạ độ không gian Oxyz với A trùng với gốc toạ độ $O(0,0,0)$. Tia AD nằm trên tia Oy, cạnh SA trùng với tia Oz.",
+      "Theo giả thiết, ta có các toạ độ: $A(0,0,0)$, $D(0,4,0)$, $S(0,0,2\\sqrt{3})$.",
+      "Góc BAD = $120^\\circ$, độ dài $AB = 3$. Hình chiếu của B lên Oy là H, $AH = AB\\cos(120^\\circ) = -1,5$. Chiều cao $BH = AB\\sin(120^\\circ) = \\frac{3\\sqrt{3}}{2}$. Do đó $B\\left(\\frac{3\\sqrt{3}}{2}; -1,5; 0\\right)$.",
+      "Suy ra toạ độ đỉnh $C = B + \\vec{AD} = \\left(\\frac{3\\sqrt{3}}{2}; 2,5; 0\\right)$.",
+      "M là trung điểm SA $\\Rightarrow M(0, 0, \\sqrt{3})$.",
+      "N là trung điểm AD $\\Rightarrow N(0, 2, 0)$.",
+      "P là trung điểm BC $\\Rightarrow P\\left(\\frac{3\\sqrt{3}}{2}; 0,5; 0\\right)$.",
+      "Xác định pháp tuyến của mp(SAC): $\\vec{AC} = \\left(\\frac{3\\sqrt{3}}{2}; 2,5; 0\\right)$, $\\vec{AS} = (0, 0, 2\\sqrt{3})$.",
+      "$\\vec{n_1} = [\\vec{AC}, \\vec{AS}] = \\left(5\\sqrt{3}; -9; 0\\right)$.",
+      "Xác định pháp tuyến của mp(MNP): $\\vec{NM} = (0; -2; \\sqrt{3})$, $\\vec{NP} = \\left(\\frac{3\\sqrt{3}}{2}; -1,5; 0\\right)$.",
+      "$\\vec{n_2} = [\\vec{NM}, \\vec{NP}] = \\left(1,5\\sqrt{3}; 4,5; 3\\sqrt{3}\\right)$. Lấy véc-tơ cùng hướng $\\vec{n_2} = (\\sqrt{3}; 3; 2\\sqrt{3})$.",
+      "Tính góc giữa hai mặt phẳng: $\\cos\\alpha = \\frac{|\\vec{n_1} \\cdot \\vec{n_2}|}{|\\vec{n_1}|\\cdot|\\vec{n_2}|} = \\frac{|15 - 27|}{\\sqrt{75+81}\\cdot\\sqrt{3+9+12}} = \\frac{12}{\\sqrt{156}\\cdot\\sqrt{24}} = \\frac{12}{12\\sqrt{26}} = \\frac{1}{\\sqrt{26}}$.",
+      "Suy ra $\\sin\\alpha = \\sqrt{1 - \\cos^2\\alpha} = \\sqrt{1 - \\frac{1}{26}} = \\frac{5}{\\sqrt{26}} \\approx 0,98$.",
+      "So sánh, thấy $0,98 \\in \\left(\\frac{\\sqrt{3}}{2}; 1\\right)$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Trong không gian Oxyz cho hai điểm $A(-1;-1;2)$ và $B(3;0;1)$ và đường thẳng $d:\\frac{x}{1}=\\frac{y+1}{-1}=\\frac{z+2}{2}$. Gọi $(S)$ là mặt cầu có tâm $I(a;b;c)$ thuộc $d$ và đi qua hai điểm $A, B$. Giá trị của $3a+2b+c$ bằng [[0]]",
+     "a": [
+      -1
+     ],
+     "solved": true,
+     "sol": [
+      "Do $I$ thuộc đường thẳng $d$ nên toạ độ $I$ có dạng tham số: $I(t; -1-t; -2+2t)$.",
+      "Vì mặt cầu $(S)$ đi qua 2 điểm A, B nên khoảng cách từ tâm I tới hai điểm là bằng nhau (đều là bán kính), tức là $IA^2 = IB^2$.",
+      "$IA^2 = (-1-t)^2 + (-1-(-1-t))^2 + (2-(-2+2t))^2 = (t+1)^2 + t^2 + (4-2t)^2$.",
+      "Khai triển: $IA^2 = t^2 + 2t + 1 + t^2 + 16 - 16t + 4t^2 = 6t^2 - 14t + 17$.",
+      "$IB^2 = (3-t)^2 + (0-(-1-t))^2 + (1-(-2+2t))^2 = (t-3)^2 + (t+1)^2 + (3-2t)^2$.",
+      "Khai triển: $IB^2 = t^2 - 6t + 9 + t^2 + 2t + 1 + 9 - 12t + 4t^2 = 6t^2 - 16t + 19$.",
+      "Cho $IA^2 = IB^2 \\Leftrightarrow -14t + 17 = -16t + 19 \\Leftrightarrow 2t = 2 \\Leftrightarrow t = 1$.",
+      "Suy ra toạ độ tâm $I(1; -2; 0)$.",
+      "Đối chiếu với $I(a;b;c)$, ta có $a=1, b=-2, c=0$.",
+      "Giá trị cần tìm: $3a + 2b + c = 3(1) + 2(-2) + 0 = -1$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Trong không gian với hệ tọa độ Oxyz, cho tam giác ABC với $A(1;0;-2)$, $B(-2;3;4)$ và $C(4;-6;1)$. Mỗi phát biểu sau đây là đúng hay sai?",
+     "s": [
+      "$\\vec{AB}=(3;-3;6)$.",
+      "Hình chiếu vuông góc của B lên trục Ox là $B'(-2;3;0)$.",
+      "Tồn tại 1 điểm M thuộc trục hoành sao cho tam giác MBC vuông tại M.",
+      "Nếu ABCD là hình bình hành thì tọa độ điểm D là $(1;-3;7)$."
+     ],
+     "a": [
+      0,
+      0,
+      1,
+      0
+     ],
+     "solved": true,
+     "sol": [
+      "Ý 1: $\\vec{AB} = (x_B-x_A; y_B-y_A; z_B-z_A) = (-2-1; 3-0; 4-(-2)) = (-3; 3; 6)$. Khẳng định sai.",
+      "Ý 2: Hình chiếu của B lên trục Ox có toạ độ y và z bằng 0. Vậy $B'(-2; 0; 0)$. Khẳng định cho là $B'(-2;3;0)$ (đây là hình chiếu lên Oxy) nên Sai.",
+      "Ý 3: Điểm M thuộc trục hoành nên $M(x; 0; 0)$. Để tam giác MBC vuông tại M, thì $\\vec{MB} \\cdot \\vec{MC} = 0$. Ta có $\\vec{MB} = (-2-x; 3; 4)$ và $\\vec{MC} = (4-x; -6; 1)$. Suy ra $(-2-x)(4-x) + 3(-6) + 4(1) = 0 \\Leftrightarrow x^2 - 2x - 8 - 18 + 4 = 0 \\Leftrightarrow x^2 - 2x - 22 = 0$. Phương trình bậc hai này có $\\Delta' = 1 + 22 = 23 > 0$, do đó có hai nghiệm phân biệt. Tồn tại điểm M thoả mãn. Khẳng định Đúng.",
+      "Ý 4: Nếu ABCD là hình bình hành, ta phải có $\\vec{AD} = \\vec{BC}$. Ta có $\\vec{BC} = (4-(-2); -6-3; 1-4) = (6; -9; -3)$. Suy ra $D(1+6; 0-9; -2-3) = (7; -9; -5)$. Khẳng định sai."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Bất phương trình $6^x+4\\le 2^{x+1}+2\\cdot3^x$ có bao nhiêu nghiệm nguyên?",
+     "o": [
+      "2.",
+      "3.",
+      "1.",
+      "0"
+     ],
+     "a": 2,
+     "solved": true,
+     "sol": [
+      "Biến đổi bất phương trình: $2^x \\cdot 3^x - 2 \\cdot 2^x - 2 \\cdot 3^x + 4 \\le 0$.",
+      "Nhóm các số hạng: $2^x(3^x - 2) - 2(3^x - 2) \\le 0 \\Leftrightarrow (2^x - 2)(3^x - 2) \\le 0$.",
+      "Hai nhân tử có nghiệm là $x = 1$ và $x = \\log_3(2) \\approx 0,63$.",
+      "Lập bảng xét dấu, tích sẽ nhỏ hơn hoặc bằng 0 khi $x \\in [\\log_3(2); 1]$.",
+      "Nghiệm nguyên nằm trong đoạn này chỉ có một giá trị duy nhất là $x=1$.",
+      "Vậy bất phương trình có 1 nghiệm nguyên."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho các số thực dương a, b với $a\\neq 1$ thoả mãn $\\log_a b = 5$. Giá trị của biểu thức $\\log_a(ab)$ bằng",
+     "o": [
+      "6.",
+      "4.",
+      "5.",
+      "7."
+     ],
+     "a": 0,
+     "solved": true,
+     "sol": [
+      "Sử dụng tính chất logarit của mục tích: $\\log_a(ab) = \\log_a a + \\log_a b$.",
+      "Do $a > 0, a \\neq 1$ nên $\\log_a a = 1$.",
+      "Thế số: $1 + 5 = 6$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Trong không gian Oxyz, cho mặt phẳng $(\\alpha)$ có phương trình $x+y+2z+2=0$. Mặt phẳng nào sau đây song song với mặt phẳng $(\\alpha)$?",
+     "o": [
+      "$(S): x+y+2z-1=0$.",
+      "$(Q): x+y-2z-2=0$.",
+      "$(P): x-y+2z-2=0$.",
+      "$(R): x+y-2z+1=0$."
+     ],
+     "a": 0,
+     "solved": true,
+     "sol": [
+      "Hai mặt phẳng song song với nhau khi chúng có cùng vectơ pháp tuyến (hoặc tỉ lệ) và hằng số D phải khác nhau.",
+      "Vectơ pháp tuyến của $(\\alpha)$ là $\\vec{n} = (1; 1; 2)$.",
+      "Chỉ có mặt phẳng $(S)$ có phương trình $x+y+2z-1=0$ có cùng véc tơ pháp tuyến và số hạng tự do $-1 \\neq 2$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Trong mặt phẳng Oxy, lấy 2 điểm phân biệt trong góc phần tư thứ nhất, 3 điểm phân biệt trong góc phần tư thứ hai, 4 điểm phân biệt trong góc phần tư thứ ba và 5 điểm phân biệt trong góc phần tư thứ tư (Các điểm không nằm trên hệ trục toạ độ). Chọn hai điểm bất kì trong các điểm vừa lấy. Xác suất để đoạn thẳng nối hai điểm đó cắt cả hai trục tọa độ là [[0]]",
+     "a": [
+      "23/91"
+     ],
+     "solved": true,
+     "sol": [
+      "Tổng số điểm có trên mặt phẳng là $2 + 3 + 4 + 5 = 14$ điểm.",
+      "Số cách chọn 2 điểm bất kì từ 14 điểm là $n(\\Omega) = C_{14}^2 = 91$ cách.",
+      "Để đoạn thẳng nối hai điểm cắt được cả hai trục toạ độ (cả trục hoành và trục tung), thì 2 điểm đó phải nằm ở hai góc phần tư đối diện qua gốc toạ độ. Cụ thể:",
+      "- Trường hợp 1: Một điểm thuộc góc I và một điểm thuộc góc III. Số cách: $C_2^1 \\times C_4^1 = 2 \\times 4 = 8$ cách.",
+      "- Trường hợp 2: Một điểm thuộc góc II và một điểm thuộc góc IV. Số cách: $C_3^1 \\times C_5^1 = 3 \\times 5 = 15$ cách.",
+      "Số kết quả thuận lợi là: $8 + 15 = 23$.",
+      "Vậy xác suất cần tìm là $P = \\frac{23}{91}$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Gieo ngẫu nhiên một con xúc xắc cân đối đồng chất liên tiếp hai lần. Mỗi phát biểu sau là đúng hay sai?",
+     "s": [
+      "Xác suất để hai lần gieo đều xuất hiện mặt sáu chấm là $\\frac{1}{36}$",
+      "Xác suất để số chấm trong hai lần gieo là khác nhau bằng $\\frac{1}{2}$"
+     ],
+     "a": [
+      1,
+      0
+     ],
+     "solved": true,
+     "sol": [
+      "Ý 1: Không gian mẫu khi gieo xúc xắc 2 lần là $6 \\times 6 = 36$. Chỉ có duy nhất 1 trường hợp ra 6 chấm ở cả hai lần là (6, 6). Xác suất là $\\frac{1}{36}$. Phát biểu Đúng.",
+      "Ý 2: Biến cố hai lần gieo có số chấm giống nhau gồm 6 trường hợp: (1,1), (2,2), ..., (6,6). Xác suất giống nhau là $\\frac{6}{36} = \\frac{1}{6}$. Do đó xác suất số chấm xuất hiện khác nhau (biến cố đối) là $1 - \\frac{1}{6} = \\frac{5}{6}$. Phát biểu Sai."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho hàm số $f(x)$ có đạo hàm $f'(x)=x(x-1)(x-2)^2, \\forall x \\in \\mathbb{R}$. Số điểm cực trị của hàm số đã cho là",
+     "o": [
+      "5.",
+      "2.",
+      "1.",
+      "3."
+     ],
+     "a": 1,
+     "solved": true,
+     "sol": [
+      "Giải phương trình $f'(x) = 0 \\Leftrightarrow x = 0, x = 1$ hoặc $x = 2$.",
+      "Tuy nhiên, $x = 2$ là nghiệm bội chẵn (do có số mũ 2), nên đạo hàm $f'(x)$ không đổi dấu khi qua $x = 2$.",
+      "Các nghiệm $x = 0$ và $x = 1$ là nghiệm bội lẻ, đạo hàm sẽ đổi dấu khi đi qua các điểm này.",
+      "Do đạo hàm chỉ đổi dấu 2 lần nên hàm số có đúng 2 điểm cực trị."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Một tờ báo thể thao dự định làm một phóng sự về các vận động viên của các môn thể thao đang được quan tâm nhất trong thời gian gần đây. Vì vậy, họ tổ chức một cuộc khảo sát mức độ quan tâm của các độc giả về các môn thể thao trong nước. Bảng số liệu dưới đây cho biết số lượng các độc giả quan tâm đến 5 môn thể thao “hot” nhất.\\n<table><tr><th></th><th>Điền kinh</th><th>Bơi lội</th><th>Bóng chuyền</th><th>Bóng đá</th><th>Golf</th></tr><tr><td>Độc giả nam</td><td>145</td><td>90</td><td>145</td><td>209</td><td>120</td></tr><tr><td>Độc giả nữ</td><td>102</td><td>129</td><td>87</td><td>152</td><td>72</td></tr></table>\\nBiết mỗi độc giả chỉ lựa chọn một môn thể thao mà bản thân quan tâm nhất. Người phóng viên chọn ngẫu nhiên 2 độc giả để phỏng vấn.\\nCó [[0]] cách chọn 2 độc giả đều là nam.\\nCó [[1]] cách chọn 2 độc giả nam và nữ quan tâm môn golf.\\nXác suất chọn được hai nữ độc giả quan tâm môn bơi lội là [[2]] %.",
+     "a": [
+      250986,
+      8640,
+      1.06
+     ],
+     "e": 0.006,
+     "solved": true,
+     "sol": [
+      "Tính tổng số lượng độc giả:",
+      "Tổng nam = $145 + 90 + 145 + 209 + 120 = 709$ (người).",
+      "Tổng nữ = $102 + 129 + 87 + 152 + 72 = 542$ (người).",
+      "Tổng độc giả tham gia khảo sát = $709 + 542 = 1251$ (người).",
+      "1) Số cách chọn 2 độc giả đều là nam: Lấy 2 người từ 709 độc giả nam, ta có $C_{709}^2 = \\frac{709 \\times 708}{2} = 250\\,986$ (cách).",
+      "2) Số cách chọn 1 nam và 1 nữ cùng quan tâm môn golf: Chọn 1 nam từ 120 nam và 1 nữ từ 72 nữ, ta có $C_{120}^1 \\times C_{72}^1 = 120 \\times 72 = 8\\,640$ (cách).",
+      "3) Xác suất chọn được hai nữ quan tâm môn bơi lội: Số cách chọn 2 người từ 129 nữ bơi lội là $C_{129}^2 = 8\\,256$ (cách). Không gian mẫu (chọn 2 người bất kỳ) là $C_{1251}^2 = 781\\,875$ (cách). Xác suất bằng $\\frac{8256}{781875} \\approx 0,010559$, tức là khoảng $1,06\\%$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Cho hình chóp S.ABCD có $SA \\perp (ABCD)$, $SA=a\\sqrt{3}$, ABCD là hình vuông tâm O cạnh bằng a. Gọi M là trung điểm của SA. Trong (SAB) kẻ AH vuông góc với SB. Mỗi phát biểu sau đây là đúng hay sai?",
+     "s": [
+      "$AH \\perp (SBC)$.",
+      "$d(A,(SBC)) = \\frac{\\sqrt{3}}{3}a$.",
+      "Góc giữa OM mặt phẳng (SAB) là $\\alpha$, $\\tan \\alpha = \\frac{1}{2}$.",
+      "$\\frac{V_{A.MOH}}{V_{S.ABCD}} = \\frac{1}{8}$."
+     ],
+     "a": [
+      1,
+      0,
+      1,
+      0
+     ],
+     "solved": true,
+     "sol": [
+      "Ý 1: Ta có $BC \\perp AB$ và $BC \\perp SA \\Rightarrow BC \\perp (SAB)$. Suy ra $BC \\perp AH$. Mặt khác, giả thiết $AH \\perp SB$, suy ra $AH \\perp (SBC)$. Phát biểu Đúng.",
+      "Ý 2: Do $AH \\perp (SBC)$ nên $d(A, (SBC)) = AH$. Trong tam giác vuông SAB, $\\frac{1}{AH^2} = \\frac{1}{SA^2} + \\frac{1}{AB^2} = \\frac{1}{3a^2} + \\frac{1}{a^2} = \\frac{4}{3a^2} \\Rightarrow AH = \\frac{a\\sqrt{3}}{2}$. Kết quả đề bài cho là $\\frac{a\\sqrt{3}}{3}$ là Sai.",
+      "Ý 3: Hình chiếu của O lên mặt phẳng (SAB) là trung điểm K của cạnh AB. Vậy góc giữa OM và (SAB) là $\\widehat{OMK}$. Tam giác OKM vuông tại K có $OK = \\frac{a}{2}$. Chiều dài $MK = \\sqrt{MA^2 + AK^2} = \\sqrt{\\left(\\frac{a\\sqrt{3}}{2}\\right)^2 + \\left(\\frac{a}{2}\\right)^2} = a$. Vậy $\\tan \\alpha = \\frac{OK}{MK} = \\frac{a/2}{a} = \\frac{1}{2}$. Phát biểu Đúng.",
+      "Ý 4: Ta dùng tỉ số thể tích: $V_{A.MOH} = V_{M.AOH}$. Mặt khác, M là trung điểm SA nên khoảng cách từ M đến (AOH) bằng nửa khoảng cách từ S đến (AOH) $\\Rightarrow V_{M.AOH} = \\frac{1}{2} V_{S.AOH}$. O là trung điểm BD nên khoảng cách từ O đến (SAB) bằng nửa khoảng cách từ D đến (SAB) $\\Rightarrow V_{S.AOH} = V_{O.SAH} = \\frac{1}{2} V_{D.SAH} = \\frac{1}{2} V_{H.SAD}$. Do $AH \\perp SB$ nên $\\frac{SH}{SB} = \\frac{SA^2}{SB^2} = \\frac{3}{4} \\Rightarrow V_{H.SAD} = \\frac{3}{4} V_{B.SAD} = \\frac{3}{4} \\left(\\frac{1}{2} V_{S.ABCD}\\right) = \\frac{3}{8} V_{S.ABCD}$. Gộp lại: $V_{A.MOH} = \\frac{1}{2} \\times \\frac{1}{2} \\times \\frac{3}{8} V_{S.ABCD} = \\frac{3}{32} V_{S.ABCD}$. Phát biểu Sai."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Nghiệm của phương trình $\\sin^3 x - \\cos^3 x = \\sin x + \\cos x$ là",
+     "o": [
+      "$x = \\frac{\\pi}{3} + k\\pi$",
+      "$x = k\\pi$",
+      "$x = -\\frac{\\pi}{3} + k\\pi$",
+      "$x = \\frac{\\pi}{2} + k\\pi$"
+     ],
+     "a": 3,
+     "solved": true,
+     "sol": [
+      "Biến đổi phương trình:",
+      "$\\sin^3 x - \\sin x = \\cos^3 x + \\cos x$",
+      "$\\Leftrightarrow \\sin x (\\sin^2 x - 1) = \\cos x (\\cos^2 x + 1)$",
+      "$\\Leftrightarrow \\sin x (-\\cos^2 x) = \\cos x (\\cos^2 x + 1)$",
+      "$\\Leftrightarrow \\cos x (\\cos^2 x + \\sin x \\cos x + 1) = 0$",
+      "Trường hợp 1: $\\cos x = 0 \\Leftrightarrow x = \\frac{\\pi}{2} + k\\pi$.",
+      "Trường hợp 2: $\\cos^2 x + \\sin x \\cos x + 1 = 0 \\Leftrightarrow 2\\cos^2 x + \\sin x \\cos x + \\sin^2 x = 0$. Rõ ràng $\\cos x = 0$ không thoả mãn pt này, chia hai vế cho $\\cos^2 x$ ta được $\\tan^2 x + \\tan x + 2 = 0$ (phương trình vô nghiệm do $\\Delta < 0$).",
+      "Vậy nghiệm của phương trình là $x = \\frac{\\pi}{2} + k\\pi$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Lớp 10A có 45 học sinh trong đó có 25 học sinh biết chơi cờ vua, 18 học sinh biết chơi cờ tướng, 10 học sinh không biết chơi môn cờ nào.\\nTrong lớp 10A có [[0]] học sinh biết chơi cả hai môn cờ vua và cờ tướng, có [[1]] học sinh chỉ biết chơi đúng một trong hai môn cờ vua hoặc cờ tướng.",
+     "a": [
+      8,
+      27
+     ],
+     "solved": true,
+     "sol": [
+      "Số học sinh biết chơi ít nhất một môn cờ là: $45 - 10 = 35$ (học sinh).",
+      "Sử dụng công thức biểu đồ Venn: Số học sinh biết chơi cả hai môn = (Số hs biết chơi cờ vua) + (Số hs biết chơi cờ tướng) - (Số hs biết ít nhất một môn).",
+      "Số học sinh biết chơi cả hai môn = $25 + 18 - 35 = 8$ (học sinh).",
+      "Số học sinh chỉ biết chơi đúng 1 môn = (Số hs biết ít nhất 1 môn) - (Số hs biết chơi cả hai môn) = $35 - 8 = 27$ (học sinh)."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Người ta cần phơi khô một loại lá thuốc. Lượng nước trong lá thuốc tươi là 60% và trong lá thuốc khô là 20%. Khi phơi 100 kg lá thuốc tươi, ta sẽ được [[0]] kg lá thuốc khô.",
+     "a": [
+      50
+     ],
+     "solved": true,
+     "sol": [
+      "Lượng chất khô nguyên chất có trong 100 kg lá thuốc tươi là: $100 \\times (100\\% - 60\\%) = 40$ (kg).",
+      "Khối lượng chất khô này không đổi trong quá trình phơi. Ở lá thuốc khô, tỉ lệ nước là $20\\%$, do đó chất khô chiếm $100\\% - 20\\% = 80\\%$ khối lượng.",
+      "Vậy khối lượng lá thuốc khô thu được là: $\\frac{40}{80\\%} = 50$ (kg)."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Họ nghiệm nào dưới đây thuộc nghiệm của phương trình $\\sin^6 x + \\cos^6 x = \\frac{7}{16}$",
+     "o": [
+      "$x = \\pm\\frac{\\pi}{2} + k\\frac{\\pi}{2}$",
+      "$x = \\pm\\frac{\\pi}{4} + k\\frac{\\pi}{2}$",
+      "$x = \\pm\\frac{\\pi}{5} + k\\frac{\\pi}{2}$",
+      "$x = \\pm\\frac{\\pi}{6} + k\\pi$"
+     ],
+     "a": 3,
+     "solved": true,
+     "sol": [
+      "Sử dụng hằng đẳng thức $\\sin^6 x + \\cos^6 x = 1 - \\frac{3}{4}\\sin^2(2x)$.",
+      "Phương trình tương đương: $1 - \\frac{3}{4}\\sin^2(2x) = \\frac{7}{16} \\Leftrightarrow \\frac{3}{4}\\sin^2(2x) = \\frac{9}{16} \\Leftrightarrow \\sin^2(2x) = \\frac{3}{4}$.",
+      "Hạ bậc: $\\frac{1 - \\cos(4x)}{2} = \\frac{3}{4} \\Leftrightarrow 1 - \\cos(4x) = \\frac{3}{2} \\Leftrightarrow \\cos(4x) = -\\frac{1}{2}$.",
+      "Giải ra ta được: $4x = \\pm\\frac{2\\pi}{3} + k2\\pi \\Leftrightarrow x = \\pm\\frac{\\pi}{6} + k\\frac{\\pi}{2}$.",
+      "Trong các đáp án đưa ra, $x = \\pm\\frac{\\pi}{6} + k\\pi$ là một tập hợp con (ứng với các giá trị k chẵn) của họ nghiệm đầy đủ, nên nó thỏa mãn yêu cầu thuộc nghiệm của phương trình."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho hàm số $y=f(x)$ có $\\lim_{x\\rightarrow+\\infty} f(x)=1$ và $\\lim_{x\\rightarrow-\\infty} f(x)=-1$. Khẳng định nào sau đây là khẳng định đúng?",
+     "o": [
+      "Đồ thị hàm số đã cho không có tiệm cận ngang.",
+      "Đồ thị hàm số đã cho có hai tiệm cận ngang là các đường thẳng $x=1$ và $x=-1$.",
+      "Đồ thị hàm số đã cho có hai tiệm cận ngang là các đường thẳng $y=1$ và $y=-1$.",
+      "Đồ thị hàm số đã cho có đúng một tiệm cận ngang."
+     ],
+     "a": 2,
+     "solved": true,
+     "sol": [
+      "Theo định nghĩa tiệm cận ngang, đường thẳng $y = y_0$ là tiệm cận ngang của đồ thị hàm số $y = f(x)$ nếu ít nhất một trong các điều kiện $\\lim_{x\\rightarrow+\\infty} f(x)=y_0$ hoặc $\\lim_{x\\rightarrow-\\infty} f(x)=y_0$ được thoả mãn.",
+      "Vì $\\lim_{x\\rightarrow+\\infty} f(x)=1$ và $\\lim_{x\\rightarrow-\\infty} f(x)=-1$ nên đồ thị hàm số có hai đường tiệm cận ngang là $y=1$ và $y=-1$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Trong không gian Oxyz, cho mặt cầu có phương trình $x^2+y^2+z^2-2x+2y-10z+23=0$. Bán kính mặt cầu bằng [[0]]",
+     "a": [
+      2
+     ],
+     "solved": true,
+     "sol": [
+      "Phương trình mặt cầu có dạng $x^2+y^2+z^2-2ax-2by-2cz+d=0$ với $a=1, b=-1, c=5$ và $d=23$.",
+      "Bán kính mặt cầu được tính bởi $R = \\sqrt{a^2 + b^2 + c^2 - d} = \\sqrt{1^2 + (-1)^2 + 5^2 - 23} = \\sqrt{27 - 23} = \\sqrt{4} = 2$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Bình chứa nhiên liệu của một chiếc máy bay phản lực được mô tả trong không gian là một khối tròn xoay thu được khi xoay hình phẳng giới hạn bởi đồ thị hàm số $y=\\frac{1}{8}x^2\\sqrt{2-x} \\quad (0 \\le x \\le 2)$ và trục Ox quanh trục Ox (với x tính theo đơn vị m). Thể tích của bình chứa bằng $\\frac{a\\pi}{b} m^3$ với $\\frac{a}{b}$ là phân số tối giản. Khi đó, $a+b$ bằng [[0]]",
+     "fig": "img/Toan_c29_hocmai06.png",
+     "warn": "Cần chèn ảnh minh hoạ máy bay và khối tròn xoay",
+     "a": [
+      31
+     ],
+     "solved": true,
+     "sol": [
+      "Thể tích khối tròn xoay được tính bằng công thức: $V = \\pi \\int_0^2 y^2 dx$.",
+      "Ta có: $y^2 = \\left( \\frac{1}{8}x^2\\sqrt{2-x} \\right)^2 = \\frac{1}{64}x^4(2-x) = \\frac{1}{32}x^4 - \\frac{1}{64}x^5$.",
+      "Tích phân: $V = \\pi \\int_0^2 \\left( \\frac{1}{32}x^4 - \\frac{1}{64}x^5 \\right) dx = \\pi \\left[ \\frac{x^5}{160} - \\frac{x^6}{384} \\right]_0^2$.",
+      "Thay $x = 2$: $V = \\pi \\left( \\frac{32}{160} - \\frac{64}{384} \\right) = \\pi \\left( \\frac{1}{5} - \\frac{1}{6} \\right) = \\frac{\\pi}{30}$.",
+      "Theo giả thiết $V = \\frac{a\\pi}{b}$, do đó $a=1$ và $b=30$ (phân số đã tối giản).",
+      "Vậy $a+b = 1+30 = 31$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Tích các giá trị của tham số m để phương trình $(\\sin x - 1)(2\\cos^2 x - (2m+1)\\cos x + m) = 0$ có đúng 4 nghiệm phân biệt thuộc $[0; 2\\pi]$ là [[0]]",
+     "a": [
+      0
+     ],
+     "solved": true,
+     "sol": [
+      "Phương trình tương đương với: $\\sin x = 1$ (1) hoặc $2\\cos^2 x - (2m+1)\\cos x + m = 0$ (2).",
+      "Từ (1) ta được $\\sin x = 1 \\Rightarrow x = \\frac{\\pi}{2}$ (đây là 1 nghiệm thuộc $[0, 2\\pi]$).",
+      "Để phương trình có tổng cộng đúng 4 nghiệm phân biệt, phương trình (2) phải sinh ra đúng 3 nghiệm phân biệt khác $\\frac{\\pi}{2}$ trong khoảng $[0, 2\\pi]$, HOẶC sinh ra 4 nghiệm phân biệt trong đó có 1 nghiệm trùng với $\\frac{\\pi}{2}$.",
+      "Phân tích phương trình (2): $2\\cos^2 x - \\cos x - 2m\\cos x + m = 0 \\Leftrightarrow (2\\cos x - 1)(\\cos x - m) = 0$.",
+      "Nghiệm thứ nhất: $\\cos x = \\frac{1}{2} \\Rightarrow x = \\frac{\\pi}{3}$ hoặc $x = \\frac{5\\pi}{3}$ (thêm 2 nghiệm phân biệt khác $\\frac{\\pi}{2}$).",
+      "Vậy tổng số nghiệm hiện tại đã có là 3 nghiệm: $\\frac{\\pi}{2}, \\frac{\\pi}{3}, \\frac{5\\pi}{3}$.",
+      "Để có ĐÚNG 4 nghiệm tổng cộng, phương trình còn lại $\\cos x = m$ chỉ được bổ sung thêm đúng 1 nghiệm MỚI.",
+      "Khả năng 1: $\\cos x = m$ có 2 nghiệm phân biệt trong đó 1 nghiệm trùng với nghiệm đã có (sẽ cho thêm 1 nghiệm mới). Nếu trùng với $\\frac{\\pi}{3}$ hoặc $\\frac{5\\pi}{3}$ thì $m=\\frac{1}{2}$, lúc này phương trình $\\cos x = \\frac{1}{2}$ chỉ sinh ra 2 nghiệm (không có nghiệm mới), tổng chỉ là 3 nghiệm (loại). Nếu trùng với $\\frac{\\pi}{2}$ thì $\\cos\\frac{\\pi}{2} = m \\Rightarrow m = 0$. Khi đó $\\cos x = 0$ có nghiệm $x = \\frac{\\pi}{2}$ (trùng) và $x = \\frac{3\\pi}{2}$ (mới). Tổng cộng 4 nghiệm (Nhận $m=0$).",
+      "Khả năng 2: $\\cos x = m$ sinh ra duy nhất 1 nghiệm trên đoạn $[0; 2\\pi]$ và nghiệm đó khác các nghiệm ở trên. Điều này xảy ra khi đường $y=m$ tiếp xúc với đồ thị $\\cos x$. Suy ra $m=1$ hoặc $m=-1$. Tại $m=1$, $\\cos x = 1 \\Rightarrow x=0$ và $x=2\\pi$ (có 2 nghiệm trên đoạn $\\Rightarrow$ Tổng 5 nghiệm, loại). Tại $m=-1$, $\\cos x = -1 \\Rightarrow x=\\pi$ (có đúng 1 nghiệm $\\Rightarrow$ Tổng 4 nghiệm, nhận $m=-1$).",
+      "Vậy $m \\in \\{0, -1\\}$. Tích các giá trị là $0 \\times (-1) = 0$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Chu kỳ của hàm số $y=1-\\cos\\left(3x-\\frac{\\pi}{5}\\right)$ là",
+     "o": [
+      "$T=\\frac{2\\pi}{3}$",
+      "$T=\\frac{\\pi}{3}$",
+      "$T=\\frac{\\pi}{5}$",
+      "$T=6\\pi$"
+     ],
+     "a": 0,
+     "solved": true,
+     "sol": [
+      "Hàm số $y = A\\cos(ax+b) + C$ có chu kỳ tuần hoàn cơ bản là $T = \\frac{2\\pi}{|a|}$.",
+      "Trong trường hợp này $a = 3$, do đó chu kỳ của hàm số là $T = \\frac{2\\pi}{3}$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Trong không gian $Oxyz$, cho 3 điểm $A(5;-2;0)$, $B(4;5;-2)$ và $C(0;3;2)$. Gọi điểm M di động trên trục Ox và điểm N thỏa mãn đẳng thức $\\vec{NA} + \\vec{NB} + 2\\vec{NC} = \\vec{0}$. Các khẳng định sau đúng hay sai?",
+     "s": [
+      "$\\vec{AB} = (1;-7;2)$.",
+      "Trọng tâm tam giác ABC là điểm $G(3;2;0)$.",
+      "Hoành độ và tung độ của điểm N bằng nhau.",
+      "Giá trị nhỏ nhất của biểu thức $Q = 2|\\vec{MA} + \\vec{MB} + \\vec{MC}| + 3|\\vec{MB} + \\vec{MC}|$ là $6\\sqrt{35}$."
+     ],
+     "a": [
+      0,
+      1,
+      1,
+      0
+     ],
+     "solved": true,
+     "sol": [
+      "Ý 1: Ta có $\\vec{AB} = (x_B-x_A; y_B-y_A; z_B-z_A) = (4-5; 5-(-2); -2-0) = (-1; 7; -2)$. Vectơ ở đề bài là $\\vec{BA}$. Khẳng định Sai.",
+      "Ý 2: Toạ độ trọng tâm $G$ là trung bình cộng của $A, B, C$: $x_G = \\frac{5+4+0}{3} = 3; y_G = \\frac{-2+5+3}{3} = 2; z_G = \\frac{0-2+2}{3} = 0 \\Rightarrow G(3;2;0)$. Khẳng định Đúng.",
+      "Ý 3: $\\vec{NA}+\\vec{NB}+2\\vec{NC} = \\vec{0} \\Rightarrow N = \\frac{A+B+2C}{4}$. $x_N = \\frac{5+4+0}{4} = \\frac{9}{4}; y_N = \\frac{-2+5+6}{4} = \\frac{9}{4}$. Hoành độ và tung độ đều bằng $\\frac{9}{4}$. Khẳng định Đúng.",
+      "Ý 4: Gọi $G(3;2;0)$ là trọng tâm, $K(2;4;0)$ là trung điểm BC. Ta có $Q = 2|3\\vec{MG}| + 3|2\\vec{MK}| = 6(MG + MK)$. Vì M nằm trên Ox nên $M(x; 0; 0)$. Khi đó $MG = \\sqrt{(x-3)^2+4}$ và $MK = \\sqrt{(2-x)^2+16}$. Áp dụng bất đẳng thức Minkowski: $MG + MK \\ge \\sqrt{(x-3+2-x)^2 + (2+4)^2} = \\sqrt{(-1)^2 + 6^2} = \\sqrt{37}$. Vậy $\\min Q = 6\\sqrt{37}$. Khẳng định $6\\sqrt{35}$ là Sai."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho khối chóp S.ABCD có đáy là hình bình hành ABCD. Gọi M, N, P, Q lần lượt là trọng tâm các tam giác SAB, SBC, SCD, SDA. Biết thể tích khối chóp S.MNPQ là V, khi đó thể tích của khối chóp S.ABCD là",
+     "o": [
+      "$\\frac{27V}{4}$",
+      "$\\frac{81}{4}V$",
+      "$\\frac{9V}{4}$",
+      "$\\frac{81V}{8}$"
+     ],
+     "a": 0,
+     "solved": true,
+     "sol": [
+      "Gọi M', N', P', Q' lần lượt là trung điểm của AB, BC, CD, DA. Bằng tính chất trọng tâm, các điểm M, N, P, Q chia các đoạn thẳng SM', SN', SP', SQ' theo tỉ số $\\frac{SM}{SM'} = \\frac{2}{3}$.",
+      "Điều này chứng tỏ mặt phẳng (MNPQ) song song với mặt phẳng (M'N'P'Q') (tức là mặt phẳng đáy) và đa giác MNPQ là ảnh của M'N'P'Q' qua phép vị tự tâm S tỉ số $k = \\frac{2}{3}$.",
+      "Diện tích đáy: Tứ giác M'N'P'Q' tạo bởi các trung điểm nên $S_{M'N'P'Q'} = \\frac{1}{2} S_{ABCD}$. Do hình vị tự tỉ số $k = \\frac{2}{3}$, diện tích MNPQ là $S_{MNPQ} = \\left(\\frac{2}{3}\\right)^2 S_{M'N'P'Q'} = \\frac{4}{9} \\times \\frac{1}{2} S_{ABCD} = \\frac{2}{9} S_{ABCD}$.",
+      "Chiều cao: $h_{S \\to (MNPQ)} = \\frac{2}{3} h_{S \\to (ABCD)}$.",
+      "Thể tích $V = V_{S.MNPQ} = \\frac{1}{3} S_{MNPQ} h = \\frac{1}{3} \\left(\\frac{2}{9} S_{ABCD}\\right) \\left(\\frac{2}{3} h_{ABCD}\\right) = \\frac{4}{27} \\left(\\frac{1}{3} S_{ABCD} h_{ABCD}\\right) = \\frac{4}{27} V_{S.ABCD}$.",
+      "Suy ra $V_{S.ABCD} = \\frac{27}{4}V$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Phương trình $\\sin^4 x + \\cos^4\\left(x+\\frac{\\pi}{4}\\right) = 1$ có số điểm biểu diễn trên đường tròn lượng giác là",
+     "o": [
+      "2",
+      "4",
+      "6",
+      "8"
+     ],
+     "a": 1,
+     "solved": true,
+     "sol": [
+      "Biến đổi hạng tử thứ hai: $\\cos\\left(x+\\frac{\\pi}{4}\\right) = \\frac{\\cos x - \\sin x}{\\sqrt{2}}$.",
+      "Suy ra $\\cos^4\\left(x+\\frac{\\pi}{4}\\right) = \\frac{(\\cos^2 x + \\sin^2 x - 2\\sin x \\cos x)^2}{4} = \\frac{(1 - \\sin 2x)^2}{4}$.",
+      "Biến đổi hạng tử đầu: $\\sin^4 x = \\left(\\frac{1 - \\cos 2x}{2}\\right)^2 = \\frac{(1 - \\cos 2x)^2}{4}$.",
+      "Phương trình trở thành: $\\frac{1 - 2\\cos 2x + \\cos^2 2x}{4} + \\frac{1 - 2\\sin 2x + \\sin^2 2x}{4} = 1$.",
+      "Nhân 2 vế với 4: $1 - 2\\cos 2x + \\cos^2 2x + 1 - 2\\sin 2x + \\sin^2 2x = 4$.",
+      "$\\Leftrightarrow 2 - 2(\\sin 2x + \\cos 2x) + (\\sin^2 2x + \\cos^2 2x) = 4 \\Leftrightarrow 3 - 2(\\sin 2x + \\cos 2x) = 4$.",
+      "$\\Leftrightarrow \\sin 2x + \\cos 2x = -\\frac{1}{2} \\Leftrightarrow \\sqrt{2}\\sin\\left(2x + \\frac{\\pi}{4}\\right) = -\\frac{1}{2} \\Leftrightarrow \\sin\\left(2x + \\frac{\\pi}{4}\\right) = -\\frac{1}{2\\sqrt{2}}$.",
+      "Phương trình $\\sin \\alpha = C$ (với $|C| < 1$) cho 2 họ nghiệm. Mỗi họ nghiệm có dạng $2x = \\dots + k2\\pi \\Leftrightarrow x = \\dots + k\\pi$.",
+      "Mỗi họ nghiệm chu kỳ $\\pi$ sẽ được biểu diễn bởi 2 điểm đối xứng nhau qua gốc toạ độ trên đường tròn lượng giác.",
+      "Vì có 2 họ nghiệm nên số điểm biểu diễn là $2 \\times 2 = 4$ điểm."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Trong không gian Oxyz, cho đường thẳng $d: \\frac{x-7}{1} = \\frac{y-3}{2} = \\frac{z-9}{-1}$ và mặt phẳng $(P): x+y+z+3=0$. Gọi $d'$ là hình chiếu vuông góc của đường thẳng $d$ lên mặt phẳng $(P)$. Mỗi phát biểu sau đây là đúng hay sai?",
+     "s": [
+      "Đường thẳng d tạo với mặt phẳng $(P)$ một góc lớn hơn $45^\\circ$.",
+      "Giao điểm của đường thẳng d và mặt phẳng $(P)$ có tung độ bằng $-19$.",
+      "Một vecto chỉ phương của đường thẳng $d'$ là $\\vec{u}_{d'} = (2; -1; -1)$"
+     ],
+     "a": [
+      0,
+      1,
+      0
+     ],
+     "solved": true,
+     "sol": [
+      "Ý 1: Vectơ chỉ phương $\\vec{u}=(1; 2; -1)$, vectơ pháp tuyến $\\vec{n}=(1; 1; 1)$. Ta có $\\sin(d, P) = \\frac{|\\vec{u}\\cdot\\vec{n}|}{|\\vec{u}|\\cdot|\\vec{n}|} = \\frac{|1+2-1|}{\\sqrt{6}\\cdot\\sqrt{3}} = \\frac{\\sqrt{2}}{3} \\approx 0.471$. So sánh $\\sin 45^\\circ = \\frac{\\sqrt{2}}{2} \\approx 0.707$, ta thấy góc nhỏ hơn $45^\\circ$. Phát biểu Sai.",
+      "Ý 2: Viết d dưới dạng tham số $x = 7+t; y = 3+2t; z = 9-t$. Thế vào phương trình (P): $(7+t) + (3+2t) + (9-t) + 3 = 0 \\Leftrightarrow 2t + 22 = 0 \\Leftrightarrow t = -11$. Tung độ $y = 3 + 2(-11) = -19$. Phát biểu Đúng.",
+      "Ý 3: Vectơ chỉ phương của $d'$ là hình chiếu của $\\vec{u}$ lên $(P)$, cùng phương với $[\\vec{n}, [\\vec{u}, \\vec{n}]]$. Tính $[\\vec{u}, \\vec{n}] = (3; -2; -1)$. Kế tiếp tính $[(1; 1; 1), (3; -2; -1)] = (1; 4; -5)$. Vectơ $(1; 4; -5)$ không tỉ lệ với $(2; -1; -1)$. Phát biểu Sai."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Cho hàm số $y=f(x)$ liên tục trên các khoảng xác định và có bảng biến thiên như hình vẽ sau:\\nMỗi phát biểu dưới đây là đúng hay sai?",
+     "fig": "img/Toan_c36_hocmai06.png",
+     "warn": "cần chèn ảnh bảng biến thiên",
+     "s": [
+      "Số đường tiệm cận đứng của đồ thị hàm số đã cho là 2",
+      "Đồ thị hàm số $y=f(x)$ có hai đường tiệm cận ngang $y=2; y=3$",
+      "Hàm số $y=f(x)$ nghịch biến trong khoảng $(1; +\\infty)$.",
+      "Hàm số $y=f(x)$ có hai điểm cực trị."
+     ],
+     "a": [
+      1,
+      0,
+      0,
+      1
+     ],
+     "solved": true,
+     "sol": [
+      "Ý 1: Dựa vào bảng biến thiên, tại $x = 0$ và $x = 2$, giới hạn của hàm số tiến về $-\\infty$ và $+\\infty$. Do đó $x = 0$ và $x = 2$ là 2 tiệm cận đứng. Phát biểu Đúng.",
+      "Ý 2: Tại hai đầu, $\\lim_{x\\to-\\infty} f(x) = 2$ và $\\lim_{x\\to+\\infty} f(x) = -3$. Do đó các đường tiệm cận ngang là $y=2$ và $y=-3$. Đề bài khẳng định là $y=3$ nên Sai.",
+      "Ý 3: Trên khoảng $(1; +\\infty)$, đồ thị bị gián đoạn tại $x=2$. Hàm số chỉ nghịch biến trên từng khoảng $(1; 2)$ và $(2; +\\infty)$, không được gộp chung thành khoảng $(1; +\\infty)$. Phát biểu Sai.",
+      "Ý 4: Hàm số đổi chiều từ đồng biến sang nghịch biến tại $x = -2$ (cực đại) và $x = 1$ (cực đại). Do đó hàm số có 2 điểm cực trị. Phát biểu Đúng."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Trong không gian tọa độ Oxyz, tính bán kính R của mặt cầu $(S): x^2+y^2+z^2=\\frac{1}{4}$",
+     "o": [
+      "$R=2$",
+      "$R=\\frac{1}{4}$.",
+      "$R=4$",
+      "$R=\\frac{1}{2}$."
+     ],
+     "a": 3,
+     "solved": true,
+     "sol": [
+      "Phương trình mặt cầu có dạng $x^2 + y^2 + z^2 = R^2$. Suy ra $R^2 = \\frac{1}{4} \\Rightarrow R = \\frac{1}{2}$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Tổng của hai số nguyên tố có hai chữ số là một số nằm giữa 149 và 155. Mỗi phát biểu sau đây là đúng hay sai?",
+     "s": [
+      "Một trong các số nguyên tố có thể là 71",
+      "Một trong các số nguyên tố có thể là 89",
+      "Một trong các số nguyên tố có thể là 97",
+      "Một trong các số nguyên tố có thể là 59",
+      "Một trong các số nguyên tố có thể là 47"
+     ],
+     "a": [
+      1,
+      1,
+      1,
+      0,
+      0
+     ],
+     "solved": true,
+     "sol": [
+      "Tổng của 2 số nguyên tố (có 2 chữ số nên đều là số lẻ) chắc chắn là một số chẵn. Các số chẵn nằm giữa 149 và 155 là 150, 152 và 154.",
+      "Ý 1: Nếu $p=71$, ta có các tổng trừ đi 71 là: $150-71=79$ (nguyên tố); $152-71=81$ (hợp số); $154-71=83$ (nguyên tố). Vậy 71 thỏa mãn. (Đúng)",
+      "Ý 2: Nếu $p=89$, các tổng trừ đi 89: $150-89=61$ (nguyên tố). Thỏa mãn. (Đúng)",
+      "Ý 3: Nếu $p=97$, các tổng trừ đi 97: $150-97=53$ (nguyên tố). Thỏa mãn. (Đúng)",
+      "Ý 4: Nếu $p=59$, các tổng trừ đi 59: $150-59=91=7\\times13$ (hợp số); $152-59=93$ (hợp số); $154-59=95$ (hợp số). Vậy không tồn tại số nguyên tố thứ hai nào thích hợp. (Sai)",
+      "Ý 5: Nếu $p=47$, các tổng trừ đi 47 lần lượt là 103, 105, 107. Tuy 103 và 107 là số nguyên tố nhưng chúng có 3 chữ số, vi phạm điều kiện \"hai số nguyên tố có 2 chữ số\". (Sai)"
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho hàm số $y=f(x)$ đồ thị hàm số như hình vẽ. Hàm số đồng biến trên khoảng nào sau đây?",
+     "fig": "img/Toan_c39_hocmai06.png",
+     "warn": "cần chèn ảnh đồ thị",
+     "o": [
+      "$(-1;+\\infty)$.",
+      "$(-\\infty;-1)$.",
+      "$(-3;0)$.",
+      "$(-2;-1)$."
+     ],
+     "a": 0,
+     "solved": true,
+     "sol": [
+      "Quan sát đồ thị, hàm số có tiệm cận đứng tại $x=-2$.",
+      "Trên khoảng từ $(-\\infty; -2)$, hàm số đồng biến đến điểm cực đại tại $x = -3$, sau đó nghịch biến.",
+      "Trên khoảng từ $(-2; +\\infty)$, hàm số nghịch biến giảm dần xuống điểm cực tiểu tại $x = -1$, và từ $x = -1$ trở đi hàm số tăng dần không ngừng (đồng biến).",
+      "Do đó hàm số đồng biến trên các khoảng $(-\\infty; -3)$ và $(-1; +\\infty)$.",
+      "Đối chiếu với đáp án, khoảng $(-1; +\\infty)$ là chính xác."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Cho hàm số $f(x)=-2x^4+4x^2+1$ có đồ thị $(C)$. Mỗi phát biểu dưới đây là đúng hay sai?",
+     "s": [
+      "$\\lim_{x\\to-\\infty} f(x) = -\\infty$",
+      "Đạo hàm của hàm số đã cho là $f'(x) = -8x^3 + 8x + 1$",
+      "Tập nghiệm của phương trình $f'(x) = 0$ là $S = \\{-1; 0; 1\\}$.",
+      "Giá trị lớn nhất của $f(x)$ là 1."
+     ],
+     "a": [
+      1,
+      0,
+      1,
+      0
+     ],
+     "solved": true,
+     "sol": [
+      "Ý 1: Hàm đa thức bậc chẵn với hệ số $a = -2 < 0$ thì giới hạn ở cả $+\\infty$ và $-\\infty$ đều là $-\\infty$. Phát biểu Đúng.",
+      "Ý 2: Tính đạo hàm $f'(x) = 4 \\times (-2x^3) + 2 \\times 4x = -8x^3 + 8x$. Hệ số tự do 1 có đạo hàm bằng 0. Vậy biểu thức trong đề là Sai.",
+      "Ý 3: Giải $f'(x) = 0 \\Leftrightarrow -8x^3 + 8x = 0 \\Leftrightarrow 8x(-x^2 + 1) = 0 \\Leftrightarrow x = 0$ hoặc $x = \\pm 1$. Tập nghiệm là $\\{-1; 0; 1\\}$. Phát biểu Đúng.",
+      "Ý 4: Lập bảng biến thiên, hàm số đạt cực đại tại $x = \\pm 1$ và cực tiểu tại $x = 0$. Giá trị lớn nhất đạt được tại $x = \\pm 1$: $f(\\pm 1) = -2(1) + 4(1) + 1 = 3$. Giá trị bằng 1 chỉ là cực tiểu tại $x=0$. Phát biểu Sai."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Đề Đọc Hiểu Số 02",
+   "minutes": 30,
+   "groups": [
+    {
+     "title": "MAKE IN VIET NAM: NIỀM CẢM HỨNG CHO CHUYỂN ĐỔI SỐ",
+     "p": "<p>[1] Chương trình hành động và khẩu hiệu “Make in Viet Nam\" xuất hiện đã tạo nên động lực mạnh mẽ cho các doanh nghiệp Việt Nam trong quá trình chuyển đổi số và nâng cao giá trị trong chuỗi giá trị toàn cầu. Quá trình chuyển đổi số đang diễn ra như vũ bão, ở tất cả các lĩnh vực: Chính phủ số, kinh tế số và xã hội số; đặc biệt, các doanh nghiệp ICT (công nghệ thông tin và truyền thông) được đặt vào vai trò trung tâm, được giao sứ mệnh đưa Việt Nam bứt phá với nền kinh tế số giữ vai trò chủ đạo, phấn đấu đưa Việt Nam vào nhóm các nước phát triển (trước năm 2045), top 20 nền kinh tế thế giới (trước năm 2039).</p><p>[2] Qua 4 năm triển khai, không chạy theo các khẩu hiệu sáo rỗng, \"Make in Viet Nam\" đã được Bộ Thông tin và Truyền thông xác định rõ nội hàm khái niệm cho các sản phẩm công nghệ số phải hướng tới là: “Nghiên cứu tại Việt Nam, sáng tạo tại Việt Nam, sản xuất tại Việt Nam\". Bộ trưởng Nguyễn Mạnh Hùng - Bộ Thông tin và Truyền thông nhấn mạnh tại Diễn đàn quốc gia Phát triển doanh nghiệp công nghệ Việt Nam năm 2020: Không \"Make in Viet Nam\" thì Việt Nam không thể trở thành nước phát triển. Không \"Make in Viet Nam\" thì Việt Nam không thể hùng cường thịnh vượng. Do đó, \"Make in Viet Nam\" đã không dừng lại ở khẩu hiệu mà thể hiện bằng chính số lượng doanh nghiệp số, sản phẩm/ ứng dụng số Make in Viet Nam lần lượt ra đời.</p><p>[3] Nhìn lại 4 năm kể từ khi \"Make in Viet Nam\" ra đời, số lượng doanh nghiệp số Việt Nam đã tăng trưởng cả về lượng và chất. Cụ thể, năm 2019, tổng doanh thu lĩnh vực công nghiệp ICT đạt 112,350 tỷ USD, doanh thu công nghiệp công nghệ số đã cán mốc hơn 124 tỷ USD, với hơn 60.000 doanh nghiệp số. Bước sang năm 2021, tổng doanh thu toàn ngành đạt hơn 136 tỷ USD, tăng hơn 11,4 tỷ USD so với năm 2020, bất chấp các ngành kinh tế khác gặp khó do Covid-19. Riêng năm 2022, doanh thu toàn ngành ICT ước đạt được 148 tỷ USD, tăng trưởng trên 10% so với năm 2021. Số lượng doanh nghiệp công nghệ số tính đến tháng 12/2022 đạt trên 70.000. Bộ trưởng Bộ Thông tin và Truyền thông Nguyễn Mạnh Hùng đánh giá: Từ khi phát động với khoảng 45.000 doanh nghiệp ICT ban đầu, đến nay, con số doanh nghiệp đã là trên 70.000. Đặc biệt, năm 2020, chỉ sau một năm phát động phong trào, đã có hơn 13.000 doanh nghiệp số mới ra đời. Chính phong trào \"Make in Viet Nam\" đã tạo ra năng lượng vô hạn cho cộng đồng doanh nghiệp, truyền cảm hứng cho toàn xã hội.</p><p>[4] Với tốc độ phát triển của ngành ICT nói chung, doanh nghiệp công nghệ số nói riêng, mục tiêu phát triển 100.000 doanh nghiệp công nghệ số Việt Nam theo Nghị quyết số 52/2019 của Bộ Chính trị và Chỉ thị 01/2020 của Thủ tướng Chính phủ đang dần trở thành hiện thực. \"Những nhà quản lí đã không đánh giá hết sức mạnh của dân Việt Nam, nhất là khi có một ngọn cờ đúng đắn được giương cao. Mục tiêu 100.000 doanh nghiệp công nghệ số vào năm 2030 hoàn toàn có thể đạt được trước năm 2025\", Bộ trưởng Nguyễn Mạnh Hùng tự tin nói. Thực tế phong trào \"Make in\" (sản xuất trong nước) đã được nhiều nước đi trước Việt Nam triển khai thành công, trong đó có 2 đại cường châu Á là Trung Quốc và Ấn Độ.</p><p>[5] Năm 2014, Thủ tướng Ấn Độ khởi xướng chính sách \"Make in India\" với hy vọng biến nước này trở thành công xưởng thứ 2 của thế giới sau Trung Quốc. Ngay lập tức, chương trình \"Make in India\" đã thu hút được một lượng lớn vốn FDI, trong đó có cả các nhà đầu tư đến từ đối thủ Trung Quốc (năm 2015, các nhà đầu tư Trung Quốc đã đầu tư vào Ấn Độ tăng gấp sáu lần so với 2014). Với Trung Quốc, từ thập niên 1980, Trung Quốc đã cải cách mạnh mẽ và nhanh chóng vươn lên trở thành công xưởng của thế giới ở nhiều lĩnh vực. Riêng lĩnh vực công nghệ số, từ thập niên 1990, nước này dồn lực mạnh mẽ cho 3 mảng: Công nghiệp công nghệ số, hàng không vũ trụ và công nghiệp quốc phòng. Dù nội hàm vẫn là sản xuất trong nước nhưng Trung Quốc không dùng khái niệm \"Make in\" mà chọn khái niệm “Made in\". Thậm chí, từ năm 2013, hàng hóa nước này xuất khẩu đều dùng song song 2 thương hiệu cho từng thị trường là: Made in China và Made in PRC (People's Republic of China - Cộng hòa nhân dân Trung Hoa).</p><p>[6] \"Make in Viet Nam” đã trở thành động lực quan trọng thúc đẩy kinh tế Việt Nam phát triển nhanh và bền vững, trở thành nguồn cảm hứng cho mục tiêu đưa Việt Nam trở thành quốc gia phát triển, hùng cường và thịnh vượng. Và trong công cuộc chuyển đổi số quốc gia, bên cạnh việc đưa hoạt động của người dân và doanh nghiệp lên môi trường số, thúc đẩy Chính phủ số, kinh tế số và xã hội số, sứ mệnh trở thành một trụ cột gánh vác nền kinh tế đang được Chính phủ, Bộ Thông tin và Truyền thông giao trực tiếp cho cộng đồng các doanh nghiệp số Việt Nam.</p>",
+     "questions": [
+      {
+       "t": "mc",
+       "q": "Nội dung chính của bài viết là:",
+       "o": [
+        "tôn vinh tài năng và tầm nhìn của những người tạo ra khẩu hiệu \"Make in Viet Nam\".",
+        "báo cáo khái lược những thành tựu của chuyển đổi số nhờ khẩu hiệu \"Make in Viet Nam\".",
+        "ý nghĩa, giá trị của khẩu hiệu \"Make in Viet Nam\" với quá trình chuyển đổi số Quốc gia.",
+        "sự bùng nổ mạnh mẽ của các doanh nghiệp sau khi khẩu hiệu \"Make in Viet Nam\" ra đời."
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "Toàn bộ bài viết (từ đoạn 1 đến đoạn 6) đều tập trung phân tích động lực, niềm cảm hứng, ý nghĩa và vai trò gánh vác nền kinh tế của khẩu hiệu cũng như cộng đồng doanh nghiệp \"Make in Viet Nam\" đối với công cuộc chuyển đổi số của quốc gia. Các đáp án khác chỉ bao hàm một khía cạnh hoặc một đoạn nhỏ trong bài."
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Theo đoạn [1], để đạt được mục tiêu phát triển \"Top 20 nền kinh tế thế giới\" vai trò trung tâm thuộc về Chính phủ số là đúng hay sai?",
+       "s": [
+        "Phát biểu"
+       ],
+       "a": [
+        0
+       ],
+       "solved": true,
+       "sol": [
+        "Đoạn [1] nêu rõ: 'đặc biệt, các doanh nghiệp ICT (công nghệ thông tin và truyền thông) được đặt vào vai trò trung tâm... phấn đấu đưa Việt Nam vào nhóm các nước phát triển... top 20 nền kinh tế thế giới'. Do đó, vai trò trung tâm thuộc về các doanh nghiệp ICT, chứ không phải Chính phủ số."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Để hoàn thành được mục tiêu: đưa Việt Nam bứt phá với nền kinh tế số giữ vai trò chủ đạo thì trách nhiệm lớn nhất thuộc về đơn vị nào?",
+       "o": [
+        "Bộ Thông tin & Truyền thông.",
+        "Bộ Khoa học và Công nghệ.",
+        "Nhóm các doanh nghiệp ICT.",
+        "Hiệp hội đổi mới và sáng tạo."
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "Dựa vào đoạn [1] ('các doanh nghiệp ICT... được giao sứ mệnh đưa Việt Nam bứt phá với nền kinh tế số giữ vai trò chủ đạo') và đoạn [6] ('sứ mệnh trở thành một trụ cột gánh vác nền kinh tế đang được... giao trực tiếp cho cộng đồng các doanh nghiệp số Việt Nam'). Trách nhiệm lớn nhất thuộc về nhóm doanh nghiệp ICT."
+       ]
+      },
+      {
+       "t": "drag",
+       "q": "Hãy hoàn thành câu sau bằng cách kéo thả các từ vào đúng vị trí:\\nKhẩu hiệu \"Make in Viet Nam\" cổ vũ cộng đồng doanh nghiệp trong công cuộc chuyển đổi số và [[0]] giá trị đất nước trong chuỗi giá trị toàn cầu với [[1]]: Nghiên cứu tại Việt Nam, sáng tạo tại Việt Nam và sản xuất tại Việt Nam.",
+       "c": [
+        "sản xuất",
+        "mục đích",
+        "phát triển",
+        "nâng cao",
+        "yêu cầu"
+       ],
+       "a": [
+        3,
+        4
+       ],
+       "solved": true,
+       "sol": [
+        "Dựa theo nội dung đoạn [1] ('nâng cao giá trị trong chuỗi giá trị toàn cầu') và tinh thần của đoạn [2] (xác định nội hàm hướng tới/yêu cầu đặt ra), từ cần điền vào ô [0] là 'nâng cao' và ô [1] là 'yêu cầu'."
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Dựa vào bài viết, hãy tìm một cụm từ không quá năm tiếng để hoàn thành nhận định sau:\\nTheo Bộ trưởng Nguyễn Mạnh Hùng, trong năm 2020, hiệu quả của khẩu hiệu \"Make in Viet Nam\" đã được thể hiện qua [[0]] và sản phẩm/ứng dụng số.",
+       "a": [
+        "số lượng doanh nghiệp số"
+       ],
+       "solved": true,
+       "sol": [
+        "Đoạn [2] có trích dẫn trực tiếp: 'Do đó, \"Make in Viet Nam\" đã không dừng lại ở khẩu hiệu mà thể hiện bằng chính số lượng doanh nghiệp số, sản phẩm/ứng dụng số Make in Viet Nam lần lượt ra đời'. Cụm từ cần điền là 'số lượng doanh nghiệp số' (đúng 5 tiếng)."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Theo đoạn [3], những số liệu đưa ra có ý nghĩa gì?",
+       "o": [
+        "Sáng kiến \"Make in Viet Nam\" là định hướng thay đổi trong cộng đồng doanh nghiệp công nghệ số.",
+        "Chiến lược \"Make in Viet Nam\" là nguồn cảm hứng cho các doanh nghiệp giai đoạn sau dịch Covid-19.",
+        "Khẩu hiệu \"Make in Viet Nam là mục tiêu phát triển lâu dài cho các doanh nghiệp số Việt Nam.",
+        "Giải pháp chuyển đổi số \"Make in Viet Nam tạo đà cho các doanh nghiệp ICT phát triển hiệu quả."
+       ],
+       "a": 3,
+       "solved": true,
+       "sol": [
+        "Đoạn [3] đưa ra hàng loạt con số về sự gia tăng ngoạn mục của doanh thu và số lượng doanh nghiệp (từ 112 tỉ lên 148 tỉ USD; từ 45.000 lên hơn 70.000). Chốt lại đoạn này: 'Chính phong trào Make in Viet Nam đã tạo ra năng lượng vô hạn cho cộng đồng doanh nghiệp...'. Điều này chứng minh phong trào đã tạo đà cho doanh nghiệp phát triển hiệu quả."
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Theo đoạn [4], chỉ tiêu số lượng doanh nghiệp công nghệ số vào năm 2025 tại Việt Nam đã hoàn thành sớm theo Nghị quyết số 52/2019. Đúng hay sai?",
+       "s": [
+        "Phát biểu"
+       ],
+       "a": [
+        0
+       ],
+       "solved": true,
+       "sol": [
+        "Đoạn [4] dẫn lời Bộ trưởng Nguyễn Mạnh Hùng: 'Mục tiêu 100.000 doanh nghiệp công nghệ số vào năm 2030 hoàn toàn CÓ THỂ đạt được trước năm 2025'. Nghĩa là đây là dự báo, niềm tin, chứ không phải 'đã hoàn thành sớm' (thực tế lúc viết bài mới có 70.000 doanh nghiệp). Do đó phát biểu là Sai."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Theo lời phát biểu của Bộ trưởng Nguyễn Mạnh Hùng, yếu tố then chốt để Nghị quyết số 52/20219 của Bộ chính trị hoàn thành là gì?",
+       "o": [
+        "Sức mạnh nội tại của người dân và doanh nghiệp Việt Nam.",
+        "Sự thông minh và nhanh nhẹn của các nhà quản lí doanh nghiệp.",
+        "Ý nghĩa và vai trò to lớn của Đảng trong quá trình lãnh đạo đất nước.",
+        "Yếu tố cạnh tranh trong khu vực thúc đẩy sự phát triển của doanh nghiệp."
+       ],
+       "a": 0,
+       "solved": true,
+       "sol": [
+        "Đoạn [4] trích dẫn phát biểu: 'Những nhà quản lí đã không đánh giá hết sức mạnh của dân Việt Nam, nhất là khi có một ngọn cờ đúng đắn được giương cao'. Lời phát biểu này nhấn mạnh vào sức mạnh nội tại của người dân Việt Nam."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Nhận định nào KHÔNG đúng với thông tin được nêu trong đoạn [5], [6]?",
+       "o": [
+        "Trung Quốc đã dồn lực phát triển lĩnh vực số trước khi Ấn Độ bắt đầu.",
+        "Cả Trung Quốc và Ấn Độ đã rất thành công với phong trào \"Make in\".",
+        "Người Trung Quốc đã đầu tư vào Ấn Độ trong cả hai năm 2014 và 2015.",
+        "Ấn Độ trở thành công xưởng lớn nhất của châu Á nhờ sản xuất trong nước."
+       ],
+       "a": 3,
+       "solved": true,
+       "sol": [
+        "Đoạn [5] viết: 'Thủ tướng Ấn Độ khởi xướng chính sách Make in India với hy vọng biến nước này trở thành công xưởng thứ 2 của thế giới sau Trung Quốc'. Như vậy Ấn Độ hướng tới vị trí thứ 2 sau Trung Quốc, nhận định 'Ấn Độ trở thành công xưởng lớn nhất của châu Á' là sai."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Mục đích của bài viết là gì?",
+       "o": [
+        "Làm rõ vai trò, nhiệm vụ của cộng đồng các doanh nghiệp số với Quốc gia.",
+        "Nêu mục tiêu về chuyển đổi số của các ngành kinh tế tính đến năm 2030.",
+        "Kêu gọi phối hợp giữa doanh nghiệp, Chính phủ và các Bộ, ban, ngành.",
+        "Nêu định hướng phát triển kinh tế ngành dịch vụ công nghệ số tại Việt Nam."
+       ],
+       "a": 0,
+       "solved": true,
+       "sol": [
+        "Xuyên suốt bài viết, tác giả nhiều lần nhấn mạnh sứ mệnh của cộng đồng doanh nghiệp số (đoạn 1: được giao sứ mệnh đưa VN bứt phá; đoạn 6: sứ mệnh trở thành trụ cột gánh vác nền kinh tế được giao cho cộng đồng các doanh nghiệp số). Mục đích chính là khẳng định và làm rõ vai trò, nhiệm vụ này."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "CHUYỆN ĐỒNG PHỤC HỌC SINH ĐẦU NĂM HỌC MỚI",
+     "p": "<p>[0] Theo văn bản hướng dẫn việc tổ chức các hoạt động đầu năm học 2022-2023, Sở GD&ĐT Hà Nội lưu ý các nhà trường không bắt buộc học sinh mua đồng phục mới, có thể cung cấp mẫu để phụ huynh chủ động mua sắm cho học sinh.</p><p>[1] Vào đầu năm học, chuyện đồng phục học sinh luôn là vấn đề khiến nhiều phụ huynh tranh luận gay gắt. Dù quy định không bắt buộc phụ huynh, học sinh phải mua đồng phục mới, chỉ cần các em mặc sạch sẽ, gọn gàng để khuyến khích tiết kiệm và tạo điều kiện thuận lợi cho học sinh có hoàn cảnh khó khăn. Tuy nhiên, theo nhiều phụ huynh, việc học sinh mặc đồng phục khi đến trường là điều cần thiết.</p><p>[2] Chị Nguyễn Thị Thu Phương (phường Nam Đồng, quận Đống Đa, Hà Nội) chia sẻ: “Ở thế hệ của chúng tôi khi đi học thường sẽ hay so sánh bạn nào có quần áo đẹp hơn, kiểu dáng thời trang hơn, nhất là với con gái đang tuổi dậy thì lại càng để ý đến chuyện ăn mặc, quần áo của bạn bè. Những học sinh có điều kiện kinh tế gia đình kém hơn các bạn khác thường sẽ khá tự ti khi đi học”.</p><p>[3] Cho rằng, ở thành phố lớn, khoảng cách giàu - nghèo cũng đã ít nhiều bị xóa mờ nhưng không hoàn toàn hết. Có nhiều học sinh sành điệu, sớm được bố mẹ cho dùng đồ hiệu. Vì vậy, chị Phương cho rằng, bộ đồng phục học sinh là cần thiết giúp các em xóa tan khoảng cách về giàu nghèo, chú tâm hơn vào việc học. Thêm vào đó, mặc đồng phục đến trường sẽ giúp các em học sinh thêm tự hào về truyền thống của nhà trường, đảm bảo an toàn cho học sinh.</p><p>[4] Đồng tình với quan điểm ấy, anh Phương Minh Thắng (quận Hà Đông, Hà Nội) chia sẻ: \"Đồng phục với học sinh là cần thiết. Trang phục đi học khác với trang phục đi chơi, đi dã ngoại. Nếu không quy định đồng phục, mỗi cháu sẽ mặc một kiểu, một mốt khác nhau dễ gây xao nhãng chuyện học hành mà chỉ đi để ý xem áo quần của bạn nào đẹp hơn, thời trang hơn. Tuy nhiên, nên có quy định về đồng phục như thế nào cho hợp lý cũng là điều đáng bàn”. Theo anh Thắng, đồng phục học sinh chỉ cần kiểu dáng đơn giản, nhẹ nhàng, thiết kế gọn gàng, ít loại, mẫu khác nhau để mọi gia đình đều sẵn sàng. Ví dụ chỉ nên có một mẫu đồng phục mùa đông, một mẫu đồng phục mùa hè và một mẫu thể dục.</p><p>[5] Thời điểm chuẩn bị vào năm học mới, tại Hà Nội, nhiều trường đã triển khai việc cho học sinh đăng ký đồng phục. Điều đặc biệt, các nhà trường khuyến khích học sinh không mua mới đồng phục nếu không thật sự cần thiết, có thể dùng lại đồng phục của các anh chị đã tốt nghiệp, học lớp trên (nếu có). Như tại trường THCS Nguyễn Trãi (quận Hà Đông), phụ huynh học sinh có thể đăng ký mua đồng phục cho học sinh tại trường hoặc dùng lại của anh chị lớp trên. Ghi nhận tại trường Mầm non Đa Sỹ (quận Hà Đông, Hà Nội), để chuẩn bị cho năm học mới, cũng như bao ngôi trường khác, nhà trường vừa triển khai cho phụ huynh đăng ký và phát đồng phục đến học sinh. Cô Trịnh Thùy Linh - Hiệu trưởng nhà trường cho biết: “Mỗi bộ đồng phục có giá 160.000 đồng. Do đặc thù lứa tuổi học sinh mẫu giáo, mầm non nhiều khi mỗi ngày thay vài bộ quần áo nên đồng phục khuyến khích được sử dụng vào các dịp lễ quan trọng của nhà trường. Ngoài ra, nhà trường phối hợp với phụ huynh cho các con mặc đồng phục 2 buổi / tuần để tạo màu sắc tươi mới trong giờ học. Nhiều bé thấy có đồng phục mới và đẹp còn thích thú bảo mẹ mặc cho con mỗi khi đến lớp\". Theo đánh giá của phụ huynh, mức giá này là hợp lý khi so sánh với kiểu dáng thiết kế và chất vải. Nhà trường chú trọng khâu chọn chất vải mát, 100% cotton thấm mồ hôi, dễ vận động, các bé trai và bé gái đều mặc quần cho tiện. Đồng phục có logo riêng của nhà trường. Cô Linh cũng cho biết: Trường Mầm non Đa Sỹ có rất nhiều cây xanh, các bé thường xuyên được xuống vườn gần gũi với thiên nhiên nên nhà trường chọn đồng phục tông màu vàng để ở góc nhỏ nào của trường, các con cũng được nổi bật.</p><p>[6] Còn tại trường THCS Phương Mai (quận Đống Đa, Hà Nội), nhà trường có thông báo cụ thể về đăng ký và mua đồng phục cho học sinh. Theo cô Phạm Thị Thục Hạnh - Hiệu trưởng nhà trường: Khi triển khai đến phụ huynh, nhà trường có thông báo rõ về việc phụ huynh có thể tùy ý lựa chọn mua mục nào. Trường cũng khuyến khích các em có thể sử dụng lại đồng phục của anh, chị nếu có. Nhà trường cũng cho học sinh đăng ký mua logo từ đơn vị may đồng phục với giá 10.000 đồng/logo để các em tự may theo đúng số đo của mình.</p><p>[7] Mới đây, trong văn bản hướng dẫn của Sở GD&ĐT Hà Nội, Sở yêu cầu các trường cần thực hiện nghiêm túc các quy định tại Thông tư số 26/2009/TT-BGDĐT của Bộ GD&ĐT quy định về việc mặc đồng phục và lễ phục tốt nghiệp của học sinh, sinh viên. Theo đó, không bắt buộc học sinh phải mua đồng phục mới, cần mặc sạch sẽ, gọn gàng để khuyến khích tiết kiệm và tạo điều kiện thuận lợi cho học sinh có hoàn cảnh khó khăn. Đồng phục nhà trường phải thiết kế giản dị, kiểu dáng phù hợp lứa tuổi học sinh và văn hóa của địa phương, được Hội đồng nhà trường, cha mẹ học sinh đồng thuận. Nhà trường có thể cung cấp mẫu (kiểu dáng, màu sắc, logo...) để phụ huynh chủ động mua sắm cho học sinh. Các trường không để một học sinh nào vì chưa có đồng phục mới mà không được vào trường học.</p>",
+     "questions": [
+      {
+       "t": "mc",
+       "q": "Trong năm học 2022 - 2023, Sở Giáo dục và Đào tạo Hà Nội đã có văn bản hướng dẫn việc tổ chức hoạt động đầu năm học như thế nào?",
+       "o": [
+        "Các hoạt động đầu năm học cần được tổ chức đơn giản để tránh lãng phí.",
+        "Nhà trường tạo điều kiện cho phụ huynh trong việc chủ động mua đồng phục.",
+        "Các trường không thực hiện thay mới đồng phục hàng năm để tránh lãng phí.",
+        "Phụ huynh cần tuân thủ việc mua đồng phục để đảm bảo sự đồng bộ cho học sinh."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Ngay tại đoạn [0] bài đọc nêu rõ: 'Sở GD&ĐT Hà Nội lưu ý các nhà trường không bắt buộc học sinh mua đồng phục mới, có thể cung cấp mẫu để phụ huynh chủ động mua sắm cho học sinh'. Đáp án phù hợp nhất là nhà trường tạo điều kiện cho phụ huynh chủ động mua sắm."
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Theo đoạn [1], việc không có yêu cầu bắt buộc về đồng phục cho học sinh, chỉ cần đảm bảo trang phục gọn gàng, sạch sẽ khi đến trường được tất cả mọi người ủng hộ là đúng hay sai?",
+       "s": [
+        "Phát biểu"
+       ],
+       "a": [
+        0
+       ],
+       "solved": true,
+       "sol": [
+        "Đoạn [1] nêu: 'Tuy nhiên, theo nhiều phụ huynh, việc học sinh mặc đồng phục khi đến trường là điều cần thiết'. Điều đó cho thấy vẫn có sự tranh luận và không phải 'tất cả' mọi người đều ủng hộ việc không mặc đồng phục."
+       ]
+      },
+      {
+       "t": "drag",
+       "q": "Dựa vào thông tin trong đoạn [2], hoàn thành câu sau bằng cách kéo thả các từ vào đúng vị trí:\\nTrong những năm cuối thế kỷ XX, các trường chưa có quy định về [[0]] dành cho học sinh nên sự chênh lệch về điều kiện [[1]] được phản ánh qua vấn đề [[2]] đôi khi đã tạo nên ảnh hưởng tới tâm lý cho nhiều người.",
+       "c": [
+        "kinh tế",
+        "đồng phục",
+        "khá giả",
+        "trang phục"
+       ],
+       "a": [
+        1,
+        0,
+        3
+       ],
+       "solved": true,
+       "sol": [
+        "Nội dung lời kể của chị Phương (đoạn 2) phản ánh việc ở thế hệ trước, chưa có quy định mặc 'đồng phục', nên điều kiện 'kinh tế' gia đình được thể hiện rõ qua 'trang phục' (quần áo, kiểu dáng), dẫn tới sự tự ti."
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Tìm từ thích hợp (không quá hai tiếng) để hoàn thành nhận định sau:\\n\"Theo ý kiến của chị Nguyễn Thị Thu Phương việc mặc đồng phục giống như cách thức xóa đi [[0]] về kinh tế giữa các học sinh, từ đó đảm bảo các yêu cầu cần thiết về an toàn trong nhà trường, sự tập trung trong học tập.\"",
+       "a": [
+        "khoảng cách"
+       ],
+       "solved": true,
+       "sol": [
+        "Trong đoạn [3], tác giả thuật lại ý kiến của chị Phương: 'bộ đồng phục học sinh là cần thiết giúp các em xóa tan khoảng cách về giàu nghèo'. Từ cần điền là 'khoảng cách' (2 tiếng)."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Từ góc nhìn cá nhân, một số phụ huynh ở Hà Nội đã có đề xuất gì khi cần phải triển khai việc mặc đồng phục cho học sinh?",
+       "o": [
+        "Số lượng đồng phục nên ở mức tối thiểu, đơn giản và tính ứng dụng cao.",
+        "Thiết kế đồng phục nên gọn gàng, nhưng nhiều mẫu để phân biệt các trường.",
+        "Chi phí đồng phục cần giảm về tối thiểu và mỗi trường chỉ cần cần một bộ.",
+        "Cần quan tâm đến chất liệu để đảm bảo về sức khỏe cho học sinh khi mặc."
+       ],
+       "a": 0,
+       "solved": true,
+       "sol": [
+        "Đoạn [4] dẫn lời anh Phương Minh Thắng đề xuất: 'đồng phục học sinh chỉ cần kiểu dáng đơn giản, nhẹ nhàng, thiết kế gọn gàng, ít loại, mẫu khác nhau... chỉ nên có một mẫu mùa đông, một mẫu mùa hè và một mẫu thể dục'. Điều này tương ứng với yêu cầu số lượng tối thiểu, đơn giản và ứng dụng cao."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Trường Mầm non Đa Sỹ, khi thiết kế đồng phục cho học sinh, nhà trường đã đặt ưu tiên gì lên hàng đầu?",
+       "o": [
+        "Giá thành cho các sản phẩm để đảm bảo sự phù hợp với đa số phụ huynh.",
+        "Màu sắc và chất liệu để đảm bảo an toàn trong các điều kiện khác nhau.",
+        "Số lượng được phát vì học sinh mầm non cần thay đổ nhiều lần trong ngày.",
+        "Màu sắc bắt mắt để tạo sự hứng khởi cho học sinh khi mặc tới trường."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Đoạn [5] trình bày chi tiết về quá trình chọn đồng phục của trường Đa Sỹ: chú trọng khâu chọn 'chất vải mát, 100% cotton thấm mồ hôi, dễ vận động' (về chất liệu) và chọn tông 'màu vàng để ở góc nhỏ nào của trường, các con cũng được nổi bật' trong không gian nhiều cây xanh (màu sắc giúp dễ quan sát, đảm bảo an toàn)."
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Để có phương án tiết kiệm chi phí, trường THCS Phương Mai đã đưa ra giải pháp và thông báo với phụ huynh học sinh chỉ cần mua bổ sung những đồng phục còn thiếu mà không cần mua trọn bộ là đúng hay sai?",
+       "s": [
+        "Phát biểu"
+       ],
+       "a": [
+        1
+       ],
+       "solved": true,
+       "sol": [
+        "Đoạn [6] ghi nhận tại trường THCS Phương Mai: 'nhà trường có thông báo rõ về việc phụ huynh có thể tùy ý lựa chọn mua mục nào. Trường cũng khuyến khích các em có thể sử dụng lại đồng phục của anh, chị...'. Việc phụ huynh được tùy ý mua mục nào đồng nghĩa với việc chỉ cần mua bổ sung những thứ còn thiếu, không ép mua trọn bộ. Phát biểu là Đúng."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Theo quan điểm chung của các trường, trong hoạt động đầu năm học mới, phụ huynh học sinh cần",
+       "o": [
+        "mua phù hiệu tại nhà trường và may đồng phục bên ngoài để tiết kiệm chi phí.",
+        "căn cứ vào điều kiện thực tế và tái sử dụng đồng phục nếu được để tiết kiệm.",
+        "mua thêm 2-3 bộ để đảm bảo đầy đủ cho học sinh mà vẫn tiết kiệm chi phí.",
+        "chủ động mua sắm tại nhà trường hoặc may đo đồng phục mới theo đúng số đo."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Đoạn [5] có nêu: 'Điều đặc biệt, các nhà trường khuyến khích học sinh không mua mới đồng phục nếu không thật sự cần thiết, có thể dùng lại đồng phục của các anh chị đã tốt nghiệp...'. Đây là chủ trương chung được ủng hộ nhằm khuyến khích tiết kiệm."
+       ]
+      },
+      {
+       "t": "drag",
+       "q": "Đọc đoạn [7] và kéo thả các từ vào đúng vị trí để hoàn thành câu sau:\\nTheo Thông tư của Sở GD&ĐT Hà Nội, các trường cần tạo [[0]] cho những học sinh có hoàn cảnh khó khăn, trang phục chỉ cần gọn gàng, sạch sẽ, phù hợp với môi trường và [[1]] địa phương, không để việc này ảnh hưởng tới quá trình [[2]] của các em.",
+       "c": [
+        "điều kiện",
+        "học tập",
+        "văn hóa",
+        "quan điểm"
+       ],
+       "a": [
+        0,
+        2,
+        1
+       ],
+       "solved": true,
+       "sol": [
+        "Dựa theo văn bản ở đoạn [7]: 'tạo điều kiện thuận lợi cho học sinh có hoàn cảnh khó khăn', 'kiểu dáng phù hợp... văn hóa của địa phương' và 'Các trường không để một học sinh nào vì chưa có đồng phục mới mà không được vào trường học' (không làm ảnh hưởng tới quá trình học tập)."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Mục đích chính của bài viết trên là gì?",
+       "o": [
+        "Hướng dẫn về quy định thực hiện đồng phục tại các trường phổ thông trên địa bàn Hà Nội.",
+        "Đưa ra những ý kiến thảo luận về việc loại bỏ đồng phục đầu năm học mới của phụ huynh.",
+        "Đề xuất bỏ quy định về đồng phục tại các trường phổ thông để đảm bảo tiết kiệm chi phí.",
+        "Cung cấp thông tin về các vấn đề liên quan tới đồng phục cho học sinh từ nhiều góc nhìn"
+       ],
+       "a": 3,
+       "solved": true,
+       "sol": [
+        "Bài viết không phải là văn bản chỉ đạo hành chính (A sai), không đề xuất thảo luận loại bỏ đồng phục (B sai), cũng không đề xuất bỏ quy định (C sai). Bài báo phản ánh đa chiều từ quy định của Sở, quan điểm ủng hộ của phụ huynh, đến cách thức triển khai linh hoạt của nhiều trường học khác nhau để cung cấp thông tin toàn diện về chủ đề này."
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Đề Khoa Học",
+   "minutes": 60,
+   "groups": [
+    {
+     "title": "Chu trình nhân lên của virus trong tế bào chủ",
+     "p": "<p>[1] Các virus thiếu enzyme chuyển hóa và bộ máy sản xuất protein. Chúng là các dạng sống ký sinh nội bào bắt buộc. Mỗi loại virus chỉ có thể lây nhiễm một số lượng nhất định các loại tế bào chủ, được gọi là phổ vật chủ của virus. Tính đặc trưng của phổ vật chủ là kết quả của quá trình tiến hóa hệ thống nhận diện của mỗi loại virus. Virus nhận ra các tế bào chủ của nó theo nguyên tắc \"chìa và khóa\" giữa các protein bề mặt của virus với các phân tử thụ thể đặc hiệu trên bề mặt ngoài của tế bào chủ.</p><p>[2] Quá trình lây nhiễm của virus bắt đầu khi một virus đính kết với tế bào chủ và hệ gene của chúng được truyền vào trong tế bào chủ. Cơ chế truyền hệ gene của virus vào tế bào chủ phụ thuộc vào loại virus và loại tế bào chủ. Khi hệ gene của virus đã ở trong tế bào chủ, các protein mà nó mã hóa có thể trưng dụng tế bào chủ, tái lập trình hoạt động tế bào để tái bản hệ gene của virus, đồng thời sản xuất ra các protein của virus. Tế bào chủ cung cấp các nucleotide cho việc tổng hợp các nucleic acid của virus, cũng như các enzyme, các ribosome, các tRNA, các amino acid, ATP và các thành phần khác cần thiết để tổng hợp protein của virus. Phần lớn các virus DNA dùng các enzyme DNA polymerase của tế bào chủ để tổng hợp hệ gene mới của chúng trên cơ sở dùng mạch khuôn là DNA của virus. Ngược lại, để tái bản vật chất di truyền, các virus RNA thường mã hóa các enzyme polymerase sử dụng RNA làm mạch khuôn.</p><p>[3] Sau khi các phân tử nucleic acid và các capsomer đã được tạo ra, chúng sẽ đóng gói với nhau một cách tự phát để hình thành nên các virus thế hệ con. Một kiểu chu kì sinh sản của virus đơn giản nhất sẽ kết thúc bằng việc hàng trăm hoặc thậm chí hàng nghìn virus thoát khỏi tế bào chủ lây nhiễm, kéo theo sự phá hủy của tế bào chủ.</p>",
+     "fig": "img/Khoahoc_c1_deontap_hinh1.png",
+     "warn": "Cần chèn ảnh Hình 1 (Chu trình nhân lên của virus)",
+     "questions": [
+      {
+       "t": "tf",
+       "q": "Các phát biểu sau đây đúng hay sai?",
+       "s": [
+        "Virus bám được vào tế bào chủ là nhờ các thụ thể thích hợp có sẵn trên bề mặt tế bào chủ.",
+        "Kết quả của quá trình nhân lên là từ một virus ban đầu tạo ra vô số virus mới có độc tính tăng gấp nhiều lần.",
+        "Virus sử dụng nguyên liệu của tế bào chủ trong quá trình nhân lên của mình."
+       ],
+       "a": [
+        1,
+        0,
+        1
+       ],
+       "solved": true,
+       "sol": [
+        "Ý 1 Đúng: Theo đoạn 1, virus nhận ra tế bào chủ nhờ nguyên tắc 'chìa và khóa' với các phân tử thụ thể đặc hiệu có sẵn trên bề mặt.",
+        "Ý 2 Sai: Đoạn 3 nêu chu kì kết thúc tạo hàng trăm hoặc hàng nghìn virus thế hệ con, không có thông tin tạo ra vô số hay độc tính tăng gấp nhiều lần.",
+        "Ý 3 Đúng: Đoạn 2 nêu rõ tế bào chủ cung cấp các nucleotide, enzyme, ribosome, amino acid và ATP cho quá trình nhân lên."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Các virus cần tự mã hóa một số enzyme nhất định vì",
+       "o": [
+        "tế bào chủ thiếu các enzyme có thể sao chép hệ gene virus.",
+        "những enzyme này không tổng hợp được trong tế bào chủ.",
+        "tế bào chủ nhanh chóng phá hủy các virus.",
+        "những enzyme này dịch mã mRNA virus thành các protein."
+       ],
+       "a": 0,
+       "solved": true,
+       "sol": [
+        "Theo bài đọc, tế bào chủ không có sẵn các enzyme có thể sao chép hệ gene của virus RNA (như enzyme RNA polymerase phụ thuộc RNA). Do đó, để tái bản vật chất di truyền, virus phải tự mã hóa các enzyme polymerase này."
+       ]
+      },
+      {
+       "t": "drag",
+       "q": "Sắp xếp các giai đoạn sau đây cho đúng chu trình nhân lên của virus:\\n[[0]] $\\rightarrow$ [[1]] $\\rightarrow$ [[2]] $\\rightarrow$ [[3]] $\\rightarrow$ [[4]]",
+       "c": [
+        "Xâm nhập",
+        "Hấp phụ",
+        "Sinh tổng hợp",
+        "Lắp ráp",
+        "Giải phóng"
+       ],
+       "a": [
+        1,
+        0,
+        2,
+        3,
+        4
+       ],
+       "solved": true,
+       "sol": [
+        "5 giai đoạn nhân lên của virus theo thứ tự là: Bám dính (Hấp phụ) -> Xâm nhập -> Sinh tổng hợp -> Lắp ráp -> Giải phóng."
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Cho các phương thức sau:\\n(1) Ức chế hoà màng/xâm nhập.\\n(2) Ức chế enzyme sao chép ngược.\\n(3) Ức chế protease.\\n(4) Ức chế sự tích hợp vật chất di truyền của virus.\\nCó [[0]] phương thức phù hợp với việc sản xuất các loại thuốc để ức chế sự nhân lên của virus HIV.",
+       "a": [
+        4
+       ],
+       "solved": true,
+       "sol": [
+        "HIV là retrovirus (có vỏ ngoài, hệ gene RNA, có enzyme sao chép ngược và tích hợp DNA vào hệ gene tế bào chủ). Cả 4 phương thức đưa ra đều nhắm vào các khâu trọng yếu trong chu trình sống của HIV. Do đó có 4 phương thức phù hợp."
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Phát biểu sau đây đúng hay sai?\\nThụ thể CD4 là thụ thể của virus HIV. Nếu đưa hồng cầu có thụ thể CD4 vào bệnh nhân HIV thì bệnh nhân sẽ thiếu máu nghiêm trọng vì virus sẽ xâm nhập và phá hủy tế bào.",
+       "s": [
+        "Phát biểu"
+       ],
+       "a": [
+        0
+       ],
+       "solved": true,
+       "sol": [
+        "Hồng cầu trưởng thành ở người không có nhân và không chứa bộ máy sinh tổng hợp (ribosome, hệ thống màng...). Vì vậy, ngay cả khi virus HIV có xâm nhập vào được, chúng cũng không thể nhân lên và phá hủy tế bào theo chu trình bình thường. Do đó phát biểu trên là Sai."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Điều nào sau đây không đúng khi nói về virus?",
+       "o": [
+        "Chỉ trong tế bào chủ, virus mới hoạt động như một thể sống.",
+        "Hệ gene của virus chỉ chứa một trong hai loại nucleic acid: DNA hoặc RNA.",
+        "Kích thước của virus vô cùng nhỏ, chỉ có thể thấy được dưới kính hiển vi điện tử.",
+        "Ở bên ngoài môi trường, virus chỉ sinh trưởng chứ không sinh sản được mặc dù có cả phức hợp gồm nucleic acid và protein."
+       ],
+       "a": 3,
+       "solved": true,
+       "sol": [
+        "Virus không có cấu tạo tế bào và bộ máy chuyển hóa nên ở môi trường ngoài chúng tồn tại như một dạng hạt hạt vô sinh. Chúng hoàn toàn không thể sinh trưởng hay sinh sản bên ngoài tế bào chủ. Vì vậy đáp án sai là 'chỉ sinh trưởng chứ không sinh sản'."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Virus nhận ra các tế bào chủ của nó theo nguyên tắc \"chìa và khóa\" nghĩa là",
+       "o": [
+        "protein bề mặt của virus có thể kết hợp được với nhiều thụ thể khác nhau của nhiều loại tế bào khác nhau.",
+        "protein bề mặt của virus liên kết đặc hiệu với từng loại thụ thể trên bề mặt tế bào.",
+        "protein bề mặt của virus mã hóa được mọi loại thụ thể tế bào.",
+        "protein bề mặt của virus liên kết không đặc hiệu với thụ thể trên bề mặt tế bào."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Nguyên tắc 'chìa và khóa' thể hiện tính đặc hiệu cực kì cao: mỗi loại protein trên bề mặt vỏ virus (chìa) chỉ liên kết khớp và đặc hiệu với một loại thụ thể nhất định (khóa) trên bề mặt của tế bào chủ."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Máy khoan dùng pin",
+     "p": "<p>[1] Một máy khoan dùng pin có thông số kĩ thuật như Hình 1.<br><table><tr><th>Thông số</th><th>Giá trị</th></tr><tr><td>Dung lượng pin</td><td>5 Ah</td></tr><tr><td>Điện áp định mức</td><td>18 V</td></tr><tr><td>Công suất lớn nhất</td><td>200 W</td></tr><tr><td>Mô men xoắn lớn nhất</td><td>50 N/m</td></tr></table></p><p>[2] Dung lượng pin Q là lượng điện tích mà pin có thể cung cấp trong một khoảng thời gian nhất định. 5 Ah có nghĩa là pin có thể cung cấp dòng điện 5 A trong 1 giờ hoặc 2,5 A trong 2 giờ.</p><p>[3] Mô men xoắn $M = F \\cdot d$ với F là lực cắt của mũi khoan, d là đường kính lỗ khoan (bằng đường kính mũi khoan).</p><p>[4] Công suất P của máy khoan, lực cắt F của mũi khoan và tốc độ cắt v của mũi khoan liên hệ theo biểu thức: $P = F \\cdot v$.</p><p>[5] Khi khoan lỗ trên các loại gỗ khác nhau, ta thấy tốc độ quay của mũi khoan giảm dần đối với các loại gỗ cứng hơn.</p>",
+     "questions": [
+      {
+       "t": "tf",
+       "q": "Khi khoan lỗ trên các loại gỗ khác nhau, ta thấy tốc độ quay của mũi khoan giảm dần đối với các loại gỗ cứng hơn. Lời giải thích nào sau đây là đúng hoặc sai?",
+       "s": [
+        "Gỗ cứng hơn thì cần tác dụng lực cắt F lớn hơn lên gỗ để khoan lỗ. Công suất P tăng dần. F càng lớn thì v càng nhỏ và tốc độ quay của mũi khoan giảm đi",
+        "Gỗ cứng hơn thì cần tác dụng lực cắt F lớn hơn lên gỗ để khoan lỗ. Công suất P không đổi, F càng lớn thì v càng nhỏ và tốc độ quay của mũi khoan giảm đi.",
+        "Khoan gỗ cứng hơn sẽ làm giảm công suất máy khoan và tăng lực cắt, do đó làm giảm tốc độ cắt và giảm tốc độ quay của mũi khoan.",
+        "Khoan gỗ cứng hơn sẽ làm tăng công suất máy khoan và tăng lực cắt, do đó làm giảm tốc độ cắt và giảm tốc độ quay của mũi khoan."
+       ],
+       "a": [
+        0,
+        1,
+        0,
+        0
+       ],
+       "solved": true,
+       "sol": [
+        "Ý 1 Sai: Công suất P của máy giới hạn ở mức tối đa (200W), không thể cứ tăng dần vô hạn khi gặp gỗ cứng.",
+        "Ý 2 Đúng: Khi máy hoạt động ở công suất P gần như không đổi, lực ma sát/lực cắt F lớn do gỗ cứng sẽ làm tốc độ v giảm đi theo công thức $P = F \\cdot v$.",
+        "Ý 3 Sai: Khoan gỗ cứng đòi hỏi lực cản lớn, động cơ hoạt động hết công suất chứ không làm giảm công suất.",
+        "Ý 4 Sai: Công suất không thể tăng vượt quá thông số định mức của máy."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Với 1 pin được nạp đầy, máy khoan có thể hoạt động với công suất tối đa trong bao nhiêu phút?",
+       "o": [
+        "1,5 phút.",
+        "27 phút.",
+        "0,45 phút.",
+        "2400 phút."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Năng lượng của pin cung cấp là: $W = U \\cdot I \\cdot t = U \\cdot Q = 18 \\cdot 5 = 90$ Wh.",
+        "Thời gian hoạt động ở công suất tối đa $P = 200$ W là: $t = \\frac{W}{P} = \\frac{90}{200} = 0,45$ giờ.",
+        "Đổi sang phút: $t = 0,45 \\times 60 = 27$ phút."
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Thay pin của máy khoan bằng pin có dung lượng nhỏ hơn. Phát biểu nào sau đây là đúng hoặc sai?",
+       "s": [
+        "Công suất của máy sẽ nhỏ hơn",
+        "Máy sẽ hoạt động yếu hơn",
+        "Tốc độ quay của máy sẽ chậm hơn",
+        "Thời gian hoạt động của máy sẽ ít hơn"
+       ],
+       "a": [
+        0,
+        0,
+        0,
+        1
+       ],
+       "solved": true,
+       "sol": [
+        "Dung lượng pin (Ah) nhỏ hơn chỉ làm giảm năng lượng điện được tích trữ ($W = U \\cdot Q$). Nó không làm thay đổi điện áp (V) hay công suất định mức của máy. Do đó máy vẫn hoạt động khỏe và nhanh như cũ, nhưng thời gian duy trì hoạt động sẽ bị rút ngắn lại. Vậy chỉ có ý cuối là Đúng."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Máy khoan được trang bị 1 đèn chiếu sáng vùng đang khoan. Mạch điện điều khiển đèn này và máy khoan cần đáp ứng các yêu cầu sau: Nếu bật công tắc để máy khoan hoạt động thì đèn sáng. Dòng điện có cường độ lớn chạy qua động cơ máy khoan, dòng điện có cường độ nhỏ chạy qua đèn. Trong các mạch điện dưới đây, mạch điện nào đáp ứng các yêu cầu trên",
+       "o": [
+        "Hình A",
+        "Hình B",
+        "Hình C",
+        "Hình D"
+       ],
+       "a": 0,
+       "warn": "Thiếu hình ảnh các mạch điện A, B, C, D để đưa ra đáp án chuẩn xác.",
+       "solved": true,
+       "sol": [
+        "Để đèn và động cơ cùng hoạt động khi bật công tắc chung, chúng phải được nối song song với nhau. Hơn nữa, vì dòng điện lớn qua động cơ, nhỏ qua đèn, chứng tỏ hai tải này phải ở 2 nhánh song song. (Chọn đáp án có sơ đồ mạch song song sau một công tắc tổng)."
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Nhận xét sau là đúng hay sai?\\nNếu mô men xoắn của mũi khoan không đổi, đường kính của lỗ khoan càng lớn thì lực cắt của mũi khoan càng lớn",
+       "s": [
+        "Phát biểu"
+       ],
+       "a": [
+        0
+       ],
+       "solved": true,
+       "sol": [
+        "Theo công thức của đề bài: $M = F \\cdot d \\Rightarrow F = \\frac{M}{d}$. Nếu mô men xoắn M không đổi, đường kính d tăng thì lực cắt F phải giảm. Do đó nhận xét trên là Sai."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Tốc độ $n$ (vòng/giây) của mũi khoan liên hệ với tốc độ cắt $v$ theo biểu thức: $v = 2\\pi R \\cdot n$ với $R$ là bán kính mũi khoan. Gắn mũi khoan có đường kính 10 mm vào máy khoan và cho máy khoan chạy với tốc độ 1500 vòng/phút. Tính tốc độ cắt của mũi khoan.",
+       "o": [
+        "$0,785~m/s$",
+        "$1,57~m/s$",
+        "$0,785.10^{-3}m/s$",
+        "$4,7~m/s$"
+       ],
+       "a": 0,
+       "solved": true,
+       "sol": [
+        "Đổi tốc độ quay: $n = \\frac{1500}{60} = 25$ vòng/s.",
+        "Bán kính mũi khoan: $R = \\frac{d}{2} = 5$ mm $= 0,005$ m.",
+        "Tốc độ cắt là: $v = 2 \\cdot 3,14 \\cdot 0,005 \\cdot 25 = 0,785$ m/s."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Dùng máy khoan một lỗ có đường kính 15 mm. Tính lực cắt của mũi khoan. Biết mô men xoắn của mũi khoan là 16 Nm.",
+       "o": [
+        "$1,1.10^{3}N$",
+        "$1,1 N$",
+        "$240.10^{-3}N$",
+        "$240 N$"
+       ],
+       "a": 0,
+       "solved": true,
+       "sol": [
+        "Theo công thức của đề: $M = F \\cdot d$.",
+        "Lực cắt là: $F = \\frac{M}{d} = \\frac{16}{0,015} = 1066,67$ N.",
+        "Giá trị này xấp xỉ $1,1 \\cdot 10^3$ N."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Điều kiện sinh trưởng của Staphylococcus aureus",
+     "p": "<p>[1] Staphylococcus aureus (S. Aureus) là một chủng vi khuẩn được tìm thấy trên da của người khỏe mạnh mà không gây ra bất kỳ ảnh hưởng nào. Tuy nhiên, chúng lại sinh trưởng mạnh mẽ và có khả năng gây bệnh và truyền bệnh thông qua thực phẩm, đặc biệt là ở thịt đã qua xử lý, hoặc được nấu chín. Cần phải xác định các điều kiện thúc đẩy sự phát triển của các loài vi khuẩn gây bệnh này và áp dụng kiến thức đó trong các giai đoạn sơ chế và xử lí thực phẩm. Hai nhóm sinh viên tiến hành các thí nghiệm nhằm xác định điều kiện sinh trưởng lý tưởng cho S. Aureus. Trong mỗi nhóm, vi khuẩn được cấy vào các môi trường dinh dưỡng khác nhau và phát triển trong một khoảng thời gian.</p><p>[2] Máy đo quang phổ được sử dụng để phân tích sự phát triển của vi khuẩn trong môi trường chất lỏng, biết rằng độ đục càng tăng thì lượng vi khuẩn phát triển càng mạnh và giá trị đo được càng lớn.</p><p>[3] Nhóm 1: Các sinh viên thực hiện thí nghiệm nhằm xác định nhiệt độ có ảnh hưởng đến tốc độ phát triển của S. Aureus trong môi trường giàu dinh dưỡng hay không. Họ cho chủng vi khuẩn phát triển trong môi trường giàu dinh dưỡng có độ pH là 6 ở các nhiệt độ sau: $3^\\circ C, 20^\\circ C, 37^\\circ C, 45^\\circ C$ và $60^\\circ C$. Các giá trị đo từ máy đo quang phổ được thể hiện ở bảng 1.</p><p>[4] Nhóm 2: Các sinh viên thực hiện thí nghiệm nhằm xác định sự ảnh hưởng của pH đến sự phát triển của S. aureus. Họ cho chủng vi khuẩn phát triển trong môi trường giàu dinh dưỡng ở nhiệt độ $37^\\circ C$ và độ pH lần lượt là 3, 5, 6, 7 và 9. Các giá trị đo từ máy đo quang phổ được thể hiện ở bảng 2.</p>",
+     "questions": [
+      {
+       "t": "fill",
+       "q": "Khi cạn kiệt chất dinh dưỡng, vi khuẩn sẽ bắt đầu pha [[0]]",
+       "a": [
+        "suy vong"
+       ],
+       "solved": true,
+       "sol": [
+        "Đường cong sinh trưởng của vi khuẩn gồm 4 pha: tiềm phát, lũy thừa, cân bằng, suy vong. Khi môi trường cạn kiệt chất dinh dưỡng và chất độc hại tích lũy, số lượng vi khuẩn chết lớn hơn vi khuẩn sinh ra, quần thể chuyển sang pha suy vong."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Nhóm vi khuẩn nào có cùng điều kiện thí nghiệm ở hai thí nghiệm trên?",
+       "o": [
+        "Nuôi trong điều kiện pH $=3$ và nhiệt độ $3^\\circ C$.",
+        "Nuôi trong điều kiện pH $=6$ và nhiệt độ $37^\\circ C$.",
+        "Nuôi trong điều kiện pH $=6$ và nhiệt độ $60^\\circ C$.",
+        "Nuôi trong điều kiện pH $=9$ và nhiệt độ $45^\\circ C$."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Nhóm 1 làm thí nghiệm cố định ở môi trường $pH = 6$ với nhiều nhiệt độ, trong đó có mốc $37^\\circ C$. Nhóm 2 làm thí nghiệm cố định ở nhiệt độ $37^\\circ C$ với nhiều pH, trong đó có mốc $pH = 6$. Điểm giao nhau giữa hai thí nghiệm là $pH = 6$ và $37^\\circ C$."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Dung dịch nuôi cấy vi khuẩn càng đục chứng tỏ",
+       "o": [
+        "vi khuẩn không có sự sinh trưởng dẫn tới hư hỏng môi trường nuôi cấy.",
+        "vi khuẩn bị ức chế sinh trưởng.",
+        "vi khuẩn sinh trưởng càng mạnh.",
+        "nồng độ dinh dưỡng càng cao."
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "Theo thông tin trong đoạn 2 của bài đọc: 'độ đục càng tăng thì lượng vi khuẩn phát triển càng mạnh và giá trị đo được càng lớn'."
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Phát biểu sau đây đúng hay sai?\\nHai thí nghiệm trên, vi khuẩn đều được nuôi cấy trong môi trường nuôi cấy liên tục.",
+       "s": [
+        "Phát biểu"
+       ],
+       "a": [
+        0
+       ],
+       "solved": true,
+       "sol": [
+        "Đặc trưng của môi trường nuôi cấy liên tục là môi trường luôn được bổ sung dinh dưỡng và lấy đi sinh khối liên tục, nên vi khuẩn duy trì ở pha lũy thừa kéo dài. Trong thí nghiệm này, vi khuẩn ngừng sinh trưởng ở cuối giai đoạn (chỉ số quang phổ đi ngang), điều này chứng tỏ đây là môi trường nuôi cấy không liên tục (batch culture). Phát biểu Sai."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Ở giá trị pH nào quần thể vi khuẩn S. Aureus KHÔNG có sự sinh trưởng?",
+       "o": [
+        "$pH=3$ và $pH=5$.",
+        "$pH=6$ và $pH=9$.",
+        "$pH=3$ và $pH=9$.",
+        "$pH=5$ và $pH=6$."
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "Nhìn vào Bảng 2, tại $pH=3$, chỉ số quang phổ giữ ở mức $0,012$ trong suốt 1470 phút. Tại $pH=9$, chỉ số giữ ở mức $0,013$ (dao động lên 0.015). Độ đục không tăng đáng kể chứng tỏ vi khuẩn không sinh trưởng."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Phát biểu nào sau đây là đúng khi nghiên cứu kết quả thí nghiệm của nhóm 1?",
+       "o": [
+        "Khi nhiệt độ tăng thì tốc độ phát triển của S. Aureus cũng tăng.",
+        "Chủng vi khuẩn S. Aureus phát triển tối ưu ở nhiệt độ $37^\\circ C$.",
+        "Khi nhiệt độ giảm, tốc độ phát triển của S. Aureus cũng giảm.",
+        "S. Aureus phát triển theo cấp số nhân ở nhiệt độ $37^\\circ C$."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Theo Bảng 1, tại mức nhiệt độ $37^\\circ C$, giá trị độ đục đạt cao nhất là $0,800$, cao hơn hẳn các mức nhiệt khác. Do đó, chủng vi khuẩn này phát triển tối ưu ở nhiệt độ $37^\\circ C$."
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Phát biểu sau đây đúng hay sai?\\nTrong thí nghiệm của nhóm 1, ở nhiệt độ $37^\\circ C$, pha cân bằng có thể bắt đầu sau 10 giờ kể từ khi nuôi cấy.",
+       "s": [
+        "Phát biểu"
+       ],
+       "a": [
+        0
+       ],
+       "solved": true,
+       "sol": [
+        "10 giờ bằng 600 phút. Tại Bảng 1 ($37^\\circ C$), ở phút thứ 600 độ đục là $0,800$ và tại phút 1470 vẫn là $0,800$. Tuy nhiên, từ phút 198 (độ đục $0,288$) đến phút 600 (độ đục $0,800$), quần thể có thể đã đạt pha cân bằng vào một thời điểm nào đó TRƯỚC mốc 600 phút, chứ không thể khẳng định là bắt đầu SAU 10 giờ. Phát biểu là Sai."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Ảnh hưởng của chất hòa tan đến nhiệt độ sôi và đông đặc",
+     "p": "<p>[1] Các thí nghiệm sau đây đã được thực hiện để khảo sát ảnh hưởng của việc thêm các chất hòa tan khác nhau với số lượng khác nhau đến nhiệt độ sôi và nhiệt độ đông đặc của $H_2O$. Biết rằng, ở áp suất khí quyển, $H_2O$ tinh khiết đóng băng ở $0^\\circ C$ và sôi ở $100^\\circ C$.</p><p>[2] Thí nghiệm 1: Một sinh viên hòa tan 0,01 mol sodium chloride (NaCl) vào 100 g $H_2O$. Khi NaCl hòa tan trong $H_2O$ thì 1 mol phân tử NaCl phân li ra 2 mol ion trong dung dịch (gồm 1 mol ion sodium ($Na^+$) và 1 mol ion chloride ($Cl^-$)) theo phương trình điện li sau: $NaCl \\rightarrow Na^+ + Cl^-$. Sau khi NaCl tan hết, tiến hành xác định nhiệt độ đông đặc của dung dịch. Quy trình này được lặp lại bằng cách sử dụng các lượng sodium chloride (NaCl) và sucrose ($C_{12}H_{22}O_{11}$) khác nhau. Trong đó, sucrose là chất không điện li (không phân li ra ion). Kết quả được thể hiện trong Bảng 1.</p><p>[3] Thí nghiệm 2: Một sinh viên hòa tan 0,01 mol NaCl vào 100 g $H_2O$. Tiến hành xác định nhiệt độ sôi của dung dịch khi NaCl đã tan hết. Quy trình này được lặp lại bằng cách sử dụng các lượng NaCl khác nhau. Kết quả được thể hiện trong Bảng 2. Lưu ý: Nhiệt độ sôi được đo ở áp suất khí quyển.</p>",
+     "questions": [
+      {
+       "t": "mc",
+       "q": "Phương trình điện li nào sau đây là đúng?",
+       "o": [
+        "$BaCl_2 \\rightarrow Ba^+ + 2Cl^-$",
+        "$CaSO_4 \\rightarrow Ca^{2+} + SO_4^{2}$",
+        "$C_2H_5OH \\rightarrow C_2H_5^+ + OH^-$",
+        "$CH_3COOH \\rightarrow CH_3COO^- + H^+$"
+       ],
+       "a": 3,
+       "warn": "Đáp án thứ hai bị thiếu dấu trừ của ion sulfate trong đề. Đáp án đúng là acetic acid, mặc dù trên thực tế là điện li yếu cần mũi tên hai chiều, nhưng bảo toàn điện tích ở phương án này là hợp lí nhất so với các lựa chọn.",
+       "solved": true,
+       "sol": [
+        "A sai vì ion bari phải là $Ba^{2+}$.",
+        "B sai (trong gốc đề) vì viết thiếu dấu điện tích âm của gốc sulfate ($SO_4^{2-}$).",
+        "C sai vì cồn (Ethanol) không phải chất điện li.",
+        "D đúng về mặt bảo toàn điện tích ion được tạo thành (dù thực tế cần dùng dấu mũi tên thuận nghịch)."
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Theo kết quả của thí nghiệm 1 và 2, khi 0,2 mol NaCl được thêm vào 100 g $H_2O$ thì nhiệt độ đông đặc hạ thấp [[0]] $^\\circ C$ so với nhiệt độ đông đặc của $H_2O$ tinh khiết.",
+       "a": [
+        6.9
+       ],
+       "solved": true,
+       "sol": [
+        "Theo Bảng 1, khi hòa tan 0,2 mol NaCl, nhiệt độ đông đặc của dung dịch là $-6,9^\\circ C$. Vì nước tinh khiết đông đặc ở $0^\\circ C$, nhiệt độ đông đặc đã bị hạ thấp $6,9$ độ C."
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Phát biểu sau đúng hay sai?\\nMột dung dịch chứa 100 g $H_2O$ và một lượng NaCl không xác định sôi ở $104^\\circ C$. Dựa trên kết quả của thí nghiệm 2, số mol NaCl hòa tan trong dung dịch là 0,5 mol.",
+       "s": [
+        "Phát biểu"
+       ],
+       "a": [
+        0
+       ],
+       "solved": true,
+       "sol": [
+        "Theo Bảng 2, cứ $0,1$ mol NaCl hòa tan vào $100$ g $H_2O$ làm nhiệt độ sôi tăng lên $1^\\circ C$ (từ 100 lên 101). Để dung dịch sôi ở $104^\\circ C$ (tức là nhiệt độ tăng lên $4^\\circ C$), lượng NaCl cần dùng là $0,1 \\times 4 = 0,4$ mol. Phát biểu cho rằng cần $0,5$ mol là Sai."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Một sinh viên hòa tan 0,1 mol calcium chloride ($CaCl_2$) vào 100 g $H_2O$. Giả sử, $CaCl_2$ ảnh hưởng đến nhiệt độ đông đặc của $H_2O$ tương tự như NaCl. Nhiệt độ đông đặc của dung dịch này nằm trong khoảng",
+       "o": [
+        "từ $-1,7^\\circ C$ đến $-0,3^\\circ C$",
+        "từ $-3,4^\\circ C$ đến $-2,1^\\circ C$",
+        "từ $-3,4^\\circ C$ đến $-1,7^\\circ C$",
+        "từ $-6,9^\\circ C$ đến $-3,4^\\circ C$"
+       ],
+       "a": 3,
+       "solved": true,
+       "sol": [
+        "$1$ phân tử $CaCl_2$ phân li ra $3$ ion ($Ca^{2+}$ và $2Cl^-$), nên $0,1$ mol $CaCl_2$ cung cấp $0,3$ mol hạt ion hòa tan.",
+        "Bảng 1 cho thấy:",
+        "- $0,1$ mol NaCl ($0,2$ mol hạt ion) làm nhiệt độ đông đặc là $-3,4^\\circ C$.",
+        "- $0,2$ mol NaCl ($0,4$ mol hạt ion) làm nhiệt độ đông đặc là $-6,9^\\circ C$.",
+        "Vì $0,3$ mol hạt ion nằm giữa mức $0,2$ và $0,4$, nhiệt độ đông đặc sẽ nằm trong khoảng từ $-6,9^\\circ C$ đến $-3,4^\\circ C$."
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Khi 0,01 mol NaCl được thêm vào 100 g $H_2O$ thì nhiệt độ sôi [[0]] $^\\circ C$ so với nhiệt độ sôi của $H_2O$ tinh khiết.",
+       "a": [
+        0.1
+       ],
+       "solved": true,
+       "sol": [
+        "Theo Bảng 2, khi thêm $0,01$ mol NaCl, nhiệt độ sôi đạt $100,1^\\circ C$. So với mốc nước tinh khiết $100^\\circ C$, nhiệt độ đã được nâng lên $0,1^\\circ C$."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Một dung dịch chứa 100 g $H_2O$ và một lượng NaCl không xác định sôi ở $106^\\circ C$. Dựa trên kết quả của thí nghiệm 2, số mol NaCl hòa tan trong dung dịch là",
+       "o": [
+        "0,3 mol.",
+        "0,4 mol.",
+        "0,6 mol.",
+        "0,7 mol."
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "Dung dịch sôi ở $106^\\circ C$, tức là tăng $6^\\circ C$ so với mức chuẩn $100^\\circ C$. Theo Bảng 2, cứ $0,1$ mol NaCl làm tăng nhiệt độ sôi thêm $1^\\circ C$. Do đó, số mol tương ứng để tăng $6^\\circ C$ là $0,6$ mol."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Quá trình giấm chín trái cây",
+     "p": "<p>[1] Ethylene ($C_2H_4$) là một hydrocarbon không no. Ở điều kiện thường, ethylene là chất khí, không màu, không vị, không gây độc, có khả năng gây cháy nổ khi ở nồng độ cao hơn 2,7%. Một trong những chất tham gia vào quá trình làm chín trái cây trong tự nhiên đó là ethylene. Ethylene là một hormone thực vật ở dạng khí, hormone này được hình thành ngay từ trong cây, có tác dụng kích thích quá trình chín của các loại quả có hô hấp đột biến (climacteric), hay còn gọi là các loại quả có quá trình chín sau thu hoạch, nghĩa là kể cả khi quả đã được thu hoạch thì quá trình chín của chúng vẫn được duy trì như chuối, xoài, đu đủ, hồng, cà chua.... Giấm chín quả bằng ethylene có ưu điểm là quá trình chín diễn ra nhanh (khoảng 2 - 4 ngày) và có độ chín đồng đều hơn rất nhiều so với các phương pháp giấm chín truyền thống khác (đất đèn, ủ lá xoan...). Hình ảnh dưới đây cho biết sự phụ thuộc của quá trình cà chua chín vào nồng độ ethylene và nhiệt độ môi trường.</p><p>[2] Khi đun nóng ethanol với axit $H_2SO_4$ đặc ở nhiệt độ $170-180^\\circ C$ xảy ra phản ứng tách nước tạo thành khí ethylene: $C_2H_5OH \\xrightarrow{H_2SO_4\\text{ đặc, } 170-180^\\circ C} CH_2=CH_2 + H_2O$.</p>",
+     "questions": [
+      {
+       "t": "fill",
+       "q": "Đun 103,5 gam ethanol với axit $H_2SO_4$ đặc ở nhiệt độ $170-180^\\circ C$ thì thể tích khí ethylene thu được là V lít (đktc). Giả sử, 32 lít khí ethylene (đktc) đủ để làm chín 20 tấn xoài thì V lít khí ethylene đủ để làm chín [[0]] tấn xoài.",
+       "a": [
+        31.5
+       ],
+       "solved": true,
+       "sol": [
+        "Tính số mol ethanol: $n_{C_2H_5OH} = \\frac{103,5}{46} = 2,25$ mol.",
+        "Phương trình: $C_2H_5OH \\rightarrow C_2H_4 + H_2O$. Suy ra $n_{C_2H_4} = 2,25$ mol.",
+        "Thể tích khí ethylene ở đktc: $V = 2,25 \\times 22,4 = 50,4$ lít.",
+        "Áp dụng tỉ lệ: 32 lít làm chín 20 tấn xoài, thì 50,4 lít sẽ làm chín được: $\\frac{50,4 \\times 20}{32} = 31,5$ tấn xoài."
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Khi nhiệt độ hoặc độ ẩm của không khí tăng cao thì hoa quả sẽ chín nhanh, và tạo ra nhiều khí ethylene hơn thông thường. Do đó, kinh nghiệm của người trồng chuối ở nước ta trong quá trình giấm chuối là thêm [[0]] lẫn trong những quả chuối xanh.",
+       "a": [
+        "quả chín",
+        "chuối chín"
+       ],
+       "solved": true,
+       "sol": [
+        "Quả chín sinh ra lượng lớn ethylene tự nhiên. Nếu ta đặt xen kẽ quả chín vào giữa đám quả xanh, lượng ethylene tỏa ra sẽ kích thích các quả xanh chín đều và nhanh chóng."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Trái cây phải đảm bảo yêu cầu nào sau đây để khi giấm chín bằng ethylene sẽ có chất lượng tốt?",
+       "o": [
+        "Quả không dập nát, không sâu bệnh, đồng đều về kích thước.",
+        "Quả già, không dập nát, không sâu bệnh, đồng đều về kích thước.",
+        "Quả non, không dập nát, không sâu bệnh.",
+        "Quả non, không dập nát, không sâu bệnh, đồng đều về kích thước."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Quả được đem đi giấm phải đạt độ trưởng thành (quả già), nếu là quả quá non thì quá trình chín sẽ diễn ra kém và giảm hương vị. Hơn nữa quả phải nguyên vẹn (không dập nát, sâu bệnh) và đồng đều để quá trình thẩm thấu khí diễn ra đồng loạt."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Biểu đồ nào sau đây biểu diễn thành phần các loại trái cây tiêu thụ ở chợ và tỉ lệ trái cây giấm chín bằng hóa chất?",
+       "o": [
+        "Biểu đồ 1",
+        "Biểu đồ 2",
+        "Biểu đồ 3",
+        "Biểu đồ 4"
+       ],
+       "a": 0,
+       "warn": "Cần đối chiếu trực tiếp hình ảnh biểu đồ trong đề (hiện không hiển thị đầy đủ thông số).",
+       "solved": true,
+       "sol": [
+        "Dựa theo số liệu đề bài cho: Lượng tiêu thụ tương ứng là: Chuối (205), Táo (95), Thanh long (113), Cam (140), Xoài (148), Ổi (200), Nho (75), Đu đủ (130).",
+        "Lượng trái cây giấm bằng hóa chất: Chuối (75), Xoài (95), Đu đủ (50).",
+        "Biểu đồ chính xác phải có cột thứ hai (màu cam biểu diễn lượng giấm hóa chất) chỉ xuất hiện ở cột chuối, xoài, đu đủ và có chiều cao tương ứng với các số liệu 75, 95 và 50."
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Phát biểu sau đúng hay sai?\\nEthylene là chất khí không gây độc. Do đó, ta có thể làm việc trong phòng kín có nồng độ khí ethylene cao.",
+       "s": [
+        "Phát biểu"
+       ],
+       "a": [
+        0
+       ],
+       "solved": true,
+       "sol": [
+        "Đoạn 1 nêu rõ: \"có khả năng gây cháy nổ khi ở nồng độ cao hơn 2,7%\". Ngoài ra khí ethylene nồng độ quá cao có thể chiếm chỗ của oxy gây ngạt thở. Do đó không nên làm việc trong phòng kín với nồng độ cao."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Phát biểu nào sau đây là đúng về sự phụ thuộc của quá trình chín của cà chua vào nồng độ ethylene và nhiệt độ môi trường?",
+       "o": [
+        "Nhiệt độ môi trường và nồng độ khí ethylene trong không khí càng thấp, cà chua càng nhanh chín.",
+        "Nhiệt độ môi trường càng thấp và nồng độ khí ethylene trong không khí càng cao, cà chua càng nhanh chín.",
+        "Nhiệt độ môi trường và nồng độ khí ethylene trong không khí càng cao, cà chua càng nhanh chín.",
+        "Nhiệt độ môi trường càng cao và nồng độ khí ethylene trong không khí càng thấp, cà chua càng nhanh chín."
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "Quá trình sinh hóa hô hấp đột biến khi trái cây chín diễn ra mãnh liệt nhất dưới xúc tác nồng độ hormone ethylene lớn, và phản ứng xảy ra nhanh hơn khi nhiệt độ tăng. Vậy nhiệt độ và nồng độ ethylene càng cao, cà chua càng nhanh chín."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Sự đóng băng của nước và hiện tượng trượt băng",
+     "p": "<p>[1] Hai học sinh giải thích tại sao trong hồ nước thì nước lại bị đóng băng từ bề mặt hồ trở xuống. Họ cũng thảo luận về hiện tượng băng tan dưới lưỡi dao ở rãnh giữa của đáy giày trượt của vận động viên trượt băng.</p><p>[2] Học sinh 1: Nước bắt đầu đóng băng từ trên bề mặt hồ vì điểm đóng băng của nước giảm khi áp suất tăng. Dưới bề mặt hồ, áp suất thủy tĩnh của nước làm cho điểm đóng băng của nước thấp hơn một chút so với trên bề mặt. Do đó, khi nhiệt độ không khí giảm xuống, nước trên bề mặt hồ đạt đến điểm đóng băng trước so với nước bên dưới bề mặt hồ. Khi nhiệt độ trở nên lạnh hơn thì lớp băng trên bề mặt trở nên dày hơn. Áp suất được định nghĩa là lực tác dụng lên một đơn vị diện tích có phương vuông góc với bề mặt của vật thể nhất định. Một vận động viên trượt băng tác dụng toàn bộ trọng lực cơ thể của mình lên diện tích bề mặt nhỏ xíu của hai lưỡi dao. Điều này dẫn đến một áp suất rất lớn, nhanh chóng làm tan chảy một lượng băng nhỏ ngay dưới các lưỡi dao giày trượt.</p><p>[3] Học sinh 2: Nước bắt đầu đóng băng từ trên bề mặt hồ vì mật độ khối lượng băng nhỏ hơn mật độ khối lượng nước ở trạng thái lỏng. Không giống như hầu hết các chất lỏng, mật độ khối lượng của nước giảm khi đóng băng. Kết quả là đối với bất kỳ khối băng nào, lực nổi của nước tác dụng hướng lên lớn hơn trọng lực tác dụng hướng xuống nên tất cả các hạt băng nổi lên bề mặt khi đóng băng. Băng tan dưới lưỡi dao ở rãnh giữa của đáy giày trượt của vận động viên trượt băng do ma sát. Năng lượng do lực ma sát cung cấp được chuyển thành nhiệt làm tan băng dưới lưỡi dao ở đáy giày trượt. Trọng lượng cơ thể của vận động viên trượt băng càng lớn thì lực ma sát càng lớn và băng tan càng nhanh.</p>",
+     "questions": [
+      {
+       "t": "tf",
+       "q": "Phát biểu nào sau đây là đúng hoặc sai?",
+       "s": [
+        "Nước bắt đầu đóng băng từ trên bề mặt hồ trở xuống.",
+        "Nước đóng băng đồng đều trong toàn bộ hồ chứa.",
+        "Nước đóng băng thì mật độ khối lượng của nước giảm."
+       ],
+       "a": [
+        1,
+        0,
+        1
+       ],
+       "solved": true,
+       "sol": [
+        "Ý 1 Đúng: Cả hai đoạn văn (HS1 và HS2) đều giải thích hiện tượng nước bắt đầu đóng băng từ trên bề mặt hồ xuống.",
+        "Ý 2 Sai: Băng hình thành từ bề mặt trở xuống, không phải đồng đều tại mọi vị trí trong hồ.",
+        "Ý 3 Đúng: Lập luận của Học sinh 2 nêu rõ mật độ khối lượng (khối lượng riêng) của nước giảm khi đóng băng, giúp băng nổi lên trên."
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Theo Học sinh 2, mật độ khối lượng của một khối lượng xác định giảm khi đóng băng là do [[0]] tăng lên.",
+       "a": [
+        "thể tích"
+       ],
+       "solved": true,
+       "sol": [
+        "Mật độ khối lượng (hay khối lượng riêng) được tính bằng khối lượng chia cho thể tích ($D = \\frac{m}{V}$). Khi khối lượng (m) xác định, mật độ khối lượng giảm xuống chỉ có thể do yếu tố thể tích (V) của vật thể tăng lên."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Một chiếc thuyền đồ chơi được đặt trên một bể nước nhỏ, và chiếc thuyền dần dần được đổ đầy cát. Sau khi đổ một lượng cát nhất định, thuyền bắt đầu chìm. Dựa trên lời giải thích của Học sinh 2, thuyền bắt đầu chìm là do",
+       "o": [
+        "áp suất thủy tĩnh lớn hơn lực nổi của nước tác dụng lên thuyền.",
+        "áp suất khí quyển lớn hơn lực nổi của nước tác dụng lên thuyền.",
+        "trọng lực của thuyền lớn hơn lực nổi của nước tác dụng lên thuyền.",
+        "trọng lực của thuyền nhỏ hơn lực nổi của nước tác dụng lên thuyền."
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "Học sinh 2 giải thích hiện tượng nổi dựa trên sự so sánh giữa lực nổi và trọng lực. Vật nổi lên khi lực nổi lớn hơn trọng lực. Ngược lại, khi thuyền được thêm cát (tăng khối lượng), trọng lực của thuyền lớn dần lên, đến khi lớn hơn lực nổi của nước thì thuyền sẽ bắt đầu chìm."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Quan điểm của học sinh nào có thể dẫn đến dự đoán rằng băng sẽ tan dưới lưỡi dao ở rãnh giữa của đáy giày trượt ngay cả khi vận động viên trượt băng trong trạng thái KHÔNG chuyển động?",
+       "o": [
+        "Học sinh 1.",
+        "Học sinh 2.",
+        "Cả học sinh 1 và 2.",
+        "Không học sinh nào."
+       ],
+       "a": 0,
+       "solved": true,
+       "sol": [
+        "Học sinh 1 giải thích nguyên nhân tan băng là do áp suất khổng lồ từ trọng lượng của vận động viên đè lên lưỡi dao siêu nhỏ. Áp suất này tồn tại miễn là vận động viên đứng trên mặt băng, không phụ thuộc vào trạng thái chuyển động. (Trong khi đó HS2 dựa vào lực ma sát, lực này sinh nhiệt lớn nhất khi có sự dịch chuyển)."
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Phát biểu dưới đây là đúng hay sai?\\nKhi hai vận động viên trượt băng, đi giày trượt giống hệt nhau, trượt qua một hồ nước đóng băng với cùng tốc độ, băng dưới lưỡi giày của Vận động viên B tan chảy nhanh hơn băng dưới lưỡi giày của Vận động viên A. Hai học sinh sẽ rút ra kết luận rằng Vận động viên B nặng hơn Vận động viên A.",
+       "s": [
+        "Phát biểu"
+       ],
+       "a": [
+        1
+       ],
+       "solved": true,
+       "sol": [
+        "Cả hai học sinh đều chỉ ra rằng trọng lượng cơ thể càng lớn thì mức độ ảnh hưởng càng mạnh. Theo HS1: nặng hơn -> áp suất lớn hơn -> tan nhanh hơn. Theo HS2: nặng hơn -> ma sát lớn hơn -> sinh nhiều nhiệt hơn -> tan nhanh hơn. Do đó, hiện tượng băng tan nhanh hơn chứng tỏ Vận động viên B nặng hơn."
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Theo Học sinh 2, nếu ma sát giữa băng và lưỡi giày trượt của vận động viên bằng không thì yếu tố nhiệt độ tại điểm tiếp xúc của lưỡi giày và băng (1) [[0]].",
+       "a": [
+        "không đổi",
+        "không tăng",
+        "giữ nguyên"
+       ],
+       "solved": true,
+       "sol": [
+        "Học sinh 2 lập luận nguyên nhân chính tạo ra nhiệt năng làm tan băng là từ ma sát. Nếu ma sát bằng 0, sẽ không có động năng chuyển hóa thành nhiệt năng tại bề mặt, nên nhiệt độ tại điểm tiếp xúc sẽ không tăng thêm (không thay đổi)."
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Yếu tố [[0]] của vận động viên trượt băng càng lớn dẫn tới băng tan càng nhanh",
+       "a": [
+        "khối lượng",
+        "trọng lượng"
+       ],
+       "solved": true,
+       "sol": [
+        "Căn cứ vào lập luận của cả hai học sinh, trọng lượng (tỉ lệ thuận với khối lượng của vận động viên) là yếu tố chính tạo ra áp suất khổng lồ hoặc lực ma sát khổng lồ, khiến năng lượng/nhiệt lượng tập trung để làm băng tan nhanh."
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,5 +1,5 @@
 {
-  "package": "Phòng Luyện Miễn Phí",
+  "package": "Phòng Luyện TSA",
   "webhook": "https://script.google.com/macros/s/AKfycbxgC9K-0IGNIYPNKYx0cPrTDYuuwT4Pl-_Bbyaeq2n8PL4SHdVyioe2FigrQzJ3EnPeJg/exec",
   "exams": [
     { "id": "de03", "title": "TSA 3", "date": "4/11/2026", "parts": 3 },

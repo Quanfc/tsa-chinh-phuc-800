@@ -11,6 +11,7 @@
     { "id": "de03", "title": "TSA 3", "date": "4/11/2026", "parts": 3 },
     { "id": "buoi1", "title": "Buổi 1", "date": "5/11/2026", "parts": 3 },
     { "id": "buoi2", "title": "Buổi 2", "date": "7/11/2026", "parts": 3 },
-    { "id": "de04", "title": "TSA FULL", "date": "5/11/2026", "parts": 3 }
+    { "id": "de05", "title": "HOCMAI 09", "date": "6/11/2026", "parts": 3 },
+    { "id": "de04", "title": "HOCMAI 10", "date": "5/11/2026", "parts": 3 }
   ]
 }

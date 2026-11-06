@@ -2,16 +2,12 @@
   "package": "Phòng Luyện Miễn Phí",
   "webhook": "https://script.google.com/macros/s/AKfycbxgC9K-0IGNIYPNKYx0cPrTDYuuwT4Pl-_Bbyaeq2n8PL4SHdVyioe2FigrQzJ3EnPeJg/exec",
   "exams": [
-    { "id": "de01", "title": "Đề Số 01", "date": "23/6/2026", "parts": 3 },
-    {
-      "id": "de02",
-      "title": "TSA 2",
-      "minutes": 150
-    },
     { "id": "de03", "title": "TSA 3", "date": "4/11/2026", "parts": 3 },
     { "id": "buoi1", "title": "Buổi 1", "date": "5/11/2026", "parts": 3 },
     { "id": "buoi2", "title": "Buổi 2", "date": "7/11/2026", "parts": 3 },
     { "id": "de05", "title": "HOCMAI 09", "date": "6/11/2026", "parts": 3 },
+    { "id": "hocmai06", "title": "HOCMAI 06", "date": "6/11/2026", "parts": 3 },
+    { "id": "hocmai08", "title": "HOCMAI 08", "date": "6/11/2026", "parts": 3 },
     { "id": "de04", "title": "HOCMAI 10", "date": "5/11/2026", "parts": 3 }
   ]
 }

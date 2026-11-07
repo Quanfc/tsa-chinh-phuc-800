@@ -1,0 +1,1942 @@
+{
+ "title": "HOCMAI 04",
+ "sections": [
+  {
+   "title": "Đề Toán Số 04",
+   "minutes": 60,
+   "questions": [
+    {
+     "t": "fill",
+     "q": "Điền một số nguyên dương thích hợp vào chỗ trống.<br>Chọn ngẫu nhiên hai số nguyên dương phân biệt không vượt quá 20. Biết rằng xác suất để tổng bình phương của hai số đã chọn chia hết cho 5 là $\\frac{a}{b}$, trong đó $\\frac{a}{b}$ là phân số tối giản với $a,b$ là các số nguyên dương. Khi đó, $a+b=$ [[0]].",
+     "a": [
+      26
+     ],
+     "solved": true,
+     "sol": [
+      "Số cách chọn 2 số phân biệt từ 20 số: $C_{20}^2=190$.",
+      "Bình phương của số chia hết cho 5 (4 số: 5, 10, 15, 20) chia 5 dư 0; số dư 1 hoặc 4 khi chia 5 (8 số) có bình phương dư 1; số dư 2 hoặc 3 (8 số) có bình phương dư 4.",
+      "Tổng hai bình phương chia hết cho 5 khi (dư 0 + dư 0) hoặc (dư 1 + dư 4).",
+      "Trường hợp (0;0): $C_4^2=6$. Trường hợp (1;4): $8\\cdot 8=64$. Tổng số cách thuận lợi là $70$.",
+      "Xác suất $=\\frac{70}{190}=\\frac{7}{19}$, suy ra $a=7$, $b=19$, nên $a+b=26$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Cho hàm số $y=\\frac{2x+1}{x-1}$ có đồ thị $(C)$. Mỗi phát biểu dưới đây là đúng hay sai?",
+     "s": [
+      "Hàm số đạt cực đại tại $x=-3$.",
+      "Giá trị lớn nhất của hàm số trên $[2;4]$ bằng $5$.",
+      "Đường thẳng $x=1$ là tiệm cận đứng của đồ thị $(C)$.",
+      "Hàm số đồng biến trên khoảng $(-\\infty;1)$ và $(1;+\\infty)$."
+     ],
+     "a": [
+      0,
+      1,
+      1,
+      0
+     ],
+     "solved": true,
+     "sol": [
+      "Ý 1 sai: $y'=\\frac{-3}{(x-1)^2}<0$ với mọi $x\\neq1$ nên hàm số không có cực trị.",
+      "Ý 2 đúng: trên $[2;4]$ hàm số nghịch biến nên $\\max y=y(2)=\\frac{5}{1}=5$.",
+      "Ý 3 đúng: $\\lim_{x\\to1^+}y=+\\infty$ nên $x=1$ là tiệm cận đứng.",
+      "Ý 4 sai: $y'<0$ nên hàm số nghịch biến trên $(-\\infty;1)$ và $(1;+\\infty)$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho biểu thức $P=\\sqrt[6]{x\\sqrt[4]{x^{2}\\sqrt{x^{3}}}}$, với $x>0$. Mệnh đề nào dưới đây đúng?",
+     "o": [
+      "$P=x^{\\frac{7}{12}}$",
+      "$P=x^{\\frac{15}{16}}$",
+      "$P=x^{\\frac{15}{12}}$",
+      "$P=x^{\\frac{5}{16}}$"
+     ],
+     "a": 3,
+     "warn": "Biểu thức căn lồng nhau bị mất cấu trúc khi trích PDF; đã khôi phục thành căn bậc 6 của x nhân căn bậc 4 của x^2 nhân căn bậc 2 của x^3 (khớp với một phương án). Cần đối chiếu đề gốc.",
+     "solved": true,
+     "sol": [
+      "$\\sqrt{x^3}=x^{\\frac32}$.",
+      "$x^2\\cdot x^{\\frac32}=x^{\\frac72}$, rồi lấy căn bậc 4: $x^{\\frac{7}{8}}$.",
+      "$x\\cdot x^{\\frac78}=x^{\\frac{15}{8}}$, rồi lấy căn bậc 6: $x^{\\frac{15}{8}\\cdot\\frac16}=x^{\\frac{5}{16}}$.",
+      "Vậy $P=x^{\\frac{5}{16}}$."
+     ]
+    },
+    {
+     "t": "drag",
+     "q": "Để đánh số trang của một cuốn sách, người ta viết dãy số tự nhiên bắt đầu từ số 1 và phải dùng tất cả 1998 chữ số. Biết tất cả các trang sách đều được đánh số.<br>Kéo số ở các ô vuông thả vào vị trí thích hợp trong các câu sau:<br>Cuốn sách có [[0]] trang.<br>Chữ số thứ 1010 là chữ số [[1]].",
+     "c": [
+      "4",
+      "702",
+      "7",
+      "3",
+      "603"
+     ],
+     "a": [
+      1,
+      2
+     ],
+     "solved": true,
+     "sol": [
+      "Trang 1 đến 9 dùng $9$ chữ số; trang 10 đến 99 dùng $90\\cdot2=180$ chữ số. Tổng là $189$ chữ số.",
+      "Còn lại $1998-189=1809$ chữ số cho các trang 3 chữ số: $1809:3=603$ trang, từ trang 100 đến trang $99+603=702$. Vậy sách có $702$ trang.",
+      "Chữ số thứ 1010: $1010-189=821$ chữ số trong dãy các số có 3 chữ số. Ta có $821=3\\cdot273+2$ nên đã hết số $100+272=372$, và chữ số cần tìm là chữ số thứ 2 của số $373$.",
+      "Chữ số thứ hai của $373$ là $7$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Khối đa diện đều loại $\\{5;3\\}$ có tên gọi là",
+     "o": [
+      "khối lập phương.",
+      "khối bát diện đều.",
+      "khối mười hai mặt đều.",
+      "khối hai mươi mặt đều."
+     ],
+     "a": 2,
+     "solved": true,
+     "sol": [
+      "Khối đa diện đều loại $\\{p;q\\}$ có mỗi mặt là $p$-giác đều và mỗi đỉnh là đỉnh chung của $q$ mặt.",
+      "$\\{5;3\\}$: mặt là ngũ giác đều, mỗi đỉnh có 3 mặt, đó là khối mười hai mặt đều.",
+      "Các loại còn lại: lập phương $\\{4;3\\}$, bát diện đều $\\{3;4\\}$, hai mươi mặt đều $\\{3;5\\}$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Hộp thứ nhất chứa 6 viên bi xanh và 1 viên bi đỏ. Hộp thứ hai chứa 4 viên bi đỏ. Chọn ngẫu nhiên 3 viên bi từ hộp thứ nhất và bỏ vào hộp thứ hai, rồi từ hộp thứ hai chọn ra ngẫu nhiên 2 viên bi.<br>Mỗi phát biểu sau đây là đúng hay sai?",
+     "s": [
+      "Xác suất để 3 viên bi lấy ra từ hộp thứ nhất có cùng màu là $\\frac{3}{7}$.",
+      "Xác suất để 2 viên bi lấy ra từ hộp thứ hai có cùng màu là $\\frac{23}{49}$.",
+      "Số cách chọn 3 viên bi từ hộp thứ nhất là $C_{11}^{3}$.",
+      "Biết 2 viên bi lấy ra ở hộp thứ hai có cùng màu, xác suất 3 viên bi lấy ra từ hộp thứ nhất có cùng màu bằng $\\frac{12}{23}$."
+     ],
+     "a": [
+      0,
+      1,
+      0,
+      1
+     ],
+     "warn": "Giá trị của từng ý được ghép theo thứ tự xuất hiện trong PDF (bị tách khỏi câu chữ).",
+     "solved": true,
+     "sol": [
+      "Ý 1 sai: 3 viên cùng màu nghĩa là cả 3 viên xanh, xác suất $\\frac{C_6^3}{C_7^3}=\\frac{20}{35}=\\frac47\\neq\\frac37$.",
+      "Ý 2 đúng: Nếu lấy 3 xanh (xác suất $\\frac47$), hộp hai có 4 đỏ, 3 xanh, xác suất cùng màu $\\frac{C_4^2+C_3^2}{C_7^2}=\\frac{9}{21}=\\frac37$. Nếu lấy 2 xanh 1 đỏ (xác suất $\\frac{C_6^2\\cdot1}{C_7^3}=\\frac{15}{35}=\\frac37$), hộp hai có 5 đỏ, 2 xanh, xác suất cùng màu $\\frac{C_5^2+C_2^2}{C_7^2}=\\frac{11}{21}$.",
+      "Xác suất cần tìm: $\\frac47\\cdot\\frac37+\\frac37\\cdot\\frac{11}{21}=\\frac{12}{49}+\\frac{11}{49}=\\frac{23}{49}$.",
+      "Ý 3 sai: hộp thứ nhất có $7$ viên nên số cách chọn là $C_7^3=35$, không phải $C_{11}^3$.",
+      "Ý 4 đúng: xác suất có điều kiện $=\\frac{\\frac{12}{49}}{\\frac{23}{49}}=\\frac{12}{23}$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Điền một số nguyên dương thích hợp vào chỗ trống.<br>Trong không gian $Oxyz$, cho mặt phẳng $(P): y-4=0$. Có [[0]] đường thẳng $d$ song song với ba mặt phẳng $(xOy)$, $(zOx)$, $(P)$ đồng thời cách đều 3 mặt phẳng đó.",
+     "a": [
+      2
+     ],
+     "solved": true,
+     "sol": [
+      "Ba mặt phẳng: $(xOy): z=0$, $(zOx): y=0$, $(P): y=4$, có các vectơ pháp tuyến $(0;0;1)$, $(0;1;0)$.",
+      "$d$ song song với cả ba mặt phẳng nên vectơ chỉ phương vuông góc với hai pháp tuyến trên, tức $\\vec u=(1;0;0)$. Khi đó $d$ có dạng $y=y_0$, $z=z_0$.",
+      "Khoảng cách từ $d$ đến $(zOx)$, $(P)$, $(xOy)$ lần lượt là $|y_0|$, $|y_0-4|$, $|z_0|$.",
+      "$|y_0|=|y_0-4|\\Rightarrow y_0=2$. Khi đó khoảng cách bằng $2$ nên $|z_0|=2\\Rightarrow z_0=\\pm2$.",
+      "Vậy có $2$ đường thẳng thỏa mãn."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Phương trình $\\ln(3^x+5^x-2)=1$ có [[0]] nghiệm dương.",
+     "a": [
+      1
+     ],
+     "solved": true,
+     "sol": [
+      "Phương trình tương đương $3^x+5^x-2=e$, tức $3^x+5^x-2-e=0$.",
+      "Đặt $f(x)=3^x+5^x-2-e$. Ta có $f'(x)=3^x\\ln3+5^x\\ln5>0$ nên $f$ đồng biến trên $\\mathbb R$.",
+      "$f(0)=1+1-2-e=-e<0$ và $\\lim_{x\\to+\\infty}f(x)=+\\infty$ nên $f$ có đúng một nghiệm và nghiệm đó dương.",
+      "Vậy phương trình có $1$ nghiệm dương."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Điền một số tự nhiên thích hợp vào chỗ trống.<br>Một chiếc cốc hình trụ có chiều cao gấp hai lần bán kính đáy. Bạn An nhận thấy nếu đặt nằm nghiêng vào cốc một miếng kim loại hình chữ nhật kích thước $4\\ cm\\times 8\\ cm$ thì thấy hai cạnh 4 cm của hình chữ nhật khít với hai dây cung của đáy cốc và miệng cốc (tham khảo hình vẽ). Diện tích của đáy cốc bằng [[0]] $\\pi\\ cm^2$.",
+     "a": [
+      10
+     ],
+     "svg": "<svg viewBox='0 0 260 270' xmlns='http://www.w3.org/2000/svg' font-size='12' fill='currentColor'><g fill='none' stroke='currentColor'><ellipse cx='130' cy='50' rx='90' ry='22'/><line x1='40' y1='50' x2='40' y2='220'/><line x1='220' y1='50' x2='220' y2='220'/><path d='M40 220 A90 22 0 0 0 220 220'/><path d='M40 220 A90 22 0 0 1 220 220' stroke-dasharray='4'/></g><g fill='none' stroke='currentColor' stroke-dasharray='5'><polygon points='85,33 175,33 175,238 85,238'/></g><text x='115' y='26'>4 cm</text><text x='115' y='256'>4 cm</text><text x='178' y='140'>8 cm</text><text x='124' y='48'>O'</text><text x='124' y='208'>O</text></svg>",
+     "solved": true,
+     "sol": [
+      "Gọi $R$ là bán kính đáy, chiều cao $h=2R$. Hai cạnh 4 cm là hai dây cung song song (ở đáy và miệng cốc), mỗi dây có nửa độ dài là $2$.",
+      "Khoảng cách từ tâm đến mỗi dây là $d=\\sqrt{R^2-4}$. Hai dây nằm ở hai phía đối nhau so với trục nên khoảng cách giữa hai dây (chiếu xuống mặt đáy) là $2d$.",
+      "Cạnh 8 cm vuông góc với hai dây, là cạnh huyền của tam giác vuông có hai cạnh góc vuông là $2d$ và $h$: $8^2=(2d)^2+h^2$.",
+      "$64=4(R^2-4)+4R^2\\Rightarrow 8R^2=80\\Rightarrow R^2=10$.",
+      "Diện tích đáy cốc $=\\pi R^2=10\\pi\\ cm^2$. Đáp án: $10$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Cho hàm số $f(x)$. Hàm số $y=f'(x)$ có đồ thị như hình vẽ:<br>Phát biểu dưới đây là đúng hay sai?",
+     "s": [
+      "$f(-1)>f(-3)$.",
+      "Hàm số $f(x)$ đạt cực tiểu tại $x=-1$ và $x=4$.",
+      "Hàm số $y=f(2-x)$ nghịch biến trên khoảng $(1;3)$.",
+      "Trên đoạn $[2024;2025]$ hàm số $g(x)=f(2-x)$ đạt giá trị nhỏ nhất tại $x=2024$."
+     ],
+     "a": [
+      0,
+      1,
+      1,
+      1
+     ],
+     "graph": {
+      "fn": [
+       "0.5*(x+1)*(x-1)*(x-4)"
+      ],
+      "x": [
+       -2.2,
+       4.6
+      ],
+      "y": [
+       -6,
+       6
+      ],
+      "xstep": 1,
+      "ystep": 2,
+      "pts": [
+       {
+        "x": -1,
+        "y": 0,
+        "t": "-1"
+       },
+       {
+        "x": 1,
+        "y": 0,
+        "t": "1"
+       },
+       {
+        "x": 4,
+        "y": 0,
+        "t": "4"
+       }
+      ]
+     },
+     "solved": true,
+     "sol": [
+      "Từ đồ thị $y=f'(x)$: $f'<0$ trên $(-\\infty;-1)$, $f'>0$ trên $(-1;1)$, $f'<0$ trên $(1;4)$, $f'>0$ trên $(4;+\\infty)$.",
+      "Ý 1 sai: $f$ nghịch biến trên $(-\\infty;-1)$ nên $f(-3)>f(-1)$.",
+      "Ý 2 đúng: $f'$ đổi dấu từ âm sang dương tại $x=-1$ và $x=4$ nên $f$ đạt cực tiểu tại hai điểm đó.",
+      "Ý 3 đúng: $y'=-f'(2-x)$. Với $x\\in(1;3)$ thì $2-x\\in(-1;1)$, khi đó $f'(2-x)>0$ nên $y'<0$, hàm số nghịch biến.",
+      "Ý 4 đúng: với $x\\in[2024;2025]$ thì $2-x\\in[-2023;-2022]\\subset(-\\infty;-1)$, nên $f'(2-x)<0$, $g'(x)=-f'(2-x)>0$. Hàm $g$ đồng biến nên giá trị nhỏ nhất đạt tại $x=2024$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Nghiệm của phương trình $2^x=6$ là",
+     "o": [
+      "$x=\\log_6 2$.",
+      "$x=3$.",
+      "$x=4$.",
+      "$x=\\log_2 6$."
+     ],
+     "a": 3,
+     "solved": true,
+     "sol": [
+      "Theo định nghĩa logarit, $2^x=6\\Leftrightarrow x=\\log_2 6$.",
+      "Kiểm tra: $2^3=8\\neq6$ và $2^4=16\\neq6$ nên loại $x=3$, $x=4$; $x=\\log_6 2$ là nghịch đảo của đáp án đúng nên loại."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Số nguyên tố Mersenne là một số nguyên tố có dạng $M_p=2^p-1$. Điều kiện cần để $M_p$ là số nguyên tố là $p$ là số nguyên tố.<br>Số nguyên tố Mersenne kép là một số nguyên tố có dạng $MM_p=2^{2^p-1}-1$.<br>Mỗi phát biểu sau đây là đúng hay sai?",
+     "s": [
+      "Số $4423$ là một số nguyên tố Mersenne.",
+      "Có duy nhất một số nguyên tố Mersenne lớn hơn 100 và nhỏ hơn 1000.",
+      "Tổng các số nguyên tố Mersenne kép trong phạm vi $10\\,000$ là một số lẻ."
+     ],
+     "a": [
+      0,
+      1,
+      0
+     ],
+     "warn": "Ý 1 chỉ trích được số 4423 (có thể mất công thức khi trích PDF). Đáp án chấm theo đúng chữ số 4423. Nếu đề gốc là $2^{4423}-1$ thì đáp án ý này là Đúng. Cần đối chiếu đề gốc.",
+     "solved": true,
+     "sol": [
+      "Ý 1 sai: số nguyên tố Mersenne có dạng $2^p-1$. Ta có $4423+1=4424$ không phải lũy thừa của 2 ($2^{12}=4096<4424<8192=2^{13}$) nên $4423$ không phải số Mersenne.",
+      "Ý 2 đúng: $100<2^p-1<1000\\Rightarrow 7\\le p\\le 9$. Để $M_p$ nguyên tố thì $p$ nguyên tố nên $p=7$, $M_7=127$ là số nguyên tố. Với $p=8,9$ không nguyên tố (và $2^9-1=511=7\\cdot73$). Vậy chỉ có $127$.",
+      "Ý 3 sai: số Mersenne kép nguyên tố $MM_p=2^{M_p}-1$ với $M_p$ nguyên tố. $p=2$: $M_2=3$, $MM_2=2^3-1=7$ nguyên tố. $p=3$: $M_3=7$, $MM_3=2^7-1=127$ nguyên tố. $p=5$: $M_5=31$, $MM_5=2^{31}-1>10\\,000$.",
+      "Trong phạm vi $10\\,000$ chỉ có $7$ và $127$, tổng $=134$ là số chẵn nên phát biểu sai."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Trong đường đua, một chiếc xe công thức I bắt đầu chuyển động và nó tăng tốc với gia tốc $a\\ (m/s^2)$ không đổi, khi vận tốc đạt $80\\ m/s$ thì xe chuyển động đều trong thời gian 56 giây; sau đó nó giảm vận tốc với gia tốc $b\\ (m/s^2)$ không đổi cho đến khi dừng lại ($a$ và $b$ là các số dương). Biết rằng tổng thời gian chuyển động của xe là 74 giây.",
+     "s": [
+      "Thời điểm xe đạt vận tốc $80\\ m/s$ là $t_1=\\frac{80}{a}\\ (s)$.",
+      "Quãng đường mà xe chuyển động với vận tốc không đổi bằng $4,5\\ km$.",
+      "$\\frac{40}{a}+\\frac{40}{b}=9$.",
+      "Tổng quãng đường xe đi được trong 74 giây là $5,6\\ km$."
+     ],
+     "a": [
+      1,
+      0,
+      1,
+      0
+     ],
+     "solved": true,
+     "sol": [
+      "Ý 1 đúng: giai đoạn tăng tốc từ $0$ đến $80\\ m/s$ với gia tốc $a$ nên $t_1=\\frac{80}{a}$.",
+      "Ý 2 sai: quãng đường đều $=80\\cdot56=4480\\ m=4,48\\ km\\neq4,5\\ km$.",
+      "Ý 3 đúng: giai đoạn giảm tốc kéo dài $t_3=\\frac{80}{b}$. Tổng thời gian $t_1+56+t_3=74\\Rightarrow\\frac{80}{a}+\\frac{80}{b}=18\\Rightarrow\\frac{40}{a}+\\frac{40}{b}=9$.",
+      "Ý 4 sai: đồ thị vận tốc theo thời gian là hình thang cân có hai đáy $74$ và $56$, chiều cao $80$. Quãng đường $=\\frac{(74+56)}{2}\\cdot80=5200\\ m=5,2\\ km\\neq5,6\\ km$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Tất cả học sinh lớp 10 của trường THPT X tham gia một hoạt động trải nghiệm là một chuyến đi tham quan bảo tàng dân tộc học. Tổng số người tham gia hoạt động là 147 người. Mỗi xe bus chứa tối đa 44 người. Cần ít nhất [[0]] xe bus để chở tất cả người tham gia đến bảo tàng.",
+     "a": [
+      4
+     ],
+     "solved": true,
+     "sol": [
+      "Số xe cần thiết thỏa mãn $44n\\ge147\\Rightarrow n\\ge\\frac{147}{44}\\approx3,34$.",
+      "Vì $n$ nguyên nên $n_{\\min}=4$ (3 xe chỉ chở được $132<147$ người, 4 xe chở được $176\\ge147$)."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Trong không gian với hệ trục tọa độ $Oxyz$, cho mặt cầu $(S)$ có phương trình là $x^2+y^2+z^2-2x-2y-6z+7=0$. Cho ba điểm $A$, $M$, $B$ nằm trên mặt cầu $(S)$ sao cho $\\widehat{AMB}=90^\\circ$. Diện tích tam giác $AMB$ có giá trị lớn nhất bằng",
+     "o": [
+      "$4$.",
+      "$2$.",
+      "$4\\pi$.",
+      "$\\pi$."
+     ],
+     "a": 0,
+     "solved": true,
+     "sol": [
+      "Mặt cầu $(S)$: $(x-1)^2+(y-1)^2+(z-3)^2=4$ nên có bán kính $R=2$.",
+      "Ba điểm $A,M,B$ thuộc mặt cầu nên đường tròn ngoại tiếp tam giác $AMB$ nằm trên mặt cầu, có bán kính $r\\le R=2$.",
+      "Tam giác $AMB$ vuông tại $M$ nên $AB$ là đường kính của đường tròn ngoại tiếp: $AB=2r$.",
+      "$S=\\frac12MA\\cdot MB\\le\\frac14(MA^2+MB^2)=\\frac{AB^2}{4}=r^2\\le4$.",
+      "Dấu bằng xảy ra khi $r=2$ (đường tròn lớn) và $MA=MB$. Vậy diện tích lớn nhất bằng $4$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Chọn ngẫu nhiên 3 giáo viên của trường trong các giáo viên dạy môn Hóa, Sinh, Giáo dục thể chất để thành lập một đoàn công tác sao cho mỗi môn phải có một giáo viên. Biết trường có 6 giáo viên Hóa, 5 giáo viên Sinh, 3 giáo viên Giáo dục thể chất, trong môn Hóa có 3 giáo viên nữ, môn Sinh có 2 giáo viên nữ và môn Giáo dục thể chất có 1 giáo viên nữ.<br>Các mệnh đề sau là đúng hay sai?",
+     "s": [
+      "Số cách chọn 3 giáo viên tham gia đoàn công tác là $A_{11}^{3}$ cách.",
+      "Xác suất để đoàn công tác có đúng một giáo viên nữ là $\\frac{13}{30}$.",
+      "Xác suất để đoàn công tác có ít nhất một giáo viên nam là $\\frac{13}{15}$.",
+      "Xác suất để đoàn công tác có đúng 1 giáo viên nam và dạy môn giáo dục thể chất là $\\frac{3}{55}$."
+     ],
+     "a": [
+      0,
+      1,
+      0,
+      0
+     ],
+     "warn": "Các số liệu trong đề bị tách khỏi câu chữ khi trích PDF; đã ghép lại theo thứ tự xuất hiện (6, 5, 3 giáo viên; 3, 2, 1 giáo viên nữ). Kết quả $\\frac{13}{30}$ ở ý 2 khớp với cách ghép này.",
+     "solved": true,
+     "sol": [
+      "Ý 1 sai: mỗi môn chọn 1 giáo viên nên số cách $=6\\cdot5\\cdot3=90$, không phải $A_{11}^3$.",
+      "Ý 2 đúng: đúng một nữ: nữ Hóa $3\\cdot3\\cdot2=18$, nữ Sinh $3\\cdot2\\cdot2=12$, nữ GDTC $3\\cdot3\\cdot1=9$. Tổng $39$ cách, xác suất $\\frac{39}{90}=\\frac{13}{30}$.",
+      "Ý 3 sai: xác suất cả 3 người đều nữ là $\\frac{3\\cdot2\\cdot1}{90}=\\frac{1}{15}$ nên xác suất có ít nhất một nam là $1-\\frac1{15}=\\frac{14}{15}\\neq\\frac{13}{15}$.",
+      "Ý 4 sai: đúng 1 nam và là giáo viên GDTC: $3\\cdot2\\cdot2=12$ cách, xác suất $\\frac{12}{90}=\\frac{2}{15}\\neq\\frac{3}{55}$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Cho hàm số $y=\\frac{x^2+bx+c}{x+n}$ có đồ thị và hai đường tiệm cận $d_1,d_2$ như hình vẽ dưới đây.<br>Mỗi phát biểu dưới đây là đúng hay sai?",
+     "s": [
+      "Đồ thị hàm số có tiệm cận đứng là $x=-1$.",
+      "Hàm số đồng biến trên khoảng $(0;+\\infty)$.",
+      "Điểm $M(50;98)$ và hai điểm cực trị của đồ thị hàm số thẳng hàng.",
+      "Đồ thị hàm số có một trục đối xứng là đường thẳng $y=(p+\\sqrt q)(x+1)-r$ (trong đó $p$, $q$, $r$ là các số nguyên). Khi đó $p+10q+15r=90$."
+     ],
+     "a": [
+      1,
+      1,
+      0,
+      0
+     ],
+     "graph": {
+      "fn": [
+       "(x^2+x+1)/(x+1)",
+       "x"
+      ],
+      "x": [
+       -5,
+       4
+      ],
+      "y": [
+       -6,
+       6
+      ],
+      "xstep": 1,
+      "ystep": 1,
+      "lines": [
+       [
+        -1,
+        -6,
+        -1,
+        6
+       ]
+      ],
+      "pts": [
+       {
+        "x": -2,
+        "y": -3,
+        "t": "(-2;-3)"
+       },
+       {
+        "x": 0,
+        "y": 1,
+        "t": "(0;1)"
+       }
+      ]
+     },
+     "solved": true,
+     "sol": [
+      "Từ hình: tiệm cận đứng $x=-1\\Rightarrow n=1$; tiệm cận xiên $y=x$; đồ thị đi qua $(0;1)$ và có cực trị tại $(-2;-3)$.",
+      "Viết $y=x+(b-1)+\\frac{c-b+1}{x+1}$. Tiệm cận xiên $y=x$ nên $b=1$; $y(0)=c=1$. Vậy $y=\\frac{x^2+x+1}{x+1}=x+\\frac{1}{x+1}$ (kiểm tra: $y(-2)=-3$ đúng).",
+      "Ý 1 đúng: tiệm cận đứng $x=-1$.",
+      "Ý 2 đúng: $y'=1-\\frac{1}{(x+1)^2}=\\frac{x(x+2)}{(x+1)^2}>0$ với $x>0$ nên hàm số đồng biến trên $(0;+\\infty)$.",
+      "Ý 3 sai: hai điểm cực trị là $(0;1)$ và $(-2;-3)$, đường thẳng qua hai điểm đó là $y=2x+1$. Với $x=50$ thì $y=101\\neq98$ nên $M(50;98)$ không thẳng hàng với hai điểm cực trị.",
+      "Ý 4 sai: đặt $u=x+1$, $v=y+1$ thì $v=u+\\frac1u$, tâm đối xứng $I(-1;-1)$, hai tiệm cận $v=u$ (góc $45^\\circ$) và $u=0$ (góc $90^\\circ$). Các trục đối xứng là hai phân giác góc tạo bởi hai tiệm cận, có hệ số góc $\\tan67,5^\\circ=1+\\sqrt2$ và $\\tan157,5^\\circ=1-\\sqrt2$.",
+      "Trục đối xứng có dạng $y=(p+\\sqrt q)(x+1)-r$: $y=(1+\\sqrt2)(x+1)-1$, tức $p=1$, $q=2$, $r=1$. Khi đó $p+10q+15r=1+20+15=36\\neq90$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Một quân vua được đặt trên một ô giữa bàn cờ vua. Mỗi bước di chuyển, quân vua được chuyển sang một ô khác chung cạnh hoặc chung đỉnh với ô đang đứng (xem hình minh họa). Di chuyển quân vua ngẫu nhiên 3 bước. Xác suất để sau 3 bước đi quân vua trở về ô xuất phát là [[0]].",
+     "a": [
+      0.046875
+     ],
+     "e": 0.0005,
+     "note": "Nhập số thập phân: 3/64 = 0,046875 (có thể làm tròn 4 chữ số thập phân: 0,0469).",
+     "solved": true,
+     "sol": [
+      "Từ ô giữa bàn cờ, mỗi bước quân vua có $8$ cách đi nên 3 bước có $8^3=512$ cách (quân vua không chạm biên trong 3 bước).",
+      "Mỗi bước là một vectơ $(dx;dy)$ với $dx,dy\\in\\{-1;0;1\\}$ và $(dx;dy)\\neq(0;0)$. Cần đếm các bộ 3 vectơ có tổng bằng $(0;0)$.",
+      "Gọi các bước là $\\vec v_1,\\vec v_2,\\vec v_3$. Đếm theo số bước đứng yên theo từng trục: hệ số tự do của $\\big[(1+x+x^{-1})(1+y+y^{-1})-1\\big]^3$ bằng $7\\cdot7-3\\cdot3\\cdot3+3\\cdot1\\cdot1-1=49-27+3-1=24$.",
+      "Vậy có $24$ cách đi để trở về ô xuất phát. Xác suất $=\\frac{24}{512}=\\frac{3}{64}=0,046875$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Số nghiệm của phương trình $\\log_3(x-1)^2+\\log_{\\sqrt3}(2x-1)=2$ là",
+     "o": [
+      "$2$.",
+      "$1$.",
+      "$4$.",
+      "$3$."
+     ],
+     "a": 1,
+     "solved": true,
+     "sol": [
+      "Điều kiện: $x\\neq1$ và $x>\\frac12$.",
+      "$\\log_3(x-1)^2=2\\log_3|x-1|$ và $\\log_{\\sqrt3}(2x-1)=2\\log_3(2x-1)$.",
+      "Phương trình trở thành $2\\log_3\\big[|x-1|(2x-1)\\big]=2\\Leftrightarrow|x-1|(2x-1)=3$.",
+      "Với $x>1$: $(x-1)(2x-1)=3\\Leftrightarrow2x^2-3x-2=0\\Leftrightarrow x=2$ (nhận) hoặc $x=-\\frac12$ (loại).",
+      "Với $\\frac12<x<1$: $(1-x)(2x-1)=3\\Leftrightarrow2x^2-3x+4=0$, vô nghiệm ($\\Delta=-23<0$).",
+      "Vậy phương trình có $1$ nghiệm."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho hàm số $y=f(x)$ có bảng biến thiên như sau. Tổng số đường tiệm cận đứng và tiệm cận ngang của đồ thị hàm số đã cho bằng",
+     "o": [
+      "$3$.",
+      "$2$.",
+      "$1$.",
+      "$0$."
+     ],
+     "a": 0,
+     "svg": "<svg viewBox='0 0 360 140' xmlns='http://www.w3.org/2000/svg' font-size='13' fill='currentColor'><g fill='none' stroke='currentColor'><rect x='5' y='5' width='350' height='130'/><line x1='5' y1='35' x2='355' y2='35'/><line x1='5' y1='65' x2='355' y2='65'/><line x1='45' y1='5' x2='45' y2='135'/><line x1='138' y1='5' x2='138' y2='135'/><line x1='142' y1='5' x2='142' y2='135'/><line x1='238' y1='5' x2='238' y2='135'/><line x1='242' y1='5' x2='242' y2='135'/></g><text x='20' y='25'>x</text><text x='50' y='25'>−∞</text><text x='120' y='25'>−2</text><text x='226' y='25'>0</text><text x='320' y='25'>+∞</text><text x='20' y='55'>y'</text><text x='90' y='55'>−</text><text x='190' y='55'>+</text><text x='290' y='55'>−</text><text x='20' y='100'>y</text><text x='50' y='85'>+∞</text><text x='90' y='108'>↘</text><text x='125' y='128'>1</text><text x='148' y='128'>−∞</text><text x='190' y='108'>↗</text><text x='215' y='85'>+∞</text><text x='248' y='85'>1</text><text x='290' y='108'>↘</text><text x='320' y='128'>0</text></svg>",
+     "solved": true,
+     "sol": [
+      "Tiệm cận ngang: $\\lim_{x\\to+\\infty}y=0$ nên $y=0$ là tiệm cận ngang; $\\lim_{x\\to-\\infty}y=+\\infty$ nên không có tiệm cận ngang ở phía $-\\infty$. Có $1$ tiệm cận ngang.",
+      "Tiệm cận đứng: $\\lim_{x\\to-2^+}y=-\\infty$ nên $x=-2$ là tiệm cận đứng; $\\lim_{x\\to0^-}y=+\\infty$ nên $x=0$ là tiệm cận đứng. Có $2$ tiệm cận đứng.",
+      "Tổng số đường tiệm cận là $1+2=3$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Trong dịp hội trại của trường, lớp An cùng nhau làm đèn trang trí hình chóp tứ giác đều từ các miếng bìa hình vuông $ABCD$ có cạnh bằng $5\\ cm$ (tham khảo hình vẽ). Cắt miếng bìa theo các tam giác cân $AEB$, $BFC$, $CGD$, $DHA$ và sau đó dán mép các cạnh của các tam giác $AEH$, $BEF$, $CFG$, $DGH$ sao cho bốn đỉnh $A$, $B$, $C$, $D$ trùng nhau tạo thành khối chóp tứ giác đều (các mép dán không đáng kể).",
+     "s": [
+      "Thể tích lớn nhất của khối chóp tứ giác đều tạo thành đạt được khi cạnh bên của khối chóp bằng $\\sqrt6$.",
+      "Thể tích lớn nhất của khối chóp tứ giác đều tạo thành bằng $\\frac{4\\sqrt{10}}{3}\\ cm^3$.",
+      "Sau khi tạo thành khối chóp tứ giác đều, mỗi miếng bìa bỏ đi tối thiểu $10\\ cm^2$ giấy thừa."
+     ],
+     "a": [
+      0,
+      1,
+      0
+     ],
+     "svg": "<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg' font-size='12' fill='currentColor'><g fill='none' stroke='currentColor'><rect x='20' y='20' width='160' height='160'/><polyline points='20,20 60,100 20,180'/><polyline points='20,180 100,140 180,180'/><polyline points='180,180 140,100 180,20'/><polyline points='180,20 100,60 20,20'/><polygon points='60,100 100,140 140,100 100,60'/></g><text x='8' y='18'>A</text><text x='182' y='18'>D</text><text x='8' y='194'>B</text><text x='182' y='194'>C</text><text x='42' y='104'>E</text><text x='96' y='156'>F</text><text x='144' y='104'>G</text><text x='96' y='54'>H</text></svg>",
+     "solved": true,
+     "sol": [
+      "Gọi $O$ là tâm hình vuông $ABCD$, đặt $OE=x$ với $0<x<\\frac52$. Do tính đối xứng, $EFGH$ là hình vuông có đường chéo $2x$, diện tích đáy $S_{đ}=\\frac{(2x)^2}{2}=2x^2$.",
+      "Cạnh bên của chóp là $AE$: với hệ tọa độ tâm $O$, $A\\left(-\\frac52;\\frac52\\right)$, $E(-x;0)$ nên $AE^2=\\left(\\frac52-x\\right)^2+\\frac{25}{4}$.",
+      "Khoảng cách từ tâm đáy đến đỉnh đáy là $x$ nên chiều cao $h^2=AE^2-x^2=\\frac{25}{2}-5x$.",
+      "Thể tích $V=\\frac13\\cdot2x^2\\sqrt{\\frac{25}{2}-5x}$. Xét $f(x)=x^4\\left(\\frac{25}{2}-5x\\right)$: $f'(x)=50x^3-25x^4=25x^3(2-x)$ nên $f$ đạt lớn nhất tại $x=2$.",
+      "Khi $x=2$: $V_{\\max}=\\frac13\\cdot8\\cdot\\sqrt{\\frac52}=\\frac83\\cdot\\frac{\\sqrt{10}}{2}=\\frac{4\\sqrt{10}}{3}\\ cm^3$. Ý 2 đúng.",
+      "Ý 1 sai: khi đó $AE^2=\\frac14+\\frac{25}{4}=\\frac{13}{2}$, $AE=\\frac{\\sqrt{26}}{2}\\neq\\sqrt6$.",
+      "Ý 3 sai: phần bỏ đi gồm 4 tam giác $AEB,\\dots$ có diện tích $4\\cdot\\frac12\\cdot5\\cdot\\left(\\frac52-x\\right)=25-10x$. Khi thể tích lớn nhất ($x=2$) lượng giấy thừa là $5\\ cm^2<10\\ cm^2$; với $x>1,5$ thì giấy thừa nhỏ hơn $10\\ cm^2$ nên không thể nói 'tối thiểu $10\\ cm^2$'."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Nghiệm phương trình $\\cot\\left(\\frac{\\pi}{4}-x\\right)=\\frac{1}{\\sqrt3}$",
+     "o": [
+      "$x=\\frac{\\pi}{12}+k\\pi$",
+      "$x=-\\frac{\\pi}{12}+k\\pi$",
+      "$x=-\\frac{\\pi}{6}-k\\pi$",
+      "$x=\\frac{\\pi}{6}-k\\pi$"
+     ],
+     "a": 1,
+     "solved": true,
+     "sol": [
+      "$\\cot\\frac{\\pi}{3}=\\frac{1}{\\sqrt3}$ nên phương trình tương đương $\\frac{\\pi}{4}-x=\\frac{\\pi}{3}+k\\pi$.",
+      "$x=\\frac{\\pi}{4}-\\frac{\\pi}{3}-k\\pi=-\\frac{\\pi}{12}-k\\pi$. Vì $k\\in\\mathbb Z$ nên viết lại $x=-\\frac{\\pi}{12}+k\\pi$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Gieo ngẫu nhiên một xúc xắc ba lần liên tiếp và kết quả thu được là một bộ số $(x;y;z)$ với $x,y,z$ lần lượt là số chấm của xúc xắc trong mỗi lần gieo. Xác suất để tổng số chấm $x+y+z$ luôn nhỏ hơn $16$ là",
+     "o": [
+      "$\\frac{17}{18}$.",
+      "$\\frac{197}{216}$.",
+      "$\\frac{209}{216}$.",
+      "$\\frac{103}{108}$."
+     ],
+     "a": 3,
+     "solved": true,
+     "sol": [
+      "Không gian mẫu có $6^3=216$ phần tử.",
+      "Xét biến cố đối: $x+y+z\\ge16$. Tổng $18$: $(6,6,6)$ có $1$ bộ. Tổng $17$: $(6,6,5)$ và hoán vị có $3$ bộ. Tổng $16$: $(6,6,4)$ có $3$ bộ và $(6,5,5)$ có $3$ bộ, tức $6$ bộ.",
+      "Số bộ của biến cố đối: $1+3+6=10$. Xác suất cần tìm $=1-\\frac{10}{216}=\\frac{206}{216}=\\frac{103}{108}$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho $10$ điểm phân biệt $A_1,A_2,\\dots,A_{10}$ trong đó có $4$ điểm $A_1,A_2,A_3,A_4$ thẳng hàng, ngoài ra không có $3$ điểm nào thẳng hàng. Hỏi có bao nhiêu tam giác có $3$ đỉnh được lấy trong $10$ điểm trên?",
+     "o": [
+      "$96$ tam giác.",
+      "$60$ tam giác.",
+      "$116$ tam giác.",
+      "$80$ tam giác."
+     ],
+     "a": 2,
+     "solved": true,
+     "sol": [
+      "Số cách chọn 3 điểm bất kỳ trong 10 điểm: $C_{10}^3=120$.",
+      "Các bộ 3 điểm chọn từ 4 điểm thẳng hàng không tạo thành tam giác: $C_4^3=4$.",
+      "Số tam giác $=120-4=116$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Thể tích khối tròn xoay khi quay hình phẳng $(H)$ giới hạn bởi các đường $y=\\sin x$, $y=0$, $x=0$ và $x=\\pi$ quanh trục $Ox$ là [[0]]. (Kết quả làm tròn đến chữ số thập phân thứ hai).",
+     "a": [
+      4.93
+     ],
+     "e": 0.006,
+     "solved": true,
+     "sol": [
+      "$V=\\pi\\int_0^\\pi\\sin^2x\\,dx=\\pi\\int_0^\\pi\\frac{1-\\cos2x}{2}dx$.",
+      "$=\\pi\\left[\\frac x2-\\frac{\\sin2x}{4}\\right]_0^\\pi=\\pi\\cdot\\frac\\pi2=\\frac{\\pi^2}{2}\\approx4,93$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Người ta cần xây một hố ga chứa nước thải dạng hình hộp chữ nhật có các kích thước như hình vẽ (chiều cao $1,5\\ m$, chiều rộng $x$, chiều dài $2x$). Khối lượng xi măng để trát mỗi mét vuông tường là $12,8\\ kg$ và mặt đáy và mặt trên của hố ga dày $20\\ cm$ và thành hố ga dày $10\\ cm$ (sau khi trát xi măng). Biết tổng diện tích bốn mặt xung quanh (mặt ngoài) của hố ga sau khi trát xi măng là $18\\ m^2$. Coi như hố ga là kín và độ dày của xi măng trên mỗi mặt tường không quá $1,5\\ cm$.<br>Mỗi phát biểu sau đây là đúng hay sai?",
+     "s": [
+      "Dung tích của hố ga là $12\\ m^3$.",
+      "Nếu mỗi bao xi măng nặng $50\\ kg$ thì cần tối thiểu $18$ bao xi măng để trát kín các mặt của hố ga."
+     ],
+     "a": [
+      0,
+      0
+     ],
+     "solved": true,
+     "sol": [
+      "Diện tích bốn mặt xung quanh (mặt ngoài) $=2(2x+x)\\cdot1,5=9x=18\\Rightarrow x=2$. Vậy kích thước ngoài của hố ga là $4\\ m\\times2\\ m\\times1,5\\ m$.",
+      "Kích thước phần chứa nước (trừ độ dày): dài $4-2\\cdot0,1=3,8\\ m$, rộng $2-2\\cdot0,1=1,8\\ m$, cao $1,5-2\\cdot0,2=1,1\\ m$.",
+      "Ý 1 sai: dung tích $=3,8\\cdot1,8\\cdot1,1=7,524\\ m^3\\neq12\\ m^3$ (số $12\\ m^3$ là thể tích khối hộp ngoài $4\\cdot2\\cdot1,5$).",
+      "Ý 2 sai: diện tích cần trát gồm mặt ngoài và mặt trong. Mặt ngoài: $2\\cdot(4\\cdot2)+18=34\\ m^2$. Mặt trong: $2\\cdot(3,8\\cdot1,8)+2(3,8+1,8)\\cdot1,1=13,68+12,32=26\\ m^2$. Tổng $60\\ m^2$.",
+      "Khối lượng xi măng $=60\\cdot12,8=768\\ kg$, số bao $=\\frac{768}{50}=15,36$, tức cần tối thiểu $16$ bao, không phải $18$ bao."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Tập xác định của hàm số $y=\\frac{\\log_2\\sqrt{2x-1}}{x}$ là",
+     "o": [
+      "$\\left[\\frac12;+\\infty\\right)$.",
+      "$(0;+\\infty)$.",
+      "$(-\\infty;0)$.",
+      "$\\left(\\frac12;+\\infty\\right)$."
+     ],
+     "a": 3,
+     "warn": "Biểu thức hàm số bị mất cấu trúc phân thức khi trích PDF; đã khôi phục thành $\\frac{\\log_2\\sqrt{2x-1}}{x}$ (khớp với các phương án). Cần đối chiếu đề gốc.",
+     "solved": true,
+     "sol": [
+      "Điều kiện để $\\sqrt{2x-1}$ có nghĩa và logarit xác định: $\\sqrt{2x-1}>0\\Leftrightarrow2x-1>0\\Leftrightarrow x>\\frac12$.",
+      "Mẫu số $x\\neq0$ luôn thỏa với $x>\\frac12$.",
+      "Vậy tập xác định là $\\left(\\frac12;+\\infty\\right)$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho phương trình $\\sin2x+m\\tan x=m+1$. Tổng các giá trị $m$ để phương trình có 4 điểm biểu diễn trên đường tròn lượng giác là",
+     "o": [
+      "$-\\frac32$",
+      "$-1$",
+      "$0$",
+      "$2$"
+     ],
+     "a": 1,
+     "solved": true,
+     "sol": [
+      "Điều kiện $\\cos x\\neq0$. Đặt $t=\\tan x$, khi đó $\\sin2x=\\frac{2t}{1+t^2}$. Phương trình trở thành $\\frac{2t}{1+t^2}+mt=m+1$.",
+      "Nhân hai vế với $1+t^2$ và rút gọn: $mt^3-(m+1)t^2+(m+2)t-(m+1)=0$, phân tích được $(t-1)(mt^2-t+m+1)=0$.",
+      "$t=1$ cho $x=\\frac\\pi4+k\\pi$, ứng với 2 điểm trên đường tròn lượng giác. Mỗi giá trị $t$ khác cho thêm 2 điểm. Để có đúng 4 điểm thì phương trình $mt^2-t+m+1=0$ phải có đúng một nghiệm $t\\neq1$.",
+      "Nếu $m=0$: phương trình thành $-t+1=0\\Rightarrow t=1$, chỉ có 2 điểm (loại).",
+      "Nếu $m\\neq0$: $t=1$ là nghiệm của bậc hai chỉ khi $2m=0$ (loại). Do đó cần bậc hai có nghiệm kép: $\\Delta=1-4m(m+1)=0\\Leftrightarrow4m^2+4m-1=0\\Leftrightarrow m=\\frac{-1\\pm\\sqrt2}{2}$. Khi đó nghiệm kép $t=\\frac{1}{2m}\\neq1$. Nếu $\\Delta>0$ thì có 3 giá trị $t$ (6 điểm), nếu $\\Delta<0$ thì chỉ có 2 điểm.",
+      "Tổng các giá trị $m$ theo Vi-ét: $-\\frac44\\cdot... =-1$. Đáp án $-1$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Tập xác định của hàm số $y=\\log_9(x-3)$ là",
+     "o": [
+      "$(-\\infty;3)$.",
+      "$(3;+\\infty)$.",
+      "$[3;+\\infty)$.",
+      "$(-\\infty;+\\infty)$."
+     ],
+     "a": 1,
+     "solved": true,
+     "sol": [
+      "Hàm số xác định khi $x-3>0\\Leftrightarrow x>3$.",
+      "Tập xác định là $(3;+\\infty)$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Điền một số nguyên dương thích hợp vào chỗ trống. Cho bảng số liệu ghép nhóm sau:<br><table><tr><th>Nhóm</th><td>$[10;14)$</td><td>$[14;18)$</td><td>$[18;22)$</td><td>$[22;26)$</td><td>$[26;30]$</td></tr><tr><th>Tần số</th><td>7</td><td>14</td><td>13</td><td>12</td><td>$n$</td></tr></table>với $n$ là số nguyên dương. Biết rằng mẫu số liệu ghép nhóm có số trung bình là 19,36. Cỡ mẫu của mẫu số liệu ghép nhóm trên là [[0]].",
+     "a": [
+      50
+     ],
+     "warn": "Bảng trích PDF chỉ có 4 tần số và ký hiệu $n$ bị lệch; đã hiểu tần số của nhóm cuối là $n$ (kết quả $n=4$ là số nguyên dương, khớp với trung bình 19,36).",
+     "solved": true,
+     "sol": [
+      "Giá trị đại diện các nhóm: $12;16;20;24;28$.",
+      "Số trung bình $\\bar x=\\frac{7\\cdot12+14\\cdot16+13\\cdot20+12\\cdot24+28n}{7+14+13+12+n}=\\frac{856+28n}{46+n}$.",
+      "$\\frac{856+28n}{46+n}=19,36\\Rightarrow856+28n=890,56+19,36n\\Rightarrow8,64n=34,56\\Rightarrow n=4$.",
+      "Cỡ mẫu $=46+n=50$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Trong không gian $Oxyz$, cho mặt phẳng $(\\alpha): 2x-y-3=0$. Một vectơ pháp tuyến của mặt phẳng $(\\alpha)$ là",
+     "o": [
+      "$\\vec n(2;-1;0)$.",
+      "$\\vec n(2;-1;-3)$.",
+      "$\\vec n(2;0;-3)$.",
+      "$\\vec n(2;0;-1)$."
+     ],
+     "a": 0,
+     "solved": true,
+     "sol": [
+      "Mặt phẳng $Ax+By+Cz+D=0$ có một vectơ pháp tuyến $(A;B;C)$.",
+      "Với $(\\alpha): 2x-y+0z-3=0$ ta có $\\vec n=(2;-1;0)$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Nếu một số nguyên dương $n$ khi phân tích ra thừa số nguyên tố có dạng $n=p_1^{k_1}\\cdot p_2^{k_2}\\cdots p_m^{k_m}$ ($k_i\\neq0,\\forall i:1\\le i\\le m$) với $p_1,p_2,\\dots,p_m$ là các số nguyên tố đôi một khác nhau thì số các ước nguyên dương của nó được tính theo công thức $d(n)=(k_1+1)(k_2+1)\\cdots(k_m+1)$. Số các ước nguyên dương của $n=2024$ bằng",
+     "o": [
+      "16.",
+      "15.",
+      "12.",
+      "13."
+     ],
+     "a": 0,
+     "solved": true,
+     "sol": [
+      "Phân tích: $2024=2^3\\cdot11\\cdot23$ (vì $2024:8=253=11\\cdot23$).",
+      "$d(2024)=(3+1)(1+1)(1+1)=16$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Xen giữa số $3$ và số $768$ là $7$ số để được một cấp số nhân có $u_1=3$. Khi đó $u_5$ là",
+     "o": [
+      "$72$.",
+      "$-48$.",
+      "$\\pm48$.",
+      "$48$."
+     ],
+     "a": 3,
+     "solved": true,
+     "sol": [
+      "Xen 7 số giữa 3 và 768 thì cấp số nhân có 9 số hạng: $u_1=3$, $u_9=768$.",
+      "$u_9=u_1q^8\\Rightarrow q^8=256\\Rightarrow q=\\pm2$.",
+      "$u_5=u_1q^4=3\\cdot16=48$ (cả hai giá trị của $q$ đều cho $q^4=16$)."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho số thực dương $x$ bất kỳ và số thực dương $y\\neq1$ thỏa mãn $x^{\\ln y-1}\\cdot y^{\\sqrt{4-\\ln^2x}}=1$. Gọi $M,m$ lần lượt là giá trị lớn nhất và giá trị nhỏ nhất của $\\log_yx$. Giá trị $M\\cdot m$ bằng",
+     "o": [
+      "$4\\sqrt2$.",
+      "$-4\\sqrt2$.",
+      "$4$.",
+      "$2\\sqrt2$."
+     ],
+     "a": 1,
+     "warn": "Biểu thức điều kiện bị mất cấu trúc mũ khi trích PDF; đã khôi phục thành $x^{\\ln y-1}\\cdot y^{\\sqrt{4-\\ln^2x}}=1$ (cho kết quả khớp một phương án). Cần đối chiếu đề gốc.",
+     "solved": true,
+     "sol": [
+      "Đặt $a=\\ln x$, $b=\\ln y\\neq0$. Điều kiện căn: $-2\\le a\\le2$.",
+      "Lấy $\\ln$ hai vế: $(b-1)a+b\\sqrt{4-a^2}=0\\Leftrightarrow b\\left(a+\\sqrt{4-a^2}\\right)=a$.",
+      "Nếu $a=0$ thì $2b=0\\Rightarrow b=0$ (loại vì $y\\neq1$), nên $a\\neq0$; khi đó $a+\\sqrt{4-a^2}\\neq0$ và $b=\\frac{a}{a+\\sqrt{4-a^2}}$.",
+      "$\\log_yx=\\frac ab=a+\\sqrt{4-a^2}=:P$ với $a\\in[-2;2]$.",
+      "Theo Bunyakovsky: $P\\le\\sqrt{(1+1)(a^2+4-a^2)}=2\\sqrt2$, dấu bằng khi $a=\\sqrt2$ (khi đó $b=\\frac12$, hợp lệ). Vậy $M=2\\sqrt2$.",
+      "Với $a\\in[-2;0)$: $P\\ge a\\ge-2$, dấu bằng tại $a=-2$ ($b=1$, $y=e$, $x=e^{-2}$, thỏa phương trình). Với $a>0$ thì $P>0$. Vậy $m=-2$.",
+      "$M\\cdot m=2\\sqrt2\\cdot(-2)=-4\\sqrt2$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Điền một số nguyên dương thích hợp vào chỗ trống.<br>Nếu một số nguyên dương $n$ khi phân tích ra thừa số nguyên tố có dạng $n=p_1^{k_1}\\cdot p_2^{k_2}\\cdots p_m^{k_m}$ ($k_i\\neq0,\\forall i:1\\le i\\le m$) với $p_1,p_2,\\dots,p_m$ là các số nguyên tố đôi một khác nhau thì tổng các ước nguyên dương của nó được tính theo công thức $\\sigma(n)=\\frac{p_1^{k_1+1}-1}{p_1-1}\\cdot\\frac{p_2^{k_2+1}-1}{p_2-1}\\cdots\\frac{p_m^{k_m+1}-1}{p_m-1}$.<br>Tổng các ước nguyên dương của số $n=75400$ bằng [[0]].",
+     "a": [
+      195300
+     ],
+     "solved": true,
+     "sol": [
+      "Phân tích: $75400=754\\cdot100=2\\cdot13\\cdot29\\cdot2^2\\cdot5^2=2^3\\cdot5^2\\cdot13\\cdot29$.",
+      "$\\sigma(n)=\\frac{2^4-1}{2-1}\\cdot\\frac{5^3-1}{5-1}\\cdot\\frac{13^2-1}{13-1}\\cdot\\frac{29^2-1}{29-1}$.",
+      "$=15\\cdot31\\cdot14\\cdot30$.",
+      "$15\\cdot31=465$; $465\\cdot14=6510$; $6510\\cdot30=195300$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Trong không gian $Oxyz$, cho tam giác $ABC$ có $A(2;-3;1)$, $B(1;3;-4)$ và $C(3;-3;6)$. Trọng tâm của tam giác $ABC$ có tọa độ là",
+     "o": [
+      "$(2;-1;1)$",
+      "$(-6;3;-3)$",
+      "$(6;-3;3)$",
+      "$(-2;1;-1)$"
+     ],
+     "a": 0,
+     "solved": true,
+     "sol": [
+      "Tọa độ trọng tâm $G$: $x_G=\\frac{2+1+3}{3}=2$.",
+      "$y_G=\\frac{-3+3-3}{3}=-1$.",
+      "$z_G=\\frac{1-4+6}{3}=1$. Vậy $G(2;-1;1)$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho các số $a,b,c>0$ và $a,b,c\\neq1$. Đồ thị của các hàm số $y=\\log_ax$, $y=\\log_bx$ và $y=\\log_cx$ đường cho bởi hình vẽ. Mệnh đề nào dưới đây đúng?",
+     "o": [
+      "$c<b<a$.",
+      "$b<a<c$.",
+      "$c<a<b$.",
+      "$a<b<c$."
+     ],
+     "a": 2,
+     "graph": {
+      "fn": [
+       "ln(x)/ln(2)",
+       "ln(x)/ln(5)",
+       "-ln(x)/ln(3)"
+      ],
+      "x": [
+       0,
+       6
+      ],
+      "y": [
+       -3,
+       3
+      ],
+      "xstep": 1,
+      "ystep": 1,
+      "pts": [
+       {
+        "x": 1,
+        "y": 0,
+        "t": "1"
+       }
+      ]
+     },
+     "solved": true,
+     "sol": [
+      "Đồ thị $y=\\log_cx$ đi xuống nên hàm nghịch biến, suy ra $0<c<1$. Hai đồ thị $y=\\log_ax$ và $y=\\log_bx$ đi lên nên $a>1$, $b>1$. Do đó $c$ nhỏ nhất.",
+      "So sánh $a,b$: tại $x>1$ (ví dụ vẽ đường thẳng $x=x_0>1$), đồ thị $y=\\log_ax$ nằm trên đồ thị $y=\\log_bx$, tức $\\log_ax_0>\\log_bx_0>0$.",
+      "Ta có $\\log_ax_0=\\frac{\\ln x_0}{\\ln a}>\\frac{\\ln x_0}{\\ln b}$ với $\\ln x_0>0$ nên $\\ln a<\\ln b\\Rightarrow a<b$.",
+      "Vậy $c<a<b$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho hình lăng trụ đứng $ABC.A'B'C'$ có các cạnh bên bằng $a\\sqrt2$ và đáy $ABC$ là tam giác vuông tại $A$, $AB=a$, $AC=a\\sqrt3$. Ký hiệu $\\varphi$ là góc tạo bởi hai mặt phẳng $(A'BC)$ và $(BCC'B')$. Khẳng định nào sau đây là đúng?",
+     "o": [
+      "$\\tan\\varphi=\\frac{\\sqrt3}{6}$.",
+      "$\\tan\\varphi=\\frac{\\sqrt6}{4}$.",
+      "$\\tan\\varphi=\\frac{\\sqrt3}{4}$.",
+      "$\\tan\\varphi=\\frac{2\\sqrt6}{3}$."
+     ],
+     "a": 1,
+     "solved": true,
+     "sol": [
+      "Tam giác $ABC$ vuông tại $A$: $BC=\\sqrt{a^2+3a^2}=2a$.",
+      "Kẻ $AH\\perp BC$ tại $H$: $AH=\\frac{AB\\cdot AC}{BC}=\\frac{a\\cdot a\\sqrt3}{2a}=\\frac{a\\sqrt3}{2}$. Gọi $H'$ là hình chiếu của $A'$ trên $B'C'$, khi đó $HH'\\parallel AA'$ và $HH'=a\\sqrt2$, $A'H'=AH=\\frac{a\\sqrt3}{2}$.",
+      "Vì $BC\\perp AH$ và $BC\\perp AA'$ nên $BC\\perp(AHH'A')$, suy ra $BC\\perp A'H$ và $BC\\perp HH'$. Hai mặt phẳng $(A'BC)$ và $(BCC'B')$ cắt nhau theo giao tuyến $BC$, có $A'H\\perp BC$ trong $(A'BC)$ và $HH'\\perp BC$ trong $(BCC'B')$ nên $\\varphi=\\widehat{A'HH'}$.",
+      "Mặt khác $A'H'\\perp B'C'$ và $A'H'\\perp BB'$ nên $A'H'\\perp(BCC'B')$, suy ra tam giác $A'H'H$ vuông tại $H'$.",
+      "$\\tan\\varphi=\\frac{A'H'}{HH'}=\\frac{\\frac{a\\sqrt3}{2}}{a\\sqrt2}=\\frac{\\sqrt3}{2\\sqrt2}=\\frac{\\sqrt6}{4}$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Điền một số nguyên dương thích hợp vào chỗ trống.<br>Giải bóng đá giao hữu khu vực Đồng bằng sông Hồng dành cho học sinh THPT có 16 đội bóng tham dự, trong đó có bốn đội thuộc Thành phố Hà Nội. Ban tổ chức cho bốc thăm ngẫu nhiên để chia 16 đội thành bốn bảng $A,B,C,D$, mỗi bảng bốn đội. Biết xác suất để bốn đội bóng của Thành phố Hà Nội ở bảng khác nhau là $\\frac{a}{b}$, trong đó $\\frac{a}{b}$ là phân số tối giản với $a,b$ là các số nguyên dương. Khi đó, $a+b=$ [[0]].",
+     "a": [
+      519
+     ],
+     "solved": true,
+     "sol": [
+      "Số cách chia 16 đội vào 4 bảng $A,B,C,D$ (mỗi bảng 4 đội): $|\\Omega|=C_{16}^4C_{12}^4C_8^4C_4^4=\\frac{16!}{(4!)^4}$.",
+      "Số cách để 4 đội Hà Nội ở 4 bảng khác nhau: xếp 4 đội vào 4 bảng có $4!$ cách; 12 đội còn lại chia vào mỗi bảng 3 đội: $C_{12}^3C_9^3C_6^3C_3^3=\\frac{12!}{(3!)^4}$. Vậy $|A|=4!\\cdot\\frac{12!}{(3!)^4}$.",
+      "$P=\\frac{4!\\cdot12!\\cdot(4!)^4}{(3!)^4\\cdot16!}=\\frac{4!\\cdot4^4}{16\\cdot15\\cdot14\\cdot13}=\\frac{6144}{43680}=\\frac{64}{455}$.",
+      "$64$ và $455=5\\cdot7\\cdot13$ nguyên tố cùng nhau nên $a=64$, $b=455$, $a+b=519$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Điền một số nguyên dương thích hợp vào chỗ trống.<br>Trong không gian $Oxyz$, cho hình lăng trụ $ABC.A'B'C'$ có $A(1;4;2)$, $C'(3;1;5)$. Điểm $C$ thuộc trục $Ox$, điểm $A'$ thuộc mặt phẳng $(Oyz)$. Cao độ của điểm $A'$ bằng [[0]].",
+     "a": [
+      7
+     ],
+     "solved": true,
+     "sol": [
+      "Trong lăng trụ, $\\overrightarrow{AA'}=\\overrightarrow{CC'}$.",
+      "Gọi $C(c;0;0)$ (vì $C\\in Ox$) và $A'(0;y;z)$ (vì $A'\\in(Oyz)$).",
+      "$\\overrightarrow{AA'}=(-1;y-4;z-2)$, $\\overrightarrow{CC'}=(3-c;1;5)$.",
+      "Suy ra $-1=3-c\\Rightarrow c=4$; $y-4=1\\Rightarrow y=5$; $z-2=5\\Rightarrow z=7$.",
+      "Vậy $A'(0;5;7)$, cao độ bằng $7$."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Đề Đọc Hiểu Số 04",
+   "minutes": 30,
+   "groups": [
+    {
+     "title": "THƯỢNG ĐẾ THÌ CƯỜI",
+     "p": "<p><i>(Trích)</i></p><p>[1] Năm 1947, trung đội Tự vệ chiến đấu của hắn đóng quân ở làng An Tảo bám dọc con đường 39 nối với đường 5, một buổi chiều, hắn từ ngoài mặt đường chạy như thằng rồ về xóm, chả có chuyện quan trọng gì để phải chạy cả, tự nhiên thấy vui thì chạy, vừa chạy vừa nhảy. [...] Hắn có một tuổi thơ nhạt và buồn, sau này đi kháng chiến được nhìn thấy núi cao sông rộng, được đi nhiều nơi, tiếp xúc với nhiều người, đôi lúc ngoái nhìn lại về cái thời vừa mới trôi qua mà đã xa xôi thăm thẳm, chả có một khoảng sáng nào để mình phải nhớ, phải tiếc, chỉ có mỗi mầu xám nhờ lặng lẽ, bất động như một ngôi nhà hoang lâu ngày không có người ở. Năm Tổng khởi nghĩa là năm Hà Nội vui nhất, nhìn vào đâu cũng thấy cờ và hoa và rất nhiều báo, báo hàng ngày và hàng tuần. Cả thành phố như chợt thức giấc, ồ ạt lao vào những công việc mới mẻ trong một niềm vui mênh mang. Ấy là hắn vẫn chưa được nhập cuộc, vẫn là kẻ đứng ngoài vì tuổi còn quá nhỏ, một lũ trẻ con lộc ngộc đã bỏ học từ ngày Nhật đảo chính Pháp, kéo nhau đi chơi từ sáng đến đêm, nói với nhau bao nhiêu là chuyện trên trời dưới đất, rồi mơ mộng, rồi hy vọng. Cuối năm 1949, hắn được tỉnh đội Hưng Yên cử về Mặt trận 5 để làm số báo đặc biệt cho Hội nghị Rèn Cán Chỉnh Quân của năm tỉnh tả ngạn sông Hồng, cũng là những ngày hết sức vui. Đang là một anh viết báo litô của bộ đội địa phương được bước vào quân doanh của bộ đội chủ lực cũng để làm báo niềm vui lớn ấy khiến hắn muốn nghẹt thở. [...]</p><p>[2] Suốt mười lăm năm ở Hà Nội hắn chưa được mẹ dắt đến một hiệu ăn nào cả, chỉ biết mùi vị các món xào nấu ở các bữa giỗ và mấy ngày Tết, còn chỉ là những bữa cơm xoàng xĩnh ngày thường. Nhưng được ăn no, ngay như năm đói anh em hắn vẫn được ăn đầy đủ, nhưng cơm xới thì phải quy định, có bữa ăn hai bát, có bữa ăn một bát đầy, vì là ăn theo gạo sổ, mỗi bữa vẫn dành ra mấy lẻ gạo phòng khi Hà Nội không còn gạo. Không còn gạo thì ăn cỏ, một tờ báo đã bày cách chế biến cỏ cho người ăn. Nhưng cỏ thì mua ở đâu, nếu ăn cỏ cũng sống được thì làm sao lại có cả ngàn người, cả vạn người ở các vùng quê là nơi có rất lắm cỏ, lũ lượt kéo về Hà Nội để nằm chết ở các vỉa hè, các gốc cây, các góc phố, các gậm cầu. Hắn sẽ còn nhớ mãi vài hình ảnh ghê rợn của cái năm đói. Vào khoảng cuối tháng 4 của năm 1945, hắn và mấy thằng bạn rủ nhau đi học lớp vỡ lòng tiếng Nhật vì người Nhật đã thay Pháp cai trị xứ này. Lớp học buổi chiều mở ở một trường tiểu học phố Hàng Cót. Trong vuông sân của trường đã có mấy trăm người ngồi từng nhóm như để đợi phát chẩn hay đợi đưa đi đâu đó. Có một anh thanh niên khoảng ngoài đôi mươi, mặt mũi đẹp đẽ, da thịt còn tươi, như người ở tỉnh chứ không phải ở quê, trên người anh ta không có một mảnh vải nào, trần truồng với nạm lông đen nhánh ở bụng. Anh ta cứ đi nhồng nhộng tới góc sân này tới góc sân khác như đang tìm một ai đó, trần truồng mà đi chả xấu hổ một tí nào, và ngay cả đám người ngồi đen đặc ở sân cũng không một ai buồn ngước nhìn anh ta, cũng không ai cất lời hoặc than hoặc mắng một câu. Thì ra cái đói đã thay đổi con người thành con vật rồi, những con vật đã quên mọi thói quen trong các mối quan hệ cái thuở còn là con người. [...] Hơn nửa năm trời đi lại trên đường phố Hà Nội ngửi đâu cũng phảng phất cái mùi hôi khắm của các xác chết đã khô lại đen lại ở mọi ngóc ngách chưa kịp đem chôn. Cứ đi một quãng lại va phải một xe bò chở xác người, các bó chiếu cuộn người xếp chồng lên nhau, mặt thì kín nhưng chân thì hở, những cẳng chân đen khô với những bàn chân có những ngón toẻ ra, nhìn xa như từng chùm rễ cây của các cây-xác-người. Từ trong đám xác chết đói bước ra, từ cái thân phận bị khinh rẻ bị làm nhục bước ra, nên những gian nan thiếu thốn của kháng chiến hắn chả coi vào đâu, lúc nào cũng vui, bị anh em trong cơ quan bỏ lại tại cái lán trống giữa rừng, dứt cơn sốt ngồi chồm dậy ngơ ngác một lúc lâu mới tỉnh lại dần, thấy bụi mọt đã phủ đầy người, phủ đầy những tấm giát nứa đã bỏ trống, tức là nằm chết ở đây đã lâu lắm, không chừng phải một hai ngày rồi vì hắn rất đói, đói cồn cào, lại dốc gạo trong bao ra, bắc nồi lên, nhìn ngọn lửa bốc cao lại thấy vui, một niềm vui bất tận, vui không duyên cớ gì, cũng không hy vọng vào bất cứ cái gì, được sống, được cất bước cùng với bạn bè là vui, kháng chiến bao năm cũng được, kháng chiến đến bạc đầu vẫn được, có bao giờ phải sống một mình đâu mà buồn, có bao giờ bị làm nhục bị bỏ đói đâu mà buồn.</p><p><i>(Nguyễn Khải, trích chương 5, Thượng đế thì cười)</i></p>",
+     "questions": [
+      {
+       "t": "mc",
+       "q": "Điều gì khiến nhân vật “hắn” cảm thấy cuộc sống mới mẻ, thú vị và đáng nhớ?",
+       "o": [
+        "Thực hiện tham gia viết báo cho Hội nghị Chỉnh quân.",
+        "Cuộc Tổng khởi nghĩa diễn ra và giành thắng lợi.",
+        "Được tham gia vào cuộc kháng chiến của dân tộc.",
+        "Được mời một bữa ăn ngon do đang làm báo."
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "Đoạn [1] đối lập tuổi thơ “nhạt và buồn”, chỉ có “mầu xám nhờ” với thời kháng chiến: “đi kháng chiến được nhìn thấy núi cao sông rộng, được đi nhiều nơi, tiếp xúc với nhiều người”.",
+        "Vậy việc được tham gia kháng chiến là điều đem lại cho hắn cuộc sống mới mẻ, thú vị. Các phương án còn lại chỉ là chi tiết nhỏ hoặc không có trong văn bản (không có bữa ăn ngon nào)."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Hà Nội giai đoạn Tổng khởi nghĩa trong kí ức của nhân vật “hắn” là:",
+       "o": [
+        "Từng đoàn người di tản mang trong mình nỗi đau thương và mất mát.",
+        "Tiếng cười, tiếng nói của con người trước những biến chuyển của đời sống.",
+        "Tinh thần chiến đấu của quân và dân ta vì mục tiêu bảo vệ Thủ đô.",
+        "Những tiếng khóc cất lên trong những căn nhà bị phá hủy bởi bom đạn."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Đoạn [1]: “Năm Tổng khởi nghĩa là năm Hà Nội vui nhất… Cả thành phố như chợt thức giấc, ồ ạt lao vào những công việc mới mẻ trong một niềm vui mênh mang.”",
+        "Đó là không khí tươi vui, rộn ràng trước những biến chuyển của đời sống, nên chọn B. Các phương án A, C, D nói về đau thương, chiến đấu bảo vệ Thủ đô, bom đạn, không có trong đoạn."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Theo tác giả, vào năm 1949 sự kiện nào đã diễn ra và có tác động lớn tới tư tưởng, đời sống nhân vật “hắn”?",
+       "o": [
+        "Trong quá trình công tác, “hắn” đã tìm được phong cách viết phù hợp với bản thân.",
+        "Nhân kỳ Đại hội, “hắn” được gặp đồng nghiệp đang công tác tại các báo địa phương.",
+        "Hắn có cơ hội trở thành bộ đội chủ lực và chiến đấu trên nhiều mặt trận chiến trường.",
+        "Do cần làm báo đặc biệt nên hắn đã có cơ hội vào quân doanh của bộ đội chủ lực."
+       ],
+       "a": 3,
+       "solved": true,
+       "sol": [
+        "Đoạn [1]: “Cuối năm 1949, hắn được tỉnh đội Hưng Yên cử về Mặt trận 5 để làm số báo đặc biệt cho Hội nghị Rèn Cán Chỉnh Quân… được bước vào quân doanh của bộ đội chủ lực… niềm vui lớn ấy khiến hắn muốn nghẹt thở.”",
+        "Vì phải làm số báo đặc biệt nên hắn mới có cơ hội vào quân doanh bộ đội chủ lực, đó là sự kiện tác động lớn đến hắn. Chọn D."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Khi đi học lớp tiếng Nhật, “hắn” đã phát hiện điều gì?",
+       "o": [
+        "Người Nhật có sức mạnh rất khủng khiếp.",
+        "Cái đói đã khiến con người thay đổi.",
+        "Nhiều người Việt tin tưởng Nhật.",
+        "Chỉ có những cán bộ Cách mạng ở đó."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Đoạn [2]: trên đường đến lớp học tiếng Nhật ở phố Hàng Cót, hắn thấy người thanh niên trần truồng đi giữa sân mà không ai ngước nhìn.",
+        "Hắn nhận ra: “cái đói đã thay đổi con người thành con vật rồi, những con vật đã quên mọi thói quen trong các mối quan hệ cái thuở còn là con người”. Chọn B."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Việc miêu tả trong đoạn [2] của văn bản có tác dụng chính là:",
+       "o": [
+        "tái hiện không gian của quân doanh khiến “hắn” choáng ngợp”.",
+        "tái hiện khung cảnh nạn đói khủng khiếp mà “hắn” chứng kiến.",
+        "gợi chân dung khắc khổ, héo mòn của người mẹ mất con.",
+        "gợi hình ảnh người thanh niên vạm vỡ và tràn đầy sức sống."
+       ],
+       "a": 1,
+       "warn": "Phương án A có dấu nháy kép thừa ở cuối câu (…choáng ngợp”.) do lỗi nguồn; giữ nguyên.",
+       "solved": true,
+       "sol": [
+        "Đoạn [2] miêu tả người chết đói nằm la liệt ở vỉa hè, gốc cây, xe bò chở xác người, người thanh niên trần truồng… tất cả đều gợi nạn đói năm 1945.",
+        "Vậy tác dụng chính là tái hiện khung cảnh nạn đói khủng khiếp mà hắn chứng kiến. Chọn B."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Chi tiết “Không còn gạo thì ăn cỏ” có ý nghĩa gì?",
+       "o": [
+        "Khẳng định sức sống mạnh mẽ bền bỉ trong những con người nghèo khổ.",
+        "Ca ngợi sự sáng tạo của con người Việt Nam trong giai đoạn cùng cực.",
+        "Tố cáo tội ác do thực dân Pháp và phát xít Nhật gây ra.",
+        "Phản ánh hiện thực tàn khốc của nạn đói năm 1945."
+       ],
+       "a": 3,
+       "warn": "Phương án A trong PDF ghi “bền trong”, đã giữ nguyên theo file.",
+       "solved": true,
+       "sol": [
+        "Đoạn [2]: “Không còn gạo thì ăn cỏ, một tờ báo đã bày cách chế biến cỏ cho người ăn”, sau đó hàng vạn người đói lũ lượt kéo về Hà Nội nằm chết.",
+        "Chi tiết này phản ánh tình trạng thiếu lương thực đến mức phải ăn cỏ, tức hiện thực tàn khốc của nạn đói năm 1945. Chọn D."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Theo văn bản, trước bối cảnh Nhật đảo chính Pháp và nhân dân ta Tổng khởi nghĩa, nhân vật “hắn” có tâm trạng vui vẻ, phấn khởi. Đúng hay sai?",
+       "o": [
+        "Đúng",
+        "Sai"
+       ],
+       "a": 1,
+       "warn": "Câu hỏi có thể gây tranh cãi vì văn bản vừa nói “niềm vui mênh mang” của cả thành phố vừa nói hắn đứng ngoài. Đáp án do AI tự giải, nên đối chiếu với đáp án chính thức.",
+       "solved": true,
+       "sol": [
+        "Đoạn [1] nói cả Hà Nội vui trong niềm vui mênh mang, nhưng nhấn mạnh: “Ấy là hắn vẫn chưa được nhập cuộc, vẫn là kẻ đứng ngoài vì tuổi còn quá nhỏ”, chỉ là “lũ trẻ con lộc ngộc” bỏ học, kéo nhau đi chơi.",
+        "Hắn chưa được hòa vào không khí Tổng khởi nghĩa nên không thể nói hắn vui vẻ, phấn khởi trước bối cảnh ấy. Đáp án: Sai."
+       ]
+      },
+      {
+       "t": "drag",
+       "q": "Từ thông tin trong văn bản, hãy hoàn thành câu sau bằng cách kéo thả các từ vào đúng vị trí:<br>Nạn đói năm Ất Dậu đã gây nên những [[0]] kinh hoàng, ám ảnh “hắn” về cái đói, sự [[1]] và cả [[2]] đến mãi sau này.",
+       "c": [
+        "tủi nhục",
+        "thảm kịch",
+        "chết chóc",
+        "xác chết",
+        "gian nan"
+       ],
+       "a": [
+        1,
+        0,
+        2
+       ],
+       "solved": true,
+       "sol": [
+        "Ô 1: “những thảm kịch kinh hoàng”, vì nạn đói gây ra cảnh người chết la liệt, đó là những thảm kịch.",
+        "Ô 2: “sự tủi nhục”, vì đoạn cuối nhắc “cái thân phận bị khinh rẻ bị làm nhục”, “có bao giờ bị làm nhục bị bỏ đói đâu mà buồn”.",
+        "Ô 3: “và cả chết chóc”, ứng với “đám xác chết đói”, “xe bò chở xác người”.",
+        "Các từ “xác chết”, “gian nan” không điền hợp nghĩa vì “sự xác chết” sai ngữ pháp và “gian nan” là khó khăn của kháng chiến, không phải của nạn đói."
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Dựa vào đoạn cuối của văn bản, tìm một từ không quá hai tiếng để hoàn thành câu văn sau:<br>Nhớ lại quá khứ tủi nhục của mình, hắn cảm thấy những [[0]] trong kháng chiến chẳng có ý nghĩa gì hết, dù có bị bỏ lại giữa rừng, chịu đói, chịu khổ nhưng hơn hết hắn thấy niềm vui và sự tự hào khi được sống và chiến đấu.",
+       "a": [
+        [
+         "gian nan",
+         "thiếu thốn"
+        ]
+       ],
+       "solved": true,
+       "sol": [
+        "Đoạn cuối: “Từ trong đám xác chết đói bước ra, từ cái thân phận bị khinh rẻ bị làm nhục bước ra, nên những gian nan thiếu thốn của kháng chiến hắn chả coi vào đâu”.",
+        "Từ cần điền (không quá hai tiếng) là “gian nan” (hoặc “thiếu thốn”)."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Dòng nào dưới đây nhận xét đúng về yếu tố nghệ thuật nổi bật trong đoạn trích?",
+       "o": [
+        "Lựa chọn ngôi kể thứ nhất, bộc lộ các diễn biến tâm lý khác nhau của nhân vật.",
+        "Bút pháp tương phản được sử dụng hiệu quả, gợi mở suy nghĩ, hồi tưởng.",
+        "Tình huống kịch tích, bất ngờ, tạo sự gay cấn, hấp dẫn cho câu chuyện.",
+        "Sử dụng nhiều câu văn ngắn, câu đặc biệt, tạo sự dồn dập, gấp gáp cho lời kể."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Loại A: đoạn trích kể ở ngôi thứ ba (gọi nhân vật là “hắn”).",
+        "Loại C: không có tình huống kịch tích hay bất ngờ. Loại D: văn bản chủ yếu dùng câu dài, nhịp chậm rãi, hồi tưởng.",
+        "Chọn B: tác giả đặt tương phản giữa quá khứ đói khổ, tủi nhục, thảm khốc với niềm vui trong kháng chiến, giữa nỗi buồn tuổi thơ với niềm vui sống; sự tương phản này gợi mở suy nghĩ và hồi tưởng cho người đọc."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "THIẾT BỊ DÒ NHỊP TIM CỨU HỘ NẠN NHÂN ĐỘNG ĐẤT",
+     "p": "<p>[1] NASA đã chuyển thiết bị FINDER tới Thổ Nhĩ Kỳ để dò nhịp tim và hơi thở của người sống sót sau động đất bằng cảm biến radar vi sóng.</p><p>[2] Công nghệ do NASA phát triển có thể phát hiện chuyển động nhỏ nhất của cơ thể gây ra bởi những quá trình cơ bản thiết yếu cho sự sống và sẽ được những đội cứu trợ sử dụng ở vùng động đất của Thổ Nhĩ Kỳ, Space hôm 16/2 đưa tin. Thiết bị mang tên FINDER (Finding Individuals for Disaster Emergency Response) dùng cảm biến radar vi sóng để tìm người sống sót dưới đống đổ nát hoặc lở đất thông qua dò nhịp tim và hơi thở của họ.</p><p>[3] NASA cho biết công nghệ đã được chuyển tới Thổ Nhĩ Kỳ vào tuần trước, gần một tuần sau khi chuỗi động đất phá hủy hàng nghìn ngôi nhà ở các thành phố và thị trấn quanh biên giới Thổ Nhĩ Kỳ - Syria. Theo Reuters, hơn 41.000 người được xác nhận tử vong từ ngày 6/2, ngày hai trận động đất mạnh 7,8 và 7,6 độ xảy ra. Nhân viên cứu hộ tại chỗ có thể hoài nghi khả năng tìm thấy người sống sót 10 ngày sau thảm họa. Tuy nhiên, nhà chức trách vẫn phát hiện một số người còn sống. Ví dụ, hôm 14/2, Reuters đưa tin 9 người sống sót được kéo ra từ đống đổ nát ở các thành phố.</p><p>[4] Thiết bị FINDER được phát triển bởi nhóm nghiên cứu ở Phòng thí nghiệm Sức đẩy Phản lực của NASA ở California sau trận động đất năm 2010 ở Haiti, sau đó công nghệ này được thương mại hóa bởi công ty SpecOps Group ở Florida. FINDER chỉ là một ví dụ cho nỗ lực hỗ trợ của NASA dành cho Thổ Nhĩ Kỳ. Trước đó, một số vệ tinh NASA thu thập hình ảnh của khu vực bị ảnh hưởng bởi động đất, giúp đánh giá mức độ thiệt hại và dẫn đường cho nhân viên cứu hộ.</p><p>[5] Nằm trong số công cụ hỗ trợ từ không gian là thiết bị EMIT (Earth Surface Mineral Dust Source Investigation) được chuyển lên Trạm Vũ trụ Quốc tế hồi tháng 7 năm ngoái, sau đó lắp đặt trên cánh tay robot ở cấu trúc bên ngoài trạm. Các nhà khoa học hy vọng dù được thiết kế để phân tích thành phần bụi trong khí quyển Trái Đất, EMIT có thể phát hiện rò rỉ khí nguy hiểm từ đường ống bị phá hủy bởi động đất.</p><p>[6] Dữ liệu từ những thiết bị quan sát Trái Đất khác sẽ giúp cải tiến mô hình tương tác của mảng kiến tạo giao nhau ở khu vực bị ảnh hưởng nằm dọc biên giới giữa miền nam Thổ Nhĩ Kỳ và phía tây Syria. Áp lực giữa các mảng kiến tạo Anatolia, Arab và châu Phi biến khu vực này thành điểm nóng động đất. Tuy nhiên, giới chuyên gia mô tả loạt động đất hôm 6/2 là tồi tệ nhất trong nhiều thập kỷ. Mô hình vi tính dựa trên kết quả đo vệ tinh có thể giúp các nhà nghiên cứu đánh giá khả năng xảy ra dư chấn quanh những vết đứt gãy lớn.</p><p><i>(Theo An Khang, https://vnexpress.net/, đăng ngày 17/02/2023)</i></p>",
+     "questions": [
+      {
+       "t": "mc",
+       "q": "Nội dung chính của bài viết là:",
+       "o": [
+        "Giới thiệu một thiết bị cứu hộ có thể cứu được các nạn nhân mắc bệnh tim trong trường hợp nguy kịch.",
+        "Thiết bị hỗ trợ người mắc bệnh tim khi tham gia các thử thách, hoạt động thể thao ngoài trời nguy hiểm.",
+        "Ứng dụng kĩ thuật nghiên cứu những chuyển động nhỏ trong lòng đất để tìm kiếm nạn nhân khi có động đất.",
+        "Công cụ phát hiện nhịp tim và hơi thở của con người trong trường hợp xảy ra thiên tai hoặc các điều kiện đặc biệt."
+       ],
+       "a": 3,
+       "solved": true,
+       "sol": [
+        "Bài viết xoay quanh thiết bị FINDER của NASA: dùng radar vi sóng dò nhịp tim và hơi thở của người sống sót dưới đống đổ nát sau động đất.",
+        "A, B sai vì thiết bị không dành cho bệnh nhân tim; C sai vì không nghiên cứu chuyển động trong lòng đất mà dò chuyển động của cơ thể người. Chọn D."
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Căn cứ vào nội dung văn bản, tìm một từ/cụm từ không quá hai tiếng để hoàn thành nội dung câu văn sau:<br>Để khắc phục hậu quả nặng nề sau cơn động đất tại Thổ Nhĩ Kỳ, đồng thời, với mục tiêu tìm kiếm và cứu hộ các nạn nhân may mắn sống sót, NASA đã chuyển thiết bị mang tên Finder, được sử dụng công nghệ [[0]] cho các đội cứu trợ tại địa phương.",
+       "a": [
+        [
+         "radar vi sóng",
+         "radar",
+         "vi sóng"
+        ]
+       ],
+       "solved": true,
+       "sol": [
+        "Đoạn [1] và [2]: FINDER “dùng cảm biến radar vi sóng để tìm người sống sót dưới đống đổ nát”.",
+        "Cụm từ cần điền là “radar vi sóng” (có thể chấp nhận “radar” hoặc “vi sóng”)."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Theo thông tin trong đoạn [3], những trận động đất mạnh tại Thổ Nhĩ Kì đã diễn ra trong bao nhiêu ngày?",
+       "o": [
+        "Trong vòng 1 ngày.",
+        "Khoảng 7 - 8 ngày.",
+        "Kéo dài 9 ngày.",
+        "Trong khoảng 10 ngày."
+       ],
+       "a": 0,
+       "solved": true,
+       "sol": [
+        "Đoạn [3]: “hơn 41.000 người được xác nhận tử vong từ ngày 6/2, ngày hai trận động đất mạnh 7,8 và 7,6 độ xảy ra”.",
+        "Hai trận động đất mạnh cùng xảy ra trong ngày 6/2, tức trong vòng 1 ngày. Các mốc 7 – 10 ngày là thời gian sau thảm họa, không phải thời gian diễn ra động đất."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Theo thông tin trong văn bản, số nạn nhân tử vong sau trận động đất tại Thổ Nhĩ Kì là 41.000 người là đúng hay sai?",
+       "o": [
+        "Đúng.",
+        "Sai."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Đoạn [3]: “hơn 41.000 người được xác nhận tử vong”, tức số người tử vong vượt 41.000, không phải đúng 41.000.",
+        "Nên phát biểu “là 41.000 người” là sai."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Theo tác giả bài viết, thiết bị FINDER được nghiên cứu và phát triển",
+       "o": [
+        "sau một quá trình nỗ lực nghiên cứu của về thiên nhiên của Hoa Kì.",
+        "sau một thảm họa do thiên nhiên gây ra tại đất nước Haiti.",
+        "nhằm cải thiện các dự báo về thiên tai tại khu vực Thổ Nhĩ Kì.",
+        "nhằm phát triển hệ thống thu thập hình ảnh tại các khu vực động đất."
+       ],
+       "a": 1,
+       "warn": "Phương án A có lỗi chữ “nghiên cứu của về” do nguồn; giữ nguyên.",
+       "solved": true,
+       "sol": [
+        "Đoạn [4]: “Thiết bị FINDER được phát triển bởi nhóm nghiên cứu ở Phòng thí nghiệm Sức đẩy Phản lực của NASA ở California sau trận động đất năm 2010 ở Haiti”.",
+        "Vậy FINDER được phát triển sau thảm họa động đất ở Haiti. Chọn B."
+       ]
+      },
+      {
+       "t": "drag",
+       "q": "Từ thông tin của đoạn [4] hãy hoàn thành câu sau bằng cách kéo thả các từ vào đúng vị trí:<br>Sự phát triển của công nghệ mới đã hỗ trợ rất nhiều trong quá trình [[0]] các nạn nhân của thảm họa động đất tại Thổ Nhĩ Kì, không chỉ dừng lại ở việc cung cấp thiết bị Finder – một sản phẩm công nghệ đã được [[1]], NASA còn hỗ trợ việc đánh giá mức độ [[2]] và dẫn đường cho đội cứu hộ thông qua các hình ảnh thu thập được.",
+       "c": [
+        "thương mại hóa",
+        "thảm họa",
+        "cứu hộ",
+        "thiệt hại"
+       ],
+       "a": [
+        2,
+        0,
+        3
+       ],
+       "solved": true,
+       "sol": [
+        "Ô 1: “quá trình cứu hộ các nạn nhân”, vì FINDER hỗ trợ tìm kiếm cứu hộ.",
+        "Ô 2: “sản phẩm công nghệ đã được thương mại hóa”, ứng với đoạn [4]: công nghệ này “được thương mại hóa bởi công ty SpecOps Group”.",
+        "Ô 3: “đánh giá mức độ thiệt hại”, ứng với đoạn [4]: vệ tinh NASA “giúp đánh giá mức độ thiệt hại và dẫn đường cho nhân viên cứu hộ”.",
+        "Từ “thảm họa” là từ gây nhiễu, không điền vào ô nào."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "EMIT là một hệ thống bao gồm cánh tay robot được lắp đặt bên ngoài Trạm Vũ trụ và có chức năng phát hiện những biến đổi của Trái đất là đúng hay sai?",
+       "o": [
+        "Đúng",
+        "Sai"
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Đoạn [5]: EMIT là thiết bị được lắp đặt trên cánh tay robot ở cấu trúc bên ngoài trạm, nghĩa là cánh tay robot không phải là một phần cấu thành của EMIT.",
+        "Chức năng chính của EMIT là phân tích thành phần bụi trong khí quyển, ngoài ra có thể phát hiện rò rỉ khí nguy hiểm, không phải “phát hiện những biến đổi của Trái đất”. Phát biểu sai."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Động đất xảy ra do đâu?",
+       "o": [
+        "Quá trình Trái Đất tự quay quanh trục và quay quanh Mặt trời.",
+        "Sự va chạm và xu hướng xích lại gần nhau của các mảng kiến tạo.",
+        "Quá trình xâm lấn biển của con người dẫn tới biến đổi tự nhiên.",
+        "Sự phá vỡ kết nối tự nhiên của các thành phần bên dưới vỏ Trái đất."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Đoạn [6]: “Áp lực giữa các mảng kiến tạo Anatolia, Arab và châu Phi biến khu vực này thành điểm nóng động đất”, cùng việc nhắc các mảng kiến tạo giao nhau dọc biên giới.",
+        "Nguyên nhân là sự va chạm, xích lại gần nhau của các mảng kiến tạo. Chọn B."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Thông điệp chính của văn bản là:",
+       "o": [
+        "Con người sẽ không bao giờ chinh phục được tự nhiên và luôn bị buộc phải đối diện với những thảm họa về động đất.",
+        "Trái đất tự vận động và có quy luật riêng biệt nên con người chỉ có thể đưa ra những phỏng đoán tạm thời về các hiện tượng.",
+        "Công nghệ được phát triển để hỗ trợ con người trong quá trình khắc phục và dự đoán những biến đổi từ tự nhiên.",
+        "Cuộc sống của con người trở nên tốt đẹp và an toàn hơn sau quá trình nghiên cứu và phát triển sản phẩm của NASA."
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "Bài viết nêu FINDER giúp tìm nạn nhân (khắc phục hậu quả), vệ tinh giúp đánh giá thiệt hại, EMIT phát hiện rò rỉ khí, dữ liệu khác giúp dự đoán dư chấn.",
+        "Thông điệp: công nghệ giúp con người khắc phục và dự đoán những biến đổi từ tự nhiên. Chọn C; A, B mang tính bi quan, tuyệt đối; D quá chung chung và không có căn cứ."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Đâu là nội dung chính của đoạn [5] trong văn bản?",
+       "o": [
+        "Sự phát triển công nghệ dù mục tiêu ban đầu khác nhau nhưng đều hướng tới việc đảm bảo an toàn cho con người.",
+        "NASA là một trong những trung tâm công nghệ hàng đầu của thế giới, liên tục phát triển những ứng dụng mới.",
+        "Những cánh tay robot lắp bên ngoài thiết bị EMIT có nhiều chức năng hoạt động khác nhau ở Trạm Vũ trụ.",
+        "Động đất xảy ra ở bất cứ vị trí nào trên trái đất cũng có thể được NASA phát hiện và thu thập dữ liệu nhanh chóng."
+       ],
+       "a": 0,
+       "solved": true,
+       "sol": [
+        "Đoạn [5] nói EMIT được thiết kế để phân tích thành phần bụi trong khí quyển, nhưng các nhà khoa học hy vọng nó còn phát hiện được rò rỉ khí nguy hiểm từ đường ống bị phá hủy bởi động đất.",
+        "Nội dung chính: công nghệ dù mục tiêu ban đầu khác nhau vẫn có thể phục vụ an toàn cho con người. Chọn A; B, C, D không phải ý chính hoặc không có trong đoạn."
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Đề Khoa Học Số 04",
+   "minutes": 60,
+   "groups": [
+    {
+     "title": "VI KHUẨN PNEUMOCOCCI VÀ PHAGE",
+     "p": "<p>Một chủng vi khuẩn <i>Pneumococci</i> tồn tại được trong môi trường chứa penicillin nếu các tế bào của chúng có gen mã hóa beta lactamase có vai trò giúp vi khuẩn kháng penicillin. Ngoài ra, các tế bào cần có nguồn cung cấp carbon cần thiết cho sự sinh trưởng phát triển. Tất cả các tế bào của chủng vi khuẩn này đều bị nhiễm Phage I và Phage II và cả hai đều chèn DNA của chúng vào nhiễm sắc thể của vi khuẩn. Để xác định vai trò của Phage, người ta đã tiến hành gây nhiễm chủng dại với hai Phage này.</p><p>Cho 10 µl Phage I và 10 µl của Phage II vào hai ống nghiệm riêng biệt. Mỗi ống nghiệm đều chứa 5ml nước luộc thịt có các tế bào chủng vi khuẩn <i>Pneumoccocci</i> kiểu dại đang sinh trưởng mạnh. Một ống nghiệm khác chứa 5 ml nước luộc thịt và chỉ có các tế bào chủng vi khuẩn <i>Pneumoccocci</i> mà không có phage được sử dụng làm ống đối chứng.</p><p>Thí nghiệm 1: Sau 20 phút nuôi cấy ở nhiệt độ phòng, người ta lấy từ mỗi ống nghiệm 1 µl dung dịch nuôi cấy và bổ sung thêm 1990 ml nước cất để pha loãng. Dung dịch tế bào sau khi pha loãng được cấy trải trên các đĩa thạch có chứa lần lượt glucose, saccharose và lactose. Các đĩa này được nuôi cấy ở trong tủ ấm có nhiệt độ 37<sup>o</sup>C trong 24 giờ. Kết quả thu được ở bảng 1.</p><table><tr><th colspan='4'>Bảng 1. Kết quả thí nghiệm 1</th></tr><tr><th>Đĩa</th><th>Tế bào bị gây nhiễm bởi phage I</th><th>Tế bào bị gây nhiễm bởi phage II</th><th>Tế bào chủng vi khuẩn dạng dại</th></tr><tr><td>Glucose</td><td>+</td><td>+</td><td>+</td></tr><tr><td>Saccharose</td><td>+</td><td>−</td><td>+</td></tr><tr><td>Lactose</td><td>+</td><td>−</td><td>−</td></tr></table><p><i>Ghi chú: (+) Có sự phát triển của vi khuẩn; (−) Không có sự phát triển của vi khuẩn</i></p><p>Thí nghiệm 2: Từ mỗi ống nghiệm trong thí nghiệm, lấy 1 µl dung dịch nuôi cấy rồi pha loãng bằng 1990 ml nước cất. Các dung dịch tế bào sau khi pha loãng được cấy trên 3 đĩa thạch: đĩa thứ nhất chứa tetracyclin, đĩa thứ hai chứa penicillin và đĩa thạch còn lại không chứa kháng sinh nào. Các đĩa sau đó được nuôi cấy ở trong tủ ấm có nhiệt độ 37<sup>o</sup>C trong 24 giờ. Kết quả thu được ở bảng 2.</p><table><tr><th colspan='4'>Bảng 2. Kết quả thí nghiệm 2</th></tr><tr><th>Đĩa</th><th>Tế bào bị gây nhiễm bởi phage I</th><th>Tế bào bị gây nhiễm bởi phage II</th><th>Tế bào chủng vi khuẩn dạng dại</th></tr><tr><td>Tetracyclin</td><td>−</td><td>−</td><td>−</td></tr><tr><td>Penicillin</td><td>+</td><td>+</td><td>−</td></tr><tr><td>Không chứa kháng sinh</td><td>+</td><td>+</td><td>+</td></tr></table><p><i>Ghi chú: (+) Có sự phát triển của vi khuẩn; (−) Không có sự phát triển của vi khuẩn</i></p>",
+     "questions": [
+      {
+       "t": "fill",
+       "q": "<i>Điền từ/cụm từ thích hợp vào chỗ trống sau đây:</i><br>Sự [[0]] của quần thể vi sinh vật là sự tăng số lượng tế bào trong quần thể.",
+       "a": [
+        [
+         "sinh trưởng"
+        ]
+       ],
+       "solved": true,
+       "sol": [
+        "Ở vi sinh vật, sinh trưởng của quần thể là sự tăng số lượng tế bào trong quần thể (khác với sinh trưởng của từng cá thể là tăng kích thước).",
+        "Từ cần điền: “sinh trưởng”."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Phân tử nào sau đây có vai trò giúp vi khuẩn kháng penicillin?",
+       "o": [
+        "Enzyme beta lactamase.",
+        "Gen thalassemia.",
+        "Alpha-1 antitrypsin.",
+        "Gen CFTR."
+       ],
+       "a": 0,
+       "solved": true,
+       "sol": [
+        "Đoạn dẫn nêu: tế bào có gen mã hóa beta lactamase thì giúp vi khuẩn kháng penicillin, nên enzyme beta lactamase là phân tử cần tìm.",
+        "Gen thalassemia, alpha-1 antitrypsin, gen CFTR là các gen liên quan đến bệnh ở người, không liên quan đến kháng penicillin ở vi khuẩn."
+       ]
+      },
+      {
+       "t": "drag",
+       "q": "Saccharose và lactose thuộc nhóm [[0]].",
+       "c": [
+        "monosaccharide",
+        "polysaccharide",
+        "disaccharide"
+       ],
+       "a": [
+        2
+       ],
+       "solved": true,
+       "sol": [
+        "Saccharose (glucose + fructose) và lactose (glucose + galactose) đều do hai phân tử đường đơn liên kết với nhau tạo thành.",
+        "Vậy chúng thuộc nhóm disaccharide (đường đôi)."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Vai trò của nước thịt trong thí nghiệm trên là",
+       "o": [
+        "cung cấp oxygen cho vi khuẩn sinh trưởng.",
+        "cung cấp carbon cho vi khuẩn sinh trưởng.",
+        "cung cấp nitrogen hữu cơ cho vi khuẩn sinh trưởng.",
+        "cung cấp enzyme cho vi khuẩn sinh trưởng."
+       ],
+       "a": 2,
+       "warn": "Câu này đáp án do tự giải (không có đáp án trong file). Phương án B cũng có thể gây tranh cãi, nên đối chiếu đáp án chính thức.",
+       "solved": true,
+       "sol": [
+        "Nguồn carbon trong thí nghiệm được thử nghiệm riêng bằng các loại đường (glucose, saccharose, lactose) trên các đĩa thạch.",
+        "Nước luộc thịt là môi trường dinh dưỡng nền, giàu protein, peptide, amino acid, tức là nguồn nitrogen hữu cơ để vi khuẩn sinh trưởng.",
+        "Oxygen lấy từ không khí; enzyme (beta lactamase) do chính vi khuẩn tổng hợp. Chọn C."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Phát biểu sau đây đúng hay sai?<br>Tế bào vi khuẩn dạng dại trong tự nhiên không có khả năng kháng lại cả tetracyclin và penicillin.",
+       "o": [
+        "Đúng",
+        "Sai"
+       ],
+       "a": 0,
+       "solved": true,
+       "sol": [
+        "Bảng 2, cột tế bào chủng vi khuẩn dạng dại: đĩa tetracyclin (−), đĩa penicillin (−), nghĩa là không phát triển trên cả hai đĩa kháng sinh.",
+        "Vậy vi khuẩn dạng dại không kháng được cả tetracyclin và penicillin. Phát biểu đúng."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Tế bào chủng vi khuẩn dạng dại ban đầu có khả năng",
+       "o": [
+        "kháng penicillin và chuyển hóa được glucose cũng như saccharose.",
+        "kháng tetracyclin và chuyển hóa được glucose cũng như saccharose.",
+        "chuyển hóa được glucose và saccharose nhưng không kháng kháng sinh.",
+        "chuyển hóa được lactose, kháng tetracyclin nhưng không kháng penicillin."
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "Bảng 1, cột dạng dại: glucose (+), saccharose (+), lactose (−), tức chuyển hóa được glucose và saccharose nhưng không chuyển hóa được lactose.",
+        "Bảng 2, cột dạng dại: tetracyclin (−), penicillin (−), tức không kháng kháng sinh nào.",
+        "Chọn C."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "ẢNH HƯỞNG CỦA CÁC YẾU TỐ MÔI TRƯỜNG TỚI SỰ SINH TRƯỞNG CỦA VI KHUẨN",
+     "p": "<p>Một số nhà khoa học thực hiện một số thí nghiệm khác nhau để tìm hiểu ảnh hưởng của các yếu tố môi trường tới sự sinh trưởng của vi khuẩn.</p><p><b><i>Thí nghiệm 1</i></b><br>Các nhà khoa học nuôi cấy vi khuẩn <i>Salmonella</i> trong ba đĩa petri có cùng nồng độ dinh dưỡng, ở cùng một nhiệt độ. Độ pH của các đĩa khác nhau là khác nhau. Thực hiện nuôi cấy vi khuẩn trong 6 giờ, kết quả được ghi lại trong bảng 1.</p><table><tr><th colspan='3'>Bảng 1</th></tr><tr><th>Đĩa</th><th>Độ pH</th><th>Tỉ lệ sinh trưởng (%)</th></tr><tr><td>1</td><td>5</td><td>90</td></tr><tr><td>2</td><td>7</td><td>81</td></tr><tr><td>3</td><td>9</td><td>43</td></tr></table><p><b><i>Thí nghiệm 2</i></b><br>Thí nghiệm 2 được thực hiện tương tự như thí nghiệm 1, nhưng nhiệt độ và độ pH (=7) được cố định trong cả ba đĩa, còn nồng độ chất dinh dưỡng được thay đổi. Sau 6 giờ, tốc độ sinh trưởng của vi khuẩn <i>Salmonella</i> được ghi lại trong bảng 2.</p><table><tr><th colspan='4'>Bảng 2</th></tr><tr><th>Đĩa</th><th>Các chất dinh dưỡng</th><th>Tỉ lệ chất dinh dưỡng</th><th>Tỉ lệ sinh trưởng (%)</th></tr><tr><td rowspan='3'>1</td><td>Carbon</td><td>50</td><td rowspan='3'>37</td></tr><tr><td>Oxygen</td><td>20</td></tr><tr><td>Nitrogen</td><td>15</td></tr><tr><td rowspan='3'>2</td><td>Carbon</td><td>25</td><td rowspan='3'>16</td></tr><tr><td>Oxygen</td><td>10</td></tr><tr><td>Nitrogen</td><td>7</td></tr><tr><td rowspan='3'>3</td><td>Carbon</td><td>12,5</td><td rowspan='3'>8</td></tr><tr><td>Oxygen</td><td>5</td></tr><tr><td>Nitrogen</td><td>20</td></tr></table><p><b><i>Thí nghiệm 3</i></b><br>Thí nghiệm 3 thực hiện tương tự như thí nghiệm 1 và thí nghiệm 2, với độ pH (=7) và nồng độ chất dinh dưỡng giữ nguyên không đổi. Mỗi đĩa được nuôi cấy trong điều kiện nhiệt độ khác nhau. Sau 6 giờ, tốc độ sinh trưởng của vi khuẩn <i>Salmonella</i> được ghi lại trong bảng 3.</p><table><tr><th colspan='3'>Bảng 3</th></tr><tr><th>Đĩa</th><th>Nhiệt độ (<sup>o</sup>C)</th><th>Tỉ lệ sinh trưởng (%)</th></tr><tr><td>1</td><td>10</td><td>13</td></tr><tr><td>2</td><td>40</td><td>83</td></tr><tr><td>3</td><td>90</td><td>24</td></tr></table>",
+     "warn": "Bảng 2 trong PDF bị cắt/chồng dòng ở các hàng Nitrogen; các giá trị 15, 7, 20 được đọc từ ảnh bị che một phần. Cần đối chiếu đề gốc.",
+     "questions": [
+      {
+       "t": "mc",
+       "q": "Theo kết quả của ba thí nghiệm, sự kết hợp nào sau đây được kì vọng tạo ra tỉ lệ sinh trưởng cao nhất ở vi khuẩn <i>Salmonella</i>?",
+       "o": [
+        "Độ pH 5, tỉ lệ dinh dưỡng trong đĩa 2, nhiệt độ 40<sup>o</sup>C.",
+        "Độ pH 7, tỉ lệ dinh dưỡng trong đĩa 2, nhiệt độ 10<sup>o</sup>C.",
+        "Độ pH 5, tỉ lệ dinh dưỡng trong đĩa 1, nhiệt độ 40<sup>o</sup>C.",
+        "Độ pH 9, tỉ lệ dinh dưỡng trong đĩa 1, nhiệt độ 90<sup>o</sup>C."
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "Thí nghiệm 1: pH 5 cho tỉ lệ sinh trưởng cao nhất (90%).",
+        "Thí nghiệm 2: đĩa 1 (tỉ lệ dinh dưỡng cao nhất) cho sinh trưởng cao nhất (37%).",
+        "Thí nghiệm 3: nhiệt độ 40<sup>o</sup>C cho sinh trưởng cao nhất (83%).",
+        "Kết hợp cả ba điều kiện tối ưu: pH 5, đĩa 1, 40<sup>o</sup>C. Chọn C."
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Phát biểu sau đây đúng hay sai?",
+       "s": [
+        "Lượng nitrogen càng giảm thì tỉ lệ sinh trưởng của vi khuẩn <i>Salmonella</i> càng giảm.",
+        "Nhiệt độ, độ pH và hàm lượng dinh dưỡng đều là các nhân tố ảnh hưởng tới sự sinh trưởng ở vi khuẩn <i>Salmonella</i>."
+       ],
+       "a": [
+        0,
+        1
+       ],
+       "solved": true,
+       "sol": [
+        "Ý 1 sai: ở Bảng 2, nitrogen là 15, 7, 20 ứng với tỉ lệ sinh trưởng 37, 16, 8. Đĩa 3 có nitrogen cao nhất (20) nhưng sinh trưởng thấp nhất, nên không có quan hệ “nitrogen giảm thì sinh trưởng giảm”.",
+        "Ý 2 đúng: Bảng 1 (pH), Bảng 2 (dinh dưỡng), Bảng 3 (nhiệt độ) đều cho thấy tỉ lệ sinh trưởng thay đổi theo từng yếu tố."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Phát biểu sau đây đúng hay sai?<br><i>Salmonella</i> là vi khuẩn ưa nhiệt.",
+       "o": [
+        "Đúng.",
+        "Sai."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Bảng 3: sinh trưởng tốt nhất ở 40<sup>o</sup>C (83%), ở 90<sup>o</sup>C chỉ còn 24%.",
+        "Vi khuẩn ưa nhiệt cần nhiệt độ rất cao (trên 55<sup>o</sup>C), còn <i>Salmonella</i> thích hợp ở khoảng 40<sup>o</sup>C nên thuộc nhóm ưa ấm. Phát biểu sai."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Khẳng định nào sau đây là đúng khi nói về vi khuẩn <i>Salmonella</i>?",
+       "o": [
+        "Là vi khuẩn ưa kiềm.",
+        "Là vi khuẩn ưa acid.",
+        "Là vi khuẩn ưa trung tính.",
+        "Là vi khuẩn ưa nhiệt."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Bảng 1: pH 5 (acid) cho sinh trưởng 90%, cao hơn pH 7 (81%) và pH 9 (43%).",
+        "Vậy <i>Salmonella</i> sinh trưởng tốt nhất ở môi trường acid, là vi khuẩn ưa acid. Không phải vi khuẩn ưa nhiệt (xem câu trước)."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Vi khuẩn <i>Salmonella</i> sinh trưởng tốt nhất ở môi trường nào?",
+       "o": [
+        "pH = 5.",
+        "pH = 7.",
+        "pH = 9.",
+        "Môi trường acid và kiềm."
+       ],
+       "a": 0,
+       "solved": true,
+       "sol": [
+        "Bảng 1: pH = 5 cho tỉ lệ sinh trưởng cao nhất (90%), cao hơn pH = 7 (81%) và pH = 9 (43%).",
+        "Chọn A."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Trong thí nghiệm 2, cần nuôi cấy vi khuẩn theo cách thức nào để thời gian pha tăng trưởng của vi sinh vật được kéo dài hơn?",
+       "o": [
+        "Nuôi cấy vi khuẩn trong môi trường nuôi cấy tự nhiên.",
+        "Nuôi cấy vi khuẩn trong môi trường nuôi cấy kị khí.",
+        "Nuôi cấy vi khuẩn trong môi trường nuôi cấy liên tục.",
+        "Nuôi cấy vi khuẩn trong môi trường nuôi cấy không liên tục."
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "Nuôi cấy liên tục: thường xuyên bổ sung chất dinh dưỡng mới và loại bỏ sản phẩm chuyển hóa, nên vi khuẩn duy trì được pha lũy thừa (pha tăng trưởng) lâu hơn.",
+        "Nuôi cấy không liên tục không bổ sung dinh dưỡng nên pha lũy thừa ngắn rồi chuyển sang pha cân bằng và suy vong. Chọn C."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "NHIỆT ĐỘ SÔI VÀ KHỐI LƯỢNG PHÂN TỬ CỦA CÁC HỢP CHẤT HALOGEN",
+     "p": "<p>Bảng 1 liệt kê tên, công thức hóa học, khối lượng phân tử (khối lượng của 1 phân tử tính theo đơn vị khối lượng nguyên tử, amu) và nhiệt độ sôi ở áp suất khí quyển của các hợp chất khác nhau. Hợp chất đầu tiên chỉ chứa 2 nguyên tố là carbon (C) and hydrogen (H). Các hợp chất khác bao gồm carbon (C), hydrogen (H) và fluorine (F) hoặc chlorine (Cl) hoặc bromine (Br) hoặc iodine (I). Các nguyên tố F, Cl, Br và I thuộc nhóm halogen.</p><table><tr><th colspan='4'>Bảng 1. Công thức phân tử, khối lượng phân tử và nhiệt độ sôi của một số hợp chất</th></tr><tr><th>Tên hợp chất</th><th>Công thức phân tử</th><th>Khối lượng phân tử (amu)</th><th>Nhiệt độ sôi (°C)</th></tr><tr><td>Methane</td><td>CH<sub>4</sub></td><td>16</td><td>−162</td></tr><tr><td>Fluoromethane</td><td>CH<sub>3</sub>F</td><td>34</td><td>−78</td></tr><tr><td>Difluoromethane</td><td>CH<sub>2</sub>F<sub>2</sub></td><td>52</td><td>−52</td></tr><tr><td>Trifluoromethane</td><td>CHF<sub>3</sub></td><td>70</td><td>−82</td></tr><tr><td>Chloromethane</td><td>CH<sub>3</sub>Cl</td><td>51</td><td>−24</td></tr><tr><td>Dichloromethane</td><td>CH<sub>2</sub>Cl<sub>2</sub></td><td>85</td><td>40</td></tr><tr><td>Trichloromethane</td><td>CHCl<sub>3</sub></td><td>119</td><td>61</td></tr><tr><td>Bromomethane</td><td>CH<sub>3</sub>Br</td><td>95</td><td>4</td></tr><tr><td>Dibromomethane</td><td>CH<sub>2</sub>Br<sub>2</sub></td><td>174</td><td>97</td></tr><tr><td>Tribromomethane</td><td>CHBr<sub>3</sub></td><td>253</td><td>149</td></tr><tr><td>Iodomethane</td><td>CH<sub>3</sub>I</td><td>142</td><td>42</td></tr><tr><td>Diiodomethane</td><td>CH<sub>2</sub>I<sub>2</sub></td><td>268</td><td>182</td></tr><tr><td>Triiodomethane</td><td>CHI<sub>3</sub></td><td>394</td><td>218</td></tr></table><p><i>(Số liệu theo W. M. Haynes trong “CRC Handbook of Chemistry and Physics”)</i></p><p>Hình 1 biểu diễn nhiệt độ sôi so với khối lượng phân tử cho 3 nhóm hợp chất (Nhóm 1-3). Mỗi hợp chất trong mỗi nhóm bao gồm C và 1 hoặc nhiều nguyên tử halogen.</p><p><i>Hình 1. Mối quan hệ giữa nhiệt độ sôi và khối lượng phân tử của 3 nhóm hợp chất (Nhóm 1: CF<sub>4</sub>, CF<sub>3</sub>Cl, CF<sub>2</sub>Cl<sub>2</sub>, CCl<sub>4</sub>; Nhóm 2: CCl<sub>4</sub>, CCl<sub>3</sub>Br, CBr<sub>4</sub>; Nhóm 3: CF<sub>4</sub>, CF<sub>2</sub>Br<sub>2</sub>, CBr<sub>4</sub>)</i></p><p><i>(Số liệu theo Michael Laing, “Boiling Points of the Family of Small Molecules, CH<sub>w</sub>F<sub>x</sub>Cl<sub>y</sub>Br<sub>z</sub>: How Are They Related to Molecular Mass?”, 2001 trên American Chemical Society)</i></p>",
+     "fig": "img/Khoahoc_c13_hocmai04.png",
+     "warn": "cần chèn ảnh (Hình 1: đồ thị nhiệt độ sôi theo khối lượng phân tử). Bảng 1 được chép lại từ ảnh nhỏ trong PDF, cần đối chiếu số liệu với đề gốc; tên 3 nhóm trong chú thích Hình 1 đọc từ ảnh mờ.",
+     "questions": [
+      {
+       "t": "mc",
+       "q": "Hợp chất CH<sub>2</sub>Cl<sub>2</sub> có tên gọi là",
+       "o": [
+        "Difluoromethane.",
+        "Chloromethane.",
+        "Dichloromethane.",
+        "Diiodomethane."
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "CH<sub>2</sub>Cl<sub>2</sub> chứa 2 nguyên tử chlorine nên có tiền tố “di-”: dichloromethane.",
+        "Theo Bảng 1: Difluoromethane là CH<sub>2</sub>F<sub>2</sub>, chloromethane là CH<sub>3</sub>Cl, diiodomethane là CH<sub>2</sub>I<sub>2</sub>."
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "<i>Điền số thích hợp vào chỗ trống.</i><br>Ở áp suất khí quyển, nhiệt độ sôi của $CH_2I_2$ lớn hơn [[0]] $^\\circ C$ so với nhiệt độ sôi của $CH_4$.",
+       "a": [
+        344
+       ],
+       "solved": true,
+       "sol": [
+        "Theo Bảng 1: nhiệt độ sôi của $CH_2I_2$ là $182\\ ^\\circ C$, của $CH_4$ là $-162\\ ^\\circ C$.",
+        "Chênh lệch: $182-(-162)=344\\ ^\\circ C$."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Phát biểu sau đúng hay sai?<br>Trong các hợp chất sau: CH<sub>4</sub>, CF<sub>4</sub>, CCl<sub>4</sub>, CBr<sub>4</sub>, hợp chất có nhiệt độ sôi và khối lượng phân tử cao nhất là CCl<sub>4</sub>.",
+       "o": [
+        "Đúng.",
+        "Sai."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Khối lượng phân tử tăng dần: CH<sub>4</sub> (16) &lt; CF<sub>4</sub> (88) &lt; CCl<sub>4</sub> (154) &lt; CBr<sub>4</sub> (332), và theo Hình 1, nhiệt độ sôi cũng tăng theo.",
+        "Hợp chất có cả nhiệt độ sôi và khối lượng phân tử cao nhất là CBr<sub>4</sub>, không phải CCl<sub>4</sub>. Phát biểu sai."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Phát biểu sau đúng hay sai?<br>Diiodomethane có nhiệt độ sôi là $268\\ ^\\circ C$.",
+       "o": [
+        "Đúng.",
+        "Sai."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Theo Bảng 1, diiodomethane ($CH_2I_2$) có khối lượng phân tử là $268\\ amu$ còn nhiệt độ sôi là $182\\ ^\\circ C$.",
+        "Phát biểu nhầm khối lượng phân tử với nhiệt độ sôi nên sai."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Khối lượng nguyên tử của C là 12 amu. Dựa trên khối lượng phân tử của CBr<sub>4</sub> thể hiện trong Hình 1, khối lượng nguyên tử của Br <b>gần nhất</b> với khối lượng nào sau đây?",
+       "o": [
+        "20 amu.",
+        "35 amu.",
+        "80 amu.",
+        "127 amu."
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "Theo Hình 1, khối lượng phân tử của CBr<sub>4</sub> xấp xỉ $330\\ amu$.",
+        "$M_{CBr_4}=12+4\\cdot M_{Br}\\Rightarrow M_{Br}\\approx\\frac{330-12}{4}=79,5\\ amu$.",
+        "Gần nhất với $80\\ amu$. Chọn C."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Trong số các hợp chất sau, hợp chất nào có nhiệt độ sôi cao nhất?",
+       "o": [
+        "CF<sub>4</sub>.",
+        "CF<sub>2</sub>Cl<sub>2</sub>.",
+        "CF<sub>2</sub>Br<sub>2</sub>.",
+        "CCl<sub>4</sub>."
+       ],
+       "a": 3,
+       "solved": true,
+       "sol": [
+        "Theo Hình 1, khối lượng phân tử tăng thì nhiệt độ sôi tăng: CF<sub>4</sub> (88) &lt; CF<sub>2</sub>Cl<sub>2</sub> (121) &lt; CF<sub>2</sub>Br<sub>2</sub> (210) hoặc CCl<sub>4</sub> (154), nhưng trên đồ thị nhóm 1 CCl<sub>4</sub> có nhiệt độ sôi khoảng $77\\ ^\\circ C$, cao hơn CF<sub>2</sub>Br<sub>2</sub> (khoảng $25\\ ^\\circ C$).",
+        "Vậy CCl<sub>4</sub> có nhiệt độ sôi cao nhất trong 4 hợp chất đã cho."
+       ],
+       "warn": "Giá trị nhiệt độ sôi của CF2Br2 và CCl4 đọc từ đồ thị trong ảnh; cần đối chiếu đáp án chính thức."
+      },
+      {
+       "t": "drag",
+       "q": "Theo Hình 1 và Bảng 1, [[0]] có nhiệt độ sôi $40\\ ^\\circ C$ và khối lượng phân tử là 85 amu; tetrabromomethane có nhiệt độ sôi [[1]] và khối lượng phân tử xấp xỉ [[2]].",
+       "c": [
+        "$190\\ ^\\circ C$",
+        "60 amu",
+        "dichloromethane",
+        "bromomethane",
+        "330 amu",
+        "$150\\ ^\\circ C$"
+       ],
+       "a": [
+        2,
+        0,
+        4
+       ],
+       "solved": true,
+       "sol": [
+        "Ô 1: theo Bảng 1, hợp chất có nhiệt độ sôi $40\\ ^\\circ C$ và khối lượng phân tử 85 amu là dichloromethane ($CH_2Cl_2$).",
+        "Ô 2: theo Hình 1, tetrabromomethane ($CBr_4$) có nhiệt độ sôi khoảng $190\\ ^\\circ C$.",
+        "Ô 3: khối lượng phân tử của $CBr_4$ xấp xỉ 330 amu (xem câu 17)."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "GƯƠNG CẦU LÕM VÀ SỰ PHẢN XẠ CỦA GƯƠNG",
+     "p": "<p>Các thông tin bên dưới được cung cấp khi nghiên cứu gương và sự phản xạ của gương:<br>Tính chất của ảnh và khoảng cách từ vật đến gương cầu lõm có một mối quan hệ nhất định (Hình 1). Nếu vật nằm ngoài tâm cong (C) thì ảnh phản xạ của vật sẽ ngược chiều (lộn ngược) và nhỏ hơn vật. Nếu vật nằm chính xác tại C thì ảnh cũng sẽ nằm tại C; nhưng ảnh thu được sẽ ngược chiều so với vật và có kích thước bằng vật. Khi đặt vật vào khoảng giữa C và tiêu điểm F thì ảnh sẽ ngược chiều so với vật và lớn hơn vật. Khi vật nằm chính xác tại F thì không thu được ảnh. Cuối cùng, nếu một vật được đặt giữa tiêu điểm F và gương, ảnh của nó sẽ cùng chiều so với vật và lớn hơn vật.</p><p><i>Hình 1</i></p><p>Dựa vào các thông tin được cung cấp ở trên, các sinh viên được yêu cầu giải thích cách thực hiện trò ảo thuật sau:<br>Một ảo thuật gia nổi tiếng đã thực hiện một màn ảo thuật kinh điển sử dụng gương cầu lõm có tiêu cự 1,6 m và tâm cong có bán kính 2,2 m. Nhà ảo thuật có thể sử dụng gương để tạo ra hình ảnh của một bóng đèn ở cùng một vị trí và có cùng kích thước với chính bóng đèn thực tế.</p><p><i>Học sinh 1</i><br>Bóng đèn phải được đặt chính xác ở vị trí cách gương 1,6 m và ở phía trước gương, tạo ra sự phản xạ ánh sáng hoàn hảo. Do đó, ảnh sẽ ở cùng vị trí với bóng đèn, có cùng kích thước với bóng đèn và ảnh có tính chất cùng chiều với bóng đèn.</p><p><i>Học sinh 2</i><br>Bóng đèn phải được đặt ở vị trí cách gương 2,2 m và ở phía trước gương. Khi đó, ảnh thu được sẽ ở cùng một vị trí và có cùng kích thước với bóng đèn, nhưng ảnh ngược chiều với vật.</p>",
+     "svg": "<svg viewBox='0 0 300 150' xmlns='http://www.w3.org/2000/svg' font-size='13' fill='currentColor'><g fill='none' stroke='currentColor' stroke-width='1.5'><line x1='10' y1='80' x2='255' y2='80'/><path d='M222 15 Q268 80 222 145'/></g><circle cx='60' cy='80' r='3'/><circle cx='140' cy='80' r='3'/><text x='56' y='65'>C</text><text x='136' y='65'>F</text><text x='258' y='84'>O</text></svg>",
+     "questions": [
+      {
+       "t": "tf",
+       "q": "Phát biểu nào sau đây là đúng hoặc sai?",
+       "s": [
+        "Vật đặt trước C (gần gương hơn) sẽ cho ảnh lớn hơn vật.",
+        "Một vật đặt ở bất kì vị trí nào trước tiêu điểm F (gần gương hơn) sẽ cho ảnh cùng chiều so với vật.",
+        "Vật đặt trước F (xa gương hơn) sẽ cho ảnh ngược chiều so với vật.",
+        "Cách duy nhất để tạo ra ảnh có kích thước bằng vật là đặt vật chính xác tại C."
+       ],
+       "a": [
+        1,
+        1,
+        1,
+        1
+       ],
+       "warn": "Ý 1 và ý 3 có thể gây tranh cãi vì trường hợp vật đặt đúng tại F (không có ảnh); đáp án do tự giải, cần đối chiếu đáp án chính thức.",
+       "solved": true,
+       "sol": [
+        "Ý 1 đúng: vật giữa C và F cho ảnh ngược chiều, lớn hơn vật; vật giữa F và gương cho ảnh cùng chiều, lớn hơn vật (đúng theo đoạn dẫn, bỏ qua điểm F tại đó không có ảnh).",
+        "Ý 2 đúng: vật đặt giữa F và gương thì ảnh cùng chiều và lớn hơn vật.",
+        "Ý 3 đúng: vật đặt xa gương hơn F (giữa F và C hoặc ngoài C) thì ảnh ngược chiều với vật.",
+        "Ý 4 đúng: theo đoạn dẫn chỉ khi vật nằm chính xác tại C ảnh mới có kích thước bằng vật."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Đặt bóng đèn trước gương một khoảng nào sau đây sẽ cho ảnh cùng chiều so với vật?",
+       "o": [
+        "1,0 m.",
+        "1,6 m.",
+        "2,2 m.",
+        "2,6 m."
+       ],
+       "a": 0,
+       "solved": true,
+       "sol": [
+        "Tiêu cự $f=1,6\\ m$ nên $F$ cách gương 1,6 m; tâm cong $C$ cách gương 2,2 m.",
+        "Ảnh cùng chiều khi vật nằm giữa F và gương, tức khoảng cách nhỏ hơn 1,6 m. Chỉ có 1,0 m thỏa mãn."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Một câu hỏi khác được đặt ra cho các học sinh:<br>Các sinh viên được cho biết rằng Nhà ảo thuật gia đã thực hiện một thủ thuật khác trong đó nhà ảo thuật di chuyển bóng đèn để tạo ảo giác rằng nó đã biến mất hoàn toàn. Bóng đèn phải đặt trước gương một khoảng là bao nhiêu để <b>không</b> tạo ra ảnh?",
+       "o": [
+        "1,3 m.",
+        "1,6 m.",
+        "2,0 m.",
+        "2,2 m."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Theo đoạn dẫn, khi vật nằm chính xác tại tiêu điểm F thì không thu được ảnh.",
+        "$F$ cách gương $1,6\\ m$. Chọn B."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Cách giải của hai học sinh giống nhau ở chỗ cả hai cách giải thích đều",
+       "o": [
+        "cho rằng ảnh cùng chiều so với vật.",
+        "cho rằng vị trí của bóng đèn quyết định tính chất của ảnh.",
+        "ảnh có kích thước lớn hơn vật.",
+        "hiểu sai thông tin cung cấp ở phần dẫn."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Học sinh 1 đặt vật cách gương 1,6 m, Học sinh 2 đặt vật cách gương 2,2 m, cả hai đều dựa vào vị trí đặt bóng đèn để suy ra tính chất của ảnh.",
+        "A sai vì Học sinh 2 nói ảnh ngược chiều; C sai vì cả hai đều nói ảnh bằng vật; D không phải điểm giống nhau (chỉ Học sinh 1 hiểu sai). Chọn B."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Dựa trên thông tin được cung cấp thì Học sinh 2 có giải thích đầy đủ về trò ảo thuật.",
+       "o": [
+        "Đúng.",
+        "Sai."
+       ],
+       "a": 0,
+       "solved": true,
+       "sol": [
+        "Học sinh 2 đặt bóng đèn tại tâm cong C (cách gương 2,2 m).",
+        "Theo đoạn dẫn: vật nằm chính xác tại C thì ảnh cũng nằm tại C, ngược chiều và có kích thước bằng vật. Đó đúng là điều kiện để ảnh ở cùng vị trí, cùng kích thước với bóng đèn.",
+        "Vậy lời giải thích của Học sinh 2 là đầy đủ và đúng."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Các học sinh không đồng ý về tính chất nào của hình ảnh bóng đèn?",
+       "o": [
+        "Kích thước của ảnh.",
+        "Vị trí của ảnh.",
+        "Chiều của ảnh so với vật.",
+        "Hình dạng của nó."
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "Cả hai học sinh đều cho ảnh có cùng vị trí và cùng kích thước với bóng đèn.",
+        "Học sinh 1 cho ảnh cùng chiều với bóng đèn, còn Học sinh 2 cho ảnh ngược chiều. Hai bạn bất đồng ở chiều của ảnh so với vật. Chọn C."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Giả thiết cho rằng lời giải thích của Học sinh 2 là đúng. Nếu Nhà ảo thuật muốn tạo ra ảnh của bóng đèn nhỏ hơn chính bóng đèn, thì Nhà ảo thuật có thể đặt bóng đèn ở khoảng cách nào sau đây trước gương?",
+       "o": [
+        "1,6 m.",
+        "2,0 m.",
+        "2,2 m.",
+        "2,5 m."
+       ],
+       "a": 3,
+       "solved": true,
+       "sol": [
+        "Theo đoạn dẫn, ảnh nhỏ hơn vật và ngược chiều khi vật nằm ngoài tâm cong C.",
+        "C cách gương 2,2 m nên cần đặt vật cách gương lớn hơn 2,2 m. Chỉ có 2,5 m thỏa mãn. Chọn D."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "SULFITE TRONG TRÁI CÂY SẤY KHÔ",
+     "p": "<p>Một số nhà sản xuất thêm chất bảo quản gọi là sulfite ($SO_3^{2-}$) vào trái cây sấy. Chất này làm cho trái cây sấy khô trông hấp dẫn hơn, vì nó có tác dụng bảo quản trái cây và ngăn ngừa sự đổi màu. Phương pháp này thường được áp dụng cho các loại trái cây có màu sắc rực rỡ, chẳng hạn như mơ và nho khô, … Việc sử dụng sulfite đang gây tranh cãi vì các nghiên cứu cho thấy rằng sulfite có thể gây ra tác dụng không mong muốn cho một số người với các triệu chứng như co thắt dạ dày, nổi mẩn đỏ, thậm chí gây khó thở, lên cơn hen suyễn. Học sinh đã thực hiện 2 thí nghiệm sau để đo nồng độ sulfite.</p><p><b><i>Thí nghiệm 1</i></b><br>Chuẩn bị 4 dung dịch, mỗi dung dịch chứa một lượng $SO_3^{2-}$ khác nhau. Một chất tạo màu được thêm vào mỗi dung dịch trên để tạo thành một hợp chất màu đỏ có khả năng hấp thụ mạnh ánh sáng ở bước sóng cụ thể. Sau đó, mỗi dung dịch được pha loãng đến 100 ml. Dung dịch A được chuẩn bị tương tự như 4 dung dịch thí nghiệm nhưng không chứa $SO_3^{2-}$. Máy quang phổ UV-vis (một thiết bị đo khả năng hấp thụ ánh sáng của mẫu chất) được sử dụng để đo độ hấp thụ của từng dung dịch. Độ hấp thụ hiệu chỉnh được tính bằng cách lấy độ hấp thụ đo được trừ đi độ hấp thụ của dung dịch A (xem Bảng 1 và Hình 1).</p><table><tr><th colspan='3'>Bảng 1</th></tr><tr><th>Nồng độ của $SO_3^{2-}$ (ppm)</th><th>Độ hấp thụ đo được</th><th>Độ hấp thụ hiệu chỉnh</th></tr><tr><td>0,0</td><td>0,130</td><td>0,000</td></tr><tr><td>1,0</td><td>0,283</td><td>0,153</td></tr><tr><td>2,0</td><td>0,432</td><td>0,302</td></tr><tr><td>4,0</td><td>0,730</td><td>0,600</td></tr><tr><td>8,0</td><td>1,350</td><td>1,220</td></tr></table><p><i>Hình 1</i> (đồ thị biểu diễn nồng độ $SO_3^{2-}$ (ppm) theo độ hấp thụ hiệu chỉnh)</p><p><b><i>Thí nghiệm 2</i></b><br>Một mẫu trái cây nặng 100 g được xay nhỏ trong máy xay sinh tố cùng với 50 ml H<sub>2</sub>O. Tiến hành lọc toàn bộ hỗn hợp để thu được dịch lọc. Thêm chất tạo màu vào dịch lọc và pha loãng dung dịch đến 100 ml. Quy trình này được lặp lại đối với một số loại trái cây và xác định độ hấp thụ của từng mẫu. Kết quả được thể hiện trong Bảng 2.</p><table><tr><th colspan='3'>Bảng 2</th></tr><tr><th>Loại trái cây</th><th>Độ hấp thụ hiệu chỉnh</th><th>Nồng độ của $SO_3^{2-}$ (ppm)</th></tr><tr><td>Việt quất khô</td><td>0,668</td><td>4,4</td></tr><tr><td>Mận khô</td><td>0,562</td><td>3,7</td></tr><tr><td>Chuối sấy</td><td>0,031</td><td>0,2</td></tr><tr><td>Nho khô</td><td>0,941</td><td>6,2</td></tr><tr><td>Mơ khô</td><td>0,774</td><td>5,1</td></tr></table>",
+     "graph": {
+      "fn": [
+       "6.6*x"
+      ],
+      "x": [
+       0,
+       1.5
+      ],
+      "y": [
+       0,
+       10
+      ],
+      "xstep": 0.2,
+      "ystep": 2,
+      "pts": [
+       {
+        "x": 0.153,
+        "y": 1,
+        "t": ""
+       },
+       {
+        "x": 0.302,
+        "y": 2,
+        "t": ""
+       },
+       {
+        "x": 0.6,
+        "y": 4,
+        "t": ""
+       },
+       {
+        "x": 1.22,
+        "y": 8,
+        "t": ""
+       }
+      ]
+     },
+     "warn": "Bảng 2 trong PDF bị cắt ở cuối trang, có thể thiếu hàng (loại trái cây thứ sáu, dứa khô, được nhắc ở câu 30). Đồ thị Hình 1 được dựng lại xấp xỉ bằng đường thẳng qua các điểm của Bảng 1 (trục hoành: độ hấp thụ hiệu chỉnh, trục tung: nồng độ ppm).",
+     "questions": [
+      {
+       "t": "mc",
+       "q": "Phát biểu sau đúng hay sai?<br>Dựa trên kết quả Thí nghiệm 2, độ hấp thụ hiệu chỉnh của mơ khô có giá trị lớn nhất.",
+       "o": [
+        "Đúng.",
+        "Sai."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Bảng 2: độ hấp thụ hiệu chỉnh của mơ khô là 0,774, còn của nho khô là 0,941 (lớn hơn).",
+        "Độ hấp thụ lớn nhất thuộc về nho khô, không phải mơ khô. Phát biểu sai."
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Các phát biểu sau đúng hay sai?",
+       "s": [
+        "Dựa trên kết quả của Thí nghiệm 1, nếu một dung dịch có nồng độ $SO_3^{2-}$ là 3 ppm được thử nghiệm thì độ hấp thụ hiệu chỉnh sẽ xấp xỉ 0,5.",
+        "Nếu Thí nghiệm 1 và 2 được lặp lại bằng cách sử dụng một chất tạo màu khác, cần có những thay đổi sau trong quy trình: chất tạo màu mới cần được thêm vào dung dịch A nhưng không cần thêm vào dung dịch mẫu; máy quang phổ UV-vis cần được cài đặt để đo ở bước sóng tương ứng với khả năng hấp thụ ánh sáng của chất tạo màu mới."
+       ],
+       "a": [
+        1,
+        0
+       ],
+       "solved": true,
+       "sol": [
+        "Ý 1 đúng: 3 ppm nằm giữa 2 ppm (0,302) và 4 ppm (0,600). Độ hấp thụ hiệu chỉnh xấp xỉ $\\frac{0,302+0,600}{2}\\approx0,45$, làm tròn gần 0,5.",
+        "Ý 2 sai: dung dịch A được chuẩn bị tương tự các dung dịch thí nghiệm nhưng không chứa $SO_3^{2-}$, nên chất tạo màu cũng phải được thêm vào dung dịch A để trừ nền; đồng thời cũng phải thêm vào các dung dịch mẫu để tạo hợp chất màu. Do đó nếu đổi chất tạo màu thì phải thêm chất mới vào cả dung dịch A lẫn dung dịch mẫu."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Dựa trên kết quả của Thí nghiệm 1, nếu một dung dịch có nồng độ $SO_3^{2-}$ là 1,5 ppm được thử nghiệm thì độ hấp thụ hiệu chỉnh sẽ <b>gần nhất</b> với giá trị nào sau đây?",
+       "o": [
+        "0,160.",
+        "0,240.",
+        "0,300.",
+        "0,360."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "1 ppm ứng với 0,153 và 2 ppm ứng với 0,302; độ hấp thụ hiệu chỉnh tăng gần tỉ lệ thuận với nồng độ.",
+        "Nội suy: ở 1,5 ppm có độ hấp thụ hiệu chỉnh khoảng $\\frac{0,153+0,302}{2}\\approx0,23$, gần nhất với 0,240."
+       ]
+      },
+      {
+       "t": "drag",
+       "q": "Trong Thí nghiệm 2, một mẫu dứa khô cũng được đo độ hấp thụ và giá trị độ hấp thụ hiệu chỉnh xác định được là 0,603. Các mẫu được sắp xếp theo thứ tự nồng độ $SO_3^{2-}$ giảm dần là: [[0]], [[1]], [[2]], [[3]], [[4]], [[5]].",
+       "c": [
+        "việt quất khô",
+        "mận khô",
+        "nho khô",
+        "dứa khô",
+        "mơ khô",
+        "chuối sấy"
+       ],
+       "a": [
+        2,
+        4,
+        0,
+        3,
+        1,
+        5
+       ],
+       "solved": true,
+       "sol": [
+        "Nồng độ $SO_3^{2-}$ tăng theo độ hấp thụ hiệu chỉnh (tỉ lệ thuận, Thí nghiệm 1).",
+        "Sắp xếp độ hấp thụ hiệu chỉnh giảm dần: nho khô (0,941) &gt; mơ khô (0,774) &gt; việt quất khô (0,668) &gt; dứa khô (0,603) &gt; mận khô (0,562) &gt; chuối sấy (0,031).",
+        "Vậy thứ tự nồng độ giảm dần: nho khô, mơ khô, việt quất khô, dứa khô, mận khô, chuối sấy."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Nếu một số thành phần hòa tan trong nước được tìm thấy trong tất cả các loại trái cây được thử nghiệm trong Thí nghiệm 2 có thể hấp thụ ánh sáng có cùng bước sóng với hợp chất được hình thành bởi $SO_3^{2-}$ và chất tạo màu. So với nồng độ $SO_3^{2-}$ thực tế, nồng độ $SO_3^{2-}$ đo được sẽ",
+       "o": [
+        "cao hơn đối với tất cả các loại trái cây.",
+        "thấp hơn đối với tất cả các loại trái cây.",
+        "không thay đổi đối với tất cả các loại trái cây.",
+        "cao hơn đối với một số loại trái cây và thấp hơn đối với những loại khác."
+       ],
+       "a": 0,
+       "solved": true,
+       "sol": [
+        "Các thành phần hòa tan này hấp thụ thêm ánh sáng ở cùng bước sóng nên độ hấp thụ đo được lớn hơn độ hấp thụ chỉ do hợp chất của $SO_3^{2-}$.",
+        "Độ hấp thụ lớn hơn thì khi quy ra nồng độ sẽ cho nồng độ $SO_3^{2-}$ đo được lớn hơn thực tế, và điều này xảy ra với tất cả các loại trái cây. Chọn A."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Dựa trên kết quả của Thí nghiệm 1, nếu nồng độ $SO_3^{2-}$ trong dung dịch tăng gấp đôi, thì độ hấp thụ hiệu chỉnh của dung dịch",
+       "o": [
+        "không thay đổi.",
+        "giảm gần một nửa.",
+        "tăng gần gấp đôi.",
+        "tăng gần gấp bốn."
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "Bảng 1: 1 ppm → 0,153; 2 ppm → 0,302; 4 ppm → 0,600; 8 ppm → 1,220. Mỗi lần nồng độ gấp đôi thì độ hấp thụ hiệu chỉnh cũng tăng gần gấp đôi (quan hệ gần tuyến tính).",
+        "Chọn C."
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Điền từ/cụm từ thích hợp vào chỗ trống.<br>Mẫu trái cây có nồng độ $SO_3^{2-}$ thấp nhất là [[0]].",
+       "a": [
+        [
+         "chuối sấy"
+        ]
+       ],
+       "solved": true,
+       "sol": [
+        "Bảng 2: nồng độ $SO_3^{2-}$ của chuối sấy là 0,2 ppm, nhỏ nhất trong các mẫu (các mẫu khác từ 3,7 ppm trở lên).",
+        "Từ cần điền: “chuối sấy”."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "ĐIỆN TRỞ, DÒNG ĐIỆN VÀ CÔNG SUẤT CỦA BÓNG ĐÈN",
+     "p": "<p>Mỗi khi bóng đèn được bật lên, một mạch điện sẽ được hình thành. Khi cắm vào ổ cắm có điện áp nhất định, dòng điện bắt đầu chạy qua bóng đèn. Dòng điện phụ thuộc vào điện trở của bóng đèn và điện áp của nguồn điện. Công suất phát ra của bóng đèn là thước đo lượng năng lượng mà bóng đèn cần mỗi giây. Bảng 1 chứa dữ liệu liên quan đến các thông số của mạch điện cơ bản gồm một bóng đèn và nguồn điện.</p><table><tr><th colspan='5'>BẢNG 1</th></tr><tr><th>Điện trở R của bóng đèn ($\\Omega$)</th><th>Điện áp $U$ hai đầu bóng đèn ($V$)</th><th>Dòng điện $I$ chạy qua bóng đèn ($A$)</th><th>Công suất $P$ của bóng đèn (W)</th><th>Điện năng tiêu thụ/h ($kJ$)</th></tr><tr><td>120</td><td>120</td><td>1,00</td><td>120</td><td>432</td></tr><tr><td>240</td><td>120</td><td>0,50</td><td>60</td><td>216</td></tr><tr><td>360</td><td>120</td><td>0,33</td><td>40</td><td>144</td></tr><tr><td>480</td><td>120</td><td>0,25</td><td>30</td><td>108</td></tr><tr><td>480</td><td>180</td><td>0,38</td><td>68</td><td>243</td></tr><tr><td>480</td><td>240</td><td>0,50</td><td>120</td><td>432</td></tr><tr><td>480</td><td>300</td><td>0,63</td><td>188</td><td>675</td></tr></table><p>Hình 1 cho thấy ba mạch điện chứa bóng đèn trong đó:<br>Mạch 1 là mạch cơ bản với 1 bóng đèn và 1 nguồn điện<br>Mạch 2 gồm 1 nguồn điện và 2 bóng đèn mắc nối tiếp<br>Mạch 3 gồm 1 nguồn điện và 2 bóng đèn mắc song song</p><p><i>Hình 1</i></p><p>Bảng 2 cho thấy số lượng bóng đèn mắc nối tiếp và song song ảnh hưởng như thế nào đến giá trị dòng điện và công suất với các bóng đèn loại $240\\ \\Omega$ được mắc với nguồn điện 120 V.</p><table><tr><th colspan='6'>BẢNG 2</th></tr><tr><th>Cách mắc bóng đèn</th><th>Số lượng bóng đèn</th><th>Dòng điện chạy qua mỗi bóng đèn ($A$)</th><th>Dòng điện chạy qua nguồn điện ($A$)</th><th>Công suất của bóng đèn ($W$)</th><th>Công suất của mạch điện ($W$)</th></tr><tr><td>Mắc nối tiếp</td><td>2</td><td>0,25</td><td>0,25</td><td>15,0</td><td>30</td></tr><tr><td>Mắc nối tiếp</td><td>3</td><td>0,17</td><td>0,17</td><td>6,7</td><td>20</td></tr><tr><td>Mắc nối tiếp</td><td>4</td><td>0,13</td><td>0,13</td><td>3,8</td><td>15</td></tr><tr><td>Mắc song song</td><td>2</td><td>0,5</td><td>1,0</td><td>60</td><td>120</td></tr><tr><td>Mắc song song</td><td>3</td><td>0,5</td><td>1,5</td><td>60</td><td>180</td></tr><tr><td>Mắc song song</td><td>4</td><td>0,5</td><td>2,0</td><td>60</td><td>240</td></tr></table>",
+     "svg": "<svg viewBox='0 0 430 145' xmlns='http://www.w3.org/2000/svg' font-size='12' fill='currentColor'><g fill='none' stroke='currentColor' stroke-width='1.5'><rect x='10' y='30' width='100' height='70'/><line x1='54' y1='22' x2='54' y2='38'/><line x1='64' y1='27' x2='64' y2='33'/><circle cx='60' cy='100' r='9'/><line x1='54' y1='94' x2='66' y2='106'/><line x1='66' y1='94' x2='54' y2='106'/><rect x='150' y='30' width='120' height='70'/><line x1='204' y1='22' x2='204' y2='38'/><line x1='214' y1='27' x2='214' y2='33'/><circle cx='185' cy='100' r='9'/><line x1='179' y1='94' x2='191' y2='106'/><line x1='191' y1='94' x2='179' y2='106'/><circle cx='235' cy='100' r='9'/><line x1='229' y1='94' x2='241' y2='106'/><line x1='241' y1='94' x2='229' y2='106'/><rect x='310' y='30' width='100' height='95'/><line x1='310' y1='77' x2='410' y2='77'/><line x1='354' y1='22' x2='354' y2='38'/><line x1='364' y1='27' x2='364' y2='33'/><circle cx='360' cy='77' r='9'/><line x1='354' y1='71' x2='366' y2='83'/><line x1='366' y1='71' x2='354' y2='83'/><circle cx='360' cy='125' r='9'/><line x1='354' y1='119' x2='366' y2='131'/><line x1='366' y1='119' x2='354' y2='131'/></g><text x='38' y='128'>Mạch 1</text><text x='188' y='128'>Mạch 2</text><text x='338' y='143'>Mạch 3</text></svg>",
+     "questions": [
+      {
+       "t": "mc",
+       "q": "Cho mạch điện như hình vẽ. Khẳng định nào sau đây là <b>không</b> đúng?",
+       "o": [
+        "Nếu bóng đèn 1 bị vỡ thì hai bóng đèn còn lại sẽ tắt.",
+        "Nếu bóng đèn 2 bị vỡ thì hai bóng đèn còn lại cũng tắt.",
+        "Nếu cả Bóng đèn 2 và Bóng đèn 3 đều vỡ, Bóng đèn 1 sẽ tắt.",
+        "Nếu bóng đèn 3 bị vỡ, các bóng đèn khác vẫn sáng."
+       ],
+       "a": 1,
+       "svg": "<svg viewBox='0 0 180 190' xmlns='http://www.w3.org/2000/svg' font-size='12' fill='currentColor'><g fill='none' stroke='currentColor' stroke-width='1.5'><rect x='20' y='25' width='130' height='140'/><line x1='80' y1='17' x2='80' y2='33'/><line x1='90' y1='22' x2='90' y2='28'/><line x1='20' y1='95' x2='150' y2='95'/><circle cx='20' cy='60' r='9'/><line x1='14' y1='54' x2='26' y2='66'/><line x1='26' y1='54' x2='14' y2='66'/><circle cx='85' cy='95' r='9'/><line x1='79' y1='89' x2='91' y2='101'/><line x1='91' y1='89' x2='79' y2='101'/><circle cx='85' cy='165' r='9'/><line x1='79' y1='159' x2='91' y2='171'/><line x1='91' y1='159' x2='79' y2='171'/></g><text x='30' y='55'>Đ1</text><text x='96' y='88'>Đ2</text><text x='96' y='158'>Đ3</text></svg>",
+       "warn": "Sơ đồ mạch được dựng lại từ ảnh trong PDF: Đ1 nối tiếp với (Đ2 song song Đ3). Cần đối chiếu hình gốc.",
+       "solved": true,
+       "sol": [
+        "Từ sơ đồ: Đ1 mắc nối tiếp với cụm hai đèn Đ2 và Đ3 mắc song song.",
+        "A đúng: Đ1 vỡ thì mạch hở, cả Đ2 và Đ3 tắt.",
+        "B không đúng: Đ2 vỡ thì dòng điện vẫn đi qua nhánh Đ3 và Đ1 nên Đ1 và Đ3 vẫn sáng, không tắt.",
+        "C đúng: Đ2 và Đ3 cùng vỡ thì mạch hở, Đ1 tắt. D đúng: Đ3 vỡ thì Đ1 và Đ2 vẫn sáng."
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Một bóng đèn có điện trở $480\\ \\Omega$ được cắm vào ổ điện có điện áp 120 V. Năng lượng cần để thắp sáng bóng đèn trong 4 h là [[0]] kJ.",
+       "a": [
+        432
+       ],
+       "solved": true,
+       "sol": [
+        "Theo Bảng 1: với $R=480\\ \\Omega$, $U=120\\ V$ thì điện năng tiêu thụ trong 1 giờ là $108\\ kJ$.",
+        "Trong 4 giờ: $4\\cdot108=432\\ kJ$.",
+        "Kiểm tra: $P=\\frac{U^2}{R}=\\frac{120^2}{480}=30\\ W$, $A=30\\cdot4\\cdot3600=432000\\ J=432\\ kJ$."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Hai cực có hiệu điện thế không đổi 12 V mắc với mạch ngoài gồm hai bóng đèn: Đ<sub>1</sub> ghi 6 V – 3 W, Đ<sub>2</sub> ghi 6 V – 4,5 W và một điện trở R. Để cả hai bóng đèn đều sáng bình thường thì mạch ngoài mắc theo cách nào trong số các cách sau đây?",
+       "o": [
+        "Đ<sub>1</sub> nối tiếp (Đ<sub>2</sub> song song R), với R = 24 Ω.",
+        "R nối tiếp (Đ<sub>1</sub> song song Đ<sub>2</sub>), với R = 8 Ω.",
+        "R nối tiếp (Đ<sub>1</sub> song song Đ<sub>2</sub>), với R = 12 Ω.",
+        "Đ<sub>2</sub> nối tiếp (Đ<sub>1</sub> song song R), với R = 24 Ω."
+       ],
+       "a": 3,
+       "solved": true,
+       "sol": [
+        "Dòng định mức: $I_1=\\frac{3}{6}=0,5\\ A$; $I_2=\\frac{4,5}{6}=0,75\\ A$.",
+        "Phương án B, C: R nối tiếp với (Đ<sub>1</sub> // Đ<sub>2</sub>): hiệu điện thế trên R là $12-6=6\\ V$, dòng qua R là $0,5+0,75=1,25\\ A$ nên $R=\\frac{6}{1,25}=4,8\\ \\Omega$, không bằng 8 Ω hay 12 Ω nên loại.",
+        "Phương án A: Đ<sub>1</sub> nối tiếp với (Đ<sub>2</sub> // R) thì dòng qua Đ<sub>1</sub> bằng tổng dòng qua Đ<sub>2</sub> và R, tức lớn hơn $0,75\\ A$, mâu thuẫn với $I_1=0,5\\ A$. Loại.",
+        "Phương án D: Đ<sub>2</sub> nối tiếp với (Đ<sub>1</sub> // R): dòng qua Đ<sub>2</sub> là $0,75\\ A=0,5+I_R\\Rightarrow I_R=0,25\\ A$; hiệu điện thế trên cụm song song là $12-6=6\\ V$ nên $R=\\frac{6}{0,25}=24\\ \\Omega$. Thỏa mãn. Chọn D."
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Trong Hình 1, nếu một trong hai bóng đèn bị vỡ thì bóng đèn trong [[0]] sẽ bị tắt trong khi bóng đèn còn lại trong [[1]] vẫn sáng bình thường.",
+       "a": [
+        [
+         "Mạch 2",
+         "mạch 2"
+        ],
+        [
+         "Mạch 3",
+         "mạch 3"
+        ]
+       ],
+       "solved": true,
+       "sol": [
+        "Mạch 2: hai bóng đèn mắc nối tiếp, một bóng vỡ thì mạch hở, bóng còn lại cũng tắt.",
+        "Mạch 3: hai bóng đèn mắc song song, mỗi bóng nằm trên một nhánh riêng nên một bóng vỡ thì bóng còn lại vẫn sáng bình thường."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Công suất đầu ra của bóng đèn có điện trở $50\\ \\Omega$ được nối với mạch điện có điện áp 150 V và dòng điện 3,0 A chạy qua.",
+       "o": [
+        "3 W.",
+        "50 W.",
+        "150 W.",
+        "450 W."
+       ],
+       "a": 3,
+       "solved": true,
+       "sol": [
+        "Công suất của bóng đèn: $P=U\\cdot I=150\\cdot3,0=450\\ W$.",
+        "Kiểm tra: $P=I^2R=3^2\\cdot50=450\\ W$. Chọn D."
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Các phát biểu sau đây là đúng hoặc sai?",
+       "s": [
+        "Khi mắc song song thêm bóng đèn mạch điện 1 thì dòng điện chạy qua nguồn tăng.",
+        "Khi mắc song song thêm bóng đèn mạch điện 1 thì công suất của mỗi bóng đèn tăng.",
+        "Khi mắc nối tiếp thêm bóng đèn mạch điện 1 thì cường độ dòng điện qua mỗi đèn là bằng nhau và bằng cường độ dòng điện qua nguồn.",
+        "Khi mắc nối tiếp thêm bóng đèn mạch điện 1 thì công suất của mạch điện không đổi."
+       ],
+       "a": [
+        1,
+        0,
+        1,
+        0
+       ],
+       "solved": true,
+       "sol": [
+        "Ý 1 đúng: Bảng 2, mắc song song: dòng qua nguồn tăng từ 1,0 A (2 đèn) lên 1,5 A (3 đèn), 2,0 A (4 đèn).",
+        "Ý 2 sai: công suất của mỗi bóng đèn khi mắc song song vẫn là 60 W, không đổi.",
+        "Ý 3 đúng: mắc nối tiếp thì dòng điện qua mỗi đèn bằng nhau và bằng dòng qua nguồn (0,25 A; 0,17 A; 0,13 A ở cả hai cột).",
+        "Ý 4 sai: khi mắc nối tiếp thêm đèn, công suất của mạch giảm từ 30 W xuống 20 W rồi 15 W."
+       ]
+      },
+      {
+       "t": "drag",
+       "q": "Theo các thông tin trong đoạn văn, việc lắp thêm một bóng đèn vào đoạn mạch song song có tác dụng làm tăng [[0]] của mạch bằng cách giảm [[1]] của toàn mạch.",
+       "c": [
+        "điện áp",
+        "công suất",
+        "điện trở",
+        "cường độ dòng điện"
+       ],
+       "a": [
+        3,
+        2
+       ],
+       "warn": "Ô 1 có thể chấp nhận cả “công suất” (Bảng 2: công suất mạch tăng 120, 180, 240 W). Đáp án chọn theo đoạn dẫn: dòng điện phụ thuộc vào điện trở và điện áp. Cần đối chiếu đáp án chính thức.",
+       "solved": true,
+       "sol": [
+        "Mắc thêm đèn song song thì có thêm một nhánh, điện trở tương đương của toàn mạch giảm.",
+        "Điện áp nguồn không đổi nên theo đoạn dẫn (dòng điện phụ thuộc vào điện trở và điện áp), điện trở toàn mạch giảm làm cường độ dòng điện của mạch tăng (Bảng 2: dòng qua nguồn tăng 1,0; 1,5; 2,0 A).",
+        "Điền: tăng “cường độ dòng điện” bằng cách giảm “điện trở”."
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

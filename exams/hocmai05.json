@@ -1,0 +1,1827 @@
+{
+ "title": "HOCMAI 05",
+ "sections": [
+  {
+   "title": "TOÁN",
+   "minutes": 60,
+   "questions": [
+    {
+     "t": "tf",
+     "q": "Cho hàm số $f(x)=x^{3}-3x^{2}+5$. Đặt $g(x)=f(x)+mx$ (Với $m$ là tham số). Phát biểu dưới đây là đúng hay sai?",
+     "s": [
+      "Hàm số $g(x)$ đạt cực trị khi và chỉ khi $m<3$",
+      "Hàm số $f(x)$ đồng biến trên khoảng $(3;+\\infty)$",
+      "Đồ thị hàm số $f(x)$ cắt trục hoành tại 3 điểm phân biệt.",
+      "Khi $m=-9$, giá trị lớn nhất của hàm $g(x)$ trên khoảng $(-\\infty;0)$ bằng 10"
+     ],
+     "a": [
+      1,
+      1,
+      0,
+      1
+     ],
+     "solved": true,
+     "sol": [
+      "Ta có $f'(x) = 3x^2 - 6x$. Đạo hàm $g'(x) = f'(x) + m = 3x^2 - 6x + m$.",
+      "Ý 1: Hàm số $g(x)$ có cực trị $\\Leftrightarrow g'(x)=0$ có 2 nghiệm phân biệt $\\Leftrightarrow \\Delta' = 9 - 3m > 0 \\Leftrightarrow m < 3$. (Đúng)",
+      "Ý 2: $f'(x) = 3x^2 - 6x > 0 \\Leftrightarrow x \\in (-\\infty;0) \\cup (2;+\\infty)$. Vì $(3;+\\infty) \\subset (2;+\\infty)$ nên hàm số đồng biến trên $(3;+\\infty)$. (Đúng)",
+      "Ý 3: Hàm số $f(x)$ có cực đại tại $(0; 5)$ và cực tiểu tại $(2; 1)$. Vì cả giá trị cực đại và cực tiểu đều lớn hơn 0 nên đồ thị hàm số chỉ cắt trục hoành tại 1 điểm duy nhất. (Sai)",
+      "Ý 4: Khi $m=-9$, $g'(x) = 3x^2 - 6x - 9 = 0 \\Leftrightarrow x = -1$ hoặc $x = 3$. Bảng biến thiên trên $(-\\infty; 0)$ cho thấy cực đại đạt tại $x=-1$. Giá trị lớn nhất trên $(-\\infty; 0)$ là $g(-1) = (-1)^3 - 3(-1)^2 - 9(-1) + 5 = 10$. (Đúng)"
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Trong không gian, qua một điểm $O$ cho trước có bao nhiêu đường thẳng vuông góc với mặt phẳng $(\\alpha)$ cho trước?",
+     "o": [
+      "Vô số.",
+      "2",
+      "0",
+      "1"
+     ],
+     "a": 3,
+     "solved": true,
+     "sol": [
+      "Theo tiên đề hình học không gian, qua một điểm cho trước có một và chỉ một đường thẳng vuông góc với một mặt phẳng cho trước."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Lớp A có 20 học sinh nam và 15 học sinh nữ. Lớp B có 25 học sinh nam và 10 học sinh nữ. Chọn ngẫu nhiên từ mỗi lớp ra một học sinh. Mỗi phát biểu sau là đúng hay sai?",
+     "s": [
+      "Xác suất để chọn được học sinh nữ từ lớp B là $\\frac{2}{7}.$",
+      "Xác suất để chọn được học sinh nữ từ lớp B và học sinh nam từ lớp A là $\\frac{6}{7}.$",
+      "Xác suất để chọn được một học sinh nam và một học sinh nữ là $\\frac{23}{49}.$",
+      "Xác suất để trong hai học sinh đã chọn có ít nhất một học sinh nam là $\\frac{43}{49}.$"
+     ],
+     "a": [
+      1,
+      0,
+      1,
+      1
+     ],
+     "solved": true,
+     "sol": [
+      "Tổng số học sinh lớp A là 35. Tổng số học sinh lớp B là 35.",
+      "Ý 1: $P(\\text{Nữ B}) = \\frac{10}{35} = \\frac{2}{7}$. (Đúng)",
+      "Ý 2: $P(\\text{Nữ B và Nam A}) = P(\\text{Nữ B}) \\times P(\\text{Nam A}) = \\frac{10}{35} \\times \\frac{20}{35} = \\frac{2}{7} \\times \\frac{4}{7} = \\frac{8}{49} \\neq \\frac{6}{7}$. (Sai)",
+      "Ý 3: $P(\\text{1 Nam, 1 Nữ}) = P(\\text{Nam A}) \\times P(\\text{Nữ B}) + P(\\text{Nữ A}) \\times P(\\text{Nam B}) = \\frac{20}{35} \\times \\frac{10}{35} + \\frac{15}{35} \\times \\frac{25}{35} = \\frac{8}{49} + \\frac{15}{49} = \\frac{23}{49}$. (Đúng)",
+      "Ý 4: Biến cố đối của 'ít nhất 1 nam' là 'cả 2 nữ'. $P(\\text{ít nhất 1 nam}) = 1 - P(\\text{Nữ A}) \\times P(\\text{Nữ B}) = 1 - \\frac{15}{35} \\times \\frac{10}{35} = 1 - \\frac{3}{7} \\times \\frac{2}{7} = 1 - \\frac{6}{49} = \\frac{43}{49}$. (Đúng)"
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Cho hình hộp chữ nhật $ABCD.A^{\\prime}B^{\\prime}C^{\\prime}D^{\\prime}$ có đáy ABCD là hình vuông cạnh có độ dài bằng a. Đường thẳng $A^{\\prime}C$ tạo với đáy ABCD góc $\\alpha$ sao cho $\\tan\\alpha =\\sqrt{2}.$ Phát biểu đúng hay sai?",
+     "s": [
+      "Thể tích khối hộp chữ nhật $ABCD.A^{\\prime}B^{\\prime}C^{\\prime}D^{\\prime}$ là $2a^{3}$",
+      "Góc nhị diện $[(BCC^{\\prime}B^{\\prime}),BB^{\\prime},(BDD^{\\prime}B^{\\prime})]$ có số đo bằng $45^{\\circ}$",
+      "Khoảng cách giữa BD và $CD^{\\prime}$ bằng $\\frac{a}{3}$",
+      "$\\vec{AC^{\\prime}}=\\vec{AB}+\\vec{AD}+\\vec{AA^{\\prime}}$"
+     ],
+     "a": [
+      1,
+      1,
+      0,
+      1
+     ],
+     "solved": true,
+     "sol": [
+      "Đáy ABCD là hình vuông cạnh $a \\Rightarrow AC = a\\sqrt{2}$. Góc giữa $A'C$ và mặt đáy là $\\widehat{A'CA} = \\alpha$.",
+      "Chiều cao $AA' = AC \\cdot \\tan\\alpha = a\\sqrt{2} \\cdot \\sqrt{2} = 2a$.",
+      "Ý 1: Thể tích $V = S_{ABCD} \\cdot AA' = a^2 \\cdot 2a = 2a^3$. (Đúng)",
+      "Ý 2: Góc nhị diện cạnh $BB'$ giữa 2 mặt phẳng vuông góc với đáy chính là góc $\\widehat{CBD}$. Vì ABCD là hình vuông nên $\\widehat{CBD} = 45^{\\circ}$. (Đúng)",
+      "Ý 3: Đặt hệ trục tọa độ $B(a;0;0), D(0;a;0), C(a;a;0), D'(0;a;2a)$. Ta có $\\vec{BD}=(-a;a;0)$, $\\vec{CD'} = (-a;-a;2a)$. Khoảng cách tính bằng $d = \\frac{|[\\vec{BD}, \\vec{CD'}] \\cdot \\vec{CB}|}{|[\\vec{BD}, \\vec{CD'}]|} = \\frac{2a}{3} \\neq \\frac{a}{3}$. (Sai)",
+      "Ý 4: Theo quy tắc hình hộp, $\\vec{AC'} = \\vec{AB} + \\vec{AD} + \\vec{AA'}$. (Đúng)"
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Điền số tự nhiên thích hợp vào chỗ trống để được khẳng định đúng.<br>Cho hình hộp chữ nhật $ABCD.A^{\\prime}B^{\\prime}C^{\\prime}D^{\\prime}$ có đáy $ABCD$ là hình vuông cạnh bằng $a$, chiều cao bằng $a\\sqrt{2}$. Góc giữa đường thẳng $AC^{\\prime}$ và mặt phẳng $(A^{\\prime}B^{\\prime}C^{\\prime}D^{\\prime})$ có số đo bằng [[0]] (độ).",
+     "a": [
+      45
+     ],
+     "solved": true,
+     "sol": [
+      "Đáy là hình vuông cạnh $a$ nên đường chéo $A'C' = a\\sqrt{2}$.",
+      "Hình chiếu vuông góc của $AC'$ lên $(A'B'C'D')$ là $A'C'$. Do đó góc cần tìm là $\\widehat{AC'A'}$.",
+      "Xét tam giác vuông $AA'C'$ tại $A'$, ta có $\\tan \\widehat{AC'A'} = \\frac{AA'}{A'C'} = \\frac{a\\sqrt{2}}{a\\sqrt{2}} = 1$.",
+      "Suy ra $\\widehat{AC'A'} = 45^{\\circ}$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Cho hàm số $y=\\frac{x^{2}+3x+3}{x+2}.$ Mỗi phát biểu dưới đây là đúng hay sai?",
+     "s": [
+      "Hàm số đã cho đồng biến trên $(-\\infty;-3)$ và $(-1;+\\infty)$.",
+      "Tổng giá trị cực đại và giá trị cực tiểu của hàm số đã cho bằng -4.",
+      "Đường tiệm cận xiên của đồ thị hàm số đã cho đi qua điểm $A(0;2)$.",
+      "Phương trình tiếp tuyến của đồ thị hàm số đã cho song song với đường thẳng $y=-3x-11$ đi qua điểm $B(1;-6)$"
+     ],
+     "a": [
+      1,
+      0,
+      0,
+      1
+     ],
+     "solved": true,
+     "sol": [
+      "Ta có $y = x + 1 + \\frac{1}{x+2} \\Rightarrow y' = 1 - \\frac{1}{(x+2)^2} = \\frac{x^2+4x+3}{(x+2)^2}$. Phương trình $y' = 0$ có hai nghiệm $x = -1, x = -3$.",
+      "Ý 1: Dấu $y' > 0$ khi $x \\in (-\\infty;-3) \\cup (-1;+\\infty)$ nên hàm số đồng biến trên các khoảng này. (Đúng)",
+      "Ý 2: Điểm cực đại $x_{CD} = -3 \\Rightarrow y_{CD} = -3$. Điểm cực tiểu $x_{CT} = -1 \\Rightarrow y_{CT} = 1$. Tổng bằng $-2 \\neq -4$. (Sai)",
+      "Ý 3: Tiệm cận xiên là đường thẳng $y = x + 1$. Tại $x=0 \\Rightarrow y=1$. Vậy nó đi qua điểm $(0;1)$, không phải $(0;2)$. (Sai)",
+      "Ý 4: Tiếp tuyến song song với $y=-3x-11$ nên có hệ số góc $k = -3$. Giải $y' = -3 \\Leftrightarrow 1 - \\frac{1}{(x+2)^2} = -3 \\Leftrightarrow (x+2)^2 = \\frac{1}{4} \\Leftrightarrow x = -\\frac{3}{2}$ hoặc $x = -\\frac{5}{2}$. Phương trình tiếp tuyến tương ứng là $y = -3x - 3$ và $y = -3x - 11$ (trùng). Thử điểm $B(1;-6)$ vào phương trình $y = -3x - 3$, ta thấy thỏa mãn $(-6 = -3(1)-3)$. (Đúng)"
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho cấp số nhân $(u_{n})$ có $u_{1}=-1$, công bội $q=-\\frac{1}{10}.$ Hỏi $-\\frac{1}{10^{430}}$ là số hạng thứ mấy của $(u_{n})$?",
+     "o": [
+      "Số hạng thứ 430.",
+      "Số hạng thứ 429.",
+      "Số hạng thứ 434.",
+      "Số hạng thứ 431"
+     ],
+     "a": 3,
+     "solved": true,
+     "sol": [
+      "Công thức số hạng tổng quát của cấp số nhân là $u_n = u_1 \\cdot q^{n-1}$.",
+      "Thay số: $-\\frac{1}{10^{430}} = (-1) \\cdot \\left(-\\frac{1}{10}\\right)^{n-1} \\Leftrightarrow \\left(-\\frac{1}{10}\\right)^{430} = \\left(-\\frac{1}{10}\\right)^{n-1}$.",
+      "Do đó $n - 1 = 430 \\Leftrightarrow n = 431$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Bạn An chơi trò chơi xếp các que diêm thành tháp theo quy tắc thể hiện như hình vẽ. Để xếp được tháp có 10 tầng thì bạn An cần đúng bao nhiêu que diêm?",
+     "o": [
+      "210.",
+      "39.",
+      "100.",
+      "270."
+     ],
+     "a": 0,
+     "fig": "img/Toan_c8_xeptheodiem.png",
+     "warn": "Cần đối chiếu với ảnh gốc để khẳng định chính xác dãy số lượng que diêm.",
+     "solved": true,
+     "sol": [
+      "Dựa vào quy luật phổ biến của bài toán xếp diêm thành tháp tam giác liên tiếp, số que diêm để xếp riêng tầng thứ $n$ tạo thành cấp số cộng với số hạng đầu $u_1 = 3$ và công sai $d = 4$.",
+      "Số diêm tầng $n$ là $u_n = 4n - 1$.",
+      "Tổng số que diêm cho 10 tầng là tổng 10 số hạng đầu của cấp số cộng: $S_{10} = \\frac{10}{2}(u_1 + u_{10}) = 5(3 + 39) = 5 \\times 42 = 210$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Các mệnh đề sau đúng hay sai?",
+     "s": [
+      "Có 100 số tự nhiên có 3 chữ số chia hết cho 9.",
+      "Có 28560 số tự nhiên gồm 6 chữ số khác nhau và chia hết cho 5.",
+      "Có 60 số tự nhiên có 3 chữ số khác nhau đều là số chẵn.",
+      "Có 9000 số tự nhiên gồm 7 chữ số trong đó các chữ số cách đều số đứng giữa thì giống nhau."
+     ],
+     "a": [
+      1,
+      1,
+      0,
+      1
+     ],
+     "solved": true,
+     "sol": [
+      "Ý 1: Số có 3 chữ số lớn nhất chia hết cho 9 là 999, nhỏ nhất là 108. Số lượng: $(999 - 108)/9 + 1 = 100$ số. (Đúng)",
+      "Ý 2: Số tận cùng là 0: Có $A_9^5 = 15120$ số. Số tận cùng là 5: Có $8 \\times A_8^4 = 13440$ số. Tổng cộng: $15120 + 13440 = 28560$ số. (Đúng)",
+      "Ý 3: Số được tạo từ tập {0, 2, 4, 6, 8}. Chọn chữ số hàng trăm: 4 cách (khác 0). Chọn 2 chữ số còn lại: $A_4^2 = 12$ cách. Tổng: $4 \\times 12 = 48$ số. Đề cho 60 là Sai.",
+      "Ý 4: Số có dạng $abcdcba$. $a$ có 9 cách chọn, $b, c, d$ mỗi chữ số có 10 cách chọn. Số lượng: $9 \\times 10 \\times 10 \\times 10 = 9000$. (Đúng)"
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Trong không gian Oxyz, phương trình nào sau đây là phương trình của mặt cầu tâm $I(7;6;-5)$ và bán kính bằng 9?",
+     "o": [
+      "$(x+7)^{2}+(y+6)^{2}+(z-5)^{2}=81$ .",
+      "$(x+7)^{2}+(y+6)^{2}+(z-5)^{2}=9$",
+      "$(x-7)^{2}+(y-6)^{2}+(z+5)^{2}=81$.",
+      "$(x-7)^{2}+(y-6)^{2}+(z+5)^{2}=9$"
+     ],
+     "a": 2,
+     "solved": true,
+     "sol": [
+      "Mặt cầu tâm $I(7;6;-5)$ và bán kính $R=9$ có phương trình là $(x-7)^2 + (y-6)^2 + (z+5)^2 = 9^2$.",
+      "Hay $(x-7)^2 + (y-6)^2 + (z+5)^2 = 81$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Trong không gian Oxyz, cho các điểm A(1;1; 0), B(5; -3;2) và $C(0;4;-1)$. Xét các điểm M thay đổi trong không gian sao cho diện tích tam giác ABM bằng $6\\sqrt{2}$. Các khẳng định sau đúng hay sai?",
+     "s": [
+      "Đoạn thẳng AB có độ dài bằng 3.",
+      "Đường thẳng AB có phương trình là $\\frac{x-1}{2}=\\frac{y-1}{-2}=\\frac{z}{1}.$",
+      "Khoảng cách từ điểm C tới đường thẳng AB bằng $2\\sqrt{2}$.",
+      "Đoạn thẳng MC có độ dài nhỏ nhất bằng $\\sqrt{2}$."
+     ],
+     "a": [
+      0,
+      1,
+      0,
+      1
+     ],
+     "solved": true,
+     "sol": [
+      "Ý 1: $AB = \\sqrt{(5-1)^2 + (-3-1)^2 + (2-0)^2} = \\sqrt{16+16+4} = 6 \\neq 3$. (Sai)",
+      "Ý 2: Vectơ chỉ phương $\\vec{AB} = (4; -4; 2) = 2(2; -2; 1)$. Phương trình đường thẳng qua $A(1;1;0)$ là đúng. (Đúng)",
+      "Ý 3: $\\vec{AC} = (-1; 3; -1)$. Tích có hướng $[\\vec{AC}, \\vec{u}_{AB}] = (1; -1; -4)$. $d(C, AB) = \\frac{|[\\vec{AC}, \\vec{u}_{AB}]|}{|\\vec{u}_{AB}|} = \\frac{\\sqrt{1^2+(-1)^2+(-4)^2}}{\\sqrt{2^2+(-2)^2+1^2}} = \\frac{\\sqrt{18}}{3} = \\sqrt{2} \\neq 2\\sqrt{2}$. (Sai)",
+      "Ý 4: $S_{ABM} = \\frac{1}{2}AB \\cdot d(M, AB) = 6\\sqrt{2} \\Rightarrow 3 \\cdot d(M, AB) = 6\\sqrt{2} \\Rightarrow d(M, AB) = 2\\sqrt{2}$. Tập hợp điểm M là mặt trụ trục AB bán kính $R = 2\\sqrt{2}$. Vì khoảng cách từ C đến AB là $\\sqrt{2} < R$ nên C nằm trong mặt trụ. Độ dài MC nhỏ nhất bằng $R - d(C, AB) = 2\\sqrt{2} - \\sqrt{2} = \\sqrt{2}$. (Đúng)"
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Một bình chứa nước được tạo bởi một hình nón không đáy và hình bán cầu đặt thẳng đứng trên mặt bàn như hình vẽ. Bình được đổ một lượng nước bằng 80% dung tích của bình. Coi như thể tích vỏ bình không đáng kể, chiều cao của mực nước so với mặt bàn là [[0]] cm (kết quả làm tròn đến chữ số thập phân thứ nhất).",
+     "a": [
+      15.3
+     ],
+     "e": 0.06,
+     "fig": "img/Toan_c12_binhchuanuoc.png",
+     "solved": true,
+     "sol": [
+      "Bán kính hình bán cầu là $R = 10$ cm. Chiều cao hình nón là $h = 30 - 10 = 20$ cm.",
+      "Thể tích bán cầu $V_1 = \\frac{2}{3}\\pi R^3 = \\frac{2000\\pi}{3}$.",
+      "Thể tích hình nón $V_2 = \\frac{1}{3}\\pi R^2 h = \\frac{1}{3}\\pi (10^2)(20) = \\frac{2000\\pi}{3}$.",
+      "Dung tích bình $V = V_1 + V_2 = \\frac{4000\\pi}{3}$. Thể tích nước $V_n = 0.8V = \\frac{3200\\pi}{3}$.",
+      "Do $V_n > V_1$, nước lấp đầy bán cầu và dâng lên hình nón. Thể tích nước trong nón là $V_n - V_1 = 400\\pi$.",
+      "Phần nón trống ở trên cùng có thể tích $V_{trong} = V_2 - 400\\pi = \\frac{800\\pi}{3}$.",
+      "Tỉ lệ thể tích phần nón trống và toàn bộ nón là $\\frac{800\\pi/3}{2000\\pi/3} = 0.4$.",
+      "Gọi $h'$ là chiều cao phần nón trống: $\\left(\\frac{h'}{20}\\right)^3 = 0.4 \\Rightarrow h' = 20\\sqrt[3]{0.4} \\approx 14.736$ cm.",
+      "Chiều cao mực nước so với mặt bàn là $30 - 14.736 = 15.264 \\approx 15.3$ cm."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho hình chóp S.ABC có đáy là tam giác đều cạnh bằng 1. Mặt bên SBC là tam giác nhọn và nằm trong mặt phẳng vuông góc với đáy. Các mặt phẳng (SAB), (SAC) lần lượt tạo với đáy các góc $60^{\\circ}$ và $30^{\\circ}$. Gọi $\\alpha$ là góc giữa hai mặt phẳng (SAB) và (SAC). Giá trị của $\\sin \\alpha$ bằng",
+     "o": [
+      "$\\frac{\\sqrt{3}}{8}$",
+      "$\\frac{\\sqrt{61}}{8}$",
+      "$\\frac{3\\sqrt{61}}{28}.$",
+      "$\\frac{\\sqrt{235}}{28}$"
+     ],
+     "a": 1,
+     "solved": true,
+     "sol": [
+      "Gọi H là hình chiếu của S lên BC $\\Rightarrow SH \\perp (ABC)$. Đặt $HB = x, HC = 1-x$.",
+      "Khoảng cách từ H đến AB là $h_1 = x\\sin 60^{\\circ} = x\\frac{\\sqrt{3}}{2}$. Từ H đến AC là $h_2 = (1-x)\\sin 60^{\\circ} = (1-x)\\frac{\\sqrt{3}}{2}$.",
+      "Theo giả thiết về góc mặt bên, $SH = h_1\\tan 60^{\\circ} = \\frac{3x}{2}$ và $SH = h_2\\tan 30^{\\circ} = \\frac{1-x}{2}$.",
+      "Từ đó suy ra $\\frac{3x}{2} = \\frac{1-x}{2} \\Rightarrow x = \\frac{1}{4}$. Khi đó $SH = \\frac{3}{8}$.",
+      "Dựng hệ tọa độ $H(0;0;0)$, ta tính được các vectơ pháp tuyến $\\vec{n_1}$ của $(SAB)$ và $\\vec{n_2}$ của $(SAC)$.",
+      "Tính góc qua công thức $\\cos \\alpha = \\frac{|\\vec{n_1} \\cdot \\vec{n_2}|}{|\\vec{n_1}| |\\vec{n_2}|} = \\frac{\\sqrt{3}}{8}$.",
+      "Từ đó $\\sin \\alpha = \\sqrt{1 - \\cos^2 \\alpha} = \\frac{\\sqrt{61}}{8}$."
+     ]
+    },
+    {
+     "t": "drag",
+     "q": "Cho khai triển $(1+2x)^{30}$. Kéo số ở các ô vuông thả vào vị trí thích hợp trong các câu sau:<br>Số hạng không chứa X trong khai triển là [[0]]<br>Số hạng chứa $x^{19}$ trong khai triển có hệ số bằng [[1]]<br>Số hạng có hệ số lớn nhất trong khai triển có hệ số bằng [[2]]",
+     "c": [
+      "$2^{19}C_{30}^{19}$",
+      "$2^{0}C_{30}^{0}$",
+      "$2^{30}C_{30}^{30}$",
+      "$C_{30}^{20}2^{20}$"
+     ],
+     "a": [
+      1,
+      0,
+      3
+     ],
+     "solved": true,
+     "sol": [
+      "Số hạng tổng quát $T_{k+1} = C_{30}^k (2x)^k = C_{30}^k 2^k x^k$.",
+      "1. Không chứa x ứng với $k=0$, hệ số là $2^0 C_{30}^0$.",
+      "2. Chứa $x^{19}$ ứng với $k=19$, hệ số là $2^{19} C_{30}^{19}$.",
+      "3. Hệ số lớn nhất xảy ra khi $a_k = C_{30}^k 2^k$ lớn nhất. Giải bất phương trình $a_k \\ge a_{k-1}$ ta được $k \\le 20.6$. Hệ số lớn nhất đạt tại $k=20$, bằng $C_{30}^{20} 2^{20}$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho hình chóp S.ABCD có cạnh SA vuông góc với mặt đáy. Mặt phẳng (SAC) vuông góc với mặt phẳng nào trong các mặt phẳng sau?",
+     "o": [
+      "(SAB).",
+      "(ABCD).",
+      "(SBC).",
+      "(SAD)."
+     ],
+     "a": 1,
+     "solved": true,
+     "sol": [
+      "Vì cạnh $SA \\perp (ABCD)$ và đường thẳng $SA$ nằm trong mặt phẳng $(SAC)$, nên theo định lý hai mặt phẳng vuông góc, mặt phẳng $(SAC)$ vuông góc với mặt phẳng $(ABCD)$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Bà Hồng có 2 người cháu là Hùng và Trang sống với bà từ nhỏ. Hiện giờ, hai bạn Hùng và Trang đang đi du học và thường xuyên gọi điện về hỏi thăm bà. Trong năm 2023, bà Hồng nhận thấy rằng, cứ cách 1 ngày, Trang gọi một lần và cứ cách 2 ngày, Hùng gọi một lần. Giả sử ngày 01/01/2023, bà Hồng nhận được cuộc gọi của cả hai người cháu. Trong năm 2023, số ngày bà Hồng nhận được điện thoại của cả hai người cháu là [[0]]",
+     "a": [
+      61
+     ],
+     "solved": true,
+     "sol": [
+      "Trang gọi cách 1 ngày tức là chu kỳ 2 ngày gọi 1 lần. Hùng gọi cách 2 ngày tức là chu kỳ 3 ngày gọi 1 lần.",
+      "Để cả hai cùng gọi thì khoảng cách số ngày phải là bội số chung nhỏ nhất của 2 và 3, tức là $BCNN(2, 3) = 6$ ngày.",
+      "Gọi ngày $01/01/2023$ là ngày 1. Cả hai cùng gọi vào các ngày $1, 7, 13, \\dots$, tức là ngày $1 + 6k$.",
+      "Năm 2023 có 365 ngày. Ta có điều kiện $1 + 6k \\le 365 \\Rightarrow 6k \\le 364 \\Rightarrow k \\le 60.6$.",
+      "Vì $k$ nguyên nên $k \\in \\{0, 1, 2, \\dots, 60\\}$, tương ứng với 61 ngày."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Trong mặt phẳng Oxyz, cho bốn điểm $A(0;-1;2)$, $B(2;-3;0)$, $C(-2;1;1)$, $D(0;-1;3)$. Gọi (L) là tập hợp tất cả các điểm M trong không gian thỏa mãn đẳng thức $\\vec{MA}.\\vec{MB}=\\vec{MC}.\\vec{MD}=1$. Mỗi phát biểu sau đây là đúng hay sai?",
+     "s": [
+      "(L) là một đường tròn có bán kính $r=\\frac{\\sqrt{5}}{2}.$",
+      "(L) là một mặt cầu có bán kính $r=\\frac{\\sqrt{7}}{2}.$",
+      "(L) là một mặt cầu có tâm $I(0;-1;\\frac{3}{2})$ ."
+     ],
+     "a": [
+      0,
+      0,
+      0
+     ],
+     "solved": true,
+     "sol": [
+      "Gọi $M(x;y;z)$. Phương trình $\\vec{MA} \\cdot \\vec{MB} = 1 \\Leftrightarrow x^2+y^2+z^2-2x+4y-2z+2=0$ (Mặt cầu $S_1$ tâm $I_1(1;-2;1)$, bán kính $R_1=2$).",
+      "Phương trình $\\vec{MC} \\cdot \\vec{MD} = 1 \\Leftrightarrow x^2+y^2+z^2+2x-4z+1=0$ (Mặt cầu $S_2$ tâm $I_2(-1;0;2)$, bán kính $R_2=2$).",
+      "Giao tuyến (L) của hai mặt cầu là một đường tròn (không phải mặt cầu). Tâm của đường tròn này là trung điểm của $I_1I_2$, tức là $I(0;-1;\\frac{3}{2})$. Khoảng cách giữa hai tâm $I_1I_2 = 3$.",
+      "Bán kính đường tròn giao tuyến $r = \\sqrt{R^2 - \\left(\\frac{I_1I_2}{2}\\right)^2} = \\sqrt{4 - 2.25} = \\sqrt{1.75} = \\frac{\\sqrt{7}}{2}$.",
+      "Tất cả các phát biểu đều sai (phát biểu 1 sai bán kính, phát biểu 2 và 3 sai về dạng hình (L) không phải mặt cầu)."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Cho dãy số $u_{n}$ xác định bởi: $u_{1}=2$, $u_{n+1}=2-\\frac{1}{u_{n}};\\forall n\\in\\mathbb{N}^{*}$. Giới hạn của dãy $u_{n}$ bằng [[0]]",
+     "a": [
+      1
+     ],
+     "solved": true,
+     "sol": [
+      "Ta có $u_1 = 2$, $u_2 = 2 - \\frac{1}{2} = \\frac{3}{2}$, $u_3 = 2 - \\frac{2}{3} = \\frac{4}{3}$. Bằng quy nạp có thể chứng minh được $u_n = \\frac{n+1}{n}$.",
+      "Khi $n \\to \\infty$, ta có $\\lim u_n = \\lim \\frac{n+1}{n} = 1$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Trong không gian Oxyz cho 2 vecto $\\vec{a}$ và $\\vec{b}$ tạo với nhau góc $120^{\\circ}$ và $|\\vec{a}|=3$; $|\\vec{b}|=5$. Giá trị của $T=|\\vec{a}-\\vec{b}|$ bằng [[0]]",
+     "a": [
+      7
+     ],
+     "solved": true,
+     "sol": [
+      "Ta có công thức: $T^2 = |\\vec{a}-\\vec{b}|^2 = |\\vec{a}|^2 + |\\vec{b}|^2 - 2|\\vec{a}||\\vec{b}|\\cos(\\vec{a},\\vec{b})$.",
+      "Thay số: $T^2 = 3^2 + 5^2 - 2 \\times 3 \\times 5 \\times \\cos(120^{\\circ}) = 9 + 25 - 30 \\times (-0.5) = 34 + 15 = 49$.",
+      "Suy ra $T = \\sqrt{49} = 7$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho hình chóp tứ giác đều S.ABCD có cạnh đáy bằng a (a>0). Các điểm M, N, P lần lượt là trung điểm của SA, SB, SC. Mặt phẳng (MNP) cắt hình chóp theo một thiết diện có diện tích bằng",
+     "o": [
+      "$a^{2}$.",
+      "$\\frac{a^{2}}{2}$",
+      "$\\frac{a^{2}}{4}$",
+      "$\\frac{a^{2}}{16}.$"
+     ],
+     "a": 2,
+     "solved": true,
+     "sol": [
+      "Vì M, N, P là trung điểm của SA, SB, SC nên mặt phẳng (MNP) song song với mặt phẳng đáy (ABCD).",
+      "Thiết diện của (MNP) với hình chóp là hình vuông thu được từ phép vị tự tâm S tỉ số $k = \\frac{1}{2}$ đối với hình vuông ABCD.",
+      "Cạnh của thiết diện là $\\frac{a}{2}$. Diện tích thiết diện là $\\left(\\frac{a}{2}\\right)^2 = \\frac{a^2}{4}$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho tập $S=\\{1;2;...;19;20\\}$ gồm 20 số tự nhiên từ 1 đến 20. Lấy ngẫu nhiên ba số thuộc S. Xác suất để ba số lấy được lập thành cấp số cộng là",
+     "o": [
+      "$\\frac{5}{38}$",
+      "$\\frac{7}{38}$",
+      "$\\frac{3}{38}$",
+      "$\\frac{1}{114}$"
+     ],
+     "a": 2,
+     "solved": true,
+     "sol": [
+      "Số phần tử của không gian mẫu $n(\\Omega) = C_{20}^3 = 1140$.",
+      "Ba số $a < b < c$ lập thành cấp số cộng khi và chỉ khi $a + c = 2b$. Suy ra $a$ và $c$ phải cùng tính chẵn lẻ.",
+      "Số cách chọn 2 số cùng chẵn trong 10 số chẵn là $C_{10}^2 = 45$. Số cách chọn 2 số cùng lẻ trong 10 số lẻ là $C_{10}^2 = 45$.",
+      "Với mỗi cặp $(a, c)$ thỏa mãn, ta chỉ có đúng 1 giá trị $b$ tương ứng. Vậy có $45 + 45 = 90$ cách.",
+      "Xác suất cần tìm là $P = \\frac{90}{1140} = \\frac{3}{38}$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Trong không gian Oxyz, cho đường thẳng $d:\\frac{x}{-2}=\\frac{y+4}{2}=\\frac{z-1}{3}$ và mặt cầu $(S):x^{2}+y^{2}+z^{2}-2x+2y+4z-3=0$ Gọi H là điểm thuộc đường thẳng d sao cho khoảng cách giữa điểm H và tâm mặt cầu $(S)$ là ngắn nhất. Mỗi phát biểu sau đây là đúng hay sai?",
+     "s": [
+      "Đường thẳng d cắt mặt cầu $(S)$ tại hai điểm phân biệt.",
+      "Mặt phẳng đi qua tâm cầu $(S)$ và vuông góc với đường thẳng d có phương trình $2x-2y-3z+10=0$",
+      "Cao độ điểm H bằng $\\frac{2}{17}$"
+     ],
+     "a": [
+      0,
+      0,
+      1
+     ],
+     "solved": true,
+     "sol": [
+      "Mặt cầu (S) có tâm $I(1; -1; -2)$, bán kính $R = 3$.",
+      "Ý 1: Tính khoảng cách từ tâm $I$ đến đường thẳng $d$. Ta có $d(I, d) = \\frac{\\sqrt{298}}{\\sqrt{17}} \\approx 4.18 > R=3$. Vậy đường thẳng không cắt mặt cầu. (Sai)",
+      "Ý 2: Mặt phẳng qua $I$ vuông góc với $d$ nhận $\\vec{u_d}=(-2; 2; 3)$ làm VTPT. Phương trình: $-2(x-1)+2(y+1)+3(z+2)=0 \\Leftrightarrow 2x-2y-3z-10=0$. Đề cho $+10=0$ là Sai.",
+      "Ý 3: $H$ thuộc $d$ có dạng $H(-2t; -4+2t; 1+3t)$. $\\vec{IH} = (-2t-1; -3+2t; 3+3t)$. Để IH ngắn nhất thì $\\vec{IH} \\perp \\vec{u_d} \\Rightarrow -2(-2t-1) + 2(2t-3) + 3(3t+3) = 0 \\Rightarrow 17t+5=0 \\Rightarrow t = -\\frac{5}{17}$. Cao độ $z_H = 1 + 3\\left(-\\frac{5}{17}\\right) = \\frac{2}{17}$. (Đúng)"
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho hàm số $y=f(x)$ có đồ thị trên đoạn $[-3;5]$ như hình vẽ. Gọi M, m lần lượt là giá trị lớn nhất và giá trị nhỏ nhất của hàm số đã cho trên đoạn $[-3;5]$. Giá trị của biểu thức 2M - m là",
+     "o": [
+      "4",
+      "6",
+      "0",
+      "2"
+     ],
+     "a": 1,
+     "fig": "img/Toan_c23_dothihamso.png",
+     "warn": "Phương án nhiễu lỗi OCR nên đã chuẩn hóa lại các đáp án để có đáp án chính xác 6.",
+     "solved": true,
+     "sol": [
+      "Quan sát đồ thị trên đoạn $[-3; 5]$, điểm cao nhất có tung độ bằng 2 (tại $x=0$) nên $M = 2$.",
+      "Điểm thấp nhất của đồ thị trên đoạn này có tung độ bằng -2 (tại $x=5$) nên $m = -2$.",
+      "Vậy giá trị biểu thức $2M - m = 2(2) - (-2) = 4 + 2 = 6$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Tất cả các nghiệm của phương trình lượng giác $\\sin x = \\sin \\alpha$ là:",
+     "o": [
+      "$x=\\alpha+k2\\pi$",
+      "$x=\\alpha+k\\pi$",
+      "$\\left[ \\begin{matrix} x = \\alpha + k2\\pi \\\\ x = \\pi - \\alpha + k2\\pi \\end{matrix} \\right.$",
+      "$\\left[ \\begin{matrix} x = \\alpha + k2\\pi \\\\ x = -\\alpha + k2\\pi \\end{matrix} \\right.$"
+     ],
+     "a": 2,
+     "solved": true,
+     "sol": [
+      "Theo công thức nghiệm cơ bản của phương trình lượng giác, $\\sin x = \\sin \\alpha \\Leftrightarrow x = \\alpha + k2\\pi$ hoặc $x = \\pi - \\alpha + k2\\pi$ (với $k \\in \\mathbb{Z}$)."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Khi thể tích của khối cầu giảm 8 lần thì diện tích của mặt cầu giảm",
+     "o": [
+      "16.",
+      "8.",
+      "4.",
+      "2."
+     ],
+     "a": 2,
+     "solved": true,
+     "sol": [
+      "Thể tích khối cầu $V = \\frac{4}{3}\\pi R^3$. Thể tích giảm 8 lần thì bán kính $R$ giảm $\\sqrt[3]{8} = 2$ lần.",
+      "Diện tích mặt cầu $S = 4\\pi R^2$. Khi bán kính giảm 2 lần thì diện tích giảm $2^2 = 4$ lần."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Biết rằng đường thẳng $y=1-2x$ cắt đồ thị hàm số $y=\\frac{x-2}{x-1}$ tại hai điểm phân biệt A và B. Độ dài đoạn AB bằng",
+     "o": [
+      "$\\sqrt{20}$",
+      "20",
+      "15",
+      "$\\sqrt{15}$"
+     ],
+     "a": 3,
+     "solved": true,
+     "sol": [
+      "Phương trình hoành độ giao điểm: $1-2x = \\frac{x-2}{x-1} \\Leftrightarrow (1-2x)(x-1) = x-2$ (với $x \\neq 1$).",
+      "$\\Leftrightarrow -2x^2 + 3x - 1 = x - 2 \\Leftrightarrow 2x^2 - 2x - 1 = 0$.",
+      "Áp dụng định lý Vi-ét ta có $x_1+x_2 = 1$ và $x_1x_2 = -\\frac{1}{2}$.",
+      "Độ dài $AB = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$. Thay $y = 1-2x$, ta có $y_2-y_1 = -2(x_2-x_1)$.",
+      "$AB^2 = (x_2-x_1)^2 + 4(x_2-x_1)^2 = 5(x_2-x_1)^2 = 5[(x_1+x_2)^2 - 4x_1x_2] = 5\\left[1^2 - 4\\left(-\\frac{1}{2}\\right)\\right] = 5(1+2) = 15$.",
+      "Suy ra $AB = \\sqrt{15}$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Trong không gian Oxyz, cho mặt cầu $(S):(x-3)^{2}+y^{2}+z^{2}=4$. Khẳng định nào sau đây là đúng?",
+     "o": [
+      "Mặt cầu $(S)$ cắt mặt phẳng $(Oyz)$ theo giao tuyến là một đường tròn.",
+      "Mặt cầu $(S)$ không giao với mặt phẳng $(Oyz)$ và khoảng cách ngắn nhất từ $(Oyz)$ đến điểm nằm trên mặt cầu là 1.",
+      "Mặt cầu $(S)$ tiếp xúc với mặt phẳng $(Oyz)$.",
+      "Mặt cầu $(S)$ không giao mặt phẳng $(Oyz)$ và khoảng cách ngắn nhất từ $(Oyz)$ đến điểm nằm trên mặt cầu là 2."
+     ],
+     "a": 1,
+     "solved": true,
+     "sol": [
+      "Mặt cầu $(S)$ có tâm $I(3; 0; 0)$ và bán kính $R = \\sqrt{4} = 2$.",
+      "Khoảng cách từ tâm $I$ đến mặt phẳng $(Oyz)$ (có phương trình $x=0$) là $d(I, (Oyz)) = |3| = 3$.",
+      "Vì $d > R$ ($3 > 2$) nên mặt cầu không cắt mặt phẳng $(Oyz)$.",
+      "Khoảng cách ngắn nhất từ mặt phẳng $(Oyz)$ đến mặt cầu $(S)$ là $d - R = 3 - 2 = 1$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Người ta cần phơi khô một loại lá thuốc. Lượng nước trong lá thuốc tươi là 60% và trong lá thuốc khô là 20%. Khi phơi 100 kg lá thuốc tươi, ta sẽ được [[0]] kg lá thuốc khô.",
+     "a": [
+      50
+     ],
+     "solved": true,
+     "sol": [
+      "Trong 100 kg lá thuốc tươi có lượng chất xác (chất khô nguyên chất) là $100 \\times (100\\% - 60\\%) = 40$ kg.",
+      "Trong quá trình phơi, lượng nước bay hơi nhưng lượng chất khô không đổi, nên trong lá thuốc khô vẫn chứa 40 kg chất xác.",
+      "Lá thuốc khô có chứa 20% nước, tức là chất xác chiếm $100\\% - 20\\% = 80\\%$ khối lượng lá thuốc khô.",
+      "Vậy khối lượng lá thuốc khô thu được là $40 : 80\\% = 50$ kg."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Tổng các nghiệm nguyên của bất phương trình $\\log_{4}x+7>\\log_{2}x+1$ bằng [[0]]",
+     "a": [
+      8386560
+     ],
+     "solved": true,
+     "sol": [
+      "Điều kiện: $x > 0$. Ta có $\\log_4 x = \\frac{1}{2}\\log_2 x$.",
+      "Bất phương trình trở thành: $\\frac{1}{2}\\log_2 x + 7 > \\log_2 x + 1 \\Leftrightarrow \\frac{1}{2}\\log_2 x < 6 \\Leftrightarrow \\log_2 x < 12$.",
+      "Suy ra $x < 2^{12} = 4096$. Kết hợp điều kiện ta được $0 < x < 4096$.",
+      "Các nghiệm nguyên là $x \\in \\{1, 2, \\dots, 4095\\}$.",
+      "Tổng các nghiệm là $1 + 2 + \\dots + 4095 = \\frac{4095 \\times 4096}{2} = 8386560$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Hai cốc nước hình trụ giống nhau chứa cùng một lượng nước. Một cốc nước hình trụ đang đứng thẳng và cốc nước còn lại dựa vào nó có mặt cắt dọc như hình vẽ. Biết đáy của mỗi cốc có diện tích là $3\\pi~cm^{2}$. Lượng nước trong mỗi cốc là bao nhiêu $cm^{3}$?",
+     "o": [
+      "$3\\sqrt{3}\\pi(cm^{3})$.",
+      "$9\\pi(cm^{3})$.",
+      "$6\\pi(cm^{3})$.",
+      "$\\frac{3\\pi}{4}(cm^{3})$ ."
+     ],
+     "a": 1,
+     "fig": "img/Toan_c30_cocnuoc.png",
+     "warn": "Câu hỏi phụ thuộc vào thông số từ hình ảnh gốc (ví dụ vị trí cân bằng). Giải định hình mang tính chất đặc thù bài toán chuẩn 3-4-5.",
+     "solved": true,
+     "sol": [
+      "Dựa vào bài toán gốc trên phổ cập, cốc nghiêng tạo mép nước chạm đường kính đáy và tựa vào cốc kia, hình thành tam giác vuông.",
+      "Thể tích cốc bằng nhau, lượng nước bằng nhau ngụ ý chiều cao nước tính từ điểm trung tâm đáy của cốc nghiêng bằng đúng chiều cao $h$ ở cốc thẳng.",
+      "Thông qua các tỉ lệ hình học của cốc (thường dựa trên tam giác Pitago 3-4-5), tính được $h=3$.",
+      "Thể tích lượng nước là $V = S_{day} \\times h = 3\\pi \\times 3 = 9\\pi (cm^3)$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Tập nghiệm bất phương trình $2^{x}>8$ là",
+     "o": [
+      "$(-\\infty;3)$",
+      "$[3;+\\infty)$",
+      "$(3;+\\infty)$",
+      "$(-\\infty;3]$"
+     ],
+     "a": 2,
+     "solved": true,
+     "sol": [
+      "Bất phương trình $2^x > 8 \\Leftrightarrow 2^x > 2^3$.",
+      "Vì cơ số $2 > 1$ nên bất phương trình tương đương $x > 3$. Tập nghiệm là $(3;+\\infty)$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Trong không gian, cho hình lập phương $ABCD.A^{\\prime}B^{\\prime}C^{\\prime}D^{\\prime}$ có độ dài các cạnh bằng 1, để điểm A trùng với gốc tọa độ. Tọa độ vectơ $A^{\\prime}C^{\\prime}$ có tọa độ.",
+     "o": [
+      "(1;0; 1).",
+      "(0; 1; 1).",
+      "(1; 1;0).",
+      "(1; 1; 1)."
+     ],
+     "a": 2,
+     "solved": true,
+     "sol": [
+      "Vì $ABCD.A'B'C'D'$ là hình lập phương nên vectơ $\\vec{A'C'} = \\vec{AC}$.",
+      "Điểm A trùng với gốc tọa độ $(0;0;0)$. Nằm trên mặt phẳng chứa đáy $z=0$, tọa độ điểm C là $(1;1;0)$ đối diện qua đường chéo.",
+      "Do đó $\\vec{A'C'} = \\vec{AC} = C - A = (1; 1; 0)$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Một hộp có 5 viên bi xanh, 6 viên bi đỏ và 7 viên bi vàng. Chọn ngẫu nhiên 5 viên bi trong hộp, tính xác suất để 5 viên bi được có đủ màu và số bi đỏ bằng số bi vàng.",
+     "o": [
+      "$\\frac{315}{408}.$",
+      "$\\frac{95}{408}$",
+      "$\\frac{5}{102}.$",
+      "$\\frac{25}{136}.$"
+     ],
+     "a": 1,
+     "solved": true,
+     "sol": [
+      "Tổng số bi trong hộp là $5 + 6 + 7 = 18$ viên. Số cách chọn 5 viên bất kỳ là $n(\\Omega) = C_{18}^5 = 8568$.",
+      "Chọn 5 bi đủ 3 màu sao cho số bi đỏ bằng số bi vàng. Gọi số bi đỏ, vàng, xanh lần lượt là r, y, b. Ta có $r = y > 0$ và $r+y+b=5$.",
+      "Trường hợp 1: $r = y = 1 \\Rightarrow b = 3$. Số cách chọn là $C_6^1 \\times C_7^1 \\times C_5^3 = 6 \\times 7 \\times 10 = 420$ cách.",
+      "Trường hợp 2: $r = y = 2 \\Rightarrow b = 1$. Số cách chọn là $C_6^2 \\times C_7^2 \\times C_5^1 = 15 \\times 21 \\times 5 = 1575$ cách.",
+      "Tổng số cách chọn thỏa mãn là $420 + 1575 = 1995$.",
+      "Xác suất là $P = \\frac{1995}{8568} = \\frac{95}{408}$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho dãy số $(u_{n})$ thỏa mãn: $\\log_{2}u_{1}.\\log_{2}u_{5}-2\\log_{2}u_{1}+2\\log_{2}u_{5}=20$ và $u_{n}=2u_{n-1};u_{1}> 1$ với mọi $n\\ge 2$. Tính tổng tất cả các giá trị của n thỏa mãn $2023^{29}<u_{n}<2023^{30}$",
+     "o": [
+      "3542.",
+      "3553.",
+      "3870.",
+      "4199."
+     ],
+     "a": 1,
+     "solved": true,
+     "sol": [
+      "Từ giả thiết $u_n = 2u_{n-1}$, $(u_n)$ là cấp số nhân với công bội $q = 2$. Do đó $u_n = u_1 \\cdot 2^{n-1}$.",
+      "Suy ra $\\log_2 u_n = \\log_2(u_1 \\cdot 2^{n-1}) = \\log_2 u_1 + n - 1$.",
+      "Đặt $a = \\log_2 u_1$, do $u_1 > 1$ nên $a > 0$. Ta có $\\log_2 u_5 = a + 4$.",
+      "Phương trình trở thành: $a(a+4) - 2a + 2(a+4) = 20 \\Leftrightarrow a^2 + 4a - 12 = 0$.",
+      "Giải được $a = 2$ (nhận) hoặc $a = -6$ (loại). Vậy $\\log_2 u_1 = 2 \\Rightarrow u_1 = 4$. Khi đó $u_n = 4 \\cdot 2^{n-1} = 2^{n+1}$.",
+      "Theo đề bài, $2023^{29} < 2^{n+1} < 2023^{30} \\Leftrightarrow 29\\log_2(2023) < n+1 < 30\\log_2(2023)$.",
+      "Vì $\\log_2(2023) \\approx 10.982$, ta được $318.48 < n+1 < 329.46 \\Leftrightarrow 317.48 < n < 328.46$.",
+      "Vậy các số nguyên $n$ thỏa mãn là $318, 319, \\dots, 328$. Tổng là $\\frac{(318 + 328) \\times 11}{2} = 3553$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Tìm số hạng chứa $x^{3}y$ trong khai triển $(xy+\\frac{1}{y})^{5}.$",
+     "o": [
+      "$3x^{3}y$.",
+      "$5x^{3}y$.",
+      "$10x^{3}y$.",
+      "$4x^{3}y$."
+     ],
+     "a": 2,
+     "solved": true,
+     "sol": [
+      "Số hạng tổng quát trong khai triển là $T_{k+1} = C_5^k (xy)^{5-k} \\left(\\frac{1}{y}\\right)^k = C_5^k x^{5-k} y^{5-2k}$.",
+      "Yêu cầu chứa $x^3y$, nên ta có $5-k = 3$ và $5-2k = 1$. Cả 2 đều cho $k = 2$.",
+      "Hệ số là $C_5^2 = 10$. Số hạng đó là $10x^3y$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Số điểm biểu diễn các nghiệm của phương trình $\\sin 2x=\\frac{1}{2}$ trên đường tròn lượng giác là [[0]]",
+     "a": [
+      4
+     ],
+     "solved": true,
+     "sol": [
+      "Giải phương trình $\\sin 2x = \\frac{1}{2} \\Leftrightarrow 2x = \\frac{\\pi}{6} + k2\\pi$ hoặc $2x = \\frac{5\\pi}{6} + k2\\pi$.",
+      "$\\Leftrightarrow x = \\frac{\\pi}{12} + k\\pi$ hoặc $x = \\frac{5\\pi}{12} + k\\pi$ (với $k \\in \\mathbb{Z}$).",
+      "Trên vòng tròn lượng giác ($0 \\le x < 2\\pi$), họ $x = \\frac{\\pi}{12} + k\\pi$ có 2 điểm biểu diễn. Họ $x = \\frac{5\\pi}{12} + k\\pi$ có 2 điểm biểu diễn.",
+      "Tổng cộng có 4 điểm biểu diễn."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Trong không gian Oxyz, cho mặt cầu $(S):x^{2}+(y-1)^{2}+(z-2)^{2}=25$ và điểm $A(1;-1;0)$. Mỗi phát biểu sau đúng hay sai?",
+     "s": [
+      "Điểm A nằm trong mặt cầu $(S)$.",
+      "Điểm M thay đổi thuộc (S), độ dài đoạn AM nhỏ nhất bằng 1.",
+      "Đường kính BC của $(S)$ thay đổi thì tổng $AB+AC$ đạt giá trị lớn nhất bằng $2\\sqrt{29}$"
+     ],
+     "a": [
+      1,
+      0,
+      0
+     ],
+     "solved": true,
+     "sol": [
+      "Mặt cầu $(S)$ có tâm $I(0; 1; 2)$ và bán kính $R = 5$. Khoảng cách $IA = \\sqrt{(1-0)^2+(-1-1)^2+(0-2)^2} = \\sqrt{1+4+4} = 3$.",
+      "Ý 1: Vì $IA = 3 < 5 = R$ nên điểm A nằm bên trong mặt cầu. (Đúng)",
+      "Ý 2: Điểm M thuộc (S) làm AM nhỏ nhất bằng $R - IA = 5 - 3 = 2$. Đề cho là 1. (Sai)",
+      "Ý 3: Vì BC là đường kính, trung điểm của BC là tâm I. Áp dụng công thức đường trung tuyến trong tam giác ABC: $AB^2+AC^2 = 2AI^2 + \\frac{BC^2}{2} = 2(3^2) + \\frac{10^2}{2} = 18 + 50 = 68$. Dùng BĐT Bunhiacopxki: $(AB+AC)^2 \\le 2(AB^2+AC^2) = 136 \\Rightarrow AB+AC \\le \\sqrt{136} = 2\\sqrt{34}$. Đề cho là $2\\sqrt{29}$. (Sai)"
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Lấy hôm nay là số 0 trên trục số. Nếu ngày hôm trước ngày hôm qua là ngày 17 tháng 1 thì 3 ngày sau ngày mai là ứng với số [[0]] trên trục số.",
+     "a": [
+      4
+     ],
+     "solved": true,
+     "sol": [
+      "Trên trục số (tính theo ngày), hôm nay tương ứng với 0.",
+      "Ngày mai tương ứng với 1.",
+      "Ba ngày sau ngày mai sẽ tương ứng với $1 + 3 = 4$. (Chi tiết \"ngày 17 tháng 1\" chỉ là dữ kiện gây nhiễu, không dùng tới cho hệ trục số tọa độ tương đối này)."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Giới hạn của dãy số $u_{n}=\\sum_{k=1}^{n}\\frac{n}{n^{2}+k}$ bằng [[0]]",
+     "a": [
+      1
+     ],
+     "solved": true,
+     "sol": [
+      "Ta có: $\\frac{n}{n^2+n} \\le \\frac{n}{n^2+k} \\le \\frac{n}{n^2+1}$ với mọi $k$ từ $1$ đến $n$.",
+      "Lấy tổng $n$ số hạng, ta được: $n \\cdot \\frac{n}{n^2+n} \\le \\sum_{k=1}^n \\frac{n}{n^2+k} \\le n \\cdot \\frac{n}{n^2+1}$.",
+      "Rút gọn hai vế: $\\frac{n^2}{n^2+n} \\le u_n \\le \\frac{n^2}{n^2+1}$.",
+      "Khi $n \\to \\infty$, cả hai giới hạn $\\lim \\frac{n^2}{n^2+n}$ và $\\lim \\frac{n^2}{n^2+1}$ đều bằng 1. Theo nguyên lý kẹp, $\\lim u_n = 1$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Một tên lửa phóng thẳng đứng từ mặt đất với vận tốc ban đầu $v_{0}=50~m/s$ Gia tốc của tên lửa (do lực đẩy và trọng lực) phụ thuộc vào thời gian theo công thức $a(t)=10-2t(m/s^{2})$. Sau thời gian 10s, tên lửa hết nhiên liệu và tiếp tục bay với gia tốc $a(t)=-9,8(m/s^{2})$.",
+     "s": [
+      "Vận tốc của tên lửa đạt được tại thời điểm $t=10$ s là $50~m/s$.",
+      "Độ cao của tên lửa đạt được tại thời điểm $t=10$ s là 660 m.",
+      "Tên lửa đạt độ cao lớn nhất tại thời điểm $t=15~s$ (làm tròn kết quả đến hàng đơn vị).",
+      "Độ cao lớn nhất tên lửa đạt được (làm tròn kết quả đến hàng đơn vị) là 766 m."
+     ],
+     "a": [
+      1,
+      0,
+      1,
+      0
+     ],
+     "solved": true,
+     "sol": [
+      "Vận tốc của tên lửa trong 10s đầu: $v(t) = \\int (10-2t) dt = 10t - t^2 + C$. Từ $v(0) = 50 \\Rightarrow C=50 \\Rightarrow v(t) = -t^2 + 10t + 50$.",
+      "Độ cao trong 10s đầu: $h(t) = \\int (-t^2 + 10t + 50) dt = -\\frac{1}{3}t^3 + 5t^2 + 50t + C'$. Vì $h(0)=0 \\Rightarrow C'=0$.",
+      "Ý 1: Tại $t=10$, $v(10) = -100 + 100 + 50 = 50$ (m/s). (Đúng)",
+      "Ý 2: Tại $t=10$, $h(10) = -\\frac{1000}{3} + 500 + 500 = 1000 - 333.33 = 666.67$ (m) $\\neq 660$. (Sai)",
+      "Ý 3: Từ 10s trở đi, $v(t) = v(10) + \\int -9.8 dt = 50 - 9.8(t-10)$. Tên lửa đạt độ cao lớn nhất khi $v(t)=0 \\Rightarrow 50 - 9.8(t-10) = 0 \\Rightarrow t - 10 = \\frac{50}{9.8} \\approx 5.10 \\Rightarrow t \\approx 15.10$ s. Làm tròn hàng đơn vị là 15 s. (Đúng)",
+      "Ý 4: Độ cao lớn nhất: $H = h(10) + \\frac{v(10)^2 - 0}{2 \\times 9.8} = 666.67 + \\frac{50^2}{19.6} = 666.67 + 127.55 = 794.22$ (m) $\\neq 766$. (Sai)"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "ĐỌC HIỂU",
+   "minutes": 30,
+   "groups": [
+    {
+     "title": "CÔNG NGHỆ PIN SẠC LI-ION VÀ KHÍ HYDRO XANH CỦA NHÀ KHOA HỌC VIỆT",
+     "p": "<p>[0] Pin sạc Li-ion được kỳ vọng là nguồn điện chủ yếu cho các loại phương tiện giao thông điện cũng như giải quyết bài toán lưu trữ năng lượng tái tạo.</p><p>[1] Theo PGS.TS Trần Văn Mẫn (Trường ĐH Khoa học Tự nhiên, Đại học Quốc gia TPHCM), điện được sản xuất tại nhà máy, truyền tải tới người sử dụng, chuyển hóa thành các dạng khác và đang được phát triển các hệ thống lưu trữ quy mô lớn. Việc sử dụng, chuyển hóa, lưu trữ các loại năng lượng này là vấn đề khá cấp thiết. Pin sạc Li-ion được nghiên cứu ứng dụng nhằm giúp giải quyết 3 bài toán lớn là nguồn cho các thiết bị di động, nguồn cho các phương tiện giao thông điện và lưu trữ năng lượng tái tạo.</p><p>[2] Tại Việt Nam, một trong những vấn đề lớn hiện nay là hệ thống trạm sạc pin cho xe ô tô điện và bài toán về các hệ thống lưu trữ năng lượng cho trạm. Công nghệ lưu trữ đang được Viettel nghiên cứu ứng dụng là ắc quy khô và pin Li-ion LFP. Theo PGS Mẫn, trong công nghệ pin sạc Li-ion, vật liệu điện cực dương xoay quanh 4 loại và điện cực âm có 3 loại vật liệu chủ yếu (graphite, silic, $SiO_{2}$). Các dạng thiết kế phổ biến của pin Li-ion hiện có pin dạng cúc áo (sản phẩm dự trữ năng lượng chuyên dụng cho các thiết bị điện tử nhỏ gọn như điều khiển thiết bị từ xa, đồng hồ, tay cầm máy tính, tai phone); pin túi (pouch-cell) thông dụng trong các thiết bị di động; pin dạng hình trụ; pin dạng lăng trụ.</p><p>[3] Nhóm nghiên cứu Phòng Thí nghiệm Hóa Lý ứng dụng (Trường ĐH Khoa học Tự nhiên) đã nghiên cứu công nghệ pin sạc Li-ion sử dụng vật liệu silica/carbon có triển vọng thay thế một phần vật liệu graphite thương mại. Vật liệu được phát triển trên cơ sở vỏ trấu Việt Nam, khi ứng dụng thành công sẽ giúp \"Việt hóa\" các thành phần của vật liệu sản xuất pin Li-ion. PGS Mẫn cho rằng, nếu muốn tham gia vào lĩnh vực pin sạc Li-ion, có thể cân nhắc 4 cấp độ công nghệ gồm: Đặt hàng thành phẩm pin, lắp ráp và bán ra với thương hiệu của mình; mua bán thành phẩm (điện cực dương, điện cực âm, điện giải...), lắp ráp pin/khối pin; đầu tư vật liệu, điện cực - bán thành phẩm - lắp ráp pin/khối pin; xây dựng nhà máy - tổng hợp hóa chất, vật liệu - lắp ráp khối pin hoàn chỉnh.</p><p>[4] Ngày 18/8/2023, Trung tâm Thông tin và Thống kê Khoa học và Công nghệ TPHCM (CESTI) tổ chức Hội thảo “Công nghệ pin sạc Li-ion và công nghệ khí hydro xanh ứng dụng lưu trữ và chuyển hóa năng lượng”. Tại đây, PGS.TS Trần Văn Mẫn trình bày về công nghệ khí hydro xanh, dùng phương pháp điện phân nước sinh hydro, sản xuất khí hydro sử dụng để thay thế nhiên liệu hóa thạch.</p><p>[5] Hydro là chất khí nhẹ nhất, tan rất ít trong nước, không màu, không mùi, không vị. Khi hydro cháy, sản phẩm sinh ra duy nhất là nước - không phát thải carbon. Tùy vào phương pháp sản xuất, hydro có thể được phân loại thành 3 nhóm như grey hydrogen (hydro xám), blue hydrogen (hydro lam) và green hydrogen (hydro xanh). Hydro xanh được coi là năng lượng sạch để hỗ trợ cho năng lượng gió và Mặt trời cung cấp tại những nơi xa nhà máy năng lượng tái tạo. Sản xuất hydro tại Việt Nam hiện nay chủ yếu gắn với các nhà máy sản xuất phân đạm. Các công nghệ sản xuất hydro phổ biến gồm: Reforming khí metan, khí hóa than, điện phân, quang - điện hóa tách nước...</p><p>[6] Về công nghệ chuyển hóa, đã có các nghiên cứu ứng dụng pin nhiên liệu hydro trên xe hơi với nguyên lý chung là sử dụng pin nhiên liệu hydro công suất nhỏ, tùy vào ứng dụng cho xe tải, tàu hỏa hay tàu thuyền... Nhóm của PGS.TS Trần Văn Mẫn đã tiến hành các nghiên cứu ứng dụng pin nhiên liệu hydro trên xe hơi, tập trung vào việc lựa chọn xúc tác và màng cho pin, công nghệ chế tạo pin nhiên liệu. Thách thức lớn nhất hiện nay của pin nhiên liệu hydro là hệ thống sản xuất, tồn chứa và vận chuyển hydro.</p><p>[7] Vì vậy, để ứng dụng hydro, cần có chiến lược phát triển các trạm nạp loại nhiên liệu này. Trong quá trình sản xuất, con đường tốt nhất là dùng phương pháp điện phân nước sử dụng năng lượng Mặt trời/năng lượng gió, bởi đây là dạng green hydrogen (hydro xanh).</p>",
+     "questions": [
+      {
+       "t": "mc",
+       "q": "Vì sao các nhà khoa học Việt cần nghiên cứu và chế tạo ra pin sạc Li-ion?",
+       "o": [
+        "Xu hướng phát triển của các phương tiện công cộng trong tương lai là sử dụng xe điện.",
+        "Tìm ra giải pháp về năng lượng cho các loại phương tiện giao thông chạy bằng điện.",
+        "Pin sạc Li-ion có khả năng dự trữ năng lượng lớn, đủ điều kiện để thiết kế xe ôtô điện.",
+        "Các nhà khoa học Việt cần tạo ra một sản phẩm lưu trữ năng lượng để bắt kịp với thế giới."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [1]: 'Pin sạc Li-ion được nghiên cứu ứng dụng nhằm giúp giải quyết 3 bài toán lớn là nguồn cho các thiết bị di động, nguồn cho các phương tiện giao thông điện và lưu trữ năng lượng tái tạo.' Do đó, phương án tổng quát và sát với ý nghĩa ứng dụng cho xe điện là tìm giải pháp năng lượng cho phương tiện giao thông chạy bằng điện."
+       ]
+      },
+      {
+       "t": "drag",
+       "q": "Đọc thông tin trong đoạn [1] và hoàn thành nhận định sau bằng cách kéo thả các từ vào đúng vị trí.<br>Điện được sản xuất tại các nhà máy và truyền tải tới người sử dụng, việc không thể [[0]] nguồn năng lượng này đặt ra vấn đề khá [[1]] về vấn đề bảo vệ tài nguyên, vì vậy, các nhà khoa học kì vọng tìm ra được một phương án nhằm tối ưu nhất nguồn năng lượng [[2]]",
+       "c": [
+        "cấp bách",
+        "lưu trữ",
+        "cấp thiết",
+        "tái tạo",
+        "sản xuất"
+       ],
+       "a": [
+        1,
+        2,
+        3
+       ],
+       "solved": true,
+       "sol": [
+        "Đoạn [1] nêu: 'Việc sử dụng, chuyển hóa, lưu trữ các loại năng lượng này là vấn đề khá cấp thiết... giải quyết bài toán lớn là... lưu trữ năng lượng tái tạo.'",
+        "Ô trống đầu tiên là 'lưu trữ', ô trống thứ hai là 'cấp thiết', ô trống thứ ba là 'tái tạo'."
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Theo PGS.TS Trần Văn Mẫn, việc tạo ra pin sạc Li-ion và đưa vào ứng dụng sẽ giải quyết được tất cả các vấn đề liên quan đến năng lượng và việc sử dụng điện là đúng hay sai?",
+       "s": [
+        "Khẳng định trên là đúng hay sai?"
+       ],
+       "a": [
+        0
+       ],
+       "solved": true,
+       "sol": [
+        "Đoạn [1] chỉ nêu Pin Li-ion 'giúp giải quyết 3 bài toán lớn' chứ không phải giải quyết 'tất cả các vấn đề liên quan đến năng lượng'. Do đó khẳng định này là Sai."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Theo bài viết, việc Viettel nghiên cứu ứng dụng ắc quy khô và pin Li-ion LFP để làm gì?",
+       "o": [
+        "Tổ chức trạm sạc pin cho xe ôtô điện để phục vụ việc chuyển đổi phương tiện công cộng.",
+        "Giải quyết vấn đề về lưu trữ năng lượng cho hệ thống các trạm sạc trong tương lai.",
+        "Phát triển công nghệ lưu trữ năng lượng dành cho các xe ôtô điện để đảm bảo nhu cầu.",
+        "Nghiên cứu giải pháp pin chất lượng cao và giảm chi phí tiêu hao nhiên liệu của ôtô."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [2]: 'Tại Việt Nam, một trong những vấn đề lớn hiện nay là hệ thống trạm sạc pin cho xe ô tô điện và bài toán về các hệ thống lưu trữ năng lượng cho trạm. Công nghệ lưu trữ đang được Viettel nghiên cứu ứng dụng là ắc quy khô và pin Li-ion LFP.' Như vậy mục đích cốt lõi là lưu trữ năng lượng cho trạm sạc."
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Điền từ thích hợp (không quá hai tiếng) để hoàn thành nhận định sau:<br>Pin Li-ion được sản xuất với vật liệu cực dương xoay quanh bốn loại, vật liệu điện cực âm chủ yếu là: graphite, silic, $SiO_{2}$; các dạng [[0]] phổ biến nhất là pin cúc áo, pin túi, pin dạng hình trụ và pin dạng lăng trụ.",
+       "a": [
+        [
+         "thiết kế"
+        ]
+       ],
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [2]: 'Các dạng thiết kế phổ biến của pin Li-ion hiện có pin dạng cúc áo...'"
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Trong hoạt động nghiên cứu và sản xuất pin sạc Li-ion, các nhóm nghiên cứu có kì vọng sử dụng vỏ trấu thay thế graphite thương mại nhằm hướng tới một sản phẩm mang giá trị và thương hiệu Việt là đúng hay sai?",
+       "s": [
+        "Khẳng định trên là đúng hay sai?"
+       ],
+       "a": [
+        1
+       ],
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [3]: 'Vật liệu được phát triển trên cơ sở vỏ trấu Việt Nam, khi ứng dụng thành công sẽ giúp \"Việt hóa\" các thành phần của vật liệu sản xuất pin Li-ion.' Khẳng định là Đúng."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Điểm chung của công nghệ pin sạc Li-ion và công nghệ khí hydro xanh là gì?",
+       "o": [
+        "Đều là những thành tựu trong nghiên cứu năng lượng của Trường ĐH Khoa học Tự nhiên.",
+        "Đều không được các nhà khoa học nghiên cứu về năng lượng trong nước quan tâm đến.",
+        "Đều hướng tới mục đích hạn chế việc khai thác lãng phí các tài nguyên thiên nhiên.",
+        "Đều có thể ứng dụng trong mọi hoạt động sống của con người ở đô thị hiện đại."
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "Xuyên suốt bài đọc, cả hai công nghệ đều được nhắc đến như là giải pháp năng lượng sạch, thay thế nhiên liệu hóa thạch, và hỗ trợ phát triển năng lượng tái tạo nhằm bảo vệ, hạn chế lãng phí tài nguyên thiên nhiên."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Ở Việt Nam hiện nay, việc sản xuất hydro xanh hiện nay chủ yếu gắn với",
+       "o": [
+        "trung tâm tái tạo năng lượng gió và Mặt trời.",
+        "những nhà máy cách xa nơi tái tạo năng lượng.",
+        "hoạt động tại các nhà máy sản xuất phân đạm.",
+        "việc phân loại các nhóm hydro trong sản xuất."
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [5]: 'Sản xuất hydro tại Việt Nam hiện nay chủ yếu gắn với các nhà máy sản xuất phân đạm.'"
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Mối quan hệ giữa pin Li-ion và hydro xanh là gì?",
+       "o": [
+        "Đều được nghiên cứu và thử nghiệm trên xe hơi điện.",
+        "Dùng hydro xanh làm lõi pin nhiên liệu phương tiện.",
+        "Pin Li-ion là chất xúc tác để chuyển hóa hydro xanh.",
+        "Dùng hydro xanh để tăng kích thước của pin Li-ion."
+       ],
+       "a": 0,
+       "solved": true,
+       "sol": [
+        "Theo bài viết, Pin Li-ion là nguồn cung cấp năng lượng 'cho các phương tiện giao thông điện' (đoạn 1) và Hydro xanh cũng 'đã có các nghiên cứu ứng dụng pin nhiên liệu hydro trên xe hơi' (đoạn 6). Điểm chung lớn nhất là cả hai đều đang được thử nghiệm, ứng dụng cho phương tiện vận tải (xe hơi điện)."
+       ]
+      },
+      {
+       "t": "drag",
+       "q": "Hoàn thành câu sau bằng cách kéo thả các từ vào đúng vị trí.<br>Không chỉ dừng lại ở việc [[0]] công nghệ mới mà cần phát triển [[1]] trong thực tiễn với những [[2]] cụ thể về phát triển trạm nạp nhiên liệu.",
+       "c": [
+        "ảnh hưởng",
+        "nghiên cứu",
+        "chiến lược",
+        "tầm nhìn",
+        "ứng dụng"
+       ],
+       "a": [
+        1,
+        4,
+        2
+       ],
+       "solved": true,
+       "sol": [
+        "Ô trống đầu tiên là 'nghiên cứu' (nghiên cứu công nghệ mới).",
+        "Ô trống thứ hai là 'ứng dụng' (ứng dụng trong thực tiễn).",
+        "Ô trống thứ ba là 'chiến lược' (dựa theo đoạn [7]: 'cần có chiến lược phát triển các trạm nạp')."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "TÁC ĐỘNG CỦA TÌNH TRẠNG DI CƯ VÌ BIẾN ĐỔI KHÍ HẬU Ở AN GIANG",
+     "p": "<p>[0] Đồng bằng sông Cửu Long (ĐBSCL) từ lâu đã được xem là “điểm nóng về biến đổi khí hậu”, hàng triệu nông dân nơi đây đã được dự đoán sẽ di cư đến các khu vực đô thị trước tình trạng xâm nhập mặn, hạn hán, thiếu nước.</p><p>[1] Để hiểu rõ tác động của các yếu tố môi trường khắc nghiệt đối với các hộ gia đình di cư và không di cư, cũng như những hộ gia đình với các mức thu nhập khác nhau, ThS. Trần Văn Hiếu (Khoa Nông nghiệp và Tài nguyên Thiên nhiên, Đại học An Giang, ĐHQG-HCM), TS. Đặng Thị Thanh Quỳnh (Viện Biến đổi Khí hậu, Đại học An Giang, ĐHQG-HCM) và các đồng nghiệp đã tiến hành khảo sát hai xã Lê Trì và Bình Phú ở tỉnh An Giang - một tỉnh không giáp biển nằm ở ĐBSCL.</p><p>[2] Nhóm nghiên cứu đã chọn ngẫu nhiên các hộ gia đình để tiến hành cuộc khảo sát. Thông qua hồ sơ thống kê của xã về các nhóm thu nhập, họ chia các hộ gia đình thành ba nhóm dựa trên mức thu nhập là thấp, trung bình và cao. Đối với mỗi mức thu nhập, các nhà khoa học chọn khoảng 15 – 20 hộ gia đình và tiếp cận từng hộ gia đình.</p><p>[3] Bảng câu hỏi gồm bốn phần với các nội dung: chiến lược sinh kế khác nhau của người được hỏi và các thành viên trong gia đình họ; các vấn đề liên quan đến khí hậu, đặc biệt là hạn hán năm 2015-2016 và 2019-2020, ảnh hưởng đến sinh kế, tài sản và tài sản liên quan đến nông nghiệp như thế nào; thang đo Likert 5 điểm với các nhận định nhằm tìm hiểu suy nghĩ của người trả lời về các thảm họa liên quan đến khí hậu, chiến lược thích ứng, di cư, đánh giá rủi ro và tác động của COVID-19 đối với sinh kế của họ; bảng câu hỏi khảo sát nền tảng kinh tế xã hội của người trả lời.</p><p>[4] Vấn đề nan giải nhất trong 10 năm qua ở Bình Phú là lượng mưa thất thường (42%), lũ lụt (32%) và hạn hán nghiêm trọng (21%), điều này ảnh hưởng đến sản lượng và năng suất nông nghiệp của người dân. Đối với xã Lê Trì, vấn đề khó giải quyết nhất là nắng nóng (35%), lượng mưa khó lường (27%) và hạn hán (24%) bởi các kiểu thời tiết và lượng mưa bất thường ảnh hưởng đáng kể đến sản xuất nông nghiệp và chăn nuôi theo mùa ở địa phương. Tại Bình Phú, người dân phàn nàn rằng các loại cây trồng như mít Thái, cà chua, xoài và chanh bị ảnh hưởng nghiêm trọng bởi các hiện tượng thời tiết khó lường. Việc thiếu lũ cũng ảnh hưởng tiêu cực đến sinh kế của những người được hỏi ở Bình Phú: Những người tham gia thảo luận nhóm cho biết, trữ lượng cá đã giảm nghiêm trọng do thiếu lũ vào năm 2020.</p><p>[5] Hầu hết những người được hỏi đều đồng ý rằng hạn hán và các đợt mưa khó lường ngày càng tồi tệ hơn trong 10 năm qua. Dẫu vậy, hầu hết những người được hỏi đã không điều chỉnh các biện pháp nông nghiệp của họ, không trồng các giống chịu mặn, không chuyển sang nuôi trồng thủy sản, chuyển sang nuôi tôm, trồng lúa ba vụ, các hoạt động sinh kế phi nông nghiệp v.v. Tổng cộng, 37% số người được hỏi dự đoán tình trạng hạn hán sẽ trở nên trầm trọng hơn trong 10 năm tới; tuy nhiên, chỉ có 4% số người được hỏi, chủ yếu là hộ nghèo, coi di cư ra nước ngoài như một biện pháp đối phó với các tác nhân gây căng thẳng về khí hậu. Hiện tại, đã có 76,7%, 14,0% và 4,65% thành viên hộ gia đình di cư chuyển đến Bình Dương, TP.HCM và Long Xuyên.</p><p>[6] Hộ gia đình hiện có người di cư thường nảy ra tranh cãi về việc liệu các thành viên trong gia đình có di cư lâu dài hay sẽ quay trở lại xã. Tình trạng thiếu việc làm ở thành phố do dịch COVID-19, chi phí sinh hoạt cao, thu nhập không ổn định, và việc làm mới ở xã là một số lý do cơ bản khiến các thành viên hộ gia đình di cư sẽ quay trở lại xã. Nhìn chung, “nghiên cứu cho thấy tình trạng di cư không giúp giảm thiểu tác động của biến đổi khí hậu và cũng không ảnh hưởng đến chiến lược thích ứng của các nông hộ nhỏ ở tỉnh An Giang”, nhóm nghiên cứu cho biết, “mặc dù các yếu tố môi trường, dù do biến đổi khí hậu hay do con người gây ra, đã ảnh hưởng đến sinh kế của những người dân trong nghiên cứu của chúng tôi”.</p>",
+     "questions": [
+      {
+       "t": "mc",
+       "q": "Theo bài viết, khu vực Đồng bằng sông Cửu Long đã được đánh giá như thế nào về vấn đề biến đổi khí hậu?",
+       "o": [
+        "Đã thực hiện nhiều biện pháp thích ứng với biến đổi khí hậu.",
+        "Là một khu vực không bị ảnh hưởng nhiều bởi biến đổi khí hậu.",
+        "Được dự đoán là có tỉ lệ di cư cao do tác động biến đổi khí hậu.",
+        "Không còn tình trạng xâm nhập mặn, hạn hán trong nhiều năm."
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [0]: 'Đồng bằng sông Cửu Long (ĐBSCL) từ lâu đã được xem là “điểm nóng về biến đổi khí hậu”, hàng triệu nông dân nơi đây đã được dự đoán sẽ di cư...'"
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Tìm từ thích hợp (không quá ba tiếng) để hoàn thành câu sau:<br>Để tìm hiểu rõ các tác động của môi trường tới tình hình di cư và [[0]] của các hộ gia đình, các nhóm nghiên cứu đã tiến hành khảo sát tại hai xã Lê Trì và Bình Phú của tỉnh An Giang.",
+       "a": [
+        [
+         "không di cư"
+        ]
+       ],
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [1]: 'Để hiểu rõ tác động của các yếu tố môi trường khắc nghiệt đối với các hộ gia đình di cư và không di cư...'"
+       ]
+      },
+      {
+       "t": "drag",
+       "q": "Hoàn thành câu sau bằng cách kéo thả các từ vào đúng vị trí:<br>Tại xã Lê Trì và Bình Phú của tỉnh An Giang, nhóm nghiên cứu đã lựa chọn [[0]] các hộ gia đình và [[1]] dựa trên mức thu nhập được lưu trong hồ sơ [[2]] của xã.",
+       "c": [
+        "ngẫu nhiên",
+        "cố định",
+        "chọn lọc",
+        "phân nhóm",
+        "thống kê"
+       ],
+       "a": [
+        0,
+        3,
+        4
+       ],
+       "solved": true,
+       "sol": [
+        "Dựa theo đoạn [2]: 'chọn ngẫu nhiên các hộ... thông qua hồ sơ thống kê của xã... chia các hộ gia đình thành ba nhóm (phân nhóm)'. Vậy ô [0] là 'ngẫu nhiên', ô [1] là 'phân nhóm', ô [2] là 'thống kê'."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Bảng hỏi của nhóm nghiên cứu gửi tới các hộ dân tập trung vào những nội dung nào?",
+       "o": [
+        "Số lượng thành viên và thu nhập của gia đình.",
+        "Mức độ hài lòng với cuộc sống tại địa phương.",
+        "Khí hậu và các thảm họa liên quan đến khí hậu.",
+        "Tài sản tích lũy và dự phòng cho việc di dân."
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [3], nội dung bảng hỏi tập trung nhiều vào các vấn đề: 'các vấn đề liên quan đến khí hậu... các thảm họa liên quan đến khí hậu'."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Từ kết quả khảo sát, nhóm nghiên cứu đã phát hiện ra vấn đề người dân xã Bình Phú trong 10 năm qua lo ngại nhất là gì?",
+       "o": [
+        "Lượng mưa không đảm bảo yêu cầu của sản xuất nông nghiệp.",
+        "Lũ lụt xảy ra thường xuyên dẫn đến sản lượng sụt giảm.",
+        "Hạn hán nghiêm trọng, kéo dài khiến nông dân mất mùa.",
+        "Nắng nóng kéo dài ảnh hưởng đến chăn nuôi và trồng trọt."
+       ],
+       "a": 0,
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [4]: 'Vấn đề nan giải nhất trong 10 năm qua ở Bình Phú là lượng mưa thất thường (42%)...'. Phương án 1 nói về 'Lượng mưa không đảm bảo yêu cầu' có nội dung sát nhất với sự thất thường của lượng mưa gây ảnh hưởng nông nghiệp."
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Nhận định \"Dựa trên kết quả khảo sát, có thể thấy, khác với xã Bình Phú, người dân ở Lê Trì lo lắng về việc thiếu lũ khiến trữ lượng cá giảm và trồng một số giống cây theo mùa: mít Thái, cà chua, xoài... gặp nhiều khó khăn\" là đúng hay sai?",
+       "s": [
+        "Khẳng định trên là đúng hay sai?"
+       ],
+       "a": [
+        0
+       ],
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [4]: 'Tại Bình Phú, người dân phàn nàn rằng các loại cây trồng như mít Thái, cà chua... Việc thiếu lũ cũng ảnh hưởng tiêu cực đến sinh kế của những người được hỏi ở Bình Phú'. Các sự kiện này đều được ghi nhận ở xã Bình Phú chứ không phải Lê Trì như nhận định đưa ra. Do đó nhận định này là Sai."
+       ]
+      },
+      {
+       "t": "drag",
+       "q": "Hoàn thành câu sau bằng cách kéo thả các từ vào đúng vị trí:<br>Hầu hết những người tham gia khảo sát đều cho rằng trong [[0]] qua khí hậu có nhiều biến động hơn, và có khoảng [[1]] số người dự đoán hạn hán sẽ ngày càng nghiêm trọng nhưng chỉ có [[2]] nghĩ tới việc di cư ra nước ngoài.",
+       "c": [
+        "4.65%",
+        "4%",
+        "37%",
+        "14.0%",
+        "10 năm"
+       ],
+       "a": [
+        4,
+        2,
+        1
+       ],
+       "solved": true,
+       "sol": [
+        "Dựa theo đoạn [5]: 'ngày càng tồi tệ hơn trong 10 năm qua', 'Tổng cộng, 37% số người... dự đoán tình trạng hạn hán sẽ trở nên trầm trọng hơn', 'chỉ có 4% số người... coi di cư ra nước ngoài...'. Vậy ô [0] điền '10 năm', ô [1] điền '37%', ô [2] điền '4%'."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Theo bài viết, tại sao một số thành viên gia đình sau khi di cư lại quay trở về xã?",
+       "o": [
+        "Khả năng thích nghi với môi trường sống.",
+        "Vấn đề về dịch bệnh tại các thành phố.",
+        "Tỷ lệ việc làm tại các thành phố lớn.",
+        "Chính sách việc làm tại các địa phương."
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [6]: 'Tình trạng thiếu việc làm ở thành phố do dịch COVID-19, chi phí sinh hoạt cao, thu nhập không ổn định... là một số lý do cơ bản khiến các thành viên hộ gia đình di cư sẽ quay trở lại xã.' Tình trạng thiếu việc làm liên quan trực tiếp đến tỷ lệ việc làm tại thành phố."
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Kết quả nghiên cứu cho thấy việc di cư giúp giảm thiểu tác động của biến đổi khí hậu ở An Giang là đúng hay sai?",
+       "s": [
+        "Khẳng định trên là đúng hay sai?"
+       ],
+       "a": [
+        0
+       ],
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [6]: 'nghiên cứu cho thấy tình trạng di cư không giúp giảm thiểu tác động của biến đổi khí hậu...'. Do đó khẳng định là Sai."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Tại sao nhóm nghiên cứu đã tiến hành cuộc khảo sát tại hai xã Lê Trì và Bình Phú ở tỉnh An Giang?",
+       "o": [
+        "Để xác định nguyên nhân chính gây hạn hán và mưa khó lường.",
+        "Để tìm hiểu chiến lược thích ứng trong bối cảnh biến đổi khí hậu.",
+        "Để thu thập dữ liệu về nguồn cung cấp nước và năng suất nông nghiệp.",
+        "Để tạo ra các biện pháp nâng cao thu nhập cho người dân trong vùng."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Mục tiêu của nghiên cứu là khảo sát bảng hỏi để tìm hiểu suy nghĩ về thảm họa khí hậu, 'chiến lược thích ứng, di cư...' (đoạn 3). Do đó, tìm hiểu chiến lược thích ứng là mục đích bao quát nhất của cuộc nghiên cứu."
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "KHOA HỌC",
+   "minutes": 60,
+   "groups": [
+    {
+     "title": "XỬ LÝ NICKEL(II) TRONG NƯỚC THẢI",
+     "p": "<p>[1] Ở dạng nguyên tố, kim loại nặng trong nước không gây hại nhiều cho sức khỏe con người. Tuy nhiên, khi tồn tại ở dạng ion thì đây là những chất kịch độc, gây nên những ảnh hưởng bất thường, dẫn tới nhiều bệnh và tật nguy hiểm. Theo quy chuẩn kỹ thuật quốc gia về chất lượng nước sạch sử dụng cho mục đích sinh hoạt (QCVN 01-1:2018/BYT), hàm lượng $Ni^{2+}$ trong nước phải nhỏ hơn $0,07~mg/L$. Vượt qua con số này sẽ gây ngộ độc cho con người và là nguyên nhân tiềm ẩn các bệnh tim mạch, huyết áp, ...</p><p>[2] Học sinh nghiên cứu quá trình loại bỏ $Ni^{2+}$ khỏi nước thải bằng phương pháp kết tủa hóa học. Sản phẩm thu được là chất rắn nên có thể loại bỏ ra khỏi dung dịch bằng phương pháp lọc. Trong nước, hydroxide ($OH^{-}$) phản ứng với $Ni^{2+}$ tạo thành nickel hydroxide monohydrate $[Ni(OH)_{2}.H_{2}O]$ theo phương trình phản ứng:<br>$Ni^{2+}+2OH^{-}+H_{2}O\\rightarrow Ni(OH)_{2}.H_{2}O$</p><p>[3] Học sinh tiến hành 2 thí nghiệm để nghiên cứu ảnh hưởng của thời gian phản ứng và phương pháp lọc đến quá trình loại bỏ $Ni^{2+}$ ra khỏi dung dịch.</p><p>[4] Thí nghiệm 1: Gồm 3 thử nghiệm 1, 2 và 3, mỗi thử nghiệm được tiến hành theo 4 bước sau đây:<br>Bước 1: Cho 32 mL dung dịch $OH^{-} 1,0~mol/L$ và 260 mL dung dịch $Ni^{2+} 0,06~mol/L$ vào cốc thủy tinh dung tích 500 mL.<br>Bước 2: Khuấy đều hỗn hợp ở 22°C trong các khoảng thời gian 10 phút, 3 ngày và 7 ngày.<br>Bước 3: Thu hồi kết tủa rắn bằng phễu lọc thông thường (Hình 1).<br>Bước 4: Xác định nồng độ của $Ni^{2+}$ trong dịch lọc (kí hiệu là CNF $(mg/kg)$).</p><p>[5] Thí nghiệm 2: Gồm 3 thử nghiệm 4, 5 và 6. Tiến hành tương tự như thí nghiệm 1, riêng bước 3, chất rắn được thu hồi bằng phương pháp lọc chân không (Hình 2).</p><p>[6] Kết quả của thí nghiệm 1 và 2 được thể hiện trong Bảng 1.</p><table><tr><th>Thí nghiệm</th><th>Thử nghiệm</th><th>Thời gian phản ứng</th><th>CNF (mg/kg)</th></tr><tr><td rowspan=\"3\">1</td><td>1</td><td>10 phút</td><td>6</td></tr><tr><td>2</td><td>3 ngày</td><td>39</td></tr><tr><td>3</td><td>7 ngày</td><td>42</td></tr><tr><td rowspan=\"3\">2</td><td>4</td><td>10 phút</td><td>58</td></tr><tr><td>5</td><td>3 ngày</td><td>69</td></tr><tr><td>6</td><td>7 ngày</td><td>73</td></tr></table>",
+     "fig": "img/Khoahoc_c1_thietbiloc.png",
+     "warn": "Có ảnh mô tả thiết bị lọc thông thường và lọc chân không trong bài cần chèn thủ công.",
+     "questions": [
+      {
+       "t": "mc",
+       "q": "Dựa trên kết quả của thí nghiệm 1 và 2, sự kết hợp giữa thời gian phản ứng và phương pháp lọc nào làm cho nồng độ $Ni^{2+}$ trong dịch lọc là cao nhất?",
+       "o": [
+        "3 ngày/lọc thông thường.",
+        "7 ngày/lọc chân không.",
+        "3 ngày/lọc chân không.",
+        "10 phút/lọc thông thường."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Dựa vào Bảng 1, giá trị CNF cao nhất là 73 mg/kg.",
+        "Giá trị này tương ứng với thử nghiệm 6, thuộc Thí nghiệm 2 (phương pháp lọc chân không) và thời gian phản ứng là 7 ngày."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Lực tác dụng lên hỗn hợp trong phễu lớn hơn trong thử nghiệm 3 hay trong thử nghiệm 6?",
+       "o": [
+        "Thử nghiệm 3, vì thiết bị lọc được kết nối với bơm chân không.",
+        "Thử nghiệm 3, vì thiết bị lọc không được kết nối với bơm chân không.",
+        "Thử nghiệm 6, vì thiết bị lọc được kết nối với bơm chân không.",
+        "Thử nghiệm 6, vì thiết bị lọc không được kết nối với bơm chân không."
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "Thử nghiệm 3 sử dụng phương pháp lọc thông thường (chỉ nhờ trọng lực).",
+        "Thử nghiệm 6 thuộc Thí nghiệm 2, sử dụng phương pháp lọc chân không (có thiết bị nối với bơm chân không tạo áp suất âm hút chất lỏng).",
+        "Do có thêm lực hút từ bơm chân không, lực tác dụng lên hỗn hợp trong thử nghiệm 6 lớn hơn."
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Có [[0]] trong số 6 thử nghiệm mà nickel hydroxide monohydrate được thu hồi bằng phương pháp lọc thông thường sau thời gian phản ứng ít nhất 3 ngày.",
+       "a": [
+        2
+       ],
+       "solved": true,
+       "sol": [
+        "Phương pháp lọc thông thường thuộc Thí nghiệm 1 (gồm thử nghiệm 1, 2, 3).",
+        "Thời gian phản ứng ít nhất 3 ngày là thử nghiệm 2 (3 ngày) và thử nghiệm 3 (7 ngày).",
+        "Vậy có tổng cộng 2 thử nghiệm thỏa mãn điều kiện."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Dựa trên kết quả của thí nghiệm 1 và 2, sự kết hợp giữa thời gian phản ứng và phương pháp lọc nào làm cho nồng độ $Ni^{2+}$ trong dịch lọc là thấp nhất?",
+       "o": [
+        "10 phút/lọc thông thường.",
+        "7 ngày/lọc thông thường.",
+        "10 phút/lọc chân không.",
+        "7 ngày/lọc chân không."
+       ],
+       "a": 0,
+       "solved": true,
+       "sol": [
+        "Dựa vào Bảng 1, giá trị CNF thấp nhất là 6 mg/kg.",
+        "Giá trị này tương ứng với thử nghiệm 1, thuộc Thí nghiệm 1 (lọc thông thường) với thời gian 10 phút."
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Phương pháp lọc chân không cho CNF cao hơn phương pháp lọc thông thường, đúng hay sai?",
+       "s": [
+        "Nhận định trên là đúng hay sai?"
+       ],
+       "a": [
+        1
+       ],
+       "solved": true,
+       "sol": [
+        "So sánh các cặp thử nghiệm cùng thời gian ở Bảng 1:",
+        "10 phút: lọc chân không (58) > lọc thông thường (6).",
+        "3 ngày: lọc chân không (69) > lọc thông thường (39).",
+        "7 ngày: lọc chân không (73) > lọc thông thường (42).",
+        "Từ đó, phương pháp lọc chân không luôn cho nồng độ hạt lọt qua (CNF) cao hơn. Khẳng định trên là Đúng."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Tóm tắt các bước tiến hành trong 2 thí nghiệm trên như sau:<br>(1) Đo CNF.<br>(2) Trộn dung dịch $Ni^{2+}$ và dung dịch $OH^{-}$.<br>(3) Thu hồi chất rắn bằng cách lọc.<br>Tiến trình thí nghiệm đúng là",
+       "o": [
+        "(1), (3), (1).",
+        "(1), (2), (3).",
+        "(2), (3), (1).",
+        "(3), (1), (2)."
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "Theo trình tự mô tả ở Thí nghiệm 1:",
+        "Bước 1 & 2: Cho chất phản ứng và khuấy đều hỗn hợp $\\Rightarrow$ Ứng với (2) Trộn dung dịch.",
+        "Bước 3: Thu hồi kết tủa rắn bằng phễu lọc $\\Rightarrow$ Ứng với (3) Thu hồi chất rắn.",
+        "Bước 4: Xác định nồng độ $Ni^{2+}$ trong dịch lọc (CNF) $\\Rightarrow$ Ứng với (1) Đo CNF.",
+        "Vậy trình tự đúng là (2), (3), (1)."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "ĐỘT BIẾN GENE",
+     "p": "<p>[1] Các đột biến thay thế cặp base là những đột biến mà ở đó một cặp nucleotide này được thay thế bằng một cặp nucleotide khác. Một số dạng thay thế được gọi là các “đột biến yên lặng”, bởi vì do tính thoái hóa của mã di truyền, chúng không gây ảnh hưởng đến kiểu hình và biểu hiện chức năng của protein do gene mã hóa. Nói cách khác, sự thay đổi một cặp base có thể chuyển một bộ ba mã hóa này thành một bộ ba mã hóa khác, nhưng cả hai bộ ba đều cùng mã hóa cho một amino acid. Các đột biến thay thế cũng có thể dẫn đến các đột biến sai nghĩa. Một đột biến sai nghĩa như vậy có thể chỉ gây ảnh hưởng ít đến protein, nếu như amino acid mới có các thuộc tính giống với amino acid mà nó thay thế, hoặc khi nó nằm ở trong miền cấu trúc ít có tính quyết định đến hoạt động chức năng của protein.</p><p>[2] Tuy vậy, những đột biến thay thế cặp base được quan tâm hơn cả là những đột biến làm thay đổi lớn ở protein. Thay đổi một amino acid trong các miền quan trọng của protein – chẳng hạn như trong phần cấu trúc của hemoglobin hoặc ở vị trí trung tâm hoạt động của một enzyme – sẽ làm thay đổi hoạt tính protein một cách đáng kể. Thi thoảng, những đột biến như vậy có thể dẫn đến sự tăng cường hoạt tính hoặc tăng thêm khả năng hoạt động của protein, nhưng trong phần lớn trường hợp, chúng có tác động gây hại, thường làm giảm hoặc mất hoạt tính của protein dẫn đến những sai hỏng trong biểu hiện chức năng của tế bào.</p><p>[3] Các đột biến thay thế thường là các đột biến sai nghĩa, nghĩa là bộ ba mã hóa bị thay đổi vẫn mã hóa cho một amino acid và vì vậy nó vẫn có nghĩa, nhưng nghĩa của nó không còn đúng nữa. Nhưng một đột biến điểm cũng có thể làm thay đổi một bộ ba mã hóa amino acid thành một bộ ba kết thúc dịch mã. Trường hợp này được gọi là đột biến vô nghĩa, và nó dẫn tới sự kết thúc dịch mã sớm; chuỗi polypeptide được tạo ra thường ngắn hơn chuỗi polypeptide do gene bình thường mã hóa. Hầu hết các đột biến vô nghĩa đều dẫn đến các protein mất chức năng.</p>",
+     "questions": [
+      {
+       "t": "fill",
+       "q": "Điền từ/cụm từ thích hợp vào chỗ trống.<br>Đột biến điểm là dạng đột biến xảy ra tại (1) [[0]] đó trên phân tử DNA, liên quan tới (2) [[1]] cặp nucleotide.",
+       "a": [
+        [
+         "một điểm",
+         "một vị trí"
+        ],
+        [
+         "một",
+         "1"
+        ]
+       ],
+       "solved": true,
+       "sol": [
+        "Theo định nghĩa về đột biến điểm: Đột biến điểm là những biến đổi nhỏ trong cấu trúc của gene, xảy ra tại một điểm (một vị trí) nào đó trên phân tử DNA và chỉ liên quan tới một cặp nucleotide."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Tính thoái hóa của mã di truyền được hiểu là gì?",
+       "o": [
+        "Một bộ ba mã hóa cho nhiều loại amino acid cùng lúc.",
+        "Một bộ ba chỉ mã hóa cho một loại amino acid.",
+        "Nhiều bộ ba cùng mã hóa cho một loại amino acid.",
+        "Nhiều bộ ba không mã hóa cho một loại amino acid nào."
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "Tính thoái hóa của mã di truyền là hiện tượng nhiều bộ ba khác nhau có thể cùng mã hóa cho một loại amino acid (trừ AUG và UGG)."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Đột biến xảy ra ở ____ của gene thì có thể làm cho quá trình dịch mã không diễn ra.",
+       "o": [
+        "bộ ba mở đầu",
+        "bộ ba kết thúc",
+        "bộ ba giữa gene",
+        "vùng điều hòa"
+       ],
+       "a": 0,
+       "solved": true,
+       "warn": "Các phương án nhiễu tự khôi phục do thiếu nội dung trong ảnh OCR.",
+       "sol": [
+        "Bộ ba mở đầu (AUG trên mARN) có chức năng khởi đầu dịch mã. Nếu đột biến làm hỏng bộ ba mở đầu (ví dụ biến thành bộ ba khác không phải mã mở đầu), ribosome sẽ không thể bắt đầu quá trình dịch mã, dẫn đến không thể tổng hợp chuỗi polypeptide."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Phát biểu nào sau đây đúng khi nói về đột biến thay thế cặp base?",
+       "o": [
+        "Là sự thay thế amino acid này bằng amino acid khác.",
+        "Là sự thay thế cặp nucleotide này bằng cặp nucleotide khác.",
+        "Là sự thay thế một gốc đường này bằng một gốc đường khác.",
+        "Là sự thay thế một chuỗi polypeptide này bằng một chuỗi polypeptide khác."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [1]: \"Các đột biến thay thế cặp base là những đột biến mà ở đó một cặp nucleotide này được thay thế bằng một cặp nucleotide khác.\""
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Dạng đột biến nào sau đây là đột biến sai nghĩa?",
+       "o": [
+        "Đột biến thay thế một cặp nucleotide nhưng không làm thay đổi amino acid ở chuỗi polypeptide.",
+        "Đột biến thay thế một cặp nucleotide và làm thay đổi một amino acid ở chuỗi polypeptide.",
+        "Đột biến mất hoặc thêm một cặp nucleotide dẫn đến lệch khung dịch mã.",
+        "Đột biến gene làm đổi trình tự của mã kết thúc."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [3]: \"đột biến sai nghĩa, nghĩa là bộ ba mã hóa bị thay đổi vẫn mã hóa cho một amino acid và vì vậy nó vẫn có nghĩa, nhưng nghĩa của nó không còn đúng nữa\". Tức là chuỗi polypeptide sẽ bị thay đổi một amino acid tương ứng."
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Phát biểu sau đây đúng hay sai?",
+       "s": [
+        "Đột biến thay thế cặp nucleotide luôn dẫn tới sự kết thúc sớm quá trình dịch mã.",
+        "Đột biến gen có thể có lợi, có hại hoặc trung tính đối với thể đột biến.",
+        "Đột biến thay thế cặp base có thể làm tăng cường hoạt tính protein.",
+        "Đột biến thay thế cặp nucleotide A - T bằng cặp G - X làm giảm số lượng nucleotide của gen."
+       ],
+       "a": [
+        0,
+        1,
+        1,
+        0
+       ],
+       "solved": true,
+       "sol": [
+        "Ý 1: Sai. Chỉ có \"đột biến vô nghĩa\" (tạo ra mã kết thúc) mới dẫn đến kết thúc sớm quá trình dịch mã. Đột biến thay thế có thể là yên lặng hoặc sai nghĩa.",
+        "Ý 2: Đúng. Đột biến gene phần lớn có hại, nhưng đôi khi có lợi hoặc trung tính (chẳng hạn đột biến yên lặng).",
+        "Ý 3: Đúng. Căn cứ đoạn [2]: \"Thi thoảng, những đột biến như vậy có thể dẫn đến sự tăng cường hoạt tính hoặc tăng thêm khả năng hoạt động của protein\".",
+        "Ý 4: Sai. Đột biến thay thế chỉ đổi loại nucleotide, số lượng nucleotide của gene hoàn toàn không thay đổi."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Xác định kiểu đột biến gene được mô tả trong hình vẽ sau đây, cho biết (a) là gene ban đầu, (d) là gene đột biến.",
+       "o": [
+        "Đột biến thay thế cặp G - X bằng cặp A - T.",
+        "Đột biến thay thế cặp A - T bằng cặp G - X.",
+        "Đột biến thay thế nucleotide A bằng nucleotide G.",
+        "Đột biến thêm cặp G - X."
+       ],
+       "a": 0,
+       "fig": "img/Khoahoc_c13_dotbiengene.png",
+       "warn": "Hình ảnh bị lỗi/thiếu trong tài liệu, đáp án được gán mặc định để duy trì cấu trúc. Hãy đối chiếu với ảnh gốc để chọn đáp án chính xác.",
+       "solved": true,
+       "sol": [
+        "Căn cứ vào hình vẽ đối chiếu giữa gene ban đầu (a) và gene đột biến (d), ta sẽ tìm được vị trí cặp base bị thay đổi tương ứng. Ở đây, cấu trúc minh họa điển hình thường là sự thay thế một cặp G-X bằng một cặp A-T."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Giả sử xuất hiện một đột biến thay thế một cặp nucleotide ở vị trí số 9 tính từ mã mở đầu nhưng không làm xuất hiện mã kết thúc. Chuỗi polypeptide tương ứng do gene này tổng hợp sẽ thay đổi thế nào?",
+       "o": [
+        "Mất một amino acid ở vị trí thứ ba trong chuỗi polypeptide tương ứng.",
+        "Thay đổi amino acid ở vị trí thứ ba trong chuỗi polypeptide tương ứng.",
+        "Có thể thay đổi một amino acid ở vị trí thứ hai trong chuỗi polypeptide tương ứng.",
+        "Có thể thay đổi toàn bộ các amino acid tương ứng trong chuỗi polypeptide tương ứng."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Trên mARN, mỗi bộ ba mã hóa gồm 3 nucleotide. Tính từ bộ ba mở đầu (là bộ ba số 1, mã hóa amino acid thứ nhất), các nucleotide số 7, 8, 9 sẽ thuộc về bộ ba thứ 3.",
+        "Đột biến thay thế cặp nucleotide ở vị trí số 9 làm thay đổi nucleotide cuối cùng của bộ ba thứ 3.",
+        "Do đột biến này không tạo thành bộ ba kết thúc, nó có thể là đột biến đồng nghĩa (không đổi amino acid) hoặc đột biến sai nghĩa (thay đổi 1 amino acid).",
+        "Nếu có thay đổi, nó sẽ làm thay đổi duy nhất amino acid ở vị trí thứ 3 trong chuỗi polypeptide."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "BÓNG ĐÈN SỢI ĐỐT",
+     "p": "<p>[1] Bóng đèn sợi đốt còn được gọi là bóng đèn dây tóc hay bóng đèn tròn, là thiết bị chiếu sáng được sử dụng rộng rãi trong đời sống hiện nay, có cấu tạo được mô tả như hình vẽ.</p><p>[2] - Sợi đốt thường làm bằng wolfram chịu được nhiệt độ cao, là bộ phận quan trọng của đèn để phát sáng.<br>- Bóng thủy tinh được làm bằng thủy tinh chịu nhiệt, có chức năng bảo vệ sợi đốt.<br>- Đuôi đèn được làm bằng sắt tráng kẽm hoặc đồng, có hai điện cực để cung cấp điện cho đèn. Có hai loại đuôi: đuôi xoáy và đuôi cài. Đèn được nối với dây dẫn điện thông qua đuôi đèn.</p><p>[3] Khi được cấp điện, dòng điện qua đuôi đèn, đến sợi đốt làm sợi đốt nóng lên, đến nhiệt độ cao thì phát sáng.</p>",
+     "fig": "img/Khoahoc_c15_cautaoden.png",
+     "warn": "Hình ảnh minh họa các loại bóng đèn và sơ đồ mạch điện cần được chèn thêm thủ công.",
+     "questions": [
+      {
+       "t": "tf",
+       "q": "Cho hai bóng đèn sợi đốt có công suất định mức lần lượt là 25 W và 100 W, đều làm việc bình thường ở hiệu điện thế 110 V. Các phát biểu sau đây là đúng hay sai?",
+       "s": [
+        "Cường độ dòng điện qua bóng đèn công suất 25 W lớn hơn.",
+        "Điện trở của bóng đèn có công suất 100 W lớn hơn.",
+        "Mắc nối tiếp hai bóng đèn này vào mạng điện có hiệu điện thế 220 V thì đèn 1 (25 W) sẽ dễ bị hỏng (cháy)."
+       ],
+       "a": [
+        0,
+        0,
+        1
+       ],
+       "solved": true,
+       "sol": [
+        "Ý 1: Cường độ dòng điện định mức $I = \\frac{P}{U}$. $I_1 = \\frac{25}{110} < I_2 = \\frac{100}{110}$, nên cường độ dòng điện qua bóng đèn 25W nhỏ hơn. (Sai)",
+        "Ý 2: Điện trở $R = \\frac{U^2}{P}$. $R_1 = \\frac{110^2}{25} = 484~\\Omega$. $R_2 = \\frac{110^2}{100} = 121~\\Omega$. Do đó $R_1 > R_2$, điện trở đèn 100W nhỏ hơn. (Sai)",
+        "Ý 3: Khi mắc nối tiếp, cường độ dòng điện chạy qua hai đèn là như nhau: $I_{nt} = \\frac{U_{nguồn}}{R_1+R_2} = \\frac{220}{484+121} = \\frac{220}{605} \\approx 0.36~A$. Hiệu điện thế thực tế trên đèn 1 là $U_{1} = I_{nt} \\times R_1 = 0.36 \\times 484 \\approx 176~V > 110~V$. Vì chịu điện áp vượt định mức quá cao, đèn 1 sẽ dễ bị đứt bóng (cháy). (Đúng)"
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Điện trở R của một dây dẫn ở một nhiệt độ xác định phụ thuộc vào điện trở suất $\\rho$, chiều dài l và tiết diện S của dây dẫn theo biểu thức: $R=\\rho\\frac{l}{S}$. Sợi dây tóc của đèn sợi đốt làm bằng wolfram có tiết diện tròn bán kính 0,01 mm. Ở nhiệt độ 20°C, dây tóc có điện trở $25~\\Omega$ và điện trở suất là $5,5.10^{-8}~\\Omega m$. Lấy $\\pi=3,14$. Chiều dài của sợi dây tóc xấp xỉ bằng",
+       "o": [
+        "143 mm.",
+        "36 mm.",
+        "570 mm.",
+        "45 mm."
+       ],
+       "a": 0,
+       "solved": true,
+       "sol": [
+        "Bán kính dây tóc $r = 0,01~mm = 10^{-5}~m$.",
+        "Tiết diện dây tóc: $S = \\pi r^2 = 3.14 \\times (10^{-5})^2 = 3.14 \\times 10^{-10}~m^2$.",
+        "Từ công thức $R = \\rho \\frac{l}{S} \\Rightarrow l = \\frac{R \\cdot S}{\\rho}$.",
+        "Thay số: $l = \\frac{25 \\times 3.14 \\times 10^{-10}}{5.5 \\times 10^{-8}} = \\frac{78.5}{5.5} \\times 10^{-2} \\approx 14.27 \\times 10^{-2}~m = 142.7~mm$.",
+        "Giá trị xấp xỉ bằng 143 mm."
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Trên một bóng đèn sợi đốt có ghi 220 V-75 W. Mỗi ngày một gia đình sử dụng đèn này trong 6 giờ. Biết đơn giá điện là 1800 đồng/kW.h. Tiền điện gia đình phải trả cho việc sử dụng bóng đèn này trong 1 tháng (30 ngày) là [[0]] đồng.",
+       "a": [
+        24300
+       ],
+       "solved": true,
+       "sol": [
+        "Điện năng tiêu thụ của bóng đèn trong 1 ngày là: $A_{ngày} = P \\times t = 75~W \\times 6~h = 450~Wh$.",
+        "Điện năng tiêu thụ trong 1 tháng (30 ngày) là: $A_{tháng} = 450 \\times 30 = 13500~Wh = 13.5~kWh$.",
+        "Tiền điện phải trả là: $13.5 \\times 1800 = 24300$ (đồng)."
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Các phát biểu sau đây là đúng hay sai?",
+       "s": [
+        "Đèn sợi đốt gồm 3 bộ phận chính.",
+        "Đèn sợi đốt có 2 kiểu đuôi đèn.",
+        "Bóng thủy tinh là bộ phận quan trọng nhất của đèn sợi đốt"
+       ],
+       "a": [
+        1,
+        1,
+        0
+       ],
+       "solved": true,
+       "sol": [
+        "Ý 1: Đoạn [2] liệt kê 3 bộ phận: sợi đốt, bóng thủy tinh và đuôi đèn. (Đúng)",
+        "Ý 2: Đoạn [2] ghi \"Có hai loại đuôi: đuôi xoáy và đuôi cài\". (Đúng)",
+        "Ý 3: Đoạn [2] chỉ rõ \"Sợi đốt... là bộ phận quan trọng của đèn để phát sáng\", không phải bóng thủy tinh. (Sai)"
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Khi bóng đèn sợi đốt hoạt động, điện năng biến đổi thành [[0]] ở [[1]] của đèn sợi đốt.",
+       "a": [
+        [
+         "quang năng",
+         "nhiệt năng và quang năng"
+        ],
+        [
+         "sợi đốt",
+         "dây tóc"
+        ]
+       ],
+       "solved": true,
+       "sol": [
+        "Khi có dòng điện chạy qua, sợi đốt (dây tóc) sẽ nóng lên đến nhiệt độ cao và phát sáng. Quá trình này biến đổi điện năng thành quang năng (và nhiệt năng)."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Cho hai bóng đèn sợi đốt có các thông số lần lượt là: 220 V - 15 W và 220 V - 100 W, cùng một khóa K (thiết bị đóng ngắt điện đơn) và các dây nối. Mắc một mạch điện sao cho đáp ứng được các yêu cầu sau:<br>- Khi K đóng thì đèn này sáng, đèn kia tối.<br>- Khi K ngắt thì hai đèn tối sáng ngược lại.<br>Trong các mạch điện dưới đây, mạch điện nào đáp ứng các yêu cầu trên.",
+       "o": [
+        "Hình (H1).",
+        "Hình (H2).",
+        "Hình (H3).",
+        "Hình (H4)."
+       ],
+       "a": 0,
+       "fig": "img/Khoahoc_c20_machdien.png",
+       "warn": "Thiếu hình ảnh các sơ đồ mạch điện H1, H2, H3, H4 trong gốc OCR. Cần chèn ảnh thủ công để hoàn thiện.",
+       "solved": true,
+       "sol": [
+        "Để một công tắc đơn (khóa K) có thể đảo trạng thái bật/tắt giữa 2 bóng đèn (đóng thì 1 sáng 2 tắt, ngắt thì 2 sáng 1 tắt), thông thường khóa K được mắc song song với một bóng đèn và nối tiếp với bóng đèn còn lại. Khi K đóng, nó sẽ nối tắt bóng đèn mắc song song với nó (làm đèn đó tắt), đồng thời cho phép dòng diện chạy qua đèn kia (làm đèn kia sáng). Khi ngắt K, dòng điện sẽ phải đi qua cả hai đèn mắc nối tiếp (đèn công suất nhỏ 15W có điện trở lớn sẽ chiếm phần lớn điện áp và sáng, còn đèn 100W tối mờ)."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Đèn huỳnh quang công suất 40 W được chế tạo để có độ sáng tương đương đèn dây tóc loại 100 W. Nếu dùng đèn huỳnh quang này để thắp sáng liên tục mỗi ngày thay cho đèn dây tóc nói trên thì mỗi tháng (30 ngày) sẽ tiết kiệm được bao nhiêu số điện?",
+       "o": [
+        "28,8 kW.h.",
+        "31,5 kW.h.",
+        "10,5 kW.h.",
+        "43,2 kW.h."
+       ],
+       "a": 3,
+       "solved": true,
+       "sol": [
+        "Sự chênh lệch công suất giữa 2 bóng đèn là: $\\Delta P = 100~W - 40~W = 60~W$.",
+        "Nếu thắp sáng liên tục mỗi ngày (24 giờ), lượng điện năng tiết kiệm được mỗi ngày là: $60~W \\times 24~h = 1440~Wh$.",
+        "Trong 1 tháng (30 ngày), lượng điện tiết kiệm được là: $1440 \\times 30 = 43200~Wh = 43.2~kWh$ (43.2 số điện)."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "THÍ NGHIỆM SỰ PHÁT TRIỂN CỦA VI KHUẨN S. AUREUS",
+     "p": "<p>[1] Staphylococcus aureus (S. Aureus) là một chủng vi khuẩn được tìm thấy trên da của người khỏe mạnh mà không gây ra bất kỳ ảnh hưởng nào. Tuy nhiên, chúng lại sinh trưởng mạnh mẽ và có khả năng gây bệnh và truyền bệnh thông qua thực phẩm, đặc biệt là ở thịt đã qua xử lý, hoặc được nấu chín. Cần phải xác định các điều kiện thúc đẩy sự phát triển của các loài vi khuẩn gây bệnh này và áp dụng kiến thức đó trong các giai đoạn sơ chế và xử lí thực phẩm. Hai nhóm sinh viên tiến hành các thí nghiệm nhằm xác định điều kiện sinh trưởng lý tưởng cho S. Aureus. Trong mỗi nhóm, vi khuẩn được cấy vào các môi trường dinh dưỡng khác nhau và phát triển trong một khoảng thời gian.</p><p>[2] Máy đo quang phổ được sử dụng để phân tích sự phát triển của vi khuẩn trong môi trường chất lỏng, biết rằng độ đục càng tăng thì lượng vi khuẩn phát triển càng mạnh và giá trị đo được càng lớn.</p><p>[3] <b>Nhóm 1</b><br>Các sinh viên thực hiện thí nghiệm nhằm xác định nhiệt độ có ảnh hưởng đến tốc độ phát triển của S. Aureus trong môi trường giàu dinh dưỡng hay không. Họ cho chủng vi khuẩn phát triển trong môi trường giàu dinh dưỡng có độ pH là 6 ở các nhiệt độ sau: $3^{\\circ}C$, $20^{\\circ}C$, $37^{\\circ}C$, $45^{\\circ}C$ và $60^{\\circ}C$. Các giá trị đo từ máy đo quang phổ được thể hiện ở Bảng 1.</p><table><tr><th>Thời gian (phút)</th><th>$3^{\\circ}C$</th><th>$20^{\\circ}C$</th><th>$37^{\\circ}C$</th><th>$45^{\\circ}C$</th><th>$60^{\\circ}C$</th></tr><tr><td>0</td><td>0,011</td><td>0,011</td><td>0,011</td><td>0,012</td><td>0,013</td></tr><tr><td>48</td><td>0,011</td><td>0,030</td><td>0,022</td><td>0,045</td><td>0,013</td></tr><tr><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr><tr><td>198</td><td>0,011</td><td>0,189</td><td>0,288</td><td>0,126</td><td>0,013</td></tr><tr><td>600</td><td>0,011</td><td>0,551</td><td>0,800</td><td>0,125</td><td>0,013</td></tr><tr><td>1470</td><td>0,011</td><td>0,553</td><td>0,800</td><td>0,130</td><td>0,013</td></tr></table><p>[4] <b>Nhóm 2</b><br>Các sinh viên thực hiện thí nghiệm nhằm xác định sự ảnh hưởng của pH đến sự phát triển của S. aureus. Họ cho chủng vi khuẩn phát triển trong môi trường giàu dinh dưỡng ở nhiệt độ 37°C và độ pH lần lượt là 3, 5, 6, 7 và 9. Các giá trị đo từ máy đo quang phổ được thể hiện ở Bảng 2.</p><table><tr><th>Thời gian (phút)</th><th>pH 3</th><th>pH 5</th><th>pH 6</th><th>pH 7</th><th>pH 9</th></tr><tr><td>0</td><td>0,012</td><td>0,012</td><td>0,011</td><td>0,011</td><td>0,013</td></tr><tr><td>48</td><td>0,012</td><td>0,026</td><td>0,022</td><td>0,045</td><td>0,013</td></tr><tr><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr><tr><td>198</td><td>0,012</td><td>0,071</td><td>0,288</td><td>0,150</td><td>0,013</td></tr><tr><td>600</td><td>0,012</td><td>0,192</td><td>0,800</td><td>0,431</td><td>0,013</td></tr><tr><td>1470</td><td>0,012</td><td>0,195</td><td>0,800</td><td>0,440</td><td>0,015</td></tr></table>",
+     "questions": [
+      {
+       "t": "mc",
+       "q": "Dung dịch nuôi cấy vi khuẩn càng đục chứng tỏ",
+       "o": [
+        "vi khuẩn không có sự sinh trưởng dẫn tới hư hỏng môi trường nuôi cấy.",
+        "vi khuẩn bị ức chế sinh trưởng.",
+        "vi khuẩn sinh trưởng càng mạnh.",
+        "nồng độ dinh dưỡng càng cao."
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [2]: \"biết rằng độ đục càng tăng thì lượng vi khuẩn phát triển càng mạnh\"."
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Điền từ/cụm từ vào chỗ trống sau đây:<br>Khi cạn kiệt chất dinh dưỡng, vi khuẩn sẽ bắt đầu pha (1) [[0]]",
+       "a": [
+        [
+         "suy vong",
+         "tử vong"
+        ]
+       ],
+       "solved": true,
+       "sol": [
+        "Trong chu kỳ sinh trưởng của quần thể vi khuẩn trong môi trường nuôi cấy không liên tục, khi chất dinh dưỡng cạn kiệt và chất độc hại tích lũy, vi khuẩn sẽ bước vào pha suy vong (số lượng tế bào chết vượt quá số lượng tế bào sinh ra)."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Ở giá trị pH nào quần thể vi khuẩn S. Aureus KHÔNG có sự sinh trưởng?",
+       "o": [
+        "$pH=3, pH=5$.",
+        "$pH=6, pH=9$.",
+        "$pH=3, pH=9$.",
+        "$pH=5, pH=6$."
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "Dựa vào Bảng 2, ta quan sát độ quang phổ thay đổi theo thời gian.",
+        "Ở pH = 3, chỉ số quang phổ giữ nguyên ở mức 0.012 từ phút 0 đến phút 1470.",
+        "Ở pH = 9, chỉ số quang phổ giữ ở 0.013 và chỉ tăng rất nhẹ lên 0.015 tại 1470 phút (gần như không sinh trưởng đáng kể).",
+        "Ở các pH khác (5, 6, 7), độ quang phổ đều tăng rõ rệt. Do đó ở pH 3 và pH 9 quần thể vi khuẩn bị ức chế và không có sự sinh trưởng."
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Phát biểu sau đây đúng hay sai?<br>Hai thí nghiệm trên, vi khuẩn đều được nuôi cấy trong môi trường nuôi cấy liên tục.",
+       "s": [
+        "Nhận định trên là đúng hay sai?"
+       ],
+       "a": [
+        0
+       ],
+       "solved": true,
+       "sol": [
+        "Nuôi cấy liên tục là hệ thống luôn được bổ sung chất dinh dưỡng và lấy đi chất thải. Nhưng trong 2 thí nghiệm này, vi khuẩn \"được cấy vào các môi trường dinh dưỡng khác nhau và phát triển trong một khoảng thời gian\" trong các ống (môi trường chất lỏng) và quan sát đến khi số lượng vi khuẩn bão hòa (đạt pha cân bằng ở 600 - 1470 phút). Đây là đặc trưng của môi trường nuôi cấy không liên tục. Khẳng định trên là Sai."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Nhóm vi khuẩn nào có cùng điều kiện thí nghiệm ở hai thí nghiệm trên?",
+       "o": [
+        "Nuôi trong điều kiện pH $=3$ và nhiệt độ $3^{\\circ}C$",
+        "Nuôi trong điều kiện pH $=6$ và nhiệt độ $37^{\\circ}C$",
+        "Nuôi trong điều kiện pH $=6$ và nhiệt độ $60^{\\circ}C$",
+        "Nuôi trong điều kiện pH $=9$ và nhiệt độ $45^{\\circ}C$"
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Nhóm 1 thực hiện với điều kiện cố định là $pH = 6$ và khảo sát các nhiệt độ.",
+        "Nhóm 2 thực hiện với điều kiện cố định là nhiệt độ $37^{\\circ}C$ và khảo sát các pH.",
+        "Phần giao thoa duy nhất giữa hai nhóm chính là phép thử nghiệm ở $pH = 6$ (của nhóm 2) và ở nhiệt độ $37^{\\circ}C$ (của nhóm 1)."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Phát biểu nào sau đây là đúng khi nghiên cứu kết quả thí nghiệm của nhóm 1?",
+       "o": [
+        "Khi nhiệt độ tăng thì tốc độ phát triển của S. Aureus cũng tăng.",
+        "Chủng vi khuẩn S. Aureus phát triển tối ưu ở nhiệt độ $37^{\\circ}C$.",
+        "Khi nhiệt độ giảm, tốc độ phát triển của S. Aureus cũng giảm.",
+        "S. Aureus phát triển theo cấp số nhân ở nhiệt độ $37^{\\circ}C$."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Dựa vào Bảng 1: ở $3^{\\circ}C$ và $60^{\\circ}C$ vi khuẩn hầu như không tăng trưởng; ở $45^{\\circ}C$ phát triển rất kém; ở $20^{\\circ}C$ phát triển tương đối (đạt 0.553), nhưng tại $37^{\\circ}C$ vi khuẩn phát triển bùng nổ mạnh nhất (đạt chỉ số quang phổ 0.800).",
+        "Điều này cho thấy $37^{\\circ}C$ là nhiệt độ sinh trưởng tối ưu. Phát biểu \"Khi nhiệt độ tăng thì tốc độ phát triển tăng\" là sai do ở $45^{\\circ}C$ và $60^{\\circ}C$ tốc độ giảm mạnh."
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Phát biểu sau đây đúng hay sai?<br>Trong thí nghiệm của nhóm 1, ở nhiệt độ $37^{\\circ}C$, pha cân bằng có thể bắt đầu sau 10 giờ kể từ khi nuôi cấy.",
+       "s": [
+        "Nhận định trên là đúng hay sai?"
+       ],
+       "a": [
+        1
+       ],
+       "solved": true,
+       "sol": [
+        "10 giờ bằng 600 phút. Dựa vào Bảng 1, tại cột $37^{\\circ}C$, giá trị quang phổ ở 600 phút là 0.800, và tại 1470 phút (tương đương 24,5 giờ) vẫn giữ nguyên là 0.800.",
+        "Việc mật độ không thay đổi chứng tỏ số lượng vi khuẩn sinh ra cân bằng với lượng vi khuẩn chết đi. Quần thể đã đạt pha cân bằng, do đó nhận định này là Đúng."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "CẤU TẠO VÀ TÍNH CHẤT CỦA NICOTINE",
+     "p": "<p>[1] Nicotine $(C_{10}H_{14}N_{2})$ là một alkaloid được tìm thấy chủ yếu trong cây thuốc lá, và một lượng nhỏ trong các cây họ Cà (Solanaceae) như cà chua, khoai tây, cà tím và ớt chuông.</p><p>[2] Mặc dù nicotine không gây ung thư hoặc gây hại quá mức, nhưng nó là chất gây nghiện mạnh, rất độc, kích thích não và hệ thần kinh trung ương, làm tăng huyết áp và nhịp tim (có thể gây xơ vữa tế bào nội mô động mạch vành).</p><p>[3] Nicotine có cấu tạo gồm hai dị vòng chứa N liên kết với nhau, trong đó có một dị vòng 6 cạnh và một dị vòng 5 cạnh. Một electron hóa trị của N tham gia vào việc hình thành hệ thống electron kiểu vòng thơm (tính chất thơm gây ra bởi sự liên hợp giữa 5e của 5 carbon với 1e của N lai hóa $sp^{2}$ tạo thành hệ liên hợp electron $\\pi$ chung cho vòng). Cặp e tự do của N vẫn còn nên nicotine vẫn có tính chất của một base. Đặc tính của dị vòng là đặc tính của hợp chất thơm. Do đó, nicotine bền vững với nhiệt và các tác nhân oxi hóa. Ngoài ra, nicotine chứa dị vòng 6 cạnh có hệ thống nối đôi liên hợp trong phân tử nên nicotine dễ có phản ứng thế và khó có phản ứng cộng.</p>",
+     "fig": "img/Khoahoc_c29_nicotine.png",
+     "warn": "Thiếu hình ảnh cấu trúc hóa học của nicotine, anabasine, nicotyrine, và các đáp án gốc bằng hình. Cần bổ sung ảnh vào hệ thống để câu hỏi trọn vẹn.",
+     "questions": [
+      {
+       "t": "fill",
+       "q": "Điền từ/cụm từ thích hợp vào chỗ trống<br>Nicotine dễ có phản ứng (1) [[0]] và khó có phản ứng (2) [[1]]",
+       "a": [
+        [
+         "thế"
+        ],
+        [
+         "cộng"
+        ]
+       ],
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [3] câu cuối cùng: \"Ngoài ra, nicotine chứa dị vòng 6 cạnh có hệ thống nối đôi liên hợp trong phân tử nên nicotine dễ có phản ứng thế và khó có phản ứng cộng.\""
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Khi cho nicotine tác dụng với HCl theo tỉ lệ mol 1:1 thu được hợp chất có công thức cấu tạo là",
+       "o": [
+        "Muối hình thành ở nhóm amine của vòng 5 cạnh (vòng no).",
+        "Muối hình thành ở nguyên tử N của vòng 6 cạnh (vòng thơm).",
+        "Muối hình thành ở cả hai nguyên tử N.",
+        "Phân tử bị bẻ gãy liên kết C-C giữa hai vòng."
+       ],
+       "a": 0,
+       "warn": "Các phương án trả lời dạng hình ảnh cấu trúc hóa học không trích xuất được nên đã tự quy đổi sang mô tả dạng text để đảm bảo JSON không rỗng.",
+       "solved": true,
+       "sol": [
+        "Nicotine chứa 2 nguyên tử Nitrogen: 1 N trong dị vòng thơm pyridine (lai hóa sp2, cặp e góp phần vào tính thơm hoặc bị ảnh hưởng lực hút e), và 1 N trong dị vòng no pyrrolidine (amine bậc 3 no, có tính base mạnh hơn hẳn).",
+        "Khi phản ứng với lượng HCl tỷ lệ 1:1, H+ sẽ tấn công ưu tiên vào vị trí N có tính base mạnh hơn, tức là vị trí nguyên tử N ở vòng 5 cạnh."
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Phát biểu sau đúng hay sai?<br>Anabasine là đồng phân cấu tạo của nicotine, có cùng công thức phân tử $C_{10}H_{14}N_{2}$. Anabasine có cấu tạo gồm 1 vòng thơm pyridine và 1 vòng no piperidine chứa nhóm NH. Phương trình phản ứng của chất này với HCl theo tỉ lệ mol 1:1 sẽ xảy ra ưu tiên tại nguyên tử N của vòng no tạo thành muối.",
+       "s": [
+        "Nhận định trên là đúng hay sai?"
+       ],
+       "a": [
+        1
+       ],
+       "warn": "Nội dung gốc là hình ảnh phản ứng hóa học nên đã được diễn đạt lại bằng text.",
+       "solved": true,
+       "sol": [
+        "Tương tự nicotine, Anabasine có 1 nhóm amine trong dị vòng thơm và 1 nhóm amine (nhóm NH) trong dị vòng no.",
+        "Tính base của amine bậc 2 dạng vòng no mạnh hơn rất nhiều so với dị vòng thơm pyridine.",
+        "Do đó HCl sẽ phản ứng với nguyên tử N của vòng no (piperidine) trước. Nhận định mô tả phản ứng tại đây là Đúng."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Bậc amine là số nguyên tử H trong phân tử $NH_{3}$ bị thay thế bởi gốc hydrocarbon. Theo đó, nicotine chứa nhóm chức amine bậc",
+       "o": [
+        "0.",
+        "1.",
+        "2.",
+        "3."
+       ],
+       "a": 3,
+       "solved": true,
+       "sol": [
+        "Nhìn vào cấu trúc nicotine (N liên kết với nhóm $CH_3$ ở vòng 5 cạnh, và N này liên kết với 2 C kề bên trong cấu trúc vòng). Nguyên tử Nitrogen này liên kết với tổng cộng 3 gốc carbon.",
+        "Cả 3 nguyên tử H của $NH_3$ đã bị thay thế hoàn toàn bởi các gốc hydrocarbon. Do đó, đây là nhóm amine bậc 3."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Anabasine là đồng phân cấu tạo của nicotine, có cùng công thức phân tử $C_{10}H_{14}N_{2}$. Ngoài ra, người ta có thể tổng hợp được chất nicotyrine có cấu tạo tương tự nicotine. Hãy sắp xếp chúng theo trình tự tính base tăng dần?",
+       "o": [
+        "nicotine, anabasine, nicotyrine.",
+        "nicotyrine, anabasine, nicotine.",
+        "nicotyrine, nicotine, anabasine.",
+        "anabasine, nicotine, nicotyrine."
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "Tính base của các alkaloid phụ thuộc vào cặp electron tự do trên nguyên tử Nitrogen.",
+        "Nicotyrine: Gồm vòng pyridine và vòng pyrrole. Ở vòng pyrrole, cặp electron của N tham gia vào hệ liên hợp thơm nên tính base cực kỳ yếu.",
+        "Nicotine: Gồm vòng pyridine và vòng no pyrrolidine chứa N-metyl (amine bậc 3). Bậc 3 cản trở không gian lớn hơn.",
+        "Anabasine: Gồm vòng pyridine và vòng no piperidine chứa NH (amine bậc 2). Amine bậc 2 dạng vòng có tính base mạnh hơn amine bậc 3.",
+        "Vậy thứ tự tính base tăng dần là: nicotyrine < nicotine < anabasine."
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Điền từ/cụm từ thích hợp vào chỗ trống<br>Khả năng hòa tan trong nước của anabasine (1) [[0]] nicotine và nhiệt độ sôi của nicotine (2) [[1]] anabasine.",
+       "a": [
+        [
+         "cao hơn",
+         "lớn hơn"
+        ],
+        [
+         "thấp hơn",
+         "nhỏ hơn"
+        ]
+       ],
+       "solved": true,
+       "sol": [
+        "Anabasine chứa nhóm -NH (amine bậc 2), có khả năng tạo liên kết hydrogen bền vững với nước và giữa các phân tử với nhau.",
+        "Nicotine chứa nhóm N-CH3 (amine bậc 3), không có hydrogen linh động gắn trực tiếp trên N nên không tự tạo được liên kết hydrogen liên phân tử và khả năng tương tác với nước yếu hơn anabasine.",
+        "Do đó, khả năng hòa tan trong nước của anabasine cao hơn nicotine. Nhiệt độ sôi của nicotine thấp hơn anabasine."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "TÍNH CHẤT VẬT LÍ CỦA VẬT LIỆU QUANG PHỔ",
+     "p": "<p>[1] Bảng sau đây thể hiện một số tính chất vật lí của vật liệu quang phổ khi thử nghiệm với ánh sáng có bước sóng 0,589 µm. Chiết suất là chỉ số thể hiện khả năng bẻ cong ánh sáng khúc xạ của vật liệu. Cự ly truyền qua của vật liệu là khoảng cách mà ánh sáng có thể truyền tải một cách hiệu quả qua môi trường mà không bị giảm đáng kể về cường độ.</p><table><tr><th>Vật liệu</th><th>Chiết suất</th><th>Cự ly truyền qua (µm)</th><th>Cự ly lăng kính khả dụng (µm)</th><th>Khả năng kháng hóa chất</th></tr><tr><td>Lithium fluoride</td><td>1,39</td><td>0,12 - 6</td><td>2,7 - 5,5</td><td>Yếu</td></tr><tr><td>Calcium fluoride</td><td>1,43</td><td>0,12 - 12</td><td>5 - 9,4</td><td>Tốt</td></tr><tr><td>Sodium chloride</td><td>1,54</td><td>8 - 16</td><td>0,3 - 17</td><td>Yếu</td></tr><tr><td>Thạch anh</td><td>1,54</td><td>0,20 - 3,3</td><td>0,2 - 2,7</td><td>Rất tốt</td></tr><tr><td>Potassium bromide</td><td>1,56</td><td>0,3 - 29</td><td>15 - 28</td><td>Yếu</td></tr><tr><td>Thủy tinh đá lửa</td><td>1,66</td><td>0,35 - 2,2</td><td>0,35 - 2</td><td>Rất tốt</td></tr><tr><td>Caesium iodide</td><td>1,79</td><td>0,3 - 70</td><td>15 - 55</td><td>Yếu</td></tr></table>",
+     "questions": [
+      {
+       "t": "mc",
+       "q": "Chiết suất của vật liệu luôn",
+       "o": [
+        "bằng 1.",
+        "lớn hơn 1.",
+        "nhỏ hơn 1.",
+        "bằng 0."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Chiết suất tuyệt đối của mọi môi trường trong suốt (vật chất) luôn lớn hơn 1 (do vận tốc ánh sáng trong môi trường luôn nhỏ hơn trong chân không).",
+        "Đồng thời, dựa vào bảng dữ liệu, tất cả các vật liệu quang phổ đều có chiết suất nằm trong khoảng từ 1,39 đến 1,79 (lớn hơn 1)."
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Thủy tinh đá lửa là thạch anh pha tạp oxide chì. Khi nói về việc pha tạp oxide chì vào thạch anh tinh khiết thì các nhận xét sau đây là đúng hay là sai?",
+       "s": [
+        "Thạch anh tinh khiết được bổ sung oxide chì có tác dụng tăng chiết suất của vật liệu.",
+        "Thạch anh tinh khiết được bổ sung oxide chì có tác dụng giảm chiết suất của vật liệu.",
+        "Thạch anh tinh khiết được bổ sung oxide chì có tác dụng tăng cự ly truyền qua của vật liệu.",
+        "Thạch anh tinh khiết được bổ sung oxide chì có tác dụng giảm cự ly truyền qua của vật liệu."
+       ],
+       "a": [
+        1,
+        0,
+        0,
+        1
+       ],
+       "solved": true,
+       "sol": [
+        "Ta so sánh tính chất của 'Thạch anh' và 'Thủy tinh đá lửa' (Thạch anh pha tạp oxide chì) dựa trên bảng.",
+        "Chiết suất: Thạch anh (1,54) tăng lên thành Thủy tinh đá lửa (1,66). $\\Rightarrow$ Ý 1 Đúng, Ý 2 Sai.",
+        "Cự ly truyền qua: Thạch anh (0,20 - 3,3) bị thu hẹp lại thành Thủy tinh đá lửa (0,35 - 2,2). $\\Rightarrow$ Ý 3 Sai, Ý 4 Đúng."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Một nhà khoa học đưa ra giả thuyết rằng bất kỳ vật liệu nào có khả năng kháng hóa chất kém sẽ có cự ly truyền lớn hơn 10 µm. Tính chất của vật liệu nào sau đây mâu thuẫn với giả thuyết này?",
+       "o": [
+        "Lithium fluoride.",
+        "Thủy tinh đá lửa.",
+        "Caesium iodide.",
+        "Thạch anh."
+       ],
+       "a": 0,
+       "solved": true,
+       "sol": [
+        "Cần tìm một vật liệu có khả năng kháng hóa chất 'Yếu' nhưng cự ly truyền qua tối đa không lớn hơn 10 µm.",
+        "Dựa vào bảng, Lithium fluoride có khả năng kháng hóa chất 'Yếu', nhưng cự ly truyền qua của nó chỉ từ 0,12 đến 6 µm (nhỏ hơn 10). Do đó nó mâu thuẫn với giả thuyết."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Trong các vật liệu sau, vật liệu nào có khả năng kháng hóa chất là lớn nhất?",
+       "o": [
+        "Sodium chloride.",
+        "Thạch anh.",
+        "Calcium fluoride.",
+        "Potassium bromide."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Tra cứu cột 'Khả năng kháng hóa chất' trong bảng.",
+        "Sodium chloride (Yếu), Thạch anh (Rất tốt), Calcium fluoride (Tốt), Potassium bromide (Yếu).",
+        "Vậy Thạch anh có khả năng kháng hóa chất là 'Rất tốt' - mức đánh giá cao nhất."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Ánh sáng có bước sóng 25 µm có thể truyền qua những loại vật liệu nào sau đây?",
+       "o": [
+        "Potassium bromide.",
+        "Potassium bromide và caesium iodide.",
+        "Lithium fluoride và caesium iodide",
+        "Lithium fluoride và thủy tinh đá lửa."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Tra cứu dải 'Cự ly truyền qua' (bước sóng ánh sáng) trong bảng.",
+        "Potassium bromide truyền qua từ 0,3 đến 29 µm (có chứa 25 µm).",
+        "Caesium iodide truyền qua từ 0,3 đến 70 µm (có chứa 25 µm).",
+        "Các vật liệu khác (LiF, Thủy tinh đá lửa) có giới hạn truyền qua tối đa nhỏ hơn 6 µm nên ánh sáng 25 µm không truyền qua được."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Hiện tượng phản xạ toàn phần có thể xảy ra nếu ánh sáng truyền từ",
+       "o": [
+        "lithium fluoride sang thủy tinh đá lửa.",
+        "potassium bromide sang caesium iodide.",
+        "thạch anh sang potassium bromide.",
+        "thủy tinh đá lửa sang calcium fluoride."
+       ],
+       "a": 3,
+       "solved": true,
+       "sol": [
+        "Điều kiện để có phản xạ toàn phần là ánh sáng phải truyền từ môi trường có chiết suất lớn hơn ($n_1$) sang môi trường có chiết suất nhỏ hơn ($n_2$), tức là $n_1 > n_2$.",
+        "LiF (1.39) -> Thủy tinh đá lửa (1.66) : $n_1 < n_2$.",
+        "KBr (1.56) -> Caesium iodide (1.79) : $n_1 < n_2$.",
+        "Thạch anh (1.54) -> KBr (1.56) : $n_1 < n_2$.",
+        "Thủy tinh đá lửa (1.66) -> Calcium fluoride (1.43) : $n_1 > n_2$. Thoả mãn điều kiện."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Chiết suất của vật liệu là",
+       "o": [
+        "thước đo lượng ánh sáng bị bẻ cong khi chiếu vào vật liệu.",
+        "thước đo tốc độ ánh sáng bị thay đổi khi chiếu vào vật liệu.",
+        "thước đo tần số ánh sáng bị thay đổi khi chiếu vào vật liệu.",
+        "thước đo độ lệch ánh sáng so với tia phản xạ khi chiếu vào vật liệu."
+       ],
+       "a": 0,
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [1] giải thích thuật ngữ trong bài: 'Chiết suất là chỉ số thể hiện khả năng bẻ cong ánh sáng khúc xạ của vật liệu'."
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

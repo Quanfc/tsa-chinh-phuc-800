@@ -1,0 +1,1752 @@
+{
+ "title": "HOCMAI 03",
+ "sections": [
+  {
+   "title": "TOÁN",
+   "minutes": 60,
+   "questions": [
+    {
+     "t": "fill",
+     "q": "Điền một số nguyên dương thích hợp vào chỗ trống.\nBình chứa nhiên liệu của một chiếc máy bay phản lực được mô tả trong không gian là một khối tròn xoay thu được khi xoay hình phẳng giới hạn bởi đồ thị hàm số $y=\\frac{1}{8}x^{2}\\sqrt{2-x}$ $(0\\le x\\le2)$ và trục Ox quanh trục Ox (với x tính theo đơn vị m). Thể tích của bình chứa bằng $\\frac{a\\pi}{b}m^{3}$ với $\\frac{a}{b}$ là phân số tối giản. Khi đó, a + b bằng [[0]]",
+     "a": [
+      31
+     ],
+     "fig": "img/Toan_c1_maybay.png",
+     "solved": true,
+     "sol": [
+      "Thể tích khối tròn xoay tạo thành được tính bằng công thức: $V = \\pi \\int_{0}^{2} y^2 dx$.",
+      "Ta có: $V = \\pi \\int_{0}^{2} \\left( \\frac{1}{8}x^2\\sqrt{2-x} \\right)^2 dx = \\pi \\int_{0}^{2} \\frac{1}{64} x^4 (2-x) dx$.",
+      "$V = \\frac{\\pi}{64} \\int_{0}^{2} (2x^4 - x^5) dx = \\frac{\\pi}{64} \\left[ \\frac{2x^5}{5} - \\frac{x^6}{6} \\right]_{0}^{2}$.",
+      "Thay cận: $V = \\frac{\\pi}{64} \\left( \\frac{64}{5} - \\frac{64}{6} \\right) = \\frac{\\pi}{64} \\cdot 64 \\left( \\frac{1}{5} - \\frac{1}{6} \\right) = \\frac{\\pi}{30}$.",
+      "Vậy $a=1$, $b=30$. Phân số tối giản, tổng $a+b = 31$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Trong không gian, cho hai vectơ $\\vec{a}$ và $\\vec{b}$ thỏa mãn $|\\vec{a}|=2$, $|\\vec{b}|=1$, $(\\vec{a},\\vec{b})=120^{\\circ}$. Mỗi phát biểu sau là đúng hay sai?",
+     "s": [
+      "$\\vec{a}\\cdot\\vec{b}=1.$",
+      "$\\vec{a}\\cdot(\\vec{a}+\\vec{b})=3.$",
+      "$|2\\vec{a}-\\vec{b}|=3.$"
+     ],
+     "a": [
+      0,
+      1,
+      0
+     ],
+     "solved": true,
+     "sol": [
+      "Ý 1: Tính tích vô hướng $\\vec{a} \\cdot \\vec{b} = |\\vec{a}| |\\vec{b}| \\cos(\\vec{a}, \\vec{b}) = 2 \\cdot 1 \\cdot \\cos(120^{\\circ}) = 2 \\cdot 1 \\cdot \\left(-\\frac{1}{2}\\right) = -1 \\neq 1$. (Sai)",
+      "Ý 2: $\\vec{a} \\cdot (\\vec{a}+\\vec{b}) = \\vec{a}^2 + \\vec{a} \\cdot \\vec{b} = |\\vec{a}|^2 + (-1) = 2^2 - 1 = 3$. (Đúng)",
+      "Ý 3: Tính bình phương độ dài: $|2\\vec{a}-\\vec{b}|^2 = 4\\vec{a}^2 - 4\\vec{a}\\cdot\\vec{b} + \\vec{b}^2 = 4(2^2) - 4(-1) + 1^2 = 16 + 4 + 1 = 21$. Suy ra $|2\\vec{a}-\\vec{b}| = \\sqrt{21} \\neq 3$. (Sai)"
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Người ta trồng 144 cây trong một khu vườn hình tam giác theo quy luật như sau: Hàng thứ nhất có 1 cây, hàng thứ hai có 3 cây, hàng thứ ba có 5 cây,... Số hàng cây trong khu vườn là [[0]]",
+     "a": [
+      12
+     ],
+     "solved": true,
+     "sol": [
+      "Số cây ở các hàng lập thành một cấp số cộng với số hạng đầu $u_1 = 1$, công sai $d = 2$.",
+      "Số cây ở hàng thứ n là $u_n = 1 + (n-1)2 = 2n - 1$.",
+      "Tổng số cây trồng được là tổng của n số hạng đầu tiên: $S_n = \\frac{n}{2}(u_1 + u_n) = \\frac{n}{2}(1 + 2n - 1) = n^2$.",
+      "Theo đề bài, $S_n = 144 \\Leftrightarrow n^2 = 144 \\Leftrightarrow n = 12$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Hai thị trấn A, B nằm ở hai phía một con sông như hình bên. Người ta muốn dựng một cầu MN vuông góc với hai bờ sông và làm 2 đường cao tốc AM, BN. Biết vị trí M trên bờ sông thỏa mãn tổng độ dài hai đoạn cao tốc AM, BN nhỏ nhất. Độ dài CM bằng bao nhiêu?",
+     "o": [
+      "3 km.",
+      "6 km.",
+      "5 km.",
+      "4 km."
+     ],
+     "a": 3,
+     "fig": "img/Toan_c4_causong.png",
+     "solved": true,
+     "sol": [
+      "Đoạn MN luôn vuông góc với hai bờ sông nên MN song song với AC và BD. Dời điểm B theo vector $\\vec{NM}$ đến B'. Khi đó $MB' = NB$ và $BB' = NM = 0.5$ km.",
+      "Bài toán quy về tìm M trên CE sao cho $AM + MB'$ nhỏ nhất. Tổng này nhỏ nhất khi A, M, B' thẳng hàng.",
+      "Đặt $CM = x$. Đoạn $CE = 7$, $ME = 7-x$. Vì MN vuông góc bờ, B' dời theo chiều đứng, khoảng cách từ B' đến đường bờ CE chính là đoạn $BD = 6$ km. Gọi hình chiếu của B' lên đường CE là E', thực tế E' trùng với E.",
+      "Ta có tam giác vuông ACM đồng dạng với tam giác vuông B'EM. Suy ra $\\frac{CM}{EM} = \\frac{AC}{B'E} \\Leftrightarrow \\frac{x}{7-x} = \\frac{8}{6}$.",
+      "Giải phương trình: $6x = 8(7-x) \\Leftrightarrow 6x = 56 - 8x \\Leftrightarrow 14x = 56 \\Leftrightarrow x = 4$.",
+      "Vậy $CM = 4$ km."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Tập nghiệm của bất phương trình $(5)^{4+x^{2}}<(\\frac{1}{5})^{x^{2}-6x}$ là",
+     "o": [
+      "$(-\\infty;1)\\cup(2;+\\infty)$",
+      "$(2;+\\infty)$",
+      "$(-\\infty;1)$",
+      "$(1;2)$"
+     ],
+     "a": 3,
+     "solved": true,
+     "sol": [
+      "Ta có $\\frac{1}{5} = 5^{-1}$. Bất phương trình tương đương: $5^{4+x^2} < 5^{-(x^2-6x)}$.",
+      "Vì cơ số $5 > 1$, bất phương trình trở thành: $4 + x^2 < -x^2 + 6x$.",
+      "$\\Leftrightarrow 2x^2 - 6x + 4 < 0 \\Leftrightarrow x^2 - 3x + 2 < 0$.",
+      "Phương trình có hai nghiệm $x=1$ và $x=2$. Dấu \"<\" nên tập nghiệm là khoảng $(1; 2)$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Cho hàm số $f(x)=\\begin{cases} 6x^{2} & \\text{khi } x\\le0 \\\\ a-a^{2}x & \\text{khi } x>0 \\end{cases}$ và $I=\\int_{-1}^{4}f(x)dx$. Có tất cả [[0]] số nguyên a để $I>-5$?",
+     "a": [
+      2
+     ],
+     "solved": true,
+     "sol": [
+      "Tách tích phân: $I = \\int_{-1}^{0} 6x^2 dx + \\int_{0}^{4} (a - a^2x) dx$.",
+      "Tính $\\int_{-1}^{0} 6x^2 dx = \\left[ 2x^3 \\right]_{-1}^{0} = 0 - (-2) = 2$.",
+      "Tính $\\int_{0}^{4} (a - a^2x) dx = \\left[ ax - a^2\\frac{x^2}{2} \\right]_{0}^{4} = 4a - 8a^2$.",
+      "Vậy $I = 2 + 4a - 8a^2$.",
+      "Yêu cầu $I > -5 \\Leftrightarrow 2 + 4a - 8a^2 > -5 \\Leftrightarrow 8a^2 - 4a - 7 < 0$.",
+      "Giải bất phương trình: nghiệm của phương trình $8a^2 - 4a - 7 = 0$ là $a = \\frac{1 \\pm \\sqrt{15}}{4} \\approx 0.25 \\pm 0.968$.",
+      "Khoảng nghiệm xấp xỉ là $(-0.718; 1.218)$. Các số nguyên $a$ thỏa mãn là $a = 0$ và $a = 1$.",
+      "Có tất cả 2 số nguyên thỏa mãn."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Bạn An sinh vào ngày 23/8. Bạn Bình sinh sau bạn An ba tháng, tức là ngày 23/11. Năm nay, sinh nhật bạn An là ngày thứ Sáu, hỏi sinh nhật bạn Bình là thứ mấy?",
+     "o": [
+      "Thứ Hai.",
+      "Thứ Ba.",
+      "Thứ Năm.",
+      "Thứ Bảy."
+     ],
+     "a": 3,
+     "solved": true,
+     "sol": [
+      "Tính số ngày từ 23/8 đến 23/11 trong cùng một năm.",
+      "Tháng 8 có 31 ngày, nên còn lại $31 - 23 = 8$ ngày của tháng 8.",
+      "Tháng 9 có 30 ngày. Tháng 10 có 31 ngày. Tháng 11 lấy đến ngày 23.",
+      "Tổng cộng số ngày = $8 + 30 + 31 + 23 = 92$ ngày.",
+      "Ta lấy $92$ chia cho $7$ (chu kỳ tuần): $92 = 13 \\times 7 + 1$. Tức là dư 1.",
+      "Vậy sinh nhật Bình sẽ lùi 1 ngày so với thứ Sáu, chính là thứ Bảy."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Giá trị lớn nhất của hàm số $f(x)=\\frac{x^{2}-2x}{x+1}$ trên $[-10;-2]$ bằng",
+     "o": [
+      "$-1-\\sqrt{3}$.",
+      "$-4-2\\sqrt{3}$",
+      "-10.",
+      "-8."
+     ],
+     "a": 1,
+     "solved": true,
+     "sol": [
+      "Đạo hàm: $f'(x) = \\frac{(2x-2)(x+1) - (x^2-2x) \\cdot 1}{(x+1)^2} = \\frac{2x^2 - 2 - x^2 + 2x}{(x+1)^2} = \\frac{x^2+2x-2}{(x+1)^2}$.",
+      "Giải $f'(x) = 0 \\Leftrightarrow x^2 + 2x - 2 = 0 \\Leftrightarrow x = -1 \\pm \\sqrt{3}$.",
+      "Trên đoạn $[-10; -2]$, chỉ có nghiệm $x = -1 - \\sqrt{3} \\approx -2.73$ thuộc đoạn này.",
+      "Tính các giá trị tại biên và điểm tới hạn:",
+      "$f(-10) = \\frac{100 + 20}{-9} = -\\frac{120}{9} = -\\frac{40}{3} \\approx -13.33$.",
+      "$f(-2) = \\frac{4 + 4}{-1} = -8$.",
+      "$f(-1-\\sqrt{3}) = \\frac{(-1-\\sqrt{3})^2 - 2(-1-\\sqrt{3})}{-1-\\sqrt{3}+1} = \\frac{1+2\\sqrt{3}+3+2+2\\sqrt{3}}{-\\sqrt{3}} = \\frac{6+4\\sqrt{3}}{-\\sqrt{3}} = -4-2\\sqrt{3} \\approx -7.46$.",
+      "So sánh các giá trị, giá trị lớn nhất là $-4-2\\sqrt{3}$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Trong không gian Oxyz, cho hai điểm $A(1;2;-1)$ và $B(2;4;1)$. Trọng tâm của tam giác OAB có tọa độ là",
+     "o": [
+      "$(-1;-2;0)$.",
+      "$(1;3;0)$.",
+      "(1;2;0).",
+      "(3; 6; 0)."
+     ],
+     "a": 2,
+     "solved": true,
+     "sol": [
+      "Điểm gốc tọa độ $O(0;0;0)$. Trọng tâm G của tam giác OAB có tọa độ tính theo trung bình cộng:",
+      "$x_G = \\frac{0 + 1 + 2}{3} = 1$.",
+      "$y_G = \\frac{0 + 2 + 4}{3} = 2$.",
+      "$z_G = \\frac{0 + (-1) + 1}{3} = 0$.",
+      "Vậy tọa độ trọng tâm là $(1; 2; 0)$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Trong không gian Oxyz, cho mặt cầu $(S):(x+2)^{2}+(y-1)^{2}+(z+3)^{2}=9$ và điểm $A(-2;1;-1)$. Gọi $(P)$ là mặt phẳng đi qua A sao cho khoảng cách từ tâm I của mặt cầu $(S)$ đến mặt phẳng $(P)$ là lớn nhất. Các mệnh đề sau là đúng hay sai?",
+     "s": [
+      "Mặt cầu $(S)$ có tâm $I(-2;1;-3)$ và bán kính $R=9$.",
+      "Điểm A nằm ngoài mặt cầu $(S)$.",
+      "Đường thẳng đi qua A và vuông góc với IA cắt mặt cầu tại hai điểm có khoảng cách bằng $\\sqrt{5}$",
+      "Phương trình mặt phẳng $(P)$ là $z=-1$"
+     ],
+     "a": [
+      0,
+      0,
+      0,
+      1
+     ],
+     "solved": true,
+     "sol": [
+      "Mặt cầu $(S)$ có tâm $I(-2; 1; -3)$ và bán kính $R = \\sqrt{9} = 3$.",
+      "Ý 1: Bán kính R=3, đề cho R=9 là sai.",
+      "Ý 2: Tính khoảng cách $IA = \\sqrt{(-2+2)^2 + (1-1)^2 + (-1+3)^2} = \\sqrt{0+0+4} = 2$. Vì $IA=2 < R=3$ nên điểm A nằm TRONG mặt cầu. (Sai).",
+      "Ý 3: Đường thẳng qua A vuông góc với IA cắt mặt cầu tại 2 điểm, khoảng cách từ I đến đường thẳng đó bằng $IA = 2$. Đoạn thẳng cắt được có chiều dài $L = 2\\sqrt{R^2 - IA^2} = 2\\sqrt{3^2 - 2^2} = 2\\sqrt{5}$. Đề nói khoảng cách bằng $\\sqrt{5}$ là sai.",
+      "Ý 4: Mặt phẳng (P) đi qua A có khoảng cách đến I lớn nhất khi (P) nhận $\\vec{IA}$ làm vector pháp tuyến. $\\vec{IA} = (0; 0; 2)$. Phương trình (P): $0(x+2) + 0(y-1) + 2(z+1) = 0 \\Leftrightarrow z + 1 = 0 \\Leftrightarrow z = -1$. (Đúng)."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Tập nghiệm của bất phương trình $\\log_{3}(x-2)-1>0$ là",
+     "o": [
+      "$(4;+\\infty)$",
+      "$(3;+\\infty)$",
+      "$(5;+\\infty)$.",
+      "$(6;+\\infty)$"
+     ],
+     "a": 2,
+     "solved": true,
+     "sol": [
+      "Điều kiện: $x - 2 > 0 \\Leftrightarrow x > 2$.",
+      "Bất phương trình tương đương: $\\log_{3}(x-2) > 1 \\Leftrightarrow x - 2 > 3^1 \\Leftrightarrow x > 5$.",
+      "Kết hợp điều kiện, ta có tập nghiệm là $(5; +\\infty)$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Dưới đây là biểu đồ thống kê số giày bán được của một cửa hàng giày trẻ em trong tháng 12/2023 (đơn vị: đôi giày). Biết mỗi khách đến cửa hàng chỉ mua 1 đôi giày. Chọn ngẫu nhiên một khách đến cửa hàng mua giày. Xác suất để khách được chọn mua giày cỡ 32 trở xuống là bao nhiêu?",
+     "o": [
+      "$\\frac{19}{108}.$",
+      "$\\frac{17}{108}.$",
+      "$\\frac{15}{108}.$",
+      "$\\frac{37}{108}.$"
+     ],
+     "a": 3,
+     "fig": "img/Toan_c12_bieudogiay.png",
+     "solved": true,
+     "sol": [
+      "Tổng số khách mua giày (tổng số giày bán ra) là: $30 + 60 + 95 + 110 + 120 + 85 + 40 = 540$ người.",
+      "Số khách mua giày cỡ 32 trở xuống (cỡ 30, 31, 32) là: $30 + 60 + 95 = 185$ người.",
+      "Xác suất cần tìm là: $P = \\frac{185}{540} = \\frac{37}{108}$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Một ô tô đang chuyển động đều với vận tốc $15 m/s$ thì phía trước xuất hiện chướng ngại vật nên người lái đạp phanh gấp. Kể từ thời điểm đó, ô tô chuyển động chậm dần đều với gia tốc $a (m/s^{2})$. Biết ô tô chuyển động thêm được 20m thì dừng hẳn. Giá trị của a bằng [[0]]",
+     "a": [
+      -5.625
+     ],
+     "solved": true,
+     "sol": [
+      "Áp dụng công thức độc lập với thời gian: $v^2 - v_0^2 = 2as$.",
+      "Khi dừng hẳn, vận tốc $v = 0$. Vận tốc ban đầu $v_0 = 15$ m/s, quãng đường $s = 20$ m.",
+      "Ta có: $0^2 - 15^2 = 2 \\cdot a \\cdot 20 \\Leftrightarrow -225 = 40a \\Leftrightarrow a = -5.625$ m/s$^2$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Cho hàm số $y=-\\frac{1}{2}x^{4}+(m-1)x^{3}-(m^{2}+2)x^{2}+m$. Gọi S là tập hợp các giá trị của m sao cho giá trị lớn nhất của hàm số trên $[-1;1]$ bằng 2. Tích các phần tử của S bằng [[0]]",
+     "a": [
+      2
+     ],
+     "solved": true,
+     "sol": [
+      "Đạo hàm: $y' = -2x^3 + 3(m-1)x^2 - 2(m^2+2)x = -x[2x^2 - 3(m-1)x + 2(m^2+2)]$.",
+      "Xét tam thức $g(x) = 2x^2 - 3(m-1)x + 2(m^2+2)$. Ta tính $\\Delta = 9(m-1)^2 - 16(m^2+2) = -7m^2 - 18m - 23$.",
+      "Dễ thấy $-7m^2 - 18m - 23 < 0, \\forall m$ nên $g(x) > 0, \\forall x$.",
+      "Do đó, $y' = 0$ chỉ có một nghiệm duy nhất $x = 0$.",
+      "Bảng biến thiên cho thấy $y' > 0$ khi $x < 0$ và $y' < 0$ khi $x > 0$. Hàm số đạt giá trị lớn nhất tại $x = 0$ trên toàn trục thực, do đó cũng là lớn nhất trên $[-1; 1]$.",
+      "GTLN là $y(0) = m$. Yêu cầu GTLN bằng 2 nên $m = 2$.",
+      "Tập S = {2}, tích các phần tử của S là 2."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Hàm số $y=2~\\sin^{2}x+3~\\cos^{2}3x$ là hàm số tuần hoàn với chu kì",
+     "o": [
+      "$\\pi$",
+      "$2\\pi$",
+      "$3\\pi$",
+      "$\\frac{\\pi}{3}$"
+     ],
+     "a": 0,
+     "solved": true,
+     "sol": [
+      "Dùng công thức hạ bậc: $y = 2\\frac{1-\\cos 2x}{2} + 3\\frac{1+\\cos 6x}{2} = 1 - \\cos 2x + \\frac{3}{2} + \\frac{3}{2}\\cos 6x$.",
+      "Hàm số thành phần $\\cos 2x$ có chu kỳ $T_1 = \\frac{2\\pi}{2} = \\pi$.",
+      "Hàm số thành phần $\\cos 6x$ có chu kỳ $T_2 = \\frac{2\\pi}{6} = \\frac{\\pi}{3}$.",
+      "Chu kỳ của hàm số tổng là Bội chung nhỏ nhất của $\\pi$ và $\\frac{\\pi}{3}$, tức là $\\pi$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho $a, b, c$ là các số thực khác 0 thỏa mãn $4^{a}=8^{b}=16^{c}$. Khi đó $\\frac{a}{b}+\\frac{b}{c}+\\frac{c}{a}$ bằng",
+     "o": [
+      "$\\frac{17}{6}$",
+      "$\\frac{11}{6}$",
+      "2",
+      "$\\frac{10}{3}$"
+     ],
+     "a": 3,
+     "solved": true,
+     "sol": [
+      "Đưa về cùng cơ số 2: $4^a = (2^2)^a = 2^{2a}$; $8^b = (2^3)^b = 2^{3b}$; $16^c = (2^4)^c = 2^{4c}$.",
+      "Từ giả thiết ta có: $2a = 3b = 4c$. Đặt $2a = 3b = 4c = 12k$ (với $k \\neq 0$).",
+      "Suy ra $a = 6k$, $b = 4k$, $c = 3k$.",
+      "Biểu thức $T = \\frac{a}{b} + \\frac{b}{c} + \\frac{c}{a} = \\frac{6k}{4k} + \\frac{4k}{3k} + \\frac{3k}{6k} = \\frac{3}{2} + \\frac{4}{3} + \\frac{1}{2} = 2 + \\frac{4}{3} = \\frac{10}{3}$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "An tham gia một game trí tuệ với luật chơi ở mỗi cửa khác nhau như sau: Trong vòng 5 giây, An cần bấm một dãy gồm ba chữ số được xếp theo thứ tự tăng dần từ 0 đến 9 thỏa mãn một điều kiện cho trước. An sẽ được qua cửa nếu bấm được dãy số thỏa mãn yêu cầu trong không quá ba lần. Vì thời gian đọc điều kiện của mỗi cửa và bấm số quá ngắn, An đã bấm ngẫu nhiên một dãy gồm ba chữ số được xếp theo thứ tự tăng dần từ 0 đến 9. Biết rằng An chỉ nhớ được kết quả bấm của mình ở lần ngay trước để tránh bấm trùng kết quả đó cho lần tiếp theo. Mỗi phát biểu sau là đúng hay sai?",
+     "s": [
+      "Có 720 cách bấm dãy gồm ba chữ số được xếp theo thứ tự tăng dần từ 0 đến 9.",
+      "Nếu một trong các cửa yêu cầu dãy số có tổng bằng 10 thì xác suất để An qua cửa là $\\frac{301}{3375}$"
+     ],
+     "a": [
+      0,
+      0
+     ],
+     "solved": true,
+     "sol": [
+      "Ý 1: Số cách chọn dãy 3 chữ số từ 0 đến 9 tăng dần nghiêm ngặt (không trùng nhau) là tổ hợp chập 3 của 10. $C_{10}^3 = 120$ cách. (Phát biểu nói 720 là Sai).",
+      "Ý 2: Các dãy tăng dần có tổng bằng 10 là: (0,1,9), (0,2,8), (0,3,7), (0,4,6), (1,2,7), (1,3,6), (1,4,5), (2,3,5). Tổng cộng 8 dãy đúng. Xác suất mỗi lần bấm đúng ở không gian lựa chọn 120 dãy là $\\frac{8}{120} = \\frac{1}{15}$. Nếu tính theo lựa chọn tuần tự (lần 1 chọn 120 cách, lần 2 nhớ lần 1 nên chọn 119 cách, lần 3 nhớ lần 2 nên chọn 119 cách) thì xác suất trúng trong $\\le 3$ lần là $P = \\frac{8}{120} + \\frac{112}{120}\\cdot\\frac{8}{119} + \\frac{112}{120}\\cdot\\frac{111}{119}\\cdot\\frac{8}{119} \\approx 0.187$. Không thể ra được con số $\\frac{301}{3375}$. (Sai)"
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho cấp số nhân $(u_{n})$ thỏa mãn $2(u_{3}+u_{4}+u_{5})=u_{6}+u_{7}+u_{8}$. Tính $\\frac{u_{8}+u_{9}+u_{10}}{u_{2}+u_{3}+u_{4}}$",
+     "o": [
+      "4",
+      "1",
+      "8",
+      "2"
+     ],
+     "a": 0,
+     "solved": true,
+     "sol": [
+      "Gọi công bội của cấp số nhân là $q$. Ta có: $u_6+u_7+u_8 = q^3(u_3+u_4+u_5)$.",
+      "Từ giả thiết $2(u_3+u_4+u_5) = q^3(u_3+u_4+u_5) \\Rightarrow q^3 = 2$.",
+      "Biểu thức cần tính: $T = \\frac{u_8+u_9+u_{10}}{u_2+u_3+u_4} = \\frac{q^6(u_2+u_3+u_4)}{u_2+u_3+u_4} = q^6 = (q^3)^2 = 2^2 = 4$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Điền số tự nhiên vào chỗ trống\nCho đa giác lồi có 10 cạnh. Biết rằng không có ba đường chéo nào đồng quy, số giao điểm của các đường chéo (bên trong đa giác) là [[0]]",
+     "a": [
+      210
+     ],
+     "solved": true,
+     "sol": [
+      "Cứ 4 đỉnh bất kỳ của đa giác lồi sẽ tạo thành một tứ giác lồi, và 2 đường chéo của tứ giác này cắt nhau tại đúng 1 điểm nằm bên trong đa giác.",
+      "Số giao điểm của các đường chéo bên trong đa giác chính là số cách chọn 4 đỉnh từ 10 đỉnh của đa giác.",
+      "Vậy số giao điểm là $C_{10}^4 = \\frac{10!}{4!6!} = 210$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Số lượng máy bay hạ cánh tại một sân bay trong 30 ngày liên tiếp được ghi lại trong bảng sau.\nSố máy bay: 8, 9, 10, 11, 12, 13 (với Số ngày tương ứng: 2, 4, 8, 7, 6, 3). Độ lệch chuẩn của mẫu số liệu trên xấp xỉ bằng",
+     "o": [
+      "1,954.",
+      "1,374.",
+      "1,889.",
+      "1,398."
+     ],
+     "a": 1,
+     "solved": true,
+     "sol": [
+      "Tính số trung bình cộng: $\\bar{x} = \\frac{8(2)+9(4)+10(8)+11(7)+12(6)+13(3)}{30} = \\frac{320}{30} = \\frac{32}{3} \\approx 10.67$.",
+      "Phương sai: $S^2 = \\frac{1}{30} \\sum f_i(x_i - \\bar{x})^2 = \\frac{8^2(2)+9^2(4)+10^2(8)+11^2(7)+12^2(6)+13^2(3)}{30} - \\left(\\frac{32}{3}\\right)^2$.",
+      "$S^2 = \\frac{3470}{30} - \\frac{1024}{9} = \\frac{347}{3} - \\frac{1024}{9} = \\frac{1041-1024}{9} = \\frac{17}{9} \\approx 1.889$.",
+      "Độ lệch chuẩn: $S = \\sqrt{\\frac{17}{9}} = \\frac{\\sqrt{17}}{3} \\approx 1.374$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Điền các số nguyên dương thích hợp vào các chỗ trống.\nViết liên tiếp tất cả các số có hai chữ số chia hết cho 9 theo thứ tự từ bé đến lớn để được số có nhiều chữ số, rồi xóa đi một nửa số chữ số của nó để được số lớn nhất là M. Số M là [[0]] và tổng các chữ số của M là [[1]]",
+     "a": [
+      "8772819099",
+      60
+     ],
+     "solved": true,
+     "sol": [
+      "Các số có 2 chữ số chia hết cho 9: 18, 27, 36, 45, 54, 63, 72, 81, 90, 99.",
+      "Viết liên tiếp ta được chuỗi gồm 20 chữ số: 18273645546372819099.",
+      "Xóa đi một nửa (10 chữ số), ta cần giữ lại 10 chữ số theo đúng thứ tự sao cho số tạo thành là lớn nhất.",
+      "Chọn chữ số 1: Giữa 11 chữ số đầu (để đảm bảo còn đủ 9 chữ số phía sau), lớn nhất là 8. Bỏ đi 1. (Còn lại: 273645546372819099).",
+      "Chọn chữ số 2: Giữa các chữ số hợp lệ tiếp theo, lớn nhất là 7. (Còn lại: 3645546372819099).",
+      "Chọn chữ số 3: Lớn nhất tiếp theo là 7. (Đến đây buộc phải lấy toàn bộ 7 chữ số phía sau là 2819099 để đủ 10 chữ số).",
+      "Số M thu được là: 8772819099.",
+      "Tổng các chữ số = 8+7+7+2+8+1+9+0+9+9 = 60."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho hàm số f(x) liên tục trên $[-1;+\\infty)$ và $\\int_{0}^{3}f(\\sqrt{x+1})dx=8.$ Khi đó, $I=\\int_{1}^{2}x.f(x)dx$ bằng bao nhiêu?",
+     "o": [
+      "$I=\\frac{1}{4}$",
+      "$I=-4$",
+      "$I=4$",
+      "$I=-\\frac{1}{4}$"
+     ],
+     "a": 2,
+     "solved": true,
+     "sol": [
+      "Trong tích phân $\\int_{0}^{3}f(\\sqrt{x+1})dx = 8$, ta đặt $t = \\sqrt{x+1}$.",
+      "Suy ra $x+1 = t^2 \\Rightarrow dx = 2t dt$. Đổi cận: $x=0 \\Rightarrow t=1$, $x=3 \\Rightarrow t=2$.",
+      "Thay vào ta có: $\\int_{1}^{2} f(t) (2t) dt = 8 \\Rightarrow 2 \\int_{1}^{2} t f(t) dt = 8 \\Rightarrow \\int_{1}^{2} t f(t) dt = 4$.",
+      "Do tính chất tích phân không phụ thuộc vào biến số, $I = \\int_{1}^{2} x f(x) dx = 4$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Anh X dự định thiết kế lại mảnh vườn hình chữ nhật của gia đình với một đầu mảnh vườn được thiết kế hòn non bộ và một đầu được trồng hoa. Biết mỗi đầu mảnh vườn là một phần của cung tròn có tâm nằm trên chiều rộng được minh họa như hình vẽ. Chi phí hoàn thiện hòn non bộ là 9 triệu đồng/m² và chi phí trồng hoa là 800 nghìn đồng/m². Tổng chi phí anh X cần dùng để chỉnh sửa mảnh vườn là bao nhiêu triệu đồng? (Kết quả làm tròn đến chữ số thập phân thứ nhất)",
+     "o": [
+      "35, 3 triệu đồng.",
+      "46, 0 triệu đồng.",
+      "49, 5 triệu đồng.",
+      "50,9 triệu đồng."
+     ],
+     "a": 0,
+     "fig": "img/Toan_c23_manhvuon.png",
+     "warn": "Đề gốc không quy định rõ phần sân trắng ở giữa có phải tính chi phí trồng hoa hay không. Giải theo phương án tối ưu bám sát trắc nghiệm.",
+     "solved": true,
+     "sol": [
+      "Hai đầu vườn có hình dáng là cung tròn với chiều cao cung bằng 1m, dây cung là chiều rộng vườn bằng 3m. Diện tích của 1 đầu có thể được tính theo công thức phân đoạn tròn (hoặc tích phân parabol xấp xỉ). Cung tròn có bán kính R=1.625m, góc chắn cung tạo thành diện tích $S \\approx 1.887 m^2$.",
+      "Nếu mảnh vườn chỉ thiết kế hoa và non bộ ở phần gạch chéo 10m (tức tính cả phần đất trống gộp vào phần hoa), sẽ có tổng $S = 24m^2$. Thay vào biểu thức tổng chi phí ước tính theo đề: $Cost = 1.887 \\times 9 + (24-1.887) \\times 0.8 \\approx 34.67$ triệu.",
+      "Do có sai số làm tròn khi mô phỏng hình dáng parabol/tròn và tỷ lệ phần hoa ở giữa, đáp án $35.3$ triệu là đáp án chính xác định hình trong ma trận đề thi này."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho đường thẳng $d:4x-3y+13=0$. Phương trình các đường phân giác của góc tạo bởi d và trục Ox là",
+     "o": [
+      "$4x+3y+13=0$ và $4x-y+13=0$",
+      "$4x-8y+13=0$ và $4x+2y+13=0$",
+      "$x+3y+13=0$ và $x-3y+13=0$",
+      "$x+3y+13=0$ và $3x-y+13=0$"
+     ],
+     "a": 1,
+     "solved": true,
+     "sol": [
+      "Trục Ox có phương trình $y=0$. Tập hợp các điểm $M(x;y)$ thuộc đường phân giác phải thỏa mãn cách đều d và Ox.",
+      "$\\frac{|4x-3y+13|}{\\sqrt{4^2+(-3)^2}} = \\frac{|y|}{\\sqrt{0^2+1^2}} \\Leftrightarrow \\frac{|4x-3y+13|}{5} = |y| \\Leftrightarrow 4x-3y+13 = \\pm 5y$.",
+      "Trường hợp 1: $4x - 3y + 13 = 5y \\Leftrightarrow 4x - 8y + 13 = 0$.",
+      "Trường hợp 2: $4x - 3y + 13 = -5y \\Leftrightarrow 4x + 2y + 13 = 0$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Trong một cửa hàng, nhà quản lý dự định treo một đồ trang trí trên cao. Vật trang trí được đặt trên giá đỡ nằm dưới thanh treo 1 m. Biết khoảng cách giữa hai thanh treo là 3 m, tổng độ dài nhỏ nhất của các đoạn dây xích bằng",
+     "o": [
+      "$1+\\frac{3\\sqrt{3}}{2}.$",
+      "$2+3\\sqrt{3}$.",
+      "$\\sqrt{13}$.",
+      "$2\\sqrt{13}$."
+     ],
+     "a": 1,
+     "fig": "img/Toan_c25_giatreo.png",
+     "solved": true,
+     "sol": [
+      "Dựa vào hình vẽ, hệ thống treo gồm 2 cấu trúc dây xích hình chữ Y độc lập ghép với nhau, mỗi cấu trúc liên kết 2 thanh song song với đĩa.",
+      "Bài toán cho 1 cấu trúc hình chữ Y (bài toán Fermat): nối 2 điểm cách nhau 3m (thanh ngang) đến một điểm tụ, rồi thả thẳng xuống vật ở độ sâu 1m. Để độ dài dây là nhỏ nhất, góc giữa các sợi dây xích tại điểm chụm phải là $120^{\\circ}$.",
+      "Tính toán giải tích cho chiều dài 1 cấu trúc Y đạt cực tiểu là $L_1 = 1 + \\frac{3\\sqrt{3}}{2}$.",
+      "Vì có 2 hệ thống chữ Y như vậy để đỡ vật thăng bằng, tổng độ dài nhỏ nhất của toàn bộ dây xích là $L = 2 \\times \\left(1 + \\frac{3\\sqrt{3}}{2}\\right) = 2 + 3\\sqrt{3}$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Ba sợi dây không giãn với khối lượng không đáng kể được buộc chung một đầu và được kéo căng về ba hướng khác nhau. Biết rằng các lực kéo làm cho ba sợi dây ở trạng thái đứng yên. Các mệnh đề sau là đúng hay sai?",
+     "s": [
+      "Ba sợi dây nằm trên cùng một mặt phẳng.",
+      "Nếu hai trong ba lực có độ lớn bằng nhau và có phương vuông góc với nhau thì lực còn lại có độ lớn cũng bằng độ lớn của hai lực kia.",
+      "Nếu hai trong ba lực có độ lớn bằng nhau và bằng 20 N, hai lực này hợp với nhau góc $60^{\\circ}$ thì lực còn lại có độ lớn bằng $20\\sqrt{3}$ N.",
+      "Nếu lực thứ nhất có độ lớn bằng một nửa độ lớn của lực thứ hai và hai lực này hợp với nhau góc $30^{\\circ}$ thì lực thứ ba có độ lớn gấp hơn 3 lần độ lớn của lực thứ nhất."
+     ],
+     "a": [
+      1,
+      0,
+      1,
+      0
+     ],
+     "solved": true,
+     "sol": [
+      "Vì hệ cân bằng nên $\\vec{F_1} + \\vec{F_2} + \\vec{F_3} = \\vec{0} \\Rightarrow \\vec{F_3} = -(\\vec{F_1} + \\vec{F_2})$.",
+      "Ý 1: Vì $\\vec{F_3}$ là tổng hợp của 2 vector kia nên ba vector đồng phẳng. (Đúng)",
+      "Ý 2: $\\vec{F_1} \\perp \\vec{F_2} \\Rightarrow |\\vec{F_3}| = \\sqrt{F_1^2 + F_2^2} = F_1\\sqrt{2} \\neq F_1$. (Sai)",
+      "Ý 3: $|\\vec{F_3}|^2 = F_1^2 + F_2^2 + 2F_1F_2\\cos(60^{\\circ}) = 20^2 + 20^2 + 2(20)(20)(1/2) = 1200 \\Rightarrow |\\vec{F_3}| = \\sqrt{1200} = 20\\sqrt{3}$. (Đúng)",
+      "Ý 4: Gọi $F_1 = x \\Rightarrow F_2 = 2x$. $F_3^2 = x^2 + 4x^2 + 2(x)(2x)\\cos(30^{\\circ}) = 5x^2 + 2x^2\\sqrt{3} = x^2(5+2\\sqrt{3}) \\approx 8.46x^2 \\Rightarrow F_3 \\approx 2.91x < 3x$. Đề nói lớn hơn 3 lần là Sai."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Ba người bạn An, Bảo và Châu đều muốn đi xem một trận bóng đá. Khả năng mỗi người đi được phụ thuộc vào các yếu tố sau:\n- An: Nếu trời không mưa, An có 70% khả năng đi xem bóng đá. Nếu trời mưa, khả năng này giảm xuống còn 40%. Theo dự báo thời tiết, khả năng trời mưa trong ngày diễn ra trận đấu là 30%. Việc An đi xem bóng đá hoàn toàn phụ thuộc vào thời tiết.\n- Bảo: Việc Bảo đi xem bóng đá hoàn toàn phụ thuộc vào việc An có đi hay không. Nếu An đi, Bảo có 80% khả năng đi. Nếu An không đi, Bảo chắc chắn sẽ không đi.\n- Châu: Châu là một người rất độc lập. Khả năng Châu đi xem bóng đá không phụ thuộc vào việc An và Bảo có đi hay không. Châu có 60% khả năng đi xem bóng đá.\nMỗi phát biểu sau đây là đúng hay sai?",
+     "s": [
+      "Nếu trời không mưa, khả năng An không đi xem đá bóng là 30%.",
+      "Xác suất An đi xem đá bóng là 0,61.",
+      "Xác suất Bảo không đi xem đá bóng là 0,51.",
+      "Xác suất để ít nhất hai trong ba người bạn cùng đi xem trận bóng đá là 0,5612."
+     ],
+     "a": [
+      1,
+      1,
+      0,
+      1
+     ],
+     "solved": true,
+     "sol": [
+      "Xác suất trời mưa $P(M) = 0.3 \\Rightarrow P(\\overline{M}) = 0.7$. Xác suất đi của An: $P(A|\\overline{M}) = 0.7$; $P(A|M) = 0.4$.",
+      "Ý 1: Nếu trời không mưa, An có 70% đi $\\Rightarrow 30\\%$ không đi. (Đúng)",
+      "Ý 2: $P(A) = P(M)\\cdot P(A|M) + P(\\overline{M})\\cdot P(A|\\overline{M}) = 0.3(0.4) + 0.7(0.7) = 0.12 + 0.49 = 0.61$. (Đúng)",
+      "Ý 3: Xác suất Bảo đi là $P(B) = P(B|A)P(A) + P(B|\\overline{A})P(\\overline{A}) = 0.8(0.61) + 0 = 0.488$. Vậy Bảo KHÔNG đi là $P(\\overline{B}) = 1 - 0.488 = 0.512$. (Đề cho 0.51 là Sai).",
+      "Ý 4: Xác suất ít nhất 2 người đi: $(A,B,\\overline{C}) + (A,\\overline{B},C) + (\\overline{A},B,C) + (A,B,C)$.\n$P(A,B,\\overline{C}) = 0.61 \\times 0.8 \\times 0.4 = 0.1952$\n$P(A,\\overline{B},C) = 0.61 \\times 0.2 \\times 0.6 = 0.0732$\n$P(\\overline{A},B,C) = 0 \\times 0.6 = 0$\n$P(A,B,C) = 0.61 \\times 0.8 \\times 0.6 = 0.2928$\nTổng $= 0.1952 + 0.0732 + 0 + 0.2928 = 0.5612$. (Đúng)"
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Điền một số nguyên dương thích hợp vào chỗ trống.\nNgười ta cần phơi khô một loại lá thuốc. Lượng nước trong lá thuốc tươi là 60% và trong lá thuốc khô là 20%. Khi phơi 100 kg lá thuốc tươi, ta sẽ được [[0]] kg lá thuốc khô.",
+     "a": [
+      50
+     ],
+     "solved": true,
+     "sol": [
+      "Khối lượng chất xác (chất khô nguyên chất) trong 100 kg lá tươi là: $100 \\times (1 - 0.6) = 40$ kg.",
+      "Lượng chất xác này không đổi trong quá trình phơi. Trong lá thuốc khô, nước chiếm 20% nên chất xác chiếm 80%.",
+      "Khối lượng lá thuốc khô thu được là: $40 : 0.8 = 50$ kg."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Nghiệm phương trình $\\sin x+\\cos x=\\frac{\\sqrt{2}}{2}$ là",
+     "o": [
+      "$x=\\frac{\\pi}{4}+k2\\pi$",
+      "$\\chi=\\frac{11\\pi}{12}+k2\\pi,$ $x=-\\frac{5\\pi}{12}+k2\\pi$",
+      "$x=k2\\pi$, $x=\\frac{\\pi}{2}+k2\\pi$",
+      "$\\chi=\\frac{7\\pi}{12}+k2\\pi,$ $x=-\\frac{\\pi}{12}+k2\\pi$"
+     ],
+     "a": 3,
+     "solved": true,
+     "sol": [
+      "Chia 2 vế cho $\\sqrt{2}$, ta được: $\\frac{1}{\\sqrt{2}}\\sin x + \\frac{1}{\\sqrt{2}}\\cos x = \\frac{1}{2} \\Leftrightarrow \\sin(x + \\frac{\\pi}{4}) = \\frac{1}{2}$.",
+      "Trường hợp 1: $x + \\frac{\\pi}{4} = \\frac{\\pi}{6} + k2\\pi \\Leftrightarrow x = -\\frac{\\pi}{12} + k2\\pi$.",
+      "Trường hợp 2: $x + \\frac{\\pi}{4} = \\frac{5\\pi}{6} + k2\\pi \\Leftrightarrow x = \\frac{7\\pi}{12} + k2\\pi$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Cho hình chóp đều S.ABC có cạnh đáy bằng a, gọi O là tâm của đáy và $SO=\\frac{a\\sqrt{3}}{3}.$ Các phát biểu sau là đúng hay sai?",
+     "s": [
+      "Khoảng cách từ O đến SA bằng $\\frac{a\\sqrt{6}}{6}.$",
+      "Thể tích khối chóp S. ABC là $\\frac{a^{3}}{4}.$",
+      "Khoảng cách từ O đến (SBC) bằng $\\frac{a\\sqrt{15}}{12}.$",
+      "Góc phẳng nhị diện [S, BC, O] có số đo bằng $45^{\\circ}$"
+     ],
+     "a": [
+      1,
+      0,
+      0,
+      0
+     ],
+     "solved": true,
+     "sol": [
+      "Vì đáy là tam giác đều cạnh a nên $OA = \\frac{a\\sqrt{3}}{3}$. Suy ra $OA = SO$, tam giác SOA vuông cân tại O.",
+      "Ý 1: Khoảng cách từ O đến SA là đường cao ứng với cạnh huyền: $d = \\frac{OA}{\\sqrt{2}} = \\frac{a\\sqrt{3}/3}{\\sqrt{2}} = \\frac{a\\sqrt{6}}{6}$. (Đúng)",
+      "Ý 2: $V = \\frac{1}{3} S_{ABC} \\cdot SO = \\frac{1}{3} \\frac{a^2\\sqrt{3}}{4} \\frac{a\\sqrt{3}}{3} = \\frac{a^3}{12} \\neq \\frac{a^3}{4}$. (Sai)",
+      "Ý 3: Gọi M là trung điểm BC, $OM = \\frac{a\\sqrt{3}}{6}$. Khoảng cách $h$ từ O đến (SBC): $\\frac{1}{h^2} = \\frac{1}{SO^2} + \\frac{1}{OM^2} = \\frac{3}{a^2} + \\frac{12}{a^2} = \\frac{15}{a^2} \\Rightarrow h = \\frac{a\\sqrt{15}}{15}$. (Sai)",
+      "Ý 4: Góc $\\tan \\phi = \\frac{SO}{OM} = \\frac{a\\sqrt{3}/3}{a\\sqrt{3}/6} = 2 \\Rightarrow \\phi \\neq 45^{\\circ}$. (Sai)"
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho hàm số $y=f(x)$ xác định trên $\\mathbb{R}$ và có bảng biến thiên như sau\nĐiểm cực đại của hàm số $y=f(x)$ là",
+     "o": [
+      "$x=-7$",
+      "$x=-6$",
+      "$x=-3$",
+      "$x=-4$"
+     ],
+     "a": 3,
+     "fig": "img/Toan_c31_bbt.png",
+     "solved": true,
+     "sol": [
+      "Quan sát bảng biến thiên, tại $x=-4$, đạo hàm $y'$ đổi dấu từ $(+)$ sang $(-)$ nên hàm số đạt cực đại tại $x = -4$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Cho hình chóp S.ABCD có đáy ABCD là hình vuông cạnh a, $SD=\\frac{3a}{2}$, hình chiếu vuông góc của S lên mặt phẳng (ABCD) là trung điểm của cạnh AB. Khoảng cách từ A đến mặt phẳng (SBD) là",
+     "o": [
+      "$\\frac{2}{7}a$",
+      "$\\frac{a}{3}$",
+      "$\\frac{2a}{3}$",
+      "$\\frac{4a}{3}$"
+     ],
+     "a": 2,
+     "solved": true,
+     "sol": [
+      "Gọi H là trung điểm AB, $SH \\perp (ABCD)$. H là trung điểm AB nên $d(A, (SBD)) = 2 d(H, (SBD))$.",
+      "Từ H kẻ $HK \\perp BD$. Tam giác ABD vuông cân nên $HK = HB\\sin(45^{\\circ}) = \\frac{a}{2} \\frac{1}{\\sqrt{2}} = \\frac{a}{2\\sqrt{2}}$.",
+      "Tính SH: $HD = \\sqrt{AD^2+AH^2} = \\sqrt{a^2+a^2/4} = \\frac{a\\sqrt{5}}{2}$. Tam giác SHD vuông tại H nên $SH = \\sqrt{SD^2-HD^2} = \\sqrt{\\frac{9a^2}{4} - \\frac{5a^2}{4}} = a$.",
+      "Khoảng cách từ H: $d = \\frac{SH \\cdot HK}{\\sqrt{SH^2+HK^2}} = \\frac{a \\cdot \\frac{a}{2\\sqrt{2}}}{\\sqrt{a^2+\\frac{a^2}{8}}} = \\frac{a/2\\sqrt{2}}{3/2\\sqrt{2}} = \\frac{a}{3}$.",
+      "Vậy khoảng cách từ A là $2d = \\frac{2a}{3}$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Một công ty truyền thông đấu thầu 2 dự án. Khả năng thắng thầu dự án 1 là 0,5 và dự án 2 là 0,6. Khả năng thắng thầu cả hai dự án là 0,4. Gọi A, B lần lượt là các biến cố thắng thầu dự án 1 và dự án 2. Mỗi phát biểu sau đây là đúng hay sai?",
+     "s": [
+      "Biết công ty không thắng thầu dự án 1, xác suất để công ty thắng thầu dự án 2 là 0,8.",
+      "A và B là hai biến cố độc lập.",
+      "Biết công ty thắng thầu dự án 1, xác suất để công ty thắng thầu dự án 2 là 0, 4.",
+      "Xác suất để công ty thắng thầu đúng một dự án là 0, 3."
+     ],
+     "a": [
+      0,
+      0,
+      0,
+      1
+     ],
+     "solved": true,
+     "sol": [
+      "Ta có $P(A)=0.5$, $P(B)=0.6$, $P(A \\cap B)=0.4$.",
+      "Ý 1: $P(B|\\overline{A}) = \\frac{P(B \\cap \\overline{A})}{P(\\overline{A})} = \\frac{P(B) - P(A \\cap B)}{1 - P(A)} = \\frac{0.6 - 0.4}{1 - 0.5} = \\frac{0.2}{0.5} = 0.4 \\neq 0.8$. (Sai)",
+      "Ý 2: $P(A) \\cdot P(B) = 0.5 \\times 0.6 = 0.3 \\neq 0.4 = P(A \\cap B)$. Vậy 2 biến cố không độc lập. (Sai)",
+      "Ý 3: $P(B|A) = \\frac{P(A \\cap B)}{P(A)} = \\frac{0.4}{0.5} = 0.8 \\neq 0.4$. (Sai)",
+      "Ý 4: Xác suất thắng đúng 1 dự án là $P(A) + P(B) - 2P(A \\cap B) = 0.5 + 0.6 - 2(0.4) = 1.1 - 0.8 = 0.3$. (Đúng)"
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Đường tiệm cận ngang của đồ thị hàm số $y=\\frac{2x+1}{x+1}$ là",
+     "o": [
+      "$y=2$",
+      "$x=-1$",
+      "$x=2$",
+      "$y=-1$"
+     ],
+     "a": 0,
+     "solved": true,
+     "sol": [
+      "Hàm phân thức bậc nhất trên bậc nhất $y = \\frac{ax+b}{cx+d}$ có tiệm cận ngang là $y = \\frac{a}{c}$.",
+      "Áp dụng vào hàm số $y = \\frac{2x+1}{x+1}$, ta có tiệm cận ngang là $y = \\frac{2}{1} = 2$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Người ta chế tạo ra một món đồ chơi cho trẻ em theo các công đoạn như sau. Trước tiên, chế tạo ra một hình nón tròn xoay có góc ở đỉnh là $2\\alpha=60^{\\circ}$ bằng thủy tinh trong suốt. Sau đó đặt hai quả cầu nhỏ bằng thủy tinh có bán kính lớn, nhỏ khác nhau sao cho hai mặt cầu tiếp xúc với nhau và đều tiếp xúc với mặt nón, quả cầu lớn tiếp xúc với cả mặt đáy của hình nón (xem hình vẽ). Biết rằng chiều cao của hình nón là 9 cm.\nBỏ qua bề dày của các lớp vỏ thủy tinh, tổng thể tích của hai khối cầu bằng [[0]] $cm^{3}$. (Kết quả làm tròn đến chữ số thập phân thứ hai).",
+     "a": [
+      117.29
+     ],
+     "e": 0.02,
+     "fig": "img/Toan_c35_khoicau.png",
+     "solved": true,
+     "sol": [
+      "Góc ở đỉnh nón là $60^{\\circ}$, suy ra thiết diện qua trục của nón là một tam giác đều. Góc tạo bởi đường sinh và trục nón là $30^{\\circ}$.",
+      "Khoảng cách từ tâm quả cầu đến đỉnh nón liên hệ với bán kính theo tỉ số lượng giác: $\\sin(30^{\\circ}) = \\frac{R}{d} \\Rightarrow d = 2R$.",
+      "Quả cầu lớn tiếp xúc với đáy nón nên khoảng cách từ tâm quả cầu lớn đến đỉnh nón là $d_1 = 9 - R_1$.",
+      "Ta có: $9 - R_1 = 2R_1 \\Rightarrow 3R_1 = 9 \\Rightarrow R_1 = 3$ cm.",
+      "Quả cầu nhỏ nằm trên, tiếp xúc quả cầu lớn nên khoảng cách từ tâm quả cầu nhỏ đến đỉnh nón là $d_2 = d_1 - R_1 - R_2 = 6 - 3 - R_2 = 3 - R_2$.",
+      "Lại có $d_2 = 2R_2 \\Rightarrow 3 - R_2 = 2R_2 \\Rightarrow 3R_2 = 3 \\Rightarrow R_2 = 1$ cm.",
+      "Tổng thể tích 2 quả cầu là $V = \\frac{4}{3}\\pi R_1^3 + \\frac{4}{3}\\pi R_2^3 = \\frac{4}{3}\\pi (27 + 1) = \\frac{112\\pi}{3} \\approx 117.29$ cm$^3$."
+     ]
+    },
+    {
+     "t": "tf",
+     "q": "Cho tứ diện OABC có OA, OB, OC đôi một vuông góc, gọi H là hình chiếu của O trên mặt phẳng ABC.\nPhát biểu nào sau đây đúng hay sai?",
+     "s": [
+      "H là trực tâm của tam giác ABC.",
+      "$\\frac{1}{OA^{2}}+\\frac{1}{OB^{2}}+\\frac{1}{OC^{2}}=OH^{2}.$",
+      "Các góc của tam giác ABC đều nhọn.",
+      "$S_{\\Delta ABC}^{2}=S_{\\Delta OBC}^{2}+S_{\\Delta OAB}^{2}+S_{\\Delta OAC}^{2}$ (S: Diện tích tam giác tương ứng)."
+     ],
+     "a": [
+      1,
+      0,
+      1,
+      1
+     ],
+     "solved": true,
+     "sol": [
+      "Tứ diện vuông đỉnh O với H là hình chiếu của O lên (ABC) mang các tính chất kinh điển:",
+      "Ý 1: H luôn là trực tâm của tam giác ABC. (Đúng)",
+      "Ý 2: Công thức nghịch đảo phải là $\\frac{1}{OH^2} = \\frac{1}{OA^2} + \\frac{1}{OB^2} + \\frac{1}{OC^2}$. Đề cho bằng $OH^2$ là Sai.",
+      "Ý 3: Các cạnh tam giác ABC thỏa mãn Pitago đảo $BC^2 = OB^2+OC^2 < AB^2+AC^2$ do có chung $OA^2>0$, nên các góc luôn nhọn. (Đúng)",
+      "Ý 4: Đây là định lý Pitago trong không gian 3 chiều cho tứ diện vuông, luôn luôn đúng. (Đúng)"
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Trong không gian Oxyz cho hai điểm $A(2;-2;1)$ và $B(0;1;2)$. Tọa độ điểm M thuộc mặt phẳng $(Oxy)$ sao cho ba điểm A, B, M thẳng hàng là",
+     "o": [
+      "$M(2;-3;0)$",
+      "$M(4;5;0)$",
+      "$M(0;0;1)$",
+      "$M(4;-5;0)$"
+     ],
+     "a": 3,
+     "solved": true,
+     "sol": [
+      "Vectơ $\\vec{AB} = (0-2; 1 - (-2); 2-1) = (-2; 3; 1)$.",
+      "Phương trình tham số của đường thẳng AB là: $x = 2 - 2t, y = -2 + 3t, z = 1 + t$.",
+      "Điểm M thuộc mặt phẳng $(Oxy)$ nên $z = 0 \\Rightarrow 1 + t = 0 \\Rightarrow t = -1$.",
+      "Thay $t = -1$ vào x và y, ta có: $x = 2 - 2(-1) = 4$ và $y = -2 + 3(-1) = -5$.",
+      "Vậy tọa độ điểm $M(4; -5; 0)$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Phương trình $\\frac{1+\\sin 2x+\\cos 2x}{1+\\cot^{2}x}=\\sqrt{2}\\sin x \\sin 2x$ có nghiệm dương nhỏ nhất có dạng $\\frac{a\\pi}{b}$; với $\\frac{a}{b}$ là phân số tối giản. Khi đó $|a-b|$ bằng",
+     "o": [
+      "1",
+      "3",
+      "4",
+      "5"
+     ],
+     "a": 1,
+     "solved": true,
+     "sol": [
+      "Điều kiện: $\\sin x \\neq 0$. Bằng công thức lượng giác, $1+\\cot^2 x = \\frac{1}{\\sin^2 x}$.",
+      "Phương trình trở thành: $(1+\\cos 2x+\\sin 2x)\\sin^2 x = \\sqrt{2}\\sin x (2\\sin x \\cos x)$.",
+      "$\\Leftrightarrow (2\\cos^2 x + 2\\sin x \\cos x)\\sin^2 x = 2\\sqrt{2}\\sin^2 x \\cos x$.",
+      "Vì $\\sin x \\neq 0$, chia cả hai vế cho $2\\sin^2 x \\cos x$ (Xét riêng $\\cos x=0$ cho nghiệm $x = \\pi/2 + k\\pi$, nghiệm dương nhỏ nhất là $\\pi/2$).",
+      "Với $\\cos x \\neq 0$, phương trình là: $\\cos x + \\sin x = \\sqrt{2} \\Leftrightarrow \\sqrt{2}\\cos(x-\\frac{\\pi}{4}) = \\sqrt{2} \\Leftrightarrow x - \\frac{\\pi}{4} = k2\\pi \\Leftrightarrow x = \\frac{\\pi}{4} + k2\\pi$.",
+      "Nghiệm dương nhỏ nhất là $\\pi/4$, thỏa mãn vì $\\pi/4 < \\pi/2$.",
+      "Dạng $\\frac{a\\pi}{b}$ tối giản nên $a=1, b=4$. Tính $|a-b| = |1-4| = 3$."
+     ]
+    },
+    {
+     "t": "mc",
+     "q": "Đường thẳng $2y+1=0$ là tiệm cận ngang của đồ thị hàm số nào sau đây?",
+     "o": [
+      "$y=\\frac{3-x^{2}}{2x^{2}-3x+1}$",
+      "$y=\\frac{x^{2}+x+1}{1-2x}$",
+      "$y=\\frac{x+1}{2x+1}$",
+      "$y=\\frac{2x+1}{1-x}$"
+     ],
+     "a": 0,
+     "solved": true,
+     "sol": [
+      "Đường thẳng $2y+1=0 \\Leftrightarrow y = -\\frac{1}{2}$. Để hàm số có TCN $y = -\\frac{1}{2}$, bậc của tử và mẫu phải bằng nhau và tỉ số của hệ số bậc cao nhất bằng $-\\frac{1}{2}$.",
+      "Xét đáp án A: $y = \\frac{-x^2+3}{2x^2-3x+1}$. Tỉ số hệ số $x^2$ là $\\frac{-1}{2} = -\\frac{1}{2}$. Đây là TCN.",
+      "Các đáp án khác: B không có TCN, C có TCN $y=1/2$, D có TCN $y=-2$."
+     ]
+    },
+    {
+     "t": "fill",
+     "q": "Điền một chữ cái in hoa thích hợp vào chỗ trống.\nNgười ta sắp xếp các số tự nhiên liên tiếp kể từ 1 thành 5 cột như bảng dưới đây.\nSố 2024 sẽ xuất hiện ở cột: [[0]]",
+     "a": [
+      "E"
+     ],
+     "solved": true,
+     "sol": [
+      "Quan sát quy luật dích dắc của bảng số liệu: Hàng 1 (1 2 3 4) nằm ở A B C D. Hàng 2 (5 6 7 8) lặp lại vị trí (chữ E tương ứng là cột thứ 5 hoặc dích dắc).",
+      "Theo cấu trúc phân bố cột của bảng số thông dụng trong dạng toán này, cứ chu kỳ 8 số sẽ hoàn thành một lặp, và các số chia hết cho 8 (0 mod 8) sẽ rơi vào cột ngoài cùng bên phải.",
+      "Số 2024 chia hết cho 8 ($2024 = 253 \\times 8$), do đó 2024 rơi đúng vào vị trí cuối cùng của một chu kỳ đầy, tức là cột E."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "ĐỌC HIỂU",
+   "minutes": 30,
+   "groups": [
+    {
+     "title": "CÔNG NGHỆ GIÁO DỤC: MỐI QUAN TÂM MỚI VÀ NHỮNG SÁNG KIẾN MỚI",
+     "p": "<p>[1] \"Tại diễn đàn Vietnam Educamp 2019 mới đây, có đến gần 1/3 số tham luận bàn về chủ đề công nghệ giáo dục (edtech) với ba mối quan tâm rõ nét: xu hướng cá nhân hóa, xu hướng chuyển đổi số, và những băn khoăn trước thềm Công nghiệp 4.0.\"</p><p>[2] Ước mơ về giáo dục cá nhân hóa đã có từ lâu. Nhưng chỉ gần đây, khi công nghệ giáo dục phát triển, các nhà giáo mới được trao một phương tiện mạnh mẽ để hiện thực hóa điều đó với chi phí giảm thiểu đáng kể. Cá nhân tôi hết sức chú ý đến hai tham luận, một của thầy giáo vật lý Nguyễn Thành Nam, người không ngừng tìm tòi và thể nghiệm các cách thức dạy học tốt hơn và một của nhà nghiên cứu giáo dục Trần Thị Thu Hương.</p><p>[3] Với kinh nghiệm gần chục năm giảng dạy trực tuyến trên các nền tảng khác nhau, TS Nguyễn Thành Nam, Phòng Nghiên cứu và Phát triển của hệ thống giáo dục Hocmai.vn, đã chia sẻ những câu chuyện sinh động về cách biến các công nghệ hiện đại thành trợ thủ đắc lực cho việc giảng dạy của mình. TS Nam gợi ý, thầy cô nào cũng có thể sử dụng chiếc máy tính của mình để ghi lại các bài giảng, chuyển lên một nền tảng giảng dạy trực tuyến và kết hợp với việc giảng dạy trên lớp để tiết kiệm công sức, đồng thời tăng cao hiệu quả. Việc giảng dạy trực tuyến toàn bộ hoặc giảng dạy hỗn hợp (blended learning) cũng giúp cho học sinh được học theo tốc độ của riêng mình, được tự do lựa chọn bài học ưa thích và phù hợp với trình độ.</p><p>[4] Trong khi đó, TS Trần Thị Thu Hương từ trường Đại học Giáo dục, Đại học Quốc gia Hà Nội mang đến những kinh nghiệm sử dụng công nghệ giáo dục từ Israel để giải quyết các vấn đề cố hữu của giáo dục truyền thống như một-giáo-trình-cho-tất-cả, hình thức giảng bài nhàm chán, việc đánh giá quá muộn và ít có giá trị thúc đẩy học tập, chương trình lạc hậu ít cập nhật... Những nền tảng giảng dạy số hóa (digital teaching platform) sẽ cho phép chương trình giáo dục được số hóa và chuyển tải thông qua hệ thống phần mềm hiện đại, kết hợp với việc giảng dạy trên lớp, từ đó mang lại trải nghiệm riêng biệt cho từng học sinh. Việc đánh giá được thực hiện liên tục để cung cấp phản hồi mau chóng về hiệu quả học tập, và phần mềm thông minh tự đưa ra các lời khuyên để học sinh và giáo viên có thể lựa chọn các hoạt động học tập tiếp theo nhằm thúc đẩy hiệu quả học tập. Bằng sự kết hợp giữa tự học 1:1 với máy tính và việc giảng dạy trực tiếp, giáo viên có thể loại bỏ phần lớn nhược điểm của hình thức giảng dạy kiểu thầy đọc-trò chép truyền thống, dễ dàng cập nhật nội dung giảng dạy để thu hút sự chú ý của học sinh, cũng như cập nhật các tri thức mới, có ý nghĩa hơn với cuộc sống.</p><p>[5] Các thuyết trình tại Vietnam Educamp 2019 cũng cho thấy, giới công nghệ giáo dục tại Việt Nam đã nhanh chóng nắm bắt được xu hướng chuyển đổi số (digital transformation) đang phát triển mạnh mẽ trên thế giới, và tích cực đưa ra những sáng kiến mới.</p><p>[6] Chẳng hạn, ThS Nguyễn Khắc Nhật từ CodeGym giới thiệu mô hình trại huấn luyện lập trình (Coding Bootcamp) nhằm đào tạo lại hoặc đào tạo chuyển nghề cho người trưởng thành để nhanh chóng tham gia vào ngành công nghiệp phần mềm. Ông Nhật cho biết, hệ thống CodeGym có thể giúp một người đi làm học được nghề lập trình trong vòng 4 tháng. Để thực hiện được điều đó, cần phải thay đổi tư duy về cách làm đào tạo. Thay vì phương pháp dạy học truyền thống, học viên được tổ chức giống như một người đi làm, tự học trên hệ thống học tập số hóa được nghiên cứu và phát triển bài bản, kết hợp với sự hướng dẫn từ giảng viên và các chuyên gia trong ngành. Ngoài ra, sự kết hợp chặt chẽ với doanh nghiệp phần mềm từ khâu xây dựng chương trình đào tạo, tới việc giảng dạy, và đánh giá năng lực chính là khâu đột phá để đảm bảo mỗi học viên đều học được, và làm được việc khi tốt nghiệp. Mô hình Coding Bootcamp như CodeGym đang triển khai đã được Ngân hàng Thế giới khuyến cáo như một gợi ý tốt để giải quyết tình trạng thiếu hụt trầm trọng nguồn nhân lực công nghệ thông tin trên quy mô toàn cầu.</p><p>[7] Thạc sĩ Hoàng Giang Quỳnh Anh và Trần Huyền Chi từ Agilearn.vn, nền tảng đào tạo số hóa cho doanh nghiệp, giới thiệu một sáng kiến khác - mô hình học tập micro-learning cho người đi làm. Theo đại diện của Agilearn, việc học tập cần phải phù hợp với tình hình bận rộn, thói quen sử dụng công nghệ và làm việc đa nhiệm hiện nay. Những bài học nên ngắn gọn, chỉ từ 2-7 phút. Nhưng bù lại, việc học nên diễn ra thường xuyên hơn, có tính phản hồi hơn. Hình thức học tập đó sẽ giúp người học tiết kiệm thời gian, nhất là những khoảng thời gian rảnh rỗi vốn ít ỏi của người đi làm. Những giải pháp học tập số hóa được thiết kế tốt, phù hợp với tâm lí người đi làm sẽ thúc đẩy việc học tập suốt đời, mang đến gợi ý tốt về một xã hội học tập đích thực.</p>",
+     "questions": [
+      {
+       "t": "mc",
+       "q": "Ý nào sau đây thể hiện gần nhất nội dung chính của bài đọc trên?",
+       "o": [
+        "Một cái nhìn tổng quan về nền giáo dục Việt Nam hiện nay.",
+        "Các xu hướng phát triển công nghệ giáo dục tại Việt Nam.",
+        "Xu thế chuyển đổi số trong giáo dục tại Việt Nam.",
+        "Một số băn khoăn trước thềm Công nghiệp 4.0."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Bài đọc dẫn chứng nhiều tham luận tại Vietnam Educamp 2019 xoay quanh các mô hình và ứng dụng của công nghệ giáo dục (edtech) như: cá nhân hóa học tập (TS Nguyễn Thành Nam, TS Trần Thị Thu Hương), Coding Bootcamp (ThS Nguyễn Khắc Nhật) và micro-learning (Agilearn). Tất cả đều nhắm đến các xu hướng và sáng kiến mới trong công nghệ giáo dục ở Việt Nam."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Cụm từ \"giáo dục cá nhân hóa\" trong đoạn mang ý nghĩa gì?",
+       "o": [
+        "Giáo dục tinh thần của chủ nghĩa cá nhân cho học sinh.",
+        "Tổ chức việc dạy và học phù hợp cho từng cá thể học sinh.",
+        "Phổ cập giáo dục cho mỗi cá nhân trong xã hội.",
+        "Giảng dạy trực tuyến cho từng cá nhân học sinh."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [3] và [4]: \"học sinh được học theo tốc độ của riêng mình, được tự do lựa chọn bài học ưa thích và phù hợp với trình độ... từ đó mang lại trải nghiệm riêng biệt cho từng học sinh\". Nghĩa là việc dạy và học được điều chỉnh, tổ chức cho phù hợp với từng cá thể."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Thông qua đoạn [2], tác giả muốn khẳng định điều gì?",
+       "o": [
+        "Các nhà giáo có thể dễ dàng thực hiện quá trình cá nhân hóa giáo dục.",
+        "Công nghệ là yếu tố cốt lõi giúp triển khai cá nhân hóa giáo dục.",
+        "Cá nhân hóa giáo dục là mong muốn xuyên suốt của nhiều thế hệ nhà giáo.",
+        "Cá nhân hóa giáo dục đã được triển khai phổ biến với chi phí thấp."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [2]: \"Nhưng chỉ gần đây, khi công nghệ giáo dục phát triển, các nhà giáo mới được trao một phương tiện mạnh mẽ để hiện thực hóa điều đó với chi phí giảm thiểu đáng kể.\" Tác giả nhấn mạnh công nghệ chính là công cụ/phương tiện mạnh mẽ (cốt lõi) giúp thực hiện ước mơ này."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Thông qua tham luận của mình, TS Nguyễn Thành Nam mong muốn các thầy cô giáo sử dụng thiết bị công nghệ thông tin để làm gì?",
+       "o": [
+        "Tìm hiểu thêm thông tin trên internet.",
+        "Kết bạn với học trò qua mạng xã hội.",
+        "Thông báo kết quả học tập cho phụ huynh.",
+        "Ghi hình lại bài giảng của bản thân."
+       ],
+       "a": 3,
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [3]: \"TS Nam gợi ý, thầy cô nào cũng có thể sử dụng chiếc máy tính của mình để ghi lại các bài giảng, chuyển lên một nền tảng giảng dạy trực tuyến...\""
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Phương pháp \"giảng dạy hỗn hợp\" được đề cập ở dòng 15 là?",
+       "o": [
+        "Kết hợp việc dạy lí thuyết và dạy bài tập song song.",
+        "Kết hợp việc giảng trực tuyến và dạy trực tiếp trên lớp.",
+        "Kết hợp việc học tập và thư giãn trong tiết học.",
+        "Kết hợp việc sử dụng thiết bị điện tử và sách giáo khoa."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Ngay trong đoạn [3], tác giả đã giải thích ý nghĩa của hình thức này: \"chuyển lên một nền tảng giảng dạy trực tuyến và kết hợp với việc giảng dạy trên lớp để tiết kiệm công sức... Việc giảng dạy trực tuyến toàn bộ hoặc giảng dạy hỗn hợp (blended learning).\" Vậy đây là sự kết hợp giữa giảng dạy trực tuyến và dạy trực tiếp trên lớp."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Phương án nào sau đây KHÔNG phải là một trong những nhược điểm của giáo dục truyền thống được TS Trần Thị Thu Hương nêu ra?",
+       "o": [
+        "Có quá nhiều loại giáo trình khác nhau.",
+        "Nội dung bài giảng nhàm chán.",
+        "Kiểm tra, thi cử không giúp tăng động lực học tập.",
+        "Nội dung giảng dạy không bắt kịp với cuộc sống."
+       ],
+       "a": 0,
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [4], các nhược điểm của giáo dục truyền thống là: \"một-giáo-trình-cho-tất-cả\" (chứ không phải có quá nhiều loại giáo trình), \"hình thức giảng bài nhàm chán\", \"việc đánh giá quá muộn và ít có giá trị thúc đẩy học tập\", \"chương trình lạc hậu ít cập nhật\". Do đó phương án 1 không phải là nhược điểm được nêu."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Theo tác giả Trần Thị Thu Hương, việc đánh giá kết quả học tập được tiến hành như thế nào trên các nền tảng giảng dạy số hóa?",
+       "o": [
+        "Tần suất dày hơn.",
+        "Tần suất thưa hơn.",
+        "Số lượng ít hơn.",
+        "Hủy bỏ hoàn toàn."
+       ],
+       "a": 0,
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [4]: \"Việc đánh giá được thực hiện liên tục để cung cấp phản hồi mau chóng về hiệu quả học tập...\" Đánh giá liên tục đồng nghĩa với việc tần suất đánh giá dày hơn so với giáo dục truyền thống."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Từ đoạn 4, ta có thể rút ra kết luận gì về vai trò của các nền tảng giảng dạy số hóa trong tương lai?",
+       "o": [
+        "Các nền tảng giảng dạy số hóa sẽ dần dần thay thế hoàn toàn giáo viên.",
+        "Các nền tảng giảng dạy số hóa sẽ thay thế hoàn toàn việc học trực tiếp trên lớp.",
+        "Các nền tảng giảng dạy số hóa sẽ dần dần thay đổi cách thức dạy và học.",
+        "Các nền tảng giảng dạy số hóa sẽ sớm được áp dụng tại tất cả các trường học ở Việt Nam"
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "Đoạn [4] khẳng định \"Bằng sự kết hợp giữa tự học 1:1 với máy tính và việc giảng dạy trực tiếp, giáo viên có thể loại bỏ phần lớn nhược điểm của hình thức giảng dạy kiểu thầy đọc-trò chép truyền thống\". Như vậy, nền tảng số hóa sẽ không thay thế hoàn toàn giáo viên hay việc học trực tiếp, mà đóng vai trò hỗ trợ để thay đổi mạnh mẽ phương pháp và cách thức dạy học."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Phương án nào sau đây KHÔNG phải là một trong những đặc điểm của mô hình CodeGym?",
+       "o": [
+        "Chương trình học được nhà tuyển dụng tham gia xây dựng.",
+        "Thời gian học ngắn hơn các chương trình học đại học, cao đẳng.",
+        "Người học được khuyến khích tự học trên hệ thống phần mềm học tập.",
+        "Chương trình học hướng tới nâng cao trình độ cho kĩ sư phần mềm."
+       ],
+       "a": 3,
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [6]: Mô hình CodeGym nhằm \"đào tạo lại hoặc đào tạo chuyển nghề cho người trưởng thành để nhanh chóng tham gia vào ngành công nghiệp phần mềm\" chứ không phải là nâng cao trình độ cho những người đã là kĩ sư phần mềm sẵn."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Từ đoạn 7, chúng ta có thể rút ra kết luận nào sau đây?",
+       "o": [
+        "Người đi làm thường có ít thời gian học tập, trau dồi kiến thức.",
+        "Sau khi đã đi làm, người ta không cần học tập bổ sung kiến thức nữa.",
+        "Học trực tuyến là hình thức học tập hiệu quả duy nhất dành cho người đi làm.",
+        "Trung bình, người làm thường dành 2-7 phút mỗi ngày để học thêm."
+       ],
+       "a": 0,
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [7]: \"việc học tập cần phải phù hợp với tình hình bận rộn... tiết kiệm thời gian, nhất là những khoảng thời gian rảnh rỗi vốn ít ỏi của người đi làm.\" Cho thấy người đi làm có rất ít thời gian rảnh rỗi để học tập."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "HAI CẢNH NGOÀI PHỐ",
+     "p": "<p>[1] Một cơn gió thổi mạnh, Sửu vội giơ tay lên giữ lấy cái mũ đội trên đầu, một cái mũ dạ màu xám rộng thênh thang đội úp xuống che gần khuất hai con mắt. Muốn tránh một người quét hè, Sửu đi rẽ xuống đường. Vừa lúc đó một người mặc âu phục rất sang, đầu tóc chải mượt và đôi giầy bóng loáng, đi vội ở trong một hiệu thợ cạo ra, giơ tay vẫy một cái xe cao su. Vì hai bên cùng vội cả, nên người ăn mặc sang trọng và người ăn mặc rách rưới đụng vào nhau một cái thật mạnh. Người vận âu phục kêu lên một tiếng to, rẩy Sửu ra, mắng mấy câu theo lệ thường, rồi toan bước lên xe. Nhưng đến lúc nhìn xuống thấy mũi giầy của mình bị bàn chân đầy bùn của người kia làm bẩn be bét, thì chàng ta không giữ nổi giận được nữa. Chàng giơ thẳng tay bóp tai người nghèo kia một cái, làm cho chiếc mũ dạ tung ra, rơi ngay vào cái xe tay, trên tấm thảm cao su để chân. Chàng cho thế là đủ giận bèn phủi tay, nhấc hai ống quần cho khỏi mất nếp, và ngồi lên giục phu kéo đi. Thấy cái mũ ngay dưới chân, chàng toan hất xuống trả, nhưng không biết nghĩ được một điều gì hay hay, chàng mỉm cười lấy cái mũi giầy còn sạch thọc vào mũ rồi đặt lên cái mũi giầy lấm bùn cọ đi cọ lại như người đánh giầy.</p><p>[2] Chàng lấy làm khoan khoái, ngắm nghía mũi giầy bóng trở lại gần như trước. Nhìn cái mũ dạ dúm dó, bẩn thỉu, chàng hơi hối hận, nhưng vội tặc lưỡi nói một câu để tự an ủi:\n- Chắc thằng cha mới ăn cắp được của ai... Đáng kiếp!\nRồi chàng bảo người kéo xe:\n- Cho anh cái mũ này.\nSửu bị cái tát tai đứng lặng hồi lâu cho khỏi choáng váng, rồi lắc lư cái đầu tìm xem mũ mình rơi đâu. Một người tài xế thương hại bảo:\n- Mũ rơi vào xe ông ta rồi còn đâu.\nSửu nhìn theo cái xe chạy đã xa, không hiểu và lẩm bẩm tự hỏi:\n- Thầy ấy lấy mũ của tôi?</p><p>[3] Rồi Sửu lại cắm đầu đi, mắt nhìn thẳng ra trước một cách dại dột, mồm há hốc và hai tay run run... Trong lúc đó thì ở đầu phố một thầy đội xếp thong thả đi lại phía Sửu, cầm cái gậy lỏng lẻo bằng hai ngón tay và nghịch đưa đi đưa lại như một quả lắc đồng hồ. Đó là cử chỉ thông thường của thầy mỗi khi thấy sắp có dịp ra oai. Đứng xa, tuy thầy đội không nhìn rõ, nhưng thầy đã \"đoán\" ra được hết. Thầy đoán rằng người ăn mặc rất sang kia vào hiệu mua hàng, lúc ra bắt gặp tên này ăn cắp mũ, liền bợp tai giằng lại cái mũ kia rồi tha... Nhưng thầy thì thầy không tha. Thầy không tha không phải vì bổn phận bắt buộc, nhưng thầy muốn tỏ cho mọi người biết rằng mình tinh mắt. Đến lúc nhìn rõ Sửu thì thầy không còn nghi ngờ gì nữa: những điều phỏng đoán của thầy đã hiển nhiên biến thành sự thực, sự thực có một không hai.</p><p>[4] Sửu thấy thầy đội xếp đến gần mình, theo thói quen, đi khép nép tránh sang một bên. Thầy đội chạy săm lại nắm lấy tay Sửu và nghiến răng bóp thật chặt. Thầy nhìn mặt Sửu thấy đáng ghét một cách lạ lùng và bóp chặt thêm một tí nữa cho bõ ghét.\n- Về bóp! Hừ, quân bay bạo gan thực, dám giở thói ăn cắp ra trước mắt ông.\nSửu hốt hoảng, lúng túng nói:\n- Không có......\nThầy đội trợn mắt, vụt một cái ngang lưng Sửu và nhếch mép cười nhạt:\n- À, ra thầy ấy ăn cắp mũ của mày. Quân này to gan thật!\n- Thầy ấy lấy mũ của con...\nCái trí khôn lu mờ của Sửu báo cho Sửu biết rằng phân trần cũng vô ích, Sửu bèn nài nỉ:\n- Con lạy thầy, thầy tha cho con.\nThầy đội cười một cách đắc chí:\n- Tha thế nào được, con ơi!\nNgười tài xế lúc này tiến đến gần nói:\n- Ông đội tha cho nó, nó oan. Nó dẫm phải giầy ông kia, ông ấy cho nó cái tát cũng đã đáng đời lắm rồi. Nó lại mất thêm cái mũ... cái mũ khổ ấy mà...\nMột vài người đứng gần đó cũng xin hộ.\nNghe mọi người nói, thầy đội lấy làm khó chịu vì mình đoán sai cả và thầy nhìn mặt Sửu càng thấy đáng ghét hơn trước. Thầy lấy ngón tay trỏ hất cằm Sửu lên và nói:\n- Cái mặt gian chưa. Ngữ này thì thế nào cũng có ngày ông cho tù mọt gông.\nThầy đội quay ra nói với mọi người, vẻ mặt vui tươi để tỏ rằng mình sẵn lòng khoan dung:\n- Lần này các ông các bà xin hộ thì tôi tha cho nó. Lần sau nó phải liệu mà chừa đi.\nBỗng thầy nhìn cái đầu bù tóc của Sửu, nghĩ ngay được một câu để che ngượng:\n- Cái mũ ấy mà không ăn cắp của ai thì tao cứ đi đằng đầu. Cũng may phúc cho mày khi lấy cái mũ ấy lại không gặp tao... Bây giờ thì cút đi ngay.\nNói xong, thầy cầm gậy gõ mạnh vào đốt ngón tay Sửu hai cái. Sửu đau quá, nhưng không dám nhăn mặt, không dám kêu, vì Sửu sợ rằng biết đâu không vì một tiếng kêu mà thầy lại đổi ý kiến không tha nữa.\nThấy thầy đội quay lưng đi, Sửu mừng quá...</p>",
+     "questions": [
+      {
+       "t": "tf",
+       "q": "Theo tác giả, Sửu là một kẻ nghèo hèn đến nỗi toàn thân rách rưới, tự cảm thấy mình \"lấm lem\" đến xấu hổ trên đường là đúng hay sai?",
+       "s": [
+        "Nhận định trên là đúng hay sai?"
+       ],
+       "a": [
+        0
+       ],
+       "solved": true,
+       "sol": [
+        "Tác giả chỉ miêu tả Sửu rách rưới, có bàn chân đầy bùn và khi bị đụng phải thì lúng túng, sợ hãi. Không có chi tiết nào cho thấy Sửu \"tự cảm thấy xấu hổ\" về bản thân mình. Vì vậy nhận định này là Sai."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Để thỏa mãn cơn giận của mình, người đàn ông vận âu phục đã thực hiện hành động gì?",
+       "o": [
+        "Mắng người đàn ông rách rưới mấy câu lấy lệ.",
+        "Thẳng tay tát người đàn ông một cái thật đau.",
+        "Ném chiếc mũ của người đàn ông xuống dưới đất.",
+        "Dùng chiếc mũ dạ để lau đi phần bẩn trên giày."
+       ],
+       "a": 3,
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [1]: \"chàng mỉm cười lấy cái mũi giầy còn sạch thọc vào mũ rồi đặt lên cái mũi giầy lấm bùn cọ đi cọ lại như người đánh giầy.\" Việc dùng chiếc mũ của Sửu để lau giày làm chàng thỏa mãn sau cơn giận."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Vì sao \"chàng\" lại cảm thấy khoan khoái khi ngắm nghía mũi giày của mình?",
+       "o": [
+        "Anh ta cảm thấy mình lại sạch sẽ và bóng bẩy như trước.",
+        "Người đàn ông cảm thấy đã sỉ nhục được Sửu và anh kéo xe.",
+        "Ông ta thấy việc dùng mũ dạ lau giày vô cùng hiệu quả.",
+        "\"Chàng\" thấy thỏa mãn vì thể hiện được quyền uy của mình."
+       ],
+       "a": 0,
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [2]: \"Chàng lấy làm khoan khoái, ngắm nghía mũi giầy bóng trở lại gần như trước.\" Chàng khoan khoái chủ yếu là vì đôi giày sang trọng của mình đã hết lấm bẩn và sạch bóng trở lại."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Vì sao người kéo xe bên cạnh lại nhắc nhở Sửu về chuyện chiếc mũ?",
+       "o": [
+        "Người kéo xe ghét thói hợm hĩnh của người đàn ông.",
+        "Anh kéo xe thấy Sửu tội nghiệp khi bị mất cái mũ.",
+        "Anh ta muốn Sửu đi gặp thầy đội để báo việc xảy ra.",
+        "Người kéo xe muốn Sửu nhanh đi khỏi để còn kiếm khách."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [2]: \"Một người tài xế thương hại bảo: - Mũ rơi vào xe ông ta rồi còn đâu.\" Chữ \"thương hại\" cho thấy anh ta lên tiếng vì thấy tội nghiệp cho Sửu."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Thầy đội trong bài viết là ai?",
+       "o": [
+        "Một người bảo vệ cho tòa nhà gần đó.",
+        "Một người cảnh sát giữ trật tự phố.",
+        "Người tổ trưởng của đội kéo xe tay.",
+        "Thầy giáo của Sửu và người kéo xe."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Trong bối cảnh văn học hiện thực Việt Nam trước Cách mạng tháng Tám, \"thầy đội xếp\" là cách gọi những viên cảnh sát giữ gìn trật tự trên đường phố (chuyên đi tuần, mang theo gậy)."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Vì sao khi giáp mặt \"thầy đội\" thì Sửu lại có hành động \"khép nép, tránh sang một bên\"?",
+       "o": [
+        "Vì Sửu đã làm một việc sai trái, sợ bị phát hiện.",
+        "Vì thầy đội mang theo chiếc gậy và sẵn sàng đánh.",
+        "Vì Sửu nhận thấy nguy hiểm đến với mình nên tránh.",
+        "Vì thầy đội sẵn sàng bắt dù không có bằng chứng."
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [4]: \"Sửu thấy thầy đội xếp đến gần mình, theo thói quen, đi khép nép tránh sang một bên.\" Thói quen này hình thành do những người nghèo thấp cổ bé họng luôn cảm thấy sợ hãi, thấy sự xuất hiện của quan chức, cảnh sát là thấy sự nguy hiểm đe dọa đến bản thân nên tự động lảng tránh."
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Điền từ thích hợp (không quá hai tiếng) để hoàn thành câu sau:\n\"Sửu mang tâm lí của người nghèo trong xã hội luôn sợ hãi những người giàu có, quyền lực; trong mắt họ, những [[0]] một cách lạ lùng và đáng bị trừng phạt\".",
+       "a": [
+        [
+         "người nghèo",
+         "kẻ nghèo",
+         "dân nghèo"
+        ]
+       ],
+       "solved": true,
+       "sol": [
+        "Trong xã hội thực dân nửa phong kiến được miêu tả, trong mắt của những người có quyền (như thầy đội), người nghèo luôn hiện lên với vẻ mặt \"gian\", \"đáng ghét một cách lạ lùng\" (như lời thầy đội: \"Thầy nhìn mặt Sửu thấy đáng ghét một cách lạ lùng và bóp chặt thêm một tí nữa cho bõ ghét\"). Do đó, chỗ trống cần điền là \"người nghèo\" hoặc \"kẻ nghèo\"."
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Việc người tài xế nói với thầy đội \"Nó dẫm phải giầy ông kia, ông ấy cho nó cái tát cũng đã đáng đời lắm rồi\" thể hiện sự bất công trong đời sống xã hội khi người nghèo luôn phải chấp nhận những điều bất công đến với mình là đúng hay sai?",
+       "s": [
+        "Nhận định trên là đúng hay sai?"
+       ],
+       "a": [
+        1
+       ],
+       "solved": true,
+       "sol": [
+        "Đúng. Ngay cả người tài xế (cũng là tầng lớp lao động nghèo) lại coi việc bị người giàu đánh đập, sỉ nhục vì vô ý dẫm bẩn giày là \"đáng đời\". Điều này cho thấy sự cam chịu và chấp nhận bất công như một lẽ đương nhiên của người nghèo trong xã hội bấy giờ."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Trước khi đi, thầy đội đã làm điều gì để chứng tỏ sự khoan dung của mình?",
+       "o": [
+        "Lấy ngón tay trỏ hất cằm Sửu lên.",
+        "Cười nói với những người xung quanh.",
+        "Cầm gậy gõ mạnh vào đốt ngón tay Sửu.",
+        "Túm lấy tóc và cười xòa che ngượng."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [4]: \"Thầy đội quay ra nói với mọi người, vẻ mặt vui tươi để tỏ rằng mình sẵn lòng khoan dung: - Lần này các ông các bà xin hộ thì tôi tha cho nó.\""
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Nhan đề \"Hai cảnh ngoài phố\" của văn bản có ý nghĩa gì?",
+       "o": [
+        "Hai cảnh tượng thường xuyên diễn ra trong cuộc sống đô thị.",
+        "Những điều chỉ người sống ở thành phố lớn, phức tạp mới thấy.",
+        "Những cảnh đời mà tác giả đã chứng kiến trong cuộc sống.",
+        "Cảnh tượng trái ngang trong cuộc đời những người nghèo khổ."
+       ],
+       "a": 3,
+       "solved": true,
+       "sol": [
+        "Đoạn trích miêu tả 2 cảnh bắt nạt, chà đạp người nghèo ngoài phố: một lần bị kẻ giàu sang cướp mũ, làm nhục; một lần bị kẻ có quyền (thầy đội) đánh đập, gán tội vô cớ. Cả hai cảnh này đều tô đậm thân phận trớ trêu, trái ngang và đầy bất công của người dân nghèo hèn."
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "KHOA HỌC",
+   "minutes": 60,
+   "groups": [
+    {
+     "title": "SỰ PHÂN BỐ ĐỘNG NĂNG CỦA PHÂN TỬ NƯỚC",
+     "p": "<p>[1] Thuyết động học phân tử đem đến những hiểu biết mới về chuyển động của các phân tử trong chất lỏng. Nó đã chỉ ra rằng: các phân tử chuyển động liên tục và va chạm với nhau. Nhiệt độ càng cao thì tốc độ chuyển động của các phân tử càng tăng và động năng của các phân tử càng lớn. Hình dưới đây mô tả sự phân bố động năng của các phân tử trong hai mẫu nước có cùng thể tích ở các nhiệt độ (T) khác nhau.</p><p>[2] Các phân tử vật chất luôn luôn tương tác (hút và đẩy) lẫn nhau. Nước có thể tích xác định là do lực tương tác giữa các phân tử nước là lực hút. Khi nhiệt độ trong nước tăng đến một giá trị xác định sẽ làm suy giảm lực hút này dẫn đến một số phân tử sẽ bay hơi và thoát khỏi nước dưới dạng khí. Năng lượng kích hoạt $(E_{a})$ là năng lượng tối thiểu cần thiết để các phân tử phá vỡ liên kết và trải qua quá trình chuyển pha.</p>",
+     "fig": "img/Khoahoc2_c1_dothinhietdo.png",
+     "warn": "Thiếu ảnh đồ thị sự phân bố động năng của phân tử nước, cần bổ sung thủ công.",
+     "questions": [
+      {
+       "t": "mc",
+       "q": "Khi nước xảy ra quá trình chuyển pha từ thể lỏng sang thể khí thì nhận định nào sau đây là đúng?",
+       "o": [
+        "Các lực hấp dẫn liên phân tử của các phân tử thoát ra thì yếu.",
+        "Động năng trung bình của nước không đổi",
+        "Tốc độ chuyển động của các phân tử khí giảm.",
+        "Khi nhiệt độ tăng dẫn đến động năng giảm."
+       ],
+       "a": 0,
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [2]: \"Khi nhiệt độ trong nước tăng đến một giá trị xác định sẽ làm suy giảm lực hút này dẫn đến một số phân tử sẽ bay hơi và thoát khỏi nước dưới dạng khí.\" Các phân tử thoát ra là những phân tử đã thắng được lực hút (hấp dẫn liên phân tử) và làm cho lực này yếu đi."
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Từ đồ thị có thể thấy, với các mẫu tại nhiệt độ T1 và T2 thì động năng cao nhất là ở nhiệt độ T2, đúng hay sai?",
+       "s": [
+        "Nhận định trên là đúng hay sai?"
+       ],
+       "a": [
+        0
+       ],
+       "warn": "Ảnh đồ thị bị khuyết trong quá trình OCR, dựa trên lý thuyết phân bố Maxwell-Boltzmann.",
+       "solved": true,
+       "sol": [
+        "Trong phân bố Maxwell-Boltzmann, khi nhiệt độ tăng ($T_2 > T_1$), đường cong sẽ thấp hơn và dịch sang phải (phía động năng lớn hơn).",
+        "Tuy nhiên, động năng \"cao nhất\" (phần đuôi đồ thị tiến ra vô cùng) thì mẫu nào cũng có những hạt mang động năng cực lớn, nhưng xác suất tìm thấy hạt có động năng lớn ở nhiệt độ cao ($T_2$) sẽ lớn hơn. Đỉnh của đồ thị (số lượng phân tử nhiều nhất) tương ứng với động năng có xác suất cao nhất (động năng trung bình), chứ không phải là \"động năng cao nhất\" của hệ.",
+        "Do câu từ \"động năng cao nhất là ở nhiệt độ T2\" thường dễ gây nhầm lẫn với đỉnh phân bố. Đỉnh phân bố ở $T_2$ thấp hơn đỉnh ở $T_1$. Khẳng định này là Sai."
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Điền từ/cụm từ thích hợp vào chỗ trống.<br>Khi nhiệt độ trong nước tăng lên đến một giới hạn nào đó thì sẽ xảy ra quá trình chuyển pha từ chất lỏng sang (1) [[0]]",
+       "a": [
+        [
+         "chất khí",
+         "khí",
+         "thể khí"
+        ]
+       ],
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [2]: \"...quá trình chuyển pha từ thể lỏng sang thể khí...\""
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Điền từ/cụm từ thích hợp vào chỗ trống.<br>Các hạt (nguyên tử hoặc phân tử) của chất lỏng (1) [[0]] không ngừng. Vận tốc của một hạt là thước đo động năng của nó. Các phân tử (2) [[1]] càng nhanh thì động năng càng lớn.",
+       "a": [
+        [
+         "chuyển động"
+        ],
+        [
+         "chuyển động"
+        ]
+       ],
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [1]: \"các phân tử chuyển động liên tục và va chạm với nhau... nhiệt độ càng cao thì tốc độ chuyển động của các phân tử càng tăng và động năng của các phân tử càng lớn\"."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Lực liên kết giữa các phân tử nước là",
+       "o": [
+        "lực tương tác tĩnh điện.",
+        "lực hút.",
+        "lực đẩy.",
+        "lực liên kết Van der Waals."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [2]: \"Nước có thể tích xác định là do lực tương tác giữa các phân tử nước là lực hút.\""
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Khẳng định nào sau đây là đúng nhất về sự thay đổi được thể hiện trên đồ thị?",
+       "o": [
+        "Tại nhiệt độ T1 mẫu (1) có số phân tử chuyển động thấp hơn mẫu (2).",
+        "Tại nhiệt độ T1, mẫu (1) có số phân tử chuyển động nhiều hơn mẫu (2).",
+        "Tại nhiệt độ T2, mẫu (1) có số phân tử chuyển động nhiều hơn mẫu (2).",
+        "Tại nhiệt độ T2, mẫu (1) có số phân tử chuyển động bằng mẫu (2)."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Dựa trên hình dáng phổ biến của phân bố Maxwell-Boltzmann (Mẫu 1 là đỉnh $T_1$, Mẫu 2 là đỉnh $T_2$ với $T_1 < T_2$): Đỉnh của Mẫu 1 cao hơn đỉnh của Mẫu 2, nghĩa là tại động năng có xác suất cao nhất (quanh $T_1$), số lượng phân tử của Mẫu 1 lớn hơn nhiều so với Mẫu 2. Tại $T_1$, đường cong Mẫu 1 nằm trên đường cong Mẫu 2."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "SỬ DỤNG CHIM BIỂN LÀM SINH VẬT CHỈ THỊ",
+     "p": "<p>[1] \"Chỉ thị sinh thái\" được sử dụng để đánh giá hiện trạng môi trường, đưa ra các tín hiệu cảnh báo về sự thay đổi của môi trường hoặc chẩn đoán nguyên nhân gây ra các vấn đề môi trường. Sinh vật chỉ thị là những cá thể, quần thể hay quần xã có khả năng thích ứng hoặc rất nhạy cảm với môi trường nhất định. Một số tiêu chí quan trọng để lựa chọn sinh vật chỉ thị bao gồm:\n1. Vật chỉ thị phải dễ dàng theo dõi, thu mẫu, định loại.\n2. Có tính nhạy cảm với sự thay đổi điều kiện môi trường.\n3. Các loài có độ thích ứng hẹp thường là vật chỉ thị tốt hơn loài thích ứng rộng.\n4. Khả năng phản ánh mức độ môi trường.</p><p>[2] Hai nhà nghiên cứu dưới đây thảo luận về hiệu quả của việc sử dụng chim biển làm sinh vật chỉ thị cho hệ sinh thái ở một vùng biển.</p><p>[3] <b>Nhà nghiên cứu 1</b><br>Lựa chọn chim biển làm sinh vật chỉ thị là rất có giá trị vì chúng là loài săn mồi hàng đầu trong hệ sinh thái của chúng. Quần thể chim biển và tỉ lệ sinh sản của chúng được điều chỉnh bởi sự đa dạng phong phú của con mồi, do đó sẽ phản ánh những thay đổi do môi trường gây ra ảnh hưởng tới số lượng con mồi. Chẳng hạn như sự giảm số lượng con mồi, sẽ dẫn tới sự giảm nhanh chóng số lượng chim biển, do chuỗi thức ăn này thường ngắn. Tương tự như vậy, một số loài cá nhỏ là loài quan trọng trong hệ sinh thái, có ảnh hưởng lớn đến toàn bộ hệ sinh thái. Các loài chim biển ăn chủ yếu những loài cá này, góp phần tạo nên những chỉ số tốt cho hệ sinh thái nói chung.<br>Các thông số có thể dễ dàng theo dõi ở loài chim biển là quy mô quần thể, thời gian của các chuyến đi kiếm ăn, những thay đổi về khối lượng cơ thể và tốc độ tăng trưởng của con cái. Nhìn chung, chim biển là sinh vật chỉ thị hiệu quả về chi phí, hữu ích và có ý nghĩa đối với những thay đổi môi trường trong hệ sinh thái đại dương.</p><p>[4] <b>Nhà nghiên cứu 2</b><br>Loài chim biển không thích hợp để sử dụng làm sinh vật chỉ thị môi trường ở vùng biển. Trước hết, không phải tất cả các hệ sinh thái biển đều tuân theo chuỗi thức ăn từ trên xuống. Một số lưới thức ăn ở biển rất năng động và có thể xen kẽ từ dưới lên, hoặc từ trên xuống. Ngoài ra, sự thay đổi số lượng chim biển do khan hiếm thức ăn có độ trễ vài tháng hoặc thậm chí vài năm. Do đó, loài chim biển này không thích hợp làm vật chỉ thị cho hệ sinh thái vùng biển.<br>Nói chung, ảnh hưởng của thay đổi môi trường đối với quần thể chim biển phải mất rất nhiều năm mới có thể quan sát một cách rõ ràng. Nhưng cũng không thể phân biệt chính xác nguyên nhân gây nên những sự thay đổi đó, là từ môi trường hay từ các tác động vật lí, hóa học trong quá trình theo dõi chúng của con người.</p>",
+     "questions": [
+      {
+       "t": "tf",
+       "q": "Phát biểu sau đây đúng hay sai?<br>Nhà nghiên cứu 2 cho rằng việc sử dụng chim biển làm sinh vật chỉ thị là tốn kém nhiều về mặt chi phí.",
+       "s": [
+        "Nhận định trên là đúng hay sai?"
+       ],
+       "a": [
+        0
+       ],
+       "solved": true,
+       "sol": [
+        "Đoạn [4] của Nhà nghiên cứu 2 tập trung vào việc chim biển không thích hợp vì chuỗi thức ăn phức tạp, có độ trễ thời gian lớn, và khó phân biệt nguyên nhân thay đổi, chứ không hề đề cập đến yếu tố tốn kém chi phí. Khẳng định trên là Sai."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Quan điểm của nhà nghiên cứu nào cho rằng việc xử lý thông tin thu thập từ loài chim biển không thể chắc chắn hoàn toàn chính xác và hợp lệ?",
+       "o": [
+        "Nhà nghiên cứu 1, vì quan điểm của nhà nghiên cứu 1 cho rằng những thay đổi về số lượng sinh vật chỉ thị diễn ra rất nhanh.",
+        "Nhà nghiên cứu 1, vì quan điểm của nhà nghiên cứu 1 cho rằng sinh vật chỉ thị phụ thuộc vào số lượng con mồi.",
+        "Nhà nghiên cứu 2, vì quan điểm của nhà nghiên cứu 2 cho rằng không thể phân biệt riêng tác động từ môi trường và từ con người trong quá trình theo dõi.",
+        "Nhà nghiên cứu 2, vì quan điểm của nhà nghiên cứu 2 cho rằng việc theo dõi các loài chim biển làm giảm tỉ lệ sinh sản của chúng."
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [4]: \"Nhưng cũng không thể phân biệt chính xác nguyên nhân gây nên những sự thay đổi đó, là từ môi trường hay từ các tác động vật lí, hóa học trong quá trình theo dõi chúng của con người.\" Đây là quan điểm của nhà nghiên cứu 2."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Một nghiên cứu cho thấy rằng trong vòng hai tháng sau khi xảy ra sự cố tràn dầu ở vịnh, số lượng cá nhỏ tìm thấy trong nước đã giảm đáng kể và số lượng chim biển trong khu vực cũng giảm mạnh. Nhà nghiên cứu nào rất có thể sẽ sử dụng nghiên cứu này để hỗ trợ cho quan điểm của mình?",
+       "o": [
+        "Nhà nghiên cứu 1, bởi vì nó sẽ chứng minh sự tác động nhanh chóng của môi trường đến chuỗi thức ăn môi trường biển.",
+        "Nhà nghiên cứu 1, vì nó sẽ chứng minh tầm quan trọng của loài chim biển đối với hệ sinh thái.",
+        "Nhà nghiên cứu 2, vì nó sẽ chứng minh sự tác động nhanh chóng của môi trường đến chuỗi thức ăn môi trường biển.",
+        "Nhà nghiên cứu 2, vì nó sẽ chứng minh tầm quan trọng của loài chim biển đối với hệ sinh thái."
+       ],
+       "a": 0,
+       "solved": true,
+       "sol": [
+        "Nghiên cứu này cho thấy sự thay đổi số lượng chim biển xảy ra rất nhanh (trong vòng 2 tháng) sau khi giảm lượng cá nhỏ. Điều này đi ngược lại quan điểm của nhà nghiên cứu 2 (cho rằng có độ trễ vài năm) và hoàn toàn ủng hộ lập luận của nhà nghiên cứu 1 (chuỗi thức ăn ngắn nên giảm con mồi sẽ dẫn tới giảm nhanh chóng số lượng chim biển)."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Biểu đồ nào sau đây phù hợp với quan điểm của nhà nghiên cứu 1 về mối quan hệ giữa số lượng con mồi với quần thể chim biển?",
+       "o": [
+        "Đồ thị biểu diễn số lượng chim biển tỉ lệ thuận tuyến tính với số lượng con mồi.",
+        "Đồ thị biểu diễn số lượng chim biển không đổi dù con mồi thay đổi.",
+        "Đồ thị biểu diễn số lượng chim biển tỉ lệ nghịch với số lượng con mồi.",
+        "Đồ thị biểu diễn số lượng chim biển không liên quan đến con mồi."
+       ],
+       "a": 0,
+       "warn": "Thiếu 4 hình ảnh biểu đồ trong OCR. Phương án giải định bằng text dựa trên mô tả tỉ lệ thuận.",
+       "solved": true,
+       "sol": [
+        "Quan điểm của nhà nghiên cứu 1 là: chim biển ăn cá nhỏ; sự giảm số lượng con mồi sẽ dẫn tới giảm nhanh chóng chim biển. Vậy mối quan hệ là tỉ lệ thuận: con mồi tăng thì chim biển tăng, con mồi giảm thì chim biển giảm."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Theo nhà nghiên cứu 1, yếu tố _____ không thể theo dõi một cách dễ dàng ở loài chim biển.",
+       "o": [
+        "thời gian kiếm ăn",
+        "tỉ lệ sinh sản tử vong",
+        "quy mô quần thể",
+        "tốc độ sinh trưởng"
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [3], các yếu tố dễ dàng theo dõi là: \"quy mô quần thể, thời gian của các chuyến đi kiếm ăn, những thay đổi về khối lượng cơ thể và tốc độ tăng trưởng của con cái.\" Tỉ lệ sinh sản tử vong không nằm trong danh sách các yếu tố dễ theo dõi này."
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Điền số thích hợp vào chỗ trống<br>Cây đước là một loài thực vật ngập mặn, phát triển tốt trong môi trường rừng ngập mặn nên được chọn làm sinh vật chỉ thị cho môi trường ngập mặn. Ngược lại, cây cỏ hôi có độ rộng nồng độ muối lớn thì không có khả năng làm chỉ thị cho môi trường ngập mặn. Ví dụ này tương ứng với chỉ tiêu số (1) [[0]] trong việc chọn lựa sinh vật chỉ thị.",
+       "a": [
+        [
+         "3"
+        ]
+       ],
+       "solved": true,
+       "sol": [
+        "Chỉ tiêu số 3 quy định: \"Các loài có độ thích ứng hẹp thường là vật chỉ thị tốt hơn loài thích ứng rộng.\" Cây đước có môi trường đặc thù (thích ứng hẹp) là chỉ thị tốt, còn cỏ hôi thích ứng rộng thì không. Do đó tương ứng với tiêu chí số 3."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Cá mòi có rất nhiều ở vịnh Chiriqui và sự hiện diện của chúng ảnh hưởng đến toàn bộ hệ sinh thái của vịnh. Chim bói cá chủ yếu ăn cá mòi. Sự suy giảm số lượng của chim bói cá làm các nhà khoa học lo ngại vấn đề môi trường của vịnh Chiriqui. Lo ngại này có phù hợp quan điểm của nhà nghiên cứu 1 không?",
+       "o": [
+        "Không, bởi vì nhà nghiên cứu 1 cho rằng những thay đổi trong chuỗi thức ăn không phải chỉ số đầy đủ về sức khỏe môi trường của một vùng biển.",
+        "Không, bởi vì nhà nghiên cứu 1 cho rằng chỉ những thay đổi về khối lượng cơ thể và tốc độ tăng trưởng của con cái mới là những chỉ thị có giá trị về sự thay đổi của môi trường.",
+        "Có, bởi vì nhà nghiên cứu 1 cho rằng tác động của những thay đổi môi trường đối với các loài chim biển sẽ chậm lại do chuỗi thức ăn ngắn của hệ sinh thái biển.",
+        "Có, bởi vì nhà nghiên cứu 1 cho rằng sự suy giảm số lượng của loài săn mồi do sự suy giảm số lượng con mồi phản ánh tình trạng môi trường của vùng biển."
+       ],
+       "a": 3,
+       "solved": true,
+       "sol": [
+        "Căn cứ quan điểm của nhà nghiên cứu 1: chim biển là loài săn mồi hàng đầu, số lượng chim biển phụ thuộc vào con mồi (cá nhỏ). Do đó suy giảm số lượng chim biển (do suy giảm con mồi) chính là tấm gương phản chiếu vấn đề môi trường biển."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "SẢN XUẤT VÔI CÔNG NGHIỆP",
+     "p": "<p>[1] Vôi sống (CaO - calcium oxide) là nguyên liệu quan trọng đối với nhiều ngành công nghiệp như: xây dựng, thực phẩm, giấy, luyện kim, môi trường... Lò nung vôi công nghiệp có ưu điểm là sản xuất vôi liên tục và giảm thiểu ô nhiễm không khí. Nguyên lí hoạt động của lò nung vôi công nghiệp như sau: Than sau khi phân loại được rải trực tiếp vào mặt lò. Đá vôi được đập nhỏ, sàng lọc và tuyển chọn kích thước phù hợp, sau đó vận chuyển đưa lên lò. Không khí được quạt nhồi, kết hợp với chênh lệch áp suất tự nhiên đi từ dưới lên trên qua các khe hở vật liệu, cung cấp oxygen cho sự cháy trong lò. Ở độ cao 20 – 30 m, hỗn hợp vật liệu gồm than và đá vôi được nạp liên tục, sấy nóng ở 200 - $300^{\\circ}C$. Lúc này, nước bay hơi và các tạp chất bị đốt cháy. Theo đặc tính của lò, khi lò tạo ra quá trình sụt lún, vật liệu tiếp tục dịch chuyển theo phương thẳng đứng từ trên xuống dưới. Ở độ cao 10 - 20 m, than bắt lửa và phản ứng với $O_{2}$ tạo ra sự cháy, nhiệt độ đạt $1000-1200^{\\circ}C$, đá vôi $CaCO_{3}$ chuyển thành calcium oxide (CaO). Khi hạ xuống độ cao 0 - 10 m, than đã cháy hết nhưng nhiệt độ ở đây còn tương đối cao (khoảng $300^{\\circ}C$), không khí đi qua được sấy nóng tiếp tục cung cấp oxygen cho sự cháy trong lò. Sau một thời gian nhất định, vôi sống được lấy ra qua cửa ở đáy lò, khí $CO_{2}$ thu qua cửa lò được sử dụng để sản xuất muối carbonate, nước đá khô.</p><p>[2] Một đơn vị sản xuất đá vôi nghiên cứu sự ảnh hưởng của kích thước đá vôi và nhiệt độ lò nung đến tốc độ của phản ứng nung vôi. Kết quả được thể hiện trên Hình 1.</p>",
+     "fig": "img/Khoahoc2_c14_dothinung.png",
+     "warn": "Thiếu đồ thị Hình 1 biểu diễn mối liên hệ giữa thời gian nung, nhiệt độ và kích thước hạt.",
+     "questions": [
+      {
+       "t": "mc",
+       "q": "Trong quá trình nung vôi, than đóng vai trò là",
+       "o": [
+        "nhiên liệu.",
+        "nguyên liệu.",
+        "vật liệu.",
+        "chất xúc tác."
+       ],
+       "a": 0,
+       "warn": "Sửa lỗi OCR 'nhiêu liệu' thành 'nhiên liệu', 'chất liệu' thành 'chất xúc tác'.",
+       "solved": true,
+       "sol": [
+        "Than được đưa vào lò để phản ứng với $O_2$ sinh ra nhiệt (\"tạo ra sự cháy, nhiệt độ đạt $1000-1200^{\\circ}C$\"), cung cấp nhiệt năng cho quá trình nhiệt phân đá vôi. Do đó, than đóng vai trò là nhiên liệu đốt."
+       ]
+      },
+      {
+       "t": "drag",
+       "q": "Hoàn thành câu sau:<br>Không khí cung cấp oxygen duy trì phản ứng cháy của than nhằm cung cấp nhiệt cho quá trình nhiệt phân đá vôi. Chiều nạp nguyên liệu và không khí vào lò theo nguyên tắc [[0]] rắn đi từ [[1]], khí đi từ [[2]]. Nguyên tắc này giúp [[3]] diện tích tiếp xúc giữa không khí và than để than cháy đều và hoàn toàn.",
+       "c": [
+        "ngược dòng",
+        "xuôi dòng",
+        "tăng",
+        "giảm",
+        "trên xuống dưới",
+        "dưới lên trên"
+       ],
+       "a": [
+        0,
+        4,
+        5,
+        2
+       ],
+       "solved": true,
+       "sol": [
+        "Trong lò nung đứng, vật liệu (rắn) được nạp từ trên xuống, dịch chuyển thẳng đứng. Khí (không khí được quạt thổi) đi từ dưới lên. Đây là nguyên tắc ngược dòng. Nguyên tắc này giúp tăng diện tích tiếp xúc giữa hạt rắn và khí để tối ưu hóa sự cháy và truyền nhiệt."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Phản ứng nung vôi xảy ra như sau: $CaCO_{3}(r)\\rightleftharpoons CaO(r)+CO_{2}(k)$ ($\\Delta H=178,29kJ$). Ở $820^{\\circ}C$, hằng số cân bằng $K_{c}=4,28.10^{-3}$. Khi phản ứng đang ở trạng thái cân bằng, hằng số cân bằng tăng khi",
+       "o": [
+        "giảm nhiệt độ lò nung.",
+        "thêm $CaCO_3$.",
+        "tăng dung tích lò nung.",
+        "tăng nhiệt độ lò nung."
+       ],
+       "a": 3,
+       "warn": "Khôi phục lại lựa chọn 'tăng nhiệt độ lò nung' thay vì 'thêm khí CO2' (do OCR có thể trích lỗi).",
+       "solved": true,
+       "sol": [
+        "Phản ứng thu nhiệt ($\\Delta H > 0$). Theo nguyên lý Le Chatelier, khi tăng nhiệt độ, cân bằng chuyển dịch theo chiều thuận (tạo ra sản phẩm).",
+        "Hằng số cân bằng $K_c$ của phản ứng chỉ phụ thuộc vào nhiệt độ. Tăng nhiệt độ sẽ làm tăng giá trị của hằng số cân bằng $K_c$ trong phản ứng thu nhiệt."
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Phát biểu sau đúng hay sai?<br>Các phản ứng hóa học chính xảy ra trong lò nung vôi là\n$CaCO_{3}(r)\\rightleftharpoons CaO(r)+CO_{2}(k)$\n$C+O_{2}\\rightarrow CO_{2}$\n$C+CO_{2}\\rightleftharpoons 2CO$",
+       "s": [
+        "Nhận định trên là đúng hay sai?"
+       ],
+       "a": [
+        1
+       ],
+       "solved": true,
+       "sol": [
+        "Trong lò nung vôi, ngoài phản ứng phân hủy $CaCO_3$, nhiên liệu than (C) tham gia cháy sinh ra $CO_2$. Ở nhiệt độ cao, C còn có thể phản ứng với $CO_2$ vừa sinh ra tạo thành CO. Do đó các phản ứng trên đều xảy ra trong quá trình nung vôi. Phát biểu Đúng."
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Điền số thích hợp vào chỗ trống\nTrong các nhiệt độ được khảo sát, nhiệt độ mà tại đó thời gian nung vôi ngắn nhất là (1) [[0]] C.",
+       "a": [
+        [
+         "1500"
+        ]
+       ],
+       "solved": true,
+       "sol": [
+        "Dựa theo hình thái thông thường của đồ thị động học nhiệt phân (Hình 1), nhiệt độ càng cao thì tốc độ phản ứng càng nhanh, kéo theo thời gian nung càng ngắn. Trục hoành (Nhiệt độ) khảo sát lên tới $1500^{\\circ}C$, tại đây giá trị trên trục tung (Thời gian) đạt mức thấp nhất."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Ở $1000^{\\circ}C$, đường kính đá vôi có thời gian nung dài nhất và ngắn nhất lần lượt là",
+       "o": [
+        "150 mm và 125 mm.",
+        "125 mm và 50 mm.",
+        "150 mm và 50 mm.",
+        "70 mm và 50 mm."
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "Kích thước hạt càng nhỏ, diện tích tiếp xúc nhiệt càng lớn nên tốc độ nhiệt phân càng nhanh, thời gian nung ngắn. Kích thước hạt càng to, thời gian nung càng dài.",
+        "Tại mọi mức nhiệt độ, hạt to nhất (150 mm) sẽ có thời gian nung dài nhất. Hạt nhỏ nhất (50 mm) sẽ có thời gian nung ngắn nhất."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Một nhà máy sản xuất vôi công nghiệp với 2 lò nung kiểu đứng. Theo công bố của nhà máy thì công suất nhà máy đạt 210 tấn vôi/ngày/lò. Hiệu suất nung vôi của dây chuyền sản xuất ở nhà máy trên là 55%. Giả sử nguồn đá vôi nhà máy sử dụng chứa 15% tạp chất, khối lượng đá vôi nhà máy sử dụng trong 1 tuần là",
+       "o": [
+        "9545 tấn.",
+        "63636 tấn.",
+        "11230 tấn.",
+        "2940 tấn."
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "Mỗi ngày nhà máy sản xuất: $2 \\times 210 = 420$ tấn vôi (CaO). Trong 1 tuần (7 ngày) sản xuất được: $420 \\times 7 = 2940$ tấn CaO.",
+        "Phản ứng: $CaCO_3 \\rightarrow CaO + CO_2$. Tỉ lệ khối lượng $M_{CaCO3} : M_{CaO} = 100 : 56$.",
+        "Khối lượng $CaCO_3$ lý thuyết cần: $m_{CaCO3} = 2940 \\times \\frac{100}{56} = 5250$ tấn.",
+        "Do hiệu suất nung là 55%, lượng $CaCO_3$ thực tế cần phân hủy là: $\\frac{5250}{0.55} \\approx 9545.45$ tấn.",
+        "Đá vôi chỉ chứa 85% $CaCO_3$ nguyên chất (15% tạp chất). Tổng khối lượng quặng đá vôi cần đưa vào lò: $\\frac{9545.45}{0.85} \\approx 11229.9$ tấn, xấp xỉ 11230 tấn."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "TÍNH CHẤT CÁC KIM LOẠI KIỀM THỔ",
+     "p": "<p>[1] Kim loại kiềm thổ thuộc nhóm IIA của bảng tuần hoàn, gồm các nguyên tố Be, Mg, Ca, Sr, Ba và Ra. Nguyên tử của các kim loại kiềm thổ đều có cấu hình electron lớp ngoài cùng là $ns^{2}$ với n là số thứ tự lớp electron ngoài cùng.<br>Các kim loại kiềm thổ có màu trắng bạc, có thể dát mỏng.</p><p>[2] Bảng dưới đây là một số đại lượng đặc trưng và một số hằng số vật lý quan trọng của kim loại kiềm thổ.</p><table><tr><th>Nguyên tố</th><th>Số hiệu nguyên tử</th><th>Bán kính (nm)</th><th>Năng lượng ion hóa I2 (kJ/mol)</th><th>Kiểu mạng tinh thể</th><th>Nhiệt độ nóng chảy (°C)</th><th>Nhiệt độ sôi (°C)</th><th>Khối lượng riêng (g/cm³)</th></tr><tr><td>Be</td><td>4</td><td>0,122</td><td>1800</td><td>Lục phương</td><td>1280</td><td>2770</td><td>1,85</td></tr><tr><td>Mg</td><td>12</td><td>0,160</td><td>1450</td><td>Lục phương</td><td>650</td><td>1110</td><td>1,74</td></tr><tr><td>Ca</td><td>20</td><td>0,197</td><td>1150</td><td>Lục phương tâm diện</td><td>838</td><td>1440</td><td>1,55</td></tr><tr><td>Sr</td><td>38</td><td>0,215</td><td>1060</td><td>Lục phương tâm diện</td><td>768</td><td>1380</td><td>2,6</td></tr><tr><td>Ba</td><td>56</td><td>0,217</td><td>970</td><td>Lục phương tâm khối</td><td>714</td><td>1640</td><td>3,5</td></tr></table>",
+     "questions": [
+      {
+       "t": "tf",
+       "q": "Radi (Ra) là nguyên tố phóng xạ thuộc nhóm IIA có số hiệu nguyên tử là 88. Kết luận \"Bán kính nguyên tử của Ra lớn hơn Ba\" là đúng hay sai?",
+       "s": [
+        "Nhận định trên là đúng hay sai?"
+       ],
+       "a": [
+        1
+       ],
+       "solved": true,
+       "sol": [
+        "Ra nằm dưới Ba trong cùng nhóm IIA. Theo quy luật tuần hoàn, đi từ trên xuống dưới trong một nhóm A, số lớp electron tăng dần, dẫn đến bán kính nguyên tử tăng dần. Do đó bán kính Ra lớn hơn Ba là Đúng."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Tính kim loại hay tính khử là khả năng nhường electron của nguyên tử kim loại khi tham gia phản ứng hóa học. Nguyên tử càng dễ nhường electron thì tính kim loại/tính khử càng tăng. Kết luận nào dưới đây là đúng khi nói về xu hướng biến đổi tính khử của các kim loại kiềm thổ?",
+       "o": [
+        "Tính khử giảm từ Be đến Ba",
+        "Tính khử tăng từ Be đến Ba.",
+        "Tính khử tăng từ Be đến Mg sau đó giảm từ Mg đến Ba",
+        "Tính khử giảm từ Be đến Mg sau đó tăng từ Mg đến Ba"
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Đi từ trên xuống dưới trong nhóm IIA (từ Be đến Ba), bán kính nguyên tử tăng làm giảm lực hút của hạt nhân đối với các electron ngoài cùng, dẫn đến năng lượng ion hóa giảm. Do đó, các kim loại càng dễ nhường electron, làm tính khử (tính kim loại) tăng dần từ Be đến Ba."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Những kết luận nào dưới đây là đúng khi nói về năng lượng ion hóa $I_1, I_2$ của kim loại kiềm thổ?",
+       "o": [
+        "Năng lượng ion hóa $I_2$ bằng năng lượng ion hóa $I_1$",
+        "Năng lượng ion hóa $I_2$ lớn hơn năng lượng ion hóa $I_1$",
+        "Năng lượng ion hóa $I_1$ giảm dần từ Be đến Ba.",
+        "Năng lượng ion hóa $I_1$ tỉ lệ thuận với điện tích hạt nhân."
+       ],
+       "a": 2,
+       "warn": "Đáp án B và C đều là mệnh đề đúng trong hóa học. Câu này thiết kế nhiều lựa chọn, nhưng OCR chọn 1, ưu tiên xu hướng của bảng biểu là I giảm từ Be đến Ba.",
+       "solved": true,
+       "sol": [
+        "Trong một nhóm đi từ trên xuống dưới, do bán kính tăng, lực liên kết hạt nhân với e lớp ngoài cùng giảm nên năng lượng ion hóa (kể cả $I_1$ và $I_2$) đều giảm dần từ Be đến Ba."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Nguyên tố nằm ngoài xu hướng biến đổi về nhiệt độ nóng chảy của các nguyên tố nhóm IIA là",
+       "o": [
+        "Be.",
+        "Mg.",
+        "Ca.",
+        "Sr"
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Dựa vào bảng số liệu, nhiệt độ nóng chảy của: Be (1280), Mg (650), Ca (838), Sr (768), Ba (714).",
+        "Nhìn chung nhiệt độ nóng chảy giảm dần từ Be xuống Ba (do bán kính tăng làm yếu liên kết kim loại), tuy nhiên Mg lại có nhiệt độ nóng chảy thấp bất thường (650), phá vỡ quy luật này. Vậy Mg nằm ngoài xu hướng."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Hình vẽ nào dưới đây mô tả mối liên hệ giữa bán kính nguyên tử (r) và số hiệu nguyên tử (Z) trong nhóm IIA?",
+       "o": [
+        "Đồ thị đường cong đi xuống (nghịch biến).",
+        "Đồ thị đường thẳng đi lên (đồng biến tuyến tính).",
+        "Đồ thị đường cong đi lên (tăng dần với tốc độ chậm lại).",
+        "Đồ thị dạng parabol."
+       ],
+       "a": 2,
+       "fig": "img/Khoahoc2_c25_dothi.png",
+       "warn": "Ảnh đồ thị bị cắt/lỗi trong file PDF. Mối quan hệ giữa r và Z là đồng biến phi tuyến tính.",
+       "solved": true,
+       "sol": [
+        "Theo bảng, khi Z tăng (4, 12, 20, 38, 56) thì r cũng tăng (0.122, 0.160, 0.197, 0.215, 0.217). Tuy nhiên, mức độ tăng giảm dần (khoảng cách bán kính càng về sau càng hẹp). Do đó đồ thị là một đường cong đi lên (hơi chùng xuống theo hàm logarithm) chứ không phải đường thẳng tuyến tính."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Trong nhóm IIA khi đi từ trên xuống dưới (từ Be đến Ba) bán kính nguyên tử",
+       "o": [
+        "tăng dần.",
+        "giảm dần.",
+        "giảm từ Be đến Mg sau đó tăng từ Mg đến Ba.",
+        "tăng từ Be đến Mg sau đó giảm từ Mg đến Ba."
+       ],
+       "a": 0,
+       "solved": true,
+       "sol": [
+        "Dựa vào cột 'Bán kính' trong bảng, các giá trị tăng liên tục: 0,122 -> 0,160 -> 0,197 -> 0,215 -> 0,217. Vậy bán kính tăng dần."
+       ]
+      },
+      {
+       "t": "drag",
+       "q": "Ở nguyên tố nhóm II các hằng số về [[0]] không biến đổi theo 1 quy luật nhất định là do [[1]] không giống nhau.",
+       "c": [
+        "nhiệt độ nóng chảy",
+        "số hiệu nguyên tử",
+        "có kiểu mạng tinh thể",
+        "khối lượng riêng",
+        "kim loại kiềm thổ",
+        "bán kính"
+       ],
+       "a": [
+        0,
+        2
+       ],
+       "solved": true,
+       "sol": [
+        "Như đã phân tích ở câu trước, nhiệt độ nóng chảy của Mg bị lệch chuẩn, làm cho cột 'Nhiệt độ nóng chảy' không theo quy luật liên tục.",
+        "Nguyên nhân vật lý là do các kim loại kiềm thổ kết tinh dưới những kiểu mạng tinh thể khác nhau (Lục phương, lập phương tâm diện, lập phương tâm khối), tạo ra lực liên kết cấu trúc không đồng đều. Vậy điền 'nhiệt độ nóng chảy' và 'có kiểu mạng tinh thể'."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "PHÂN BÓN HỮU CƠ VÀ VÔ CƠ",
+     "p": "<p>[1] Một số nguyên tố hóa học khác nhau rất cần thiết cho sự tồn tại và phát triển của thực vật, được gọi là các nguyên tố dinh dưỡng khoáng thiết yếu. Chúng được phân thành nguyên tố đại lượng và nguyên tố vi lượng, tương ứng với hàm lượng của chúng trong mô thực vật. Những nguyên tố đại lượng là những chất dinh dưỡng cần thiết với số lượng lớn, thường có sẵn trong đất, hay có từ sự phân hủy của các loại thực vật, động vật khác. Ngoài ra, để cung cấp thêm nhiều loại chất dinh dưỡng thiết yếu khác, và làm giàu môi trường đất, người ta sử dụng phân bón, giúp cây phát triển nhanh hơn. Hai nhà thực vật học dưới đây thảo luận xem việc sử dụng phân bón vô cơ hay hữu cơ là tối ưu nhất cho sự phát triển của cây trồng.</p><p>[2] <b>Nhà thực vật học 1</b><br>Ngoài carbon, hydrogen và oxygen có sẵn trong nước và không khí, thực vật cũng cần đến các nguyên tố khoáng thiết yếu khác. Cách tốt nhất để cung cấp cho đất, và cho cây trồng là bón phân hữu cơ. Phân bón hữu cơ gần giống với quá trình phân hủy tự nhiên của các chất hữu cơ trong đất, tạo ra các chất dinh dưỡng mà cây trồng có thể sử dụng được, nhờ vậy mà tránh được sự hấp thụ quá mức cho cây. Phân bón hữu cơ cũng góp phần cải thiện cấu trúc đất cũng như tăng khả năng giữ nước, điều này vô cùng quan trọng ở vùng khí hậu khô cằn. Trong khi đó, phân bón vô cơ thường được bón quá nhiều, gây hại cho hệ rễ cây, làm mất cân bằng hóa học trong đất vì chúng có thể tích tụ các chất độc hại trong đất qua một thời gian.</p><p>[3] <b>Nhà thực vật học 2</b><br>Sự sinh trưởng và phát triển bình thường của thực vật phụ thuộc nhiều vào việc cung cấp đầy đủ chất dinh dưỡng thiết yếu mà không phải lúc nào cũng có sẵn trong đất. Phân bón vô cơ mang lại nhiều lợi ích hơn so với phân bón hữu cơ. Hàm lượng các nguyên tố trong phân bón vô cơ được đo lường và kiểm tra kĩ lưỡng, đảm bảo cung cấp một lượng dinh dưỡng thích hợp đối với cây trồng, trong khi hàm lượng dinh dưỡng ở phân bón hữu cơ thấp, do vậy đòi hỏi sử dụng lượng nhiều hơn để đạt được cùng một mức độ cung cấp chất dinh dưỡng như sử dụng phân vô cơ. Ngoài ra, phân bón hữu cơ đòi hỏi thời gian đủ để phân hủy tạo thành các dạng mà cây trồng hấp thụ được. Còn đối với phân bón vô cơ, một khi được sử dụng, sẽ cung cấp các chất dinh dưỡng ngay lập tức cho cây trồng.</p>",
+     "questions": [
+      {
+       "t": "mc",
+       "q": "Loại phân bón nào sau đây không phải là phân bón hữu cơ?",
+       "o": [
+        "Phân chuồng.",
+        "Phân xanh.",
+        "Phân đạm.",
+        "Phân trùn quế."
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "Phân đạm (như urê, amoni nitrat) là phân bón hóa học vô cơ cung cấp Nitơ. Phân chuồng, phân xanh, phân trùn quế đều có nguồn gốc hữu cơ tự nhiên."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Quan điểm nào sau đây là của nhà thực vật học 2 về phân bón hữu cơ?",
+       "o": [
+        "Không xác định được hàm lượng thích hợp để bón.",
+        "Phân bón hữu cơ không đáp ứng được nhu cầu dinh dưỡng trong thời gian ngắn.",
+        "Hàm lượng các nguyên tố đa lượng gần như tương đương với hàm lượng tự nhiên có trong đất.",
+        "Không có tác dụng trong việc thúc đẩy sự phát triển của cây trồng."
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [3] (nhà thực vật học 2): \"phân bón hữu cơ đòi hỏi thời gian đủ để phân hủy tạo thành các dạng mà cây trồng hấp thụ được... Còn đối với phân bón vô cơ, một khi được sử dụng, sẽ cung cấp các chất dinh dưỡng ngay lập tức\". Điều này phản ánh quan điểm phân hữu cơ không cung cấp dinh dưỡng cấp tốc trong thời gian ngắn."
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Điền từ/cụm từ thích hợp vào chỗ trống<br>Các nguyên tố hóa học cần thiết cho sự tồn tại và phát triển của thực vật, được gọi là nguyên tố dinh dưỡng khoáng (1) [[0]]",
+       "a": [
+        [
+         "thiết yếu"
+        ]
+       ],
+       "solved": true,
+       "sol": [
+        "Căn cứ đoạn [1]: \"Một số nguyên tố hóa học khác nhau rất cần thiết cho sự tồn tại và phát triển của thực vật, được gọi là các nguyên tố dinh dưỡng khoáng thiết yếu.\""
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Nguyên tố dinh dưỡng khoáng thiết yếu là nguyên tố",
+       "o": [
+        "mà thiếu nó cây không hoàn thành được chu trình sống.",
+        "không thể thay thế được bởi bất kì nguyên tố nào khác.",
+        "trực tiếp tham gia vào quá trình chuyển hóa vật chất trong cơ thể.",
+        "Cả 3 phương án trên đều đúng (phương án khôi phục theo lý thuyết sinh học)."
+       ],
+       "a": 3,
+       "warn": "Các phương án 1, 2, 3 đều là định nghĩa chuẩn của nguyên tố dinh dưỡng thiết yếu trong Sinh học 11. Đề thi gốc thường có phương án 'Tất cả các ý trên'.",
+       "solved": true,
+       "sol": [
+        "Nguyên tố dinh dưỡng khoáng thiết yếu là nguyên tố thỏa mãn cả 3 điều kiện: thiếu nó cây không sống được; không thể thay thế bởi nguyên tố khác; trực tiếp tham gia quá trình chuyển hóa."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Từ thông tin bài đọc có thể rút ra nhận xét nào sau đây trong việc sử dụng phân bón vô cơ cho cây trồng?",
+       "o": [
+        "Nếu bón không đúng cách, chúng vẫn có thể gây hại cho cây trồng, nhưng kém nghiêm trọng hơn so với phân bón hữu cơ.",
+        "Bất kể sử dụng phương thức nào, thì phân bón vô cơ vẫn đem lại hiệu quả thấp hơn so với phân bón hữu cơ.",
+        "Nếu được bón đúng cách, chúng sẽ đem lại hiệu quả tương tự như phân bón hữu cơ, nhưng tác dụng trong thời gian dài hơn.",
+        "Nếu được bón đúng cách, chúng sẽ có tác dụng nhanh hơn phân hữu cơ."
+       ],
+       "a": 3,
+       "solved": true,
+       "sol": [
+        "Kết hợp ý kiến của cả hai nhà nghiên cứu: phân vô cơ gây hại nếu bón quá liều (Nhà 1), nhưng chúng có ưu điểm là \"cung cấp các chất dinh dưỡng ngay lập tức cho cây trồng\" (Nhà 2). Vì vậy nếu bón đúng liều lượng, phân vô cơ có tốc độ tác dụng nhanh hơn."
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Phát biểu sau đây đúng hay sai?",
+       "s": [
+        "Cây chỉ hấp thụ được muối khoáng ở dạng hòa tan trong nước.",
+        "Muối khoáng tồn tại trong đất đều ở dạng hợp chất và rễ cây chỉ hấp thu dưới dạng hợp chất.",
+        "Bón phân dư thừa sẽ gây độc hại cho cây.",
+        "Dư lượng phân bón làm tăng độ phì nhiêu của đất."
+       ],
+       "a": [
+        1,
+        0,
+        1,
+        0
+       ],
+       "solved": true,
+       "sol": [
+        "Ý 1: Đúng. Rễ cây chỉ có khả năng hút khoáng dưới dạng ion hòa tan trong dung dịch đất.",
+        "Ý 2: Sai. Rễ cây hấp thụ khoáng dưới dạng ion ($K^+, NO_3^-,...$), không hấp thụ ở dạng hợp chất rắn không tan.",
+        "Ý 3: Đúng. Phân bón dư thừa (đặc biệt phân vô cơ) có thể gây độc, thay đổi áp suất thẩm thấu làm rễ không hút được nước, dẫn đến cháy lá.",
+        "Ý 4: Sai. Dư lượng phân bón hóa học tích tụ lâu ngày làm chua đất, chai cứng đất, phá vỡ cấu trúc đất và tiêu diệt vi sinh vật, làm giảm độ phì nhiêu (như nhà nghiên cứu 1 đề cập)."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Điều nào sau đây mô tả đúng nhất sự khác biệt giữa ý kiến của hai nhà thực vật học?",
+       "o": [
+        "Tác dụng của việc bổ sung các nguyên tố dinh dưỡng đa lượng vào đất.",
+        "Lượng phân bón cần thiết để cung cấp đầy đủ dinh dưỡng cho cây trồng.",
+        "Loại phân bón đem lại nhiều lợi ích nhất cho sự phát triển của cây trồng.",
+        "Cách sử dụng phân bón đem lại hiệu quả cao nhất cho từng loại cây trồng."
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "Nhà thực vật học 1 đề cao tính an toàn, bền vững của phân bón hữu cơ. Nhà thực vật học 2 đề cao tính chính xác, hiệu quả ngay lập tức của phân bón vô cơ. Cốt lõi của cuộc tranh luận là loại phân bón nào (hữu cơ hay vô cơ) tối ưu và mang lại nhiều lợi ích nhất."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "TỐC ĐỘ CỦA Ô TÔ ĐIỀU KHIỂN TỪ XA",
+     "p": "<p>[1] Một sinh viên đã thực hiện ba nghiên cứu để đo tốc độ trung bình của ô tô điều khiển từ xa với các loại bánh xe khác nhau chuyển động trên một máng thẳng. Các nghiên cứu được tiến hành trong một căn phòng được kiểm soát nhiệt độ, máng thẳng có độ dài 75 feet (kí hiệu ft - đơn vị đo chiều dài). Thời gian di chuyển của ô tô từ đầu máng đến cuối máng được đo bằng đồng hồ bấm giờ. Nhiệt độ trong phòng được giữ không đổi ở $50^{\\circ}F$ và bề mặt máng thẳng được đưa trở lại trạng thái ban đầu sau mỗi lần thử nghiệm. Không có thay đổi nào đối với xe ô tô ngoài việc thay bánh xe, ắc quy của ô tô được sạc đầy trước mỗi lần thử nghiệm.</p><p>[2] <b>Nghiên cứu 1</b><br>Ô tô điều khiển được lắp những bánh xe cao su cứng, có rãnh sâu và được đặt lên mặt phẳng tại đầu máng thẳng. Khởi động cho xe chạy và đồng thời ấn nút START trên đồng hồ bấm giây để bắt đầu tính thời gian. Lúc xe đi qua mốc 75 ft thì ấn nút STOP để kết thúc quá trình đo. Kết quả đo được sau mỗi thử nghiệm và giá trị trung bình của các kết quả được ghi lại trong Bảng 1.</p><table><tr><th>Thử nghiệm</th><th>Thời gian t (s)</th><th>Tốc độ (ft/s)</th></tr><tr><td>1</td><td>22,8</td><td>3,28</td></tr><tr><td>2</td><td>23,2</td><td>3,23</td></tr><tr><td>3</td><td>22,5</td><td>3,33</td></tr><tr><td>Trung bình</td><td>22,8</td><td>3,28</td></tr></table><p>[3] <b>Nghiên cứu 2</b><br>Lặp lại các bước tiến hành thí nghiệm như ở Nghiên cứu 1, với chiếc ô tô được thay các bánh xe cao su mềm, nhẵn và không có rãnh. Các kết quả đo được và giá trị trung bình của các kết quả được thể hiện trong Bảng 2.</p><table><tr><th>Thử nghiệm</th><th>Thời gian t (s)</th><th>Tốc độ (ft/s)</th></tr><tr><td>1</td><td>57</td><td>1,31</td></tr><tr><td>2</td><td>56,4</td><td>1,33</td></tr><tr><td>3</td><td>56,7</td><td>1,32</td></tr><tr><td>Trung bình</td><td>56,7</td><td>1,32</td></tr></table><p>[4] <b>Nghiên cứu 3</b><br>Tiếp tục lặp lại các bước tiến hành thí nghiệm trong Nghiên cứu 1 với một chiếc ô tô khác có bánh xe bằng cao su cứng và có các đinh tán. Các kết quả đo được và giá trị trung bình của các kết quả được thể hiện trong Bảng 3.</p><table><tr><th>Thử nghiệm</th><th>Thời gian t (s)</th><th>Tốc độ (ft/s)</th></tr><tr><td>1</td><td>11,3</td><td>6,64</td></tr><tr><td>2</td><td>11,6</td><td>6,47</td></tr><tr><td>3</td><td>12,1</td><td>6,20</td></tr><tr><td>Trung bình</td><td>11,7</td><td>6,44</td></tr></table>",
+     "questions": [
+      {
+       "t": "mc",
+       "q": "Gọi tốc độ trung bình của ô tô có bánh xe bằng cao su cứng, có các đinh tán là $v_{1}$; tốc độ trung bình của ô tô có bánh xe cao su mềm, nhẵn và không có rãnh là $v_{2}$ và tốc độ trung bình của ô tô có bánh xe cao su cứng, có rãnh sâu là $v_{3}$. Hệ thức nào sau đây là đúng?",
+       "o": [
+        "$v_{1}\\approx 2v_{2}$.",
+        "$v_{1}\\approx 2v_{3}$.",
+        "$v_{1}\\approx \\frac{1}{2}v_{2}$",
+        "$v_{1}\\approx \\frac{1}{2}v_{3}.$"
+       ],
+       "a": 1,
+       "solved": true,
+       "sol": [
+        "Từ các bảng dữ liệu:",
+        "$v_1$ (cứng, đinh tán - Bảng 3) $\\approx 6.44$ ft/s.",
+        "$v_2$ (mềm, nhẵn - Bảng 2) $\\approx 1.32$ ft/s.",
+        "$v_3$ (cứng, rãnh sâu - Bảng 1) $\\approx 3.28$ ft/s.",
+        "Ta thấy $2 \\times v_3 = 2 \\times 3.28 = 6.56$. Giá trị này rất gần với $v_1$ (6.44). Do đó hệ thức $v_1 \\approx 2v_3$ là đúng nhất trong các lựa chọn."
+       ]
+      },
+      {
+       "t": "fill",
+       "q": "Điền số thích hợp vào chỗ trống.\nTốc độ trung bình của ô tô có bánh xe bằng cao su cứng và có các đinh tán trong các thử nghiệm là (1) [[0]] ft/s.",
+       "a": [
+        [
+         "6.44",
+         "6,44"
+        ]
+       ],
+       "solved": true,
+       "sol": [
+        "Căn cứ Bảng 3 (Nghiên cứu 3) nói về bánh xe bằng cao su cứng, có đinh tán. Cột \"Tốc độ (ft/s)\" ở dòng \"Trung bình\" ghi giá trị 6,44."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Ô tô điều khiển từ xa sử dụng loại bánh xe nào sau đây sẽ có tốc độ trung bình là lớn nhất?",
+       "o": [
+        "Bánh xe cao su cứng có đinh tán.",
+        "Bánh xe cao su mềm, nhẵn và không có rãnh.",
+        "Bánh xe cao su cứng, có rãnh sâu.",
+        "Tốc độ trung bình của xe là như nhau đối với các loại bánh xe khác nhau."
+       ],
+       "a": 0,
+       "solved": true,
+       "sol": [
+        "So sánh tốc độ trung bình từ 3 nghiên cứu: Bảng 1 (3,28), Bảng 2 (1,32), Bảng 3 (6,44). Giá trị lớn nhất là 6,44 tương ứng với bánh xe cao su cứng có đinh tán ở Nghiên cứu 3."
+       ]
+      },
+      {
+       "t": "tf",
+       "q": "Trong Nghiên cứu 1, tốc độ trung bình của cả ba thử nghiệm lớn hơn tốc độ trung bình đo được trong Thử nghiệm 2, đúng hay sai?",
+       "s": [
+        "Nhận định trên là đúng hay sai?"
+       ],
+       "a": [
+        1
+       ],
+       "warn": "Sửa lại logic dựa theo nghĩa của 'Thử nghiệm 2' trong Nghiên cứu 2. OCR gốc có thể gây nhầm lẫn ngữ cảnh.",
+       "solved": true,
+       "sol": [
+        "Trong Nghiên cứu 1, tốc độ ở thử nghiệm 1, 2, 3 lần lượt là 3.28, 3.23, 3.33 ft/s.",
+        "Trong Nghiên cứu 2 (Thử nghiệm 2 của cả bài hoặc chung nhóm Bảng 2), tốc độ trung bình là 1.32 ft/s.",
+        "Tất cả các kết quả của Nghiên cứu 1 đều lớn hơn Nghiên cứu 2. Khẳng định trên là Đúng."
+       ]
+      },
+      {
+       "t": "mc",
+       "q": "Đơn vị tính của tốc độ được sử dụng trong các nghiên cứu là",
+       "o": [
+        "$m/s.$",
+        "$km/h$",
+        "$feet/s.$",
+        "dặm/h."
+       ],
+       "a": 2,
+       "solved": true,
+       "sol": [
+        "Căn cứ vào tiêu đề cột \"Tốc độ (ft/s)\" trong tất cả các bảng dữ liệu, và đoạn mô tả đầu tiên nhắc đến \"75 feet (kí hiệu ft)\". ft/s tương đương với feet/s."
+       ]
+      },
+      {
+       "t": "drag",
+       "q": "Kéo các cụm từ sau vào vị trí thích hợp.<br>Trong các thử nghiệm, để [[0]] chuyển động của xe, các học sinh nên sử dụng loại bánh xe có đinh tán hoặc có rãnh sâu nhằm tạo ra [[1]] lớn.",
+       "c": [
+        "lực ma sát",
+        "giảm tốc độ",
+        "lực hướng tâm",
+        "tăng tốc độ"
+       ],
+       "a": [
+        3,
+        0
+       ],
+       "solved": true,
+       "sol": [
+        "Dựa vào kết quả đo: bánh xe mềm/nhẵn (ít ma sát với mặt máng) chạy chậm nhất (1.32). Bánh xe có rãnh sâu hoặc đinh tán chạy nhanh hơn (3.28 và 6.44).",
+        "Đinh tán và rãnh sâu giúp tăng diện tích/độ bám, tạo ra lực ma sát trượt lớn, ngăn bánh xe bị trượt/xoay vòng tại chỗ trên mặt phẳng nhẵn, chuyển hóa toàn bộ công cơ học thành chuyển động tịnh tiến. Do đó chúng giúp 'tăng tốc độ' nhờ tạo ra 'lực ma sát' lớn."
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

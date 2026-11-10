@@ -5,6 +5,7 @@
     { "id": "de03", "title": "TSA 3", "date": "4/11/2026", "parts": 3 },
     { "id": "buoi1", "title": "Buổi 1", "date": "5/11/2026", "parts": 3 },
     { "id": "buoi2", "title": "Buổi 2", "date": "7/11/2026", "parts": 3 },
+    { "id": "buoi3", "title": "Buổi 3", "date": "10/11/2026", "parts": 3 },
     { "id": "hocmai03", "title": "HOCMAI 03", "date": "7/11/2026", "parts": 3 },
     { "id": "hocmai04", "title": "HOCMAI 04", "date": "7/11/2026", "parts": 3 },
     { "id": "hocmai05", "title": "HOCMAI 05", "date": "7/11/2026", "parts": 3 },

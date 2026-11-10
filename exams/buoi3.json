@@ -1,175 +1,99 @@
 {
-  "title": "Đề Ôn Tập Trọng Tâm Tổ Hợp & Nhị Thức Newton",
+  "title": "Đề Tổng Hợp Phương Pháp Đếm & Nhị Thức Newton",
   "minutes": 30,
   "questions": [
     {
       "t": "mc",
-      "q": "Có 3 học sinh nam và 3 học sinh nữ xếp thành một hàng ngang. Hỏi có bao nhiêu cách xếp chỗ sao cho 3 bạn nữ luôn đứng cạnh nhau?",
+      "q": "Một hộp đựng 5 viên bi trắng, 6 viên bi đỏ và 7 viên bi vàng (các viên bi chỉ khác nhau về màu sắc). Có bao nhiêu cách chọn ra 3 viên bi từ hộp đó sao cho có đủ cả ba màu?",
       "o": [
-        "144",
-        "720",
-        "72",
-        "48"
+        "18",
+        "816",
+        "210",
+        "120"
       ],
-      "a": 0,
+      "a": 2,
       "sol": [
-        "Coi 3 học sinh nữ là một khối thống nhất (một cụm).",
-        "Số cách đổi chỗ 3 học sinh nữ trong cụm này là $3! = 6$ cách.",
-        "Cụm 3 học sinh nữ cùng với 3 học sinh nam tạo thành 4 đối tượng. Số cách xếp 4 đối tượng này thành hàng ngang là $4! = 24$ cách.",
-        "Theo quy tắc nhân, tổng số cách xếp thỏa mãn yêu cầu bài toán là: $6 \\times 24 = 144$ cách."
+        "Để chọn được 3 viên bi có đủ cả ba màu, ta phải chọn 1 viên bi trắng, 1 viên bi đỏ và 1 viên bi vàng.",
+        "Số cách chọn 1 viên bi trắng từ 5 viên là: $C_5^1 = 5$ cách.",
+        "Số cách chọn 1 viên bi đỏ từ 6 viên là: $C_6^1 = 6$ cách.",
+        "Số cách chọn 1 viên bi vàng từ 7 viên là: $C_7^1 = 7$ cách.",
+        "Theo quy tắc nhân, số cách chọn thỏa mãn là: $5 \\times 6 \\times 7 = 210$ cách."
       ]
     },
     {
       "t": "mc",
-      "q": "Một lưới ô vuông có kích thước $5 \\times 6$ (5 ô hàng dọc và 6 ô hàng ngang). Một người di chuyển trên các cạnh của các ô vuông từ góc dưới cùng bên trái lên góc trên cùng bên phải sao cho luôn đi theo hướng sang phải hoặc lên trên. Số đường đi ngắn nhất có thể là:",
+      "q": "Từ các chữ số $0, 1, 2, 3, 4, 5, 6$ lập được bao nhiêu số tự nhiên chẵn gồm 5 chữ số đôi một khác nhau?",
       "o": [
-        "462",
-        "330",
-        "252",
-        "924"
+        "1260",
+        "1200",
+        "2520",
+        "900"
       ],
       "a": 0,
       "sol": [
-        "Để đi từ góc dưới cùng bên trái lên góc trên cùng bên phải, người đó phải thực hiện tổng cộng $5$ bước đi lên và $6$ bước sang phải.",
-        "Tổng số bước di chuyển là: $5 + 6 = 11$ bước.",
-        "Mỗi đường đi tương ứng với việc chọn ra $5$ bước đi lên trong tổng số $11$ bước di chuyển (các bước còn lại bắt buộc là sang phải).",
-        "Vậy số đường đi ngắn nhất là: $C_{11}^5 = 462$ cách."
+        "Gọi số cần lập có dạng $\\overline{abcde}$ ($a \\neq 0$). Vì số chẵn nên $e \\in \\{0, 2, 4, 6\\}$.",
+        "Trường hợp 1: $e = 0$. Chữ số $a$ có 6 cách chọn, $b$ có 5, $c$ có 4, $d$ có 3. Có $6 \\times 5 \\times 4 \\times 3 = 360$ số.",
+        "Trường hợp 2: $e \\in \\{2, 4, 6\\}$ (có 3 cách chọn). Chữ số $a \\neq 0$ và $a \\neq e$ nên có 5 cách chọn. 3 vị trí $b, c, d$ chọn từ 5 chữ số còn lại có $A_5^3 = 60$ cách. Số các số lập được là: $3 \\times 5 \\times 60 = 900$ số.",
+        "Tổng số các số chẵn thỏa mãn là: $360 + 900 = 1260$ số."
       ]
     },
     {
       "t": "mc",
-      "q": "Có 7 học sinh nam và 4 học sinh nữ xếp thành một hàng ngang. Có bao nhiêu cách xếp sao cho không có 2 học sinh nữ nào đứng cạnh nhau?",
+      "q": "Có bao nhiêu số tự nhiên gồm 3 chữ số đôi một khác nhau, biết rằng tổng của ba chữ số này bằng 9?",
       "o": [
-        "$8467200$",
-        "$604800$",
-        "$35280$",
-        "$40320$"
+        "34",
+        "42",
+        "36",
+        "28"
       ],
       "a": 0,
       "sol": [
-        "Đầu tiên, xếp 7 học sinh nam thành một hàng ngang, có $7! = 5040$ cách.",
-        "7 học sinh nam này tạo ra $8$ vách ngăn (gồm 6 khoảng trống giữa các bạn nam và 2 vị trí ở hai đầu).",
-        "Để không có 2 học sinh nữ nào đứng cạnh nhau, ta xếp 4 học sinh nữ vào $4$ trong $8$ vách ngăn đó.",
-        "Số cách xếp 4 học sinh nữ vào 8 vách ngăn (có phân biệt thứ tự) là: $A_8^4 = 1680$ cách.",
-        "Theo quy tắc nhân, tổng số cách xếp là: $5040 \\times 1680 = 8467200$ cách."
-      ]
-    },
-    {
-      "t": "mc",
-      "q": "Có bao nhiêu bộ số nguyên dương $(x, y, z)$ thỏa mãn phương trình $x + y + z = 15$?",
-      "o": [
-        "91",
-        "105",
-        "120",
-        "78"
-      ],
-      "a": 0,
-      "sol": [
-        "Đây là bài toán chia kẹo Euler: tìm số nghiệm nguyên dương của phương trình $x_1 + x_2 + ... + x_k = n$.",
-        "Số nghiệm nguyên dương được tính bằng công thức $C_{n-1}^{k-1}$.",
-        "Áp dụng vào bài toán với $n = 15$ và $k = 3$, ta có số nghiệm là: $C_{15-1}^{3-1} = C_{14}^2$.",
-        "Tính toán: $C_{14}^2 = \\frac{14 \\times 13}{2} = 91$. Vậy có 91 bộ số thỏa mãn."
-      ]
-    },
-    {
-      "t": "mc",
-      "q": "Cho đa giác đều có 24 đỉnh. Số tam giác vuông có 3 đỉnh là 3 đỉnh của đa giác đã cho là:",
-      "o": [
-        "264",
-        "276",
-        "132",
-        "288"
-      ],
-      "a": 0,
-      "sol": [
-        "Đa giác đều 24 đỉnh nội tiếp một đường tròn. Một tam giác có 3 đỉnh thuộc đa giác là tam giác vuông khi và chỉ khi có 1 cạnh là đường kính của đường tròn ngoại tiếp.",
-        "Đa giác đều 24 đỉnh có $24 : 2 = 12$ đường chéo đi qua tâm (đóng vai trò là đường kính).",
-        "Với mỗi đường kính chọn ra, ta cần chọn 1 đỉnh nữa trong số $24 - 2 = 22$ đỉnh còn lại để tạo thành một tam giác vuông.",
-        "Vậy số tam giác vuông tạo thành là: $12 \\times 22 = 264$ tam giác."
-      ]
-    },
-    {
-      "t": "mc",
-      "q": "Tìm hệ số của $x^8$ trong khai triển nhị thức $(x^2 - \\frac{2}{x})^7$ (với $x \\neq 0$).",
-      "o": [
-        "84",
-        "-84",
-        "280",
-        "-280"
-      ],
-      "a": 0,
-      "sol": [
-        "Số hạng tổng quát trong khai triển là: $T_{k+1} = C_7^k \\cdot (x^2)^{7-k} \\cdot (-\\frac{2}{x})^k$ (với $0 \\le k \\le 7, k \\in \\mathbb{Z}$).",
-        "Ta có: $T_{k+1} = C_7^k \\cdot x^{14-2k} \\cdot (-2)^k \\cdot x^{-k} = C_7^k \\cdot (-2)^k \\cdot x^{14-3k}$.",
-        "Để tìm hệ số của $x^8$, ta cho số mũ của $x$ bằng 8: $14 - 3k = 8 \\Leftrightarrow 3k = 6 \\Leftrightarrow k = 2$.",
-        "Hệ số cần tìm là: $C_7^2 \\cdot (-2)^2 = 21 \\times 4 = 84$."
+        "Các bộ 3 chữ số phân biệt có tổng bằng 9 lấy từ tập $\\{0,1,...,9\\}$ là: $(0,1,8)$, $(0,2,7)$, $(0,3,6)$, $(0,4,5)$, $(1,2,6)$, $(1,3,5)$, $(2,3,4)$.",
+        "Nhóm 1: Gồm 4 bộ chứa số 0. Mỗi bộ tạo được $2 \\times 2 \\times 1 = 4$ số (vì chữ số hàng trăm phải khác 0). Nhóm này tạo ra $4 \\times 4 = 16$ số.",
+        "Nhóm 2: Gồm 3 bộ không chứa số 0. Mỗi bộ tạo được $3! = 6$ số. Nhóm này tạo ra $3 \\times 6 = 18$ số.",
+        "Tổng cộng lập được: $16 + 18 = 34$ số thỏa mãn."
       ]
     },
     {
       "t": "fill",
-      "q": "Tính tổng $S = C_{2024}^0 + 2C_{2024}^1 + 2^2C_{2024}^2 + ... + 2^{2024}C_{2024}^{2024}$.\\n(Điền kết quả dưới dạng lũy thừa cơ số 3, ví dụ: 3^{10}): [[0]]",
+      "q": "Có bao nhiêu cách sắp xếp các chữ cái của từ \"TOANHOC\" thành một hàng ngang sao cho hai chữ cái \"O\" không đứng cạnh nhau? [[0]]",
       "a": [
-        "3^{2024}"
+        1800
       ],
       "sol": [
-        "Xét khai triển nhị thức Newton: $(1 + x)^n = C_n^0 + C_n^1 x + C_n^2 x^2 + ... + C_n^n x^n$.",
-        "Thay $x = 2$ và $n = 2024$ vào hai vế của khai triển trên, ta nhận được:",
-        "$(1 + 2)^{2024} = C_{2024}^0 + C_{2024}^1 \\cdot 2 + C_{2024}^2 \\cdot 2^2 + ... + C_{2024}^{2024} \\cdot 2^{2024}$.",
-        "Vế phải chính là tổng $S$. Do đó, $S = 3^{2024}$."
+        "Từ \"TOANHOC\" có 7 chữ cái, trong đó có 2 chữ O giống nhau và 5 chữ cái khác nhau (T, A, N, H, C).",
+        "Đầu tiên, xếp 5 chữ cái (T, A, N, H, C) thành hàng ngang, số cách xếp là: $5! = 120$ cách.",
+        "5 chữ cái này tạo ra 6 khoảng trống (khe hoặc vách ngăn).",
+        "Để hai chữ O không đứng cạnh nhau, ta xếp 2 chữ O vào 2 trong 6 khoảng trống đó. Số cách xếp là tổ hợp chập 2 của 6 (vì 2 chữ O giống nhau): $C_6^2 = 15$ cách.",
+        "Tổng số cách sắp xếp là: $120 \\times 15 = 1800$ cách."
       ]
     },
     {
-      "t": "tf",
-      "q": "Xét khai triển nhị thức $(1 + 3x)^n = a_0 + a_1 x + a_2 x^2 + ... + a_n x^n$. Biết tổng các hệ số của khai triển $a_0 + a_1 + ... + a_n = 1048576$. Các mệnh đề sau đây đúng hay sai?",
-      "s": [
-        "Giá trị của $n$ là $10$.",
-        "Số hạng không chứa $x$ trong khai triển có giá trị bằng $1$.",
-        "Hệ số có giá trị lớn nhất trong khai triển trên là $a_7$.",
-        "Tổng các hệ số bậc lẻ $a_1 + a_3 + a_5 + ... = 524288$."
+      "t": "mc",
+      "q": "Có 10 học sinh gồm 6 nam và 4 nữ xếp thành một hàng ngang. Số cách xếp sao cho không có 2 học sinh nữ nào đứng cạnh nhau là:",
+      "o": [
+        "$604800$",
+        "$352800$",
+        "$2419200$",
+        "$1209600$"
       ],
-      "a": [
-        1,
-        1,
-        0,
-        0
-      ],
+      "a": 0,
       "sol": [
-        "**Ý 1:** Thay $x = 1$ vào khai triển, ta được tổng các hệ số là $(1 + 3)^n = 4^n$. Theo giả thiết, $4^n = 1048576 \\Leftrightarrow 4^n = 4^{10} \\Rightarrow n = 10$. Vậy ý 1 ĐÚNG.",
-        "**Ý 2:** Số hạng không chứa $x$ ứng với $k=0$, đó là $a_0 = C_{10}^0 \\cdot (3x)^0 = 1$. Vậy ý 2 ĐÚNG.",
-        "**Ý 3:** Số hạng tổng quát là $a_k = C_{10}^k 3^k$. Xét bất phương trình $a_k \\ge a_{k-1} \\Leftrightarrow C_{10}^k 3^k \\ge C_{10}^{k-1} 3^{k-1} \\Leftrightarrow \\frac{10!}{k!(10-k)!} \\cdot 3 \\ge \\frac{10!}{(k-1)!(11-k)!} \\Leftrightarrow \\frac{3}{k} \\ge \\frac{1}{11-k} \\Leftrightarrow 33 - 3k \\ge k \\Leftrightarrow k \\le 8.25$. Do đó $a_8$ là hệ số lớn nhất chứ không phải $a_7$. Vậy ý 3 SAI.",
-        "**Ý 4:** Thay $x = 1 \\Rightarrow a_0 + a_1 + a_2 + ... = 4^{10}$. Thay $x = -1 \\Rightarrow a_0 - a_1 + a_2 - ... = (-2)^{10} = 1024$. Lấy hai phương trình trừ cho nhau ta được $2(a_1 + a_3 + a_5 + ...) = 4^{10} - 1024 = 1047552 \\Rightarrow a_1 + a_3 + a_5 + ... = 523776 \\neq 524288$. Vậy ý 4 SAI."
+        "Sử dụng kỹ thuật vách ngăn:",
+        "Bước 1: Xếp 6 học sinh nam thành một hàng ngang, có $6! = 720$ cách.",
+        "Bước 2: 6 học sinh nam tạo ra 7 vị trí trống (bao gồm 5 khoảng giữa và 2 đầu). Để các học sinh nữ không đứng cạnh nhau, ta xếp 4 nữ vào 4 trong 7 vị trí trống đó.",
+        "Số cách xếp 4 nữ vào 7 vị trí (có quan tâm thứ tự) là: $A_7^4 = 840$ cách.",
+        "Tổng số cách xếp là: $720 \\times 840 = 604800$ cách."
       ]
     },
     {
       "t": "mcm",
-      "q": "Từ các chữ số thuộc tập hợp $E = \\{0, 1, 2, 3, 4, 5, 6\\}$, lập các số tự nhiên có 4 chữ số đôi một khác nhau. Các khẳng định nào sau đây là đúng?",
+      "q": "Một người di chuyển trên lưới ô vuông hình chữ nhật kích thước $4 \\times 5$ (4 ô theo chiều ngang, 5 ô theo chiều dọc). Điểm xuất phát là góc dưới cùng bên trái (gọi là A), điểm đích là góc trên cùng bên phải (gọi là B). Người đó chỉ được đi theo cạnh các ô vuông sang phải hoặc lên trên. Biết $C$ là một đỉnh của ô vuông cách A $2$ đơn vị theo chiều ngang và $3$ đơn vị theo chiều dọc. Các mệnh đề nào sau đây là đúng?",
       "o": [
-        "Có $720$ số tự nhiên có 4 chữ số khác nhau được lập thành.",
-        "Số các số tự nhiên chẵn gồm 4 chữ số khác nhau là $420$.",
-        "Số các số tự nhiên lẻ gồm 4 chữ số khác nhau là $400$.",
-        "Tổng số các số chẵn và số lẻ lập được bằng đúng tổng số các số có 4 chữ số lập được."
-      ],
-      "a": [
-        0,
-        1,
-        3
-      ],
-      "sol": [
-        "Gọi số cần lập có dạng $\\overline{abcd}$ ($a \\neq 0$).",
-        "**Xét A:** Chọn $a$ có 6 cách ($a \\neq 0$). Chọn $b, c, d$ từ 6 chữ số còn lại có $A_6^3 = 120$ cách. Tổng cộng lập được: $6 \\times 120 = 720$ số. Khẳng định A ĐÚNG.",
-        "**Xét B (Số chẵn):** $d \\in \\{0, 2, 4, 6\\}$.<br>- TH1: $d = 0$ (1 cách). Chọn $a, b, c$ từ 6 chữ số còn lại có $A_6^3 = 120$ cách. Cố $120$ số.<br>- TH2: $d \\in \\{2, 4, 6\\}$ (3 cách). Chọn $a \\neq 0$ và $a \\neq d$ có 5 cách. Chọn $b, c$ từ 5 chữ số còn lại có $A_5^2 = 20$ cách. Có $3 \\times 5 \\times 20 = 300$ số.<br>Tổng số chẵn là $120 + 300 = 420$ số. Khẳng định B ĐÚNG.",
-        "**Xét C (Số lẻ):** $d \\in \\{1, 3, 5\\}$ (3 cách). Chọn $a \\neq 0, a \\neq d$ có 5 cách. Chọn $b, c$ có $A_5^2 = 20$ cách. Số các số lẻ là: $3 \\times 5 \\times 20 = 300$ số. Khẳng định C SAI.",
-        "**Xét D:** Tổng số chẵn và lẻ = $420 + 300 = 720$. Số này bằng đúng tổng số các số có 4 chữ số. Khẳng định D ĐÚNG."
-      ]
-    },
-    {
-      "t": "drag",
-      "q": "Kéo thả các công thức của đại số tổ hợp vào ô trống tương ứng:\\nSố hoán vị của $n$ phần tử là [[0]]. Số chỉnh hợp chập $k$ của $n$ phần tử là [[1]]. Số tổ hợp chập $k$ của $n$ phần tử là [[2]].",
-      "c": [
-        "$n!$",
-        "$\\frac{n!}{(n-k)!}$",
-        "$\\frac{n!}{(n-k)!k!}$",
-        "$n^k$"
+        "Tổng số bước di chuyển từ A đến B luôn là $9$ bước.",
+        "Số đường đi ngắn nhất từ A đến B là $126$ cách.",
+        "Số đường đi từ A đến B bắt buộc đi qua điểm C là $60$ cách.",
+        "Số đường đi từ A đến B không đi qua điểm C là $56$ cách."
       ],
       "a": [
         0,
@@ -177,10 +101,262 @@
         2
       ],
       "sol": [
-        "Đây là các công thức đếm cơ bản:",
-        "- Số hoán vị của $n$ phần tử: $P_n = n!$.",
-        "- Số chỉnh hợp chập $k$ của $n$ phần tử: $A_n^k = \\frac{n!}{(n-k)!}$.",
-        "- Số tổ hợp chập $k$ của $n$ phần tử: $C_n^k = \\frac{n!}{(n-k)!k!}$."
+        "Giả sử điểm A có tọa độ $(0;0)$ thì B có tọa độ $(4;5)$ và C có tọa độ $(2;3)$.",
+        "**Ý A:** Đi từ A đến B cần di chuyển $4$ bước sang phải và $5$ bước lên trên. Tổng số bước là $4 + 5 = 9$. (Đúng)",
+        "**Ý B:** Số đường đi ngắn nhất từ A đến B là chọn $4$ bước sang phải trong $9$ bước tổng cộng, tức là $C_9^4 = 126$ cách. (Đúng)",
+        "**Ý C:** Đường đi từ A đến C tốn $2+3=5$ bước, số cách là $C_5^2 = 10$. Từ C đến B (cần $2$ bước ngang, $2$ bước dọc) tốn $4$ bước, số cách là $C_4^2 = 6$. Số cách đi qua C là $10 \\times 6 = 60$ cách. (Đúng)",
+        "**Ý D:** Số đường đi không qua C bằng tổng số đường trừ đi số đường qua C: $126 - 60 = 66$ cách. (Sai)"
+      ]
+    },
+    {
+      "t": "fill",
+      "q": "Có bao nhiêu bộ số nguyên dương $(x, y, z, t)$ thỏa mãn phương trình $x + y + z + t = 20$? [[0]]",
+      "a": [
+        969
+      ],
+      "sol": [
+        "Đây là bài toán chia kẹo Euler: Tìm số nghiệm nguyên dương của phương trình $x_1 + x_2 + ... + x_k = n$.",
+        "Công thức tính số nghiệm nguyên dương là $C_{n-1}^{k-1}$.",
+        "Áp dụng vào phương trình với $n = 20$ và $k = 4$, ta có số bộ nghiệm là: $C_{20-1}^{4-1} = C_{19}^3$.",
+        "Tính toán: $C_{19}^3 = \\frac{19 \\times 18 \\times 17}{3 \\times 2 \\times 1} = 969$ bộ."
+      ]
+    },
+    {
+      "t": "mc",
+      "q": "Cô giáo có 15 chiếc kẹo giống hệt nhau muốn chia cho 4 em bé. Hỏi có bao nhiêu cách chia sao cho mỗi em bé nhận được ít nhất 2 chiếc kẹo?",
+      "o": [
+        "120",
+        "165",
+        "84",
+        "286"
+      ],
+      "a": 0,
+      "sol": [
+        "Để đảm bảo mỗi em bé có ít nhất 2 chiếc kẹo, cô giáo phát trước cho mỗi em 1 chiếc kẹo. Số kẹo đã phát là $4 \\times 1 = 4$ chiếc.",
+        "Số kẹo còn lại là $15 - 4 = 11$ chiếc. Bây giờ, bài toán trở thành chia 11 chiếc kẹo cho 4 em bé sao cho mỗi em nhận được ít nhất 1 chiếc kẹo.",
+        "Áp dụng bài toán chia kẹo Euler cho nghiệm nguyên dương: chia $n=11$ kẹo cho $k=4$ người.",
+        "Số cách chia là $C_{11-1}^{4-1} = C_{10}^3 = \\frac{10 \\times 9 \\times 8}{6} = 120$ cách."
+      ]
+    },
+    {
+      "t": "mc",
+      "q": "Cho đa giác đều có 12 đỉnh. Số tứ giác được tạo thành có 4 đỉnh là đỉnh của đa giác đã cho là:",
+      "o": [
+        "495",
+        "11880",
+        "792",
+        "490"
+      ],
+      "a": 0,
+      "sol": [
+        "Mỗi tứ giác có các đỉnh là đỉnh của đa giác được tạo thành bằng cách chọn ngẫu nhiên 4 đỉnh từ 12 đỉnh của đa giác đó.",
+        "Vì thứ tự các đỉnh không quan trọng đối với việc hình thành tứ giác, ta dùng tổ hợp.",
+        "Số tứ giác tạo thành là: $C_{12}^4 = \\frac{12 \\times 11 \\times 10 \\times 9}{4 \\times 3 \\times 2 \\times 1} = 495$ tứ giác."
+      ]
+    },
+    {
+      "t": "mc",
+      "q": "Cho đa giác đều 12 đỉnh. Có bao nhiêu tam giác có các đỉnh là đỉnh của đa giác nhưng KHÔNG có cạnh nào chung với đa giác đó?",
+      "o": [
+        "112",
+        "96",
+        "12",
+        "220"
+      ],
+      "a": 0,
+      "sol": [
+        "Tổng số tam giác tạo thành từ 12 đỉnh của đa giác là: $C_{12}^3 = 220$ tam giác.",
+        "Số tam giác có đúng 1 cạnh chung với đa giác là $n(n-4) = 12 \\times 8 = 96$ tam giác.",
+        "Số tam giác có đúng 2 cạnh chung với đa giác (chính là 3 đỉnh kề nhau liên tiếp) là $n = 12$ tam giác.",
+        "Số tam giác không có cạnh nào chung với đa giác bằng tổng số tam giác trừ đi các tam giác có cạnh chung:",
+        "$220 - 96 - 12 = 112$ tam giác."
+      ]
+    },
+    {
+      "t": "tf",
+      "q": "Cho đa giác đều $(H)$ có 15 đỉnh. Xét các tam giác được tạo thành từ 3 đỉnh của $(H)$. Các mệnh đề sau đúng hay sai?",
+      "s": [
+        "Có đúng 15 tam giác đều được tạo thành từ các đỉnh của $(H)$.",
+        "Không có bất kỳ tam giác vuông nào được tạo thành từ các đỉnh của $(H)$.",
+        "Số tam giác tù lấy từ 3 đỉnh của $(H)$ là 315 tam giác.",
+        "Số tam giác nhọn được tạo ra là 140 tam giác."
+      ],
+      "a": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "sol": [
+        "**Ý 1:** Đa giác đều 15 đỉnh, số tam giác đều là $15 / 3 = 5$ (tam giác). Mệnh đề SAI.",
+        "**Ý 2:** Đa giác đều có lẻ đỉnh (15 đỉnh) thì không có bất kỳ đường chéo nào đi qua tâm, do đó không tạo được tam giác vuông nào. Mệnh đề ĐÚNG.",
+        "**Ý 3:** Số tam giác tù trong đa giác đều $n$ đỉnh (với $n$ lẻ) được tính bằng $n \\times C_{\\frac{n-1}{2}}^2$. Áp dụng với $n=15$: Số tam giác tù = $15 \\times C_7^2 = 15 \\times 21 = 315$ (tam giác). Mệnh đề ĐÚNG.",
+        "**Ý 4:** Tổng số tam giác là $C_{15}^3 = 455$. Số tam giác nhọn = Tổng số tam giác - Số tam giác vuông - Số tam giác tù = $455 - 0 - 315 = 140$ (tam giác). Mệnh đề ĐÚNG."
+      ]
+    },
+    {
+      "t": "drag",
+      "q": "Kéo thả các công thức phù hợp vào chỗ trống (với $n$ là số đỉnh của đa giác lồi, $n \\ge 5$):\\nSố đường chéo của đa giác: [[0]].\\nSố tam giác tạo bởi các đỉnh có đúng hai cạnh chung với đa giác: [[1]].\\nSố tam giác tạo bởi các đỉnh có đúng một cạnh chung với đa giác: [[2]].",
+      "c": [
+        "$C_n^2 - n$",
+        "$n$",
+        "$n(n-4)$",
+        "$C_n^3 - n$"
+      ],
+      "a": [
+        0,
+        1,
+        2
+      ],
+      "sol": [
+        "Đối với đa giác lồi $n$ đỉnh ($n \\ge 5$):",
+        "- Số đường chéo được tạo bởi tổ hợp chập 2 của $n$ đỉnh trừ đi số cạnh của đa giác: $C_n^2 - n$.",
+        "- Số tam giác có đúng hai cạnh chung với đa giác tương ứng với 3 đỉnh liên tiếp. Có đúng $n$ bộ 3 đỉnh liên tiếp như vậy.",
+        "- Số tam giác có đúng một cạnh chung với đa giác: Chọn 1 cạnh có $n$ cách. Để tạo tam giác chỉ có 1 cạnh chung, đỉnh thứ 3 không được kề với 2 đầu mút của cạnh đó. Ta có $(n-4)$ cách chọn đỉnh thứ ba. Suy ra có $n(n-4)$ tam giác."
+      ]
+    },
+    {
+      "t": "mcm",
+      "q": "Xét khai triển biểu thức $(1 + 2x)^{10} = a_0 + a_1 x + a_2 x^2 + ... + a_{10} x^{10}$. Khẳng định nào sau đây là đúng?",
+      "o": [
+        "Giá trị của tổng $S = C_{10}^0 + 2 C_{10}^1 + 2^2 C_{10}^2 + ... + 2^{10} C_{10}^{10}$ bằng $3^{10}$.",
+        "Tổng các hệ số $a_0 + a_1 + a_2 + ... + a_{10}$ bằng $3^{10}$.",
+        "Hệ số $a_1$ bằng $10$.",
+        "Hệ số tự do của khai triển là $1$."
+      ],
+      "a": [
+        0,
+        1,
+        3
+      ],
+      "sol": [
+        "Ta có $(1+2x)^{10} = C_{10}^0 + C_{10}^1(2x) + C_{10}^2(2x)^2 + ... + C_{10}^{10}(2x)^{10}$.",
+        "Hệ số tổng quát $a_k = C_{10}^k 2^k$.",
+        "**Ý A & B:** Tổng các hệ số của khai triển nhận được khi thay $x=1$, ta có $a_0 + a_1 + ... + a_{10} = (1 + 2 \\times 1)^{10} = 3^{10}$. Khẳng định A, B ĐÚNG.",
+        "**Ý C:** Hệ số $a_1 = C_{10}^1 2^1 = 10 \\times 2 = 20$. Khẳng định C SAI.",
+        "**Ý D:** Hệ số tự do $a_0 = C_{10}^0 2^0 = 1$. Khẳng định D ĐÚNG."
+      ]
+    },
+    {
+      "t": "tf",
+      "q": "Xét khai triển nhị thức Newton của $(x - \\frac{2}{x^2})^{15}$ (với $x \\neq 0$). Các mệnh đề sau đúng hay sai?",
+      "s": [
+        "Khai triển trên có tất cả 16 số hạng.",
+        "Số hạng không chứa $x$ trong khai triển là số hạng thứ 6.",
+        "Hệ số của số hạng chứa $x^3$ là $-1365$.",
+        "Tổng tất cả các hệ số trong khai triển này bằng $-1$."
+      ],
+      "a": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "sol": [
+        "Số hạng tổng quát: $T_{k+1} = C_{15}^k x^{15-k} \\cdot (-\\frac{2}{x^2})^k = C_{15}^k (-2)^k x^{15-3k}$ với $0 \\le k \\le 15$.",
+        "**Ý 1:** Khai triển lũy thừa bậc $n=15$ sẽ có $n+1 = 16$ số hạng. ĐÚNG.",
+        "**Ý 2:** Số hạng không chứa $x$ thỏa mãn $15 - 3k = 0 \\Leftrightarrow k = 5$. Đây là số hạng $T_{5+1} = T_6$ (số hạng thứ 6). ĐÚNG.",
+        "**Ý 3:** Để tìm số hạng chứa $x^3$, ta giải $15 - 3k = 3 \\Leftrightarrow 3k = 12 \\Leftrightarrow k = 4$. Hệ số là $C_{15}^4 (-2)^4 = 1365 \\times 16 = 21840$. SAI.",
+        "**Ý 4:** Tổng các hệ số thu được bằng cách thay $x=1$ vào đa thức ban đầu: $(1 - \\frac{2}{1})^{15} = (-1)^{15} = -1$. ĐÚNG."
+      ]
+    },
+    {
+      "t": "fill",
+      "q": "Biết rằng tổng $C_n^1 + C_n^2 + ... + C_n^n = 4095$. Tìm hệ số của số hạng chứa $x^6$ trong khai triển của $(2x^3 - \\frac{1}{x^2})^n$. [[0]]",
+      "a": [
+        59136
+      ],
+      "sol": [
+        "Từ khai triển $(1+1)^n = C_n^0 + C_n^1 + ... + C_n^n = 2^n$.",
+        "Suy ra $C_n^1 + C_n^2 + ... + C_n^n = 2^n - 1$.",
+        "Theo giả thiết: $2^n - 1 = 4095 \\Rightarrow 2^n = 4096 \\Rightarrow n = 12$.",
+        "Khai triển nhị thức $(2x^3 - x^{-2})^{12}$ có số hạng tổng quát là: $T_{k+1} = C_{12}^k (2x^3)^{12-k} (-x^{-2})^k = C_{12}^k 2^{12-k} (-1)^k x^{36-5k}$.",
+        "Để có số hạng chứa $x^6$, ta cho số mũ của $x$ bằng 6: $36 - 5k = 6 \\Rightarrow 5k = 30 \\Rightarrow k = 6$.",
+        "Hệ số cần tìm là: $C_{12}^6 \\cdot 2^6 \\cdot (-1)^6 = 924 \\times 64 \\times 1 = 59136$."
+      ]
+    },
+    {
+      "t": "fill",
+      "q": "Biết hệ số của số hạng lớn nhất trong khai triển $(1 + 3x)^{20}$ là $a_k = C_{20}^k 3^k$. Tìm giá trị của $k$. [[0]]",
+      "a": [
+        15
+      ],
+      "sol": [
+        "Hệ số thứ $k$ là $a_k = C_{20}^k 3^k$. Để $a_k$ là hệ số lớn nhất, nó phải thỏa mãn điều kiện $a_k \\ge a_{k-1}$ và $a_k \\ge a_{k+1}$.",
+        "Xét bất phương trình $a_k \\ge a_{k-1}$:",
+        "$C_{20}^k 3^k \\ge C_{20}^{k-1} 3^{k-1} \\Leftrightarrow \\frac{20!}{k!(20-k)!} \\times 3 \\ge \\frac{20!}{(k-1)!(21-k)!}$",
+        "$\\Leftrightarrow \\frac{3}{k} \\ge \\frac{1}{21-k} \\Leftrightarrow 63 - 3k \\ge k \\Leftrightarrow 4k \\le 63 \\Leftrightarrow k \\le 15.75$.",
+        "Xét tương tự với $a_k \\ge a_{k+1}$, ta sẽ có $k \\ge 14.75$.",
+        "Vì $k$ là số tự nhiên, suy ra $k = 15$. Vậy hệ số lớn nhất đạt được khi $k=15$."
+      ]
+    },
+    {
+      "t": "mc",
+      "q": "Có bao nhiêu số hạng hữu tỉ trong khai triển của nhị thức $(\\sqrt[3]{2} + \\sqrt[4]{3})^{100}$?",
+      "o": [
+        "9",
+        "8",
+        "10",
+        "12"
+      ],
+      "a": 0,
+      "sol": [
+        "Số hạng tổng quát: $T_{k+1} = C_{100}^k (\\sqrt[3]{2})^{100-k} (\\sqrt[4]{3})^k = C_{100}^k 2^{\\frac{100-k}{3}} 3^{\\frac{k}{4}}$.",
+        "Để số hạng là số hữu tỉ, các số mũ phải là số nguyên:",
+        "Điều kiện 1: $\\frac{100-k}{3} \\in \\mathbb{Z} \\Rightarrow 100-k \\vdots 3 \\Rightarrow k \\equiv 1 \\pmod 3$.",
+        "Điều kiện 2: $\\frac{k}{4} \\in \\mathbb{Z} \\Rightarrow k \\vdots 4 \\Rightarrow k = 4m$.",
+        "Thế $k=4m$ vào điều kiện 1: $4m \\equiv 1 \\pmod 3 \\Rightarrow m \\equiv 1 \\pmod 3 \\Rightarrow m = 3t + 1$.",
+        "Suy ra $k = 4(3t+1) = 12t + 4$.",
+        "Do $0 \\le k \\le 100$ nên $0 \\le 12t+4 \\le 100 \\Rightarrow -\\frac{4}{12} \\le t \\le \\frac{96}{12} \\Rightarrow -0.33 \\le t \\le 8$.",
+        "Vì $t \\in \\mathbb{Z}$ nên $t \\in \\{0, 1, 2, ..., 8\\}$. Có tất cả 9 giá trị của $t$, tương ứng với 9 số hạng hữu tỉ."
+      ]
+    },
+    {
+      "t": "mc",
+      "q": "Tổng các hệ số của đa thức $P(x) = (1 - 3x + 2x^2)^{10}$ là:",
+      "o": [
+        "0",
+        "1",
+        "$2^{10}$",
+        "$3^{10}$"
+      ],
+      "a": 0,
+      "sol": [
+        "Giả sử $P(x) = (1 - 3x + 2x^2)^{10} = a_0 + a_1 x + a_2 x^2 + ... + a_{20} x^{20}$.",
+        "Tổng các hệ số của đa thức là $S = a_0 + a_1 + a_2 + ... + a_{20}$.",
+        "Ta có thể tìm tổng các hệ số bằng cách thay $x = 1$ vào đa thức $P(x)$.",
+        "Khi đó $S = P(1) = (1 - 3(1) + 2(1)^2)^{10} = (1 - 3 + 2)^{10} = 0^{10} = 0$."
+      ]
+    },
+    {
+      "t": "mc",
+      "q": "Hệ số không chứa $x$ trong khai triển $(x - \\frac{2}{x^2})^9$ (với $x > 0$) bằng bao nhiêu?",
+      "o": [
+        "-672",
+        "672",
+        "-5376",
+        "84"
+      ],
+      "a": 0,
+      "sol": [
+        "Số hạng tổng quát: $T_{k+1} = C_9^k x^{9-k} (-\\frac{2}{x^2})^k = C_9^k (-2)^k x^{9-3k}$.",
+        "Số hạng không chứa $x$ khi lũy thừa của $x$ bằng 0: $9 - 3k = 0 \\Leftrightarrow k = 3$.",
+        "Hệ số cần tìm là: $C_9^3 (-2)^3 = 84 \\times (-8) = -672$."
+      ]
+    },
+    {
+      "t": "fill",
+      "q": "Cho đa thức $P(x) = (1+x) + (1+x)^2 + ... + (1+x)^{10}$. Tìm hệ số của $x^3$ sau khi khai triển và rút gọn đa thức. [[0]]",
+      "a": [
+        330
+      ],
+      "sol": [
+        "Xét từng số hạng của tổng, hệ số của $x^3$ trong khai triển $(1+x)^k$ là $C_k^3$ (chỉ tồn tại khi $k \\ge 3$).",
+        "Vậy hệ số của $x^3$ trong đa thức $P(x)$ là tổng các hệ số tương ứng từ các khai triển của $(1+x)^3, (1+x)^4, ..., (1+x)^{10}$.",
+        "Hệ số $x^3$ bằng: $S = C_3^3 + C_4^3 + C_5^3 + ... + C_{10}^3$.",
+        "Áp dụng hằng đẳng thức Pascal mở rộng $C_k^m + C_k^{m+1} = C_{k+1}^{m+1}$, ta cộng dần từ trái sang: $C_3^3 + C_4^3 = C_4^4 + C_4^3 = C_5^4$.",
+        "Tổng quát hóa: $\\sum_{i=k}^n C_i^k = C_{n+1}^{k+1}$.",
+        "Nên $S = C_{11}^4 = \\frac{11 \\times 10 \\times 9 \\times 8}{4 \\times 3 \\times 2 \\times 1} = 330$."
       ]
     }
   ]

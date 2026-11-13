@@ -1,0 +1,207 @@
+{
+  "title": "Đề Luyện Tập Xác Suất Số 01",
+  "minutes": 15,
+  "questions": [
+    {
+      "t": "mc",
+      "q": "Một câu lạc bộ học thuật của trường có một nhóm học sinh, trong đó có 10 học sinh đến từ lớp 12A. Sau kì thi học sinh giỏi, câu lạc bộ có 4 học sinh lớp 12A đạt giải. Chọn ngẫu nhiên 1 học sinh trong nhóm học sinh trên. Tính xác suất chọn được học sinh đạt giải, biết rằng học sinh đó thuộc lớp 12A.",
+      "o": [
+        "0,4",
+        "0,5",
+        "0,25",
+        "0,6"
+      ],
+      "a": 0,
+      "solved": true,
+      "sol": [
+        "Gọi $A$ là biến cố 'Học sinh được chọn thuộc lớp 12A', $B$ là biến cố 'Học sinh được chọn đạt giải'.",
+        "Theo bài ra, ta có số học sinh lớp 12A là $n(A) = 10$.",
+        "Số học sinh lớp 12A đạt giải là $n(AB) = 4$.",
+        "Xác suất để chọn được học sinh đạt giải, biết rằng học sinh đó thuộc lớp 12A là xác suất có điều kiện $P(B|A)$.",
+        "Áp dụng công thức: $P(B|A) = \\frac{n(AB)}{n(A)} = \\frac{4}{10} = 0,4$."
+      ]
+    },
+    {
+      "t": "tf",
+      "q": "Một nhà máy thực hiện khảo sát toàn bộ công nhân về chất lượng bữa ăn ca. Kết quả thu được như sau: Phân xưởng A có 40 người đánh giá 'Tốt' và 10 người đánh giá 'Chưa tốt'. Phân xưởng B có 60 người đánh giá 'Tốt' và 30 người đánh giá 'Chưa tốt'. Gặp ngẫu nhiên một công nhân của nhà máy. Xét tính đúng sai của các mệnh đề sau:",
+      "s": [
+        "Xác suất người đó thuộc phân xưởng A là $\\frac{5}{14}$.",
+        "Biết rằng công nhân đánh giá 'Tốt', xác suất để người đó thuộc phân xưởng A là $0,4$.",
+        "Biết rằng công nhân thuộc phân xưởng B, xác suất để người đó đánh giá 'Tốt' là $\\frac{2}{3}$.",
+        "Biết rằng công nhân đánh giá 'Chưa tốt', xác suất để người đó thuộc phân xưởng B là $0,5$."
+      ],
+      "a": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "solved": true,
+      "sol": [
+        "Tổng số công nhân của nhà máy là: $40 + 10 + 60 + 30 = 140$ (người).",
+        "Số công nhân phân xưởng A là 50 người, phân xưởng B là 90 người. Số người đánh giá Tốt là 100 người, Chưa tốt là 40 người.",
+        "Ý 1: Xác suất công nhân thuộc phân xưởng A là $\\frac{50}{140} = \\frac{5}{14}$ $\\Rightarrow$ Đúng.",
+        "Ý 2: $P(\\text{A} | \\text{Tốt}) = \\frac{n(\\text{A} \\cap \\text{Tốt})}{n(\\text{Tốt})} = \\frac{40}{100} = 0,4$ $\\Rightarrow$ Đúng.",
+        "Ý 3: $P(\\text{Tốt} | \\text{B}) = \\frac{n(\\text{Tốt} \\cap \\text{B})}{n(\\text{B})} = \\frac{60}{90} = \\frac{2}{3}$ $\\Rightarrow$ Đúng.",
+        "Ý 4: $P(\\text{B} | \\text{Chưa tốt}) = \\frac{n(\\text{B} \\cap \\text{Chưa tốt})}{n(\\text{Chưa tốt})} = \\frac{30}{40} = 0,75 \\neq 0,5$ $\\Rightarrow$ Sai."
+      ]
+    },
+    {
+      "t": "fill",
+      "q": "Một nhà máy có hai phân xưởng I và II. Phân xưởng I sản xuất 30% số sản phẩm và phân xưởng II sản xuất 70% số sản phẩm. Tỉ lệ sản phẩm bị lỗi của phân xưởng I là 3% và của phân xưởng II là 2%. Kiểm tra ngẫu nhiên 1 sản phẩm của nhà máy. Xác suất để sản phẩm đó bị lỗi là [[0]].",
+      "a": [
+        0.023
+      ],
+      "solved": true,
+      "sol": [
+        "Gọi $A$ là biến cố 'Sản phẩm chọn ra do phân xưởng I sản xuất', $\\Rightarrow P(A) = 0,3$.",
+        "Gọi $\\overline{A}$ là biến cố 'Sản phẩm chọn ra do phân xưởng II sản xuất', $\\Rightarrow P(\\overline{A}) = 0,7$.",
+        "Gọi $B$ là biến cố 'Sản phẩm chọn ra bị lỗi'.",
+        "Theo giả thiết: $P(B|A) = 0,03$ và $P(B|\\overline{A}) = 0,02$.",
+        "Theo công thức xác suất toàn phần: $P(B) = P(A).P(B|A) + P(\\overline{A}).P(B|\\overline{A}) = 0,3.0,03 + 0,7.0,02 = 0,023$."
+      ]
+    },
+    {
+      "t": "mc",
+      "q": "Hộp thứ nhất có 4 viên bi xanh và 5 viên bi đỏ. Hộp thứ hai có 4 viên bi xanh và 6 viên bi đỏ. Các viên bi có cùng kích thước và khối lượng. Lấy ra ngẫu nhiên 1 viên bi từ hộp thứ nhất chuyển sang hộp thứ hai. Sau đó lại lấy ra ngẫu nhiên đồng thời 2 viên bi từ hộp thứ hai. Xác suất để 2 viên bi lấy ra từ hộp thứ hai đều là bi đỏ bằng",
+      "o": [
+        "$\\frac{1}{3}$",
+        "$\\frac{12}{99}$",
+        "$\\frac{21}{99}$",
+        "$\\frac{4}{9}$"
+      ],
+      "a": 0,
+      "solved": true,
+      "sol": [
+        "Gọi $A$ là biến cố 'Viên bi lấy từ hộp thứ nhất là màu đỏ' $\\Rightarrow P(A) = \\frac{5}{9}$ và $P(\\overline{A}) = \\frac{4}{9}$.",
+        "Gọi $B$ là biến cố 'Hai viên bi lấy từ hộp thứ hai đều là màu đỏ'.",
+        "Trường hợp 1: Chuyển bi xanh (biến cố $\\overline{A}$ xảy ra). Khi đó hộp 2 có 5 bi xanh và 6 bi đỏ. Xác suất lấy được 2 bi đỏ là: $P(B|\\overline{A}) = \\frac{C_{6}^{2}}{C_{11}^{2}} = \\frac{15}{55} = \\frac{3}{11}$.",
+        "Trường hợp 2: Chuyển bi đỏ (biến cố $A$ xảy ra). Khi đó hộp 2 có 4 bi xanh và 7 bi đỏ. Xác suất lấy được 2 bi đỏ là: $P(B|A) = \\frac{C_{7}^{2}}{C_{11}^{2}} = \\frac{21}{55}$.",
+        "Áp dụng công thức xác suất toàn phần: $P(B) = P(\\overline{A}).P(B|\\overline{A}) + P(A).P(B|A) = \\frac{4}{9}.\\frac{3}{11} + \\frac{5}{9}.\\frac{21}{55} = \\frac{12}{99} + \\frac{21}{99} = \\frac{33}{99} = \\frac{1}{3}$."
+      ]
+    },
+    {
+      "t": "fill",
+      "q": "Cho hai biến cố $A$ và $B$ thỏa mãn $P(A) = 0,6$; $P(AB) = 0,24$; $P(A|\\overline{B}) = 0,9$. Khi đó $P(B|\\overline{A})$ bằng [[0]].",
+      "a": [
+        0.9
+      ],
+      "solved": true,
+      "sol": [
+        "Ta có: $P(A) = P(AB) + P(A\\overline{B}) \\Rightarrow 0,6 = 0,24 + P(A\\overline{B}) \\Rightarrow P(A\\overline{B}) = 0,36$.",
+        "Lại có $P(A|\\overline{B}) = \\frac{P(A\\overline{B})}{P(\\overline{B})} \\Rightarrow 0,9 = \\frac{0,36}{P(\\overline{B})} \\Rightarrow P(\\overline{B}) = 0,4$.",
+        "Từ đó suy ra $P(B) = 1 - 0,4 = 0,6$.",
+        "Ta tính: $P(\\overline{A}B) = P(B) - P(AB) = 0,6 - 0,24 = 0,36$.",
+        "Và $P(\\overline{A}) = 1 - P(A) = 1 - 0,6 = 0,4$.",
+        "Vậy xác suất cần tìm là $P(B|\\overline{A}) = \\frac{P(\\overline{A}B)}{P(\\overline{A})} = \\frac{0,36}{0,4} = 0,9$."
+      ]
+    },
+    {
+      "t": "mc",
+      "q": "Gieo một con xúc xắc cân đối và đồng chất. Giả sử xúc xắc xuất hiện mặt $b$ chấm. Xác suất để phương trình $x^2 + bx + 2 = 0$ có hai nghiệm phân biệt là",
+      "o": [
+        "$\\frac{1}{2}$",
+        "$\\frac{2}{3}$",
+        "$\\frac{1}{3}$",
+        "$\\frac{5}{6}$"
+      ],
+      "a": 1,
+      "solved": true,
+      "sol": [
+        "Số chấm xuất hiện trên mặt xúc xắc là $b \\in \\{1; 2; 3; 4; 5; 6\\}$. Số phần tử không gian mẫu $n(\\Omega) = 6$.",
+        "Để phương trình $x^2 + bx + 2 = 0$ có 2 nghiệm phân biệt thì $\\Delta = b^2 - 8 > 0 \\Leftrightarrow b^2 > 8$.",
+        "Vì $b \\in \\mathbb{N}^*$ và $1 \\le b \\le 6$ nên $b \\in \\{3; 4; 5; 6\\}$.",
+        "Có 4 giá trị thỏa mãn. Xác suất cần tìm là $P = \\frac{4}{6} = \\frac{2}{3}$."
+      ]
+    },
+    {
+      "t": "mc",
+      "q": "Từ tập hợp $X=\\{1; 2; 3; 4; 5; 6\\}$ ta thành lập được các số tự nhiên có 5 chữ số. Lấy ngẫu nhiên một số. Xác suất để trong số tự nhiên được lấy ra chỉ có mặt đúng ba chữ số khác nhau bằng",
+      "o": [
+        "$\\frac{125}{324}$",
+        "$\\frac{5}{18}$",
+        "$\\frac{25}{108}$",
+        "$\\frac{125}{972}$"
+      ],
+      "a": 0,
+      "solved": true,
+      "sol": [
+        "Số các số tự nhiên có 5 chữ số lập từ $X$ là $n(\\Omega) = 6^5 = 7776$.",
+        "Gọi $A$ là biến cố 'Số được lấy ra có mặt đúng ba chữ số khác nhau'.",
+        "Bước 1: Chọn 3 chữ số từ 6 chữ số của tập $X$, có $C_{6}^{3} = 20$ cách.",
+        "Bước 2: Lập số có 5 chữ số từ 3 chữ số vừa chọn sao cho cả 3 chữ số đều có mặt.",
+        "Tổng số cách xếp 3 chữ số vào 5 vị trí là $3^5 = 243$.",
+        "Số cách xếp chỉ có tối đa 2 chữ số có mặt: $C_{3}^{2}.2^5 - C_{3}^{1}.1^5 = 3.32 - 3.1 = 93$ (hoặc dùng nguyên lý bù trừ).",
+        "Số cách lập sao cho đủ 3 chữ số là: $243 - 93 = 150$ cách.",
+        "Suy ra số phần tử của biến cố $A$ là $n(A) = 20 \\times 150 = 3000$.",
+        "Xác suất cần tìm là $P(A) = \\frac{3000}{7776} = \\frac{125}{324}$."
+      ]
+    },
+    {
+      "t": "fill",
+      "q": "Trong mặt phẳng $Oxy$, cho hình chữ nhật $OMNP$ với $M(0;5)$, $N(20;5)$ và $P(20;0)$. Gọi $S$ là tập hợp tất cả các điểm $A(x;y)$, với $x,y \\in \\mathbb{Z}$, nằm bên trong hoặc trên các cạnh của hình chữ nhật $OMNP$. Lấy ngẫu nhiên một điểm $A(x;y) \\in S$. Biết xác suất để $x+y \\le 18$ là phân số tối giản $\\frac{a}{b}$. Giá trị của $a+b$ bằng [[0]].",
+      "a": [
+        25
+      ],
+      "solved": true,
+      "sol": [
+        "Tập $S$ gồm các điểm $(x;y)$ nguyên thỏa mãn $0 \\le x \\le 20$ và $0 \\le y \\le 5$.",
+        "Số điểm thuộc $S$ là $n(\\Omega) = (20 - 0 + 1) \\times (5 - 0 + 1) = 21 \\times 6 = 126$ điểm.",
+        "Ta đếm số điểm vi phạm điều kiện, tức là $x + y > 18$, mà $x, y$ nguyên nên $x + y \\ge 19$.",
+        "Vì cực đại của $x+y$ là $20+5=25$, ta xét các trường hợp của $y$:",
+        "+ $y = 5 \\Rightarrow x \\ge 14 \\Rightarrow x \\in \\{14; 15; ...; 20\\}$ (7 điểm).",
+        "+ $y = 4 \\Rightarrow x \\ge 15 \\Rightarrow x \\in \\{15; 16; ...; 20\\}$ (6 điểm).",
+        "+ $y = 3 \\Rightarrow x \\ge 16 \\Rightarrow x \\in \\{16; 17; ...; 20\\}$ (5 điểm).",
+        "+ $y = 2 \\Rightarrow x \\ge 17 \\Rightarrow x \\in \\{17; 18; 19; 20\\}$ (4 điểm).",
+        "+ $y = 1 \\Rightarrow x \\ge 18 \\Rightarrow x \\in \\{18; 19; 20\\}$ (3 điểm).",
+        "+ $y = 0 \\Rightarrow x \\ge 19 \\Rightarrow x \\in \\{19; 20\\}$ (2 điểm).",
+        "Tổng số điểm vi phạm là: $7+6+5+4+3+2 = 27$ điểm.",
+        "Số điểm thỏa mãn biến cố là: $126 - 27 = 99$ điểm.",
+        "Xác suất cần tìm: $P = \\frac{99}{126} = \\frac{11}{14}$.",
+        "Suy ra $a = 11$, $b = 14$. Vậy $a + b = 25$."
+      ]
+    },
+    {
+      "t": "mc",
+      "q": "Bạn An đang đứng trên một trong bốn ô trống và thực hiện liên tiếp 3 bước nhảy, mỗi bước sẽ nhảy ngẫu nhiên vào một trong ba ô trống còn lại. Xác suất để sau bước nhảy thứ 3 An trở lại ô ban đầu là",
+      "o": [
+        "$\\frac{2}{9}$",
+        "$\\frac{1}{9}$",
+        "$\\frac{1}{3}$",
+        "$\\frac{4}{27}$"
+      ],
+      "a": 0,
+      "solved": true,
+      "sol": [
+        "Gọi 4 ô là $X$ (ô xuất phát ban đầu của An) và $Y, Z, T$ (3 ô còn lại).",
+        "Tổng số cách thực hiện 3 bước nhảy là $n(\\Omega) = 3^3 = 27$ cách.",
+        "Gọi $u_n$ là số cách để sau $n$ bước, An ở ô $X$. Và $v_n$ là số cách để sau $n$ bước, An ở một ô cụ thể khác $X$ (ví dụ ô $Y$).",
+        "Sau 1 bước: $u_1 = 0$, $v_1 = 1$.",
+        "Sau 2 bước: $u_2 = 3.v_1 = 3$. An không thể đứng yên ở $X$ nên số cách ở lại $X$ là tổng các cách đi từ $Y, Z, T$ về $X$.",
+        "Sau 3 bước: Số cách để An về lại $X$ là $u_3 = 3.v_2$. Ta cần tính $v_2$.",
+        "Số cách để ở bước 2 An ở $Y$ là đi từ $X$ (0 cách), từ $Z$ (1 cách), hoặc từ $T$ (1 cách), tức là $v_2 = u_1 + 2.v_1 = 0 + 2.1 = 2$.",
+        "Vậy $u_3 = 3 \\times 2 = 6$. Số cách để An trở lại ô xuất phát sau bước 3 là 6.",
+        "Xác suất là $P = \\frac{6}{27} = \\frac{2}{9}$."
+      ]
+    },
+    {
+      "t": "fill",
+      "q": "Trong tập hợp các số tự nhiên có 4 chữ số, ta chọn ngẫu nhiên một số. Xác suất để chọn được một số chia hết cho 11 và có chữ số hàng nghìn bằng 5 là phân số tối giản $\\frac{a}{b}$. Ta có tử số $a =$ [[0]] và mẫu số $b =$ [[1]].",
+      "a": [
+        91,
+        9000
+      ],
+      "solved": true,
+      "sol": [
+        "Tập hợp các số tự nhiên có 4 chữ số là từ 1000 đến 9999, có $9999 - 1000 + 1 = 9000$ số. Suy ra $n(\\Omega) = 9000$.",
+        "Gọi $A$ là biến cố 'Số được chọn chia hết cho 11 và chữ số hàng nghìn bằng 5'.",
+        "Các số có hàng nghìn bằng 5 nằm trong đoạn từ 5000 đến 5999.",
+        "Ta cần tìm các số chia hết cho 11 trong đoạn này: $5000 \\le 11k \\le 5999 \\Leftrightarrow 454,5 \\le k \\le 545,3$.",
+        "Vì $k \\in \\mathbb{Z}$ nên $k \\in \\{455; 456; ...; 545\\}$.",
+        "Số phần tử của biến cố $A$ là: $545 - 455 + 1 = 91$.",
+        "Xác suất cần tìm là $P = \\frac{91}{9000}$.",
+        "Phân số $\\frac{91}{9000}$ đã tối giản. Suy ra tử số là 91 và mẫu số là 9000."
+      ]
+    }
+  ]
+}

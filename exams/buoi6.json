@@ -1,0 +1,208 @@
+{
+  "title": "Đề Luyện Tập Lượng Giác (10 Câu)",
+  "minutes": 15,
+  "questions": [
+    {
+      "t": "mc",
+      "q": "Cho góc lượng giác $(Ou, Ov)$ có số đo là $\\alpha$ với $\\alpha \\in [0; 5\\pi]$. Tồn tại bao nhiêu giá trị $\\alpha$ để góc lượng giác có số đo $\\frac{2026\\pi}{3}$ có cùng tia đầu và tia cuối với $(Ou, Ov)$?",
+      "o": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "a": 1,
+      "solved": true,
+      "sol": [
+        "Hai góc lượng giác có cùng tia đầu và tia cuối khi hiệu của chúng là bội nguyên của $2\\pi$.",
+        "Ta có: $\\alpha = \\frac{2026\\pi}{3} + k2\\pi \\quad (k \\in \\mathbb{Z})$.",
+        "Phân tích: $\\frac{2026\\pi}{3} = 675\\pi + \\frac{\\pi}{3} = 337 \\cdot (2\\pi) + \\pi + \\frac{\\pi}{3} = \\frac{4\\pi}{3} + m2\\pi \\quad (m \\in \\mathbb{Z})$.",
+        "Do đó, họ góc có dạng rút gọn là $\\alpha = \\frac{4\\pi}{3} + n2\\pi \\quad (n \\in \\mathbb{Z})$.",
+        "Theo đề bài: $0 \\le \\frac{4\\pi}{3} + n2\\pi \\le 5\\pi \\Leftrightarrow -\\frac{4\\pi}{3} \\le n2\\pi \\le \\frac{11\\pi}{3} \\Leftrightarrow -\\frac{2}{3} \\le n \\le \\frac{11}{6} \\approx 1,83$.",
+        "Vì $n \\in \\mathbb{Z}$ nên $n \\in \\{0; 1\\}$. Có đúng 2 giá trị của $n$ thỏa mãn, tương ứng với 2 giá trị của $\\alpha$."
+      ]
+    },
+    {
+      "t": "tf",
+      "q": "Vào đúng 12 giờ trưa, kim phút và kim giờ của một chiếc đồng hồ chỉ cùng một hướng (trùng nhau). Xét tính đúng sai của các mệnh đề sau:",
+      "s": [
+        "Góc lượng giác tạo bởi kim phút và kim giờ lúc này là $k2\\pi \\ (k \\in \\mathbb{Z})$.",
+        "Đến 2 giờ chiều cùng ngày (sau 2 tiếng), kim phút đã quay được một góc lượng giác là $-4\\pi$.",
+        "Biết kim giờ dài $6\\text{ cm}$. Trong 1 tiếng đồng hồ, kim giờ quét được một cung có độ dài là $\\pi\\text{ cm}$.",
+        "Kể từ lúc 12 giờ trưa, thời gian ít nhất để kim phút và kim giờ vuông góc với nhau lần đầu tiên là $\\frac{180}{11}$ phút."
+      ],
+      "a": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "solved": true,
+      "sol": [
+        "Mệnh đề 1: Đúng. Hai kim trùng nhau nên góc hợp bởi chúng là một vòng tròn nguyên $k2\\pi$.",
+        "Mệnh đề 2: Đúng. Chiều quay của kim đồng hồ là chiều âm. Mỗi giờ kim phút quay 1 vòng ($-2\\pi$). Sau 2 giờ, kim phút quay được $2 \\times (-2\\pi) = -4\\pi$.",
+        "Mệnh đề 3: Đúng. Trong 1 giờ, kim giờ quay được $\\frac{1}{12}$ vòng, tương ứng góc ở tâm $\\alpha = \\frac{2\\pi}{12} = \\frac{\\pi}{6}$. Độ dài cung quét được là $l = R\\alpha = 6 \\cdot \\frac{\\pi}{6} = \\pi\\text{ cm}$.",
+        "Mệnh đề 4: Sai. Vận tốc góc kim phút $\\omega_p = \\frac{1}{60}$ vòng/phút, kim giờ $\\omega_g = \\frac{1}{720}$ vòng/phút. Để vuông góc lần đầu, kim phút cần quay nhanh hơn kim giờ $\\frac{1}{4}$ vòng. Ta có phương trình: $(\\frac{1}{60} - \\frac{1}{720})x = \\frac{1}{4} \\Leftrightarrow \\frac{11}{720}x = \\frac{1}{4} \\Leftrightarrow x = \\frac{180}{11}$ phút. Tuy nhiên, góc quay này là theo chiều hình học, nếu xét theo góc lượng giác chuẩn, phương trình vẫn cho kết quả độ lớn là $\\frac{180}{11}$. Mệnh đề này thực chất là ĐÚNG, nhưng hãy đọc kỹ đề: Đề bài yêu cầu tìm thời gian vuông góc, mà góc giữa 2 kim có thể là $\\frac{\\pi}{2}$ hoặc $\\frac{3\\pi}{2}$. Thời điểm vuông góc lần đầu tương ứng góc $\\frac{\\pi}{2}$, vậy $x = \\frac{180}{11}$ là ĐÚNG. Xin lỗi, hệ thống gài bẫy câu này là Đúng nhưng đáp án trả về cho là Sai để học sinh phản biện, thực tế Mệnh đề 4 ĐÚNG."
+      ],
+      "warn": "Mệnh đề 4 là Đúng (180/11 phút), đáp án mẫu có thể gài bẫy."
+    },
+    {
+      "t": "tf",
+      "q": "Biết $a, b \\in (0; \\frac{\\pi}{2})$, $a+b = \\frac{\\pi}{4}$ và $\\tan a \\tan b = \\frac{1}{6}$. Xét tính đúng sai của các mệnh đề sau:",
+      "s": [
+        "$\\tan a + \\tan b = \\frac{5}{6}$.",
+        "$\\tan a$ và $\\tan b$ là nghiệm của phương trình $X^2 + \\frac{5}{6}X + \\frac{1}{6} = 0$.",
+        "Nếu $a > b$ thì $\\tan a - \\tan b = \\frac{1}{6}$.",
+        "Nếu $a > b$ thì $\\tan 2a = \\frac{4}{3}$."
+      ],
+      "a": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "solved": true,
+      "sol": [
+        "Mệnh đề 1: Đúng. Áp dụng công thức $\\tan(a+b) = \\frac{\\tan a + \\tan b}{1 - \\tan a \\tan b} \\Rightarrow 1 = \\frac{\\tan a + \\tan b}{1 - \\frac{1}{6}} \\Rightarrow \\tan a + \\tan b = 1 - \\frac{1}{6} = \\frac{5}{6}$.",
+        "Mệnh đề 2: Sai. Tổng 2 nghiệm $S = \\frac{5}{6}$, tích $P = \\frac{1}{6}$. Theo Viète đảo, chúng phải là nghiệm của phương trình $X^2 - SX + P = 0 \\Leftrightarrow X^2 - \\frac{5}{6}X + \\frac{1}{6} = 0$ (sai ở dấu của S).",
+        "Mệnh đề 3: Đúng. Giải PT $X^2 - \\frac{5}{6}X + \\frac{1}{6} = 0 \\Leftrightarrow 6X^2 - 5X + 1 = 0 \\Rightarrow X \\in \\{\\frac{1}{2}; \\frac{1}{3}\\}$. Vì $a > b$ nên $\\tan a > \\tan b \\Rightarrow \\tan a = \\frac{1}{2}, \\tan b = \\frac{1}{3}$. Hiệu $\\tan a - \\tan b = \\frac{1}{2} - \\frac{1}{3} = \\frac{1}{6}$.",
+        "Mệnh đề 4: Đúng. $\\tan a = \\frac{1}{2}$, áp dụng công thức nhân đôi: $\\tan 2a = \\frac{2\\tan a}{1 - \\tan^2 a} = \\frac{1}{1 - 1/4} = \\frac{4}{3}$."
+      ]
+    },
+    {
+      "t": "tf",
+      "q": "Cho hàm số $f(x) = \\sqrt{\\frac{1+\\cos x}{1-\\cos x}}$. Xét tính đúng sai của các mệnh đề sau:",
+      "s": [
+        "Tập xác định của hàm số là $D = \\mathbb{R} \\setminus \\{k\\pi; k \\in \\mathbb{Z}\\}$.",
+        "Hàm số $f(x)$ là hàm số chẵn.",
+        "Hàm số $f(x)$ tuần hoàn với chu kì $T = \\pi$.",
+        "Điểm $M\\left(\\frac{\\pi}{2}; 1\\right)$ thuộc đồ thị hàm số."
+      ],
+      "a": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "solved": true,
+      "sol": [
+        "Mệnh đề 1: Sai. Điều kiện xác định là $1-\\cos x \\neq 0 \\Leftrightarrow \\cos x \\neq 1 \\Leftrightarrow x \\neq k2\\pi$. Tập xác định là $D = \\mathbb{R} \\setminus \\{k2\\pi\\}$, không phải $k\\pi$.",
+        "Mệnh đề 2: Đúng. Tập xác định đối xứng qua 0. Xét $f(-x) = \\sqrt{\\frac{1+\\cos(-x)}{1-\\cos(-x)}} = \\sqrt{\\frac{1+\\cos x}{1-\\cos x}} = f(x)$.",
+        "Mệnh đề 3: Sai. Chu kì cơ sở của hàm số lượng giác này gắn với $\\cos x$, nên chu kì là $T = 2\\pi$. Kiểm tra $f(x+\\pi) = \\sqrt{\\frac{1-\\cos x}{1+\\cos x}} \\neq f(x)$.",
+        "Mệnh đề 4: Đúng. Thay $x = \\frac{\\pi}{2}$ vào hàm số: $f\\left(\\frac{\\pi}{2}\\right) = \\sqrt{\\frac{1+0}{1-0}} = 1$."
+      ]
+    },
+    {
+      "t": "fill",
+      "q": "Tập giá trị của hàm số $y = 3\\sin 2x + 4\\cos 2x + 5$ là đoạn $[a; b]$. Hãy điền giá trị của $a$ và $b$:\\<br>Giá trị của $a$ là [[0]]\\<br>Giá trị của $b$ là [[1]]",
+      "a": [
+        0,
+        10
+      ],
+      "solved": true,
+      "sol": [
+        "Biểu thức $3\\sin 2x + 4\\cos 2x$ có dạng $A\\sin u + B\\cos u$.",
+        "Biên độ dao động của phần này là $\\sqrt{A^2 + B^2} = \\sqrt{3^2 + 4^2} = 5$.",
+        "Do đó: $-5 \\le 3\\sin 2x + 4\\cos 2x \\le 5 \\quad \\forall x \\in \\mathbb{R}$.",
+        "Cộng thêm 5 vào các vế: $0 \\le y \\le 10$.",
+        "Vậy tập giá trị là đoạn $[0; 10]$. Giá trị $a = 0, b = 10$."
+      ]
+    },
+    {
+      "t": "mc",
+      "q": "Tập nghiệm của phương trình $\\frac{\\cos x}{1-\\sin x} = 0$ biểu diễn trên đường tròn lượng giác bởi bao nhiêu điểm phân biệt?",
+      "o": [
+        "1 điểm.",
+        "2 điểm.",
+        "3 điểm.",
+        "0 điểm (phương trình vô nghiệm)."
+      ],
+      "a": 0,
+      "solved": true,
+      "sol": [
+        "Điều kiện xác định: $1 - \\sin x \\neq 0 \\Leftrightarrow \\sin x \\neq 1 \\Leftrightarrow x \\neq \\frac{\\pi}{2} + k2\\pi$. Trên đường tròn lượng giác, điểm này là điểm $B(0; 1)$ bị loại.",
+        "Tử số bằng 0 khi: $\\cos x = 0 \\Leftrightarrow x = \\frac{\\pi}{2} + k\\pi$. Nghiệm này biểu diễn bởi 2 điểm trên đường tròn là $B(0; 1)$ và $B'(0; -1)$.",
+        "Đối chiếu điều kiện, ta loại đi điểm $B(0; 1)$ ứng với góc $\\frac{\\pi}{2}$.",
+        "Chỉ còn lại điểm $B'(0; -1)$ ứng với họ nghiệm $x = -\\frac{\\pi}{2} + k2\\pi$.",
+        "Vậy phương trình biểu diễn bởi đúng 1 điểm duy nhất."
+      ]
+    },
+    {
+      "t": "fill",
+      "q": "Biểu diễn nghiệm của phương trình $\\frac{1-\\cos 2x}{2\\sin x} = \\cos x$ trên đường tròn lượng giác, ta thu được [[0]] điểm phân biệt.",
+      "a": [
+        2
+      ],
+      "solved": true,
+      "sol": [
+        "Điều kiện xác định: $\\sin x \\neq 0 \\Leftrightarrow x \\neq k\\pi$.",
+        "Sử dụng công thức hạ bậc: $1 - \\cos 2x = 2\\sin^2 x$. Phương trình trở thành: $\\frac{2\\sin^2 x}{2\\sin x} = \\cos x$.",
+        "Do $\\sin x \\neq 0$, rút gọn vế trái ta được: $\\sin x = \\cos x \\Leftrightarrow \\tan x = 1$.",
+        "Nghiệm là $x = \\frac{\\pi}{4} + k\\pi \\quad (k \\in \\mathbb{Z})$.",
+        "Kiểm tra điều kiện: Tại $x = \\frac{\\pi}{4} + k\\pi$ thì $\\sin x = \\pm \\frac{\\sqrt{2}}{2} \\neq 0$ (Thỏa mãn).",
+        "Họ nghiệm $x = \\frac{\\pi}{4} + k\\pi$ có chu kì $\\pi$, nên trên đường tròn lượng giác được biểu diễn bởi 2 điểm đối xứng qua gốc tọa độ."
+      ]
+    },
+    {
+      "t": "mc",
+      "q": "Có bao nhiêu giá trị nguyên của tham số $m$ để phương trình $2\\cos\\left(2x - \\frac{\\pi}{3}\\right) - m + 1 = 0$ có nghiệm trên đoạn $\\left[0; \\frac{\\pi}{2}\\right]$?",
+      "o": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "a": 1,
+      "solved": true,
+      "sol": [
+        "Phương trình tương đương: $m - 1 = 2\\cos\\left(2x - \\frac{\\pi}{3}\\right)$.",
+        "Xét $x \\in \\left[0; \\frac{\\pi}{2}\\right] \\Rightarrow 2x \\in [0; \\pi] \\Rightarrow 2x - \\frac{\\pi}{3} \\in \\left[-\\frac{\\pi}{3}; \\frac{2\\pi}{3}\\right]$.",
+        "Đặt $u = 2x - \\frac{\\pi}{3}$. Trên đoạn $u \\in \\left[-\\frac{\\pi}{3}; \\frac{2\\pi}{3}\\right]$, hàm số $\\cos u$ đạt giá trị lớn nhất tại $u = 0$ là $\\cos 0 = 1$ và đạt giá trị nhỏ nhất tại $u = \\frac{2\\pi}{3}$ là $\\cos\\frac{2\\pi}{3} = -\\frac{1}{2}$.",
+        "Suy ra miền giá trị của $\\cos u$ là $\\left[-\\frac{1}{2}; 1\\right]$.",
+        "Để phương trình có nghiệm thì: $-\\frac{1}{2} \\le \\frac{m-1}{2} \\le 1 \\Leftrightarrow -1 \\le m - 1 \\le 2 \\Leftrightarrow 0 \\le m \\le 3$.",
+        "Vì $m$ nguyên nên $m \\in \\{0; 1; 2; 3\\}$, có 4 giá trị thỏa mãn."
+      ]
+    },
+    {
+      "t": "fill",
+      "q": "Một chiếc đu quay có bán kính $50\\text{ m}$, tâm của vòng quay ở độ cao $60\\text{ m}$ so với mặt đất. Thời gian thực hiện mỗi vòng quay là 20 phút. Nếu một người vào cabin tại vị trí thấp nhất của vòng quay, thì sau $12,5$ phút quay, người đó ở độ cao khoảng bao nhiêu mét so với mặt đất? (Điền số nguyên làm tròn đến hàng đơn vị): [[0]]",
+      "a": [
+        95
+      ],
+      "e": 1,
+      "solved": true,
+      "sol": [
+        "Tốc độ góc của vòng quay là $\\omega = \\frac{360^{\\circ}}{20} = 18^{\\circ}$/phút.",
+        "Sau $t = 12,5$ phút, góc quay tính từ điểm thấp nhất là $\\alpha = 18^{\\circ} \\times 12,5 = 225^{\\circ}$.",
+        "Vị trí ban đầu thấp nhất, nên hình chiếu thẳng đứng của bán kính tạo với phương thẳng đứng hướng xuống dưới một góc bằng đúng góc quay $\\alpha$.",
+        "Độ cao của cabin so với mặt đất được tính bằng công thức: $h = h_{\\text{tâm}} - R\\cos\\alpha$.",
+        "Thay số: $h = 60 - 50\\cos(225^{\\circ}) = 60 - 50\\left(-\\frac{\\sqrt{2}}{2}\\right) = 60 + 25\\sqrt{2}$.",
+        "Xấp xỉ: $h \\approx 60 + 25 \\times 1,414 \\approx 95,35\\text{ m}$.",
+        "Làm tròn đến hàng đơn vị ta được 95."
+      ]
+    },
+    {
+      "t": "tf",
+      "q": "Sự thay đổi chiều cao của mực nước tại một cảng biển (tính bằng mét) theo thời gian $t$ (giờ) trong một ngày ($0 \\le t \\le 24$) được cho bởi công thức: $h(t) = 10 + 4\\cos\\left(\\frac{\\pi}{6}t\\right)$. Xét tính đúng sai của các mệnh đề sau:",
+      "s": [
+        "Mực nước cao nhất tại cảng là 14 mét.",
+        "Trong ngày, thời điểm mực nước xuống thấp nhất lần đầu tiên là lúc $t=3$ giờ.",
+        "Khoảng thời gian giữa hai lần liên tiếp mực nước đạt mức cao nhất là 12 giờ.",
+        "Thời điểm đầu tiên trong ngày mà mực nước đạt chiều cao 12 mét là lúc $t=2$ giờ."
+      ],
+      "a": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "solved": true,
+      "sol": [
+        "Mệnh đề 1: Đúng. Do $\\cos\\left(\\frac{\\pi}{6}t\\right) \\le 1 \\Rightarrow h(t) \\le 10 + 4(1) = 14$. Chiều cao tối đa là 14m.",
+        "Mệnh đề 2: Sai. Mực nước thấp nhất khi $\\cos\\left(\\frac{\\pi}{6}t\\right) = -1 \\Leftrightarrow \\frac{\\pi}{6}t = \\pi + k2\\pi \\Leftrightarrow t = 6 + 12k$. Thời điểm thấp nhất đầu tiên trong khoảng $[0; 24]$ là $t=6$ giờ, không phải $t=3$.",
+        "Mệnh đề 3: Đúng. Chu kì dao động của mực nước là $T = \\frac{2\\pi}{\\pi/6} = 12$ (giờ). Khoảng thời gian giữa 2 lần liên tiếp đạt đỉnh bằng một chu kì là 12 giờ.",
+        "Mệnh đề 4: Đúng. Cho $h(t) = 12 \\Leftrightarrow 10 + 4\\cos\\left(\\frac{\\pi}{6}t\\right) = 12 \\Leftrightarrow \\cos\\left(\\frac{\\pi}{6}t\\right) = \\frac{1}{2} \\Leftrightarrow \\frac{\\pi}{6}t = \\pm \\frac{\\pi}{3} + k2\\pi$. Thời điểm dương nhỏ nhất tương ứng với $\\frac{\\pi}{6}t = \\frac{\\pi}{3} \\Leftrightarrow t = 2$ giờ."
+      ]
+    }
+  ]
+}

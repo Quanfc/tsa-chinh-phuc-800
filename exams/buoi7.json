@@ -1,0 +1,172 @@
+{
+  "title": "Đề Kiểm Tra 15 Phút: Dãy Số - CSC - CSN - Giới Hạn",
+  "minutes": 15,
+  "questions": [
+    {
+      "t": "tf",
+      "q": "Cho dãy số $(u_n)$ xác định bởi $\\begin{cases} u_1 = 3 \\\\ u_{n+1} = u_n + 2n \\end{cases}$ với mọi $n \\in \\mathbb{N}^*$. Xét tính đúng sai của các mệnh đề sau:",
+      "s": [
+        "$u_4 = 15$.",
+        "Dãy số $(u_n)$ là dãy số tăng.",
+        "Dãy số $(u_n)$ là dãy số bị chặn.",
+        "Số $59$ là số hạng thứ $9$ của dãy số $(u_n)$."
+      ],
+      "a": [1, 1, 0, 0],
+      "solved": true,
+      "sol": [
+        "Ý 1 (Đúng): Ta tính lần lượt các số hạng: $u_1 = 3$; $u_2 = u_1 + 2 \\cdot 1 = 5$; $u_3 = u_2 + 2 \\cdot 2 = 9$; $u_4 = u_3 + 2 \\cdot 3 = 15$.",
+        "Ý 2 (Đúng): Với mọi $n \\in \\mathbb{N}^*$, ta có $u_{n+1} - u_n = 2n > 0$ nên $u_{n+1} > u_n$. Vậy $(u_n)$ là dãy số tăng.",
+        "Ý 3 (Sai): Ta tìm số hạng tổng quát: $u_n - u_1 = 2[1 + 2 + \\dots + (n - 1)] = 2 \\cdot \\frac{(n - 1)n}{2} = n^2 - n$, suy ra $u_n = n^2 - n + 3$. Khi $n$ tăng ra vô cực thì $u_n$ tăng ra vô cực nên dãy số không bị chặn trên, do đó không bị chặn.",
+        "Ý 4 (Sai): Giải phương trình $u_n = 59 \\Leftrightarrow n^2 - n + 3 = 59 \\Leftrightarrow n^2 - n - 56 = 0 \\Leftrightarrow n = 8$ (vì $n \\in \\mathbb{N}^*$). Vậy $59$ là số hạng thứ $8$ của dãy số, không phải thứ $9$."
+      ]
+    },
+    {
+      "t": "fill",
+      "q": "Cho dãy số $(u_n)$ biết $u_n = 5^n - an$. Có tất cả [[0]] giá trị nguyên dương của $a$ để dãy số $(u_n)$ là dãy số tăng.",
+      "a": [19],
+      "solved": true,
+      "sol": [
+        "Dãy số $(u_n)$ là dãy số tăng khi và chỉ khi $u_{n+1} - u_n > 0$ với mọi $n \\in \\mathbb{N}^*$.",
+        "Ta có $u_{n+1} - u_n = \\left[5^{n+1} - a(n+1)\\right] - (5^n - an) = 5 \\cdot 5^n - 5^n - a = 4 \\cdot 5^n - a$.",
+        "Yêu cầu bài toán tương đương với $4 \\cdot 5^n - a > 0 \\Leftrightarrow a < 4 \\cdot 5^n$ với mọi $n \\in \\mathbb{N}^*$.",
+        "Vì $4 \\cdot 5^n$ tăng theo $n$ nên giá trị nhỏ nhất của $4 \\cdot 5^n$ với $n \\in \\mathbb{N}^*$ đạt tại $n = 1$, bằng $4 \\cdot 5^1 = 20$.",
+        "Suy ra $a < 20$. Do $a$ nguyên dương nên $a \\in \\{1; 2; \\dots; 19\\}$, có tất cả $19$ giá trị."
+      ]
+    },
+    {
+      "t": "tf",
+      "q": "Cho cấp số nhân $(u_n)$ có $u_1 = 2$ và công bội $q$. Xét tính đúng sai của các mệnh đề sau:",
+      "s": [
+        "Nếu $u_4 = 54$ thì $q = 3$.",
+        "Nếu $q = 2$ thì tổng của $10$ số hạng đầu của cấp số nhân bằng $2048$.",
+        "Khi biểu thức $P = 9u_1 - 6u_2 + u_3$ đạt giá trị nhỏ nhất thì $u_5 = 162$.",
+        "Nếu $u_{n+1} = 2u_n$ với mọi $n \\in \\mathbb{N}^*$ thì trong $15$ số hạng đầu tiên có đúng $6$ số hạng lớn hơn $1000$."
+      ],
+      "a": [1, 0, 1, 1],
+      "solved": true,
+      "sol": [
+        "Ý 1 (Đúng): Áp dụng công thức $u_4 = u_1 q^3$, ta có $54 = 2q^3 \\Leftrightarrow q^3 = 27 \\Leftrightarrow q = 3$.",
+        "Ý 2 (Sai): Với $q = 2$, tổng $10$ số hạng đầu là $S_{10} = u_1 \\cdot \\frac{q^{10} - 1}{q - 1} = 2 \\cdot \\frac{2^{10} - 1}{2 - 1} = 2(1024 - 1) = 2046 \\ne 2048$.",
+        "Ý 3 (Đúng): Ta có $u_2 = 2q$ và $u_3 = 2q^2$, nên $P = 9 \\cdot 2 - 6(2q) + 2q^2 = 2q^2 - 12q + 18 = 2(q - 3)^2 \\ge 0$. Biểu thức $P$ đạt giá trị nhỏ nhất bằng $0$ khi $q = 3$. Khi đó $u_5 = u_1 q^4 = 2 \\cdot 3^4 = 162$.",
+        "Ý 4 (Đúng): Từ $u_{n+1} = 2u_n$ suy ra $q = 2$, do đó $u_n = 2 \\cdot 2^{n-1} = 2^n$. Điều kiện $u_n > 1000 \\Leftrightarrow 2^n > 1000$. Vì $2^9 = 512 < 1000 < 1024 = 2^{10}$ nên $n \\ge 10$. Trong $15$ số hạng đầu, các chỉ số thỏa mãn là $n \\in \\{10; 11; 12; 13; 14; 15\\}$, gồm đúng $6$ số hạng."
+      ]
+    },
+    {
+      "t": "mc",
+      "q": "Một hội trường được thiết kế với $18$ ghế ở hàng thứ nhất, $21$ ghế ở hàng thứ hai, $24$ ghế ở hàng thứ ba và cứ tiếp tục như vậy (số ghế mỗi hàng sau nhiều hơn hàng liền trước $3$ ghế). Nếu tổng số ghế của hội trường là $930$ ghế thì hội trường đó có bao nhiêu hàng ghế?",
+      "o": [
+        "$18$",
+        "$19$",
+        "$20$",
+        "$21$"
+      ],
+      "a": 2,
+      "solved": true,
+      "sol": [
+        "Số ghế ở mỗi hàng lập thành một cấp số cộng $(u_n)$ với số hạng đầu $u_1 = 18$ và công sai $d = 3$.",
+        "Gọi $n$ ($n \\in \\mathbb{N}^*$) là số hàng ghế của hội trường. Tổng số ghế là $S_n = \\frac{n}{2}\\left[2u_1 + (n - 1)d\\right] = \\frac{n}{2}\\left[36 + 3(n - 1)\\right] = \\frac{n(3n + 33)}{2}$.",
+        "Theo đề bài: $\\frac{n(3n + 33)}{2} = 930 \\Leftrightarrow 3n^2 + 33n - 1860 = 0 \\Leftrightarrow n^2 + 11n - 620 = 0$.",
+        "Giải phương trình bậc hai: $\\Delta = 11^2 - 4 \\cdot 1 \\cdot (-620) = 2601 = 51^2$, suy ra $n = \\frac{-11 + 51}{2} = 20$ (nhận) hoặc $n = -31$ (loại).",
+        "Vậy hội trường có $20$ hàng ghế. Chọn phương án $20$."
+      ]
+    },
+    {
+      "t": "drag",
+      "q": "Cho hai giới hạn $A = \\lim_{n \\to +\\infty} \\left[\\sqrt{n}\\left(\\sqrt{n + 6} - \\sqrt{n + 2}\\right)\\right]$ và $B = \\lim_{n \\to +\\infty} \\frac{4^{n+1} - 3^n + 5}{2^{2n} + 3^{n+1}}$. Giá trị của $A$ bằng [[0]] và giá trị của $B$ bằng [[1]].",
+      "c": [
+        "$1$",
+        "$2$",
+        "$4$",
+        "$0$",
+        "$\\frac{1}{2}$"
+      ],
+      "a": [1, 2],
+      "solved": true,
+      "sol": [
+        "Tính ô [[0]] (giá trị $A$): Nhân cả tử và mẫu với lượng liên hợp $\\sqrt{n + 6} + \\sqrt{n + 2}$, ta được $\\sqrt{n}\\left(\\sqrt{n + 6} - \\sqrt{n + 2}\\right) = \\frac{\\sqrt{n}\\left[(n + 6) - (n + 2)\\right]}{\\sqrt{n + 6} + \\sqrt{n + 2}} = \\frac{4\\sqrt{n}}{\\sqrt{n + 6} + \\sqrt{n + 2}}$.",
+        "Chia cả tử và mẫu cho $\\sqrt{n}$: $A = \\lim_{n \\to +\\infty} \\frac{4}{\\sqrt{1 + \\frac{6}{n}} + \\sqrt{1 + \\frac{2}{n}}} = \\frac{4}{1 + 1} = 2$.",
+        "Tính ô [[1]] (giá trị $B$): Biến đổi $4^{n+1} = 4 \\cdot 4^n$, $2^{2n} = 4^n$ và $3^{n+1} = 3 \\cdot 3^n$, ta có $B = \\lim_{n \\to +\\infty} \\frac{4 \\cdot 4^n - 3^n + 5}{4^n + 3 \\cdot 3^n}$.",
+        "Chia cả tử và mẫu cho $4^n$: $B = \\lim_{n \\to +\\infty} \\frac{4 - \\left(\\frac{3}{4}\\right)^n + 5 \\cdot \\left(\\frac{1}{4}\\right)^n}{1 + 3 \\cdot \\left(\\frac{3}{4}\\right)^n} = \\frac{4 - 0 + 0}{1 + 0} = 4$."
+      ]
+    },
+    {
+      "t": "mc",
+      "q": "Cho dãy số $(u_n)$ xác định bởi $\\begin{cases} u_1 = 2 \\\\ u_{n+1} = \\frac{1}{3}u_n + 4 \\end{cases}$ với mọi $n \\in \\mathbb{N}^*$. Giới hạn $\\lim_{n \\to +\\infty} u_n$ bằng",
+      "o": [
+        "$4$",
+        "$6$",
+        "$8$",
+        "$3$"
+      ],
+      "a": 1,
+      "solved": true,
+      "sol": [
+        "Đặt dãy phụ $v_n = u_n - 6$ với mọi $n \\in \\mathbb{N}^*$. Ta có $v_1 = u_1 - 6 = 2 - 6 = -4$.",
+        "Biến đổi hệ thức truy hồi: $v_{n+1} = u_{n+1} - 6 = \\left(\\frac{1}{3}u_n + 4\\right) - 6 = \\frac{1}{3}u_n - 2 = \\frac{1}{3}(u_n - 6) = \\frac{1}{3}v_n$.",
+        "Suy ra $(v_n)$ là cấp số nhân với số hạng đầu $v_1 = -4$ và công bội $q = \\frac{1}{3}$.",
+        "Do đó $v_n = -4 \\cdot \\left(\\frac{1}{3}\\right)^{n-1}$, suy ra $u_n = 6 - 4 \\cdot \\left(\\frac{1}{3}\\right)^{n-1}$.",
+        "Vì $\\left|\\frac{1}{3}\\right| < 1$ nên $\\lim_{n \\to +\\infty} \\left(\\frac{1}{3}\\right)^{n-1} = 0$. Vậy $\\lim_{n \\to +\\infty} u_n = 6$. Chọn phương án $6$."
+      ]
+    },
+    {
+      "t": "fill",
+      "q": "Cho hình vuông $A_1B_1C_1D_1$ có cạnh bằng $a$ ($a > 0$). Người ta dựng hình vuông $A_2B_2C_2D_2$ có các đỉnh là trung điểm các cạnh của hình vuông $A_1B_1C_1D_1$; tiếp tục dựng hình vuông $A_3B_3C_3D_3$ có các đỉnh là trung điểm các cạnh của hình vuông $A_2B_2C_2D_2$ và cứ tiếp tục quá trình này đến vô hạn (như hình vẽ). Biết tổng diện tích của tất cả các hình vuông đó bằng $32$. Giá trị của $a$ bằng [[0]].",
+      "svg": "<svg viewBox='0 0 250 245' xmlns='http://www.w3.org/2000/svg'><rect x='30' y='30' width='180' height='180' fill='none' stroke='#1e293b' stroke-width='2'/><polygon points='120,30 210,120 120,210 30,120' fill='none' stroke='#2563eb' stroke-width='1.8'/><rect x='75' y='75' width='90' height='90' fill='none' stroke='#059669' stroke-width='1.6'/><polygon points='120,75 165,120 120,165 75,120' fill='none' stroke='#64748b' stroke-width='1.2' stroke-dasharray='4,3'/><text x='12' y='26' font-size='13' fill='#1e293b'>A1</text><text x='214' y='26' font-size='13' fill='#1e293b'>B1</text><text x='214' y='224' font-size='13' fill='#1e293b'>C1</text><text x='12' y='224' font-size='13' fill='#1e293b'>D1</text><text x='113' y='22' font-size='12' fill='#2563eb'>A2</text><text x='215' y='124' font-size='12' fill='#2563eb'>B2</text><text x='113' y='228' font-size='12' fill='#2563eb'>C2</text><text x='8' y='124' font-size='12' fill='#2563eb'>D2</text><text x='58' y='72' font-size='11' fill='#059669'>D3</text><text x='167' y='72' font-size='11' fill='#059669'>A3</text><text x='167' y='176' font-size='11' fill='#059669'>B3</text><text x='58' y='176' font-size='11' fill='#059669'>C3</text></svg>",
+      "a": [4],
+      "solved": true,
+      "sol": [
+        "Diện tích hình vuông đầu tiên $A_1B_1C_1D_1$ là $S_1 = a^2$.",
+        "Độ dài cạnh hình vuông $A_2B_2C_2D_2$ (nối trung điểm các cạnh của $A_1B_1C_1D_1$) là $a_2 = \\sqrt{\\left(\\frac{a}{2}\\right)^2 + \\left(\\frac{a}{2}\\right)^2} = \\frac{a\\sqrt{2}}{2}$.",
+        "Suy ra diện tích hình vuông thứ hai là $S_2 = a_2^2 = \\frac{a^2}{2} = \\frac{1}{2}S_1$.",
+        "Tương tự, dãy diện tích $(S_n)$ lập thành một cấp số nhân lùi vô hạn với $S_1 = a^2$ và công bội $q = \\frac{1}{2}$ (vì $|q| < 1$).",
+        "Tổng diện tích của tất cả các hình vuông là $S = \\frac{S_1}{1 - q} = \\frac{a^2}{1 - \\frac{1}{2}} = 2a^2$.",
+        "Theo đề bài ta có $2a^2 = 32 \\Leftrightarrow a^2 = 16 \\Leftrightarrow a = 4$ (vì $a > 0$)."
+      ]
+    },
+    {
+      "t": "mc",
+      "q": "Cho hàm số $f(x)$ xác định trên $\\mathbb{R}$ thỏa mãn $\\lim_{x \\to 1} \\frac{f(x) - 8}{x - 1} = 12$. Giá trị của giới hạn $L = \\lim_{x \\to 1} \\frac{\\sqrt[3]{f(x)} - 2}{x^2 + 2x - 3}$ bằng",
+      "o": [
+        "$\\frac{1}{4}$",
+        "$\\frac{1}{2}$",
+        "$\\frac{1}{3}$",
+        "$3$"
+      ],
+      "a": 0,
+      "solved": true,
+      "sol": [
+        "Vì $\\lim_{x \\to 1} \\frac{f(x) - 8}{x - 1} = 12$ hữu hạn và $\\lim_{x \\to 1}(x - 1) = 0$ nên $\\lim_{x \\to 1}\\left[f(x) - 8\\right] = 0$, suy ra $\\lim_{x \\to 1} f(x) = 8$.",
+        "Phân tích mẫu $x^2 + 2x - 3 = (x - 1)(x + 3)$ và nhân cả tử và mẫu với lượng liên hợp căn bậc ba $\\sqrt[3]{f^2(x)} + 2\\sqrt[3]{f(x)} + 4$, ta được:",
+        "$\\frac{\\sqrt[3]{f(x)} - 2}{x^2 + 2x - 3} = \\frac{f(x) - 8}{(x - 1)(x + 3)\\left(\\sqrt[3]{f^2(x)} + 2\\sqrt[3]{f(x)} + 4\\right)} = \\frac{f(x) - 8}{x - 1} \\cdot \\frac{1}{(x + 3)\\left(\\sqrt[3]{f^2(x)} + 2\\sqrt[3]{f(x)} + 4\\right)}$.",
+        "Chuyển qua giới hạn khi $x \\to 1$: $L = 12 \\cdot \\frac{1}{(1 + 3)\\left(\\sqrt[3]{8^2} + 2\\sqrt[3]{8} + 4\\right)} = 12 \\cdot \\frac{1}{4 \\cdot (4 + 4 + 4)} = \\frac{12}{48} = \\frac{1}{4}$.",
+        "Chọn phương án $\\frac{1}{4}$."
+      ]
+    },
+    {
+      "t": "fill",
+      "q": "Giá trị của giới hạn $I = \\lim_{x \\to 0} \\frac{1 - \\cos 2x}{\\sqrt{x^2 + 4} - 2}$ bằng [[0]].",
+      "a": [8],
+      "solved": true,
+      "sol": [
+        "Áp dụng công thức lượng giác $1 - \\cos 2x = 2\\sin^2 x$.",
+        "Nhân cả tử và mẫu với lượng liên hợp của mẫu là $\\sqrt{x^2 + 4} + 2$, ta được:",
+        "$\\frac{1 - \\cos 2x}{\\sqrt{x^2 + 4} - 2} = \\frac{2\\sin^2 x \\left(\\sqrt{x^2 + 4} + 2\\right)}{(x^2 + 4) - 4} = 2 \\cdot \\left(\\frac{\\sin x}{x}\\right)^2 \\cdot \\left(\\sqrt{x^2 + 4} + 2\\right)$.",
+        "Sử dụng giới hạn cơ bản $\\lim_{x \\to 0} \\frac{\\sin x}{x} = 1$, ta tính được $I = 2 \\cdot 1^2 \\cdot \\left(\\sqrt{0 + 4} + 2\\right) = 2 \\cdot 4 = 8$."
+      ]
+    },
+    {
+      "t": "fill",
+      "q": "Biết $\\lim_{x \\to -\\infty} \\left(\\sqrt{4x^2 + bx + 3} + ax\\right) = -3$ với $a, b$ là các số thực. Giá trị của biểu thức $P = a + b$ bằng [[0]].",
+      "a": [14],
+      "solved": true,
+      "sol": [
+        "Khi $x \\to -\\infty$ thì $x < 0$ nên $\\sqrt{4x^2 + bx + 3} = |x|\\sqrt{4 + \\frac{b}{x} + \\frac{3}{x^2}} = -x\\sqrt{4 + \\frac{b}{x} + \\frac{3}{x^2}}$.",
+        "Do đó $\\sqrt{4x^2 + bx + 3} + ax = x\\left(a - \\sqrt{4 + \\frac{b}{x} + \\frac{3}{x^2}}\\right)$.",
+        "Vì $\\lim_{x \\to -\\infty} x = -\\infty$, để giới hạn đã cho hữu hạn (bằng $-3$) thì bắt buộc $\\lim_{x \\to -\\infty}\\left(a - \\sqrt{4 + \\frac{b}{x} + \\frac{3}{x^2}}\\right) = 0 \\Leftrightarrow a - 2 = 0 \\Leftrightarrow a = 2$.",
+        "Thay $a = 2$ và nhân lượng liên hợp: $\\lim_{x \\to -\\infty} \\left(\\sqrt{4x^2 + bx + 3} + 2x\\right) = \\lim_{x \\to -\\infty} \\frac{(4x^2 + bx + 3) - 4x^2}{\\sqrt{4x^2 + bx + 3} - 2x} = \\lim_{x \\to -\\infty} \\frac{bx + 3}{-x\\sqrt{4 + \\frac{b}{x} + \\frac{3}{x^2}} - 2x}$.",
+        "Chia cả tử và mẫu cho $x$: $\\lim_{x \\to -\\infty} \\frac{b + \\frac{3}{x}}{-\\sqrt{4 + \\frac{b}{x} + \\frac{3}{x^2}} - 2} = \\frac{b}{-2 - 2} = -\\frac{b}{4}$.",
+        "Theo đề bài ta có $-\\frac{b}{4} = -3 \\Leftrightarrow b = 12$. Vậy $P = a + b = 2 + 12 = 14$."
+      ]
+    }
+  ]
+}

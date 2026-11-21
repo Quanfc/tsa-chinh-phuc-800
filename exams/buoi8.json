@@ -1,0 +1,236 @@
+{
+  "title": "Đề Kiểm Tra 15 Phút - Đạo Hàm Và Hàm Số Liên Tục",
+  "minutes": 15,
+  "questions": [
+    {
+      "t": "mc",
+      "q": "Cho hàm số $y=f(x)$. Biết $\\lim_{x\\to 2}\\frac{f(x)-f(2)}{x^2-4}=3$. Khi đó $f'(2)$ bằng bao nhiêu?",
+      "o": [
+        "$3$",
+        "$6$",
+        "$12$",
+        "$\\frac{3}{4}$"
+      ],
+      "a": 2,
+      "solved": true,
+      "sol": [
+        "Ta có: $\\lim_{x\\to 2}\\frac{f(x)-f(2)}{x^2-4}=\\lim_{x\\to 2}\\left(\\frac{f(x)-f(2)}{x-2}\\cdot\\frac{1}{x+2}\\right)$.",
+        "Theo định nghĩa đạo hàm tại một điểm, $\\lim_{x\\to 2}\\frac{f(x)-f(2)}{x-2}=f'(2)$.",
+        "Suy ra $f'(2)\\cdot\\frac{1}{2+2}=3 \\Leftrightarrow \\frac{f'(2)}{4}=3 \\Leftrightarrow f'(2)=12$.",
+        "Chọn đáp án $12$."
+      ]
+    },
+    {
+      "t": "fill",
+      "q": "Cho hàm số $f(x)=\\begin{cases}\\frac{\\sqrt{2x+1}-1}{x} & \\text{khi } x\\neq 0 \\\\ 1 & \\text{khi } x=0\\end{cases}$. Khi đó $2f'(0)$ bằng [[0]].",
+      "a": [
+        -1
+      ],
+      "solved": true,
+      "sol": [
+        "Áp dụng định nghĩa đạo hàm tại $x_0=0$: $f'(0)=\\lim_{x\\to 0}\\frac{f(x)-f(0)}{x-0}=\\lim_{x\\to 0}\\frac{\\frac{\\sqrt{2x+1}-1}{x}-1}{x}=\\lim_{x\\to 0}\\frac{\\sqrt{2x+1}-(x+1)}{x^2}$.",
+        "Nhân cả tử và mẫu với biểu thức liên hợp $\\sqrt{2x+1}+(x+1)$: $f'(0)=\\lim_{x\\to 0}\\frac{(2x+1)-(x+1)^2}{x^2\\left(\\sqrt{2x+1}+x+1\\right)}=\\lim_{x\\to 0}\\frac{-x^2}{x^2\\left(\\sqrt{2x+1}+x+1\\right)}$.",
+        "Rút gọn $x^2$ ở tử và mẫu: $f'(0)=\\lim_{x\\to 0}\\frac{-1}{\\sqrt{2x+1}+x+1}=\\frac{-1}{1+0+1}=-\\frac{1}{2}$.",
+        "Suy ra $2f'(0)=2\\cdot\\left(-\\frac{1}{2}\\right)=-1$. Vậy ô [[0]] điền $-1$."
+      ]
+    },
+    {
+      "t": "mc",
+      "q": "Biết hàm số $g(x)=f(x)-f(3x)$ có đạo hàm bằng $10$ tại $x=1$ và đạo hàm bằng $200$ tại $x=3$. Tính đạo hàm của hàm số $h(x)=f(x)-f(9x)$ tại $x=1$.",
+      "o": [
+        "$210$",
+        "$610$",
+        "$630$",
+        "$-590$"
+      ],
+      "a": 1,
+      "solved": true,
+      "sol": [
+        "Áp dụng công thức đạo hàm hàm hợp $(f(kx))'=k\\cdot f'(kx)$, ta có: $g'(x)=f'(x)-3f'(3x)$ và $h'(x)=f'(x)-9f'(9x)$.",
+        "Theo giả thiết: $g'(1)=f'(1)-3f'(3)=10$ và $g'(3)=f'(3)-3f'(9)=200$.",
+        "Ta biến đổi $h'(1)=f'(1)-9f'(9)=\\left[f'(1)-3f'(3)\\right]+3\\left[f'(3)-3f'(9)\\right]$.",
+        "Thay số: $h'(1)=10+3\\cdot 200=610$. Chọn đáp án $610$."
+      ]
+    },
+    {
+      "t": "tf",
+      "q": "Cho một chất điểm chuyển động trên trục $Os$ với phương trình vị trí $s(t)=-t^2+20t+5$ (trong đó $s$ tính bằng mét, $t\\ge 0$ tính bằng giây). Xét tính đúng, sai của các mệnh đề sau:",
+      "s": [
+        "Vận tốc tức thời của chất điểm tại thời điểm $t$ là $v(t)=-2t+20$ (m/s).",
+        "Chất điểm dừng lại tại thời điểm $t=10$ (s).",
+        "Kể từ thời điểm $t=0$ đến khi dừng lại, chất điểm đi được quãng đường là $105$ m.",
+        "Trong $15$ giây đầu tiên, tổng quãng đường chất điểm đi được là $125$ m."
+      ],
+      "a": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "solved": true,
+      "sol": [
+        "Ý 1 Đúng: Vận tốc tức thời là đạo hàm của hàm vị trí theo thời gian: $v(t)=s'(t)=-2t+20$ (m/s).",
+        "Ý 2 Đúng: Chất điểm dừng lại khi $v(t)=0 \\Leftrightarrow -2t+20=0 \\Leftrightarrow t=10$ (s).",
+        "Ý 3 Sai: Trong khoảng $[0;10]$, $v(t)\\ge 0$ nên chất điểm đi tiến. Quãng đường đi được là $S_1=s(10)-s(0)=(-10^2+20\\cdot 10+5)-5=105-5=100$ m (không phải $105$ m).",
+        "Ý 4 Đúng: Từ $t=10$ đến $t=15$, $v(t)\\le 0$ nên chất điểm đi lùi. Vị trí tại $t=15$ là $s(15)=-15^2+20\\cdot 15+5=80$ m. Quãng đường đi lùi là $S_2=|s(15)-s(10)|=|80-105|=25$ m. Tổng quãng đường là $S=S_1+S_2=100+25=125$ m."
+      ]
+    },
+    {
+      "t": "fill",
+      "q": "Một chất điểm chuyển động có vận tốc $v(t)$ (m/s) theo thời gian $t$ (s) được biểu diễn bởi đồ thị parabol như hình vẽ (parabol có đỉnh $I(2;8)$ và đi qua gốc tọa độ $O(0;0)$). Gia tốc tức thời của chất điểm tại thời điểm $t=1$ (s) bằng [[0]] $\\text{m/s}^2$.",
+      "graph": {
+        "fn": [
+          "-2*x^2+8*x"
+        ],
+        "x": [
+          -0.5,
+          4.5
+        ],
+        "y": [
+          -1,
+          9.5
+        ],
+        "xstep": 1,
+        "ystep": 2,
+        "lines": [
+          [
+            2,
+            0,
+            2,
+            8
+          ],
+          [
+            0,
+            8,
+            2,
+            8
+          ]
+        ],
+        "pts": [
+          {
+            "x": 0,
+            "y": 0,
+            "t": "O"
+          },
+          {
+            "x": 2,
+            "y": 8,
+            "t": "I(2;8)"
+          },
+          {
+            "x": 4,
+            "y": 0,
+            "t": "(4;0)"
+          }
+        ]
+      },
+      "a": [
+        4
+      ],
+      "solved": true,
+      "sol": [
+        "Vì đồ thị vận tốc là parabol có đỉnh $I(2;8)$ nên phương trình có dạng $v(t)=a(t-2)^2+8$ ($a\\neq 0$).",
+        "Đồ thị đi qua gốc tọa độ $O(0;0)$ nên $v(0)=0 \\Leftrightarrow a(0-2)^2+8=0 \\Leftrightarrow 4a=-8 \\Leftrightarrow a=-2$.",
+        "Suy ra $v(t)=-2(t-2)^2+8=-2t^2+8t$.",
+        "Gia tốc tức thời của chất điểm là $a(t)=v'(t)=-4t+8$. Tại $t=1$ (s), ta có $a(1)=-4(1)+8=4$ ($\\text{m/s}^2$). Vậy ô [[0]] điền $4$."
+      ]
+    },
+    {
+      "t": "mc",
+      "q": "Cho bốn hàm số $f_1(x)=x^4-2x^2+5$, $f_2(x)=\\frac{2x-1}{x^2+1}$, $f_3(x)=\\sin 2x-1$ và $f_4(x)=\\frac{x+1}{x-3}$. Hỏi có bao nhiêu hàm số liên tục trên $\\mathbb{R}$?",
+      "o": [
+        "$1$",
+        "$2$",
+        "$3$",
+        "$4$"
+      ],
+      "a": 2,
+      "solved": true,
+      "sol": [
+        "Hàm số $f_1(x)=x^4-2x^2+5$ là hàm đa thức nên liên tục trên $\\mathbb{R}$.",
+        "Hàm số $f_2(x)=\\frac{2x-1}{x^2+1}$ là hàm phân thức hữu tỉ có mẫu $x^2+1>0$ với mọi $x\\in\\mathbb{R}$ nên có tập xác định là $\\mathbb{R}$, do đó liên tục trên $\\mathbb{R}$.",
+        "Hàm số $f_3(x)=\\sin 2x-1$ là hàm lượng giác xác định và liên tục trên $\\mathbb{R}$.",
+        "Hàm số $f_4(x)=\\frac{x+1}{x-3}$ có tập xác định $\\mathbb{R}\\setminus\\{3\\}$ nên gián đoạn tại $x=3$, không liên tục trên $\\mathbb{R}$.",
+        "Vậy có $3$ hàm số liên tục trên $\\mathbb{R}$. Chọn đáp án $3$."
+      ]
+    },
+    {
+      "t": "tf",
+      "q": "Cho hàm số $f(x)=\\begin{cases}\\cos x - 1 & \\text{khi } x < 0 \\\\ x^2 & \\text{khi } 0 \\le x < 2 \\\\ 2x + 1 & \\text{khi } x \\ge 2\\end{cases}$. Xét tính đúng, sai của các mệnh đề sau:",
+      "s": [
+        "Giá trị của hàm số tại $x=0$ là $f(0)=0$.",
+        "Hàm số $f(x)$ liên tục tại điểm $x=0$.",
+        "Giới hạn bên phải của hàm số tại $x=2$ là $\\lim_{x\\to 2^+}f(x)=4$.",
+        "Hàm số $f(x)$ bị gián đoạn tại điểm $x=2$."
+      ],
+      "a": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "solved": true,
+      "sol": [
+        "Ý 1 Đúng: Tại $x=0$, áp dụng nhánh $0\\le x<2$ ta được $f(0)=0^2=0$.",
+        "Ý 2 Đúng: Ta có $\\lim_{x\\to 0^-}f(x)=\\lim_{x\\to 0^-}(\\cos x-1)=\\cos 0-1=0$ và $\\lim_{x\\to 0^+}f(x)=\\lim_{x\\to 0^+}x^2=0$. Vì $\\lim_{x\\to 0^-}f(x)=\\lim_{x\\to 0^+}f(x)=f(0)=0$ nên hàm số liên tục tại $x=0$.",
+        "Ý 3 Sai: Khi $x\\to 2^+$ ($x>2$), ta dùng nhánh $2x+1$, suy ra $\\lim_{x\\to 2^+}f(x)=\\lim_{x\\to 2^+}(2x+1)=2(2)+1=5\\neq 4$.",
+        "Ý 4 Đúng: Ta có $\\lim_{x\\to 2^-}f(x)=\\lim_{x\\to 2^-}x^2=4$. Do $\\lim_{x\\to 2^-}f(x)=4\\neq 5=\\lim_{x\\to 2^+}f(x)$ nên không tồn tại $\\lim_{x\\to 2}f(x)$, suy ra hàm số gián đoạn tại $x=2$."
+      ]
+    },
+    {
+      "t": "drag",
+      "q": "Cho hàm số $f(x)=\\begin{cases}x^2+ax+b & \\text{khi } x < -2 \\\\ 2x+5 & \\text{khi } -2 \\le x \\le 3 \\\\ ax+b+4 & \\text{khi } x > 3\\end{cases}$ liên tục trên $\\mathbb{R}$. Kéo thả các giá trị thích hợp vào ô trống: Giá trị của $a$ bằng [[0]] và giá trị của $b$ bằng [[1]].",
+      "c": [
+        "$1$",
+        "$2$",
+        "$-1$",
+        "$3$"
+      ],
+      "a": [
+        1,
+        0
+      ],
+      "solved": true,
+      "sol": [
+        "Trên các khoảng $(-\\infty;-2)$, $(-2;3)$ và $(3;+\\infty)$, hàm số là các hàm đa thức nên luôn liên tục. Do đó hàm số liên tục trên $\\mathbb{R}$ khi và chỉ khi nó liên tục tại $x=-2$ và $x=3$.",
+        "Tại $x=-2$: $\\lim_{x\\to -2^-}f(x)=(-2)^2-2a+b=4-2a+b$; $\\lim_{x\\to -2^+}f(x)=f(-2)=2(-2)+5=1$. Để hàm số liên tục tại $x=-2$ thì $4-2a+b=1 \\Leftrightarrow -2a+b=-3$ (1).",
+        "Tại $x=3$: $\\lim_{x\\to 3^-}f(x)=f(3)=2(3)+5=11$; $\\lim_{x\\to 3^+}f(x)=3a+b+4$. Để hàm số liên tục tại $x=3$ thì $3a+b+4=11 \\Leftrightarrow 3a+b=7$ (2).",
+        "Lấy (2) trừ (1) theo vế: $5a=10 \\Leftrightarrow a=2$. Thay $a=2$ vào (2) được $b=7-3(2)=1$. Vậy ô [[0]] là $2$, ô [[1]] là $1$."
+      ]
+    },
+    {
+      "t": "fill",
+      "q": "Cho các số thực $a,b$ để hàm số $f(x)=\\begin{cases}\\frac{\\sqrt{4x+5}-a}{x^2-1} & \\text{khi } x\\neq 1 \\\\ b & \\text{khi } x=1\\end{cases}$ liên tục tại điểm $x=1$. Khi đó giá trị của biểu thức $T=a+3b$ bằng [[0]].",
+      "a": [
+        4
+      ],
+      "solved": true,
+      "sol": [
+        "Hàm số liên tục tại $x=1$ khi và chỉ khi $\\lim_{x\\to 1}\\frac{\\sqrt{4x+5}-a}{x^2-1}=b$ (hữu hạn).",
+        "Vì mẫu số $x^2-1\\to 0$ khi $x\\to 1$, để giới hạn hữu hạn thì tử số phải tiến tới $0$ khi $x\\to 1$: $\\sqrt{4(1)+5}-a=0 \\Leftrightarrow 3-a=0 \\Leftrightarrow a=3$.",
+        "Với $a=3$, ta nhân liên hợp khử dạng vô định $\\frac{0}{0}$: $b=\\lim_{x\\to 1}\\frac{\\sqrt{4x+5}-3}{x^2-1}=\\lim_{x\\to 1}\\frac{(4x+5)-9}{(x-1)(x+1)(\\sqrt{4x+5}+3)}=\\lim_{x\\to 1}\\frac{4(x-1)}{(x-1)(x+1)(\\sqrt{4x+5}+3)}$.",
+        "Rút gọn $(x-1)$: $b=\\lim_{x\\to 1}\\frac{4}{(x+1)(\\sqrt{4x+5}+3)}=\\frac{4}{2\\cdot(3+3)}=\\frac{4}{12}=\\frac{1}{3}$.",
+        "Suy ra $T=a+3b=3+3\\cdot\\frac{1}{3}=4$. Vậy ô [[0]] điền $4$."
+      ]
+    },
+    {
+      "t": "mc",
+      "q": "Cho các số thực $a,b,c$ thỏa mãn $-1+a-b+c>0$ và $1+a+b+c<0$. Số giao điểm của đồ thị hàm số $y=x^3+ax^2+bx+c$ với trục hoành $Ox$ là bao nhiêu?",
+      "o": [
+        "$0$",
+        "$1$",
+        "$2$",
+        "$3$"
+      ],
+      "a": 3,
+      "solved": true,
+      "sol": [
+        "Đặt $f(x)=x^3+ax^2+bx+c$. Vì $f(x)$ là hàm đa thức nên liên tục trên $\\mathbb{R}$.",
+        "Từ giả thiết ta nhận thấy $f(-1)=-1+a-b+c>0$ và $f(1)=1+a+b+c<0$.",
+        "Mặt khác $\\lim_{x\\to -\\infty}f(x)=-\\infty$ nên tồn tại số $x_1<-1$ sao cho $f(x_1)<0$; và $\\lim_{x\\to +\\infty}f(x)=+\\infty$ nên tồn tại số $x_2>1$ sao cho $f(x_2)>0$.",
+        "Ta có $f(x_1)\\cdot f(-1)<0$, $f(-1)\\cdot f(1)<0$ và $f(1)\\cdot f(x_2)<0$. Theo định lý về sự tồn tại nghiệm của hàm số liên tục, phương trình $f(x)=0$ có ít nhất $3$ nghiệm phân biệt thuộc các khoảng $(x_1;-1)$, $(-1;1)$ và $(1;x_2)$.",
+        "Vì $f(x)=0$ là phương trình bậc ba nên có tối đa $3$ nghiệm. Do đó phương trình có đúng $3$ nghiệm thực phân biệt, tức đồ thị cắt trục $Ox$ tại $3$ điểm. Chọn đáp án $3$."
+      ]
+    }
+  ]
+}

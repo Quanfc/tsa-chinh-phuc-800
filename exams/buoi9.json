@@ -1,0 +1,155 @@
+{
+  "title": "Đề Kiểm Tra 15 Phút - Bất Phương Trình & Hệ Bất Phương Trình",
+  "minutes": 15,
+  "questions": [
+    {
+      "t": "fill",
+      "q": "Gọi $S$ là tập nghiệm của bất phương trình $x^2 - (2m - 4)x + m^2 - 4m - 5 \\le 0$. Có tất cả [[0]] giá trị nguyên của tham số $m$ sao cho $(-1; 2) \\subset S$.",
+      "a": [4],
+      "solved": true,
+      "sol": [
+        "Xét phương trình $x^2 - (2m - 4)x + m^2 - 4m - 5 = 0$.",
+        "Tính $\\Delta' = (m - 2)^2 - (m^2 - 4m - 5) = 9 > 0 \\implies \\sqrt{\\Delta'} = 3$.",
+        "Phương trình có hai nghiệm phân biệt $x_1 = m - 5$ và $x_2 = m + 1$ (với $m - 5 < m + 1, \\forall m$).",
+        "Do hệ số $a = 1 > 0$ nên tập nghiệm của bất phương trình là $S = [m - 5; m + 1]$.",
+        "Để $(-1; 2) \\subset [m - 5; m + 1]$ thì $\\begin{cases} m - 5 \\le -1 \\\\ m + 1 \\ge 2 \\end{cases} \\Leftrightarrow \\begin{cases} m \\le 4 \\\\ m \\ge 1 \\end{cases} \\Leftrightarrow 1 \\le m \\le 4$.",
+        "Vì $m \\in \\mathbb{Z}$ nên $m \\in \\{1; 2; 3; 4\\}$. Vậy có $4$ giá trị nguyên của $m$."
+      ]
+    },
+    {
+      "t": "fill",
+      "q": "Tập nghiệm của bất phương trình $x^2 + \\frac{1}{x^2} \\le 5\\left|x + \\frac{1}{x}\\right| - 8$ có tất cả [[0]] phần tử nguyên.",
+      "a": [4],
+      "solved": true,
+      "sol": [
+        "Điều kiện xác định: $x \\ne 0$.",
+        "Đặt $t = \\left|x + \\frac{1}{x}\\right| = |x| + \\frac{1}{|x|}$. Theo bất đẳng thức Cô-si, $t \\ge 2\\sqrt{|x| \\cdot \\frac{1}{|x|}} = 2$.",
+        "Ta có $t^2 = x^2 + \\frac{1}{x^2} + 2 \\implies x^2 + \\frac{1}{x^2} = t^2 - 2$.",
+        "Bất phương trình trở thành $t^2 - 2 \\le 5t - 8 \\Leftrightarrow t^2 - 5t + 6 \\le 0 \\Leftrightarrow 2 \\le t \\le 3$ (thỏa mãn điều kiện $t \\ge 2$).",
+        "Suy ra $2 \\le |x| + \\frac{1}{|x|} \\le 3$. Với $x \\in \\mathbb{Z}$ và $x \\ne 0$, ta thử các giá trị của $|x|$:",
+        "Với $|x| = 1$: $1 + 1 = 2 \\in [2; 3]$ (thỏa mãn) $\\implies x = \\pm 1$.",
+        "Với $|x| = 2$: $2 + \\frac{1}{2} = 2,5 \\in [2; 3]$ (thỏa mãn) $\\implies x = \\pm 2$.",
+        "Với $|x| \\ge 3$: $|x| + \\frac{1}{|x|} > 3$ (loại). Vậy tập nghiệm có $4$ phần tử nguyên là $\\{-2; -1; 1; 2\\}$."
+      ]
+    },
+    {
+      "t": "drag",
+      "q": "Cho phương trình $|x^2 - 4x| + 5x - x^2 = m$ với $m$ là tham số thực. Có tất cả [[0]] giá trị thực của tham số $m$ để phương trình trên có hai nghiệm thực phân biệt. Gọi $(a; b)$ là tập tất cả các giá trị của $m$ để phương trình trên có ba nghiệm thực phân biệt, khi đó tổng $a + b$ bằng [[1]].",
+      "c": ["$2$", "$3$", "$4$", "$14,125$", "$14,25$", "$10,125$"],
+      "a": [0, 3],
+      "solved": true,
+      "sol": [
+        "Xét hàm số $f(x) = |x^2 - 4x| + 5x - x^2$.",
+        "Với $x \\in (-\\infty; 0] \\cup [4; +\\infty)$: $x^2 - 4x \\ge 0 \\implies f(x) = x$.",
+        "Với $x \\in (0; 4)$: $x^2 - 4x < 0 \\implies f(x) = -2x^2 + 9x$. Parabol này có đỉnh $x = \\frac{9}{4} = 2,25 \\in (0; 4)$ với $f(2,25) = \\frac{81}{8} = 10,125$.",
+        "Khảo sát sự biến thiên của $f(x)$: trên $(-\\infty; 0]$ tăng từ $-\\infty$ đến $0$; trên $[0; 2,25]$ tăng từ $0$ lên $10,125$; trên $[2,25; 4]$ giảm từ $10,125$ xuống $4$; trên $[4; +\\infty)$ tăng từ $4$ đến $+\\infty$.",
+        "Số nghiệm của phương trình là số giao điểm của đường thẳng $y = m$ với đồ thị $y = f(x)$.",
+        "Ô [[0]]: Phương trình có đúng $2$ nghiệm phân biệt khi $m = 4$ hoặc $m = 10,125 \\implies$ có $2$ giá trị thực của $m$.",
+        "Ô [[1]]: Phương trình có đúng $3$ nghiệm phân biệt khi $4 < m < 10,125 \\implies (a; b) = (4; 10,125) \\implies a + b = 14,125$."
+      ]
+    },
+    {
+      "t": "fill",
+      "q": "Giá trị của tham số thực $a$ để hệ bất phương trình $\\begin{cases} (x - 1)^2 + (y + 2)^2 \\le a \\\\ (x + 5)^2 + (y - 6)^2 \\le a \\end{cases}$ có nghiệm duy nhất bằng [[0]].",
+      "a": [25],
+      "solved": true,
+      "sol": [
+        "Điều kiện cần để hệ có nghiệm là $a \\ge 0$. Với $a = 0$, bất phương trình (1) cho $(1; -2)$ còn (2) cho $(-5; 6)$ nên hệ vô nghiệm.",
+        "Với $a > 0$, trên mặt phẳng tọa độ $Oxy$, tập nghiệm của hai bất phương trình là hai hình tròn đóng $(C_1)$ tâm $I_1(1; -2)$ và $(C_2)$ tâm $I_2(-5; 6)$, cùng bán kính $R = \\sqrt{a}$.",
+        "Hệ bất phương trình có nghiệm duy nhất khi và chỉ khi hai hình tròn tiếp xúc ngoài với nhau, tức là $I_1I_2 = 2R$.",
+        "Ta có $I_1I_2 = \\sqrt{(-5 - 1)^2 + (6 - (-2))^2} = \\sqrt{36 + 64} = 10$.",
+        "Suy ra $2\\sqrt{a} = 10 \\Leftrightarrow \\sqrt{a} = 5 \\Leftrightarrow a = 25$."
+      ]
+    },
+    {
+      "t": "drag",
+      "q": "Cho hệ bất phương trình $\\begin{cases} x^2 - 4x + m \\le 0 \\\\ x^2 + 2x - 2m \\le 0 \\end{cases}$. Gọi $S, T$ lần lượt là tập các giá trị của tham số $m$ để hệ trên có nghiệm và có nghiệm duy nhất. Biết $S = [a; b]$, khi đó $a + 2b$ bằng [[0]] và tập $T$ có [[1]] phần tử nguyên.",
+      "c": ["$8$", "$4$", "$10$", "$1$", "$2$", "$3$"],
+      "a": [0, 4],
+      "solved": true,
+      "sol": [
+        "Cô lập tham số $m$ ở cả hai bất phương trình: $\\frac{x^2 + 2x}{2} \\le m \\le -x^2 + 4x$.",
+        "Điều kiện để tồn tại $m$ là $\\frac{x^2 + 2x}{2} \\le -x^2 + 4x \\Leftrightarrow 3x^2 - 6x \\le 0 \\Leftrightarrow x \\in [0; 2]$.",
+        "Xét $g(x) = \\frac{x^2 + 2x}{2}$ và $h(x) = -x^2 + 4x$ trên đoạn $D = [0; 2]$.",
+        "Trên $D$: $g(x)$ đồng biến từ $g(0) = 0$ đến $g(2) = 4$; $h(x)$ đồng biến từ $h(0) = 0$ đến $h(2) = 4$, và $g(x) < h(x)$ với mọi $x \\in (0; 2)$.",
+        "Ô [[0]]: Hệ có nghiệm khi $\\min_D g(x) \\le m \\le \\max_D h(x) \\Leftrightarrow 0 \\le m \\le 4 \\implies S = [0; 4]$. Suy ra $a = 0, b = 4 \\implies a + 2b = 8$.",
+        "Ô [[1]]: Với $m \\in (0; 4)$, đường thẳng $y = m$ cắt miền kẹp tại một đoạn chứa vô số nghiệm. Với $m = 0$, giao của $[0; 4]$ và $[-2; 0]$ là $x = 0$ (duy nhất). Với $m = 4$, bất phương trình (1) cho $x = 2$, thay vào (2) thỏa mãn (duy nhất). Do đó $T = \\{0; 4\\}$ có $2$ phần tử nguyên."
+      ]
+    },
+    {
+      "t": "mc",
+      "q": "Biết tập nghiệm của bất phương trình $(x^2 + 3x - 10)\\sqrt{25 - x^2} \\le 0$ có dạng $S = [-a; b] \\cup \\{c\\}$ với $a, b, c$ là các số nguyên dương. Giá trị của biểu thức $P = a + 3b + 2c$ bằng",
+      "o": ["$P = 11$", "$P = 16$", "$P = 21$", "$P = 26$"],
+      "a": 2,
+      "solved": true,
+      "sol": [
+        "Điều kiện xác định: $25 - x^2 \\ge 0 \\Leftrightarrow -5 \\le x \\le 5$.",
+        "Vì $\\sqrt{25 - x^2} \\ge 0$ với mọi $x \\in [-5; 5]$, bất phương trình tương đương với $\\sqrt{25 - x^2} = 0$ hoặc $\\begin{cases} -5 < x < 5 \\\\ x^2 + 3x - 10 \\le 0 \\end{cases}$.",
+        "Trường hợp 1: $\\sqrt{25 - x^2} = 0 \\Leftrightarrow x = \\pm 5$.",
+        "Trường hợp 2: $x^2 + 3x - 10 \\le 0 \\Leftrightarrow -5 \\le x \\le 2$. Kết hợp $-5 < x < 5$ ta được $-5 < x \\le 2$.",
+        "Hợp hai trường hợp ta thu được tập nghiệm $S = [-5; 2] \\cup \\{5\\}$.",
+        "Suy ra $a = 5, b = 2, c = 5 \\implies P = 5 + 3(2) + 2(5) = 21$. Chọn đáp án $P = 21$."
+      ]
+    },
+    {
+      "t": "fill",
+      "q": "Cho bất phương trình $m(\\sqrt{x^2 - 4x + 5} + 2) + x(4 - x) \\le 0$. Biết $m = \\frac{a}{b}$ (với $\\frac{a}{b}$ là phân số tối giản, $a, b \\in \\mathbb{N}^*$) là giá trị lớn nhất của tham số $m$ để bất phương trình đã cho có nghiệm $x \\in [1; 2 + 2\\sqrt{2}]$. Giá trị của $a + b$ bằng [[0]].",
+      "a": [9],
+      "solved": true,
+      "sol": [
+        "Đặt $t = \\sqrt{x^2 - 4x + 5} = \\sqrt{(x - 2)^2 + 1}$.",
+        "Với $x \\in [1; 2 + 2\\sqrt{2}] \\implies x - 2 \\in [-1; 2\\sqrt{2}] \\implies (x - 2)^2 \\in [0; 8] \\implies t \\in [1; 3]$.",
+        "Ta có $x(4 - x) = 4x - x^2 = 5 - (x^2 - 4x + 5) = 5 - t^2$.",
+        "Bất phương trình trở thành $m(t + 2) + 5 - t^2 \\le 0 \\Leftrightarrow m \\le \\frac{t^2 - 5}{t + 2} = f(t)$ (vì $t + 2 > 0$).",
+        "Để bất phương trình có nghiệm $t \\in [1; 3]$ thì $m \\le \\max_{t \\in [1; 3]} f(t)$.",
+        "Tính đạo hàm $f'(t) = \\frac{t^2 + 4t + 5}{(t + 2)^2} > 0, \\forall t \\in [1; 3]$ nên $f(t)$ đồng biến trên $[1; 3]$.",
+        "Suy ra $\\max_{[1; 3]} f(t) = f(3) = \\frac{3^2 - 5}{3 + 2} = \\frac{4}{5} \\implies m_{\\max} = \\frac{4}{5}$. Vậy $a = 4, b = 5 \\implies a + b = 9$."
+      ]
+    },
+    {
+      "t": "fill",
+      "q": "Bất phương trình $2026^{|2x - 15|} + \\frac{1}{\\sqrt{x^2 - 6x + 9}} \\le 2026^{|x - 3|} + \\frac{1}{\\sqrt{4x^2 - 60x + 225}}$ có tất cả [[0]] nghiệm nguyên.",
+      "a": [7],
+      "solved": true,
+      "sol": [
+        "Nhận xét: $\\sqrt{x^2 - 6x + 9} = |x - 3|$ và $\\sqrt{4x^2 - 60x + 225} = \\sqrt{(2x - 15)^2} = |2x - 15|$.",
+        "Điều kiện xác định: $x \\ne 3$ và $x \\ne \\frac{15}{2}$.",
+        "Chuyển vế ta được $2026^{|2x - 15|} - \\frac{1}{|2x - 15|} \\le 2026^{|x - 3|} - \\frac{1}{|x - 3|}$.",
+        "Xét hàm số đặc trưng $f(t) = 2026^t - \\frac{1}{t}$ trên $(0; +\\infty)$. Ta có $f'(t) = 2026^t \\ln 2026 + \\frac{1}{t^2} > 0, \\forall t > 0$ nên $f(t)$ đồng biến trên $(0; +\\infty)$.",
+        "Do $|2x - 15| > 0$ và $|x - 3| > 0$, bất phương trình tương đương $f(|2x - 15|) \\le f(|x - 3|) \\Leftrightarrow |2x - 15| \\le |x - 3|$.",
+        "Bình phương hai vế: $(2x - 15)^2 - (x - 3)^2 \\le 0 \\Leftrightarrow (x - 12)(3x - 18) \\le 0 \\Leftrightarrow 6 \\le x \\le 12$.",
+        "Kết hợp điều kiện xác định và $x \\in \\mathbb{Z}$, ta có $x \\in \\{6; 7; 8; 9; 10; 11; 12\\}$. Vậy có $7$ nghiệm nguyên."
+      ]
+    },
+    {
+      "t": "mc",
+      "q": "Một xưởng mộc có hai thợ là An và Nam sản xuất hai loại sản phẩm là bàn (loại I) và ghế (loại II). Mỗi sản phẩm loại I bán lãi 600 nghìn đồng, mỗi sản phẩm loại II bán lãi 500 nghìn đồng. Để sản xuất một sản phẩm loại I, An cần 2 giờ và Nam cần 1 giờ. Để sản xuất một sản phẩm loại II, An cần 1 giờ và Nam cần 3 giờ. Biết một người không thể làm đồng thời hai sản phẩm, trong một tháng An làm việc không quá 100 giờ và Nam làm việc không quá 150 giờ. Số tiền lãi lớn nhất trong một tháng của xưởng là",
+      "o": ["30 triệu đồng", "38 triệu đồng", "25 triệu đồng", "40 triệu đồng"],
+      "a": 1,
+      "solved": true,
+      "sol": [
+        "Gọi $x, y$ ($x, y \\ge 0$) lần lượt là số sản phẩm loại I và loại II sản xuất trong một tháng.",
+        "Hàm mục tiêu (tiền lãi, đơn vị nghìn đồng): $F(x; y) = 600x + 500y$.",
+        "Hệ bất phương trình ràng buộc: $\\begin{cases} x \\ge 0, y \\ge 0 \\\\ 2x + y \\le 100 \\\\ x + 3y \\le 150 \\end{cases}$.",
+        "Miền nghiệm là tứ giác $OABC$ với các đỉnh: $O(0; 0)$, $A(0; 50)$, $B(30; 40)$ (giao của $2x + y = 100$ và $x + 3y = 150$), $C(50; 0)$.",
+        "Tính giá trị hàm mục tiêu tại các đỉnh: $F(O) = 0$; $F(A) = 25000$; $F(B) = 600(30) + 500(40) = 38000$; $F(C) = 30000$.",
+        "Vậy số tiền lãi lớn nhất là $38000$ nghìn đồng $= 38$ triệu đồng. Chọn đáp án 38 triệu đồng."
+      ]
+    },
+    {
+      "t": "drag",
+      "q": "Một trang trại cần trộn hai loại thức ăn A và B cho gia súc sao cho mỗi ngày cung cấp ít nhất 1000 đơn vị chất đạm và 500 đơn vị chất béo. Mỗi kilôgam loại A chứa 500 đơn vị chất đạm, 100 đơn vị chất béo và có giá 60 nghìn đồng. Mỗi kilôgam loại B chứa 200 đơn vị chất đạm, 200 đơn vị chất béo và có giá 20 nghìn đồng. Biết trang trại chỉ dùng nhiều nhất 2 kg loại A và 3 kg loại B mỗi ngày. Gọi $x, y$ lần lượt là số kilôgam thức ăn loại A và B cần dùng. Để số tiền phải trả ít nhất thì $x + y$ bằng [[0]] kilôgam và số tiền phải trả khi đó là [[1]] nghìn đồng.",
+      "c": ["$3,8$", "$3,125$", "$3,5$", "$108$", "$112,5$", "$150$"],
+      "a": [0, 3],
+      "solved": true,
+      "sol": [
+        "Hàm mục tiêu (chi phí, đơn vị nghìn đồng): $F(x; y) = 60x + 20y$.",
+        "Hệ bất phương trình ràng buộc: $\\begin{cases} 0 \\le x \\le 2 \\\\ 0 \\le y \\le 3 \\\\ 500x + 200y \\ge 1000 \\Leftrightarrow 5x + 2y \\ge 10 \\\\ 100x + 200y \\ge 500 \\Leftrightarrow x + 2y \\ge 5 \\end{cases}$.",
+        "Miền nghiệm là tứ giác $ABCD$ có các đỉnh: $A(2; 3)$, $B(2; 1,5)$ (giao $x = 2$ và $x + 2y = 5$), $C(1,25; 1,875)$ (giao $5x + 2y = 10$ và $x + 2y = 5$), $D(0,8; 3)$ (giao $y = 3$ và $5x + 2y = 10$).",
+        "Tính giá trị chi phí tại các đỉnh: $F(A) = 180$; $F(B) = 150$; $F(C) = 60(1,25) + 20(1,875) = 112,5$; $F(D) = 60(0,8) + 20(3) = 108$.",
+        "Chi phí đạt giá trị nhỏ nhất bằng $108$ nghìn đồng tại $D(0,8; 3)$.",
+        "Ô [[0]]: $x + y = 0,8 + 3 = 3,8$ kg. Ô [[1]]: số tiền phải trả là $108$ nghìn đồng."
+      ]
+    }
+  ]
+}
